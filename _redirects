@@ -1,0 +1,1 @@
+# Cloudflare Pages redirects: one rule per line, "from  to  code" (301/302/303/307/308, or 200 for a rewrite).

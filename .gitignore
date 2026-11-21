@@ -1,0 +1,7 @@
+dist/
+__pycache__/
+*.pyc
+.env*
+.dev.vars
+.wrangler/
+.DS_Store

@@ -456,7 +456,48 @@
       "icon": "🧲",
       "subject": "science",
       "kind": "sim",
-      "blurb": "Drag magnets about: what attracts, what repels?"
+      "blurb": "Push magnets together, test which materials are magnetic and see magnetic field lines with compasses.",
+      "live": true,
+      "learn": "Magnetic poles (like poles repel, unlike poles attract), magnetic and non-magnetic materials, magnetic field lines and how a compass works.",
+      "topic": "/science/forces-and-motion/",
+      "topic_title": "Practise more: Forces and motion",
+      "curriculum": {
+        "KS3": "Physics: magnetism, magnetic fields and magnetic materials",
+        "PYP": "How the world works: magnets and forces"
+      },
+      "guide_title": "Magnets: a quick guide",
+      "guide": [
+        {
+          "h": "Poles",
+          "p": "Every magnet has a north pole (N) and a south pole (S). Opposite poles attract: N pulls S. Like poles repel: N pushes N away, and S pushes S away."
+        },
+        {
+          "h": "Magnetic materials",
+          "p": "Only a few materials are magnetic: iron, steel (which is mostly iron), nickel and cobalt. Most metals, like aluminium, copper and gold, are not magnetic, and neither are plastic, wood or glass."
+        },
+        {
+          "h": "Magnetic fields",
+          "p": "A magnet has a magnetic field around it, where it can push or pull. We draw it with field lines that point from the north pole round to the south pole. The lines are closest together, and the field is strongest, at the poles."
+        },
+        {
+          "h": "Compasses",
+          "p": "A compass needle is a tiny magnet that lines up with a magnetic field. The Earth has its own magnetic field, so far from other magnets a compass needle points north."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Are all metals magnetic?",
+          "a": "No. Iron, steel, nickel and cobalt are magnetic, but aluminium, copper, brass and gold are not. That's why a magnet can sort steel cans from aluminium cans."
+        },
+        {
+          "q": "Why do two north poles push apart?",
+          "a": "Like poles repel. The field lines from two north poles push against each other, so the magnets are forced apart."
+        },
+        {
+          "q": "Which way do magnetic field lines go?",
+          "a": "Outside a magnet they go from the north pole to the south pole."
+        }
+      ]
     }
   ]
 }

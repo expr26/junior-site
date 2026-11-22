@@ -347,3 +347,20 @@ ul.plain{list-style:none;padding:0;margin:0}ul.plain li{margin-bottom:6px}
 .faq summary::after{content:"+";position:absolute;right:0;top:-2px;font-size:24px;color:var(--fun)}
 .faq[open] summary::after{content:"−"}
 .faq p{margin:10px 0 0}
+/* Frog Jump */
+.fj-story{font-weight:600;background:var(--sci-bg);border-radius:14px;padding:10px 14px}
+.fj-eq{font-size:30px;text-align:center;font-family:var(--serif)}
+.fj-svg{width:100%;display:block;margin:4px 0;cursor:pointer;touch-action:manipulation}
+.fj-water{stroke:#7CC6F0;stroke-width:14;stroke-linecap:round;opacity:.5}
+.fj-pad ellipse{fill:#3DAA6B;stroke:#1F7A47;stroke-width:2}
+.fj-pad.zero ellipse{fill:#F2B33D;stroke:#B9792F}
+.fj-pad text{font:700 19px var(--sans);fill:var(--ink)}
+.fj-pad.here text{fill:var(--fun);font-size:24px;display:inline}
+.fj-pad.here ellipse{fill:#7FD99B}
+@media (max-width:560px){.fj-pad text{font-size:24px}.fj-pad.odd text{display:none}.fj-pad.here text{display:inline;font-size:28px}}
+.fj-emoji{font-size:34px;dominant-baseline:auto}
+.fj-at{text-align:center;font-size:18px;min-height:1.6em;margin:0 0 6px}
+.fj-ctrl{display:grid;grid-template-columns:1fr 1.35fr 1fr;gap:8px;max-width:420px;margin:0 auto}
+.fj-ctrl .btn{padding:0 8px;font-size:16px;white-space:nowrap}
+.fj-reset{text-align:center;margin:10px 0 0}
+.linkish{background:none;border:0;padding:0;font:inherit;color:var(--fun);text-decoration:underline;cursor:pointer}

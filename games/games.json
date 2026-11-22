@@ -1119,6 +1119,55 @@
           "a": "Take the probability that it does happen away from 1. For example, if P(red) = 3/8, then P(not red) = 1 − 3/8 = 5/8."
         }
       ]
+    },
+    {
+      "slug": "data-detective",
+      "title": "Data Detective",
+      "icon": "🔍",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Stack, level and sort towers of cubes to crack the mean, median, mode and range.",
+      "live": true,
+      "learn": "The mean as levelling out, the median, the mode and the range, reading a bar chart, and choosing the best average when there is an outlier.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Statistics: averages, range and charts",
+        "PYP": "Data handling: collecting, displaying and interpreting data"
+      },
+      "guide_title": "Averages and range: a quick guide",
+      "guide": [
+        {
+          "h": "The mean: level it out",
+          "p": "To find the mean, add up all the values and divide by how many values there are. Towers of cubes show why this works: if you move cubes from tall towers to short ones until they are all level, each tower's height is the mean. For towers of 2, 6, 3, 5 and 4 cubes, the total is 20, and 20 ÷ 5 = 4."
+        },
+        {
+          "h": "The median and the mode",
+          "p": "The median is the middle value once the values are in order from smallest to largest. For 2, 3, 4, 6, 7, 8, 9 the median is 6. With an even number of values, it is halfway between the two middle ones. The mode is the value that appears most often. It isn't the biggest value, and a data set can have more than one mode, or none."
+        },
+        {
+          "h": "The range",
+          "p": "The range tells you how spread out the data is. Range = largest value − smallest value. For 4, 9, 2, 7 and 6 the range is 9 − 2 = 7. The range is not an average: a small range means the values are close together, and a big range means they are spread out."
+        },
+        {
+          "h": "Choosing the best average",
+          "p": "An outlier is a value much bigger or smaller than the rest. If five friends have 2, 4, 5, 6 and 33 stickers, the mean is 50 ÷ 5 = 10, which is more than four of them have. The median, 5, gives a better idea of a typical friend. When there are no outliers, the mean is useful because it uses every value."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the difference between the mean and the median?",
+          "a": "The mean shares the total out equally: add the values and divide by how many there are. The median is the middle value when the values are in order. An outlier changes the mean a lot but the median hardly at all."
+        },
+        {
+          "q": "Can there be more than one mode?",
+          "a": "Yes. If two values are equally common, both are modes. If every value appears only once, there is no mode."
+        },
+        {
+          "q": "How do I read a bar chart?",
+          "a": "Look at the top of each bar and read straight across to the scale on the side. To compare two bars, find each value and subtract to see how many more."
+        }
+      ]
     }
   ]
 }

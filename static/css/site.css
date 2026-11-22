@@ -796,3 +796,28 @@ button.am-tile:hover:not(:disabled){transform:translateY(-3px)}button.am-tile:di
 .sl-row .btn{padding:0;width:48px;font-size:24px}
 .sl-n{font:700 30px var(--serif);min-width:1.6em;text-align:center}
 .sl-bar{width:120px;height:4px;border-radius:2px;background:var(--ink)}
+/* Data Detective */
+.dd-svg{width:100%;max-width:460px;display:block;margin:4px auto;background:linear-gradient(#EAF4FF,#FFF8EC);border-radius:16px}
+.dd-hit{fill:transparent;stroke:none}
+.dd-col[role=button]{cursor:pointer}.dd-col:focus{outline:none}
+.dd-col[role=button]:hover .dd-hit,.dd-col:focus-visible .dd-hit{fill:rgba(108,77,246,.08);stroke:#C9BFF5;stroke-width:2;stroke-dasharray:5 4}
+.dd-col.sel .dd-hit{fill:#EEE9FF;stroke:#6C4DF6;stroke-width:3;stroke-dasharray:none}
+.dd-col.done .dd-n{fill:#1F9D55}
+.dd-col.ok .dd-hit{fill:#E3F9EC;stroke:#1F9D55;stroke-width:3;stroke-dasharray:none}
+.dd-col.bad .dd-hit{fill:#FFE8E8;stroke:#E5484D;stroke-width:3;stroke-dasharray:none}
+.dd-cube{stroke:#1E1B3A;stroke-width:1.5;pointer-events:none}
+.dd-n{font:700 18px var(--sans);fill:#2D1B69;pointer-events:none}
+.dd-tag{font:700 14px var(--sans);fill:#0F766E;pointer-events:none;paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}
+.dd-base{stroke:#2D1B69;stroke-width:3;stroke-linecap:round;pointer-events:none}
+.dd-mean{stroke:#0F9488;stroke-width:3;stroke-dasharray:8 6;pointer-events:none}
+.dd-med{stroke:#E8590C;stroke-width:3;stroke-dasharray:3 5;pointer-events:none}
+.dd-grid{stroke:#D5DCE8;stroke-width:1.5}
+.dd-ax{font:600 13px var(--sans);fill:#55526E}
+.dd-bar{stroke:#1E1B3A;stroke-width:1.5}
+.dd-emo{font-size:26px}
+.dd-out{text-align:center;min-height:1.6em;margin:4px 0 8px}
+.dd-act{justify-content:center;margin:.2em 0 .6em}
+.dd-ans{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:.2em 0 .4em}
+.dd-ans .btn[data-d]{padding:0;width:48px;font-size:24px}
+.dd-lab{font:700 20px var(--sans)}
+.dd-val{font:700 30px var(--serif);min-width:1.6em;text-align:center}

@@ -1,0 +1,62 @@
+{
+  "title": "Fractions, decimals and percentages",
+  "description": "Animated KS3 Maths lesson on fractions, decimals and percentages for ages 9 to 14: what fractions mean, equivalent fractions and simplifying, converting between fractions, decimals and percentages, adding, subtracting and multiplying fractions, and finding fractions and percentages of amounts.",
+  "intro": "Three ways to write the same amount: {1/2}, 0.5 and 50%. Equivalent fractions, converting, calculating and parts of amounts, explained by the owl in five short parts.",
+  "chapters": [
+    {
+      "title": "What a fraction means",
+      "steps": [
+        {"say": "A fraction is part of a whole. The **bottom number** says how many **equal parts** there are. The **top number** says how many we have.", "do": "fr-pizza"},
+        {"say": "This pizza has 8 equal slices and 3 are shaded, so {3/8} of it is shaded.", "speak": "This pizza has 8 equal slices and 3 are shaded, so three eighths of it is shaded.", "do": "fr-pizza-label"},
+        {"say": "Fractions live on the number line too. Split 0 to 1 into 5 equal steps. The arrow points at {3/5}.", "speak": "Fractions live on the number line too. Split 0 to 1 into 5 equal steps. The arrow points at three fifths.", "do": "fr-line"},
+        {"say": "Bars of the same length help you compare. {2/3} covers more than {3/5}, so {2/3} is bigger.", "speak": "Bars of the same length help you compare. Two thirds covers more than three fifths, so two thirds is bigger.", "do": "fr-compare"}
+      ],
+      "check": {"q": "A pizza is cut into 8 equal slices. 5 slices are eaten. What fraction is eaten?", "options": ["{5/8}", "{3/8}", "{5/3}", "{8/5}"], "answer": 0,
+                "hint": "The bottom number is how many equal slices there are altogether.", "explain": "There are 8 equal slices and 5 are eaten, so **{5/8}** is eaten."}
+    },
+    {
+      "title": "Equivalent fractions",
+      "steps": [
+        {"say": "{1/2}, {2/4} and {4/8} look different, but they cover **the same amount**. They are **equivalent** fractions.", "speak": "One half, two quarters and four eighths look different, but they cover the same amount. They are equivalent fractions.", "do": "eq-bars"},
+        {"say": "To make an equivalent fraction, multiply the top and the bottom by **the same number**. {2/5} = {8/20}, because both were multiplied by 4.", "speak": "To make an equivalent fraction, multiply the top and the bottom by the same number. Two fifths equals eight twentieths, because both were multiplied by 4.", "do": "eq-multiply"},
+        {"say": "To **simplify**, divide the top and the bottom by the same number. {18/24}: divide both by 6 to get {3/4}.", "speak": "To simplify, divide the top and the bottom by the same number. Eighteen twenty-fourths: divide both by 6 to get three quarters.", "do": "eq-simplify"},
+        {"say": "A fraction is in its **simplest form** when no number except 1 divides into both the top and the bottom.", "do": "eq-simplest"}
+      ],
+      "check": {"q": "Write {12/16} in its simplest form.", "options": ["{3/4}", "{6/8}", "{4/3}", "{2/3}"], "answer": 0,
+                "hint": "Find the biggest number that divides into both 12 and 16.", "explain": "4 divides into both: 12 ÷ 4 = 3 and 16 ÷ 4 = 4, so {12/16} = **{3/4}**. ({6/8} is equal, but it can still be simplified.)"}
+    },
+    {
+      "title": "Fractions, decimals and percentages",
+      "steps": [
+        {"say": "**Per cent** means 'out of 100'. Here 25 squares out of 100 are coloured, so that is **25%**.", "speak": "Per cent means out of 100. Here 25 squares out of 100 are coloured, so that is 25 per cent.", "do": "fdp-grid"},
+        {"say": "{1/2}, 0.5 and 50% are three ways to write **the same amount**.", "speak": "One half, nought point 5, and 50 per cent are three ways to write the same amount.", "do": "fdp-same"},
+        {"say": "To change a fraction to a percentage, make the bottom 100. {3/5} = {60/100} = 60%, which is 0.6 as a decimal.", "speak": "To change a fraction to a percentage, make the bottom 100. Three fifths equals sixty hundredths, which is 60 per cent, or nought point 6 as a decimal.", "do": "fdp-convert"},
+        {"say": "These are worth learning: {1/4} = 0.25 = 25%, {3/4} = 0.75 = 75%, {1/10} = 0.1 = 10% and {1/5} = 0.2 = 20%.", "speak": "These are worth learning: one quarter is nought point 2 5, which is 25 per cent. Three quarters is nought point 7 5, which is 75 per cent. One tenth is nought point 1, which is 10 per cent. And one fifth is nought point 2, which is 20 per cent.", "do": "fdp-table"}
+      ],
+      "check": {"q": "Write 0.4 as a percentage.", "options": ["40%", "4%", "0.4%", "400%"], "answer": 0,
+                "hint": "To change a decimal to a percentage, multiply by 100.", "explain": "0.4 × 100 = 40, so 0.4 = **40%**. (0.4 is 4 tenths, which is 40 hundredths.)"}
+    },
+    {
+      "title": "Adding and multiplying fractions",
+      "steps": [
+        {"say": "When the bottom numbers are the same, add the tops: {2/7} + {3/7} = {5/7}. The bottom stays the same.", "speak": "When the bottom numbers are the same, add the tops: two sevenths plus three sevenths equals five sevenths. The bottom stays the same.", "do": "add-same"},
+        {"say": "When the bottoms are different, make them the same first: {1/2} + {1/4} = {2/4} + {1/4} = {3/4}.", "speak": "When the bottoms are different, make them the same first: one half plus one quarter equals two quarters plus one quarter, which equals three quarters.", "do": "add-diff"},
+        {"say": "{2/3} − {1/4}: twelfths work for both. {8/12} − {3/12} = {5/12}.", "speak": "Two thirds minus one quarter: twelfths work for both. Eight twelfths minus three twelfths equals five twelfths.", "do": "sub-diff"},
+        {"say": "To multiply, multiply the tops and multiply the bottoms. {3/4} × {2/5} = {6/20}, which simplifies to {3/10}.", "speak": "To multiply, multiply the tops and multiply the bottoms. Three quarters times two fifths equals six twentieths, which simplifies to three tenths.", "do": "mult"}
+      ],
+      "check": {"q": "Work out {1/3} + {1/6}", "options": ["{1/2}", "{2/9}", "{1/9}", "{2/3}"], "answer": 0,
+                "hint": "Change {1/3} into sixths first.", "explain": "{1/3} = {2/6}, so {2/6} + {1/6} = {3/6}, which simplifies to **{1/2}**."}
+    },
+    {
+      "title": "Parts of amounts",
+      "steps": [
+        {"say": "To find {3/4} of 20, **divide by the bottom**, then **times by the top**. 20 ÷ 4 = 5, and 5 × 3 = 15.", "speak": "To find three quarters of 20, divide by the bottom, then times by the top. 20 divided by 4 equals 5, and 5 times 3 equals 15.", "do": "amt-frac"},
+        {"say": "50% is a half, so 50% of 36 = 36 ÷ 2 = **18**.", "speak": "50 per cent is a half, so 50 per cent of 36 equals 36 divided by 2, which equals 18.", "do": "amt-50"},
+        {"say": "10% is a tenth, so divide by 10. 10% of £45 = **£4.50**.", "speak": "10 per cent is a tenth, so divide by 10. 10 per cent of 45 pounds equals 4 pounds 50.", "do": "amt-10"},
+        {"say": "Build other percentages from 10%. 30% is 3 lots of 10%: 3 × £4.50 = **£13.50**. And 25% is a quarter: 25% of 80 kg = **20 kg**.", "speak": "Build other percentages from 10 per cent. 30 per cent is 3 lots of 10 per cent: 3 times 4 pounds 50 equals 13 pounds 50. And 25 per cent is a quarter: 25 per cent of 80 kilograms equals 20 kilograms.", "do": "amt-build"}
+      ],
+      "check": {"q": "Find 20% of 60.", "options": ["12", "6", "20", "3"], "answer": 0,
+                "hint": "Find 10% first, then double it.", "explain": "10% of 60 = 6, so 20% of 60 = 2 × 6 = **12**."}
+    }
+  ]
+}

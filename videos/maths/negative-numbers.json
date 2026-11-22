@@ -1,0 +1,61 @@
+{
+  "title": "Negative numbers",
+  "description": "Animated KS3 Maths lesson on negative numbers for ages 9 to 14: temperatures and the number line, ordering, adding and subtracting negatives, two signs together, multiplying and dividing, and real-life problems with depths and bank balances.",
+  "intro": "Numbers below zero: thermometers, the number line, adding, subtracting, multiplying and dividing, explained by the owl in five short parts.",
+  "chapters": [
+    {
+      "title": "Numbers below zero",
+      "steps": [
+        {"say": "Numbers below zero are **negative**. A thermometer shows them: −4 °C means 4 degrees **below** zero.", "speak": "Numbers below zero are negative. A thermometer shows them: negative 4 degrees Celsius means 4 degrees below zero.", "do": "neg-thermo"},
+        {"say": "On a **number line**, negative numbers are to the left of zero and positive numbers are to the right.", "do": "neg-line"},
+        {"say": "Numbers get **smaller** as you go left. −8 is further left than −3, so −8 is smaller: −8 °C is colder.", "speak": "Numbers get smaller as you go left. Negative 8 is further left than negative 3, so negative 8 is smaller: negative 8 degrees is colder.", "do": "neg-order"},
+        {"say": "From −3 °C to 5 °C: 3 degrees up to zero, then 5 more. That is **8 degrees** warmer.", "speak": "From negative 3 degrees to 5 degrees: 3 degrees up to zero, then 5 more. That is 8 degrees warmer.", "do": "neg-diff"}
+      ],
+      "check": {"q": "Which list goes from smallest to largest?", "options": ["−7, −1, 0, 4", "−1, −7, 0, 4", "0, −1, −7, 4", "4, 0, −1, −7"], "answer": 0,
+                "hint": "The smallest number is the one furthest to the left on the number line.", "explain": "−7 is furthest left, then −1, then 0, then 4. So **−7, −1, 0, 4** goes from smallest to largest."}
+    },
+    {
+      "title": "Adding and subtracting",
+      "steps": [
+        {"say": "Adding means moving **right** on the number line. −2 + 6: start at −2 and hop 6 to the right. You land on **4**.", "speak": "Adding means moving right on the number line. Negative 2 plus 6: start at negative 2 and hop 6 to the right. You land on 4.", "do": "add-hop"},
+        {"say": "Subtracting means moving **left**. 3 − 7: start at 3 and hop 7 to the left. You land on **−4**.", "speak": "Subtracting means moving left. 3 minus 7: start at 3 and hop 7 to the left. You land on negative 4.", "do": "sub-hop"},
+        {"say": "−4 − 5: start at −4 and hop 5 more to the left. You land on **−9**.", "speak": "Negative 4 minus 5: start at negative 4 and hop 5 more to the left. You land on negative 9.", "do": "sub-hop-2"}
+      ],
+      "check": {"q": "Work out 2 − 9", "options": ["−7", "7", "−11", "11"], "answer": 0,
+                "hint": "Start at 2 and hop 9 places to the left.", "explain": "2 hops take you down to 0, and 7 more take you to **−7**. So 2 − 9 = −7."}
+    },
+    {
+      "title": "Two signs together",
+      "steps": [
+        {"say": "Look at this pattern. Each time we take away 1 less, the answer goes **up** by 1.", "do": "sign-pattern"},
+        {"say": "So taking away −1 gives 7: 6 − (−1) = 6 + 1. **Subtracting a negative is the same as adding.**", "speak": "So taking away negative 1 gives 7: 6 minus negative 1 equals 6 plus 1. Subtracting a negative is the same as adding.", "do": "sign-pattern-end"},
+        {"say": "6 − (−3) = 6 + 3 = **9**.", "speak": "6 minus negative 3 equals 6 plus 3, which equals 9.", "do": "minus-minus"},
+        {"say": "And **adding a negative is the same as subtracting**: 5 + (−3) = 5 − 3 = **2**.", "speak": "And adding a negative is the same as subtracting: 5 plus negative 3 equals 5 minus 3, which equals 2.", "do": "plus-minus"}
+      ],
+      "check": {"q": "Work out −2 − (−5)", "options": ["3", "−7", "−3", "7"], "answer": 0,
+                "hint": "Subtracting a negative is the same as adding: −2 − (−5) = −2 + 5.", "explain": "−2 − (−5) = −2 + 5. Start at −2 and hop 5 to the right: **3**."}
+    },
+    {
+      "title": "Multiplying and dividing",
+      "steps": [
+        {"say": "To multiply or divide, work out the numbers as normal. Then sort out the sign.", "do": "md-title"},
+        {"say": "**Same signs** give a **positive** answer. **Different signs** give a **negative** answer.", "do": "md-rules"},
+        {"say": "−6 × 4 = −24, because the signs are different. −20 ÷ −5 = 4, because the signs are the same.", "speak": "Negative 6 times 4 equals negative 24, because the signs are different. Negative 20 divided by negative 5 equals 4, because the signs are the same.", "do": "md-examples"},
+        {"say": "(−3)² means −3 × −3. Same signs, so (−3)² = **9**.", "speak": "Negative 3, all squared, means negative 3 times negative 3. Same signs, so the answer is 9.", "do": "md-square"},
+        {"say": "With three numbers, go two at a time: −2 × −3 = 6, then 6 × −1 = **−6**.", "speak": "With three numbers, go two at a time: negative 2 times negative 3 equals 6, then 6 times negative 1 equals negative 6.", "do": "md-three"}
+      ],
+      "check": {"q": "Work out −24 ÷ 6", "options": ["−4", "4", "−18", "−30"], "answer": 0,
+                "hint": "24 ÷ 6 = 4. Are the signs the same or different?", "explain": "24 ÷ 6 = 4, and the signs are **different**, so the answer is negative: −24 ÷ 6 = **−4**."}
+    },
+    {
+      "title": "Negative numbers in real life",
+      "steps": [
+        {"say": "A diver is 12 m below sea level, at −12 m. The diver swims up 5 m: −12 + 5 = −7. The diver is now **7 m below** sea level.", "speak": "A diver is 12 metres below sea level, at negative 12 metres. The diver swims up 5 metres: negative 12 plus 5 equals negative 7. The diver is now 7 metres below sea level.", "do": "life-diver"},
+        {"say": "A bank account has £15. £22 is spent: 15 − 22 = −7. The balance is **−£7**, which means £7 is owed to the bank.", "speak": "A bank account has 15 pounds. 22 pounds is spent: 15 minus 22 equals negative 7. The balance is negative 7 pounds, which means 7 pounds is owed to the bank.", "do": "life-bank"},
+        {"say": "What is halfway between −6 and 2? The gap is 8. Half of 8 is 4. −6 + 4 = **−2**.", "speak": "What is halfway between negative 6 and 2? The gap is 8. Half of 8 is 4. Negative 6 plus 4 equals negative 2.", "do": "life-halfway"}
+      ],
+      "check": {"q": "The temperature is 4 °C. It falls by 10 degrees. What is the temperature now?", "options": ["−6 °C", "6 °C", "−14 °C", "14 °C"], "answer": 0,
+                "hint": "Work out 4 − 10 on a number line.", "explain": "4 − 10: 4 degrees down to zero, then 6 more below zero. The temperature is now **−6 °C**."}
+    }
+  ]
+}

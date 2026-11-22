@@ -625,3 +625,30 @@ button.am-tile:hover:not(:disabled){transform:translateY(-3px)}button.am-tile:di
 .ec-row.right{border-color:var(--ok);background:var(--ok-bg)}.ec-row.wrong{border-color:var(--bad);background:var(--bad-bg)}
 .ec-re{font-size:28px;grid-row:span 2}.ec-rt{font-weight:600}
 .ec-way{min-height:44px;padding:6px 14px;justify-self:start}
+/* Power House */
+.ph-svg{width:100%;max-width:460px;display:block;margin:4px auto;border-radius:16px;background:linear-gradient(#DFF3FF,#F4FBFF)}
+.ph-roof{fill:#FF8A3D;stroke:#2D1B69;stroke-width:3;stroke-linejoin:round}
+.ph-wall{fill:#FFF4DC;stroke:#2D1B69;stroke-width:3}
+.ph-sign{font:700 17px var(--sans);fill:#fff}
+.ph-app{cursor:pointer}.ph-app:focus{outline:none}
+.ph-card{fill:#E9E6F2;stroke:#B9B3CC;stroke-width:2}
+.ph-app.on .ph-card{fill:#FFF1A8;stroke:#F5A400;stroke-width:3}
+.ph-app:hover .ph-card,.ph-app:focus-visible .ph-card{stroke:#6C4DF6;stroke-width:4}
+.ph-e{font-size:30px;pointer-events:none}.ph-app:not(.on) .ph-e{opacity:.55}
+.ph-name{font:700 14px var(--sans);fill:#2D1B69;pointer-events:none}
+.ph-pw{font:800 17px var(--sans);fill:#6C4DF6;pointer-events:none}
+.ph-sw{fill:#8A94A6}.ph-app.on .ph-sw{fill:#1F9D55}
+.ph-swt{font:700 10px var(--sans);fill:#fff;pointer-events:none}
+.ph-box{fill:#fff;stroke:#B9B3CC;stroke-width:2}.ph-box.ans{fill:#EEE9FF;stroke:#6C4DF6;stroke-width:3}
+.ph-big{font:800 20px var(--sans);fill:#2D1B69}.ph-small{font:600 14px var(--sans);fill:#55526E}
+.ph-op{font:800 26px var(--sans);fill:#6C4DF6}
+.ph-note{font:700 16px var(--sans);fill:#0F9488}
+.ph-glow{fill:#FFE27A;opacity:.7}.ph-bulb{font-size:46px}
+.ph-name2{font:700 17px var(--sans);fill:#2D1B69}
+.ph-meter{fill:#2D1B69}.ph-dig{fill:#fff}.ph-digt{font:800 26px var(--sans);fill:#2D1B69}.ph-kwh{font:700 15px var(--sans);fill:#fff}
+.ph-out{text-align:center;min-height:1.6em;margin:4px 0 8px}
+.ph-dial{display:grid;gap:6px;align-items:center;max-width:420px;margin:8px auto 0}
+.ph-n2{grid-template-columns:1fr auto 1fr}.ph-n4{grid-template-columns:1fr 1fr auto 1fr 1fr}
+.ph-dial .btn{padding:0;min-width:0;min-height:48px}
+.ph-val{font:700 24px var(--serif);min-width:4.2em;text-align:center}
+.ph-act{justify-content:center;margin:.6em 0 0}

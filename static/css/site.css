@@ -821,3 +821,37 @@ button.am-tile:hover:not(:disabled){transform:translateY(-3px)}button.am-tile:di
 .dd-ans .btn[data-d]{padding:0;width:48px;font-size:24px}
 .dd-lab{font:700 20px var(--sans)}
 .dd-val{font:700 30px var(--serif);min-width:1.6em;text-align:center}
+/* Balloon Charge */
+.bc-svg{width:100%;max-width:460px;display:block;margin:4px auto;background:linear-gradient(#FFF4E0,#FFE9F1);border-radius:16px}
+.bc-floor{fill:#E9D9C2}.bc-table{fill:#C99B6D}
+.bc-jump{fill:#3FA7A0;stroke:#1F6F6A;stroke-width:3;stroke-linejoin:round}.bc-neck{fill:none;stroke:#1F6F6A;stroke-width:3}
+.bc-bal{fill:#FF8FB1;stroke:#D94C7C;stroke-width:3}.bc-bal.pk{fill:#FF8FB1}.bc-bal.bl{fill:#8EC5FF;stroke:#3B82F6}.bc-bal.gr{fill:#9BE3B4;stroke:#2E9E5B}
+.bc-knot{fill:#D94C7C}.bc-knot.bl{fill:#3B82F6}.bc-knot.gr{fill:#2E9E5B}
+.bc-shine{fill:#fff;opacity:.55}
+.bc-str{fill:none;stroke:#5B6475;stroke-width:2}
+.bc-bar{fill:#8A6A4A}
+.bc-q circle{stroke:#fff;stroke-width:1.5}.bc-q.p circle{fill:#E5484D}.bc-q.n circle{fill:#2F5BD3}
+.bc-q text{font-family:var(--sans);font-weight:800;fill:#fff;pointer-events:none}
+.bc-gap{fill:none;stroke:#1F6F6A;stroke-width:1.5;stroke-dasharray:3 3}
+.bc-lab{font:700 15px var(--sans);fill:#2D1B69;paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}
+.bc-mover.rub{animation:bc-rub .6s ease}
+@keyframes bc-rub{35%{transform:translateX(-108px)}55%{transform:translateX(-92px)}75%{transform:translateX(-104px)}}
+.bc-swing{transform-origin:200px 12px;transition:transform .9s cubic-bezier(.3,1.5,.5,1)}
+.bc-wall{fill:#D9825B}.bc-brick{fill:none;stroke:#F3C3A6;stroke-width:2}
+.bc-hand{font-size:28px}
+.bc-hit{fill:transparent}
+.bc-paper{fill:#fff;stroke:#8A94A6;stroke-width:1}
+.bc-tapg.tap{cursor:pointer}.bc-tapg:focus{outline:none}
+.bc-tapg.tap:hover .bc-jump,.bc-tapg.tap:focus-visible .bc-jump,.bc-tapg.tap:hover .bc-bal,.bc-tapg.tap:focus-visible .bc-bal{stroke:var(--fun);stroke-width:5}
+.bc-tapg.wrong .bc-jump,.bc-tapg.wrong .bc-bal{stroke:#E5484D;stroke-width:5;stroke-dasharray:8 5}
+.bc-tapg.right .bc-jump,.bc-tapg.right .bc-bal{stroke:#1F9D55;stroke-width:6}
+.bc-tapg.right .bc-hit{fill:rgba(31,157,85,.12)}
+.bc-sky{fill:#3C4A7A}.bc-cloud{fill:#C9CFE3;stroke:#8E97B8;stroke-width:3}.bc-grass{fill:#3DAA6B}
+.bc-tree{font-size:34px}
+.bc-bolt{fill:none;stroke:#FFE14D;stroke-width:6;stroke-linejoin:round;filter:drop-shadow(0 0 6px #FFF2A8);animation:bc-flash .5s ease 2}
+@keyframes bc-flash{50%{opacity:.2}}
+.bc-out{text-align:center;min-height:1.6em;margin:4px 0 8px}
+.bc-act{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:.2em 0 .6em}
+.bc-act.four{display:grid;grid-template-columns:1fr 1fr;max-width:420px;margin-left:auto;margin-right:auto}
+.bc-act .btn{padding:0 14px}
+.bc-tip{text-align:center;color:var(--muted);margin:0 0 6px}

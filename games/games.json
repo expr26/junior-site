@@ -1168,6 +1168,55 @@
           "a": "Look at the top of each bar and read straight across to the scale on the side. To compare two bars, find each value and subtract to see how many more."
         }
       ]
+    },
+    {
+      "slug": "balloon-charge",
+      "title": "Balloon Charge",
+      "icon": "🎈",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Rub a balloon on a jumper, watch the electrons hop across, then make balloons push apart, stick to walls and pick up paper.",
+      "live": true,
+      "learn": "Charging by friction, which way electrons move, why only electrons move in solids, like charges repel and unlike charges attract, and sparks and lightning.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: static electricity and electric charge",
+        "PYP": "How the world works: electricity"
+      },
+      "guide_title": "Static electricity: a quick guide",
+      "guide": [
+        {
+          "h": "Positive and negative charge",
+          "p": "Everything is made of atoms. Each atom has positive charges (protons) in its centre and tiny negative charges (electrons) around the outside. Most objects have exactly the same number of each, so the charges cancel out and the object is neutral. An object with extra electrons is negatively charged. An object that has lost electrons is positively charged."
+        },
+        {
+          "h": "Charging by friction",
+          "p": "When you rub a balloon on a wool jumper, some electrons are rubbed off the jumper and onto the balloon. The balloon gains electrons, so it becomes negative. The jumper loses the same number, so it becomes positive. Rubbing never makes new charge: it only moves it. In the game, each rub moves one electron to keep counting easy. In real life, one rub moves millions of them!"
+        },
+        {
+          "h": "Only electrons move",
+          "p": "In solids, only electrons can move from one object to another. The positive charges are protons, held tightly in the centre of each atom, so they stay put. An object becomes positive because it has lost some electrons, not because it has gained positive charges. That is why the + charges in the game never move."
+        },
+        {
+          "h": "Attract and repel, sparks and lightning",
+          "p": "Like charges repel and unlike charges attract. Two rubbed balloons are both negative, so they push apart. A charged balloon also attracts neutral things, such as a wall or bits of paper: it pushes their electrons a little way back, so the near side becomes slightly positive and is pulled in. When lots of charge builds up, it can jump across the air as a spark. Lightning is a giant spark from a storm cloud."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why does a balloon stick to the wall after you rub it?",
+          "a": "Rubbing gives the balloon extra electrons, so it is negatively charged. Near the wall, it pushes the wall's electrons slightly away, which leaves the wall's surface a little positive. Unlike charges attract, so the balloon sticks."
+        },
+        {
+          "q": "Which way do electrons move when you rub a balloon on a jumper?",
+          "a": "From the jumper onto the balloon. The balloon ends up negative and the jumper ends up positive, by the same amount."
+        },
+        {
+          "q": "What is lightning?",
+          "a": "Lightning is a giant spark. Charge builds up in a storm cloud, and when there is enough, it jumps through the air between the cloud and the ground, or between clouds."
+        }
+      ]
     }
   ]
 }

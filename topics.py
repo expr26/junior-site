@@ -135,6 +135,9 @@ def fig_pies(items, **_):
 FIGS = {"pie": fig_pie, "bar": fig_bar, "bars": fig_bars, "nline": fig_nline, "dots": fig_dots, "pies": fig_pies}
 EXTRA_FIGS = {}   # other modules (e.g. science pictures) register here
 
+import science_figs  # noqa: E402
+EXTRA_FIGS.update(science_figs.FIGS)
+
 
 def figure(spec, where):
     if not spec:

@@ -1,0 +1,137 @@
+{
+  "slug": "forces-and-motion",
+  "subject": "science",
+  "title": "Forces and motion",
+  "level": "KS2 to KS3",
+  "description": "Forces explained for ages 9 to 14: pushes and pulls, gravity and weight, friction, balanced and unbalanced forces, speed and magnets. Free practice with instant feedback.",
+  "intro": "Why do things fall? Why does a bike stop when you brake? Forces are behind everything that moves. Follow the path and collect your stars.",
+  "hero_fig": {"type": "forces", "obj": "car", "ground": true, "arrows": [{"dir": "right", "size": 6, "label": "push"}, {"dir": "left", "size": 3, "label": "friction"}]},
+  "units": [
+    {
+      "slug": "what-is-a-force",
+      "title": "What is a force?",
+      "blurb": "Pushes, pulls, and what forces can do.",
+      "learn": [
+        {"h": "Pushes and pulls", "p": "A **force** is a push or a pull. You can't see a force, but you can see what it does. We draw forces as arrows: the arrow points the way the force acts.", "fig": {"type": "forces", "obj": "box", "ground": true, "arrows": [{"dir": "right", "size": 5, "label": "push"}]}},
+        {"h": "What forces can do", "p": "A force can make something **start moving**, **speed up**, **slow down**, **stop**, **change direction** or **change shape** (like squashing a sponge)."},
+        {"h": "Measuring forces", "p": "Forces are measured in **newtons**, written **N**, named after the scientist Isaac Newton. You can measure a force with a **force meter** (also called a newton meter). It has a spring inside that stretches more when the pull is bigger."}
+      ],
+      "questions": [
+        {"type": "mc", "q": "What is a force?", "options": ["A push or a pull", "A type of material", "How fast something is moving", "Something only scientists can feel"], "answer": 0, "hint": "Think about what you do to a door to open or close it.", "explain": "A force is a push or a pull. Opening a door is a pull or a push: a force."},
+        {"type": "mc", "q": "What unit are forces measured in?", "options": ["Newtons (N)", "Kilograms (kg)", "Metres (m)", "Seconds (s)"], "answer": 0, "hint": "The unit is named after a famous scientist.", "explain": "Forces are measured in newtons (N), after Isaac Newton."},
+        {"type": "mc", "q": "Kicking a football is an example of a…", "options": ["Push", "Pull"], "answer": 0, "hint": "Does your foot move the ball away from you or towards you?", "explain": "Your foot pushes the ball away from you, so it's a push."},
+        {"type": "mc", "q": "Opening a drawer towards you is an example of a…", "options": ["Pull", "Push"], "answer": 0, "hint": "Is the drawer coming towards you or going away?", "explain": "You bring the drawer towards you, so it's a pull."},
+        {"type": "mc", "q": "Which of these can a force **not** do?", "options": ["Change the colour of an object", "Change the shape of an object", "Make an object speed up", "Change the direction an object is moving"], "answer": 0, "hint": "Think about squashing, throwing and kicking. Which one is left over?", "explain": "Forces can change how something moves and its shape, but pushing or pulling doesn't change its colour."},
+        {"type": "mc", "q": "Which tool do we use to measure a force?", "options": ["A force meter", "A thermometer", "A ruler", "A measuring jug"], "answer": 0, "hint": "Its other name is a newton meter.", "explain": "A force meter (newton meter) measures forces in newtons. It has a spring that stretches more when the force is bigger."},
+        {"type": "mc", "q": "You squeeze a ball of modelling clay. What does the force change?", "options": ["Its shape", "Its colour", "What it is made of"], "answer": 0, "hint": "What does the clay look like after you squeeze it?", "explain": "Squeezing changes the clay's shape. It is still the same clay, with the same colour."},
+        {"type": "mc", "q": "A ball is rolling along. A player heads it upwards. What does the force do to the ball?", "fig": {"type": "forces", "obj": "ball", "arrows": [{"dir": "up", "size": 5, "label": "header"}]}, "options": ["It changes the direction the ball moves", "It makes the ball heavier", "Nothing"], "answer": 0, "hint": "Where was the ball going before, and where does it go after?", "explain": "The push from the player's head changes the ball's direction, sending it upwards."}
+      ]
+    },
+    {
+      "slug": "gravity-and-weight",
+      "title": "Gravity and weight",
+      "blurb": "Why things fall, and the difference between mass and weight.",
+      "learn": [
+        {"h": "Gravity", "p": "**Gravity** is a pulling force. The Earth's gravity pulls everything towards the centre of the Earth. That's why a dropped ball falls down.", "fig": {"type": "forces", "obj": "ball", "arrows": [{"dir": "down", "size": 5, "label": "gravity"}]}},
+        {"h": "Mass and weight", "p": "**Mass** is how much matter (stuff) is in an object. It is measured in **kilograms (kg)**.\n**Weight** is the force of gravity pulling on that mass. Weight is a force, so it is measured in **newtons (N)**."},
+        {"h": "Working out weight", "p": "On Earth, gravity pulls on every kilogram with a force of about **10 N** (more exactly 9.8 N). So:\n**weight (N) = mass (kg) × 10**\nA 3 kg bag weighs about 3 × 10 = 30 N."},
+        {"h": "On the Moon", "p": "The Moon's gravity is weaker: about 1.6 N for every kilogram. An astronaut's **mass** stays the same on the Moon, but their **weight** is about 6 times smaller. That's why astronauts can bounce so high!"}
+      ],
+      "questions": [
+        {"type": "mc", "q": "Which way does the Earth's gravity pull you?", "options": ["Towards the centre of the Earth", "Up into space", "Sideways", "It doesn't pull you at all"], "answer": 0, "hint": "When you drop something, which way does it go?", "explain": "Gravity pulls everything towards the centre of the Earth, which we call \"down\"."},
+        {"type": "mc", "q": "Mass is measured in…", "options": ["Kilograms (kg)", "Newtons (N)", "Metres (m)", "Litres (l)"], "answer": 0, "hint": "You use this unit when you weigh flour for a cake.", "explain": "Mass is measured in kilograms (kg). (Everyday scales say \"weight\", but they really measure mass.)"},
+        {"type": "mc", "q": "Weight is measured in…", "options": ["Newtons (N)", "Kilograms (kg)", "Metres (m)", "Seconds (s)"], "answer": 0, "hint": "Weight is a force. What are forces measured in?", "explain": "Weight is the force of gravity on an object, and forces are measured in newtons (N)."},
+        {"type": "num", "q": "Using 10 N for every kilogram, what is the weight of a 5 kg bag of potatoes on Earth?", "answer": "50", "unit": "N", "hint": "weight = mass × 10", "explain": "5 kg × 10 = 50 N."},
+        {"type": "num", "q": "A dog has a mass of 12 kg. What is its weight on Earth? (Use 10 N for every kg.)", "answer": "120", "unit": "N", "hint": "Multiply the mass by 10.", "explain": "12 × 10 = 120 N."},
+        {"type": "num", "q": "A suitcase weighs 200 N on Earth. What is its mass? (Use 10 N for every kg.)", "answer": "20", "unit": "kg", "hint": "This time go backwards: divide the weight by 10.", "explain": "mass = weight ÷ 10 = 200 ÷ 10 = 20 kg."},
+        {"type": "mc", "q": "An astronaut has a mass of 70 kg on Earth. She travels to the Moon. What is her mass on the Moon?", "options": ["70 kg", "Less than 70 kg", "More than 70 kg", "0 kg"], "answer": 0, "hint": "Mass is the amount of stuff in her body. Does that change when she travels?", "explain": "Her mass stays 70 kg: she is made of the same amount of stuff. Her **weight** is smaller on the Moon, because the Moon's gravity is weaker."},
+        {"type": "mc", "q": "On the Moon there is no air. An astronaut drops a hammer and a feather from the same height at the same time. What happens?", "options": ["They land at the same time", "The hammer lands first", "The feather lands first"], "answer": 0, "hint": "On Earth, the feather is slowed down by air. What is missing on the Moon?", "explain": "With no air resistance, everything falls at the same rate. Astronaut David Scott did this on the Moon in 1971, and they landed together."}
+      ]
+    },
+    {
+      "slug": "friction",
+      "title": "Friction and air resistance",
+      "blurb": "The forces that slow things down.",
+      "learn": [
+        {"h": "Friction", "p": "**Friction** is a force between two surfaces that slide (or try to slide) over each other. It always acts **against** the movement.", "fig": {"type": "forces", "obj": "box", "ground": true, "arrows": [{"dir": "right", "size": 6, "label": "push"}, {"dir": "left", "size": 3, "label": "friction"}]}},
+        {"h": "Rough and smooth", "p": "Rough surfaces, like carpet or sandpaper, make **more** friction. Smooth surfaces, like ice, make **less** friction. That's why it's easy to slip on ice."},
+        {"h": "Air and water resistance", "p": "**Air resistance** and **water resistance** are kinds of friction. They push against things moving through air or water. **Streamlined** shapes, like a fish, a dolphin or a racing car, have less resistance.", "fig": {"type": "forces", "obj": "car", "ground": true, "arrows": [{"dir": "right", "size": 6, "label": "driving force"}, {"dir": "left", "size": 3, "label": "air resistance"}]}},
+        {"h": "Helpful or a nuisance?", "p": "Friction is useful: it lets your shoes grip the ground and lets brakes stop a bike. But it also slows machines down and wears things out, so we use oil and wheels to reduce it."}
+      ],
+      "questions": [
+        {"type": "mc", "q": "A box is pushed to the right along the floor. Which way does friction act on the box?", "fig": {"type": "forces", "obj": "box", "ground": true, "arrows": [{"dir": "right", "size": 5, "label": "push"}]}, "options": ["To the left, against the movement", "To the right, with the movement", "Upwards"], "answer": 0, "hint": "Friction always tries to stop things sliding.", "explain": "Friction acts against the movement. The box moves right, so friction acts to the left."},
+        {"type": "mc", "q": "A toy car is pushed with the same force on four surfaces. On which one will it roll the furthest?", "options": ["Ice", "Carpet", "Grass", "Sand"], "answer": 0, "hint": "Which surface is the smoothest?", "explain": "Ice is the smoothest, so it gives the least friction. The car slows down least and goes furthest."},
+        {"type": "mc", "q": "Why do football boots have studs?", "options": ["To increase friction so players don't slip", "To reduce friction so players can slide", "To make the boots heavier"], "answer": 0, "hint": "Think about running on wet grass.", "explain": "Studs grip the ground and increase friction, so players don't slip when they run and turn."},
+        {"type": "mc", "q": "Which shape has the least air resistance when it moves?", "options": ["A pointed, streamlined shape", "A flat sheet facing forwards", "An open umbrella", "A big cardboard box"], "answer": 0, "hint": "Think about the shape of a racing car or a fast bird.", "explain": "A streamlined shape lets air flow around it smoothly, so it has the least air resistance."},
+        {"type": "mc", "q": "Why does a parachute slow a skydiver down?", "options": ["Its large surface causes a lot of air resistance", "It makes the skydiver lighter", "It switches gravity off"], "answer": 0, "hint": "A parachute is very big. What does a big surface do as it moves through air?", "explain": "The big canopy pushes against lots of air, making a large air resistance force upwards. Gravity still pulls, but the skydiver falls much more slowly."},
+        {"type": "mc", "q": "Which of these is an example of friction being **useful**?", "options": ["Brakes stopping a bicycle", "A machine part wearing out", "The soles of shoes getting worn down"], "answer": 0, "hint": "Which one is something we want to happen?", "explain": "Brakes use friction to slow the wheels and stop the bike. The other two are friction being a nuisance."},
+        {"type": "mc", "q": "A bike chain is squeaky and stiff. What can you put on it to reduce friction?", "options": ["Oil", "Sand", "Glue", "Mud"], "answer": 0, "hint": "What do mechanics use to make machine parts slide easily?", "explain": "Oil makes the surfaces slippery, so they slide past each other with less friction."},
+        {"type": "mc", "q": "Why is a fish's body streamlined?", "options": ["So there is less water resistance and it can swim easily", "So it floats higher", "So it is heavier"], "answer": 0, "hint": "Think about which force acts against things moving through water.", "explain": "A streamlined body lets water flow around it smoothly, so there is less water resistance."}
+      ]
+    },
+    {
+      "slug": "balanced-and-unbalanced-forces",
+      "title": "Balanced and unbalanced forces",
+      "blurb": "Work out the resultant force and what happens next.",
+      "learn": [
+        {"h": "Balanced forces", "p": "When two forces are the **same size** and act in **opposite** directions, they are **balanced**. Balanced forces don't change how something moves: if it is still, it stays still; if it is moving, it keeps going at the **same speed** in the **same direction**.", "fig": {"type": "forces", "obj": "box", "ground": true, "arrows": [{"dir": "left", "size": 4, "label": "4 N"}, {"dir": "right", "size": 4, "label": "4 N"}]}},
+        {"h": "Unbalanced forces", "p": "If the forces are not balanced, there is a **resultant force**. An unbalanced force makes an object **speed up**, **slow down** or **change direction**.", "fig": {"type": "forces", "obj": "box", "ground": true, "arrows": [{"dir": "left", "size": 3, "label": "3 N"}, {"dir": "right", "size": 7, "label": "7 N"}]}},
+        {"h": "Working out the resultant force", "p": "Forces in **opposite** directions: take the smaller one away from the bigger one. 7 N to the right and 3 N to the left gives a resultant force of 7 − 3 = **4 N to the right**.\nForces in the **same** direction: add them together."},
+        {"h": "Floating", "p": "A floating boat has balanced forces. Its weight pulls it down, and the water pushes it up with the same size of force. This upward push is called **upthrust**.", "fig": {"type": "forces", "obj": "boat", "water": true, "arrows": [{"dir": "up", "size": 4, "label": "upthrust"}, {"dir": "down", "size": 4, "label": "weight"}]}}
+      ],
+      "questions": [
+        {"type": "mc", "q": "Are these forces balanced or unbalanced?", "fig": {"type": "forces", "obj": "box", "ground": true, "arrows": [{"dir": "left", "size": 5, "label": "5 N"}, {"dir": "right", "size": 5, "label": "5 N"}]}, "options": ["Balanced", "Unbalanced"], "answer": 0, "hint": "Are the two forces the same size? Do they point in opposite directions?", "explain": "5 N left and 5 N right are the same size and opposite, so they are balanced. The resultant force is 0 N."},
+        {"type": "num", "q": "These are the only forces acting sideways on the box. What is the resultant force? Type the number of newtons.", "fig": {"type": "forces", "obj": "box", "ground": true, "arrows": [{"dir": "left", "size": 3, "label": "3 N"}, {"dir": "right", "size": 8, "label": "8 N"}]}, "answer": "5", "unit": "N", "hint": "The forces are opposite. Take the smaller from the bigger.", "explain": "8 N − 3 N = 5 N, to the right."},
+        {"type": "mc", "q": "Look at the same box. It starts still. Which way will it start to move?", "fig": {"type": "forces", "obj": "box", "ground": true, "arrows": [{"dir": "left", "size": 3, "label": "3 N"}, {"dir": "right", "size": 8, "label": "8 N"}]}, "options": ["To the right", "To the left", "It won't move"], "answer": 0, "hint": "Which way does the bigger force point?", "explain": "The resultant force is 5 N to the right, so the box starts moving to the right."},
+        {"type": "num", "q": "Two children push a heavy box in the same direction. One pushes with 30 N and the other with 20 N. What is the total (resultant) force from the two children? Type the number of newtons.", "answer": "50", "unit": "N", "hint": "When forces point the same way, add them.", "explain": "30 N + 20 N = 50 N."},
+        {"type": "mc", "q": "A car is moving along a road. Its driving force is exactly the same size as the friction and air resistance against it. What happens to the car?", "fig": {"type": "forces", "obj": "car", "ground": true, "arrows": [{"dir": "left", "size": 5, "label": "resistance"}, {"dir": "right", "size": 5, "label": "driving force"}]}, "options": ["It keeps moving at the same speed", "It speeds up", "It slows down and stops"], "answer": 0, "hint": "The forces are balanced. What do balanced forces do to something that is already moving?", "explain": "Balanced forces don't change the motion. The car is already moving, so it keeps going at the same speed. (Many people think it must slow down, but it doesn't!)"},
+        {"type": "mc", "q": "A boat is floating still on a lake. How does the upthrust compare with the boat's weight?", "fig": {"type": "forces", "obj": "boat", "water": true, "arrows": [{"dir": "up", "size": 4, "label": "upthrust"}, {"dir": "down", "size": 4, "label": "weight"}]}, "options": ["They are the same size", "The upthrust is bigger", "The weight is bigger"], "answer": 0, "hint": "The boat is not moving up or down. Are the forces balanced?", "explain": "The boat stays at the same level, so the forces are balanced: upthrust = weight."},
+        {"type": "num", "q": "Tug of war! Team A pulls to the left with 500 N. Team B pulls to the right with 450 N. What is the resultant force? Type the number of newtons.", "answer": "50", "unit": "N", "hint": "The teams pull in opposite directions.", "explain": "500 N − 450 N = 50 N, to the left."},
+        {"type": "mc", "q": "In that tug of war (Team A 500 N left, Team B 450 N right), which way does the rope move?", "options": ["Towards Team A", "Towards Team B", "It doesn't move"], "answer": 0, "hint": "The resultant force is to the left. Which team is on the left?", "explain": "The resultant force of 50 N is to the left, towards Team A, so Team A pulls the rope their way."},
+        {"type": "mc", "q": "A skydiver jumps out of a plane. At first, her weight is much bigger than the air resistance on her. What happens?", "options": ["She speeds up", "She falls at a steady speed", "She slows down"], "answer": 0, "hint": "The forces are unbalanced, and the bigger force points down.", "explain": "The resultant force is downwards, so she speeds up. As she gets faster, air resistance grows, until it balances her weight and she falls at a steady speed."}
+      ]
+    },
+    {
+      "slug": "speed",
+      "title": "Speed",
+      "blurb": "How fast? Use distance and time to find out.",
+      "learn": [
+        {"h": "What is speed?", "p": "Speed tells you how far something travels in a certain time. A speed of 5 metres per second (**5 m/s**) means it travels 5 metres every second."},
+        {"h": "The speed formula", "p": "**speed = distance ÷ time**\nA car that travels 100 m in 20 s has a speed of 100 ÷ 20 = **5 m/s**.", "fig": {"type": "journey", "distance": "100 m", "time": "20 s", "obj": "car"}},
+        {"h": "Units", "p": "Distance in metres and time in seconds → speed in **m/s** (metres per second).\nDistance in kilometres and time in hours → speed in **km/h** (kilometres per hour)."},
+        {"h": "Finding distance or time", "p": "You can turn the formula around:\n**distance = speed × time**\n**time = distance ÷ speed**"}
+      ],
+      "questions": [
+        {"type": "num", "q": "What is the speed of the runner? Type the number of metres per second.", "fig": {"type": "journey", "distance": "60 m", "time": "10 s", "obj": "person"}, "answer": "6", "unit": "m/s", "hint": "speed = distance ÷ time", "explain": "60 m ÷ 10 s = 6 m/s."},
+        {"type": "num", "q": "A cyclist travels 150 m in 30 s. What is her speed?", "answer": "5", "unit": "m/s", "hint": "Divide the distance by the time.", "explain": "150 ÷ 30 = 5 m/s."},
+        {"type": "num", "q": "A train travels 240 km in 2 hours. What is its average speed?", "answer": "120", "unit": "km/h", "hint": "Distance in km ÷ time in hours.", "explain": "240 ÷ 2 = 120 km/h. It's an average, because the train speeds up and slows down along the way."},
+        {"type": "mc", "q": "Which of these is a unit of speed?", "options": ["m/s", "kg", "N", "m"], "answer": 0, "hint": "Speed is a distance divided by a time.", "explain": "m/s means metres per second: a distance divided by a time. kg is for mass, N is for force and m is for distance."},
+        {"type": "num", "q": "A runner runs at 8 m/s for 10 s. How far does she run?", "answer": "80", "unit": "m", "hint": "distance = speed × time", "explain": "8 × 10 = 80 m."},
+        {"type": "num", "q": "A car travels at 30 m/s. How long does it take to travel 600 m?", "answer": "20", "unit": "s", "hint": "time = distance ÷ speed", "explain": "600 ÷ 30 = 20 s."},
+        {"type": "mc", "q": "Ali runs 100 m in 20 s. Ben runs 100 m in 16 s. Who is faster?", "options": ["Ben", "Ali", "They are just as fast"], "answer": 0, "hint": "They run the same distance. Who takes less time?", "explain": "Ben takes less time for the same distance, so he is faster. Ali: 100 ÷ 20 = 5 m/s. Ben: 100 ÷ 16 = 6.25 m/s."},
+        {"type": "num", "q": "Challenge: a cheetah can sprint 120 m in 4 s. What is its speed?", "answer": "30", "unit": "m/s", "hint": "Divide 120 by 4.", "explain": "120 ÷ 4 = 30 m/s. That's over 100 km/h: cheetahs are the fastest land animals!"}
+      ]
+    },
+    {
+      "slug": "magnets",
+      "title": "Magnets",
+      "blurb": "Attract, repel, and which materials are magnetic.",
+      "learn": [
+        {"h": "A force without touching", "p": "Magnets can push or pull some objects **without touching** them. A bar magnet has two ends called **poles**: a north pole (N) and a south pole (S)."},
+        {"h": "Attract or repel?", "p": "**Opposite poles attract**: N and S pull together.\n**Like poles repel**: N and N push apart, and so do S and S.", "fig": {"type": "magnets", "left": "NS", "right": "NS"}},
+        {"h": "Magnetic materials", "p": "Only a few metals are magnetic: **iron**, **nickel** and **cobalt**, and **steel**, which is mostly iron. Most other metals, like aluminium, copper and gold, are **not** magnetic. Wood, plastic and glass are not magnetic either."},
+        {"h": "Magnets in real life", "p": "A compass needle is a tiny magnet. It points north because the Earth acts like a giant magnet. Recycling centres use huge magnets to pull steel cans out from aluminium cans."}
+      ],
+      "questions": [
+        {"type": "mc", "q": "Will these two magnets attract or repel?", "fig": {"type": "magnets", "left": "NS", "right": "NS"}, "options": ["Attract", "Repel"], "answer": 0, "hint": "Look at the two poles that face each other in the middle.", "explain": "The S pole of the first magnet faces the N pole of the second. Opposite poles attract."},
+        {"type": "mc", "q": "Will these two magnets attract or repel?", "fig": {"type": "magnets", "left": "NS", "right": "SN"}, "options": ["Repel", "Attract"], "answer": 0, "hint": "Which poles face each other in the middle?", "explain": "S faces S. Like poles repel, so the magnets push apart."},
+        {"type": "mc", "q": "Will these two magnets attract or repel?", "fig": {"type": "magnets", "left": "SN", "right": "NS"}, "options": ["Repel", "Attract"], "answer": 0, "hint": "Look closely at the middle.", "explain": "N faces N. Like poles repel."},
+        {"type": "mc", "q": "Which of these is attracted to a magnet?", "options": ["An iron nail", "An aluminium can", "A plastic ruler", "A wooden spoon"], "answer": 0, "hint": "Remember the magnetic metals: iron, nickel and cobalt.", "explain": "Iron is magnetic, so the nail is attracted. Aluminium, plastic and wood are not magnetic."},
+        {"type": "mc", "q": "Which metal is **not** magnetic?", "options": ["Aluminium", "Iron", "Nickel", "Cobalt"], "answer": 0, "hint": "Three of these are the magnetic metals.", "explain": "Iron, nickel and cobalt are magnetic. Aluminium is a metal, but it is not magnetic."},
+        {"type": "mc", "q": "Can a magnet attract a paper clip through a sheet of paper?", "options": ["Yes: magnetic forces can act through thin materials like paper", "No: the magnet has to touch the paper clip"], "answer": 0, "hint": "Think about fridge magnets holding up a drawing.", "explain": "Magnetic forces work without touching and can pass through thin materials like paper. That's how fridge magnets hold up pictures."},
+        {"type": "mc", "q": "A recycling centre uses a giant magnet to sort cans. Which cans does the magnet pick up?", "options": ["Steel cans", "Aluminium cans", "Both kinds", "Neither"], "answer": 0, "hint": "Steel is mostly iron.", "explain": "Steel contains iron, so steel cans are attracted. Aluminium cans are left behind."},
+        {"type": "mc", "q": "Why does a compass needle point north?", "options": ["The Earth acts like a giant magnet, and the needle is a small magnet", "The wind pushes it north", "Gravity pulls it north"], "answer": 0, "hint": "What is a compass needle made of?", "explain": "The needle is a small magnet. The Earth behaves like a giant magnet, so the needle lines up and points north."}
+      ]
+    }
+  ]
+}

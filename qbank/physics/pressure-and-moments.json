@@ -1,0 +1,237 @@
+{
+ "slug": "pressure-and-moments",
+ "title": "Pressure and moments",
+ "ks3": "Motion and forces: pressure on surfaces, pressure in liquids and gases, and moments",
+ "art": "pressure",
+ "intro": "Why snowshoes work, why dams are thick at the bottom and how a see-saw balances. Practise pressure = force ÷ area, pressure in fluids and moments.",
+ "description": "Free KS3 Physics pressure and moments questions with answers: pressure = force ÷ area, pressure in liquids and the atmosphere, moments, levers and balancing see-saws. Marked instantly, for ages 9 to 14.",
+ "subtopics": [
+  {
+   "slug": "solids",
+   "title": "Pressure on surfaces"
+  },
+  {
+   "slug": "fluids",
+   "title": "Pressure in liquids and gases"
+  },
+  {
+   "slug": "moments",
+   "title": "Moments"
+  }
+ ],
+ "questions": [
+  {
+   "id": "prm-01",
+   "sub": "solids",
+   "level": 1,
+   "type": "mc",
+   "q": "Why does a drawing pin have a sharp point?",
+   "options": [
+    "The tiny area makes a big pressure, so it pushes in easily",
+    "It makes the pin lighter",
+    "It makes the force smaller",
+    "It stops the pin from rusting"
+   ],
+   "answer": 0,
+   "hint": "Pressure = force ÷ area. What happens when the area is very small?",
+   "explain": "The same push on a tiny area gives a very big pressure, so the point goes into the board easily. The flat head spreads the force on your thumb."
+  },
+  {
+   "id": "prm-02",
+   "sub": "solids",
+   "level": 1,
+   "type": "mc",
+   "q": "Why do snowshoes stop you sinking into deep snow?",
+   "options": [
+    "They spread your weight over a bigger area, so the pressure is less",
+    "They make you lighter",
+    "They melt the snow",
+    "They push down harder on the snow"
+   ],
+   "answer": 0,
+   "hint": "Your weight stays the same. What changes?",
+   "explain": "Snowshoes have a big area, so your weight is spread out and the pressure on the snow is smaller."
+  },
+  {
+   "id": "prm-03",
+   "sub": "solids",
+   "level": 2,
+   "type": "num",
+   "q": "A box weighing 200 N rests on an area of 4 m². What pressure does it put on the floor? (pressure = force ÷ area)",
+   "answer": "50",
+   "unit": "N/m²",
+   "hint": "Divide the force by the area.",
+   "explain": "200 N ÷ 4 m² = 50 N/m² (50 pascals)."
+  },
+  {
+   "id": "prm-04",
+   "sub": "solids",
+   "level": 2,
+   "type": "num",
+   "q": "A force of 60 N pushes on an area of 3 m². What is the pressure?",
+   "answer": "20",
+   "unit": "N/m²",
+   "hint": "Pressure = force ÷ area.",
+   "explain": "60 N ÷ 3 m² = 20 N/m²."
+  },
+  {
+   "id": "prm-05",
+   "sub": "solids",
+   "level": 3,
+   "type": "num",
+   "q": "A person weighing 600 N stands on one foot. The foot has an area of 0.02 m². What pressure does it put on the floor?",
+   "answer": "30000",
+   "unit": "N/m²",
+   "hint": "Divide 600 by 0.02. Dividing by 0.02 is the same as multiplying by 50.",
+   "explain": "600 ÷ 0.02 = 30,000 N/m²."
+  },
+  {
+   "id": "prm-06",
+   "sub": "solids",
+   "level": 3,
+   "type": "num",
+   "q": "A pressure of 500 N/m² acts on an area of 2 m². What is the force?",
+   "answer": "1000",
+   "unit": "N",
+   "hint": "Force = pressure × area.",
+   "explain": "500 N/m² × 2 m² = 1000 N."
+  },
+  {
+   "id": "prm-07",
+   "sub": "fluids",
+   "level": 2,
+   "type": "mc",
+   "q": "What happens to the pressure in water as you go deeper?",
+   "options": [
+    "It increases",
+    "It decreases",
+    "It stays the same"
+   ],
+   "answer": 0,
+   "hint": "There is more water above you pushing down.",
+   "explain": "The deeper you go, the more water there is above you, so the pressure increases. That is why your ears hurt at the bottom of a deep pool."
+  },
+  {
+   "id": "prm-08",
+   "sub": "fluids",
+   "level": 2,
+   "type": "mc",
+   "q": "What happens to air pressure as you climb a high mountain?",
+   "options": [
+    "It decreases",
+    "It increases",
+    "It stays the same"
+   ],
+   "answer": 0,
+   "hint": "Is there more or less air above you at the top?",
+   "explain": "Higher up there is less air above you pushing down, so the air pressure decreases."
+  },
+  {
+   "id": "prm-09",
+   "sub": "fluids",
+   "level": 3,
+   "type": "mc",
+   "q": "Why is a dam built much thicker at the bottom than at the top?",
+   "options": [
+    "The water pressure is much greater at the bottom",
+    "The water is warmer at the bottom",
+    "The top holds more water",
+    "To make the dam look nicer"
+   ],
+   "answer": 0,
+   "hint": "Think about how pressure changes with depth.",
+   "explain": "Water pressure increases with depth, so the bottom of the dam must be strongest to hold back the bigger push."
+  },
+  {
+   "id": "prm-10",
+   "sub": "moments",
+   "level": 1,
+   "type": "mc",
+   "q": "A moment is the turning effect of a force. What does the size of a moment depend on?",
+   "options": [
+    "The force and its distance from the pivot",
+    "Only the size of the force",
+    "Only the distance from the pivot",
+    "The colour of the lever"
+   ],
+   "answer": 0,
+   "hint": "Moment = force × distance.",
+   "explain": "Moment = force × perpendicular distance from the pivot. A bigger force or a bigger distance gives a bigger turning effect."
+  },
+  {
+   "id": "prm-11",
+   "sub": "moments",
+   "level": 2,
+   "type": "num",
+   "q": "A force of 20 N acts 3 m from a pivot. What is its moment? (moment = force × distance)",
+   "answer": "60",
+   "unit": "N m",
+   "hint": "Multiply the force by the distance.",
+   "explain": "20 N × 3 m = 60 N m (newton metres)."
+  },
+  {
+   "id": "prm-12",
+   "sub": "moments",
+   "level": 2,
+   "type": "mc",
+   "q": "Is this see-saw balanced?",
+   "options": [
+    "Yes, both moments are 60 N m",
+    "No, the left side goes down",
+    "No, the right side goes down"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "seesaw",
+    "left": [
+     "30 N",
+     2
+    ],
+    "right": [
+     "20 N",
+     3
+    ]
+   },
+   "hint": "Work out force × distance on each side.",
+   "explain": "Left: 30 N × 2 m = 60 N m. Right: 20 N × 3 m = 60 N m. The moments are equal, so it balances."
+  },
+  {
+   "id": "prm-13",
+   "sub": "moments",
+   "level": 3,
+   "type": "num",
+   "q": "The see-saw is balanced. How far from the pivot is the 20 N block?",
+   "answer": "3",
+   "unit": "m",
+   "fig": {
+    "type": "seesaw",
+    "left": [
+     "40 N",
+     1.5
+    ],
+    "right": [
+     "20 N",
+     "?"
+    ]
+   },
+   "hint": "When it balances, the moments on each side are equal.",
+   "explain": "Left moment: 40 N × 1.5 m = 60 N m. The right moment must also be 60 N m, so 20 N × distance = 60, and the distance is 3 m."
+  },
+  {
+   "id": "prm-14",
+   "sub": "moments",
+   "level": 3,
+   "type": "mc",
+   "q": "Why is it easier to open a door by pushing near the handle than near the hinge?",
+   "options": [
+    "The bigger distance from the hinge gives a bigger moment for the same force",
+    "The door is lighter near the handle",
+    "There is less friction near the handle",
+    "The hinge pushes back less"
+   ],
+   "answer": 0,
+   "hint": "The hinge is the pivot.",
+   "explain": "Moment = force × distance. Pushing far from the hinge gives a bigger turning effect with the same push."
+  }
+ ]
+}

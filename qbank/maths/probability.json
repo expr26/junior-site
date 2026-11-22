@@ -1,0 +1,214 @@
+{
+ "slug": "probability",
+ "title": "Probability",
+ "ks3": "Probability: the probability scale, single events, expected results and combined events",
+ "art": "probability",
+ "intro": "How likely is it? Practise probability words, the probability scale, working out probabilities as fractions and decimals, and expected results.",
+ "description": "Free KS3 Maths probability questions with answers: certain, likely and impossible, the 0 to 1 scale, probability of single events, expected outcomes and two events. Marked instantly, for ages 9 to 14.",
+ "subtopics": [
+  {
+   "slug": "words",
+   "title": "How likely?"
+  },
+  {
+   "slug": "single",
+   "title": "Working out probabilities"
+  },
+  {
+   "slug": "expect",
+   "title": "Expected results"
+  },
+  {
+   "slug": "combined",
+   "title": "Two events"
+  }
+ ],
+ "questions": [
+  {
+   "id": "prb-01",
+   "sub": "words",
+   "level": 1,
+   "type": "mc",
+   "q": "Which word best describes the chance that the Sun will rise tomorrow?",
+   "options": [
+    "Certain",
+    "Likely",
+    "Unlikely",
+    "Impossible"
+   ],
+   "answer": 0,
+   "hint": "Has there ever been a day when it didn't?",
+   "explain": "The Sun rises every day, so it is certain. Certain has a probability of 1."
+  },
+  {
+   "id": "prb-02",
+   "sub": "words",
+   "level": 1,
+   "type": "mc",
+   "q": "Rolling a 7 on an ordinary dice numbered 1 to 6 is…",
+   "options": [
+    "impossible",
+    "unlikely",
+    "an even chance",
+    "certain"
+   ],
+   "answer": 0,
+   "hint": "Which numbers are on the dice?",
+   "explain": "There is no 7 on the dice, so it can't happen: it is impossible, with a probability of 0."
+  },
+  {
+   "id": "prb-03",
+   "sub": "words",
+   "level": 1,
+   "type": "mc",
+   "q": "You flip a fair coin. The chance of getting heads is…",
+   "options": [
+    "an even chance",
+    "impossible",
+    "unlikely",
+    "certain"
+   ],
+   "answer": 0,
+   "hint": "There are two sides, and each is equally likely.",
+   "explain": "Heads and tails are equally likely, so heads has an even chance: a probability of {1/2}."
+  },
+  {
+   "id": "prb-04",
+   "sub": "single",
+   "level": 1,
+   "type": "num",
+   "q": "The spinner is spun once. What is the probability that it lands on red?",
+   "answer": "1/2",
+   "fig": {
+    "type": "spinner",
+    "sections": [
+     "red",
+     "red",
+     "blue",
+     "green"
+    ]
+   },
+   "hint": "Count the red sections and all the sections. Probability = red sections ÷ all sections.",
+   "explain": "2 of the 4 equal sections are red, so the probability is {2/4} = {1/2}."
+  },
+  {
+   "id": "prb-05",
+   "sub": "single",
+   "level": 2,
+   "type": "num",
+   "q": "This spinner is spun once. What is the probability that it lands on blue?",
+   "answer": "1/4",
+   "fig": {
+    "type": "spinner",
+    "sections": [
+     "red",
+     "blue",
+     "red",
+     "yellow",
+     "red",
+     "blue",
+     "green",
+     "red"
+    ]
+   },
+   "hint": "How many sections are blue? How many sections are there altogether?",
+   "explain": "2 of the 8 equal sections are blue, so the probability is {2/8} = {1/4}."
+  },
+  {
+   "id": "prb-06",
+   "sub": "single",
+   "level": 2,
+   "type": "num",
+   "q": "A fair dice is rolled. What is the probability of rolling a number greater than 4?",
+   "answer": "1/3",
+   "hint": "Which numbers on a dice are greater than 4?",
+   "explain": "5 and 6 are greater than 4: 2 out of 6 numbers. The probability is {2/6} = {1/3}."
+  },
+  {
+   "id": "prb-07",
+   "sub": "single",
+   "level": 2,
+   "type": "num",
+   "q": "A bag has 3 red, 5 blue and 2 green counters. One counter is taken at random. What is the probability that it is blue?",
+   "answer": "1/2",
+   "hint": "How many counters are there altogether?",
+   "explain": "There are 3 + 5 + 2 = 10 counters and 5 are blue, so the probability is {5/10} = {1/2}."
+  },
+  {
+   "id": "prb-08",
+   "sub": "single",
+   "level": 3,
+   "type": "num",
+   "q": "The same bag has 3 red, 5 blue and 2 green counters. What is the probability that the counter taken is not green?",
+   "answer": "4/5",
+   "hint": "How many counters are not green?",
+   "explain": "8 of the 10 counters are not green, so the probability is {8/10} = {4/5}. (Or: 1 − {2/10} = {8/10}.)"
+  },
+  {
+   "id": "prb-09",
+   "sub": "single",
+   "level": 2,
+   "type": "num",
+   "q": "The probability that it will rain tomorrow is 0.3. What is the probability that it will not rain?",
+   "answer": "0.7",
+   "hint": "It either rains or it doesn't, so the two probabilities add up to 1.",
+   "explain": "1 − 0.3 = 0.7."
+  },
+  {
+   "id": "prb-10",
+   "sub": "expect",
+   "level": 2,
+   "type": "mc",
+   "q": "A fair coin has landed on heads 5 times in a row. What is the probability of heads on the next flip?",
+   "options": [
+    "{1/2}",
+    "Less than {1/2}",
+    "More than {1/2}",
+    "0"
+   ],
+   "answer": 0,
+   "hint": "Does the coin remember what happened before?",
+   "explain": "Each flip is independent: the coin has no memory. The probability of heads is still {1/2}."
+  },
+  {
+   "id": "prb-11",
+   "sub": "expect",
+   "level": 3,
+   "type": "num",
+   "q": "A fair coin is flipped 200 times. About how many heads would you expect?",
+   "answer": "100",
+   "hint": "The probability of heads is {1/2}.",
+   "explain": "{1/2} × 200 = 100 heads. The real result will probably be close to 100, but not exactly."
+  },
+  {
+   "id": "prb-12",
+   "sub": "expect",
+   "level": 3,
+   "type": "num",
+   "q": "The probability that a spinner lands on 5 is 0.15. It is spun 60 times. How many times would you expect it to land on 5?",
+   "answer": "9",
+   "hint": "Expected number = probability × number of spins.",
+   "explain": "0.15 × 60 = 9 times."
+  },
+  {
+   "id": "prb-13",
+   "sub": "combined",
+   "level": 3,
+   "type": "num",
+   "q": "You flip a coin and roll a dice numbered 1 to 6. How many different outcomes are possible (like heads and 3)?",
+   "answer": "12",
+   "hint": "List them, or multiply the number of outcomes for each.",
+   "explain": "The coin has 2 outcomes and the dice has 6, so there are 2 × 6 = 12 outcomes: H1, H2, …, H6, T1, …, T6."
+  },
+  {
+   "id": "prb-14",
+   "sub": "combined",
+   "level": 3,
+   "type": "num",
+   "q": "Two fair coins are flipped. What is the probability of getting two heads?",
+   "answer": "1/4",
+   "hint": "List all the outcomes: HH, HT, …",
+   "explain": "The outcomes are HH, HT, TH and TT. Only 1 of the 4 is two heads, so the probability is {1/4}."
+  }
+ ]
+}

@@ -812,3 +812,148 @@ def fig_circuit(kind="series", bulbs=2, readings=(), switch=False, **_):
 
 
 topics.EXTRA_FIGS.update({"rect": fig_rect, "cuboid": fig_cuboid, "circuit": fig_circuit})
+
+
+# ---------- batch 6: probability, statistics, pressure and moments, particles, space ----------
+def art_probability():
+    cols = (P, TEAL, ORANGE, PINK)
+    spin = "".join(f'<path d="M150 104 L{150 + 52 * math.cos(math.radians(90 * k - 90)):.1f} {104 + 52 * math.sin(math.radians(90 * k - 90)):.1f} '
+                   f'A52 52 0 0 1 {150 + 52 * math.cos(math.radians(90 * k)):.1f} {104 + 52 * math.sin(math.radians(90 * k)):.1f} Z" fill="{c}" stroke="{INK}" stroke-width="3"/>' for k, c in enumerate(cols))
+    return _svg(
+        spin + f'<path d="M150 104 L176 74" stroke="{INK}" stroke-width="5" stroke-linecap="round"/><circle cx="150" cy="104" r="7" fill="{SUN}" stroke="{INK}" stroke-width="3"/>'
+        f'<g transform="rotate(-14 62 150)"><rect x="34" y="122" width="56" height="56" rx="12" fill="#fff" stroke="{INK}" stroke-width="3.5"/>'
+        + "".join(f'<circle cx="{x}" cy="{y}" r="5" fill="{INK}"/>' for x, y in ((48, 136), (76, 136), (48, 164), (76, 164), (62, 150)))
+        + f'</g><circle cx="56" cy="62" r="24" fill="{SUN}" stroke="#B9792F" stroke-width="4"/><text x="56" y="70" text-anchor="middle" font-size="22" font-weight="700" fill="#B9792F" font-family="Fredoka,Trebuchet MS,sans-serif">£</text>'
+        + _sparkles((214, 36, 7, SUN), (210, 180, 5, P)),
+        "A spinner with four colours, a dice showing five and a coin")
+
+
+def art_statistics():
+    bars = "".join(f'<rect x="{40 + 30 * k}" y="{160 - v}" width="22" height="{v}" rx="3" fill="{c}" stroke="{INK}" stroke-width="2.5"/>'
+                   for k, (v, c) in enumerate(((50, P), (90, TEAL), (70, ORANGE), (110, PINK))))
+    return _svg(
+        f'<path d="M30 40 V160 H160" fill="none" stroke="{INK}" stroke-width="3.5"/>{bars}'
+        f'<circle cx="190" cy="70" r="30" fill="{SUN}" stroke="{INK}" stroke-width="3"/>'
+        f'<path d="M190 70 L190 40 A30 30 0 0 1 216 85 Z" fill="{P}" stroke="{INK}" stroke-width="3"/>'
+        f'<path d="M190 70 L216 85 A30 30 0 0 1 170 92 Z" fill="{TEAL}" stroke="{INK}" stroke-width="3"/>'
+        f'<g font-family="Fredoka,Trebuchet MS,sans-serif" font-weight="700"><rect x="168" y="128" width="58" height="32" rx="10" fill="{P}"/>'
+        f'<text x="197" y="150" text-anchor="middle" font-size="16" fill="#fff">mean</text></g>'
+        + _sparkles((40, 26, 6, SUN), (220, 186, 5, TEAL)),
+        "A bar chart, a pie chart and a label saying mean")
+
+
+def art_pressure():
+    return _svg(
+        f'<path d="M120 148 L100 178 H140 Z" fill="{TEAL}" stroke="{INK}" stroke-width="3" stroke-linejoin="round"/>'
+        f'<g transform="rotate(-8 120 146)"><rect x="24" y="140" width="192" height="10" rx="4" fill="{ORANGE}" stroke="{INK}" stroke-width="3"/>'
+        f'<rect x="36" y="104" width="36" height="36" rx="4" fill="{P}" stroke="{INK}" stroke-width="3"/><text x="54" y="128" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">10 N</text>'
+        f'<rect x="170" y="116" width="26" height="24" rx="4" fill="{PINK}" stroke="{INK}" stroke-width="3"/></g>'
+        # drawing pin
+        + f'<g transform="rotate(20 180 54)"><ellipse cx="180" cy="40" rx="22" ry="8" fill="#E5484D" stroke="{INK}" stroke-width="3"/>'
+          f'<rect x="174" y="40" width="12" height="16" fill="#E5484D" stroke="{INK}" stroke-width="3"/><path d="M180 56 V84" stroke="#8A94A6" stroke-width="3"/></g>'
+        + f'<g stroke="{TEAL}" stroke-width="4" fill="none"><path d="M30 40 h50 M30 54 h50 M30 68 h50"/></g><path d="M86 54 l-8 -6 v12 Z" fill="{TEAL}"/>'
+        + _sparkles((120, 30, 6, SUN), (222, 120, 5, P)),
+        "A see-saw balancing a heavy block and a light block, and a drawing pin")
+
+
+def art_particles():
+    def box(x, kind):
+        out = f'<rect x="{x}" y="70" width="60" height="70" rx="8" fill="#fff" stroke="{INK}" stroke-width="3"/>'
+        if kind == "s":
+            out += "".join(f'<circle cx="{x + 12 + 12 * i}" cy="{86 + 12 * j}" r="5.5" fill="{BLUE}"/>' for i in range(4) for j in range(5))
+        elif kind == "l":
+            pts = ((12, 120), (24, 124), (36, 118), (48, 126), (16, 108), (30, 104), (44, 110), (20, 132), (40, 134), (52, 112), (10, 94), (26, 92))
+            out += "".join(f'<circle cx="{x + a}" cy="{b}" r="5.5" fill="{TEAL}"/>' for a, b in pts)
+        else:
+            pts = ((14, 84), (44, 92), (26, 116), (50, 128), (12, 132))
+            out += "".join(f'<circle cx="{x + a}" cy="{b}" r="5.5" fill="{PINK}"/><path d="M{x + a + 8} {b} l8 -4" stroke="{PINK}" stroke-width="2"/>' for a, b in pts)
+        return out
+    return _svg(
+        box(16, "s") + box(90, "l") + box(164, "g")
+        + f'<g font-family="Fredoka,Trebuchet MS,sans-serif" font-weight="700" font-size="14" fill="{INK}" text-anchor="middle">'
+          f'<text x="46" y="160">solid</text><text x="120" y="160">liquid</text><text x="194" y="160">gas</text></g>'
+        + f'<path d="M78 104 h8 M152 104 h8" stroke="{ORANGE}" stroke-width="4" stroke-linecap="round"/>'
+        + _sparkles((30, 40, 7, SUN), (210, 40, 6, P)),
+        "Particles in a solid (packed in rows), a liquid (close but jumbled) and a gas (far apart and fast)")
+
+
+def art_space():
+    stars = "".join(f'<circle cx="{x}" cy="{y}" r="2" fill="{SUN}"/>' for x, y in ((40, 40), (200, 30), (210, 160), (30, 150), (120, 20), (170, 190)))
+    return _svg(
+        f'<circle cx="120" cy="104" r="86" fill="#1E1B3A"/>{stars}'
+        f'<ellipse cx="120" cy="104" rx="70" ry="30" fill="none" stroke="#8F78FF" stroke-width="2" stroke-dasharray="4 5"/>'
+        f'<circle cx="120" cy="104" r="22" fill="{SUN}" stroke="{ORANGE}" stroke-width="4"/>'
+        f'<circle cx="182" cy="116" r="13" fill="{BLUE}" stroke="#fff" stroke-width="2"/><path d="M176 110 q6 4 4 10 q6 -2 8 2" fill="#3BB273"/>'
+        f'<circle cx="200" cy="96" r="5" fill="#C9D1DE"/>'
+        f'<circle cx="62" cy="88" r="10" fill="#E5484D"/>'
+        + _sparkles((54, 160, 6, "#fff"), (196, 50, 6, "#fff")),
+        "The Sun in the middle, the Earth and Moon going round it, and stars")
+
+
+ART.update({"probability": art_probability, "statistics": art_statistics, "pressure": art_pressure, "particles": art_particles, "space": art_space})
+
+
+def fig_spinner(sections, **_):
+    """A spinner with equal sections; sections: list of colour names (red, blue, green, yellow)."""
+    col = {"red": "#E5484D", "blue": "#3B82F6", "green": "#22A06B", "yellow": "#FFC93C"}
+    n, r, c = len(sections), 80, 92
+    g = []
+    for k, s in enumerate(sections):
+        a0, a1 = 2 * math.pi * k / n - math.pi / 2, 2 * math.pi * (k + 1) / n - math.pi / 2
+        g.append(f'<path d="M{c} {c} L{c + r * math.cos(a0):.1f} {c + r * math.sin(a0):.1f} A{r} {r} 0 0 1 {c + r * math.cos(a1):.1f} {c + r * math.sin(a1):.1f} Z" '
+                 f'fill="{col[s]}" stroke="var(--navy)" stroke-width="3" stroke-linejoin="round"/>')
+        am = (a0 + a1) / 2
+        g.append(f'<text x="{c + 52 * math.cos(am):.1f}" y="{c + 52 * math.sin(am) + 5:.1f}" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">{s[0].upper()}</text>')
+    g.append(f'<path d="M{c} {c} L{c + 30} {c - 44}" stroke="var(--navy)" stroke-width="5" stroke-linecap="round"/><circle cx="{c}" cy="{c}" r="7" fill="var(--sun)" stroke="var(--navy)" stroke-width="3"/>')
+    counts = ", ".join(f"{sections.count(s)} {s}" for s in dict.fromkeys(sections))
+    return (f'<svg class="fig" viewBox="0 0 184 184" width="184" height="184" role="img" aria-label="A spinner with {n} equal sections: {counts}">{"".join(g)}</svg>')
+
+
+def fig_barchart(bars, step=2, ylabel="Number of students", **_):
+    """A bar chart. bars: [[label, value], ...]."""
+    top = max(v for _, v in bars)
+    top = step * math.ceil(top / step)
+    L, B, T, bw, gap = 50, 170, 16, 38, 18
+    W = L + len(bars) * (bw + gap) + 10
+    sy = (B - T) / top
+    g = []
+    v = 0
+    while v <= top:
+        y = B - v * sy
+        g.append(f'<path d="M{L} {y:.1f} H{W - 6}" stroke="var(--line)" stroke-width="1.5"/><text x="{L - 6}" y="{y + 5:.1f}" text-anchor="end" font-size="13" fill="var(--ink)">{v:g}</text>')
+        v += step
+    cols = ("var(--fun)", "var(--sci)", "var(--pink)", "var(--gold)", "#3B82F6", "#22A06B")
+    for k, (lab, val) in enumerate(bars):
+        x = L + gap / 2 + k * (bw + gap)
+        g.append(f'<rect x="{x:.1f}" y="{B - val * sy:.1f}" width="{bw}" height="{val * sy:.1f}" fill="{cols[k % len(cols)]}"/>'
+                 f'<text x="{x + bw / 2:.1f}" y="{B + 18}" text-anchor="middle" font-size="13" font-weight="700" fill="var(--ink)">{html.escape(lab)}</text>')
+    g.append(f'<path d="M{L} {T - 6} V{B} H{W - 6}" fill="none" stroke="var(--navy)" stroke-width="2.5"/>')
+    g.append(f'<text x="14" y="{(T + B) / 2}" text-anchor="middle" font-size="13" font-weight="700" fill="var(--navy)" transform="rotate(-90 14 {(T + B) / 2})">{html.escape(ylabel)}</text>')
+    return (f'<svg class="fig" viewBox="0 0 {W} {B + 28}" width="{W}" height="{B + 28}" role="img" '
+            f'aria-label="Bar chart: {html.escape("; ".join(f"{a} {b}" for a, b in bars), quote=True)}">{"".join(g)}</svg>')
+
+
+def fig_seesaw(left, right, **_):
+    """A see-saw balanced on a pivot. left/right: [force label, distance label]; distances drawn as given numbers if numeric."""
+    W, H, cx, y = 340, 176, 170, 90
+    g = [f'<path d="M{cx} {y + 6} L{cx - 22} {y + 46} H{cx + 22} Z" fill="var(--sci)" stroke="var(--navy)" stroke-width="3" stroke-linejoin="round"/>',
+         f'<rect x="20" y="{y - 4}" width="300" height="10" rx="4" fill="var(--gold-lt)" stroke="var(--navy)" stroke-width="2.5"/>']
+    for side, (force, dist) in (("l", left), ("r", right)):
+        try:
+            d = float(dist)
+        except ValueError:
+            d = 2
+        x = cx - 30 * d - 10 if side == "l" else cx + 30 * d - 10
+        if side == "r" and str(dist) == "?":
+            x = cx + 90 - 10
+        g.append(f'<rect x="{x - 10}" y="{y - 44}" width="40" height="40" rx="5" fill="{"var(--fun)" if side == "l" else "var(--pink)"}"/>'
+                 f'<text x="{x + 10}" y="{y - 19}" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">{html.escape(str(force))}</text>')
+        xm = x + 10
+        g.append(f'<path d="M{min(cx, xm)} {y + 56} H{max(cx, xm)}" stroke="var(--navy)" stroke-width="2" stroke-dasharray="4 4"/>'
+                 f'<path d="M{xm} {y + 48} v16 M{cx} {y + 48} v16" stroke="var(--navy)" stroke-width="2"/>'
+                 f'<text x="{(cx + xm) / 2}" y="{y + 78}" text-anchor="middle" font-size="14" font-weight="700" fill="var(--navy)">{html.escape(str(dist))}{" m" if str(dist) != "?" else ""}</text>')
+    return (f'<svg class="fig" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" '
+            f'aria-label="A balanced see-saw: {html.escape(str(left[0]))} at {html.escape(str(left[1]))} m on the left, {html.escape(str(right[0]))} at {html.escape(str(right[1]))} on the right">{"".join(g)}</svg>')
+
+
+topics.EXTRA_FIGS.update({"spinner": fig_spinner, "barchart": fig_barchart, "seesaw": fig_seesaw})

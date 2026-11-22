@@ -315,11 +315,11 @@
    "sub": "efficiency",
    "level": 3,
    "type": "num",
-   "q": "An LED bulb gives out 45 J of light for every 50 J of electrical energy put in. What is its efficiency as a percentage?",
-   "answer": "90",
+   "q": "An LED bulb gives out 20 J of light for every 50 J of electrical energy put in. What is its efficiency as a percentage?",
+   "answer": "40",
    "unit": "%",
    "hint": "Divide useful energy by total energy, then change to a percentage.",
-   "explain": "45 ÷ 50 = 0.9 = 90%. LED bulbs waste much less energy than filament bulbs."
+   "explain": "20 ÷ 50 = 0.4 = 40%. The other 30 J heats the bulb and the room. That still beats a filament bulb, which turns only about 5% into light."
   },
   {
    "id": "enr-23",

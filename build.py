@@ -103,6 +103,7 @@ def render(meta, body, url):
         "sister_url": config.SISTER_URL,
         "year": str(date.today().year),
         "beacon": beacon(),
+        "contact_email": html.escape(config.CONTACT_EMAIL),
     }
     page = fill(partial("layout.html"), {
         "head": fill(partial("head.html"), values),

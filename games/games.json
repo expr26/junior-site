@@ -1315,6 +1315,55 @@
           "a": "Yes. Average speed is the total distance divided by the total time for the whole journey, and that total time includes the time spent stopped. So stops make the average speed lower."
         }
       ]
+    },
+    {
+      "slug": "seesaw-balance",
+      "title": "Seesaw Balance",
+      "icon": "⚖️",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Hang weights on a giant seesaw until it balances, then find out why snowshoes stop you sinking.",
+      "live": true,
+      "learn": "Moment = force × distance, balancing clockwise and anticlockwise moments, and pressure = force ÷ area.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: moments, levers and pressure",
+        "PYP": "How the world works: simple machines and forces"
+      },
+      "guide_title": "Moments and pressure: a quick guide",
+      "guide": [
+        {
+          "h": "What is a moment?",
+          "p": "A moment is the turning effect of a force. It depends on how big the force is and how far it acts from the pivot (the point something turns around). Moment = force × distance from the pivot. A 20 N weight hanging 3 m from the pivot has a moment of 20 × 3 = 60 newton metres (N m)."
+        },
+        {
+          "h": "Clockwise and anticlockwise",
+          "p": "On a seesaw, a weight on the left side turns it anticlockwise and a weight on the right side turns it clockwise. When there are several weights on one side, add their moments together. The seesaw balances when the total clockwise moment equals the total anticlockwise moment. This is called the principle of moments."
+        },
+        {
+          "h": "Small force, long distance",
+          "p": "Because moment = force × distance, a small force far from the pivot can balance a big force close to it. A 10 N weight 4 m out balances a 40 N weight 1 m out. That is how levers help us: a long spanner or a door handle far from the hinges lets a small push make a big turning effect. In this game, the seesaw's own weight is left out because it is balanced on its middle."
+        },
+        {
+          "h": "Pressure = force ÷ area",
+          "p": "Pressure tells you how concentrated a force is. Pressure = force ÷ area, measured in N/m² (also called pascals) or N/cm². The same force on a big area gives a small pressure, which is why snowshoes stop you sinking into snow. The same force on a tiny area gives a huge pressure, which is why a drawing pin's sharp point goes into a board."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do you calculate a moment?",
+          "a": "Multiply the force by its distance from the pivot: moment = force × distance. With the force in newtons and the distance in metres, the moment is in newton metres (N m)."
+        },
+        {
+          "q": "When does a seesaw balance?",
+          "a": "When the total clockwise moment equals the total anticlockwise moment. A lighter person can balance a heavier one by sitting further from the pivot."
+        },
+        {
+          "q": "Why do snowshoes stop you sinking?",
+          "a": "They spread your weight over a much bigger area. Your weight (the force) stays the same, so pressure = force ÷ area gets smaller, and the snow is not pushed in as much."
+        }
+      ]
     }
   ]
 }

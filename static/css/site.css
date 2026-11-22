@@ -487,3 +487,18 @@ ul.plain{list-style:none;padding:0;margin:0}ul.plain li{margin-bottom:6px}
 .dn-eq{stroke:#FFE28A;stroke-width:1.5;stroke-dasharray:3 3}
 .dn-out{text-align:center;min-height:1.6em;margin:4px 0 8px}
 .dn-act{justify-content:center;margin:.2em 0}
+/* Food Web Island */
+.fw-svg{width:100%;max-width:460px;display:block;margin:4px auto;background:linear-gradient(#CDEFFF,#E9FBF1);border-radius:16px}
+.fw-sand{fill:#F6E3A8}
+.fw-arrow{stroke:#5B6475;stroke-width:2.5}.fw-arrow.off{stroke:#C9D1DE;stroke-dasharray:4 5}
+.fw-head{fill:#5B6475}
+.fw-c{fill:#fff;stroke:#0F9488;stroke-width:3}
+.fw-e{font-size:28px;pointer-events:none}
+.fw-name{font:700 12px var(--sans);fill:var(--navy);paint-order:stroke;stroke:#fff;stroke-width:3px}
+.fw-node.tap{cursor:pointer}.fw-node.tap:hover .fw-c,.fw-node.tap:focus-visible .fw-c{stroke:var(--fun);stroke-width:4}
+.fw-node:focus{outline:none}
+.fw-node.gone{opacity:.45}.fw-x{stroke:#E5484D;stroke-width:5;stroke-linecap:round}
+.fw-node.wrong .fw-c,.fw-node.tap.wrong:hover .fw-c{stroke:#E5484D;fill:#FFE8E8;stroke-width:3}.fw-node.right .fw-c{stroke:#1F9D55;fill:#E3F9EC;stroke-width:4}
+.fw-b.up{fill:#1F9D55}.fw-b.down{fill:#E5484D}
+.fw-bt{font:700 15px var(--sans);fill:#fff;pointer-events:none}
+.fw-out{text-align:center;min-height:1.6em;margin:4px 0 8px}

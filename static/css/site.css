@@ -524,3 +524,17 @@ ul.plain{list-style:none;padding:0;margin:0}ul.plain li{margin-bottom:6px}
 .rr-out{text-align:center;min-height:1.6em;margin:4px 0 8px}
 .rr-ctrl{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:420px;margin:8px auto 0}
 .rr-ctrl .btn{padding:0 10px;font-size:18px}
+/* Factor Forest */
+.ff-svg{width:100%;max-width:460px;display:block;margin:4px auto;background:linear-gradient(#E9FBF1,#D3F2DF);border-radius:16px}
+.ff-plot{fill:#C99A6B;fill-opacity:.35;stroke:#A0703F;stroke-width:2.5;stroke-dasharray:6 5}
+.ff-plot.ok{fill:#8FD9A8;fill-opacity:.55;stroke:#1F9D55;stroke-dasharray:none}
+.ff-plot.sq{stroke:#FF8A3D;stroke-width:4}
+.ff-gap{fill:none;stroke:#A0703F;stroke-width:2;stroke-dasharray:3 3}
+.ff-out{text-align:center;min-height:3.2em;margin:4px 0 6px}
+.ff-found{text-align:center;margin:0 0 8px;font-weight:600}
+.ff-chip{display:inline-block;margin:3px 4px;padding:2px 10px;border-radius:999px;background:var(--sci-bg);color:var(--sci);font-weight:700}
+.ff-ctrl{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;max-width:420px;margin:8px auto 0}
+.ff-ctrl .btn{padding:0 8px}
+.ff-val{font:700 22px var(--serif);min-width:5.2em;text-align:center}
+.ff-act{justify-content:center;margin:.8em 0 .2em}
+.ff-opts{margin-top:12px}

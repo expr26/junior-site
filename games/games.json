@@ -629,6 +629,55 @@
           "a": "Rounded numbers are easier to say, remember and work with. They are great for quick estimates, like checking that an answer is about the right size."
         }
       ]
+    },
+    {
+      "slug": "factor-forest",
+      "title": "Factor Forest",
+      "icon": "🌳",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Plant trees in neat rectangular orchards to find factor pairs, prime numbers and square numbers.",
+      "live": true,
+      "learn": "Factors and factor pairs, multiples, prime numbers, square numbers, and powers such as 2³.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Number: factors, multiples, primes, squares and powers",
+        "PYP": "Number: multiples, factors and primes"
+      },
+      "guide_title": "Factors and primes: a quick guide",
+      "guide": [
+        {
+          "h": "Factors and factor pairs",
+          "p": "A factor of a number divides into it exactly, with nothing left over. If you can plant 12 trees in 3 equal rows of 4, then 3 × 4 = 12, so 3 and 4 are a factor pair of 12. Trying every number of rows finds all the pairs: 1 × 12, 2 × 6 and 3 × 4. So the factors of 12 are 1, 2, 3, 4, 6 and 12."
+        },
+        {
+          "h": "Multiples",
+          "p": "Multiples are the numbers in a times table. The multiples of 6 are 6, 12, 18, 24, 30 and so on, forever. If each row of an orchard holds 6 trees, the total number of trees must be a multiple of 6. Don't mix them up: 3 is a factor of 6, but 30 is a multiple of 6."
+        },
+        {
+          "h": "Prime numbers",
+          "p": "A prime number has exactly two factors: 1 and itself. With 7 trees, the only rectangle you can make is one long line, 1 × 7, so 7 is prime. 15 is not prime, because 15 trees make 3 rows of 5. The first primes are 2, 3, 5, 7, 11, 13, 17, 19 and 23. The number 1 is not prime, because it has only one factor."
+        },
+        {
+          "h": "Square numbers and powers",
+          "p": "When the rows and the trees in each row are equal, the orchard is a square. 16 trees make 4 rows of 4, so 16 is a square number: 4 × 4 = 16, written 4². The small raised number is a power, or index. It tells you how many of the number to multiply together, so 2³ = 2 × 2 × 2 = 8, not 2 × 3."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is 1 a prime number?",
+          "a": "No. A prime number has exactly two different factors, 1 and itself. The number 1 has only one factor, so it is not prime. The smallest prime is 2, which is also the only even prime."
+        },
+        {
+          "q": "What is the difference between a factor and a multiple?",
+          "a": "A factor goes into a number exactly, like 3 into 12. A multiple is in the number's times table, like 24 for 12. Factors are never bigger than the number; multiples are never smaller."
+        },
+        {
+          "q": "What does 2³ mean?",
+          "a": "It means three 2s multiplied together: 2 × 2 × 2 = 8. It is called 2 cubed, or 2 to the power of 3."
+        }
+      ]
     }
   ]
 }

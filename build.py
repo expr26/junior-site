@@ -105,6 +105,7 @@ def render(meta, body, url):
         "year": str(date.today().year),
         "beacon": beacon(),
         "contact_email": html.escape(config.CONTACT_EMAIL),
+        "mascot": partial("mascot.svg"),
     }
     page = fill(partial("layout.html"), {
         "head": fill(partial("head.html"), values),

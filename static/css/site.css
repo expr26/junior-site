@@ -379,3 +379,17 @@ ul.plain{list-style:none;padding:0;margin:0}ul.plain li{margin-bottom:6px}
 .tm-pick{text-align:center;min-height:1.6em;margin:0}
 .tm-act{justify-content:center;margin:.4em 0 0}
 .tm-target{color:var(--fun);white-space:nowrap}
+/* Pattern Machine */
+.pm-machine{position:relative;height:56px;margin:0 auto 8px;max-width:220px;border-radius:16px;background:linear-gradient(135deg,#6C4DF6,#3B82F6);box-shadow:0 5px 0 #4329C2}
+.pm-gear{position:absolute;top:8px;font-size:30px;animation:spin 4s linear infinite}
+.pm-gear.g1{left:18px}.pm-gear.g2{left:58px;animation-direction:reverse}
+.pm-light{position:absolute;right:20px;top:18px;width:20px;height:20px;border-radius:50%;background:#FFC93C;box-shadow:0 0 12px #FFC93C;animation:blink 1.2s ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes blink{50%{opacity:.35}}
+.pm-tape{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:8px 0}
+.pm-tile{min-width:54px;height:54px;padding:0 8px;border-radius:14px;background:var(--card);border:3px solid var(--fun);display:grid;place-items:center;
+  font:700 24px var(--serif);color:var(--navy);box-shadow:0 4px 0 var(--fun-bg);animation:tileIn .4s ease both}
+.pm-q{border-style:dashed;color:var(--fun)}
+.pm-dots{align-self:center;font:700 26px var(--serif);color:var(--muted)}
+@keyframes tileIn{from{transform:translateY(-16px) scale(.6);opacity:0}}
+.pm-diffs{text-align:center;color:var(--sci);min-height:1.6em;margin:0;word-spacing:6px}

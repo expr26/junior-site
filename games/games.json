@@ -203,7 +203,48 @@
       "icon": "🎲",
       "subject": "maths",
       "kind": "game",
-      "blurb": "Crack the machine's rule and predict the next number."
+      "blurb": "The Pattern Machine prints number sequences. Crack the rule, find the next number and the nth term.",
+      "live": true,
+      "learn": "Number sequences: finding the next term, describing the rule (adding, subtracting, doubling, square numbers) and using an nth term formula like 3n + 1.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Algebra: generate terms of a sequence and find the nth term of a linear sequence",
+        "PYP": "Pattern and function: number patterns and rules"
+      },
+      "guide_title": "Number sequences: a quick guide",
+      "guide": [
+        {
+          "h": "Look at the jumps",
+          "p": "Write down the difference between each pair of neighbouring numbers. If the jump is always the same, like +4 or −6, it is a linear (arithmetic) sequence and you can carry on the pattern by adding the same amount."
+        },
+        {
+          "h": "Other kinds of pattern",
+          "p": "Some sequences multiply each time, like 2, 4, 8, 16 (double each time). Others are special numbers, like the square numbers 1, 4, 9, 16, 25 (1 × 1, 2 × 2, 3 × 3 and so on)."
+        },
+        {
+          "h": "The nth term",
+          "p": "The nth term is a formula that gives the number in any position n. For 4, 7, 10, 13 the jump is 3, so the formula starts with 3n. When n = 1, 3n is 3, but the first term is 4, so add 1: the nth term is 3n + 1."
+        },
+        {
+          "h": "Using the formula",
+          "p": "Put the position number in place of n. For 3n + 1, the 10th term is 3 × 10 + 1 = 31 and the 100th term is 3 × 100 + 1 = 301."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do I find the nth term of a sequence?",
+          "a": "Find the jump between terms (say 5). The formula starts with 5n. Work out 5n when n = 1, compare it with the first term, and add or take away the difference. For 6, 11, 16, 21 the nth term is 5n + 1."
+        },
+        {
+          "q": "What are square numbers?",
+          "a": "Numbers you get by multiplying a whole number by itself: 1, 4, 9, 16, 25, 36 and so on."
+        },
+        {
+          "q": "Can a sequence go below zero?",
+          "a": "Yes. −7, −4, −1, 2, 5 goes up by 3 each time and simply carries on past zero."
+        }
+      ]
     },
     {
       "slug": "ramp-lab",

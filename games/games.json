@@ -154,7 +154,48 @@
       "icon": "🗺️",
       "subject": "maths",
       "kind": "game",
-      "blurb": "Find the hidden treasure with coordinates."
+      "blurb": "Find buried treasure and read the map with coordinates, in all four quadrants.",
+      "live": true,
+      "learn": "Plotting and reading coordinates (x, y) on a grid, including negative coordinates in all four quadrants.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Geometry and algebra: work with coordinates in all four quadrants",
+        "PYP": "Shape and space: position and coordinates"
+      },
+      "guide_title": "Coordinates: a quick guide",
+      "guide": [
+        {
+          "h": "x first, then y",
+          "p": "Coordinates are written (x, y). The x number tells you how far to go along (left or right) from the middle. The y number tells you how far to go up or down. A handy reminder: along the corridor, then up the stairs."
+        },
+        {
+          "h": "The origin",
+          "p": "The middle of the grid, where the x-axis and the y-axis cross, is called the origin. Its coordinates are (0, 0)."
+        },
+        {
+          "h": "Negative coordinates",
+          "p": "A negative x means go left from the origin. A negative y means go down. So (−3, 2) is 3 left and 2 up, and (2, −4) is 2 right and 4 down."
+        },
+        {
+          "h": "The four quadrants",
+          "p": "The two axes split the grid into four parts called quadrants. Points in the top right have both numbers positive; points in the bottom left have both numbers negative."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is (2, 5) the same point as (5, 2)?",
+          "a": "No. (2, 5) is 2 along and 5 up, but (5, 2) is 5 along and 2 up. The order matters: x always comes first."
+        },
+        {
+          "q": "Where is the point (0, −3)?",
+          "a": "It is on the y-axis, 3 squares below the origin. An x of 0 means you don't move left or right at all."
+        },
+        {
+          "q": "Which quadrant is (−4, −1) in?",
+          "a": "The bottom-left quadrant, because both x and y are negative."
+        }
+      ]
     },
     {
       "slug": "pattern-machine",

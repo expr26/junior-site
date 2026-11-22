@@ -505,7 +505,7 @@ def art_light():
 ART.update({"coordinates": art_coordinates, "ratio": art_ratio, "angles": art_angles, "sound": art_sound, "light": art_light})
 
 
-def fig_grid(points=(), lo=-1, hi=6, line=None, ylo=None, yhi=None, **_):
+def fig_grid(points=(), lo=-1, hi=6, line=None, ylo=None, yhi=None, polys=(), mirror=None, **_):
     """Coordinate grid from lo to hi (x) and ylo to yhi (y). points: [[x, y, "A"], ...]; line: [[x1, y1], [x2, y2]]."""
     ylo = lo if ylo is None else ylo
     yhi = hi if yhi is None else yhi
@@ -526,6 +526,15 @@ def fig_grid(points=(), lo=-1, hi=6, line=None, ylo=None, yhi=None, **_):
     g.append(f'<path d="M{X(lo)} {Y(0)} H{X(hi) + 10} M{X(0)} {Y(ylo)} V{Y(yhi) - 10}" stroke="var(--navy)" stroke-width="2.5"/>')
     g.append(f'<text x="{X(hi) + 12}" y="{Y(0) + 5}" font-size="15" font-style="italic" font-family="Georgia,serif" fill="var(--navy)">x</text>'
              f'<text x="{X(0) + 6}" y="{Y(yhi) - 10}" font-size="15" font-style="italic" font-family="Georgia,serif" fill="var(--navy)">y</text>')
+    for k, (pts, lab) in enumerate(polys):
+        d = " ".join(f"{X(x)},{Y(y)}" for x, y in pts)
+        col = ("var(--fun)", "var(--pink)", "var(--sci)")[k % 3]
+        g.append(f'<polygon points="{d}" fill="{col}" fill-opacity=".35" stroke="{col}" stroke-width="3" stroke-linejoin="round"/>')
+        cx, cy = sum(x for x, _ in pts) / len(pts), sum(y for _, y in pts) / len(pts)
+        g.append(f'<text x="{X(cx)}" y="{Y(cy) + 6}" text-anchor="middle" font-size="17" font-weight="700" fill="var(--navy)">{html.escape(lab)}</text>')
+    if mirror:
+        (a, b), (c, d) = mirror
+        g.append(f'<path d="M{X(a)} {Y(b)} L{X(c)} {Y(d)}" stroke="var(--gold)" stroke-width="3" stroke-dasharray="8 6"/>')
     if line:
         (a, b), (c, d) = line
         g.append(f'<path d="M{X(a)} {Y(b)} L{X(c)} {Y(d)}" stroke="var(--fun)" stroke-width="4" stroke-linecap="round"/>')
@@ -534,7 +543,7 @@ def fig_grid(points=(), lo=-1, hi=6, line=None, ylo=None, yhi=None, **_):
         g.append(f'<circle cx="{X(x)}" cy="{Y(y)}" r="6" fill="var(--pink)" stroke="var(--navy)" stroke-width="2"/>'
                  f'<text x="{X(x) + 9}" y="{Y(y) - 8}" font-size="16" font-weight="700" fill="var(--navy)" paint-order="stroke" stroke="var(--card)" stroke-width="4">{html.escape(lab)}</text>')
     return (f'<svg class="fig" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" '
-            f'aria-label="A coordinate grid with points {html.escape(", ".join(p[2] for p in points))}">{"".join(g)}</svg>')
+            f'aria-label="A coordinate grid{(' with points ' + html.escape(', '.join(p[2] for p in points))) if points else ''}{(' with shapes ' + html.escape(', '.join(p[1] for p in polys))) if polys else ''}">{"".join(g)}</svg>')
 
 
 def fig_angles(kind, a=None, b=None, labels=(), **_):
@@ -629,3 +638,177 @@ def _arrow_mid(x0, y0, x1, y1):
 
 
 topics.EXTRA_FIGS.update({"grid": fig_grid, "angles": fig_angles, "waves": fig_waves, "mirror": fig_mirror})
+
+
+# ---------- batch 5: area and volume, transformations, circuits, static, magnets ----------
+def art_area():
+    return _svg(
+        # cuboid
+        f'<path d="M40 90 L110 90 L110 160 L40 160 Z" fill="{ORANGE}" stroke="{INK}" stroke-width="3.5" stroke-linejoin="round"/>'
+        f'<path d="M40 90 L70 62 L140 62 L110 90 Z" fill="{SUN}" stroke="{INK}" stroke-width="3.5" stroke-linejoin="round"/>'
+        f'<path d="M110 90 L140 62 L140 132 L110 160 Z" fill="#E07020" stroke="{INK}" stroke-width="3.5" stroke-linejoin="round"/>'
+        + "".join(f'<path d="M{40 + 17.5 * k} 90 V160" stroke="{INK}" stroke-width="1.2" opacity=".5"/>' for k in range(1, 4))
+        + "".join(f'<path d="M40 {90 + 17.5 * k} H110" stroke="{INK}" stroke-width="1.2" opacity=".5"/>' for k in range(1, 4))
+        # rectangle with grid
+        + f'<rect x="152" y="104" width="64" height="48" fill="{TEAL}" stroke="{INK}" stroke-width="3"/>'
+        + "".join(f'<path d="M{152 + 16 * k} 104 V152" stroke="#fff" stroke-width="1.5"/>' for k in range(1, 4))
+        + "".join(f'<path d="M152 {104 + 16 * k} H216" stroke="#fff" stroke-width="1.5"/>' for k in range(1, 3))
+        + f'<g font-family="Fredoka,Trebuchet MS,sans-serif" font-weight="700" fill="{INK}"><text x="75" y="182" text-anchor="middle" font-size="15">4 cm</text>'
+          f'<text x="184" y="172" text-anchor="middle" font-size="15">12 cm²</text>'
+          f'<g transform="rotate(-6 180 60)"><rect x="150" y="40" width="70" height="32" rx="10" fill="{P}"/><text x="185" y="62" text-anchor="middle" font-size="17" fill="#fff">V = lwh</text></g></g>'
+        + _sparkles((30, 50, 7, SUN), (214, 186, 5, PINK)),
+        "A cuboid made of cubes, a rectangle of 12 squares and the volume formula V = lwh")
+
+
+def art_transform():
+    return _svg(
+        f'<path d="M120 26 V178" stroke="{INK}" stroke-width="3" stroke-dasharray="7 6"/>'
+        f'<path d="M50 70 L96 70 L96 96 L74 96 L74 140 L50 140 Z" fill="{P}" stroke="{INK}" stroke-width="3" stroke-linejoin="round"/>'
+        f'<path d="M190 70 L144 70 L144 96 L166 96 L166 140 L190 140 Z" fill="{PINK}" stroke="{INK}" stroke-width="3" stroke-linejoin="round"/>'
+        f'<circle cx="62" cy="82" r="4" fill="#fff"/><circle cx="178" cy="82" r="4" fill="#fff"/>'
+        f'<path d="M84 160 q36 22 72 0" fill="none" stroke="{TEAL}" stroke-width="4"/><path d="M150 152 l8 8 l-10 6" fill="none" stroke="{TEAL}" stroke-width="4" stroke-linecap="round"/>'
+        + f'<g font-family="Fredoka,Trebuchet MS,sans-serif" font-weight="700"><rect x="86" y="10" width="68" height="26" rx="10" fill="{SUN}" stroke="{INK}" stroke-width="2.5"/>'
+          f'<text x="120" y="29" text-anchor="middle" font-size="15" fill="{INK}">mirror</text></g>'
+        + _sparkles((30, 40, 7, SUN), (210, 40, 6, TEAL), (30, 170, 5, P)),
+        "An L shape and its mirror image on the other side of a dashed mirror line")
+
+
+def art_circuits():
+    return _svg(
+        f'<path d="M40 60 H200 V150 H40 Z" fill="none" stroke="{INK}" stroke-width="5" stroke-linejoin="round"/>'
+        # cell
+        f'<rect x="28" y="88" width="24" height="34" fill="var(--fun-bg)"/><path d="M28 98 H52 M34 110 H46" stroke="{INK}" stroke-width="4"/>'
+        f'<rect x="12" y="76" width="22" height="58" rx="6" fill="#3BB273" stroke="{INK}" stroke-width="3" transform="rotate(0)"/><rect x="18" y="70" width="10" height="7" fill="{INK}"/>'
+        # bulb
+        f'<circle cx="120" cy="60" r="22" fill="{SUN}" stroke="{INK}" stroke-width="4"/><path d="M104 44 L136 76 M136 44 L104 76" stroke="{INK}" stroke-width="3"/>'
+        + "".join(f'<path d="M{120 + 32 * math.cos(a)} {60 + 32 * math.sin(a)} l{8 * math.cos(a):.1f} {8 * math.sin(a):.1f}" stroke="{ORANGE}" stroke-width="4" stroke-linecap="round"/>'
+                  for a in (math.pi * k / 4 for k in (4, 5, 6, 7, 0)))
+        # switch
+        + f'<rect x="100" y="140" width="40" height="20" fill="var(--fun-bg)"/><circle cx="102" cy="150" r="4" fill="{INK}"/><circle cx="138" cy="150" r="4" fill="{INK}"/>'
+          f'<path d="M102 150 L136 146" stroke="{INK}" stroke-width="4" stroke-linecap="round"/>'
+        # electrons
+        + "".join(f'<circle cx="{x}" cy="{y}" r="5" fill="{BLUE}"/>' for x, y in ((200, 90), (200, 124), (170, 150), (70, 150), (40, 140), (80, 60), (170, 60)))
+        + _sparkles((214, 30, 7, SUN), (216, 180, 6, P)),
+        "A simple circuit with a cell, a glowing bulb and a closed switch")
+
+
+def art_static():
+    return _svg(
+        # balloon
+        f'<ellipse cx="96" cy="86" rx="46" ry="54" fill="{PINK}" stroke="{INK}" stroke-width="3.5"/>'
+        f'<path d="M90 140 l6 8 l6 -8 Z" fill="{PINK}" stroke="{INK}" stroke-width="2.5"/><path d="M96 148 q-12 20 4 40" fill="none" stroke="{INK}" stroke-width="2"/>'
+        f'<ellipse cx="78" cy="64" rx="10" ry="16" fill="#fff" opacity=".4"/>'
+        + "".join(f'<text x="{x}" y="{y}" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">−</text>' for x, y in ((100, 82), (120, 106), (84, 112), (118, 66)))
+        # hair standing up
+        + f'<circle cx="190" cy="150" r="26" fill="#F4C7A1" stroke="{INK}" stroke-width="3"/>'
+        + "".join(f'<path d="M{190 + 22 * math.cos(a):.1f} {150 + 22 * math.sin(a):.1f} q{-8 + 16 * (k % 2)} {-12} {30 * math.cos(a):.1f} {30 * math.sin(a) - 10:.1f}" fill="none" stroke="{ORANGE}" stroke-width="4" stroke-linecap="round"/>'
+                  for k, a in enumerate(math.pi * (1.1 + .16 * j) for j in range(6)))
+        + f'<circle cx="182" cy="150" r="2.5" fill="{INK}"/><circle cx="198" cy="150" r="2.5" fill="{INK}"/><path d="M182 160 q8 6 16 0" fill="none" stroke="{INK}" stroke-width="2.5"/>'
+        + "".join(f'<text x="{x}" y="{y}" text-anchor="middle" font-size="18" font-weight="700" fill="{TEAL}">+</text>' for x, y in ((160, 112), (216, 108), (188, 104)))
+        + f'<path d="M150 40 l-10 18 h10 l-8 18" fill="none" stroke="{SUN}" stroke-width="5" stroke-linejoin="round"/>'
+        + _sparkles((30, 40, 7, SUN), (36, 170, 6, P)),
+        "A negatively charged balloon pulling up the positively charged hair of a smiling child")
+
+
+def art_magnets():
+    field = "".join(f'<path d="M64 {104 - 4 * k} C{30 - 18 * k} {20 - 22 * k} {210 + 18 * k} {20 - 22 * k} 176 {104 - 4 * k}" fill="none" stroke="{TEAL}" stroke-width="2.5" stroke-dasharray="5 5"/>'
+                    f'<path d="M64 {116 + 4 * k} C{30 - 18 * k} {200 + 22 * k} {210 + 18 * k} {200 + 22 * k} 176 {116 + 4 * k}" fill="none" stroke="{TEAL}" stroke-width="2.5" stroke-dasharray="5 5"/>' for k in range(2))
+    clip = f'<path d="M196 150 h22 a6 6 0 0 0 0 -12 h-26 a5 5 0 0 0 0 10 h20" fill="none" stroke="#8A94A6" stroke-width="3.5" stroke-linecap="round"/>'
+    return _svg(
+        field + f'<rect x="60" y="92" width="60" height="36" rx="3" fill="#E5484D" stroke="{INK}" stroke-width="3"/><rect x="120" y="92" width="60" height="36" rx="3" fill="{BLUE}" stroke="{INK}" stroke-width="3"/>'
+        f'<g font-family="Fredoka,Trebuchet MS,sans-serif" font-weight="700" font-size="22" fill="#fff"><text x="90" y="118" text-anchor="middle">N</text><text x="150" y="118" text-anchor="middle">S</text></g>'
+        + clip + _sparkles((26, 40, 7, SUN), (120, 186, 6, P)),
+        "A bar magnet with its north and south poles, the magnetic field lines around it and a paper clip")
+
+
+ART.update({"area": art_area, "transform": art_transform, "circuits": art_circuits, "static": art_static, "magnets": art_magnets})
+
+
+def fig_rect(w, h, unit="cm", shape="rect", cut=None, **_):
+    """A labelled rectangle (shape 'rect'), right triangle ('triangle'), or an L shape ('L', cut = [cw, ch] taken from the top right)."""
+    k = min(220 / w, 140 / h)
+    W, H = w * k + 90, h * k + 70
+    x0, y0 = 50, 20
+    X, Y = x0 + w * k, y0 + h * k
+    lab = lambda x, y, t, anc="middle": (f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{anc}" font-size="16" font-weight="700" fill="var(--navy)">{html.escape(t)}</text>')
+    if shape == "triangle":
+        g = [f'<path d="M{x0} {Y:.1f} H{X:.1f} L{x0} {y0} Z" fill="var(--fun-bg)" stroke="var(--navy)" stroke-width="3.5" stroke-linejoin="round"/>',
+             f'<path d="M{x0} {Y - 14:.1f} h14 v14" fill="none" stroke="var(--navy)" stroke-width="2"/>',
+             lab((x0 + X) / 2, Y + 24, f"{w:g} {unit}"), lab(x0 - 8, (y0 + Y) / 2 + 5, f"{h:g} {unit}", "end")]
+        desc = f"A right-angled triangle with base {w:g} {unit} and height {h:g} {unit}"
+    elif shape == "L":
+        cw, ch = cut
+        cx, cy = X - cw * k, y0 + ch * k
+        g = [f'<path d="M{x0} {y0} H{cx:.1f} V{cy:.1f} H{X:.1f} V{Y:.1f} H{x0} Z" fill="var(--fun-bg)" stroke="var(--navy)" stroke-width="3.5" stroke-linejoin="round"/>',
+             lab((x0 + X) / 2, Y + 24, f"{w:g} {unit}"), lab(x0 - 8, (y0 + Y) / 2 + 5, f"{h:g} {unit}", "end"),
+             lab((x0 + cx) / 2, y0 - 6, f"{w - cw:g} {unit}"), lab(X + 8, (cy + Y) / 2 + 5, f"{h - ch:g} {unit}", "start")]
+        desc = f"An L shape {w:g} {unit} wide and {h:g} {unit} tall, with a {cw:g} by {ch:g} piece cut from the top right corner"
+        H += 10
+        W += 30
+    else:
+        g = [f'<rect x="{x0}" y="{y0}" width="{w * k:.1f}" height="{h * k:.1f}" fill="var(--fun-bg)" stroke="var(--navy)" stroke-width="3.5"/>',
+             lab((x0 + X) / 2, Y + 24, f"{w:g} {unit}"), lab(x0 - 8, (y0 + Y) / 2 + 5, f"{h:g} {unit}", "end")]
+        desc = f"A rectangle {w:g} {unit} by {h:g} {unit}"
+    return (f'<svg class="fig" viewBox="0 -10 {W:.0f} {H + 10:.0f}" width="{W:.0f}" height="{H + 10:.0f}" role="img" aria-label="{html.escape(desc, quote=True)}">{"".join(g)}</svg>')
+
+
+def fig_cuboid(l, w, h, unit="cm", **_):
+    k = min(150 / (l + w * .5), 120 / (h + w * .5))
+    dx, dy = w * k * .5, w * k * .45
+    x0, y0 = 50, 20 + dy
+    L, Hh = l * k, h * k
+    g = [f'<path d="M{x0} {y0} H{x0 + L:.1f} V{y0 + Hh:.1f} H{x0} Z" fill="var(--fun-bg)" stroke="var(--navy)" stroke-width="3"/>',
+         f'<path d="M{x0} {y0} L{x0 + dx:.1f} {y0 - dy:.1f} H{x0 + L + dx:.1f} L{x0 + L:.1f} {y0} Z" fill="var(--sci-bg)" stroke="var(--navy)" stroke-width="3" stroke-linejoin="round"/>',
+         f'<path d="M{x0 + L:.1f} {y0} L{x0 + L + dx:.1f} {y0 - dy:.1f} V{y0 + Hh - dy:.1f} L{x0 + L:.1f} {y0 + Hh:.1f} Z" fill="var(--gold-bg)" stroke="var(--navy)" stroke-width="3" stroke-linejoin="round"/>',
+         f'<text x="{x0 + L / 2:.1f}" y="{y0 + Hh + 22:.1f}" text-anchor="middle" font-size="16" font-weight="700" fill="var(--navy)">{l:g} {unit}</text>',
+         f'<text x="{x0 - 8}" y="{y0 + Hh / 2 + 5:.1f}" text-anchor="end" font-size="16" font-weight="700" fill="var(--navy)">{h:g} {unit}</text>',
+         f'<text x="{x0 + L + dx / 2 + 10:.1f}" y="{y0 + Hh - dy / 2 + 18:.1f}" font-size="16" font-weight="700" fill="var(--navy)">{w:g} {unit}</text>']
+    W, H = x0 + L + dx + 70, y0 + Hh + 34
+    return (f'<svg class="fig" viewBox="0 0 {W:.0f} {H:.0f}" width="{W:.0f}" height="{H:.0f}" role="img" '
+            f'aria-label="A cuboid {l:g} {unit} long, {w:g} {unit} wide and {h:g} {unit} high">{"".join(g)}</svg>')
+
+
+def _bulb(x, y):
+    return (f'<circle cx="{x}" cy="{y}" r="14" fill="var(--card)" stroke="var(--navy)" stroke-width="3"/>'
+            f'<path d="M{x - 10} {y - 10} L{x + 10} {y + 10} M{x + 10} {y - 10} L{x - 10} {y + 10}" stroke="var(--navy)" stroke-width="2.5"/>')
+
+
+def _meter(x, y, letter, reading):
+    return (f'<circle cx="{x}" cy="{y}" r="14" fill="var(--card)" stroke="var(--navy)" stroke-width="3"/>'
+            f'<text x="{x}" y="{y + 6}" text-anchor="middle" font-size="16" font-weight="700" fill="var(--navy)">{letter}</text>'
+            + (f'<text x="{x}" y="{y - 20}" text-anchor="middle" font-size="14" font-weight="700" fill="var(--fun)" paint-order="stroke" stroke="var(--card)" stroke-width="4">{html.escape(reading)}</text>' if reading else ""))
+
+
+def fig_circuit(kind="series", bulbs=2, readings=(), switch=False, **_):
+    """Circuit diagram. series: a cell and `bulbs` bulbs in one loop, with an ammeter reading readings[0].
+       parallel: a cell, an ammeter (readings[0]) and `bulbs` branches, each with a bulb and an ammeter (readings[1:])."""
+    rd = list(readings) + [""] * 6
+    nav = "var(--navy)"
+    cell = (lambda x, y: f'<rect x="{x - 10}" y="{y - 16}" width="20" height="32" fill="var(--card)"/>'
+            f'<path d="M{x - 4} {y - 16} V{y + 16}" stroke="{nav}" stroke-width="3"/><path d="M{x + 5} {y - 8} V{y + 8}" stroke="{nav}" stroke-width="6"/>')
+    if kind == "series":
+        W, H, x0, x1, y0, y1 = 320, 170, 30, 290, 40, 140
+        g = [f'<path d="M{x0} {y0} H{x1} V{y1} H{x0} Z" fill="none" stroke="{nav}" stroke-width="3"/>', cell(160, y1)]
+        for k in range(bulbs):
+            g.append(_bulb(x0 + (x1 - x0) * (k + 1) / (bulbs + 2), y0))
+        g.append(_meter(x0 + (x1 - x0) * (bulbs + 1) / (bulbs + 2), y0, "A", rd[0]))
+        if switch:
+            g.append(f'<rect x="{x0 - 6}" y="78" width="12" height="28" fill="var(--card)"/><circle cx="{x0}" cy="80" r="3.5" fill="{nav}"/>'
+                     f'<circle cx="{x0}" cy="104" r="3.5" fill="{nav}"/><path d="M{x0} 104 L{x0 + 14} 82" stroke="{nav}" stroke-width="3"/>')
+        desc = f"A series circuit: one cell, {bulbs} bulbs and an ammeter" + (f" reading {rd[0]}" if rd[0] else "") + (" and an open switch" if switch else "")
+    else:
+        xl, xr, y_top = 50, 300, 30
+        y_bot = y_top + 60 * bulbs
+        W, H = 330, y_bot + 30
+        g = [f'<path d="M{xl} {y_top} V{y_bot} H{xr} V{y_top}" fill="none" stroke="{nav}" stroke-width="3"/>',
+             cell(140, y_bot), _meter(220, y_bot, "A", rd[0])]
+        for k in range(bulbs):
+            yy = y_top + 60 * k
+            g.append(f'<path d="M{xl} {yy} H{xr}" stroke="{nav}" stroke-width="3"/>')
+            g.append(_bulb(140, yy))
+            g.append(_meter(220, yy, "A", rd[k + 1]))
+        desc = f"A parallel circuit: one cell and {bulbs} bulbs on separate branches, with ammeters" + (f" reading {', '.join(r for r in readings if r)}" if any(readings) else "")
+    return (f'<svg class="fig" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{html.escape(desc, quote=True)}">{"".join(g)}</svg>')
+
+
+topics.EXTRA_FIGS.update({"rect": fig_rect, "cuboid": fig_cuboid, "circuit": fig_circuit})

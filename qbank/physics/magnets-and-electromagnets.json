@@ -1,0 +1,256 @@
+{
+ "slug": "magnets-and-electromagnets",
+ "title": "Magnets and electromagnets",
+ "ks3": "Electricity and electromagnetism: magnetic poles, fields, the Earth's magnetism and electromagnets",
+ "art": "magnets",
+ "intro": "North and south poles, magnetic fields, compasses and electromagnets you can switch on and off.",
+ "description": "Free KS3 Physics magnets questions with answers: magnetic materials, poles, attraction and repulsion, magnetic fields, compasses and electromagnets. Marked instantly, for ages 9 to 14.",
+ "subtopics": [
+  {
+   "slug": "magnets",
+   "title": "Magnets and poles"
+  },
+  {
+   "slug": "fields",
+   "title": "Magnetic fields"
+  },
+  {
+   "slug": "electro",
+   "title": "Electromagnets"
+  }
+ ],
+ "questions": [
+  {
+   "id": "mag-01",
+   "sub": "magnets",
+   "level": 1,
+   "type": "mc",
+   "q": "What are the two ends of a bar magnet called?",
+   "options": [
+    "The north and south poles",
+    "Positive and negative",
+    "The top and bottom",
+    "Left and right"
+   ],
+   "answer": 0,
+   "hint": "A compass uses them to find directions.",
+   "explain": "The ends of a magnet are its north (N) and south (S) poles. That is where the magnetic force is strongest."
+  },
+  {
+   "id": "mag-02",
+   "sub": "magnets",
+   "level": 1,
+   "type": "mc",
+   "q": "Which metal is attracted to a magnet?",
+   "options": [
+    "Iron",
+    "Copper",
+    "Aluminium",
+    "Gold"
+   ],
+   "answer": 0,
+   "hint": "Only a few metals are magnetic.",
+   "explain": "Iron is a magnetic material. Copper, aluminium and gold are metals, but they are not attracted to magnets."
+  },
+  {
+   "id": "mag-03",
+   "sub": "magnets",
+   "level": 2,
+   "type": "mc",
+   "q": "Which of these metals is magnetic?",
+   "options": [
+    "Nickel",
+    "Copper",
+    "Aluminium",
+    "Silver"
+   ],
+   "answer": 0,
+   "hint": "The three magnetic metals are iron, nickel and cobalt.",
+   "explain": "Nickel is magnetic, like iron and cobalt. Most other metals are not."
+  },
+  {
+   "id": "mag-04",
+   "sub": "magnets",
+   "level": 1,
+   "type": "mc",
+   "q": "What happens when these two magnets are close together?",
+   "options": [
+    "They attract",
+    "They repel",
+    "Nothing"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "magnets",
+    "left": "NS",
+    "right": "NS"
+   },
+   "hint": "Look at the two poles that face each other.",
+   "explain": "A south pole faces a north pole. Opposite poles attract."
+  },
+  {
+   "id": "mag-05",
+   "sub": "magnets",
+   "level": 1,
+   "type": "mc",
+   "q": "What happens when these two magnets are close together?",
+   "options": [
+    "They repel",
+    "They attract",
+    "Nothing"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "magnets",
+    "left": "NS",
+    "right": "SN"
+   },
+   "hint": "Look at the two poles that face each other.",
+   "explain": "A south pole faces a south pole. Like poles repel."
+  },
+  {
+   "id": "mag-06",
+   "sub": "magnets",
+   "level": 3,
+   "type": "mc",
+   "q": "A bar magnet is cut in half. What do you get?",
+   "options": [
+    "Two smaller magnets, each with a north and a south pole",
+    "A north piece and a south piece",
+    "Two pieces that are not magnets",
+    "One magnet and one piece of plain iron"
+   ],
+   "answer": 0,
+   "hint": "You can never get a pole on its own.",
+   "explain": "Each half becomes a complete magnet with its own north and south pole."
+  },
+  {
+   "id": "mag-07",
+   "sub": "fields",
+   "level": 2,
+   "type": "mc",
+   "q": "Where is the magnetic field of a bar magnet strongest?",
+   "options": [
+    "At the poles",
+    "In the middle",
+    "Far away from the magnet",
+    "It is the same everywhere"
+   ],
+   "answer": 0,
+   "hint": "Where do paper clips stick to a magnet most?",
+   "explain": "The field lines are closest together at the poles, so the field is strongest there."
+  },
+  {
+   "id": "mag-08",
+   "sub": "fields",
+   "level": 2,
+   "type": "mc",
+   "q": "Outside a magnet, which way do the magnetic field lines point?",
+   "options": [
+    "From the north pole to the south pole",
+    "From the south pole to the north pole",
+    "Round in circles in the middle",
+    "They have no direction"
+   ],
+   "answer": 0,
+   "hint": "A small compass placed near the north pole points away from it.",
+   "explain": "Field lines go from the north pole round to the south pole. A compass needle lines up with them."
+  },
+  {
+   "id": "mag-09",
+   "sub": "fields",
+   "level": 2,
+   "type": "mc",
+   "q": "Why does a compass needle point north?",
+   "options": [
+    "The Earth has a magnetic field",
+    "The Sun pulls it",
+    "Gravity pulls it",
+    "It is made of copper"
+   ],
+   "answer": 0,
+   "hint": "The Earth behaves like a giant magnet.",
+   "explain": "The Earth has a magnetic field. The compass needle is a small magnet that lines up with it."
+  },
+  {
+   "id": "mag-10",
+   "sub": "electro",
+   "level": 2,
+   "type": "mc",
+   "q": "How can you make an electromagnet?",
+   "options": [
+    "Pass a current through a coil of wire wrapped round an iron core",
+    "Rub an iron bar with a cloth",
+    "Heat a piece of iron",
+    "Put copper in salty water"
+   ],
+   "answer": 0,
+   "hint": "\"Electro\" means you need electricity.",
+   "explain": "A current in a coil of wire makes a magnetic field. An iron core inside the coil makes the field much stronger."
+  },
+  {
+   "id": "mag-11",
+   "sub": "electro",
+   "level": 2,
+   "type": "mc",
+   "q": "Which material makes the best core for an electromagnet?",
+   "options": [
+    "Iron",
+    "Plastic",
+    "Copper",
+    "Wood"
+   ],
+   "answer": 0,
+   "hint": "The core must be a magnetic material.",
+   "explain": "Iron is magnetic and easily magnetised, so it makes the electromagnet much stronger. It also loses its magnetism when the current is switched off."
+  },
+  {
+   "id": "mag-12",
+   "sub": "electro",
+   "level": 3,
+   "type": "mc",
+   "q": "Which change makes an electromagnet stronger?",
+   "options": [
+    "More turns of wire on the coil",
+    "Fewer turns of wire",
+    "A smaller current",
+    "Taking out the iron core"
+   ],
+   "answer": 0,
+   "hint": "There are three ways: more turns, more current, an iron core.",
+   "explain": "More turns of wire make a stronger field. A bigger current and an iron core also make it stronger."
+  },
+  {
+   "id": "mag-13",
+   "sub": "electro",
+   "level": 3,
+   "type": "mc",
+   "q": "Why do scrapyard cranes use electromagnets instead of ordinary magnets?",
+   "options": [
+    "They can be switched off to drop the metal",
+    "They are lighter",
+    "They can pick up copper",
+    "They don't need electricity"
+   ],
+   "answer": 0,
+   "hint": "How would you let go of the car with an ordinary magnet?",
+   "explain": "An electromagnet only works while the current is on. Switch it off and the metal drops."
+  },
+  {
+   "id": "mag-14",
+   "sub": "electro",
+   "level": 3,
+   "type": "mc",
+   "q": "Which of these uses an electromagnet?",
+   "options": [
+    "An electric doorbell",
+    "A candle",
+    "A bicycle bell",
+    "A wooden ruler"
+   ],
+   "answer": 0,
+   "hint": "Which one has a current flowing in it?",
+   "explain": "An electric bell uses an electromagnet to pull a metal arm that hits the bell, many times a second."
+  }
+ ]
+}

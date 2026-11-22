@@ -364,3 +364,18 @@ ul.plain{list-style:none;padding:0;margin:0}ul.plain li{margin-bottom:6px}
 .fj-ctrl .btn{padding:0 8px;font-size:16px;white-space:nowrap}
 .fj-reset{text-align:center;margin:10px 0 0}
 .linkish{background:none;border:0;padding:0;font:inherit;color:var(--fun);text-decoration:underline;cursor:pointer}
+/* Treasure Map */
+.tm-svg{width:100%;max-width:440px;display:block;margin:6px auto;cursor:crosshair;touch-action:manipulation}
+.tm-sea{fill:#BFE6F7}
+.tm-land{fill:#F7E3A6;stroke:#E2C67E;stroke-width:3}
+.tm-line{stroke:#7A6A4F;stroke-width:1;opacity:.35}
+.tm-axis{stroke:#2D1B69;stroke-width:3;stroke-linecap:round}
+.tm-ax{font:700 italic 16px Georgia,serif;fill:#2D1B69}
+.tm-num{font:600 12px var(--sans);fill:#2D1B69}
+.tm-icon{font-size:24px}
+.tm-pickmark circle{fill:#6C4DF6;opacity:.9}.tm-pickmark text{fill:#fff;font:700 15px var(--sans)}
+.tm-miss circle{fill:#B42318;opacity:.55}.tm-miss text{fill:#fff;font:700 15px var(--sans)}
+.tm-gold circle{fill:#FFC93C;stroke:#B9792F;stroke-width:2}.tm-gold text{font-size:16px}
+.tm-pick{text-align:center;min-height:1.6em;margin:0}
+.tm-act{justify-content:center;margin:.4em 0 0}
+.tm-target{color:var(--fun);white-space:nowrap}

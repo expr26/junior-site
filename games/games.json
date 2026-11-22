@@ -580,6 +580,104 @@
           "a": "Outside a magnet they go from the north pole to the south pole."
         }
       ]
+    },
+    {
+      "slug": "rounding-rollercoaster",
+      "title": "Rounding Rollercoaster",
+      "icon": "🎢",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Send the roller-coaster car to the nearest station: round to 10, 100, 1000 and 1 decimal place.",
+      "live": true,
+      "learn": "Rounding to the nearest 10, 100 and 1000, rounding to 1 decimal place, the halfway rule (5 rounds up), the value of a digit, and dividing by 10.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Number: place value, rounding and estimation",
+        "PYP": "Number: place value and rounding"
+      },
+      "guide_title": "Rounding: a quick guide",
+      "guide": [
+        {
+          "h": "What rounding means",
+          "p": "Rounding means swapping a number for a simpler one that is close to it. To round 47 to the nearest 10, think of the two tens it sits between: 40 and 50. 47 is nearer to 50, so 47 rounds to 50. In the game, the two tens are the stations, and the car rolls to the nearer one."
+        },
+        {
+          "h": "Which digit to look at",
+          "p": "Look at the digit just after the place you are rounding to. For the nearest 10, look at the ones digit. For the nearest 100, look at the tens digit. For the nearest 1000, look at the hundreds digit. If that digit is 0, 1, 2, 3 or 4, round down. If it is 5, 6, 7, 8 or 9, round up."
+        },
+        {
+          "h": "The halfway rule",
+          "p": "Sometimes a number is exactly halfway, like 650 between 600 and 700. It is not nearer to either one, so mathematicians agreed a rule: halfway rounds up. So 650 rounds to 700, and 45 rounds to 50. In the game, a car stopped on the very top of the hill always goes forward to the bigger station. That is the rounding rule, not real physics!"
+        },
+        {
+          "h": "Rounding decimals",
+          "p": "Rounding to 1 decimal place means rounding to the nearest tenth. 2.36 lies between 2.3 and 2.4. Look at the hundredths digit, 6. It is 5 or more, so round up: 2.36 rounds to 2.4. Place value helps too: dividing by 10 moves every digit one place to the right, so 58 ÷ 10 = 5.8."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is 3,962 rounded to the nearest 100?",
+          "a": "4,000. It lies between 3,900 and 4,000, and its tens digit is 6, so it rounds up to the next hundred, which is 4,000."
+        },
+        {
+          "q": "Does 5 round up or down?",
+          "a": "Up. When the digit after the rounding place is exactly 5, the number rounds up, so 35 rounds to 40 and 2.45 rounds to 2.5 (to 1 decimal place)."
+        },
+        {
+          "q": "Why do we round numbers?",
+          "a": "Rounded numbers are easier to say, remember and work with. They are great for quick estimates, like checking that an answer is about the right size."
+        }
+      ]
+    },
+    {
+      "slug": "factor-forest",
+      "title": "Factor Forest",
+      "icon": "🌳",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Plant trees in neat rectangular orchards to find factor pairs, prime numbers and square numbers.",
+      "live": true,
+      "learn": "Factors and factor pairs, multiples, prime numbers, square numbers, and powers such as 2³.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Number: factors, multiples, primes, squares and powers",
+        "PYP": "Number: multiples, factors and primes"
+      },
+      "guide_title": "Factors and primes: a quick guide",
+      "guide": [
+        {
+          "h": "Factors and factor pairs",
+          "p": "A factor of a number divides into it exactly, with nothing left over. If you can plant 12 trees in 3 equal rows of 4, then 3 × 4 = 12, so 3 and 4 are a factor pair of 12. Trying every number of rows finds all the pairs: 1 × 12, 2 × 6 and 3 × 4. So the factors of 12 are 1, 2, 3, 4, 6 and 12."
+        },
+        {
+          "h": "Multiples",
+          "p": "Multiples are the numbers in a times table. The multiples of 6 are 6, 12, 18, 24, 30 and so on, forever. If each row of an orchard holds 6 trees, the total number of trees must be a multiple of 6. Don't mix them up: 3 is a factor of 6, but 30 is a multiple of 6."
+        },
+        {
+          "h": "Prime numbers",
+          "p": "A prime number has exactly two factors: 1 and itself. With 7 trees, the only rectangle you can make is one long line, 1 × 7, so 7 is prime. 15 is not prime, because 15 trees make 3 rows of 5. The first primes are 2, 3, 5, 7, 11, 13, 17, 19 and 23. The number 1 is not prime, because it has only one factor."
+        },
+        {
+          "h": "Square numbers and powers",
+          "p": "When the rows and the trees in each row are equal, the orchard is a square. 16 trees make 4 rows of 4, so 16 is a square number: 4 × 4 = 16, written 4². The small raised number is a power, or index. It tells you how many of the number to multiply together, so 2³ = 2 × 2 × 2 = 8, not 2 × 3."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is 1 a prime number?",
+          "a": "No. A prime number has exactly two different factors, 1 and itself. The number 1 has only one factor, so it is not prime. The smallest prime is 2, which is also the only even prime."
+        },
+        {
+          "q": "What is the difference between a factor and a multiple?",
+          "a": "A factor goes into a number exactly, like 3 into 12. A multiple is in the number's times table, like 24 for 12. Factors are never bigger than the number; multiples are never smaller."
+        },
+        {
+          "q": "What does 2³ mean?",
+          "a": "It means three 2s multiplied together: 2 × 2 × 2 = 8. It is called 2 cubed, or 2 to the power of 3."
+        }
+      ]
     }
   ]
 }

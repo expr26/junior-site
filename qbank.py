@@ -164,8 +164,9 @@ def hub_page(data):
     </div>
   </div>
 </section>"""
-    meta = {"title": "KS3 Maths and Physics question bank", "body_class": "qbank",
-            "description": "Free KS3 Maths and Physics question bank for ages 9 to 14: hundreds of questions by topic, marked instantly, with hints and worked answers."}
+    total = sum(len(t["questions"]) for _, rows in data for _, t in rows if t)
+    meta = {"title": "Free KS3 Maths and Physics questions and answers (Year 7–9)", "body_class": "qbank",
+            "description": f"Free KS3 Maths and Physics question bank for Year 7, 8 and 9 (ages 9 to 14): {total} questions by topic, marked instantly, with hints and worked answers."}
     return (ROOT, meta, body, "qbank/subjects.json")
 
 
@@ -206,7 +207,9 @@ def subject_page(s, rows):
     <p><a class="btn ghost" href="{ROOT}{other}/">Try {other.title()} questions →</a></p>
   </div>
 </section>"""
-    meta = {"title": f"KS3 {s['title']} question bank: practice by topic", "description": s["description"], "body_class": f"qbank {s['slug']}"}
+    n = sum(len(t["questions"]) for _, t in rows if t)
+    meta = {"title": f"KS3 {s['title']} questions and answers by topic (Year 7–9)",
+            "description": f"{n} free KS3 {s['title']} questions and answers for Year 7, 8 and 9: practice by topic with instant marking, hints and worked answers. No sign-up.", "body_class": f"qbank {s['slug']}"}
     return (f"{ROOT}{s['slug']}/", meta, body, "qbank/subjects.json")
 
 
@@ -296,7 +299,7 @@ def topic_page(s, plan, t, prev, nxt):
 </section>
 <script type="application/json" id="qbdata">{blob}</script>
 <script src="/static/js/qbank.js" defer></script>"""
-    meta = {"title": f"{t['title']}: KS3 {s['title']} questions", "description": t["description"], "body_class": f"qbank qb-topic-page {s['slug']}",
+    meta = {"title": f"KS3 {t['title']} questions and answers (Year 7–9 {s['title']})", "description": t["description"], "body_class": f"qbank qb-topic-page {s['slug']}",
             "noindex": t.get("noindex", False)}
     return (f"{ROOT}{s['slug']}/{t['slug']}/", meta, body, f"qbank/{s['slug']}/{t['slug']}.json")
 

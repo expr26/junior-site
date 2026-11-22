@@ -155,7 +155,7 @@ def hub_page(data):
   <div class="wrap narrow">
     <div class="card parents-note">
       <h3>For parents</h3>
-      <p>The topics follow the Key Stage 3 national curriculum for England (Years 7 to 9), which also fits Lower Secondary, IB MYP years 1 to 3 and pre-IGCSE.
+      <p>The topics follow the Key Stage 3 national curriculum for England (Years 7 to 9), which also fits Lower Secondary and pre-IGCSE.
       Warm-up questions suit confident 9 to 11 year olds; Challenge questions stretch students towards GCSE and IGCSE.</p>
       <p>There is no timer, no leaderboard and no account. Progress is saved only in this browser.</p>
     </div>

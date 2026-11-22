@@ -502,3 +502,25 @@ ul.plain{list-style:none;padding:0;margin:0}ul.plain li{margin-bottom:6px}
 .fw-b.up{fill:#1F9D55}.fw-b.down{fill:#E5484D}
 .fw-bt{font:700 15px var(--sans);fill:#fff;pointer-events:none}
 .fw-out{text-align:center;min-height:1.6em;margin:4px 0 8px}
+/* Rounding Rollercoaster */
+.rr-svg{width:100%;max-width:460px;display:block;margin:4px auto;border-radius:16px;background:var(--bg-alt)}
+.rr-sky{fill:#E3F2FF}
+.rr-cloud{font-size:26px;opacity:.85}
+.rr-rail{fill:none;stroke:#E5484D;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+.rr-ties{fill:none;stroke:#fff;stroke-width:2;stroke-dasharray:3 9}
+.rr-strut{stroke:#B9A6FF;stroke-width:3}
+.rr-nl{stroke:#2D1B69;stroke-width:3;stroke-linecap:round}.rr-tick{stroke:#2D1B69;stroke-width:2.5}
+.rr-mid{font:700 13px var(--sans);fill:#5B6475}
+.rr-st{fill:#FFC93C;stroke:#2D1B69;stroke-width:2.5}.rr-st.ok{fill:#34C77B}.rr-st.no{fill:#FF9A8A}
+.rr-stl{font:700 20px var(--serif);fill:#2D1B69}
+.rr-sign{font-size:24px}
+.rr-car{fill:#6C4DF6;stroke:#2D1B69;stroke-width:2.5}.rr-wheel{fill:#2D1B69}
+.rr-rider{font-size:22px}
+.rr-tag{fill:#fff;stroke:#6C4DF6;stroke-width:2.5}.rr-tagt{font:700 17px var(--sans);fill:#2D1B69}
+.rr-pvh{fill:#6C4DF6}.rr-pvl{font:700 16px var(--sans);fill:#fff}
+.rr-pvc{fill:#fff;stroke:#B9A6FF;stroke-width:2.5}.rr-pvc.mark{fill:#FFF3C4;stroke:#FF8A3D;stroke-width:3}
+.rr-pvh.dot,.rr-pvc.dot{fill:none;stroke:none}
+.rr-pvd{font:700 30px var(--serif);fill:#2D1B69}.rr-pvs{font:700 16px var(--sans);fill:var(--muted)}
+.rr-out{text-align:center;min-height:1.6em;margin:4px 0 8px}
+.rr-ctrl{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:420px;margin:8px auto 0}
+.rr-ctrl .btn{padding:0 10px;font-size:18px}

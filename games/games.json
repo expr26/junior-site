@@ -580,6 +580,55 @@
           "a": "Outside a magnet they go from the north pole to the south pole."
         }
       ]
+    },
+    {
+      "slug": "rounding-rollercoaster",
+      "title": "Rounding Rollercoaster",
+      "icon": "🎢",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Send the roller-coaster car to the nearest station: round to 10, 100, 1000 and 1 decimal place.",
+      "live": true,
+      "learn": "Rounding to the nearest 10, 100 and 1000, rounding to 1 decimal place, the halfway rule (5 rounds up), the value of a digit, and dividing by 10.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Number: place value, rounding and estimation",
+        "PYP": "Number: place value and rounding"
+      },
+      "guide_title": "Rounding: a quick guide",
+      "guide": [
+        {
+          "h": "What rounding means",
+          "p": "Rounding means swapping a number for a simpler one that is close to it. To round 47 to the nearest 10, think of the two tens it sits between: 40 and 50. 47 is nearer to 50, so 47 rounds to 50. In the game, the two tens are the stations, and the car rolls to the nearer one."
+        },
+        {
+          "h": "Which digit to look at",
+          "p": "Look at the digit just after the place you are rounding to. For the nearest 10, look at the ones digit. For the nearest 100, look at the tens digit. For the nearest 1000, look at the hundreds digit. If that digit is 0, 1, 2, 3 or 4, round down. If it is 5, 6, 7, 8 or 9, round up."
+        },
+        {
+          "h": "The halfway rule",
+          "p": "Sometimes a number is exactly halfway, like 650 between 600 and 700. It is not nearer to either one, so mathematicians agreed a rule: halfway rounds up. So 650 rounds to 700, and 45 rounds to 50. In the game, a car stopped on the very top of the hill always goes forward to the bigger station. That is the rounding rule, not real physics!"
+        },
+        {
+          "h": "Rounding decimals",
+          "p": "Rounding to 1 decimal place means rounding to the nearest tenth. 2.36 lies between 2.3 and 2.4. Look at the hundredths digit, 6. It is 5 or more, so round up: 2.36 rounds to 2.4. Place value helps too: dividing by 10 moves every digit one place to the right, so 58 ÷ 10 = 5.8."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is 3,962 rounded to the nearest 100?",
+          "a": "4,000. It lies between 3,900 and 4,000, and its tens digit is 6, so it rounds up to the next hundred, which is 4,000."
+        },
+        {
+          "q": "Does 5 round up or down?",
+          "a": "Up. When the digit after the rounding place is exactly 5, the number rounds up, so 35 rounds to 40 and 2.45 rounds to 2.5 (to 1 decimal place)."
+        },
+        {
+          "q": "Why do we round numbers?",
+          "a": "Rounded numbers are easier to say, remember and work with. They are great for quick estimates, like checking that an answer is about the right size."
+        }
+      ]
     }
   ]
 }

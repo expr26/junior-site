@@ -339,3 +339,11 @@ ul.plain{list-style:none;padding:0;margin:0}ul.plain li{margin-bottom:6px}
 .ep-foot{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:var(--ink);font-size:16px}
 .ep-foot .ep-logo{max-width:220px;margin:0;border:2px solid var(--line)}
 .ep-foot:hover b{color:var(--fun)}
+/* game guides and questions (games.py guide()) */
+.faqs{display:grid;gap:10px}
+.faq{padding:14px 18px}
+.faq summary{cursor:pointer;font:700 18px var(--serif);color:var(--navy);list-style:none;position:relative;padding-right:28px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:0;top:-2px;font-size:24px;color:var(--fun)}
+.faq[open] summary::after{content:"−"}
+.faq p{margin:10px 0 0}

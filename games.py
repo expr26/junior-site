@@ -76,6 +76,23 @@ def hub(games):
             body, "games/games.json")
 
 
+def guide(g):
+    """Optional short guide ("guide": [{h, p}]) and questions ("faq": [{q, a}]) under the game, for learners and for search."""
+    e = html.escape
+    out = ""
+    if g.get("guide"):
+        cards = "".join(f'<div class="card learn-card"><h3>{e(c["h"])}</h3><p>{e(c["p"])}</p></div>' for c in g["guide"])
+        out += f'<section class="section guide"><div class="wrap narrow"><h2>{e(g.get("guide_title", "How it works"))}</h2><div class="learn">{cards}</div></div></section>'
+    if g.get("faq"):
+        qs = "".join(f'<details class="card faq"><summary>{e(f["q"])}</summary><p>{e(f["a"])}</p></details>' for f in g["faq"])
+        ld = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": f["q"], "acceptedAnswer": {"@type": "Answer", "text": f["a"]}} for f in g["faq"]]},
+            ensure_ascii=False).replace("</", "<\\/")
+        out += (f'<section class="section tight"><div class="wrap narrow"><h2>Questions</h2><div class="faqs">{qs}</div></div></section>'
+                f'<script type="application/ld+json">{ld}</script>')
+    return out
+
+
 def game_page(g):
     e = html.escape
     cur = "".join(f"<li><b>{e(k)}:</b> {e(v)}</li>" for k, v in g["curriculum"].items())
@@ -95,6 +112,7 @@ def game_page(g):
     </div>
   </div>
 </section>
+{guide(g)}
 <section class="section">
   <div class="wrap narrow two-col">
     <div class="card"><h3>What you learn</h3><p>{e(g["learn"])}</p>

@@ -98,7 +98,7 @@ def game_page(g):
 <section class="section">
   <div class="wrap narrow two-col">
     <div class="card"><h3>What you learn</h3><p>{e(g["learn"])}</p>
-      <p><a href="{e(g["topic"], quote=True)}">Practise more: {e(g["topic_title"])} →</a></p></div>
+      <p><a href="{e(g["topic"], quote=True)}">{e(g["topic_title"])} →</a></p></div>
     <div class="card parents-note"><h3>For parents and teachers</h3><ul class="plain">{cur}</ul></div>
   </div>
 </section>

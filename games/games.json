@@ -1217,6 +1217,55 @@
           "a": "Lightning is a giant spark. Charge builds up in a storm cloud, and when there is enough, it jumps through the air between the cloud and the ground, or between clouds."
         }
       ]
+    },
+    {
+      "slug": "float-or-sink",
+      "title": "Float or Sink",
+      "icon": "🛟",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Work out the density of blocks, predict whether they float or sink, then drop them in the tank to find out.",
+      "live": true,
+      "learn": "Density = mass ÷ volume in g/cm³, why things float or sink in water, the volume of a cube, why the same material always has the same density, layers of oil and water, and density in the particle model.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: density and the particle model",
+        "PYP": "How the world works: materials and their properties"
+      },
+      "guide_title": "Density, floating and sinking: a quick guide",
+      "guide": [
+        {
+          "h": "What is density?",
+          "p": "Density tells you how much mass is packed into each bit of space. To work it out, divide the mass by the volume: density = mass ÷ volume. If the mass is in grams (g) and the volume is in cubic centimetres (cm³), the density is in g/cm³. A 50 g pebble with a volume of 20 cm³ has a density of 50 ÷ 20 = 2.5 g/cm³."
+        },
+        {
+          "h": "Float or sink?",
+          "p": "Water has a density of 1 g/cm³. An object floats in water if its density is less than 1 g/cm³, and sinks if it is more. It is density that matters, not how heavy something is: a big log floats, but a tiny steel nail sinks. A floating block sits partly under water. In the game, a block of 0.5 g/cm³ floats with half of it under the surface."
+        },
+        {
+          "h": "Same material, same density",
+          "p": "If you cut a block in half, each half has half the mass and half the volume, so mass ÷ volume stays the same. A whole plank and a small chip of the same wood have the same density, so both float. To find the volume of a cube, multiply side × side × side: a cube with 3 cm sides has a volume of 27 cm³."
+        },
+        {
+          "h": "Liquids, layers and particles",
+          "p": "Liquids have densities too. Cooking oil is about 0.9 g/cm³, so it floats on water in its own layer. In solids and liquids the particles are packed closely, but in a gas they are far apart, so gases are much less dense. Solids are usually a little denser than their liquids, but ice is a famous exception: it floats on water. The densities in the game are rounded, easy numbers."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do you work out density?",
+          "a": "Divide the mass by the volume: density = mass ÷ volume. For example, 30 g ÷ 60 cm³ = 0.5 g/cm³."
+        },
+        {
+          "q": "Why do some heavy things float?",
+          "a": "Floating depends on density, not on mass. A huge ship or log can float because its mass is spread out over a very large volume, so its overall density is less than water's 1 g/cm³."
+        },
+        {
+          "q": "Does a smaller piece of the same material have a smaller density?",
+          "a": "No. A smaller piece has less mass but also less volume, in the same proportion, so its density is the same. A tiny piece of wood floats just like a big one."
+        }
+      ]
     }
   ]
 }

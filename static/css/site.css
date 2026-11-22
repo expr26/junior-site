@@ -855,3 +855,30 @@ button.am-tile:hover:not(:disabled){transform:translateY(-3px)}button.am-tile:di
 .bc-act.four{display:grid;grid-template-columns:1fr 1fr;max-width:420px;margin-left:auto;margin-right:auto}
 .bc-act .btn{padding:0 14px}
 .bc-tip{text-align:center;color:var(--muted);margin:0 0 6px}
+/* Float or Sink */
+.fs-svg{width:100%;max-width:460px;display:block;margin:4px auto;background:linear-gradient(#F2F8FF,#FFF7EC);border-radius:16px}
+.fs-water{fill:#7CC4F5;opacity:.75}.fs-oil{fill:#F7C948;opacity:.9}
+.fs-glass{fill:none;stroke:#5B6475;stroke-width:4;stroke-linejoin:round}
+.fs-tl{font:700 12px var(--sans);fill:#123A5C}
+.fs-blk{transition:transform 1s cubic-bezier(.4,1.35,.6,1)}
+.fs-b{stroke:#2D1B69;stroke-width:2.5}
+.fs-b.rock{fill:#9AA3B2}.fs-b.wood{fill:#D9A066}.fs-b.wax{fill:#FFF1B8}.fs-b.cork{fill:#E3B98A}.fs-b.steel{fill:#7E8A9E}.fs-b.plastic{fill:#FF8FB1}.fs-b.rubber{fill:#4B4B5C}
+.fs-b.sel{stroke:var(--fun);stroke-width:5}
+.fs-bl{font:800 16px var(--sans);fill:#fff;paint-order:stroke;stroke:#2D1B69;stroke-width:3px;pointer-events:none}
+.fs-card-s rect{fill:#fff;stroke:#C9D1DE;stroke-width:2}
+.fs-emo{font-size:30px}.fs-jug{font-size:46px}
+.fs-ct{font:700 14px var(--sans);fill:#2D1B69}.fs-cn{font:700 15px var(--sans);fill:#0F6E66}
+.fs-pour{fill:none;stroke:#F7C948;stroke-width:6;stroke-linecap:round}
+.fs-cf{fill:#B8A6FF}.fs-ct2{fill:#DCD3FF}.fs-cr{fill:#8F78F0}
+.fs-grid{fill:none;stroke:#2D1B69;stroke-width:1.5}
+.fs-dim{font:700 15px var(--sans);fill:#2D1B69}
+.fs-pbox{fill:#fff;stroke:#8A94A6;stroke-width:2}
+.fs-pt{fill:#6C4DF6}
+.fs-out{text-align:center;min-height:1.6em;margin:4px 0 8px}
+.fs-ctrl{display:grid;grid-template-columns:1fr 1fr auto 1fr 1fr;gap:6px;align-items:center;max-width:420px;margin:8px auto 0}
+.fs-ctrl .btn{padding:0;min-width:0}
+.fs-val{font:700 24px var(--serif);min-width:3.6em;text-align:center}.fs-val small{font:600 13px var(--sans);margin-left:2px;color:var(--muted)}
+.fs-act{justify-content:center;margin:.6em 0 0}
+.fs-cards{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.fs-card{font-size:16px;min-height:48px;padding:8px 10px}
+.fs-card.on{border-color:var(--fun);background:var(--fun-bg);box-shadow:0 4px 0 var(--fun)}

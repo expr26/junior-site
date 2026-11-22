@@ -972,6 +972,104 @@
           "a": "A rectangle that is not a square has 2 lines of symmetry, one across the middle each way. Many people think the diagonals work too, but folding along a diagonal does not make the halves match."
         }
       ]
+    },
+    {
+      "slug": "mirror-maze",
+      "title": "Mirror Maze",
+      "icon": "🔦",
+      "subject": "science",
+      "kind": "game",
+      "blurb": "Turn mirrors to steer a laser beam to the target, then make shadows, bend light in glass and split white light into a rainbow.",
+      "live": true,
+      "learn": "The law of reflection (measured from the normal), how shadows form because light travels in straight lines, refraction into glass, and splitting white light with a prism.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: light: reflection, refraction and colour",
+        "PYP": "How the world works: light and shadows"
+      },
+      "guide_title": "Reflection, shadows, refraction and colour: a quick guide",
+      "guide": [
+        {
+          "h": "Light travels in straight lines",
+          "p": "Light from a source, such as the Sun or a torch, travels in straight lines. It cannot bend round an opaque object like a box, so a dark area called a shadow forms behind it. Move the light closer to the object and the shadow gets bigger, because the straight rays spread out more behind it. In the game the torch is treated as a tiny point of light."
+        },
+        {
+          "h": "The law of reflection",
+          "p": "When light hits a mirror, it bounces off. The normal is an imaginary line at 90° to the mirror. The angle of incidence (between the incoming ray and the normal) always equals the angle of reflection (between the reflected ray and the normal). Remember to measure from the normal, not from the mirror. In the maze the beam always meets a mirror at 45°, so it turns through 90°."
+        },
+        {
+          "h": "Refraction: bending light",
+          "p": "Light travels more slowly in glass and water than in air. When a ray goes from air into glass at an angle, it changes speed and bends towards the normal. When it comes out into the air again, it bends away from the normal. A ray that hits the glass straight along the normal does not bend at all. This bending is called refraction."
+        },
+        {
+          "h": "White light and the spectrum",
+          "p": "White light is not one colour: it is a mixture of colours. A glass prism refracts each colour by a slightly different amount. Violet bends the most and red bends the least, so the colours spread out into a spectrum: red, orange, yellow, green, blue, indigo and violet. This is called dispersion, and it is how rainbows form in raindrops."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the normal in reflection?",
+          "a": "The normal is an imaginary line drawn at 90° to the surface of the mirror, where the ray hits it. We measure the angle of incidence and the angle of reflection from the normal, and the two angles are always equal."
+        },
+        {
+          "q": "Why does light bend when it goes into water or glass?",
+          "a": "Light slows down when it goes from air into water or glass. If it enters at an angle, the change of speed makes it bend towards the normal. This is called refraction. It is why a straw in a glass of water looks bent."
+        },
+        {
+          "q": "How does a prism make a rainbow?",
+          "a": "A prism does not add colours. White light is already a mixture of colours, and the prism bends each colour by a different amount, so they spread out. Violet bends the most and red the least."
+        }
+      ]
+    },
+    {
+      "slug": "sound-studio",
+      "title": "Sound Studio",
+      "icon": "🎧",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Shape sound waves on an oscilloscope: make them louder, higher and lower, work out an echo and find where sound can't go.",
+      "live": true,
+      "learn": "Sound comes from vibrations. Amplitude and loudness, frequency and pitch, why sound needs a medium, echoes with the speed of sound, and the human hearing range.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: sound: vibrations, amplitude, frequency and echoes",
+        "PYP": "How the world works: sound and hearing"
+      },
+      "guide_title": "Sound waves, loudness and pitch: a quick guide",
+      "guide": [
+        {
+          "h": "Sound is made by vibrations",
+          "p": "Every sound starts with something vibrating: a guitar string, a drum skin or your vocal cords. The vibrations push on the particles of the air next to them, and those particles pass the vibrations on to the next ones, all the way to your ear. That is why sound needs a medium (a solid, a liquid or a gas) to travel through. Space is a vacuum with no particles, so it is silent."
+        },
+        {
+          "h": "Amplitude and loudness",
+          "p": "An oscilloscope draws a sound as a wave. The amplitude is the height of the wave from the middle line. A bigger amplitude means bigger vibrations carrying more energy, so the sound is louder. A smaller amplitude means a quieter sound. Changing the loudness does not change the pitch. (The waves in the game are a picture of the sound, not the air itself.)"
+        },
+        {
+          "h": "Frequency and pitch",
+          "p": "The frequency is the number of vibrations (or waves) each second. It is measured in hertz (Hz): 1 Hz means one vibration each second. More waves squeezed onto the screen means a higher frequency and a higher pitch, like a whistle. Fewer, wider waves mean a lower pitch, like a drum. In the game the screen shows one hundredth of a second, so 4 waves on it is 400 Hz."
+        },
+        {
+          "h": "Echoes and hearing",
+          "p": "An echo is sound that reflects off a hard surface, such as a cliff, and comes back to you. In air, sound travels at about 340 metres per second. If an echo takes 2 seconds, the sound travelled about 680 m there and back, so the cliff is about 340 m away. Most humans hear from about 20 Hz to about 20 000 Hz. Higher sounds are called ultrasound."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the difference between amplitude and frequency?",
+          "a": "Amplitude is how big the vibrations are, shown by how tall the wave is: it sets the loudness. Frequency is how many vibrations there are each second, shown by how many waves fit on the screen: it sets the pitch."
+        },
+        {
+          "q": "Why is there no sound in space?",
+          "a": "Sound is passed on by particles bumping into each other. Space is almost a perfect vacuum, with hardly any particles, so the vibrations cannot be passed on and no sound travels. Astronauts use radios, because radio waves can cross empty space."
+        },
+        {
+          "q": "How do you work out the distance to a cliff from an echo?",
+          "a": "Multiply the speed of sound (about 340 m/s in air) by the time for the echo. That gives the distance there and back, so halve it. An echo after 2 seconds means the cliff is about 340 m away."
+        }
+      ]
     }
   ]
 }

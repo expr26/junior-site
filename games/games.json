@@ -1070,6 +1070,55 @@
           "a": "Multiply the speed of sound (about 340 m/s in air) by the time for the echo. That gives the distance there and back, so halve it. An echo after 2 seconds means the cliff is about 340 m away."
         }
       ]
+    },
+    {
+      "slug": "spinner-lab",
+      "title": "Spinner Lab",
+      "icon": "🎡",
+      "subject": "maths",
+      "kind": "sim",
+      "blurb": "Spin spinners, dip into bags of counters and design your own spinner to explore chance.",
+      "live": true,
+      "learn": "The probability scale from 0 to 1, probability words, probability as a fraction, designing a spinner, P(not A) = 1 − P(A), and how experiments compare with theory.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Probability: the probability scale, outcomes and experiments",
+        "PYP": "Data handling: probability and chance"
+      },
+      "guide_title": "Probability: a quick guide",
+      "guide": [
+        {
+          "h": "The probability scale",
+          "p": "Probability tells us how likely something is, using a number from 0 to 1. Impossible things have a probability of 0 and certain things have a probability of 1. An even chance, like a fair coin landing on heads, is 1/2. Unlikely events sit between 0 and 1/2, and likely events sit between 1/2 and 1. No probability can be below 0 or above 1."
+        },
+        {
+          "h": "Probability as a fraction",
+          "p": "When all the outcomes are equally likely, probability = number of ways the event can happen ÷ total number of outcomes. A fair spinner with 8 equal sections, 3 of them red, gives P(red) = 3/8. Count sections or counters, not colours: a bag of 6 blue and 6 other counters gives P(blue) = 6/12 = 1/2, whatever the other colours are."
+        },
+        {
+          "h": "Something either happens or it doesn't",
+          "p": "An event and its opposite always add up to 1, because one of them is certain to happen. So P(not A) = 1 − P(A). If the probability of rain tomorrow is 3/10, the probability of no rain is 1 − 3/10 = 7/10. This trick saves time when the opposite is easier to work out."
+        },
+        {
+          "h": "Experiments and relative frequency",
+          "p": "In an experiment, relative frequency = number of times something happened ÷ number of trials. With a few spins it can be far from the theoretical probability, just by chance. With many more trials it usually gets closer. A spinner has no memory: a long run of blues doesn't make red more likely next time. In Spinner Lab the spinners are fair and every section is the same size."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the probability of something impossible?",
+          "a": "0. Something certain has a probability of 1, and everything else is in between."
+        },
+        {
+          "q": "Why doesn't my experiment give exactly the right answer?",
+          "a": "Experiments involve chance, so results wobble. If you do lots more trials, the relative frequency usually gets closer to the theoretical probability, but it is rarely exactly the same."
+        },
+        {
+          "q": "How do I find the probability that something does not happen?",
+          "a": "Take the probability that it does happen away from 1. For example, if P(red) = 3/8, then P(not red) = 1 − 3/8 = 5/8."
+        }
+      ]
     }
   ]
 }

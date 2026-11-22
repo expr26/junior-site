@@ -34,3 +34,14 @@ Unlike ExaminerPrep there is no second repository for the built output: Cloudfla
 | `_headers`, `_redirects` | Cloudflare Pages headers (strict CSP) and redirects. |
 
 The build stops if a page has no title or description, uses an unknown `{{placeholder}}`, or two pages make the same URL.
+
+## Lessons form (`/lessons/` → `functions/api/inquiry.js`)
+The form posts to a Cloudflare Pages Function, which checks the answers and saves them in a D1 database.
+Set up once:
+1. Cloudflare → Storage & Databases → D1 → Create database `junior-site`.
+2. In the D1 console, paste and run `migrations/0001_inquiries.sql` (or `npx wrangler d1 execute junior-site --remote --file=migrations/0001_inquiries.sql`).
+3. Pages project → Settings → Bindings → add D1 database, variable name `DB`, database `junior-site`.
+4. Optional email for each inquiry: add `RESEND_API_KEY` (secret), `NOTIFY_EMAIL` and `MAIL_FROM` (a sender on a domain verified in resend.com).
+
+Read inquiries in the D1 console: `SELECT * FROM inquiries ORDER BY id DESC;`
+Spam protection: a hidden field, a 3-second minimum, and at most 3 inquiries per email per hour.

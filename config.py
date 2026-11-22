@@ -12,3 +12,6 @@ SISTER_URL = "https://examinerprep.com"
 
 # Cloudflare Web Analytics token. Empty means no beacon is added to the pages.
 CF_BEACON_TOKEN = ""
+
+# Where parents can write about privacy questions (shown on /privacy/). Shared with ExaminerPrep for now.
+CONTACT_EMAIL = "info@examinerprep.com"

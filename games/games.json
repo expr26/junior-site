@@ -874,6 +874,104 @@
           "a": "The meter keeps counting up the kWh used. Write down the reading, then read it again later. Take the first reading away from the second to find how many kWh were used in between."
         }
       ]
+    },
+    {
+      "slug": "garden-designer",
+      "title": "Garden Designer",
+      "icon": "🌻",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Design garden plots on a grid: fence them, turf them, plant a triangle bed and fill a planter with cubes.",
+      "live": true,
+      "learn": "Perimeter and area of rectangles, the same area with a different perimeter, the area of a triangle as half a rectangle, compound L-shapes and the volume of a cuboid.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Geometry and measures: perimeter, area and volume",
+        "PYP": "Measurement: perimeter, area and volume"
+      },
+      "guide_title": "Perimeter, area and volume: a quick guide",
+      "guide": [
+        {
+          "h": "Perimeter: the distance round the edge",
+          "p": "The perimeter is the total distance all the way round a shape, like the fence round a garden. For a rectangle, add all four sides: length + width + length + width, which is the same as 2 × (length + width). A plot 5 m long and 4 m wide needs 18 m of fence. Perimeter is a length, so it is measured in cm or m."
+        },
+        {
+          "h": "Area: the space inside",
+          "p": "Area is how much surface a shape covers, like the turf on a lawn. On a grid, count the squares inside. For a rectangle, multiply: area = length × width, so 4 m × 3 m = 12 m². Area is measured in square units such as cm² or m². Two shapes can have the same area but different perimeters: a 6 m × 2 m plot and a 4 m × 3 m plot both cover 12 m², but need 16 m and 14 m of fence."
+        },
+        {
+          "h": "Triangles and L-shapes",
+          "p": "Cut a rectangle from one corner to the opposite corner and you get two matching triangles, so each triangle has half the area: length × width ÷ 2. For a compound shape like an L, split it into rectangles, find each area and add them. You can also find the area of the big rectangle and take away the missing corner. Both ways give the same answer."
+        },
+        {
+          "h": "Volume: the space in 3D",
+          "p": "Volume is the amount of space inside a 3D shape, like the soil in a planter or the water in a pond. For a cuboid, count the cubes in one layer (length × width), then multiply by the number of layers (the height): volume = length × width × height. A 4 m × 3 m × 2 m pond holds 24 m³. Volume uses cubic units such as cm³ or m³."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the difference between perimeter and area?",
+          "a": "Perimeter is the distance round the outside of a shape, measured in units like m. Area is the space inside, measured in square units like m². A fence is about perimeter; turf is about area."
+        },
+        {
+          "q": "How do you find the area of a triangle?",
+          "a": "Multiply the base by the perpendicular height and divide by 2. This works because a triangle is half of a rectangle (or parallelogram) with the same base and height."
+        },
+        {
+          "q": "How do you work out the volume of a cuboid?",
+          "a": "Multiply length × width × height. If a cuboid is 3 cm long, 3 cm wide and 2 cm high, it holds 3 × 3 × 2 = 18 one-centimetre cubes, so its volume is 18 cm³."
+        }
+      ]
+    },
+    {
+      "slug": "shape-shifter",
+      "title": "Shape Shifter",
+      "icon": "🔷",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Slide, flip and turn a ghost shape on a coordinate grid to land it exactly where the transformation sends it.",
+      "live": true,
+      "learn": "Translations, reflections in the x-axis, the y-axis and the line x = 1, rotations of 90° and 180° about the origin, line symmetry and naming a transformation.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Geometry: translations, reflections, rotations and symmetry",
+        "PYP": "Shape and space: symmetry and transformations"
+      },
+      "guide_title": "Transformations: a quick guide",
+      "guide": [
+        {
+          "h": "Translation: a slide",
+          "p": "A translation slides a shape without turning or flipping it. Every corner moves the same distance in the same direction, for example 3 squares right and 2 squares down. The shape stays the same size and the same way round. In maths, this translation can be written as the column vector (3, −2): the top number is right or left, the bottom number is up or down."
+        },
+        {
+          "h": "Reflection: a mirror image",
+          "p": "A reflection flips a shape over a mirror line. Each point of the image is the same distance from the mirror line as the original point, but on the other side. Reflecting in the y-axis sends (x, y) to (−x, y), and reflecting in the x-axis sends (x, y) to (x, −y). For a line like x = 1, measure each distance from that line, not from an axis."
+        },
+        {
+          "h": "Rotation: a turn",
+          "p": "A rotation turns a shape about a fixed point called the centre of rotation. You need the angle, the direction (clockwise or anticlockwise) and the centre. A 90° clockwise turn about the origin sends (x, y) to (y, −x), and a 180° turn sends (x, y) to (−x, −y). Tracing paper is a great way to check a rotation."
+        },
+        {
+          "h": "Line symmetry",
+          "p": "A shape has a line of symmetry if you can fold it along that line and the two halves match exactly. A rectangle that is not a square has 2 lines of symmetry: across the middle each way. Its diagonals are not lines of symmetry. A square has 4, and an equilateral triangle has 3."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What are the main types of transformation?",
+          "a": "At KS3 the main transformations are translation (slide), reflection (flip), rotation (turn) and enlargement (make bigger or smaller). The first three keep the shape exactly the same size."
+        },
+        {
+          "q": "How do you describe a rotation fully?",
+          "a": "Give three things: the angle (for example 90°), the direction (clockwise or anticlockwise) and the centre of rotation (for example the origin, (0, 0)). A 180° turn is the same either way."
+        },
+        {
+          "q": "How many lines of symmetry does a rectangle have?",
+          "a": "A rectangle that is not a square has 2 lines of symmetry, one across the middle each way. Many people think the diagonals work too, but folding along a diagonal does not make the halves match."
+        }
+      ]
     }
   ]
 }

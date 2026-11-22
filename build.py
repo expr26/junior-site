@@ -144,10 +144,12 @@ def main():
     import topics   # topic hubs and unit pages from topics/*.json
     import games    # the /games/ page and one page per live game, from games/games.json
     import qbank    # the KS3 question bank, from qbank/
+    import videos   # theory videos, from videos/
     try:
         jobs += topics.pages()
         jobs += games.pages()
         jobs += qbank.pages()
+        jobs += videos.pages()
         (DIST / "static" / "topics.json").write_text(json.dumps(topics.index()), encoding="utf-8")
     except topics.ContentError as e:
         fail(str(e))

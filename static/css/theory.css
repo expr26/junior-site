@@ -1,0 +1,48 @@
+/* Theory videos (/videos/): player, cards and the lesson text. Player logic: static/js/theory.js */
+.tv{display:flex;flex-direction:column;gap:12px}
+.tv-screen{position:relative;aspect-ratio:16/9;border-radius:22px;overflow:hidden;border:3px solid var(--line);box-shadow:0 8px 0 var(--line);
+  background:radial-gradient(circle at 12% 18%,#FFE9A8 0 8%,transparent 9%),radial-gradient(circle at 88% 82%,#D6F5F0 0 12%,transparent 13%),
+  radial-gradient(circle at 92% 12%,#FFD6E3 0 6%,transparent 7%),linear-gradient(160deg,#FFFDF7,#F4EFFF)}
+.tv-stage{position:absolute;inset:0;width:100%;height:100%;display:block}
+.tv-cover{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;
+  background:linear-gradient(160deg,rgba(255,249,240,.9),rgba(238,233,255,.95));padding:12px}
+.tv-cover[hidden]{display:none}
+.tv-cover .small{color:#55526E;margin:0}
+.tv-cover-owl .mascot{width:110px;height:110px;animation:tvBob 2.4s ease-in-out infinite}
+.tv:not(.ready) .tv-start{opacity:.5;pointer-events:none}
+@keyframes tvBob{50%{transform:translateY(-8px)}}
+.tv-bar{display:flex;align-items:center;gap:8px}
+.tv-b{min-width:48px;min-height:48px;border-radius:14px;border:2px solid var(--line);background:var(--card);font-size:20px;cursor:pointer;box-shadow:0 3px 0 var(--line)}
+.tv-b:hover{border-color:var(--fun)}.tv-b:active{transform:translateY(2px);box-shadow:none}
+.tv-b[hidden]{display:none}
+.tv:not(.started) .tv-bar{opacity:.5}
+.tv-seg{--p:0%;flex:1;height:12px;border-radius:99px;background:var(--bg-alt);position:relative;overflow:hidden}
+.tv-seg::after{content:"";position:absolute;inset:0;width:var(--p);background:linear-gradient(90deg,var(--fun),var(--pink));border-radius:99px;transition:width .5s ease}
+.tv-cap{min-height:3.2em;margin:0;font-size:21px;font-weight:600;line-height:1.45;background:var(--card);border:2px solid var(--line);border-radius:18px;padding:14px 16px}
+.tv:not(.started) .tv-cap{display:none}
+.tv.paused .tv-cap{border-style:dashed}
+.tv-check[hidden]{display:none}
+.tv-q{background:var(--card);border-radius:20px;padding:18px;border:2px solid var(--fun);box-shadow:0 6px 0 var(--fun-bg)}
+.tv-q-label{font-family:var(--serif);font-weight:700;color:var(--fun);margin:0 0 .4em}
+.tv-q .q-feedback .btn{margin-top:12px}
+.tv-chapters{list-style:none;padding:0;margin:8px 0 16px;display:flex;flex-wrap:wrap;gap:8px}
+.tv-ch{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:6px 14px 6px 6px;border-radius:99px;border:2px solid var(--line);background:var(--card);
+  font:600 15px/1.2 var(--sans);color:var(--ink);cursor:pointer;text-align:left}
+.tv-ch-n{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--bg-alt);font-weight:700}
+.tv-ch.now{border-color:var(--fun)}.tv-ch.now .tv-ch-n{background:var(--fun);color:#fff}
+.tv-ch.done .tv-ch-n{background:var(--ok);color:#fff}
+.tv-text summary{cursor:pointer;min-height:44px;display:flex;align-items:center}
+.tv-text h3{margin-top:1.2em}
+.tv-tq{background:var(--bg-alt);border-radius:12px;padding:10px 12px}
+.tv-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));margin:0 0 32px}
+.tv-card{display:flex;flex-direction:column;text-decoration:none;color:var(--ink)}
+.tv-card h3{margin:.2em 0}
+.tv-thumb{position:relative;display:grid;place-items:center;aspect-ratio:16/9;border-radius:16px;margin-bottom:12px;
+  background:linear-gradient(140deg,var(--fun-bg),var(--gold-bg))}
+.tv-card.physics .tv-thumb{background:linear-gradient(140deg,var(--sci-bg),var(--fun-bg))}
+.tv-icon{font-size:54px}
+.tv-thumb-play{position:absolute;right:12px;bottom:12px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--fun);color:#fff;font-size:18px;box-shadow:0 4px 0 var(--btn-edge)}
+.tv-card:hover .tv-thumb-play{transform:scale(1.1)}
+.tv-link{margin:4px 0 8px}
+@media (max-width:560px){.tv-cap{font-size:18px}.tv-cover-owl .mascot{width:76px;height:76px}.tv-screen{border-radius:16px}}
+@media (prefers-reduced-motion:reduce){.tv-cover-owl .mascot{animation:none}.tv-seg::after{transition:none}}

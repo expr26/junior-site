@@ -236,6 +236,12 @@ def _question_html(n, q, subs):
 </li>"""
 
 
+def _video_link(subject, topic):
+    import videos   # a theory video for this topic, if there is one
+    url = videos.link(subject, topic)
+    return f'<p><a class="btn tv-link" href="{url}">▶ Watch the video first</a></p>' if url else ""
+
+
 def topic_page(s, plan, t, prev, nxt):
     subs = {x["slug"]: x["title"] for x in t["subtopics"]}
     qs = t["questions"]
@@ -264,6 +270,7 @@ def topic_page(s, plan, t, prev, nxt):
       <span class="{_tag(s['slug'])}">KS3 {html.escape(s['title'])} · {html.escape(plan['ks3'])}</span>
       <h1>{html.escape(t['title'])}</h1>
       <p class="lede">{rich(t['intro'])}</p>
+      {_video_link(s['slug'], t['slug'])}
       <p class="qb-count"><b>{_count(len(qs), 'question')}</b> · {_count(len(t['subtopics']), 'part')} · no timer</p>
       <div class="qb-progress" data-qb-topic="{key}" data-qb-total="{len(qs)}" hidden>
         <span class="qb-meter"><span></span></span><span class="qb-done small"></span>

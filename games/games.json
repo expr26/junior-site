@@ -440,7 +440,48 @@
       "icon": "🦊",
       "subject": "science",
       "kind": "sim",
-      "blurb": "Take one animal away and see what happens to the rest."
+      "blurb": "Explore an island food web, then take one animal away and predict what happens to all the others.",
+      "live": true,
+      "learn": "Producers and consumers, reading the arrows in a food web, and how removing one species affects the others (interdependence).",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Biology: interactions and interdependencies: food chains and food webs",
+        "PYP": "Sharing the planet: living things depend on each other"
+      },
+      "guide_title": "Food chains and food webs: a quick guide",
+      "guide": [
+        {
+          "h": "Producers and consumers",
+          "p": "Every food chain starts with a producer: a green plant that makes its own food by photosynthesis, using energy from sunlight. Animals are consumers: they get their energy by eating plants or other animals."
+        },
+        {
+          "h": "Reading the arrows",
+          "p": "In a food chain or food web, each arrow points from the food to the animal that eats it. The arrow shows the direction the energy flows. Grass → rabbit → fox means the rabbit eats the grass and the fox eats the rabbit."
+        },
+        {
+          "h": "Predators and prey",
+          "p": "A predator hunts and eats other animals. The animals it eats are its prey. A fox is a predator, and rabbits and mice are its prey."
+        },
+        {
+          "h": "Interdependence",
+          "p": "A food web is many food chains joined together. Living things depend on each other, so if one population changes, the effects spread. If a predator disappears, its prey usually increases, and then the plants that the prey eats may decrease. This game uses a simple model: real food webs are bigger, and nature often finds a new balance."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which way do the arrows go in a food chain?",
+          "a": "From the food to the animal that eats it. They show the flow of energy, so they always point towards the eater."
+        },
+        {
+          "q": "What is the difference between a food chain and a food web?",
+          "a": "A food chain shows one path of energy, such as grass → rabbit → fox. A food web joins many food chains together to show all the feeding links in a habitat."
+        },
+        {
+          "q": "What happens if a predator is removed from a food web?",
+          "a": "Usually its prey increases, because fewer of them are eaten. Then the plants or animals that the prey eats may decrease. One change can spread through the whole web."
+        }
+      ]
     },
     {
       "slug": "day-night-seasons",

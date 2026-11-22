@@ -574,3 +574,27 @@ button.am-tile:hover:not(:disabled){transform:translateY(-3px)}button.am-tile:di
 @media (prefers-reduced-motion:reduce){.am-svg.ran .am-gear{animation:none}button.am-tile:hover:not(:disabled){transform:none}}
 .am-var{font-family:Georgia,"Times New Roman",serif;font-style:italic}
 .am-tile i,.am-v i,.am-out i,.am-lab i{font:italic 700 1.1em Georgia,"Times New Roman",serif}
+/* Smoothie Mixer */
+.sm-svg{width:100%;max-width:460px;display:block;margin:4px auto;background:linear-gradient(#FFE9F1,#FFF6D8);border-radius:16px}
+.sm-cupbg{fill:rgba(255,255,255,.75)}
+.sm-cup{fill:none;stroke:#2D1B69;stroke-width:4;stroke-linejoin:round}
+.sm-tick{stroke:rgba(45,27,105,.18);stroke-width:1}
+.sm-layer{stroke:rgba(255,255,255,.55);stroke-width:1}
+.sm-le{font-size:12px}
+.sm-straw{stroke:#FF5D8F;stroke-width:9;stroke-linecap:round}
+.sm-cap{font:600 13px var(--sans);fill:#55526E}
+.sm-leg{font:700 24px var(--serif);fill:#2D1B69}
+.sm-cupg{transform-box:fill-box;transform-origin:50% 100%}
+.sm-svg.blend .sm-cupg{animation:sm-wob .6s ease 2}
+@keyframes sm-wob{25%{transform:rotate(-4deg)}75%{transform:rotate(4deg)}}
+.sm-out{text-align:center;min-height:1.6em;margin:4px 0 8px;font-weight:600}
+.sm-ctrl{display:grid;gap:8px;max-width:340px;margin:0 auto}
+.sm-row{display:grid;grid-template-columns:1fr 48px 2.6em 48px;gap:6px;align-items:center}
+.sm-row .btn{padding:0;min-width:0;font-size:22px}
+.sm-name{font-weight:600;font-size:17px}
+.sm-n{font:700 26px var(--serif);text-align:center;color:var(--navy)}
+.sm-act{justify-content:center;margin:.6em 0 0}
+.sm-price{display:grid;gap:6px;max-width:340px;margin:8px auto 14px;padding:12px;border-radius:16px;background:var(--bg-alt)}
+.sm-price p{display:flex;justify-content:space-between;align-items:center;margin:0;font-size:26px}
+.sm-price b{font:700 26px var(--serif);color:var(--navy)}
+@media (prefers-reduced-motion:reduce){.sm-svg.blend .sm-cupg{animation:none}}

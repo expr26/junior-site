@@ -727,6 +727,55 @@
           "a": "Because adding then multiplying usually gives a different answer from multiplying then adding. 5 → + 1 → × 2 gives 12, but 5 → × 2 → + 1 gives 11."
         }
       ]
+    },
+    {
+      "slug": "smoothie-mixer",
+      "title": "Smoothie Mixer",
+      "icon": "🥤",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Mix fruit smoothies in just the right ratio: scale recipes, simplify, share and work out prices.",
+      "live": true,
+      "learn": "Writing a ratio a : b, equivalent ratios, scaling a recipe up, simplifying a ratio, sharing an amount in a ratio, a ratio as a fraction of the total, and direct proportion with prices.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Ratio, proportion and rates of change",
+        "PYP": "Number: ratio and proportion in everyday contexts"
+      },
+      "guide_title": "Ratio and proportion: a quick guide",
+      "guide": [
+        {
+          "h": "What a ratio means",
+          "p": "A ratio compares amounts. Strawberry : banana = 2 : 3 means 2 scoops of strawberry for every 3 scoops of banana. The order matters: 3 : 2 would be a different smoothie. If you multiply both parts by the same number, the taste stays the same, so 2 : 3, 4 : 6 and 6 : 9 are equivalent ratios."
+        },
+        {
+          "h": "Scaling and simplifying",
+          "p": "To scale a recipe up, multiply every part by the same number. If 2 : 1 becomes 6 strawberries, that is × 3, so you need 3 bananas. Adding the same amount to each part does not work. To simplify, divide every part by the biggest number that goes into all of them: 8 : 4 divided by 4 is 2 : 1."
+        },
+        {
+          "h": "Sharing in a ratio",
+          "p": "To share an amount in a ratio, first add the parts to find how many parts there are. Then divide the amount by that number to find one part. To share 12 scoops in the ratio 1 : 3, there are 4 parts, so one part is 12 ÷ 4 = 3 scoops. The shares are 3 and 9, which add back up to 12."
+        },
+        {
+          "h": "Fractions and direct proportion",
+          "p": "A ratio also tells you fractions of the whole. In 2 : 3 there are 5 parts, so the first amount is 2/5 of the total and the second is 3/5. Two amounts are in direct proportion when doubling one doubles the other. If 3 smoothies cost £6, one costs £2, so 5 cost £10. In the game, each scoop is one equal part."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is 2 : 3 the same as 3 : 2?",
+          "a": "No. The order matches the order of the words. Strawberry : banana = 2 : 3 has more banana, but 3 : 2 would have more strawberry."
+        },
+        {
+          "q": "How do I know a ratio is fully simplified?",
+          "a": "When no whole number bigger than 1 divides into every part. 4 : 2 can still be divided by 2, but 2 : 1 cannot, so 2 : 1 is the simplest form."
+        },
+        {
+          "q": "What is the unitary method?",
+          "a": "It means finding the value of one item first, then multiplying. If 3 smoothies cost £6, one costs £6 ÷ 3 = £2, so 5 cost 5 × £2 = £10."
+        }
+      ]
     }
   ]
 }

@@ -317,3 +317,12 @@ ul.plain{list-style:none;padding:0;margin:0}ul.plain li{margin-bottom:6px}
 .pp-state.melting,.pp-state.boiling{background:#FFF0D6;color:#9A5B00}
 .pp-ctrl{justify-content:center}
 .pp-ctrl .btn{min-width:110px}
+/* ExaminerPrep (sister site, age 15+): its logo needs a light background in both themes */
+.ep-logo{display:block;background:#fff;border-radius:14px;padding:10px 14px;margin:0 0 14px;max-width:320px}
+.ep-logo img{display:block;width:100%;height:auto}
+.ep-card{border-color:#E2C67E;background:var(--gold-bg)}
+.foot-grid{display:grid;gap:20px;align-items:center}
+@media (min-width:800px){.foot-grid{grid-template-columns:1fr 1fr}}
+.ep-foot{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:var(--ink);font-size:16px}
+.ep-foot .ep-logo{max-width:220px;margin:0;border:2px solid var(--line)}
+.ep-foot:hover b{color:var(--fun)}

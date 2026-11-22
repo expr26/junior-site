@@ -1266,6 +1266,55 @@
           "a": "No. A smaller piece has less mass but also less volume, in the same proportion, so its density is the same. A tiny piece of wood floats just like a big one."
         }
       ]
+    },
+    {
+      "slug": "race-track",
+      "title": "Race Track",
+      "icon": "🏁",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Race animals and vehicles along a track and watch the distance–time graph draw itself as they go.",
+      "live": true,
+      "learn": "Speed = distance ÷ time, comparing speeds, reading distance–time graphs, average speed for a journey with a stop, and units such as m/s and km/h.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: motion, speed and distance–time graphs",
+        "PYP": "How the world works: forces and motion"
+      },
+      "guide_title": "Speed and distance–time graphs: a quick guide",
+      "guide": [
+        {
+          "h": "Speed = distance ÷ time",
+          "p": "Speed tells you how far something travels in each unit of time. To work it out, divide the distance by the time. A rabbit that runs 40 metres in 5 seconds has a speed of 40 ÷ 5 = 8 metres per second (8 m/s). You can turn the formula round too: distance = speed × time, and time = distance ÷ speed."
+        },
+        {
+          "h": "Units of speed",
+          "p": "The unit of speed comes from the units you divide. Metres ÷ seconds gives metres per second (m/s), and kilometres ÷ hours gives kilometres per hour (km/h). Always check the units before you divide: if a distance is in kilometres and you want m/s, change it to metres first. Remember that 1 km = 1000 m."
+        },
+        {
+          "h": "Reading a distance–time graph",
+          "p": "A distance–time graph shows how far something is from the start at each moment. The steeper the line, the faster it is moving. A straight sloping line means a steady speed. A flat (horizontal) line means the distance is not changing, so the object has stopped. A line sloping down means it is coming back towards the start."
+        },
+        {
+          "h": "Average speed",
+          "p": "Real journeys speed up, slow down and stop. Average speed = total distance ÷ total time, and the total time includes any stops. A cyclist who rides 120 m in 20 s of riding but also stops for 10 s has an average speed of 120 ÷ 30 = 4 m/s. In this game each racer moves at a steady speed on each part of the race, which keeps the graphs as straight lines."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do you work out speed?",
+          "a": "Divide the distance travelled by the time taken: speed = distance ÷ time. For example, 100 m in 20 s is 100 ÷ 20 = 5 m/s."
+        },
+        {
+          "q": "What does a flat line on a distance–time graph mean?",
+          "a": "It means the object is not moving. The time keeps going, but the distance from the start stays the same, so the object has stopped."
+        },
+        {
+          "q": "Does a stop count when you work out average speed?",
+          "a": "Yes. Average speed is the total distance divided by the total time for the whole journey, and that total time includes the time spent stopped. So stops make the average speed lower."
+        }
+      ]
     }
   ]
 }

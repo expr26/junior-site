@@ -16,8 +16,8 @@
     { id: 'combo-5', icon: '🔥', name: 'On a roll', desc: 'Get 5 right in a row.' },
     { id: 'fixer', icon: '🛠️', name: 'Mistake fixer', desc: 'Fix 5 mistakes on your second try.' },
     { id: 'curious', icon: '🔍', name: 'Curious mind', desc: 'Use 5 hints and keep going.' },
-    { id: 'perfect', icon: '💎', name: 'Perfect set', desc: 'Get every question right first time in a unit.' },
-    { id: 'three-stars', icon: '🌟', name: 'Star collector', desc: 'Earn 3 stars in a unit.' },
+    { id: 'perfect', icon: '💎', name: 'Perfect set', desc: 'Get everything right first time in a unit or game.' },
+    { id: 'three-stars', icon: '🌟', name: 'Star collector', desc: 'Earn 3 stars in a unit or game.' },
     { id: 'try-again', icon: '🔁', name: 'Never give up', desc: 'Do a unit again to beat your score.' },
     { id: 'streak-3', icon: '📅', name: '3-day streak', desc: 'Practise 3 days in a row.' },
     { id: 'streak-7', icon: '🗓️', name: 'Week warrior', desc: 'Practise 7 days in a row.' },
@@ -27,6 +27,7 @@
     { id: 'all-rounder', icon: '🌍', name: 'All-rounder', desc: 'Finish a unit in Maths and a unit in Science.' },
     { id: 'topic-fractions', icon: '🍕', name: 'Fraction hero', desc: 'Finish every Fractions unit.' },
     { id: 'topic-forces-and-motion', icon: '🧲', name: 'Force master', desc: 'Finish every Forces and motion unit.' },
+    { id: 'first-game', icon: '🎮', name: 'Game on', desc: 'Finish your first game.' },
     { id: 'welcome-back', icon: '👋', name: 'Welcome back', desc: 'Come back after a few days away.' }
   ];
 
@@ -36,7 +37,7 @@
   function today(d) { d = d || new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
   function dayDiff(a, b) { return Math.round((new Date(b + 'T12:00:00') - new Date(a + 'T12:00:00')) / 864e5); }
 
-  function blank() { return { v: 1, xp: 0, days: {}, streak: 0, best: 0, last: '', answered: 0, right: 0, fixed: 0, hints: 0, units: {}, badges: {}, subjects: {} }; }
+  function blank() { return { v: 1, xp: 0, days: {}, streak: 0, best: 0, last: '', answered: 0, right: 0, fixed: 0, hints: 0, units: {}, games: {}, badges: {}, subjects: {} }; }
   function load() {
     try { var s = JSON.parse(localStorage.getItem(KEY)); if (s && s.v === 1) return Object.assign(blank(), s); } catch (e) {}
     return blank();
@@ -123,6 +124,23 @@
     return { stars: st, improved: improved, points: pts };
   }
 
+  /* a game from /games/ (d = { key, subject }): same stars rule as a unit, saved under S.games */
+  function finishGame(d, firstTry, total) {
+    var g = S.games[d.key] || { stars: 0, best: 0, runs: 0 };
+    var st = stars(firstTry, total), improved = st > g.stars;
+    if (g.runs > 0) award('try-again');
+    g.runs++; g.best = Math.max(g.best, firstTry); g.total = total; g.stars = Math.max(g.stars, st); g.at = Date.now();
+    S.games[d.key] = g;
+    var pts = POINTS.unit + (firstTry === total ? POINTS.perfect : 0);
+    quiet = true;
+    award('first-game');
+    if (firstTry === total) award('perfect');
+    if (st === 3) award('three-stars');
+    quiet = false;
+    addXP(pts);
+    return { stars: st, improved: improved, points: pts };
+  }
+
   function drain() { var p = pending; pending = []; return p; }
 
   /* ---------- show ---------- */
@@ -159,7 +177,7 @@
   }
 
   window.JG = { state: function () { return S; }, level: level, LEVELS: LEVELS, BADGES: BADGES, POINTS: POINTS, DAILY_GOAL: DAILY_GOAL,
-    answer: answer, finishUnit: finishUnit, drain: drain, toast: toast, confetti: confetti, today: today, dayDiff: dayDiff, chip: chip };
+    answer: answer, finishUnit: finishUnit, finishGame: finishGame, stars: stars, drain: drain, toast: toast, confetti: confetti, today: today, dayDiff: dayDiff, chip: chip };
 
   function ready() {
     chip();
@@ -167,6 +185,10 @@
       var u = S.units[el.getAttribute('data-stars')]; var n = u ? u.stars : 0;
       el.querySelectorAll('i').forEach(function (i, k) { if (k < n) i.className = 'on'; });
       if (u) el.closest('.unit-card') && el.closest('.unit-card').classList.add('done');
+    });
+    document.querySelectorAll('[data-game]').forEach(function (el) {   // stars on the Games page
+      var g = S.games['game/' + el.getAttribute('data-game')]; var n = g ? g.stars : 0;
+      el.querySelectorAll('.g-stars i').forEach(function (i, k) { if (k < n) i.className = 'on'; });
     });
     document.querySelectorAll('.unit-path').forEach(function (ol) {   // "start here" on the first unfinished unit
       var first = [].filter.call(ol.querySelectorAll('.unit-card'), function (a) { return !a.classList.contains('done'); })[0];

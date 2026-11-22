@@ -72,7 +72,7 @@ def hub(games):
   <div class="wrap">{"".join(rows)}</div>
 </section>"""
     return ("/games/", {"title": "Maths and Science games", "body_class": "games",
-                        "description": "Free Maths and Science games and simulations for ages 9 to 14, matched to KS3, IB PYP and IB MYP. No sign-up, no ads, no timers."},
+                        "description": "Free Maths and Science games and simulations for ages 9 to 14, matched to KS3 and IB PYP. No sign-up, no ads, no timers."},
             body, "games/games.json")
 
 

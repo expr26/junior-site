@@ -1,6 +1,6 @@
 # ExaminerPrep Junior
 
-Maths and Science practice for students aged 9 to 14 (KS2, KS3, Lower Secondary, IB MYP, pre-IGCSE).
+Maths and Science practice for students aged 9 to 14 (KS2, KS3, Lower Secondary, IB PYP, pre-IGCSE).
 Sister site of [examinerprep.com](https://examinerprep.com). Its own playful look (owl logo, Fredoka + IBM Plex Sans).
 
 ## Build

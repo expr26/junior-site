@@ -252,7 +252,48 @@
       "icon": "🛷",
       "subject": "science",
       "kind": "sim",
-      "blurb": "Change the slope and the surface and watch friction at work."
+      "blurb": "Change the slope and the surface (ice, wood or carpet), let the block go and watch friction at work.",
+      "live": true,
+      "learn": "What friction is, which way it acts, how rough and smooth surfaces change it, and how the steepness of a slope affects motion.",
+      "topic": "/science/forces-and-motion/",
+      "topic_title": "Practise more: Forces and motion",
+      "curriculum": {
+        "KS3": "Physics: forces, friction and motion",
+        "PYP": "How the world works: forces and movement"
+      },
+      "guide_title": "Friction and slopes: a quick guide",
+      "guide": [
+        {
+          "h": "What is friction?",
+          "p": "Friction is a force between two surfaces that rub or try to slide over each other. It always acts against the motion, so it slows things down or stops them from moving at all."
+        },
+        {
+          "h": "Rough and smooth surfaces",
+          "p": "Rough surfaces like carpet have lots of friction. Smooth surfaces like ice have very little. That's why a block slides a long way on ice but stops quickly on carpet."
+        },
+        {
+          "h": "Steeper slopes",
+          "p": "On a slope, part of the block's weight pulls it down the slope. The steeper the slope, the bigger this pull. When the pull is bigger than the friction holding the block, the block starts to slide."
+        },
+        {
+          "h": "About this simulation",
+          "p": "Ramp Lab uses a simple model with typical friction values for ice, wood and carpet. Real surfaces vary, but the patterns you see are the same as in real life."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which direction does friction act?",
+          "a": "Friction acts in the opposite direction to the motion (or to the way something is trying to move). On a block sliding down a ramp, friction points back up the ramp."
+        },
+        {
+          "q": "Why does a block not slide on a gentle slope?",
+          "a": "On a gentle slope, the pull down the slope is small. Friction can match it, so the forces are balanced and the block stays still."
+        },
+        {
+          "q": "Is friction always a bad thing?",
+          "a": "No. Friction lets our shoes grip the ground, car tyres grip the road and brakes stop bikes. Without friction, walking would be like walking on ice."
+        }
+      ]
     },
     {
       "slug": "particle-party",

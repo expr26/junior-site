@@ -107,3 +107,6 @@ body.physics .qb-f[aria-pressed="true"]{background:var(--sci);border-color:var(-
 .qb-ws-all{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-wrap:wrap;gap:8px}
 .qb-ws-all a{display:inline-block;padding:8px 14px;border:2px solid var(--line);border-radius:99px;background:var(--card);font-weight:600;text-decoration:none;min-height:44px}
 .qb-ws-all a:hover{border-color:var(--fun)}
+/* × and x look alike: × in a plain font with a little space, a variable x in italic serif */
+.qbank .mt{font-family:Arial,"Helvetica Neue",sans-serif;font-weight:400;margin:0 .08em}
+.qbank .mv{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:1.08em}

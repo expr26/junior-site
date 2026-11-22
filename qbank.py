@@ -24,6 +24,7 @@ The build checks structure only. Check every answer by hand.
 import hashlib
 import html
 import json
+import re
 from pathlib import Path
 
 import qbank_art
@@ -82,6 +83,7 @@ def load():
                     q["_data"] = question_data(q, qw)
                     if q["type"] == "num" and "show" not in q and str(q["answer"]).startswith("-"):
                         q["_data"]["show"] = rich("−" + str(q["answer"])[1:])   # a real minus sign, not a hyphen
+                    _maths_type(q["_data"])
                 for sub in t["subtopics"]:
                     if not any(q["sub"] == sub["slug"] for q in t["questions"]):
                         raise ContentError(f"{where}: subtopic {sub['slug']!r} has no questions")
@@ -89,6 +91,24 @@ def load():
             rows.append((plan, t))
         out.append((s, rows))
     return out
+
+
+_TIMES = re.compile("×")
+_VAR_X = re.compile(r"(?<![A-Za-z&#])([xy])(?![A-Za-z;])")
+
+
+def _maths_type(d):
+    """The × sign and the letter x look alike, so × gets its own plain style and a lone x (a variable) is set in italics."""
+    for k in ("q", "hint", "explain", "show"):
+        if isinstance(d.get(k), str):
+            d[k] = _fix(d[k])
+    if d.get("options"):
+        d["options"] = [_fix(o) for o in d["options"]]
+
+
+def _fix(t):
+    t = _VAR_X.sub(r'<i class="mv">\1</i>', t)
+    return _TIMES.sub('<span class="mt">×</span>', t)
 
 
 def _count(n, word):

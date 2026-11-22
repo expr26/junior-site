@@ -229,7 +229,7 @@ def art_factors():
         + node(120, 40, "24", P, 20) + node(84, 84, "4", TEAL) + node(156, 84, "6", TEAL)
         + node(60, 132, "2", ORANGE) + node(104, 132, "2", ORANGE) + node(140, 132, "2", ORANGE) + node(182, 132, "3", PINK)
         + f'<g transform="rotate(-5 120 176)"><rect x="62" y="158" width="116" height="34" rx="12" fill="{SUN}" stroke="{INK}" stroke-width="2.5"/>'
-          f'<text x="120" y="182" text-anchor="middle" font-size="19" fill="{INK}">2³ × 3 = 24</text></g></g>'
+          f'<text x="120" y="182" text-anchor="middle" font-size="19" fill="{INK}">2³ <tspan font-family="Arial,sans-serif" font-weight="400">×</tspan> 3 = 24</text></g></g>'
         + _sparkles((30, 60, 7, SUN), (212, 40, 6, P)),
         "A factor tree: 24 splits into 4 and 6, then into the primes 2, 2, 2 and 3")
 

@@ -146,7 +146,48 @@
       "icon": "🎯",
       "subject": "maths",
       "kind": "game",
-      "blurb": "Work out the angle and hit the target."
+      "blurb": "Aim the laser cannon at the balloons: measure, estimate and work out angles.",
+      "live": true,
+      "learn": "Measuring angles with a protractor, estimating angles, acute and obtuse angles, angles on a straight line (180°) and angles in a triangle (180°).",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Geometry: measure and estimate angles; angles on a straight line and in a triangle",
+        "PYP": "Shape and space: measuring and classifying angles"
+      },
+      "guide_title": "Angles: a quick guide",
+      "guide": [
+        {
+          "h": "Measuring angles",
+          "p": "Angles are measured in degrees (°). A quarter turn is a right angle, 90°. Half a turn, a straight line, is 180°. A full turn is 360°. A protractor helps you measure: line up its middle with the corner and its 0° line with one arm of the angle."
+        },
+        {
+          "h": "Types of angle",
+          "p": "Acute angles are less than 90°. A right angle is exactly 90°. Obtuse angles are between 90° and 180°. Reflex angles are more than 180°."
+        },
+        {
+          "h": "Angles on a straight line",
+          "p": "Angles that sit together on a straight line add up to 180°. If one angle is 35°, the other is 180° − 35° = 145°."
+        },
+        {
+          "h": "Angles in a triangle",
+          "p": "The three angles inside any triangle add up to 180°. If two angles are 50° and 70°, the third is 180° − 50° − 70° = 60°."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is 120° acute or obtuse?",
+          "a": "Obtuse, because it is bigger than 90° but smaller than 180°."
+        },
+        {
+          "q": "How do I estimate an angle without a protractor?",
+          "a": "Compare it with angles you know: flat is 0°, straight up is 90°, and halfway between is 45°. Then decide if your angle is a bit more or a bit less."
+        },
+        {
+          "q": "What do angles in a triangle add up to?",
+          "a": "Always 180°, whatever the shape or size of the triangle."
+        }
+      ]
     },
     {
       "slug": "treasure-map",

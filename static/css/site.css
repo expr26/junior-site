@@ -261,3 +261,19 @@ ul.plain{list-style:none;padding:0;margin:0}ul.plain li{margin-bottom:6px}
 .pz-leaf{fill:#2E8B57;pointer-events:none}
 .pz-count{font-size:18px;min-height:1.6em}
 .pz-actions{justify-content:center;margin:.6em 0 0}
+/* Balance the Scale */
+.bs-eq{font-size:26px;text-align:center;font-variant-numeric:tabular-nums}
+.bs-eq i,.bs-try i{font-family:Georgia,serif}
+.bs-svg{width:100%;max-width:420px;display:block;margin:0 auto}
+.bs-stand{fill:#8A94A6}
+.bs-beam{stroke:#5B6475;stroke-width:8;stroke-linecap:round}
+.bs-pivot{fill:#E8B10F;stroke:#5B6475;stroke-width:3}
+.bs-string{stroke:#8A94A6;stroke-width:2}
+.bs-pan{fill:#C9D1DE;stroke:#5B6475;stroke-width:3}
+.bs-box rect{fill:#6C4DF6;stroke:#3B2A9E;stroke-width:2}
+.bs-box text{fill:#fff;font:700 15px Georgia,serif}
+.bs-kg{fill:#F2B33D;stroke:#B9792F;stroke-width:2}
+.bs-tools{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:8px 0 14px}
+.bs-tools .opt{width:auto;font-size:16px;min-height:48px;padding:8px 14px}
+.bs-try{justify-content:center}
+.bs-try input{width:5em}

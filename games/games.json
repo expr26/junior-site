@@ -1,32 +1,119 @@
 {
   "_about": "The Games page. Each game has a page at /games/<slug>/ when live is true; planned games show as 'Coming soon'. The game itself is static/js/games/<slug>.js and uses static/js/arcade.js. curriculum: where it fits in UK KS3, IB PYP (upper years) and IB MYP.",
   "games": [
-    {"slug": "pizza-fractions", "live": true, "title": "Pizza Fractions", "icon": "🍕", "subject": "maths", "kind": "game",
-     "blurb": "Hungry animals order fractions of a pizza. Cut it, add the toppings and serve!",
-     "learn": "What a fraction of a whole means, equivalent fractions (2/4 is the same as 1/2) and choosing a number of slices that works.",
-     "topic": "/maths/fractions/", "topic_title": "Fractions",
-     "curriculum": {"KS3": "Number: equivalent fractions", "PYP": "Number: fractions", "MYP": "Number: fractions"}},
-    {"slug": "frog-jump", "title": "Frog Jump", "icon": "🐸", "subject": "maths", "kind": "game",
-     "blurb": "Help the frog hop along the number line, even below zero."},
-    {"slug": "balance-scale", "title": "Balance the Scale", "icon": "⚖️", "subject": "maths", "kind": "sim",
-     "blurb": "Keep the scale level to find the mystery number x."},
-    {"slug": "angle-cannon", "title": "Angle Cannon", "icon": "🎯", "subject": "maths", "kind": "game",
-     "blurb": "Work out the angle and hit the target."},
-    {"slug": "treasure-map", "title": "Treasure Map", "icon": "🗺️", "subject": "maths", "kind": "game",
-     "blurb": "Find the hidden treasure with coordinates."},
-    {"slug": "pattern-machine", "title": "Pattern Machine", "icon": "🎲", "subject": "maths", "kind": "game",
-     "blurb": "Crack the machine's rule and predict the next number."},
-    {"slug": "ramp-lab", "title": "Ramp Lab", "icon": "🛷", "subject": "science", "kind": "sim",
-     "blurb": "Change the slope and the surface and watch friction at work."},
-    {"slug": "particle-party", "title": "Particle Party", "icon": "🧊", "subject": "science", "kind": "sim",
-     "blurb": "Heat it up or cool it down: solid, liquid or gas?"},
-    {"slug": "circuit-builder", "title": "Circuit Builder", "icon": "💡", "subject": "science", "kind": "sim",
-     "blurb": "Build circuits with cells, bulbs and switches."},
-    {"slug": "food-web-island", "title": "Food Web Island", "icon": "🦊", "subject": "science", "kind": "sim",
-     "blurb": "Take one animal away and see what happens to the rest."},
-    {"slug": "day-night-seasons", "title": "Day, Night and Seasons", "icon": "🌍", "subject": "science", "kind": "sim",
-     "blurb": "Spin the Earth and send it round the Sun."},
-    {"slug": "magnet-sandbox", "title": "Magnet Sandbox", "icon": "🧲", "subject": "science", "kind": "sim",
-     "blurb": "Drag magnets about: what attracts, what repels?"}
+    {
+      "slug": "pizza-fractions",
+      "live": true,
+      "title": "Pizza Fractions",
+      "icon": "🍕",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Hungry animals order fractions of a pizza. Cut it, add the toppings and serve!",
+      "learn": "What a fraction of a whole means, equivalent fractions (2/4 is the same as 1/2) and choosing a number of slices that works.",
+      "topic": "/maths/fractions/",
+      "topic_title": "Practise more: Fractions",
+      "curriculum": {
+        "KS3": "Number: equivalent fractions",
+        "PYP": "Number: fractions",
+        "MYP": "Number: fractions"
+      }
+    },
+    {
+      "slug": "frog-jump",
+      "title": "Frog Jump",
+      "icon": "🐸",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Help the frog hop along the number line, even below zero."
+    },
+    {
+      "slug": "balance-scale",
+      "title": "Balance the Scale",
+      "icon": "⚖️",
+      "subject": "maths",
+      "kind": "sim",
+      "blurb": "The scale is balanced. Take the same away from both sides and find the mystery number x.",
+      "live": true,
+      "learn": "Solving equations like 2x + 3 = x + 8 by doing the same thing to both sides, and checking an answer by putting it back in.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Algebra: solve linear equations",
+        "PYP": "Pattern and function: finding unknowns",
+        "MYP": "Algebra: linear equations"
+      }
+    },
+    {
+      "slug": "angle-cannon",
+      "title": "Angle Cannon",
+      "icon": "🎯",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Work out the angle and hit the target."
+    },
+    {
+      "slug": "treasure-map",
+      "title": "Treasure Map",
+      "icon": "🗺️",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Find the hidden treasure with coordinates."
+    },
+    {
+      "slug": "pattern-machine",
+      "title": "Pattern Machine",
+      "icon": "🎲",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Crack the machine's rule and predict the next number."
+    },
+    {
+      "slug": "ramp-lab",
+      "title": "Ramp Lab",
+      "icon": "🛷",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Change the slope and the surface and watch friction at work."
+    },
+    {
+      "slug": "particle-party",
+      "title": "Particle Party",
+      "icon": "🧊",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Heat it up or cool it down: solid, liquid or gas?"
+    },
+    {
+      "slug": "circuit-builder",
+      "title": "Circuit Builder",
+      "icon": "💡",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Build circuits with cells, bulbs and switches."
+    },
+    {
+      "slug": "food-web-island",
+      "title": "Food Web Island",
+      "icon": "🦊",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Take one animal away and see what happens to the rest."
+    },
+    {
+      "slug": "day-night-seasons",
+      "title": "Day, Night and Seasons",
+      "icon": "🌍",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Spin the Earth and send it round the Sun."
+    },
+    {
+      "slug": "magnet-sandbox",
+      "title": "Magnet Sandbox",
+      "icon": "🧲",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Drag magnets about: what attracts, what repels?"
+    }
   ]
 }

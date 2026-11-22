@@ -776,6 +776,55 @@
           "a": "It means finding the value of one item first, then multiplying. If 3 smoothies cost £6, one costs £6 ÷ 3 = £2, so 5 cost 5 × £2 = £10."
         }
       ]
+    },
+    {
+      "slug": "energy-coaster",
+      "title": "Energy Coaster",
+      "icon": "🎢",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Ride a roller coaster and watch energy move between the gravitational, kinetic and thermal stores. Then name stores, transfers and wasted energy.",
+      "live": true,
+      "learn": "Energy stores and the four ways energy is transferred, conservation of energy, how friction transfers energy to the thermal store, Sankey diagrams and efficiency.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: energy stores, transfers and conservation of energy",
+        "PYP": "How the world works: energy and its forms"
+      },
+      "guide_title": "Energy stores and transfers: a quick guide",
+      "guide": [
+        {
+          "h": "Energy stores",
+          "p": "Energy is kept in different stores. A moving object has a kinetic store. Anything lifted up has a gravitational store: the higher it is, the more energy. Food, fuels and batteries have chemical stores. Stretched or squashed things, like springs and bows, have elastic stores. Hot things have bigger thermal stores than cold ones."
+        },
+        {
+          "h": "Energy transfers",
+          "p": "Energy moves from one store to another in four ways. It can be transferred by forces (a push or a pull, like the chain lift pulling the car up), electrically (by an electric current), by heating (from a hotter thing to a cooler thing) or by radiation (by light and other waves, like sunshine warming the ground)."
+        },
+        {
+          "h": "Energy is never used up",
+          "p": "Energy cannot be made or destroyed. It only moves between stores, so the total always stays the same: this is called conservation of energy. On our coaster the total is always 100 kJ. As the car rolls down, its gravitational store empties and its kinetic store fills up. Going up a hill, the opposite happens."
+        },
+        {
+          "h": "Friction, wasted energy and efficiency",
+          "p": "Friction and air resistance transfer some energy to the thermal store of the wheels, track and air, so a real coaster can never climb back to its starting height. That energy is wasted: it spreads out and is hard to use. In the game we show all of it in the thermal store; in real life a little goes as sound, which also ends up warming the air. Efficiency = useful energy out ÷ total energy in. A Sankey diagram shows this with arrows as wide as the energy they carry."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why is a roller coaster fastest at the bottom of a dip?",
+          "a": "At the lowest point most of the energy in the gravitational store has been transferred to the kinetic store. A bigger kinetic store means the car is moving faster."
+        },
+        {
+          "q": "If energy is never used up, why do things stop?",
+          "a": "Friction and air resistance transfer the energy to thermal stores of the surroundings. It is still there, but it is spread out as a little warming of lots of things, so we can't easily use it again."
+        },
+        {
+          "q": "What does 20% efficient mean?",
+          "a": "Only 20% of the energy put in is transferred usefully. An old filament bulb takes in 100 J and gives out 20 J as light, so it is 20% efficient. The other 80 J heats the room and is wasted."
+        }
+      ]
     }
   ]
 }

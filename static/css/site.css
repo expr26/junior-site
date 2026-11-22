@@ -598,3 +598,30 @@ button.am-tile:hover:not(:disabled){transform:translateY(-3px)}button.am-tile:di
 .sm-price p{display:flex;justify-content:space-between;align-items:center;margin:0;font-size:26px}
 .sm-price b{font:700 26px var(--serif);color:var(--navy)}
 @media (prefers-reduced-motion:reduce){.sm-svg.blend .sm-cupg{animation:none}}
+/* Energy Coaster */
+.ec-svg{width:100%;max-width:460px;display:block;margin:4px auto;border-radius:16px}
+.ec-coaster{background:linear-gradient(#DFF3FF 0,#F4FBFF 62%,#FFF8EC 62%)}
+.ec-sankey{background:#F7F5FF}
+.ec-ground{fill:#7CCF8E}
+.ec-sup{stroke:#B7A7E8;stroke-width:2}
+.ec-rail{fill:none;stroke:#6C4DF6;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.ec-line{stroke:#8A94A6;stroke-width:1.5;stroke-dasharray:5 5}
+.ec-cap{font:600 13px var(--sans);fill:#55526E}
+.ec-car{fill:#FF5D8F;stroke:#2D1B69;stroke-width:2.5}.ec-wheel{fill:#2D1B69}
+.ec-rider{font-size:16px}
+.ec-ml{font:700 15px var(--sans);fill:#2D1B69}
+.ec-mv{font:700 15px var(--sans);fill:#2D1B69}
+.ec-bg{fill:#fff;stroke:#C9D1DE;stroke-width:1.5}
+.ec-g{fill:#3B82F6}.ec-k{fill:#FF8A3D}.ec-t{fill:#E5484D}
+.ec-in{fill:#FFC93C}.ec-use{fill:#FFE27A;stroke:#C99A00;stroke-width:1.5}.ec-waste{fill:#FF9A8A;stroke:#E5484D;stroke-width:1.5}
+.ec-st{font:700 20px var(--sans);fill:#2D1B69}.ec-ss{font:600 14px var(--sans);fill:#2D1B69}.ec-sl{font:700 16px var(--sans);fill:#2D1B69}
+.ec-out{text-align:center;min-height:1.6em;margin:4px 0 8px}
+.ec-act{justify-content:center;margin:.2em 0}
+.ec-tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0}
+.ec-tile{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:16px;min-height:96px;padding:8px}
+.ec-te{font-size:34px;line-height:1.1}.ec-tile small{font-weight:700;color:var(--muted)}
+.ec-match{display:grid;gap:8px;margin:8px 0}
+.ec-row{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;align-items:center;padding:10px;border:2px solid var(--line);border-radius:14px}
+.ec-row.right{border-color:var(--ok);background:var(--ok-bg)}.ec-row.wrong{border-color:var(--bad);background:var(--bad-bg)}
+.ec-re{font-size:28px;grid-row:span 2}.ec-rt{font-weight:600}
+.ec-way{min-height:44px;padding:6px 14px;justify-self:start}

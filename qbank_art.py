@@ -173,3 +173,133 @@ def fig_spring(load="1 N", stretch=2, **_):
 
 
 topics.EXTRA_FIGS.update({"hundred": fig_hundred, "spring": fig_spring})
+
+
+# ---------- batch 2: place value, negative numbers, factors, speed ----------
+def art_place_value():
+    flat = "".join(f'<path d="M{24 + 6 * i} 70 V130 M24 {70 + 6 * i} H84" stroke="#B9792F" stroke-width="1.4"/>' for i in range(1, 10))
+    rods = "".join(f'<rect x="{104 + 14 * k}" y="70" width="10" height="60" rx="2" fill="{TEAL}" stroke="{INK}" stroke-width="2.5"/>'
+                   + "".join(f'<path d="M{104 + 14 * k} {70 + 6 * i} h10" stroke="{INK}" stroke-width="1.2"/>' for i in range(1, 10)) for k in range(3))
+    ones = "".join(f'<rect x="{x}" y="{y}" width="12" height="12" rx="2" fill="{PINK}" stroke="{INK}" stroke-width="2.5"/>'
+                   for x, y in ((168, 118), (184, 118), (200, 118), (176, 102), (192, 102)))
+    lab = "".join(f'<circle cx="{x}" cy="160" r="15" fill="{c}"/><text x="{x}" y="167" text-anchor="middle" font-size="18" fill="#fff">{t}</text>'
+                  for x, c, t in ((54, ORANGE, "H"), (124, TEAL, "T"), (190, PINK, "O")))
+    return _svg(
+        f'<rect x="24" y="70" width="60" height="60" rx="3" fill="{SUN}" stroke="{INK}" stroke-width="3"/>{flat}{rods}{ones}'
+        f'<g font-family="Fredoka,Trebuchet MS,sans-serif" font-weight="700">{lab}'
+        f'<g transform="rotate(-6 120 36)"><rect x="70" y="16" width="100" height="40" rx="14" fill="{P}"/>'
+        f'<text x="120" y="44" text-anchor="middle" font-size="24" fill="#fff">135</text></g>'
+        f'<text x="186" y="44" font-size="26" fill="{ORANGE}">≈</text></g>'
+        + _sparkles((30, 40, 7, SUN), (214, 80, 6, TEAL)),
+        "Place value blocks: 1 hundred square, 3 tens rods and 5 ones cubes make 135")
+
+
+def art_negative():
+    ticks = "".join(f'<path d="M{40 + 26 * i} 150 v12" stroke="{INK}" stroke-width="3"/>'
+                    f'<text x="{40 + 26 * i}" y="184" text-anchor="middle" font-size="16" font-weight="700" fill="{BLUE if i < 3 else INK if i == 3 else ORANGE}">{i - 3 if i != 3 else 0}</text>'
+                    for i in range(7))
+    return _svg(
+        # thermometer
+        f'<rect x="40" y="22" width="22" height="98" rx="11" fill="#fff" stroke="{INK}" stroke-width="3"/>'
+        f'<rect x="46" y="78" width="10" height="44" fill="{BLUE}"/><circle cx="51" cy="124" r="16" fill="{BLUE}" stroke="{INK}" stroke-width="3"/>'
+        + "".join(f'<path d="M62 {34 + 12 * i} h8" stroke="{INK}" stroke-width="2"/>' for i in range(7))
+        # snowflake and sun
+        + f'<g stroke="{BLUE}" stroke-width="4" stroke-linecap="round"><path d="M110 40 v36 M94 49 l32 18 M94 67 l32 -18"/></g>'
+          f'<circle cx="188" cy="54" r="18" fill="{SUN}" stroke="{INK}" stroke-width="3"/>'
+        + "".join(f'<path d="M{188 + 26 * __import__("math").cos(a / 4 * 3.1416)} {54 + 26 * __import__("math").sin(a / 4 * 3.1416)} l{6 * __import__("math").cos(a / 4 * 3.1416):.1f} {6 * __import__("math").sin(a / 4 * 3.1416):.1f}" stroke="{ORANGE}" stroke-width="4" stroke-linecap="round"/>' for a in range(8))
+        # number line and a hop
+        + f'<path d="M24 156 H216" stroke="{INK}" stroke-width="4" stroke-linecap="round"/>{ticks}'
+          f'<path d="M66 146 q26 -40 52 0" fill="none" stroke="{P}" stroke-width="4" stroke-dasharray="6 5"/>'
+          f'<path d="M112 140 l8 8 l2 -11" fill="none" stroke="{P}" stroke-width="4" stroke-linecap="round"/>'
+          f'<g transform="translate(66 132)"><ellipse rx="13" ry="10" fill="#3BB273" stroke="{INK}" stroke-width="2.5"/>'
+          f'<circle cx="-6" cy="-9" r="5" fill="#fff" stroke="{INK}" stroke-width="2"/><circle cx="6" cy="-9" r="5" fill="#fff" stroke="{INK}" stroke-width="2"/>'
+          f'<circle cx="-6" cy="-9" r="2" fill="{INK}"/><circle cx="6" cy="-9" r="2" fill="{INK}"/></g>',
+        "A thermometer below zero, a snowflake, the sun and a frog hopping along a number line from minus 3 to 3")
+
+
+def art_factors():
+    def node(x, y, t, c, r=17):
+        return (f'<circle cx="{x}" cy="{y}" r="{r}" fill="{c}" stroke="{INK}" stroke-width="3"/>'
+                f'<text x="{x}" y="{y + 7}" text-anchor="middle" font-size="19" fill="#fff">{t}</text>')
+    lines = "".join(f'<path d="M{a} {b} L{c} {d}" stroke="{INK}" stroke-width="3"/>' for a, b, c, d in
+                    ((120, 40, 84, 84), (120, 40, 156, 84), (84, 84, 60, 132), (84, 84, 104, 132), (156, 84, 140, 132), (156, 84, 182, 132)))
+    return _svg(
+        f'{lines}<g font-family="Fredoka,Trebuchet MS,sans-serif" font-weight="700">'
+        + node(120, 40, "24", P, 20) + node(84, 84, "4", TEAL) + node(156, 84, "6", TEAL)
+        + node(60, 132, "2", ORANGE) + node(104, 132, "2", ORANGE) + node(140, 132, "2", ORANGE) + node(182, 132, "3", PINK)
+        + f'<g transform="rotate(-5 120 176)"><rect x="62" y="158" width="116" height="34" rx="12" fill="{SUN}" stroke="{INK}" stroke-width="2.5"/>'
+          f'<text x="120" y="182" text-anchor="middle" font-size="19" fill="{INK}">2³ × 3 = 24</text></g></g>'
+        + _sparkles((30, 60, 7, SUN), (212, 40, 6, P)),
+        "A factor tree: 24 splits into 4 and 6, then into the primes 2, 2, 2 and 3")
+
+
+def art_speed():
+    return _svg(
+        # road
+        f'<rect x="10" y="132" width="220" height="30" rx="6" fill="#5B6475"/>'
+        + "".join(f'<rect x="{20 + 40 * i}" y="145" width="22" height="4" rx="2" fill="#fff"/>' for i in range(6))
+        # car
+        + f'<g transform="translate(118 118)"><rect x="-46" y="-12" width="96" height="28" rx="10" fill="{PINK}" stroke="{INK}" stroke-width="3"/>'
+          f'<path d="M-26 -12 L-12 -32 H18 L32 -12 Z" fill="{PINK}" stroke="{INK}" stroke-width="3" stroke-linejoin="round"/>'
+          f'<path d="M-10 -14 L-4 -26 H14 L22 -14 Z" fill="#CFE8FF"/><circle cx="-24" cy="18" r="10" fill="{INK}"/><circle cx="28" cy="18" r="10" fill="{INK}"/>'
+          f'<circle cx="-24" cy="18" r="4" fill="#C9D1DE"/><circle cx="28" cy="18" r="4" fill="#C9D1DE"/></g>'
+          f'<g stroke="{P}" stroke-width="4" stroke-linecap="round"><path d="M30 100 h26 M20 114 h30 M34 128 h18"/></g>'
+        # stopwatch
+        + f'<circle cx="62" cy="54" r="26" fill="#fff" stroke="{INK}" stroke-width="4"/><rect x="56" y="20" width="12" height="8" rx="2" fill="{INK}"/>'
+          f'<path d="M62 54 L62 36 M62 54 L74 60" stroke="{ORANGE}" stroke-width="4" stroke-linecap="round"/>'
+        # small graph
+        + f'<g transform="translate(140 22)"><rect width="80" height="64" rx="8" fill="#fff" stroke="{INK}" stroke-width="3"/>'
+          f'<path d="M12 54 V10 M12 54 H72" stroke="{INK}" stroke-width="2.5"/><path d="M12 54 L34 34 L48 34 L68 12" fill="none" stroke="{TEAL}" stroke-width="4" stroke-linejoin="round"/></g>'
+        + _sparkles((26, 170, 6, SUN), (222, 110, 6, SUN)),
+        "A car speeding along a road, a stopwatch and a distance-time graph")
+
+
+ART.update({"place-value": art_place_value, "negative": art_negative, "factors": art_factors, "speed": art_speed})
+
+
+def fig_dtgraph(points, tmax, dmax, tstep, dstep, tlabel="Time (s)", dlabel="Distance (m)", **_):
+    """Distance-time graph. points: [[t, d], ...] joined by straight lines."""
+    W, H, L, B, R, T = 320, 230, 52, 186, 304, 14
+    sx, sy = (R - L) / tmax, (B - T) / dmax
+    g = []
+    t = 0
+    while t <= tmax + 1e-9:
+        x = L + t * sx
+        g.append(f'<path d="M{x:.1f} {T} V{B}" stroke="var(--line)" stroke-width="1.5"/>'
+                 f'<text x="{x:.1f}" y="{B + 18}" text-anchor="middle" font-size="13" fill="var(--ink)">{t:g}</text>')
+        t += tstep
+    d = 0
+    while d <= dmax + 1e-9:
+        y = B - d * sy
+        g.append(f'<path d="M{L} {y:.1f} H{R}" stroke="var(--line)" stroke-width="1.5"/>'
+                 f'<text x="{L - 6}" y="{y + 4:.1f}" text-anchor="end" font-size="13" fill="var(--ink)">{d:g}</text>')
+        d += dstep
+    pts = " ".join(f"{L + a * sx:.1f},{B - b * sy:.1f}" for a, b in points)
+    g.append(f'<path d="M{L} {T} V{B} H{R}" fill="none" stroke="var(--navy)" stroke-width="2.5"/>')
+    g.append(f'<polyline points="{pts}" fill="none" stroke="var(--fun)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>')
+    g.append(f'<text x="{(L + R) / 2}" y="{H - 4}" text-anchor="middle" font-size="14" font-weight="700" fill="var(--navy)">{html.escape(tlabel)}</text>')
+    g.append(f'<text x="14" y="{(T + B) / 2}" text-anchor="middle" font-size="14" font-weight="700" fill="var(--navy)" transform="rotate(-90 14 {(T + B) / 2})">{html.escape(dlabel)}</text>')
+    desc = "; ".join(f"at {a:g} the distance is {b:g}" for a, b in points)
+    return (f'<svg class="fig" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" '
+            f'aria-label="Distance-time graph: {html.escape(desc, quote=True)}">{"".join(g)}</svg>')
+
+
+def fig_thermo(temp, lo=-10, hi=10, step=2, **_):
+    """A thermometer with a scale from lo to hi showing temp (°C)."""
+    T, B, x = 16, 196, 70
+    sy = (B - T) / (hi - lo)
+    y = B - (temp - lo) * sy
+    g = [f'<rect x="{x - 10}" y="{T - 8}" width="20" height="{B - T + 20}" rx="10" fill="var(--card)" stroke="var(--navy)" stroke-width="3"/>',
+         f'<rect x="{x - 5}" y="{y:.1f}" width="10" height="{B + 14 - y:.1f}" fill="#E5484D"/>',
+         f'<circle cx="{x}" cy="{B + 22}" r="16" fill="#E5484D" stroke="var(--navy)" stroke-width="3"/>']
+    v = lo
+    while v <= hi:
+        yy = B - (v - lo) * sy
+        g.append(f'<path d="M{x + 10} {yy:.1f} h10" stroke="var(--navy)" stroke-width="2"/>'
+                 f'<text x="{x + 26}" y="{yy + 5:.1f}" font-size="14" font-weight="{700 if v == 0 else 400}" fill="var(--ink)">{str(v).replace("-", "−")}</text>')
+        v += step
+    return (f'<svg class="fig" viewBox="0 0 140 {B + 44}" width="140" height="{B + 44}" role="img" '
+            f'aria-label="A thermometer with a scale from {lo} to {hi} degrees Celsius">{"".join(g)}</svg>')
+
+
+topics.EXTRA_FIGS.update({"dtgraph": fig_dtgraph, "thermo": fig_thermo})

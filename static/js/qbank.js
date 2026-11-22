@@ -155,7 +155,7 @@
       var form = h('form', 'q-num-form'), fid = 'a-' + id;
       var isFrac = /\//.test(q.answer);
       form.innerHTML = '<label class="sr" for="' + fid + '">Your answer</label><input id="' + fid + '" autocomplete="off" autocapitalize="off" spellcheck="false" ' +
-        'inputmode="' + (isFrac ? 'text' : 'decimal') + '" placeholder="' + (isFrac ? 'e.g. 3/4' : 'Type a number') + '">' + (q.unit ? '<span class="unit">' + q.unit + '</span>' : '') +
+        'inputmode="' + (isFrac || /^-/.test(q.answer) ? 'text' : 'decimal') + '" placeholder="' + (isFrac ? 'e.g. 3/4' : 'Type a number') + '">' + (q.unit ? '<span class="unit">' + q.unit + '</span>' : '') +
         '<button class="btn" type="submit">Check</button>';
       var inp = form.querySelector('input');
       if (isFrac) form.appendChild(h('p', 'small tip', 'Type a fraction with a slash, like 3/4.'));

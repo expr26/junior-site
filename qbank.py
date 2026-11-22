@@ -21,6 +21,7 @@ qbank/<subject>/<topic>.json:
   "id" must never change once live: progress in the browser is saved against it.
 The build checks structure only. Check every answer by hand.
 """
+import hashlib
 import html
 import json
 from pathlib import Path
@@ -79,6 +80,8 @@ def load():
                     if q["level"] not in LEVELS:
                         raise ContentError(f"{qw}: level must be 1, 2 or 3")
                     q["_data"] = question_data(q, qw)
+                    if q["type"] == "num" and "show" not in q and str(q["answer"]).startswith("-"):
+                        q["_data"]["show"] = rich("−" + str(q["answer"])[1:])   # a real minus sign, not a hyphen
                 for sub in t["subtopics"]:
                     if not any(q["sub"] == sub["slug"] for q in t["questions"]):
                         raise ContentError(f"{where}: subtopic {sub['slug']!r} has no questions")
@@ -211,7 +214,8 @@ def _question_html(n, q, subs):
     d = q["_data"]
     name, icon = LEVELS[q["level"]]
     if d["t"] == "mc":
-        static = '<ol class="qb-static-opts" type="A">' + "".join(f"<li>{o}</li>" for o in d["options"]) + "</ol>"
+        order = sorted(range(len(d["options"])), key=lambda k: hashlib.md5(f"{q['id']}/{k}".encode()).hexdigest())   # fixed mix, so A is not always right
+        static = '<ol class="qb-static-opts" type="A">' + "".join(f"<li>{d['options'][k]}</li>" for k in order) + "</ol>"
         answer = f'<p>Answer: <b>{d["options"][d["answer"]]}</b></p>'
     else:
         static = ""

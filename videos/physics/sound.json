@@ -1,0 +1,65 @@
+{
+  "title": "Sound",
+  "description": "Animated KS3 Physics lesson on sound for ages 9 to 14: vibrations, sound waves, what sound travels through, amplitude and loudness, frequency and pitch, how we hear, hearing range, echoes and the speed of sound.",
+  "intro": "Vibrations, sound waves, loudness and pitch, how your ears work, echoes and the speed of sound, explained by the owl in five short parts.",
+  "chapters": [
+    {
+      "title": "Making sounds",
+      "steps": [
+        {"say": "All sounds are made by **vibrations**. A vibration is something moving backwards and forwards very quickly, like a plucked guitar string.", "do": "string"},
+        {"say": "Hum and touch your throat: you can feel your **vocal cords** vibrating. A drum skin vibrates when you hit it.", "do": "drum"},
+        {"say": "The vibrating object pushes on the air particles next to it. They bump into their neighbours and pass the vibration on.", "do": "particles"},
+        {"say": "This travelling vibration is a **sound wave**. Each particle only jiggles backwards and forwards. It is the energy that travels, not the air.", "do": "particle-jiggle"},
+        {"say": "The particles vibrate along the same direction that the sound travels. This is called a **longitudinal** wave.", "do": "longitudinal"}
+      ],
+      "check": {"q": "A sound travels across a room to your ear. What do the air particles do?", "options": ["They vibrate backwards and forwards and pass the vibration on", "They travel all the way from the sound to your ear", "They stay completely still", "They turn into sound"], "answer": 0,
+                "hint": "Think of the red particle in the picture. Did it go all the way across, or stay near the same place?", "explain": "Each particle **vibrates** backwards and forwards about the same place and bumps the next one. The vibration (and its energy) travels to your ear, not the air itself."}
+    },
+    {
+      "title": "What can sound travel through?",
+      "steps": [
+        {"say": "Sound needs particles to pass the vibration along. It can travel through **solids**, **liquids** and **gases**. The material it travels through is called the **medium**.", "do": "media"},
+        {"say": "A **vacuum** is completely empty space: no particles at all. So sound cannot travel through it. Pump the air out of a jar with a ringing bell inside, and the sound fades away.", "do": "bell-jar"},
+        {"say": "Space is almost a vacuum, so it is silent. Astronauts talk to each other by radio, because radio waves can travel through empty space.", "do": "space"},
+        {"say": "Sound is usually fastest in solids, where the particles are close together and strongly joined. It travels at about 340 m/s in air, about 1500 m/s in water and about 5000 m/s in steel.", "do": "speeds"}
+      ],
+      "check": {"q": "Two astronauts on a spacewalk can't hear each other shout, even when they are close. Why?", "options": ["Space is a vacuum, so there are no particles to carry the sound", "It is too cold in space for sound", "Sound travels too fast in space to hear", "Their helmets block out light"], "answer": 0,
+                "hint": "What does sound need to pass the vibration along? Is there any of it in space?", "explain": "Sound is passed on by particles. Space is almost a **vacuum**, with no particles to carry it, so the shout can't reach the other astronaut."}
+    },
+    {
+      "title": "Loudness and pitch",
+      "steps": [
+        {"say": "A microphone and a screen can show a sound as a wavy line. This lets us see what the sound is like.", "do": "scope"},
+        {"say": "The height of the wave is the **amplitude**. Bigger vibrations give a bigger amplitude and a **louder** sound.", "do": "amplitude"},
+        {"say": "The number of vibrations each second is the **frequency**. It is measured in **hertz** (Hz). 100 Hz means 100 vibrations every second.", "speak": "The number of vibrations each second is the frequency. It is measured in hertz. 100 hertz means 100 vibrations every second.", "do": "frequency"},
+        {"say": "More waves squeezed onto the screen means a higher frequency, and that sounds like a higher **pitch**. A big drum has a low pitch. A whistle has a high pitch.", "do": "pitch"}
+      ],
+      "check": {"q": "On the same screen, wave B is the same height as wave A, but it has more waves squeezed in. How does B sound compared with A?", "options": ["Higher pitch, same loudness", "Louder, same pitch", "Quieter and lower", "Exactly the same"], "answer": 0,
+                "hint": "Height (amplitude) tells you about loudness. The number of waves (frequency) tells you about pitch. Which one changed?", "explain": "More waves in the same time means a higher **frequency**, so a **higher pitch**. The height is the same, so it is just as loud."}
+    },
+    {
+      "title": "How we hear",
+      "steps": [
+        {"say": "Your outer ear collects sound and funnels it down the ear canal. The sound makes your **eardrum** vibrate.", "do": "ear-1"},
+        {"say": "Three tiny bones pass the vibrations on to the **cochlea**. The cochlea turns them into electrical signals, which travel along a nerve to your **brain**.", "do": "ear-2"},
+        {"say": "Young people can hear sounds from about 20 Hz to 20,000 Hz. This is the **hearing range**. The top of the range gets lower as people get older.", "speak": "Young people can hear sounds from about 20 hertz to 20,000 hertz. This is the hearing range. The top of the range gets lower as people get older.", "do": "range"},
+        {"say": "Sounds above 20,000 Hz are **ultrasound**: too high for us to hear, but dogs and bats can. Sounds below 20 Hz are **infrasound**. Elephants use infrasound to call to each other.", "speak": "Sounds above 20,000 hertz are ultrasound: too high for us to hear, but dogs and bats can. Sounds below 20 hertz are infrasound. Elephants use infrasound to call to each other.", "do": "ultra"},
+        {"say": "Very loud sounds can damage the cochlea for ever. People who work with loud machines wear **ear defenders** to protect their hearing.", "do": "loud"}
+      ],
+      "check": {"q": "A bat squeaks at 50,000 Hz. Can people hear it?", "options": ["No: it is ultrasound, above 20,000 Hz", "Yes: people can hear every sound", "No: it is infrasound, below 20 Hz", "Only if they stand very close"], "answer": 0,
+                "hint": "Our hearing range is about 20 Hz to 20,000 Hz. Is 50,000 Hz inside that range, above it or below it?", "explain": "50,000 Hz is above the top of our hearing range (20,000 Hz), so it is **ultrasound**. Being close or loud doesn't help: the pitch is simply too high for human ears."}
+    },
+    {
+      "title": "Speed of sound and echoes",
+      "steps": [
+        {"say": "Sound travels at about 340 m/s in air. Light is much, much faster: about 300,000,000 m/s. So in a storm you see the lightning first and hear the thunder later.", "speak": "Sound travels at about 340 metres per second in air. Light is much, much faster: about 300 million metres per second. So in a storm you see the lightning first and hear the thunder later.", "do": "storm"},
+        {"say": "**Distance = speed × time**. You hear the thunder 3 s after the flash. The storm is about 340 × 3 = 1020 m away: about 1 km.", "speak": "Distance equals speed times time. You hear the thunder 3 seconds after the flash. The storm is about 340 times 3, which is 1020 metres away: about 1 kilometre.", "do": "storm-calc"},
+        {"say": "Sound bounces off hard surfaces, like a cliff or a wall. A reflected sound is called an **echo**.", "do": "echo"},
+        {"say": "You shout at a cliff and hear the echo 4 s later. The sound went there and back: 340 × 4 = 1360 m. So the cliff is 1360 ÷ 2 = 680 m away.", "speak": "You shout at a cliff and hear the echo 4 seconds later. The sound went there and back: 340 times 4 is 1360 metres. So the cliff is 1360 divided by 2, which is 680 metres away.", "do": "echo-calc"},
+        {"say": "Soft things like curtains and carpets **absorb** sound, so they cut down echoes. Bats send out ultrasound and listen for the echoes to find their food.", "do": "absorb"}
+      ],
+      "check": {"q": "You clap near a wall and hear the echo 1 s later. Sound travels at 340 m/s. How far away is the wall?", "options": ["170 m", "340 m", "680 m", "34 m"], "answer": 0,
+                "hint": "In 1 s the sound travels 340 m. But that is there AND back. How far is it just one way?", "explain": "340 m/s × 1 s = 340 m there and back. Halve it: 340 ÷ 2 = **170 m** to the wall."}
+    }
+  ]
+}

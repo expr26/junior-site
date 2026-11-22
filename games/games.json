@@ -678,6 +678,55 @@
           "a": "It means three 2s multiplied together: 2 × 2 × 2 = 8. It is called 2 cubed, or 2 to the power of 3."
         }
       ]
+    },
+    {
+      "slug": "algebra-machine",
+      "title": "Algebra Machine",
+      "icon": "⚙️",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Feed numbers into a colourful function machine, substitute into expressions and tidy up algebra tiles.",
+      "live": true,
+      "learn": "Function machines, the order of operations, substituting numbers into expressions such as 3a + 2 and 2(x + 1), collecting like terms with algebra tiles, and writing an expression for a machine.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Algebra: expressions, substitution and simplifying",
+        "PYP": "Pattern and function: rules and function machines"
+      },
+      "guide_title": "Expressions and substitution: a quick guide",
+      "guide": [
+        {
+          "h": "Function machines",
+          "p": "A function machine takes a number in, does one or more operations to it, and gives a number out. The boxes always work in order, from left to right. If 4 goes into a machine that does × 3 and then + 2, you get 4 × 3 = 12, then 12 + 2 = 14. Swap the boxes round and the answer changes: 4 + 2 = 6, then 6 × 3 = 18."
+        },
+        {
+          "h": "Letters stand for numbers",
+          "p": "In algebra, a letter such as a or x stands for a number. We leave out the × sign, so 3a means 3 × a, and we write the number first. If a = 5, then 3a = 15, not 35. Substitution means swapping the letter for its number, then working out the answer in the usual order: multiply before you add."
+        },
+        {
+          "h": "Brackets come first",
+          "p": "Brackets tell you what to work out first. In 2(x + 1), add 1 to x, then multiply all of it by 2. If x = 6, that is 2 × 7 = 14. A machine that adds 3 and then multiplies by 5 can be written 5(x + 3). Without the bracket, 5x + 3 would mean multiply first, then add, which is a different machine."
+        },
+        {
+          "h": "Collecting like terms",
+          "p": "Like terms have exactly the same letter part. You can add x terms to x terms and numbers to numbers, but not x terms to numbers. So 2x + 3 + x + 4 = 3x + 7. A single x counts as 1x. With algebra tiles, a negative tile and a positive tile of the same kind cancel to make zero, so 5x − 2x = 3x and 6 − 1 = 5."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What does 3a mean?",
+          "a": "It means 3 × a, or three lots of a. If a = 6, then 3a = 18. It does not mean the digits 3 and 6 side by side."
+        },
+        {
+          "q": "Can I simplify 3x + 7 any further?",
+          "a": "No. 3x and 7 are not like terms, because one has an x and the other is just a number, so 3x + 7 is already as simple as it gets."
+        },
+        {
+          "q": "Why does the order of the boxes in a function machine matter?",
+          "a": "Because adding then multiplying usually gives a different answer from multiplying then adding. 5 → + 1 → × 2 gives 12, but 5 → × 2 → + 1 gives 11."
+        }
+      ]
     }
   ]
 }

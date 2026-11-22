@@ -454,3 +454,21 @@ ul.plain{list-style:none;padding:0;margin:0}ul.plain li{margin-bottom:6px}
 .ac-tri{text-align:center;margin:0}.ac-tri svg{width:160px;display:block;margin:0 auto}
 .ac-tris{fill:var(--fun-bg);stroke:var(--fun);stroke-width:3}
 .ac-tri text{font:700 13px var(--sans);fill:var(--navy)}
+/* Magnet Sandbox */
+.ms-svg{width:100%;max-width:460px;display:block;margin:4px auto;background:var(--bg-alt);border-radius:16px}
+.ms-N{fill:#E5484D}.ms-S{fill:#3B82F6}
+.ms-pl{font:700 22px var(--serif);fill:#fff;pointer-events:none}
+.ms-edge{fill:none;stroke:#1E1B3A;stroke-width:2}
+.ms-b{cursor:pointer}
+.ms-cap{font:600 14px var(--sans);fill:var(--muted)}
+.ms-out{text-align:center;min-height:1.6em;margin:4px 0 8px}
+.ms-act{justify-content:center;margin:.2em 0}
+.ms-objs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.ms-obj{font-size:16px;min-height:48px;padding:8px 10px}
+.ms-obj.tested{border-color:var(--muted);background:var(--bg-alt)}
+.ms-objicon{font-size:34px}
+.ms-line{fill:none;stroke:#8A94A6;stroke-width:2}
+.ms-arrow{fill:none;stroke:#5B6475;stroke-width:2.5;stroke-linecap:round}
+.ms-comp{fill:#fff;stroke:#5B6475;stroke-width:2}
+.ms-nn{fill:#E5484D}.ms-ns{fill:#C9D1DE}
+.ms-ans{margin-top:4px}

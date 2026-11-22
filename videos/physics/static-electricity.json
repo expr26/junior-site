@@ -1,0 +1,61 @@
+{
+  "title": "Static electricity",
+  "description": "Animated KS3 Physics lesson on static electricity for ages 9 to 14: protons, electrons and neutral atoms, charging by rubbing, like charges repel and opposite charges attract, electric fields, charged balloons sticking to walls, small shocks and lightning.",
+  "intro": "Charges, rubbing balloons, attract and repel, sticky balloons, sparks and lightning, explained by the owl in five short parts.",
+  "chapters": [
+    {
+      "title": "Charges in atoms",
+      "steps": [
+        {"say": "Everything is made of tiny **atoms**. Inside each atom are even tinier particles.", "do": "atom"},
+        {"say": "**Protons** have a **positive** charge. **Electrons** have a **negative** charge. **Neutrons** have no charge at all.", "do": "particles"},
+        {"say": "Protons and neutrons are held tightly in the centre of the atom, the **nucleus**. Electrons are on the outside, and some can be rubbed off.", "do": "nucleus"},
+        {"say": "Most things have the same number of positive and negative charges. They cancel out, so the object is **neutral**: it has no overall charge.", "do": "neutral"}
+      ],
+      "check": {"q": "What type of charge does an electron have?", "options": ["Negative", "Positive", "No charge", "It changes when you rub it"], "answer": 0,
+                "hint": "Protons are positive and neutrons have no charge. What's left?", "explain": "Electrons are **negative**. Protons are positive and neutrons have no charge. Rubbing moves electrons around, but each electron is always negative."}
+    },
+    {
+      "title": "Charging by rubbing",
+      "steps": [
+        {"say": "Rub a balloon on your hair. The rubbing moves some **electrons** from your hair onto the balloon.", "do": "rub"},
+        {"say": "The balloon has **gained** electrons, so it has more negative charges than positive ones. It is now **negatively charged**.", "do": "balloon-neg"},
+        {"say": "Your hair has **lost** electrons, so it has more positive charges than negative ones. It is now **positively charged**.", "do": "hair-pos"},
+        {"say": "Only **electrons** move. Protons are stuck in the nucleus. So an object becomes positive by **losing** electrons, never by gaining protons.", "do": "only-electrons"}
+      ],
+      "check": {"q": "A plastic rod is rubbed with a cloth and becomes **positively** charged. What happened?", "options": ["The rod lost electrons to the cloth", "The rod gained protons from the cloth", "The rod gained electrons from the cloth", "The rod lost protons to the cloth"], "answer": 0,
+                "hint": "Only one kind of particle can move when you rub things. Which one, and what charge does it carry?", "explain": "Only **electrons** move. Electrons are negative, so if the rod ends up positive it must have **lost electrons** to the cloth. The cloth is now negative."}
+    },
+    {
+      "title": "Attract and repel",
+      "steps": [
+        {"say": "Charged objects push or pull on each other without touching. This is a **non-contact force**.", "do": "non-contact"},
+        {"say": "**Like charges repel.** Two negative balloons push each other apart. Two positive charges repel too.", "do": "repel"},
+        {"say": "**Opposite charges attract.** A negative balloon and a positive balloon pull towards each other.", "do": "attract"},
+        {"say": "The space around a charged object where it pushes or pulls other charges is its **electric field**. The force is stronger close to the object and weaker further away.", "do": "field"}
+      ],
+      "check": {"q": "Two balloons both have a negative charge. What happens when they are held close together?", "options": ["They push apart (repel)", "They pull together (attract)", "Nothing happens", "They swap their charges"], "answer": 0,
+                "hint": "Are the charges the same or opposite? Remember: like charges..., opposite charges...", "explain": "Both are negative, so they have **like charges**, and like charges **repel**. They push apart without touching."}
+    },
+    {
+      "title": "Sticky balloons",
+      "steps": [
+        {"say": "A charged balloon can stick to a wall, even though the wall is **not** charged. How?", "do": "wall"},
+        {"say": "The negative balloon pushes electrons in the wall's surface a little way back. That leaves the surface slightly **positive**, and opposite charges attract.", "do": "wall-why"},
+        {"say": "The same thing happens when a charged rod picks up tiny bits of paper. The bits are so light that the pull lifts them up.", "do": "paper"}
+      ],
+      "check": {"q": "A negatively charged balloon sticks to a wall that is not charged. Why?", "options": ["It pushes electrons in the wall away, so the surface is slightly positive and attracts it", "The wall is magnetic", "The wall has the same charge as the balloon", "Rubbing makes the balloon sticky like glue"], "answer": 0,
+                "hint": "The wall is neutral, but its electrons can be pushed about a little. Which charge is left nearest the balloon?", "explain": "The negative balloon **repels** electrons in the wall's surface, leaving that surface slightly **positive**. Opposite charges **attract**, so the balloon sticks."}
+    },
+    {
+      "title": "Sparks and lightning",
+      "steps": [
+        {"say": "Shuffle across a carpet and charge can build up on you.", "do": "carpet"},
+        {"say": "Touch a metal door handle and the charge suddenly flows away through the metal, which is a **conductor**. You feel a tiny shock and may even see a spark.", "do": "shock"},
+        {"say": "**Lightning** is a giant spark. Charge builds up in storm clouds until it jumps to the ground or to another cloud.", "do": "lightning"},
+        {"say": "Tall buildings have a **lightning conductor**: a thick metal strip that gives the charge a safe path down to the ground.", "do": "conductor"}
+      ],
+      "check": {"q": "You walk across a carpet, touch a metal door handle and feel a small shock. Why?", "options": ["Charge built up on you flows away through the metal", "The door handle is magnetic", "Metal makes its own electricity", "The carpet's protons jump into your hand"], "answer": 0,
+                "hint": "Walking on the carpet charged you up. Is metal a conductor or an insulator?", "explain": "Walking on the carpet built up **charge** on you. Metal is a **conductor**, so when you touch it the charge suddenly flows away, giving a tiny shock or spark."}
+    }
+  ]
+}

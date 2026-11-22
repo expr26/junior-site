@@ -776,6 +776,104 @@
           "a": "It means finding the value of one item first, then multiplying. If 3 smoothies cost £6, one costs £6 ÷ 3 = £2, so 5 cost 5 × £2 = £10."
         }
       ]
+    },
+    {
+      "slug": "energy-coaster",
+      "title": "Energy Coaster",
+      "icon": "🎢",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Ride a roller coaster and watch energy move between the gravitational, kinetic and thermal stores. Then name stores, transfers and wasted energy.",
+      "live": true,
+      "learn": "Energy stores and the four ways energy is transferred, conservation of energy, how friction transfers energy to the thermal store, Sankey diagrams and efficiency.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: energy stores, transfers and conservation of energy",
+        "PYP": "How the world works: energy and its forms"
+      },
+      "guide_title": "Energy stores and transfers: a quick guide",
+      "guide": [
+        {
+          "h": "Energy stores",
+          "p": "Energy is kept in different stores. A moving object has a kinetic store. Anything lifted up has a gravitational store: the higher it is, the more energy. Food, fuels and batteries have chemical stores. Stretched or squashed things, like springs and bows, have elastic stores. Hot things have bigger thermal stores than cold ones."
+        },
+        {
+          "h": "Energy transfers",
+          "p": "Energy moves from one store to another in four ways. It can be transferred by forces (a push or a pull, like the chain lift pulling the car up), electrically (by an electric current), by heating (from a hotter thing to a cooler thing) or by radiation (by light and other waves, like sunshine warming the ground)."
+        },
+        {
+          "h": "Energy is never used up",
+          "p": "Energy cannot be made or destroyed. It only moves between stores, so the total always stays the same: this is called conservation of energy. On our coaster the total is always 100 kJ. As the car rolls down, its gravitational store empties and its kinetic store fills up. Going up a hill, the opposite happens."
+        },
+        {
+          "h": "Friction, wasted energy and efficiency",
+          "p": "Friction and air resistance transfer some energy to the thermal store of the wheels, track and air, so a real coaster can never climb back to its starting height. That energy is wasted: it spreads out and is hard to use. In the game we show all of it in the thermal store; in real life a little goes as sound, which also ends up warming the air. Efficiency = useful energy out ÷ total energy in. A Sankey diagram shows this with arrows as wide as the energy they carry."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why is a roller coaster fastest at the bottom of a dip?",
+          "a": "At the lowest point most of the energy in the gravitational store has been transferred to the kinetic store. A bigger kinetic store means the car is moving faster."
+        },
+        {
+          "q": "If energy is never used up, why do things stop?",
+          "a": "Friction and air resistance transfer the energy to thermal stores of the surroundings. It is still there, but it is spread out as a little warming of lots of things, so we can't easily use it again."
+        },
+        {
+          "q": "What does 20% efficient mean?",
+          "a": "Only 20% of the energy put in is transferred usefully. An old filament bulb takes in 100 J and gives out 20 J as light, so it is 20% efficient. The other 80 J heats the room and is wasted."
+        }
+      ]
+    },
+    {
+      "slug": "power-house",
+      "title": "Power House",
+      "icon": "🔌",
+      "subject": "science",
+      "kind": "game",
+      "blurb": "Switch appliances on and off, work out kilowatt-hours, read the meter and find out what electricity costs.",
+      "live": true,
+      "learn": "Power in watts and kilowatts, energy in kilowatt-hours (kWh = kW × hours), the cost of electricity, reading a meter and saving energy with LED bulbs.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: energy costs, power and paying for electricity",
+        "PYP": "Sharing the planet: using energy wisely"
+      },
+      "guide_title": "Power and energy bills: a quick guide",
+      "guide": [
+        {
+          "h": "Power: watts and kilowatts",
+          "p": "The power of an appliance tells you how fast it transfers energy. It is measured in watts (W): 1 watt means 1 joule every second. Big powers are given in kilowatts (kW), and 1 kW = 1000 W. So a 3 kW kettle is 3000 W, and a 100 W TV is 0.1 kW. Things that heat, like kettles and heaters, usually have the biggest powers."
+        },
+        {
+          "h": "Kilowatt-hours",
+          "p": "Electricity companies measure energy in kilowatt-hours (kWh). One kWh is the energy a 1 kW appliance uses in 1 hour. To work it out, multiply: energy in kWh = power in kW × time in hours. A 2 kW heater on for 3 hours uses 2 × 3 = 6 kWh. Always change watts into kilowatts first."
+        },
+        {
+          "h": "Working out the cost",
+          "p": "Each kWh has a price. In the game we imagine it costs 30p per kWh: this is a made-up round number to keep the sums easy, and real prices change. Cost = number of kWh × price per kWh. So 6 kWh costs 6 × 30p = 180p, which is £1.80. A meter at home counts the kWh used, so take the old reading from the new one to find how much was used."
+        },
+        {
+          "h": "Saving energy",
+          "p": "An old filament bulb gets hot and wastes most of its energy heating the room. An LED bulb gives about the same light for a much smaller power (in the game we use 10 W instead of 100 W), so it uses far less energy and costs less to run. Switching off big-power appliances, like heaters, when you don't need them saves the most energy of all."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is a kilowatt-hour?",
+          "a": "A kilowatt-hour (kWh) is an amount of energy: the energy a 1 kW appliance transfers in 1 hour. It is the unit on electricity bills. 1 kWh is 3.6 million joules."
+        },
+        {
+          "q": "Why does a kettle cost more per hour than a TV?",
+          "a": "A kettle's power is about 3 kW, while a TV's is about 0.1 kW. For the same time, energy = power × time, so the kettle uses about 30 times as much energy. Luckily a kettle is only on for a few minutes."
+        },
+        {
+          "q": "How do I read an electricity meter?",
+          "a": "The meter keeps counting up the kWh used. Write down the reading, then read it again later. Take the first reading away from the second to find how many kWh were used in between."
+        }
+      ]
     }
   ]
 }

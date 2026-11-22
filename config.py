@@ -1,8 +1,7 @@
 """Site-wide settings. Change these in one place; every page reads them at build time."""
 
-# Working name and domain until the real ones are chosen.
-SITE_NAME = "Junior Site"
-SITE_URL = "https://junior-site.pages.dev"   # set to the real domain once it exists, e.g. https://example.com
+SITE_NAME = "ExaminerPrep Junior"
+SITE_URL = "https://junior.examinerprep.com"   # used for canonical links, og:url and the sitemap
 TAGLINE = "Maths and Science practice for ages 9 to 14"
 LANG = "en-GB"
 

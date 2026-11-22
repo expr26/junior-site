@@ -1,0 +1,293 @@
+{
+ "slug": "energy-stores-and-transfers",
+ "title": "Energy stores and transfers",
+ "ks3": "Energy: stores, transfers, conservation, efficiency and resources",
+ "art": "energy",
+ "intro": "Energy is stored in different ways and moves between stores. Practise naming stores and transfers, energy diagrams, efficiency and energy resources.",
+ "description": "Free KS3 Physics energy questions with answers: energy stores, energy transfers, conservation of energy, efficiency, Sankey diagrams and renewable resources. Marked instantly, for ages 9 to 14.",
+ "subtopics": [
+  {
+   "slug": "stores",
+   "title": "Energy stores"
+  },
+  {
+   "slug": "transfers",
+   "title": "Energy transfers"
+  },
+  {
+   "slug": "efficiency",
+   "title": "Conservation and efficiency"
+  },
+  {
+   "slug": "resources",
+   "title": "Energy resources"
+  }
+ ],
+ "questions": [
+  {
+   "id": "enr-01",
+   "sub": "stores",
+   "level": 1,
+   "type": "mc",
+   "q": "Which energy store does a battery have?",
+   "options": [
+    "Chemical",
+    "Kinetic",
+    "Gravitational",
+    "Elastic"
+   ],
+   "answer": 0,
+   "hint": "The energy is in the substances inside the battery.",
+   "explain": "A battery stores energy in a chemical store. Food and fuels have chemical stores too."
+  },
+  {
+   "id": "enr-02",
+   "sub": "stores",
+   "level": 1,
+   "type": "mc",
+   "q": "A ball is held high above the ground. Which store has energy because of its height?",
+   "options": [
+    "Gravitational",
+    "Kinetic",
+    "Chemical",
+    "Thermal"
+   ],
+   "answer": 0,
+   "hint": "If you let go, gravity pulls it down.",
+   "explain": "Objects that are lifted up have energy in their gravitational store. The higher they are, the more energy."
+  },
+  {
+   "id": "enr-03",
+   "sub": "stores",
+   "level": 1,
+   "type": "mc",
+   "q": "A car speeds up. Which store increases?",
+   "options": [
+    "Kinetic",
+    "Elastic",
+    "Gravitational",
+    "Nuclear"
+   ],
+   "answer": 0,
+   "hint": "This store is about movement.",
+   "explain": "The kinetic store is the energy an object has because it is moving. Faster means more kinetic energy."
+  },
+  {
+   "id": "enr-04",
+   "sub": "stores",
+   "level": 2,
+   "type": "mc",
+   "q": "A stretched rubber band stores energy in which store?",
+   "options": [
+    "Elastic",
+    "Chemical",
+    "Kinetic",
+    "Magnetic"
+   ],
+   "answer": 0,
+   "hint": "Think of things that are stretched or squashed.",
+   "explain": "Stretched or squashed objects, like rubber bands and springs, have energy in an elastic store."
+  },
+  {
+   "id": "enr-05",
+   "sub": "transfers",
+   "level": 2,
+   "type": "mc",
+   "q": "A ball falls from a shelf. Energy is transferred from…",
+   "options": [
+    "the gravitational store to the kinetic store",
+    "the kinetic store to the gravitational store",
+    "the chemical store to the thermal store",
+    "the elastic store to the kinetic store"
+   ],
+   "answer": 0,
+   "hint": "As it falls it gets lower and faster.",
+   "explain": "Getting lower empties the gravitational store, and getting faster fills the kinetic store."
+  },
+  {
+   "id": "enr-06",
+   "sub": "transfers",
+   "level": 2,
+   "type": "mc",
+   "q": "You rub your hands together quickly. Your hands get warm. Energy goes into which store?",
+   "options": [
+    "Thermal",
+    "Gravitational",
+    "Elastic",
+    "Chemical"
+   ],
+   "answer": 0,
+   "hint": "Warmer things have more of this store.",
+   "explain": "Friction between your hands transfers energy to the thermal store of your hands, so they warm up."
+  },
+  {
+   "id": "enr-07",
+   "sub": "transfers",
+   "level": 2,
+   "type": "mc",
+   "q": "Which device is mainly designed to transfer energy electrically to a kinetic store?",
+   "options": [
+    "An electric fan",
+    "A kettle",
+    "A toaster",
+    "A light bulb"
+   ],
+   "answer": 0,
+   "hint": "Which one makes something move?",
+   "explain": "A fan's motor makes the blades spin: that is a kinetic store. A kettle and a toaster heat things (thermal) and a bulb gives out light."
+  },
+  {
+   "id": "enr-08",
+   "sub": "efficiency",
+   "level": 1,
+   "type": "mc",
+   "q": "Energy cannot be created or destroyed. So what happens to it?",
+   "options": [
+    "It is transferred from one store to another",
+    "It gets used up and disappears",
+    "Batteries make new energy",
+    "Friction destroys it"
+   ],
+   "answer": 0,
+   "hint": "This is called the law of conservation of energy.",
+   "explain": "Energy is never made or destroyed: it only moves between stores. When energy seems \"used up\", it has usually spread out as heat."
+  },
+  {
+   "id": "enr-09",
+   "sub": "efficiency",
+   "level": 2,
+   "type": "num",
+   "q": "A motor is given 500 J of energy. It transfers 350 J usefully to a kinetic store. How much energy is wasted?",
+   "answer": "150",
+   "unit": "J",
+   "hint": "Energy in = useful energy + wasted energy.",
+   "explain": "500 J − 350 J = 150 J is wasted, mostly heating the motor and its surroundings."
+  },
+  {
+   "id": "enr-10",
+   "sub": "efficiency",
+   "level": 2,
+   "type": "mc",
+   "q": "This diagram is for an old filament light bulb. Which energy is wasted?",
+   "options": [
+    "Heating the room (80 J)",
+    "Light (20 J)",
+    "Both of them",
+    "Neither of them"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "sankey",
+    "total": 100,
+    "useful": [
+     "Light",
+     20
+    ],
+    "wasted": [
+     "Heating the room",
+     80
+    ]
+   },
+   "hint": "What is a light bulb for?",
+   "explain": "A bulb is for giving light, so the light (20 J) is useful and the 80 J that heats the room is wasted."
+  },
+  {
+   "id": "enr-11",
+   "sub": "efficiency",
+   "level": 3,
+   "type": "num",
+   "q": "Use the diagram. What is the efficiency of this light bulb, as a percentage?",
+   "answer": "20",
+   "unit": "%",
+   "fig": {
+    "type": "sankey",
+    "total": 100,
+    "useful": [
+     "Light",
+     20
+    ],
+    "wasted": [
+     "Heating the room",
+     80
+    ]
+   },
+   "hint": "Efficiency = useful energy out ÷ total energy in.",
+   "explain": "Efficiency = 20 J ÷ 100 J = 0.2 = 20%."
+  },
+  {
+   "id": "enr-12",
+   "sub": "efficiency",
+   "level": 3,
+   "type": "num",
+   "q": "An LED bulb gives out 45 J of light for every 50 J of electrical energy put in. What is its efficiency as a percentage?",
+   "answer": "90",
+   "unit": "%",
+   "hint": "Divide useful energy by total energy, then change to a percentage.",
+   "explain": "45 ÷ 50 = 0.9 = 90%. LED bulbs waste much less energy than filament bulbs."
+  },
+  {
+   "id": "enr-13",
+   "sub": "resources",
+   "level": 1,
+   "type": "mc",
+   "q": "Which of these is a renewable energy resource?",
+   "options": [
+    "Wind",
+    "Coal",
+    "Oil",
+    "Natural gas"
+   ],
+   "answer": 0,
+   "hint": "Renewable resources will not run out.",
+   "explain": "Wind will keep blowing, so it is renewable. Coal, oil and natural gas are fossil fuels: they will run out."
+  },
+  {
+   "id": "enr-14",
+   "sub": "resources",
+   "level": 2,
+   "type": "mc",
+   "q": "Which of these is a non-renewable energy resource?",
+   "options": [
+    "Natural gas",
+    "Solar",
+    "Tidal",
+    "Hydroelectric"
+   ],
+   "answer": 0,
+   "hint": "Which one took millions of years to form and cannot be replaced?",
+   "explain": "Natural gas is a fossil fuel. It took millions of years to form, and once burned it is gone."
+  },
+  {
+   "id": "enr-15",
+   "sub": "resources",
+   "level": 2,
+   "type": "mc",
+   "q": "Burning fossil fuels releases carbon dioxide. Why is this a problem?",
+   "options": [
+    "It adds to global warming",
+    "It makes the air colder",
+    "It damages the ozone layer",
+    "It uses up the oxygen in the oceans"
+   ],
+   "answer": 0,
+   "hint": "Carbon dioxide is a greenhouse gas.",
+   "explain": "Carbon dioxide traps heat in the atmosphere, which adds to global warming and climate change. (The ozone layer is damaged by other gases, not carbon dioxide.)"
+  },
+  {
+   "id": "enr-16",
+   "sub": "resources",
+   "level": 3,
+   "type": "mc",
+   "q": "Which energy resource does not depend on the weather?",
+   "options": [
+    "Geothermal",
+    "Wind",
+    "Solar",
+    "Hydroelectric"
+   ],
+   "answer": 0,
+   "hint": "Which one uses heat from deep inside the Earth?",
+   "explain": "Geothermal power uses heat from underground rocks, which is there whatever the weather. Wind and solar change from day to day, and hydroelectric needs rain to fill the reservoirs."
+  }
+ ]
+}

@@ -6,6 +6,7 @@ New question figures, registered into topics.EXTRA_FIGS so they work in "fig" ev
   spring   {"load": "2 N", "stretch": 2}         a spring hanging from a bar, unstretched and then with a weight (stretch 0 to 4)
 """
 import html
+import math
 
 import topics
 
@@ -303,3 +304,125 @@ def fig_thermo(temp, lo=-10, hi=10, step=2, **_):
 
 
 topics.EXTRA_FIGS.update({"dtgraph": fig_dtgraph, "thermo": fig_thermo})
+
+
+# ---------- batch 3: algebra, equations, sequences, energy, power ----------
+def _tile(x, y, t, c, rot=0, w=44):
+    return (f'<g transform="rotate({rot} {x + w / 2} {y + w / 2})"><rect x="{x}" y="{y}" width="{w}" height="{w}" rx="10" fill="{c}" stroke="{INK}" stroke-width="3"/>'
+            f'<text x="{x + w / 2}" y="{y + w / 2 + 9}" text-anchor="middle" font-size="26" font-style="italic" font-family="Georgia,serif" font-weight="700" fill="#fff">{t}</text></g>')
+
+
+def art_algebra():
+    return _svg(
+        _tile(30, 40, "x", P, -10) + _tile(84, 30, "y", TEAL, 6) + _tile(150, 46, "n", ORANGE, -4)
+        + f'<g font-family="Fredoka,Trebuchet MS,sans-serif" font-weight="700">'
+          f'<rect x="28" y="110" width="184" height="52" rx="16" fill="#fff" stroke="{INK}" stroke-width="3"/>'
+          f'<text x="120" y="145" text-anchor="middle" font-size="24" fill="{INK}"><tspan font-family="Georgia,serif" font-style="italic">3x</tspan> + 2 = 14</text>'
+          f'<circle cx="198" cy="168" r="18" fill="{SUN}" stroke="{INK}" stroke-width="3"/><text x="198" y="176" text-anchor="middle" font-size="22" fill="{INK}">?</text></g>'
+        + _sparkles((210, 30, 7, SUN), (24, 176, 6, PINK)),
+        "Algebra letter tiles x, y and n, and the equation 3x + 2 = 14")
+
+
+def art_equations():
+    return _svg(
+        f'<path d="M120 52 V170" stroke="{INK}" stroke-width="6"/><path d="M92 172 H148" stroke="{INK}" stroke-width="8" stroke-linecap="round"/>'
+        f'<path d="M34 64 H206" stroke="{INK}" stroke-width="7" stroke-linecap="round"/><circle cx="120" cy="56" r="9" fill="{SUN}" stroke="{INK}" stroke-width="3"/>'
+        f'<path d="M48 64 L30 112 M48 64 L66 112 M192 64 L174 112 M192 64 L210 112" stroke="#8A94A6" stroke-width="2.5"/>'
+        f'<path d="M22 112 H74 a26 12 0 0 1 -52 0 Z" fill="#C9D1DE" stroke="{INK}" stroke-width="3"/>'
+        f'<path d="M166 112 H218 a26 12 0 0 1 -52 0 Z" fill="#C9D1DE" stroke="{INK}" stroke-width="3"/>'
+        + _tile(26, 78, "x", P, 0, 30) + f'<circle cx="64" cy="100" r="10" fill="{ORANGE}" stroke="{INK}" stroke-width="2.5"/>'
+        + "".join(f'<circle cx="{x}" cy="{y}" r="10" fill="{ORANGE}" stroke="{INK}" stroke-width="2.5"/>' for x, y in ((178, 100), (198, 100), (188, 84), (208, 84), (168, 84)))
+        + f'<g font-family="Fredoka,Trebuchet MS,sans-serif" font-weight="700"><rect x="70" y="12" width="100" height="30" rx="12" fill="{TEAL}"/>'
+          f'<text x="120" y="33" text-anchor="middle" font-size="18" fill="#fff"><tspan font-family="Georgia,serif" font-style="italic">x</tspan> + 1 = 5</text></g>'
+        + _sparkles((212, 150, 6, SUN), (28, 150, 6, P)),
+        "A balance scale with x and 1 counter on one side and 5 counters on the other: x + 1 = 5")
+
+
+def art_sequences():
+    steps = "".join(f'<rect x="{24 + 40 * i}" y="{150 - 26 * i}" width="40" height="{26 * i + 26}" fill="{c}" stroke="{INK}" stroke-width="3"/>'
+                    f'<text x="{44 + 40 * i}" y="{170 - 26 * i}" text-anchor="middle" font-size="18" fill="#fff">{v}</text>'
+                    for i, (v, c) in enumerate(((3, P), (7, TEAL), (11, ORANGE), (15, PINK), (19, BLUE))))
+    hops = "".join(f'<path d="M{44 + 40 * i} {140 - 26 * i} q20 -26 40 -26" fill="none" stroke="{INK}" stroke-width="2.5" stroke-dasharray="4 4"/>'
+                   f'<text x="{68 + 40 * i}" y="{122 - 26 * i}" font-size="14" fill="{INK}">+4</text>' for i in range(4))
+    return _svg(f'<g font-family="Fredoka,Trebuchet MS,sans-serif" font-weight="700">{steps}{hops}</g>'
+                + _sparkles((212, 32, 7, SUN), (30, 60, 6, TEAL)),
+                "A staircase of numbers 3, 7, 11, 15, 19 going up by 4 each step")
+
+
+def art_energy():
+    return _svg(
+        # battery
+        f'<rect x="30" y="58" width="44" height="80" rx="8" fill="#fff" stroke="{INK}" stroke-width="4"/><rect x="42" y="50" width="20" height="10" rx="2" fill="{INK}"/>'
+        f'<rect x="36" y="96" width="32" height="36" rx="4" fill="#3BB273"/><rect x="36" y="78" width="32" height="14" rx="4" fill="#3BB273"/>'
+        # sun
+        f'<circle cx="182" cy="52" r="22" fill="{SUN}" stroke="{INK}" stroke-width="3"/>'
+        + "".join(f'<path d="M{182 + 30 * math.cos(a * math.pi / 4):.1f} {52 + 30 * math.sin(a * math.pi / 4):.1f} l{7 * math.cos(a * math.pi / 4):.1f} {7 * math.sin(a * math.pi / 4):.1f}" stroke="{ORANGE}" stroke-width="4" stroke-linecap="round"/>' for a in range(8))
+        # flame
+        + f'<path d="M120 170 c-26 0 -34 -26 -18 -46 c4 12 10 14 12 8 c-4 -18 8 -34 20 -40 c-4 16 22 26 18 52 c-2 16 -14 26 -32 26 Z" fill="{ORANGE}" stroke="{INK}" stroke-width="3"/>'
+          f'<path d="M120 166 c-10 0 -14 -10 -8 -20 c4 6 8 4 8 -2 c8 6 12 22 0 22 Z" fill="{SUN}"/>'
+        # spring
+        + f'<polyline points="186,112 200,118 172,126 200,134 172,142 200,150 172,158 186,164" fill="none" stroke="{TEAL}" stroke-width="5" stroke-linejoin="round"/>'
+        # arrows between them
+        + f'<path d="M80 98 q20 -40 60 -44" fill="none" stroke="{P}" stroke-width="4" stroke-dasharray="6 5"/>'
+        + _sparkles((26, 170, 6, P), (214, 186, 5, SUN)),
+        "Energy stores: a battery (chemical), the Sun, a flame (thermal) and a squashed spring (elastic)")
+
+
+def art_power():
+    return _svg(
+        f'<path d="M96 40 a40 40 0 0 1 48 0 a40 40 0 0 1 8 62 c-8 8 -10 14 -10 24 h-44 c0 -10 -2 -16 -10 -24 a40 40 0 0 1 8 -62 Z" fill="{SUN}" stroke="{INK}" stroke-width="4"/>'
+        f'<path d="M108 112 l6 -30 l6 12 l6 -12 l6 30" fill="none" stroke="{ORANGE}" stroke-width="3"/>'
+        f'<rect x="98" y="128" width="44" height="12" rx="3" fill="#C9D1DE" stroke="{INK}" stroke-width="3"/><rect x="100" y="142" width="40" height="12" rx="3" fill="#C9D1DE" stroke="{INK}" stroke-width="3"/>'
+        f'<path d="M112 156 h16 l-4 8 h-8 Z" fill="{INK}"/>'
+        + "".join(f'<path d="M{120 + 58 * math.cos(a)} {78 + 58 * math.sin(a)} l{10 * math.cos(a):.1f} {10 * math.sin(a):.1f}" stroke="{SUN}" stroke-width="5" stroke-linecap="round"/>'
+                  for a in (math.pi * k / 6 for k in (7, 8, 9, 10, 11)))
+        # meter
+        + f'<g font-family="Fredoka,Trebuchet MS,sans-serif" font-weight="700"><g transform="rotate(-6 54 150)"><rect x="18" y="128" width="74" height="44" rx="10" fill="{INK}"/>'
+          f'<text x="55" y="157" text-anchor="middle" font-size="17" fill="#7CFFB2">0352</text><text x="55" y="186" text-anchor="middle" font-size="13" fill="{INK}">kWh</text></g>'
+          f'<g transform="rotate(8 190 150)"><rect x="160" y="126" width="62" height="48" rx="10" fill="{TEAL}"/><text x="191" y="157" text-anchor="middle" font-size="22" fill="#fff">£</text></g></g>'
+        + _sparkles((30, 40, 7, P), (212, 40, 6, PINK)),
+        "A glowing light bulb, an electricity meter in kilowatt-hours and a pound sign")
+
+
+ART.update({"algebra": art_algebra, "equations": art_equations, "sequences": art_sequences, "energy": art_energy, "power": art_power})
+
+
+def fig_pattern(counts, colour="fun", **_):
+    """A growing pattern: picture k has counts[k] squares in an L shape (a row and a column)."""
+    s, gap = 16, 20
+    parts, x0 = [], 4
+    H = 6 + s * max((c + 1) // 2 + 1 for c in counts) + 26
+    for k, c in enumerate(counts):
+        row = (c + 1) // 2
+        col = c - row
+        slot = max(row * s, 72)
+        left = x0 + (slot - row * s) / 2
+        cells = [(i, 0) for i in range(row)] + [(0, j + 1) for j in range(col)]
+        for i, j in cells:
+            parts.append(f'<rect x="{left + i * s}" y="{H - 30 - j * s - s}" width="{s - 2}" height="{s - 2}" rx="3" fill="var(--{colour})"/>')
+        parts.append(f'<text x="{x0 + slot / 2}" y="{H - 8}" text-anchor="middle" font-size="13" font-weight="700" fill="var(--ink)">Pattern {k + 1}</text>')
+        x0 += slot + gap
+    x0 -= gap - 4
+    return (f'<svg class="fig" viewBox="0 0 {x0} {H}" width="{x0}" height="{H}" role="img" '
+            f'aria-label="A growing pattern of squares: {", ".join(str(c) for c in counts)} squares">{"".join(parts)}</svg>')
+
+
+def fig_sankey(total, useful, wasted, unit="J", **_):
+    """Energy transfer diagram. useful/wasted: [label, amount]; the arrow widths are in proportion."""
+    W, H = 400, 200
+    k = 90 / total
+    wu, ww = useful[1] * k, wasted[1] * k
+    y0 = 40
+    parts = [f'<path d="M10 {y0} H170 Q{170 + ww + 10} {y0 + wu} {170 + ww + 10} {y0 + wu + 70} H{180 - 2} V{y0 + wu}" fill="none"/>',
+             f'<rect x="10" y="{y0}" width="170" height="{wu + ww}" fill="var(--fun)"/>',
+             f'<path d="M180 {y0} H290 V{y0 - 10} L318 {y0 + wu / 2} L290 {y0 + wu + 10} V{y0 + wu} H180 Z" fill="var(--fun)"/>',
+             f'<path d="M180 {y0 + wu} H{180 + ww} V{H - 40} H{180 + ww + 10} L{180 + ww / 2} {H - 14} L{170} {H - 40} H180 Z" fill="var(--gold-lt)"/>',
+             f'<text x="20" y="{y0 + (wu + ww) / 2 + 6}" font-size="16" font-weight="700" fill="#fff">{total} {unit} in</text>',
+             f'<text x="300" y="{y0 - 18}" text-anchor="end" font-size="15" font-weight="700" fill="var(--ink)">{html.escape(useful[0])}: {useful[1]} {unit}</text>',
+             f'<text x="{190 + ww + 6}" y="{H - 50}" font-size="15" font-weight="700" fill="var(--ink)">{html.escape(wasted[0])}</text>',
+             f'<text x="{190 + ww + 6}" y="{H - 32}" font-size="15" font-weight="700" fill="var(--ink)">{wasted[1]} {unit}</text>']
+    return (f'<svg class="fig" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Energy diagram: {total} {unit} in, '
+            f'{html.escape(useful[0])} {useful[1]} {unit}, {html.escape(wasted[0])} {wasted[1]} {unit}">{"".join(parts[1:])}</svg>')
+
+
+topics.EXTRA_FIGS.update({"pattern": fig_pattern, "sankey": fig_sankey})

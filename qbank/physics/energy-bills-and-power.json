@@ -1,0 +1,217 @@
+{
+ "slug": "energy-bills-and-power",
+ "title": "Power and energy bills",
+ "ks3": "Energy: power, kilowatt-hours and the cost of energy at home",
+ "art": "power",
+ "intro": "How fast do your devices use energy, and what does it cost? Practise power in watts, energy in joules and kilowatt-hours, and working out electricity bills.",
+ "description": "Free KS3 Physics power and energy bill questions with answers: watts and kilowatts, energy = power × time, kilowatt-hours, meter readings and the cost of electricity. Marked instantly, for ages 9 to 14.",
+ "subtopics": [
+  {
+   "slug": "power",
+   "title": "Power"
+  },
+  {
+   "slug": "kwh",
+   "title": "Kilowatt-hours"
+  },
+  {
+   "slug": "cost",
+   "title": "Energy bills"
+  },
+  {
+   "slug": "compare",
+   "title": "Comparing devices"
+  }
+ ],
+ "questions": [
+  {
+   "id": "pow-01",
+   "sub": "power",
+   "level": 1,
+   "type": "mc",
+   "q": "What does the power of a device tell you?",
+   "options": [
+    "How fast it transfers energy",
+    "How much energy it can store",
+    "How heavy it is",
+    "How long it lasts"
+   ],
+   "answer": 0,
+   "hint": "A more powerful kettle boils water faster.",
+   "explain": "Power is how much energy is transferred each second. 1 watt means 1 joule every second."
+  },
+  {
+   "id": "pow-02",
+   "sub": "power",
+   "level": 1,
+   "type": "mc",
+   "q": "What is the unit of power?",
+   "options": [
+    "Watt (W)",
+    "Joule (J)",
+    "Newton (N)",
+    "Volt (V)"
+   ],
+   "answer": 0,
+   "hint": "It is named after James Watt, who improved the steam engine.",
+   "explain": "Power is measured in watts (W). Energy is measured in joules (J)."
+  },
+  {
+   "id": "pow-03",
+   "sub": "power",
+   "level": 2,
+   "type": "num",
+   "q": "A 60 W bulb is on for 10 s. How much energy does it transfer? (Energy = power × time)",
+   "answer": "600",
+   "unit": "J",
+   "hint": "60 W means 60 J every second.",
+   "explain": "Energy = 60 W × 10 s = 600 J."
+  },
+  {
+   "id": "pow-04",
+   "sub": "power",
+   "level": 2,
+   "type": "num",
+   "q": "A kettle transfers 24,000 J of energy in 10 s. What is its power?",
+   "answer": "2400",
+   "unit": "W",
+   "hint": "Power = energy ÷ time.",
+   "explain": "Power = 24,000 J ÷ 10 s = 2400 W (2.4 kW)."
+  },
+  {
+   "id": "pow-05",
+   "sub": "power",
+   "level": 3,
+   "type": "num",
+   "q": "A phone charger has a power of 5 W. How much energy does it transfer in 1 minute?",
+   "answer": "300",
+   "unit": "J",
+   "hint": "Change 1 minute into seconds first.",
+   "explain": "1 minute = 60 s. Energy = 5 W × 60 s = 300 J."
+  },
+  {
+   "id": "pow-06",
+   "sub": "kwh",
+   "level": 2,
+   "type": "num",
+   "q": "How many watts are there in 2.5 kW?",
+   "answer": "2500",
+   "unit": "W",
+   "hint": "1 kW = 1000 W.",
+   "explain": "2.5 × 1000 = 2500 W."
+  },
+  {
+   "id": "pow-07",
+   "sub": "kwh",
+   "level": 2,
+   "type": "num",
+   "q": "A 2 kW heater is on for 3 hours. How many kilowatt-hours does it use? (kWh = kW × hours)",
+   "answer": "6",
+   "unit": "kWh",
+   "hint": "Multiply the power in kW by the time in hours.",
+   "explain": "2 kW × 3 h = 6 kWh."
+  },
+  {
+   "id": "pow-08",
+   "sub": "kwh",
+   "level": 3,
+   "type": "num",
+   "q": "A 100 W TV is on for 5 hours. How many kilowatt-hours does it use?",
+   "answer": "0.5",
+   "unit": "kWh",
+   "hint": "Change 100 W into kW first.",
+   "explain": "100 W = 0.1 kW. Energy = 0.1 kW × 5 h = 0.5 kWh."
+  },
+  {
+   "id": "pow-09",
+   "sub": "cost",
+   "level": 2,
+   "type": "num",
+   "q": "Electricity costs 25p for each kWh. How much do 8 kWh cost, in pence?",
+   "answer": "200",
+   "unit": "p",
+   "hint": "Cost = number of kWh × price of one kWh.",
+   "explain": "8 × 25p = 200p, which is £2."
+  },
+  {
+   "id": "pow-10",
+   "sub": "cost",
+   "level": 3,
+   "type": "num",
+   "q": "A 3 kW oven is on for 2 hours. Electricity costs 25p per kWh. How much does it cost, in pounds?",
+   "answer": "1.5",
+   "show": "£1.50",
+   "hint": "Find the kWh first, then the cost in pence, then change to pounds.",
+   "explain": "3 kW × 2 h = 6 kWh. 6 × 25p = 150p = £1.50."
+  },
+  {
+   "id": "pow-11",
+   "sub": "cost",
+   "level": 3,
+   "type": "num",
+   "q": "An electricity meter reads 01234 kWh on Monday and 01264 kWh on Friday. How many kWh were used?",
+   "answer": "30",
+   "unit": "kWh",
+   "hint": "Subtract the first reading from the second.",
+   "explain": "1264 − 1234 = 30 kWh."
+  },
+  {
+   "id": "pow-12",
+   "sub": "cost",
+   "level": 3,
+   "type": "num",
+   "q": "From Monday to Friday a home used 30 kWh. Electricity costs 30p per kWh. What did that cost, in pounds?",
+   "answer": "9",
+   "show": "£9.00",
+   "hint": "30 × 30p, then change pence to pounds.",
+   "explain": "30 × 30p = 900p = £9."
+  },
+  {
+   "id": "pow-13",
+   "sub": "compare",
+   "level": 1,
+   "type": "mc",
+   "q": "Which of these is a good way to save energy at home?",
+   "options": [
+    "Switch off lights when you leave a room",
+    "Leave the TV on standby",
+    "Open the windows with the heating on",
+    "Swap LED bulbs for filament bulbs"
+   ],
+   "answer": 0,
+   "hint": "Which one stops energy being transferred when it isn't needed?",
+   "explain": "Switching off lights stops energy being used when nobody needs the light. The others all waste energy."
+  },
+  {
+   "id": "pow-14",
+   "sub": "compare",
+   "level": 2,
+   "type": "mc",
+   "q": "Each device is switched on for 3 minutes. Which one transfers the most energy?",
+   "options": [
+    "A 2000 W kettle",
+    "A 10 W LED bulb",
+    "A 100 W TV",
+    "A 50 W fan"
+   ],
+   "answer": 0,
+   "hint": "For the same time, the device with the biggest power transfers the most energy.",
+   "explain": "Energy = power × time. The times are the same, so the kettle, with the biggest power (2000 W), transfers the most."
+  },
+  {
+   "id": "pow-15",
+   "sub": "compare",
+   "level": 3,
+   "type": "mc",
+   "q": "Which transfers more energy: a 2 kW kettle on for 6 minutes, or a 10 W LED bulb on for 10 hours?",
+   "options": [
+    "The kettle",
+    "The bulb",
+    "They are the same"
+   ],
+   "answer": 0,
+   "hint": "Work out the kWh for each. 6 minutes is 0.1 hours and 10 W is 0.01 kW.",
+   "explain": "Kettle: 2 kW × 0.1 h = 0.2 kWh. Bulb: 0.01 kW × 10 h = 0.1 kWh. The kettle transfers twice as much, even though it is on for a much shorter time."
+  }
+ ]
+}

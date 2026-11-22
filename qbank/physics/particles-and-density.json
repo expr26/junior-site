@@ -1,0 +1,233 @@
+{
+ "slug": "particles-and-density",
+ "title": "Particles and density",
+ "ks3": "Matter: the particle model, changes of state, diffusion, gas pressure and density",
+ "art": "particles",
+ "intro": "Everything is made of tiny particles. Practise solids, liquids and gases, changes of state, diffusion, gas pressure and density.",
+ "description": "Free KS3 Physics particle model questions with answers: solids, liquids and gases, melting, evaporating and condensing, diffusion, gas pressure and density = mass ÷ volume. Marked instantly, for Year 7, 8 and 9 (ages 9 to 14).",
+ "subtopics": [
+  {
+   "slug": "states",
+   "title": "Solids, liquids and gases"
+  },
+  {
+   "slug": "changes",
+   "title": "Changes of state"
+  },
+  {
+   "slug": "diffusion",
+   "title": "Diffusion and gas pressure"
+  },
+  {
+   "slug": "density",
+   "title": "Density"
+  }
+ ],
+ "questions": [
+  {
+   "id": "prt-01",
+   "sub": "states",
+   "level": 1,
+   "type": "mc",
+   "q": "In which state are the particles packed closely together in a regular pattern?",
+   "options": [
+    "Solid",
+    "Liquid",
+    "Gas"
+   ],
+   "answer": 0,
+   "hint": "Think of ice: it keeps its shape.",
+   "explain": "In a solid the particles are close together in a regular pattern and can only vibrate on the spot."
+  },
+  {
+   "id": "prt-02",
+   "sub": "states",
+   "level": 1,
+   "type": "mc",
+   "q": "In which state are the particles far apart and moving fast in all directions?",
+   "options": [
+    "Gas",
+    "Liquid",
+    "Solid"
+   ],
+   "answer": 0,
+   "hint": "This state fills any container it is in.",
+   "explain": "In a gas the particles are far apart and move quickly in all directions, so a gas spreads out to fill its container."
+  },
+  {
+   "id": "prt-03",
+   "sub": "states",
+   "level": 2,
+   "type": "mc",
+   "q": "Why can a gas be squashed (compressed), but a solid can't?",
+   "options": [
+    "There are big gaps between the gas particles",
+    "Gas particles are smaller",
+    "Gas particles are soft",
+    "Solids have no particles"
+   ],
+   "answer": 0,
+   "hint": "Compare the spaces between the particles.",
+   "explain": "Gas particles have big spaces between them, so they can be pushed closer together. Solid particles are already touching."
+  },
+  {
+   "id": "prt-04",
+   "sub": "states",
+   "level": 2,
+   "type": "mc",
+   "q": "A solid is heated, but it does not melt yet. What happens to its particles?",
+   "options": [
+    "They vibrate more",
+    "They stop moving",
+    "They get bigger",
+    "They turn into a different substance"
+   ],
+   "answer": 0,
+   "hint": "Heating gives the particles more energy.",
+   "explain": "The particles vibrate more and push a little further apart, so the solid expands slightly. The particles themselves don't get bigger."
+  },
+  {
+   "id": "prt-05",
+   "sub": "changes",
+   "level": 1,
+   "type": "mc",
+   "q": "What is it called when a liquid turns into a gas?",
+   "options": [
+    "Evaporating (or boiling)",
+    "Melting",
+    "Condensing",
+    "Freezing"
+   ],
+   "answer": 0,
+   "hint": "Think of a puddle drying up.",
+   "explain": "A liquid turning into a gas is evaporating. If it happens all through the liquid at its boiling point, it is boiling."
+  },
+  {
+   "id": "prt-06",
+   "sub": "changes",
+   "level": 1,
+   "type": "mc",
+   "q": "What is it called when a gas turns into a liquid?",
+   "options": [
+    "Condensing",
+    "Evaporating",
+    "Melting",
+    "Freezing"
+   ],
+   "answer": 0,
+   "hint": "Think of water drops on a cold window.",
+   "explain": "A gas turning into a liquid is condensing, like steam forming drops on a cold window."
+  },
+  {
+   "id": "prt-07",
+   "sub": "changes",
+   "level": 2,
+   "type": "mc",
+   "q": "An ice cube with a mass of 20 g melts completely. What is the mass of the water?",
+   "options": [
+    "20 g",
+    "More than 20 g",
+    "Less than 20 g"
+   ],
+   "answer": 0,
+   "hint": "The particles are rearranged, but none are added or lost.",
+   "explain": "Mass is conserved in a change of state: the same particles are still there, so the water has a mass of 20 g."
+  },
+  {
+   "id": "prt-08",
+   "sub": "diffusion",
+   "level": 2,
+   "type": "mc",
+   "q": "What is diffusion?",
+   "options": [
+    "Particles spreading out from where there are lots of them to where there are fewer",
+    "Particles getting bigger",
+    "A liquid turning into a gas",
+    "Particles stopping moving"
+   ],
+   "answer": 0,
+   "hint": "Think of a smell spreading across a room.",
+   "explain": "In diffusion, particles mix and spread out because they are always moving, from where there are many to where there are fewer."
+  },
+  {
+   "id": "prt-09",
+   "sub": "diffusion",
+   "level": 3,
+   "type": "mc",
+   "q": "Why does a smell spread more quickly in a warm room than in a cold one?",
+   "options": [
+    "The particles move faster when they are warmer",
+    "Warm air has fewer particles",
+    "Smells are lighter when warm",
+    "Cold air has no particles"
+   ],
+   "answer": 0,
+   "hint": "How does temperature affect how fast particles move?",
+   "explain": "In a warmer room the particles have more energy and move faster, so they spread out (diffuse) more quickly."
+  },
+  {
+   "id": "prt-10",
+   "sub": "diffusion",
+   "level": 2,
+   "type": "mc",
+   "q": "A gas is in a sealed box. What causes the gas pressure on the walls?",
+   "options": [
+    "Gas particles hitting the walls",
+    "Gas particles sticking to the walls",
+    "The weight of the box",
+    "The particles getting bigger"
+   ],
+   "answer": 0,
+   "hint": "The particles are always moving.",
+   "explain": "Moving gas particles keep hitting the walls of the box. Each hit pushes on the wall, and all the pushes together make the pressure."
+  },
+  {
+   "id": "prt-11",
+   "sub": "density",
+   "level": 2,
+   "type": "num",
+   "q": "A block has a mass of 200 g and a volume of 50 cm³. What is its density? (density = mass ÷ volume)",
+   "answer": "4",
+   "unit": "g/cm³",
+   "hint": "Divide the mass by the volume.",
+   "explain": "200 g ÷ 50 cm³ = 4 g/cm³."
+  },
+  {
+   "id": "prt-12",
+   "sub": "density",
+   "level": 3,
+   "type": "num",
+   "q": "A metal has a density of 8 g/cm³. What is the mass of 30 cm³ of it?",
+   "answer": "240",
+   "unit": "g",
+   "hint": "Mass = density × volume.",
+   "explain": "8 g/cm³ × 30 cm³ = 240 g."
+  },
+  {
+   "id": "prt-13",
+   "sub": "density",
+   "level": 3,
+   "type": "mc",
+   "q": "Water has a density of 1 g/cm³. A block with a density of 0.7 g/cm³ is put in water. What happens?",
+   "options": [
+    "It floats",
+    "It sinks",
+    "It dissolves"
+   ],
+   "answer": 0,
+   "hint": "Compare the two densities.",
+   "explain": "The block is less dense than water, so it floats."
+  },
+  {
+   "id": "prt-14",
+   "sub": "density",
+   "level": 3,
+   "type": "num",
+   "q": "A stone with a mass of 150 g is lowered into a measuring cylinder. The water level rises from 50 cm³ to 80 cm³. What is the density of the stone?",
+   "answer": "5",
+   "unit": "g/cm³",
+   "hint": "The rise in water level is the volume of the stone.",
+   "explain": "Volume = 80 − 50 = 30 cm³. Density = 150 g ÷ 30 cm³ = 5 g/cm³."
+  }
+ ]
+}

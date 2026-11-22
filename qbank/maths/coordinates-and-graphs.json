@@ -1,0 +1,321 @@
+{
+ "slug": "coordinates-and-graphs",
+ "title": "Coordinates and graphs",
+ "ks3": "Algebra: coordinates in four quadrants, straight-line graphs and real-life graphs",
+ "art": "coordinates",
+ "intro": "Find your way round a grid. Practise reading and plotting coordinates, midpoints, straight-line graphs like y = 2x + 1, and real-life graphs.",
+ "description": "Free KS3 Maths coordinates and graphs questions with answers: reading coordinates in four quadrants, midpoints, straight-line graphs, gradient and y-intercept, and real-life graphs. Marked instantly, for Year 7, 8 and 9 (ages 9 to 14).",
+ "subtopics": [
+  {
+   "slug": "read",
+   "title": "Reading coordinates"
+  },
+  {
+   "slug": "points",
+   "title": "Midpoints and shapes"
+  },
+  {
+   "slug": "lines",
+   "title": "Straight-line graphs"
+  },
+  {
+   "slug": "real",
+   "title": "Real-life graphs"
+  }
+ ],
+ "questions": [
+  {
+   "id": "crd-01",
+   "sub": "read",
+   "level": 1,
+   "type": "mc",
+   "q": "What are the coordinates of point A?",
+   "options": [
+    "(2, 3)",
+    "(3, 2)",
+    "(2, 2)",
+    "(3, 3)"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "grid",
+    "lo": -1,
+    "hi": 6,
+    "points": [
+     [
+      2,
+      3,
+      "A"
+     ],
+     [
+      4,
+      1,
+      "B"
+     ],
+     [
+      1,
+      5,
+      "C"
+     ]
+    ]
+   },
+   "hint": "Go along the x-axis first, then up the y-axis. \"Along the corridor, then up the stairs.\"",
+   "explain": "A is 2 along and 3 up, so A is (2, 3). The x-coordinate always comes first."
+  },
+  {
+   "id": "crd-02",
+   "sub": "read",
+   "level": 1,
+   "type": "mc",
+   "q": "Which point is at (4, 1)?",
+   "options": [
+    "B",
+    "A",
+    "C"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "grid",
+    "lo": -1,
+    "hi": 6,
+    "points": [
+     [
+      2,
+      3,
+      "A"
+     ],
+     [
+      4,
+      1,
+      "B"
+     ],
+     [
+      1,
+      5,
+      "C"
+     ]
+    ]
+   },
+   "hint": "Go 4 along, then 1 up.",
+   "explain": "4 along and 1 up is point B."
+  },
+  {
+   "id": "crd-03",
+   "sub": "read",
+   "level": 2,
+   "type": "mc",
+   "q": "What are the coordinates of point P?",
+   "options": [
+    "(−3, 2)",
+    "(2, −3)",
+    "(3, 2)",
+    "(−3, −2)"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "grid",
+    "lo": -4,
+    "hi": 4,
+    "points": [
+     [
+      -3,
+      2,
+      "P"
+     ],
+     [
+      2,
+      -3,
+      "Q"
+     ]
+    ]
+   },
+   "hint": "P is to the left of the y-axis, so its x-coordinate is negative.",
+   "explain": "P is 3 to the left (x = −3) and 2 up (y = 2), so P is (−3, 2)."
+  },
+  {
+   "id": "crd-04",
+   "sub": "read",
+   "level": 2,
+   "type": "mc",
+   "q": "Where is the point (−5, −2)?",
+   "options": [
+    "Below and to the left of (0, 0)",
+    "Above and to the left of (0, 0)",
+    "Above and to the right of (0, 0)",
+    "Below and to the right of (0, 0)"
+   ],
+   "answer": 0,
+   "hint": "Negative x means left. Negative y means down.",
+   "explain": "x = −5 is to the left and y = −2 is down, so the point is below and to the left of the origin."
+  },
+  {
+   "id": "crd-05",
+   "sub": "points",
+   "level": 2,
+   "type": "mc",
+   "q": "What is the midpoint of (2, 4) and (8, 10)?",
+   "options": [
+    "(5, 7)",
+    "(6, 6)",
+    "(10, 14)",
+    "(3, 3)"
+   ],
+   "answer": 0,
+   "hint": "Find the number halfway between the x-coordinates, then halfway between the y-coordinates.",
+   "explain": "Halfway between 2 and 8 is 5, and halfway between 4 and 10 is 7. The midpoint is (5, 7)."
+  },
+  {
+   "id": "crd-06",
+   "sub": "points",
+   "level": 3,
+   "type": "mc",
+   "q": "Three corners of a square are at (1, 1), (4, 1) and (4, 4). Where is the fourth corner?",
+   "options": [
+    "(1, 4)",
+    "(4, 7)",
+    "(0, 4)",
+    "(1, 5)"
+   ],
+   "answer": 0,
+   "hint": "Sketch it on a grid. The sides are 3 long.",
+   "explain": "The square goes from x = 1 to x = 4 and from y = 1 to y = 4, so the missing corner is (1, 4)."
+  },
+  {
+   "id": "crd-07",
+   "sub": "lines",
+   "level": 1,
+   "type": "num",
+   "q": "The rule is y = x + 3. What is y when x = 5?",
+   "answer": "8",
+   "hint": "Put 5 in place of x.",
+   "explain": "y = 5 + 3 = 8, so the point (5, 8) is on the line."
+  },
+  {
+   "id": "crd-08",
+   "sub": "lines",
+   "level": 2,
+   "type": "num",
+   "q": "The line is y = 2x − 1. What is y when x = 4?",
+   "answer": "7",
+   "hint": "2x means 2 × x.",
+   "explain": "y = 2 × 4 − 1 = 8 − 1 = 7."
+  },
+  {
+   "id": "crd-09",
+   "sub": "lines",
+   "level": 2,
+   "type": "mc",
+   "q": "Which point lies on the line y = 3x?",
+   "options": [
+    "(2, 6)",
+    "(6, 2)",
+    "(3, 1)",
+    "(1, 4)"
+   ],
+   "answer": 0,
+   "hint": "For each point, is the y-coordinate 3 times the x-coordinate?",
+   "explain": "For (2, 6): 3 × 2 = 6. ✓ None of the others works, for example (6, 2) would need y = 18."
+  },
+  {
+   "id": "crd-10",
+   "sub": "lines",
+   "level": 2,
+   "type": "mc",
+   "q": "Which of these lines is horizontal (flat)?",
+   "options": [
+    "y = 4",
+    "x = 4",
+    "y = x",
+    "y = 4x"
+   ],
+   "answer": 0,
+   "hint": "On a horizontal line, every point has the same height.",
+   "explain": "Every point on y = 4 has a y-coordinate of 4, so it is a flat line. x = 4 is a vertical line."
+  },
+  {
+   "id": "crd-11",
+   "sub": "lines",
+   "level": 3,
+   "type": "mc",
+   "q": "What is the gradient (steepness) of the line y = 5x + 2?",
+   "options": [
+    "5",
+    "2",
+    "7",
+    "x"
+   ],
+   "answer": 0,
+   "hint": "In y = mx + c, the gradient is m, the number in front of x.",
+   "explain": "y = 5x + 2 has m = 5, so the gradient is 5: y goes up 5 for every 1 along. The 2 is where it crosses the y-axis."
+  },
+  {
+   "id": "crd-12",
+   "sub": "lines",
+   "level": 3,
+   "type": "mc",
+   "q": "What is the equation of this line?",
+   "options": [
+    "y = x + 1",
+    "y = 2x + 1",
+    "y = x − 1",
+    "y = x"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "grid",
+    "lo": -1,
+    "hi": 6,
+    "line": [
+     [
+      0,
+      1
+     ],
+     [
+      5,
+      6
+     ]
+    ]
+   },
+   "hint": "Where does it cross the y-axis? How much does it go up for each 1 along?",
+   "explain": "It crosses the y-axis at 1, and goes up 1 for each 1 along (gradient 1). So it is y = x + 1. Check: at x = 4, y = 5. ✓"
+  },
+  {
+   "id": "crd-13",
+   "sub": "lines",
+   "level": 3,
+   "type": "mc",
+   "q": "Where does the line y = 2x + 3 cross the y-axis?",
+   "options": [
+    "(0, 3)",
+    "(3, 0)",
+    "(0, 2)",
+    "(2, 0)"
+   ],
+   "answer": 0,
+   "hint": "On the y-axis, x = 0.",
+   "explain": "Put x = 0: y = 2 × 0 + 3 = 3. So it crosses at (0, 3)."
+  },
+  {
+   "id": "crd-14",
+   "sub": "real",
+   "level": 2,
+   "type": "num",
+   "q": "A water tank holds 60 litres. It drains at 5 litres per minute. How much water is left after 8 minutes?",
+   "answer": "20",
+   "unit": "litres",
+   "hint": "How much drains out in 8 minutes?",
+   "explain": "In 8 minutes, 8 × 5 = 40 litres drain out. 60 − 40 = 20 litres are left. On a graph this is a straight line going down."
+  },
+  {
+   "id": "crd-15",
+   "sub": "real",
+   "level": 3,
+   "type": "num",
+   "q": "A recipe says: cook a chicken for 20 minutes per kg, plus 30 minutes. How many minutes for a 3 kg chicken?",
+   "answer": "90",
+   "unit": "minutes",
+   "hint": "Work out 20 × 3 first, then add 30.",
+   "explain": "20 × 3 = 60 minutes, plus 30 = 90 minutes. The rule is time = 20 × mass + 30, which makes a straight-line graph."
+  }
+ ]
+}

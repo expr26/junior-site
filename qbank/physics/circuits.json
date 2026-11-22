@@ -1,0 +1,282 @@
+{
+ "slug": "circuits",
+ "title": "Electric circuits",
+ "ks3": "Electricity and electromagnetism: current, potential difference, resistance, series and parallel circuits",
+ "art": "circuits",
+ "intro": "Cells, bulbs, switches and wires. Practise circuit symbols, current and voltage, series and parallel circuits, and resistance.",
+ "description": "Free KS3 Physics electric circuits questions with answers: conductors and insulators, current and potential difference, ammeters and voltmeters, series and parallel circuits, and resistance. Marked instantly, for Year 7, 8 and 9 (ages 9 to 14).",
+ "subtopics": [
+  {
+   "slug": "basics",
+   "title": "Complete circuits"
+  },
+  {
+   "slug": "measure",
+   "title": "Current and voltage"
+  },
+  {
+   "slug": "series",
+   "title": "Series circuits"
+  },
+  {
+   "slug": "parallel",
+   "title": "Parallel circuits"
+  },
+  {
+   "slug": "resistance",
+   "title": "Resistance"
+  }
+ ],
+ "questions": [
+  {
+   "id": "cir-01",
+   "sub": "basics",
+   "level": 1,
+   "type": "mc",
+   "q": "What does a cell (battery) do in a circuit?",
+   "options": [
+    "It pushes the current round the circuit",
+    "It measures the current",
+    "It stops the current",
+    "It turns the circuit off"
+   ],
+   "answer": 0,
+   "hint": "Without it, nothing would flow.",
+   "explain": "A cell provides the push (the potential difference) that makes charge flow round the circuit, carrying energy to the components."
+  },
+  {
+   "id": "cir-02",
+   "sub": "basics",
+   "level": 1,
+   "type": "mc",
+   "q": "The switch in this circuit is open. Does the bulb light?",
+   "options": [
+    "No, because the circuit is not complete",
+    "Yes, brightly",
+    "Yes, but dimly",
+    "Only for a moment"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "circuit",
+    "kind": "series",
+    "bulbs": 1,
+    "switch": true
+   },
+   "hint": "Current can only flow round a complete loop.",
+   "explain": "An open switch makes a gap, so the circuit is not complete. No current flows and the bulb stays off."
+  },
+  {
+   "id": "cir-03",
+   "sub": "basics",
+   "level": 1,
+   "type": "mc",
+   "q": "Which of these is a good electrical conductor?",
+   "options": [
+    "Copper",
+    "Plastic",
+    "Rubber",
+    "Wood"
+   ],
+   "answer": 0,
+   "hint": "Wires are made of it.",
+   "explain": "Metals like copper let current flow easily, so they are conductors. Plastic, rubber and wood are insulators."
+  },
+  {
+   "id": "cir-04",
+   "sub": "basics",
+   "level": 1,
+   "type": "mc",
+   "q": "Why are electrical wires covered in plastic?",
+   "options": [
+    "Plastic is an insulator, so it keeps us safe",
+    "Plastic conducts electricity well",
+    "It makes the current faster",
+    "It makes the wire stronger magnetically"
+   ],
+   "answer": 0,
+   "hint": "Plastic does not let current flow through it.",
+   "explain": "Plastic is an insulator. It stops the current from flowing into anyone who touches the wire."
+  },
+  {
+   "id": "cir-05",
+   "sub": "measure",
+   "level": 2,
+   "type": "mc",
+   "q": "How is current measured?",
+   "options": [
+    "With an ammeter, in amps (A)",
+    "With a voltmeter, in volts (V)",
+    "With an ammeter, in volts (V)",
+    "With a voltmeter, in amps (A)"
+   ],
+   "answer": 0,
+   "hint": "\"Amp\" is in the name of the meter.",
+   "explain": "Current is measured in amps (A) with an ammeter, connected in series."
+  },
+  {
+   "id": "cir-06",
+   "sub": "measure",
+   "level": 2,
+   "type": "mc",
+   "q": "How is a voltmeter connected to measure the potential difference (voltage) across a bulb?",
+   "options": [
+    "In parallel, across the bulb",
+    "In series with the bulb",
+    "Anywhere in the circuit",
+    "Inside the cell"
+   ],
+   "answer": 0,
+   "hint": "It compares the two sides of the bulb.",
+   "explain": "A voltmeter is connected across the component, in parallel with it, to measure the potential difference."
+  },
+  {
+   "id": "cir-07",
+   "sub": "measure",
+   "level": 2,
+   "type": "mc",
+   "q": "What is the unit of resistance?",
+   "options": [
+    "Ohm (Ω)",
+    "Amp (A)",
+    "Volt (V)",
+    "Watt (W)"
+   ],
+   "answer": 0,
+   "hint": "Its symbol is the Greek letter omega.",
+   "explain": "Resistance is measured in ohms (Ω)."
+  },
+  {
+   "id": "cir-08",
+   "sub": "series",
+   "level": 2,
+   "type": "num",
+   "q": "The ammeter reads 0.2 A. What is the current through each bulb?",
+   "answer": "0.2",
+   "unit": "A",
+   "fig": {
+    "type": "circuit",
+    "kind": "series",
+    "bulbs": 2,
+    "readings": [
+     "0.2 A"
+    ]
+   },
+   "hint": "In a series circuit there is only one path.",
+   "explain": "In a series circuit the current is the same everywhere, so it is 0.2 A through each bulb."
+  },
+  {
+   "id": "cir-09",
+   "sub": "series",
+   "level": 2,
+   "type": "mc",
+   "q": "In a series circuit with three bulbs, one bulb breaks. What happens?",
+   "options": [
+    "All the bulbs go out",
+    "The other bulbs get brighter",
+    "Only the broken bulb goes out",
+    "The current gets bigger"
+   ],
+   "answer": 0,
+   "hint": "There is only one path for the current.",
+   "explain": "A broken bulb makes a gap in the only path, so the current stops and all the bulbs go out."
+  },
+  {
+   "id": "cir-10",
+   "sub": "series",
+   "level": 2,
+   "type": "mc",
+   "q": "More identical bulbs are added in series to the same cell. What happens to each bulb?",
+   "options": [
+    "It gets dimmer",
+    "It gets brighter",
+    "It stays the same",
+    "It starts flashing"
+   ],
+   "answer": 0,
+   "hint": "More bulbs in series means more resistance.",
+   "explain": "Adding bulbs in series increases the total resistance, so the current falls and each bulb is dimmer."
+  },
+  {
+   "id": "cir-11",
+   "sub": "parallel",
+   "level": 3,
+   "type": "num",
+   "q": "The main ammeter reads 0.6 A and the top branch reads 0.2 A. What does the bottom branch ammeter read?",
+   "answer": "0.4",
+   "unit": "A",
+   "fig": {
+    "type": "circuit",
+    "kind": "parallel",
+    "bulbs": 2,
+    "readings": [
+     "0.6 A",
+     "0.2 A",
+     ""
+    ]
+   },
+   "hint": "The current splits between the branches, and the branch currents add up to the main current.",
+   "explain": "0.6 A − 0.2 A = 0.4 A. (The two bulbs must be different, or the currents would be equal.)"
+  },
+  {
+   "id": "cir-12",
+   "sub": "parallel",
+   "level": 3,
+   "type": "num",
+   "q": "Each branch ammeter reads 0.1 A. What does the main ammeter (next to the cell) read?",
+   "answer": "0.3",
+   "unit": "A",
+   "fig": {
+    "type": "circuit",
+    "kind": "parallel",
+    "bulbs": 3,
+    "readings": [
+     "",
+     "0.1 A",
+     "0.1 A",
+     "0.1 A"
+    ]
+   },
+   "hint": "Add up the currents in the branches.",
+   "explain": "0.1 + 0.1 + 0.1 = 0.3 A."
+  },
+  {
+   "id": "cir-13",
+   "sub": "parallel",
+   "level": 2,
+   "type": "mc",
+   "q": "In a parallel circuit, one bulb breaks. What happens to the other bulbs?",
+   "options": [
+    "They stay on",
+    "They all go out",
+    "They start flashing",
+    "The cell stops working"
+   ],
+   "answer": 0,
+   "hint": "Each bulb has its own path back to the cell.",
+   "explain": "In a parallel circuit each branch is its own loop, so the other bulbs stay on. That is why the lights in a house are wired in parallel."
+  },
+  {
+   "id": "cir-14",
+   "sub": "resistance",
+   "level": 3,
+   "type": "num",
+   "q": "There is a potential difference of 6 V across a resistor and a current of 2 A through it. What is its resistance? (R = V ÷ I)",
+   "answer": "3",
+   "unit": "Ω",
+   "hint": "Divide the voltage by the current.",
+   "explain": "R = 6 V ÷ 2 A = 3 Ω."
+  },
+  {
+   "id": "cir-15",
+   "sub": "resistance",
+   "level": 3,
+   "type": "num",
+   "q": "A current of 4 A flows through a 3 Ω resistor. What is the potential difference across it? (V = I × R)",
+   "answer": "12",
+   "unit": "V",
+   "hint": "Multiply the current by the resistance.",
+   "explain": "V = 4 A × 3 Ω = 12 V."
+  }
+ ]
+}

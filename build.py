@@ -143,9 +143,11 @@ def main():
         jobs.append((url_for(src), meta, body, src.relative_to(HERE)))
     import topics   # topic hubs and unit pages from topics/*.json
     import games    # the /games/ page and one page per live game, from games/games.json
+    import qbank    # the KS3 question bank, from qbank/
     try:
         jobs += topics.pages()
         jobs += games.pages()
+        jobs += qbank.pages()
         (DIST / "static" / "topics.json").write_text(json.dumps(topics.index()), encoding="utf-8")
     except topics.ContentError as e:
         fail(str(e))

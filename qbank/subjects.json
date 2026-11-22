@@ -1,0 +1,49 @@
+{
+  "_about": "The KS3 question bank map: every planned topic for each subject, in teaching order. A topic is live when qbank/<subject>/<slug>.json exists; the others show as 'Coming soon'. ks3 = the area of the KS3 national curriculum (England) it covers.",
+  "subjects": [
+    {
+      "slug": "maths",
+      "title": "Maths",
+      "art": "maths",
+      "blurb": "Number, algebra, ratio, shapes, probability and statistics.",
+      "description": "Free KS3 Maths question bank for ages 9 to 14: practice questions by topic with instant marking, hints and worked answers.",
+      "topics": [
+        {"slug": "place-value-and-rounding", "title": "Place value and rounding", "icon": "🔢", "ks3": "Number"},
+        {"slug": "negative-numbers", "title": "Negative numbers", "icon": "🌡️", "ks3": "Number"},
+        {"slug": "fractions-decimals-percentages", "title": "Fractions, decimals and percentages", "icon": "🍕", "ks3": "Number"},
+        {"slug": "factors-primes-and-powers", "title": "Factors, primes and powers", "icon": "🧮", "ks3": "Number"},
+        {"slug": "expressions-and-substitution", "title": "Expressions and substitution", "icon": "🔤", "ks3": "Algebra"},
+        {"slug": "equations", "title": "Solving equations", "icon": "⚖️", "ks3": "Algebra"},
+        {"slug": "sequences", "title": "Sequences", "icon": "🪜", "ks3": "Algebra"},
+        {"slug": "coordinates-and-graphs", "title": "Coordinates and graphs", "icon": "📈", "ks3": "Algebra"},
+        {"slug": "ratio-and-proportion", "title": "Ratio and proportion", "icon": "🥤", "ks3": "Ratio, proportion and rates of change"},
+        {"slug": "angles-and-shapes", "title": "Angles and shapes", "icon": "📐", "ks3": "Geometry and measures"},
+        {"slug": "perimeter-area-and-volume", "title": "Perimeter, area and volume", "icon": "📦", "ks3": "Geometry and measures"},
+        {"slug": "transformations", "title": "Transformations", "icon": "🪞", "ks3": "Geometry and measures"},
+        {"slug": "probability", "title": "Probability", "icon": "🎲", "ks3": "Probability"},
+        {"slug": "statistics", "title": "Averages and charts", "icon": "📊", "ks3": "Statistics"}
+      ]
+    },
+    {
+      "slug": "physics",
+      "title": "Physics",
+      "art": "physics",
+      "blurb": "Forces, energy, waves, electricity, magnets, matter and space.",
+      "description": "Free KS3 Physics question bank for ages 9 to 14: practice questions by topic with instant marking, hints and worked answers.",
+      "topics": [
+        {"slug": "forces", "title": "Forces", "icon": "🏋️", "ks3": "Motion and forces"},
+        {"slug": "speed-and-motion", "title": "Speed and motion", "icon": "🏎️", "ks3": "Motion and forces"},
+        {"slug": "pressure-and-moments", "title": "Pressure and moments", "icon": "🎢", "ks3": "Motion and forces"},
+        {"slug": "energy-stores-and-transfers", "title": "Energy stores and transfers", "icon": "🔋", "ks3": "Energy"},
+        {"slug": "energy-bills-and-power", "title": "Power and energy bills", "icon": "💡", "ks3": "Energy"},
+        {"slug": "sound", "title": "Sound", "icon": "🔊", "ks3": "Waves"},
+        {"slug": "light", "title": "Light", "icon": "🌈", "ks3": "Waves"},
+        {"slug": "circuits", "title": "Electric circuits", "icon": "🔌", "ks3": "Electricity and electromagnetism"},
+        {"slug": "static-electricity", "title": "Static electricity", "icon": "🎈", "ks3": "Electricity and electromagnetism"},
+        {"slug": "magnets-and-electromagnets", "title": "Magnets and electromagnets", "icon": "🧲", "ks3": "Electricity and electromagnetism"},
+        {"slug": "particles-and-density", "title": "Particles and density", "icon": "🧊", "ks3": "Matter"},
+        {"slug": "space", "title": "Space", "icon": "🪐", "ks3": "Space physics"}
+      ]
+    }
+  ]
+}

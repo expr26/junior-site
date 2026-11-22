@@ -277,3 +277,15 @@ ul.plain{list-style:none;padding:0;margin:0}ul.plain li{margin-bottom:6px}
 .bs-tools .opt{width:auto;font-size:16px;min-height:48px;padding:8px 14px}
 .bs-try{justify-content:center}
 .bs-try input{width:5em}
+/* Particle Party */
+.pp-lab{display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap;margin:8px 0}
+.pp-canvas{width:min(100%,260px);height:auto;background:var(--bg-alt);border-radius:16px}
+.pp-side{display:flex;flex-direction:column;align-items:center;gap:6px;min-width:120px}
+.pp-thermo{position:relative;width:22px;height:140px;border-radius:12px;border:3px solid #8A94A6;background:var(--card);overflow:hidden}
+.pp-thermo span{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(0deg,#2F80ED,#E5484D);transition:height .3s}
+.pp-temp{font:700 26px var(--sans);margin:0;font-variant-numeric:tabular-nums}
+.pp-state{font-weight:700;border-radius:99px;padding:4px 12px;margin:0;background:var(--fun-bg);color:var(--fun)}
+.pp-state.solid{background:#E3F1FC;color:#1D5FA8}.pp-state.gas{background:#EFE9FF;color:#5B3CC4}
+.pp-state.melting,.pp-state.boiling{background:#FFF0D6;color:#9A5B00}
+.pp-ctrl{justify-content:center}
+.pp-ctrl .btn{min-width:110px}

@@ -448,7 +448,48 @@
       "icon": "🌍",
       "subject": "science",
       "kind": "sim",
-      "blurb": "Spin the Earth and send it round the Sun."
+      "blurb": "Spin the Earth to make day and night, then send it round the Sun to find out what really causes the seasons.",
+      "live": true,
+      "learn": "Day and night from the spinning Earth, how long a day and a year are, and how the tilt of the Earth’s axis causes the seasons.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: space physics: day and night, seasons and the Earth’s tilt",
+        "PYP": "How the world works / Where we are in place and time: the Earth, Sun and seasons"
+      },
+      "guide_title": "Day, night and seasons: a quick guide",
+      "guide": [
+        {
+          "h": "Day and night",
+          "p": "The Earth spins on its axis once every 24 hours. The half facing the Sun has day, and the half facing away has night. The Sun does not move round the Earth: it only looks that way because we are spinning."
+        },
+        {
+          "h": "Sunrise and sunset",
+          "p": "The Earth spins towards the east. At sunrise, the spin is carrying you out of the dark side into the light. At sunset, it is carrying you from the light into the dark. Seen from above the North Pole, the Earth spins anticlockwise."
+        },
+        {
+          "h": "A year",
+          "p": "The Earth travels round the Sun once in about 365¼ days, which is one year. The extra quarter of a day is why we add a leap day (29 February) every four years."
+        },
+        {
+          "h": "Why we have seasons",
+          "p": "The Earth’s axis is tilted by about 23.5° and always points the same way in space. In June the northern half leans towards the Sun: the Sun is higher in the sky, days are longer and it is summer in the UK. In December the northern half leans away, so the UK has winter while Australia has summer."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Are the seasons caused by the Earth being closer to the Sun?",
+          "a": "No. The distance changes only a little, and the Earth is actually closest to the Sun in early January, during winter in the UK. The seasons are caused by the tilt of the Earth’s axis."
+        },
+        {
+          "q": "Why is it summer in Australia at Christmas?",
+          "a": "In December the southern half of the Earth leans towards the Sun, so it gets more direct sunlight and longer days. The northern half leans away and has winter."
+        },
+        {
+          "q": "How long is a day?",
+          "a": "One full spin of the Earth takes about 24 hours. That is one day and one night together."
+        }
+      ]
     },
     {
       "slug": "magnet-sandbox",

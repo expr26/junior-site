@@ -472,3 +472,18 @@ ul.plain{list-style:none;padding:0;margin:0}ul.plain li{margin-bottom:6px}
 .ms-comp{fill:#fff;stroke:#5B6475;stroke-width:2}
 .ms-nn{fill:#E5484D}.ms-ns{fill:#C9D1DE}
 .ms-ans{margin-top:4px}
+/* Day, Night and Seasons */
+.dn-svg{width:100%;max-width:460px;display:block;margin:4px auto;background:#14123A;border-radius:16px}
+.dn-sun{fill:#FFC93C}.dn-ray{stroke:#FFC93C;stroke-width:3;stroke-linecap:round}
+.dn-beam{stroke:#FFE28A;stroke-width:2;stroke-dasharray:6 6;opacity:.7}
+.dn-sea{fill:#3B82F6}.dn-land{fill:#34C77B}
+.dn-night{fill:#0B0A24;opacity:.62}
+.dn-pole{fill:#fff}
+.dn-cap{font:600 14px var(--sans);fill:#E6E4FF}
+.dn-me{font-size:24px}
+.dn-spin{fill:none;stroke:#FF8A3D;stroke-width:3}.dn-spinhead{fill:#FF8A3D}
+.dn-orbit{fill:none;stroke:#8A86C8;stroke-width:2;stroke-dasharray:6 6}
+.dn-axis{stroke:#fff;stroke-width:2.5}.dn-n{font:700 14px var(--sans);fill:#fff}
+.dn-eq{stroke:#FFE28A;stroke-width:1.5;stroke-dasharray:3 3}
+.dn-out{text-align:center;min-height:1.6em;margin:4px 0 8px}
+.dn-act{justify-content:center;margin:.2em 0}

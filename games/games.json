@@ -1,5 +1,5 @@
 {
-  "_about": "The Games page. Each game has a page at /games/<slug>/ when live is true; planned games show as 'Coming soon'. The game itself is static/js/games/<slug>.js and uses static/js/arcade.js. curriculum: where it fits in UK KS3, IB PYP (upper years) and IB MYP.",
+  "_about": "The Games page. Each game has a page at /games/<slug>/ when live is true; planned games show as 'Coming soon'. The game itself is static/js/games/<slug>.js and uses static/js/arcade.js. curriculum: where it fits in UK KS3 and IB PYP (upper years).",
   "games": [
     {
       "slug": "pizza-fractions",
@@ -14,8 +14,7 @@
       "topic_title": "Practise more: Fractions",
       "curriculum": {
         "KS3": "Number: equivalent fractions",
-        "PYP": "Number: fractions",
-        "MYP": "Number: fractions"
+        "PYP": "Number: fractions"
       }
     },
     {
@@ -39,8 +38,7 @@
       "topic_title": "More games",
       "curriculum": {
         "KS3": "Algebra: solve linear equations",
-        "PYP": "Pattern and function: finding unknowns",
-        "MYP": "Algebra: linear equations"
+        "PYP": "Pattern and function: finding unknowns"
       }
     },
     {
@@ -88,8 +86,7 @@
       "topic_title": "More games",
       "curriculum": {
         "KS3": "Chemistry: the particulate nature of matter; changes of state",
-        "PYP": "How the world works: materials and changes",
-        "MYP": "Sciences (chemistry strand): states of matter"
+        "PYP": "How the world works: materials and changes"
       }
     },
     {

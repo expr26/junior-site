@@ -73,6 +73,54 @@
    "explain": "The particles in solids are close together and strongly joined, so they pass vibrations on quickly. Sound travels about 15 times faster in steel than in air."
   },
   {
+   "id": "snd-15",
+   "sub": "travel",
+   "level": 1,
+   "type": "mc",
+   "q": "Whales can hear each other's songs from far away under the sea. What does the sound travel through?",
+   "options": [
+    "Water",
+    "Empty space",
+    "Light beams",
+    "Nothing at all"
+   ],
+   "answer": 0,
+   "hint": "What is all around a whale?",
+   "explain": "The sound travels through the water. The water particles pass the vibrations along. Sound travels faster in water than in air."
+  },
+  {
+   "id": "snd-16",
+   "sub": "travel",
+   "level": 2,
+   "type": "mc",
+   "q": "As a sound wave passes through the air, how do the air particles move?",
+   "options": [
+    "They vibrate backwards and forwards, in the same direction the sound travels",
+    "They move up and down, across the direction the sound travels",
+    "They travel all the way from the sound to your ear",
+    "They stay completely still"
+   ],
+   "answer": 0,
+   "hint": "Think of a slinky spring being pushed and pulled from one end.",
+   "explain": "The particles vibrate backwards and forwards along the direction the sound travels, making squashed-up and spread-out regions. This kind of wave is called a longitudinal wave. The particles do not travel to your ear: only the vibration does."
+  },
+  {
+   "id": "snd-17",
+   "sub": "travel",
+   "level": 3,
+   "type": "mc",
+   "q": "Two astronauts on the Moon, where there is no air, touch their helmets together. One shouts and the other hears a faint sound. How?",
+   "options": [
+    "The vibrations pass through the solid helmets",
+    "The sound travels through the vacuum",
+    "The sound travels as light",
+    "The Moon has a little air that carries it"
+   ],
+   "answer": 0,
+   "hint": "Sound can't travel through a vacuum, but it can travel through solids.",
+   "explain": "There is no air on the Moon, so sound can't travel across the gap. When the helmets touch, the vibrations pass through the solid helmets from one astronaut to the other."
+  },
+  {
    "id": "snd-04",
    "sub": "waves",
    "level": 1,
@@ -165,6 +213,68 @@
    "explain": "B has more waves in the same time, so it has a higher frequency and a higher pitch. Their heights are the same, so they are equally loud."
   },
   {
+   "id": "snd-18",
+   "sub": "waves",
+   "level": 1,
+   "type": "mc",
+   "q": "You hit a drum harder. What happens to the sound?",
+   "options": [
+    "It gets louder",
+    "It gets quieter",
+    "Its pitch gets much higher",
+    "It stops"
+   ],
+   "answer": 0,
+   "hint": "Hitting harder makes the drum skin vibrate more.",
+   "explain": "A harder hit makes bigger vibrations (a bigger amplitude), so the sound is louder."
+  },
+  {
+   "id": "snd-19",
+   "sub": "waves",
+   "level": 2,
+   "type": "mc",
+   "q": "The two sound waves are drawn on the same scale. Which sound is quieter and lower in pitch?",
+   "options": [
+    "A",
+    "B",
+    "They are the same"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "waves",
+    "waves": [
+     {
+      "amp": 0.4,
+      "cycles": 2,
+      "label": "A"
+     },
+     {
+      "amp": 1,
+      "cycles": 5,
+      "label": "B"
+     }
+    ]
+   },
+   "hint": "Quieter means smaller waves. Lower pitch means fewer waves in the same time.",
+   "explain": "A has smaller waves (a smaller amplitude), so it is quieter. A also has fewer waves in the same time (a lower frequency), so it has a lower pitch."
+  },
+  {
+   "id": "snd-20",
+   "sub": "waves",
+   "level": 3,
+   "type": "mc",
+   "q": "A guitarist presses a string down so that a shorter part of it vibrates. The note gets higher. Why?",
+   "options": [
+    "The shorter string vibrates more times each second",
+    "The shorter string vibrates with a bigger amplitude",
+    "The sound travels faster",
+    "The string vibrates fewer times each second"
+   ],
+   "answer": 0,
+   "hint": "Pitch depends on the frequency.",
+   "explain": "A shorter string vibrates faster, so it has a higher frequency (more vibrations each second). A higher frequency means a higher pitch."
+  },
+  {
    "id": "snd-08",
    "sub": "hearing",
    "level": 2,
@@ -211,6 +321,54 @@
    "answer": 0,
    "hint": "Compare 30,000 Hz with the top of the human hearing range.",
    "explain": "30,000 Hz is above 20,000 Hz, so it is ultrasound. Dogs can hear much higher frequencies than people."
+  },
+  {
+   "id": "snd-21",
+   "sub": "hearing",
+   "level": 1,
+   "type": "mc",
+   "q": "The loudness of a sound is measured in…",
+   "options": [
+    "decibels (dB)",
+    "hertz (Hz)",
+    "metres (m)",
+    "watts (W)"
+   ],
+   "answer": 0,
+   "hint": "It is not hertz: that is for frequency.",
+   "explain": "Loudness is measured in decibels (dB). A whisper is about 30 dB and a very loud concert can be over 100 dB."
+  },
+  {
+   "id": "snd-22",
+   "sub": "hearing",
+   "level": 2,
+   "type": "mc",
+   "q": "Why do people wear ear defenders at very loud places, like near a drill or at a loud concert?",
+   "options": [
+    "Very loud sounds can damage the ear for good",
+    "Loud sounds make the eardrum stop vibrating",
+    "They make sounds higher in pitch",
+    "They make sound travel faster"
+   ],
+   "answer": 0,
+   "hint": "What can happen to your hearing after a lot of very loud noise?",
+   "explain": "Very loud sounds can damage the tiny hair cells in the cochlea. This damage can be permanent, so it is important to protect your ears."
+  },
+  {
+   "id": "snd-23",
+   "sub": "hearing",
+   "level": 2,
+   "type": "mc",
+   "q": "A microphone has a thin sheet inside (a diaphragm) that vibrates when sound hits it, a bit like your eardrum. What does a microphone do?",
+   "options": [
+    "Changes sound into an electrical signal",
+    "Changes an electrical signal into sound",
+    "Makes sounds louder by itself",
+    "Changes sound into light"
+   ],
+   "answer": 0,
+   "hint": "A microphone is plugged into a computer or amplifier. What goes along the wire?",
+   "explain": "The vibrating diaphragm makes an electrical signal that matches the sound. A loudspeaker does the opposite: it changes an electrical signal back into sound."
   },
   {
    "id": "snd-11",
@@ -260,6 +418,44 @@
    "answer": 0,
    "hint": "Compare the speed of light with the speed of sound.",
    "explain": "Light travels at about 300,000,000 m/s and sound at only about 340 m/s, so the light arrives almost at once and the sound later."
+  },
+  {
+   "id": "snd-24",
+   "sub": "speed",
+   "level": 1,
+   "type": "mc",
+   "q": "What is an echo?",
+   "options": [
+    "A sound that has reflected (bounced) off a surface",
+    "A sound that is very high-pitched",
+    "A sound travelling through space",
+    "A sound that gets louder as it travels"
+   ],
+   "answer": 0,
+   "hint": "Think of shouting in a big empty hall or towards a cliff.",
+   "explain": "An echo is a reflected sound. It bounces off a hard surface, like a wall or a cliff, and comes back to you a moment later."
+  },
+  {
+   "id": "snd-25",
+   "sub": "speed",
+   "level": 2,
+   "type": "num",
+   "q": "Sound travels at about 1500 m/s in sea water. A whale's call takes 4 s to reach a ship. How far away is the whale?",
+   "answer": "6000",
+   "unit": "m",
+   "hint": "Distance = speed × time.",
+   "explain": "Distance = 1500 m/s × 4 s = 6000 m (6 km). Sound travels more than 4 times faster in water than in air."
+  },
+  {
+   "id": "snd-26",
+   "sub": "speed",
+   "level": 3,
+   "type": "num",
+   "q": "A ship sends a sound pulse down to the sea bed. The echo comes back 0.4 s later. Sound travels at 1500 m/s in water. How deep is the sea?",
+   "answer": "300",
+   "unit": "m",
+   "hint": "The sound goes down to the sea bed and back up again.",
+   "explain": "In 0.4 s the sound travels 1500 × 0.4 = 600 m. That is down and back, so the sea is 600 ÷ 2 = 300 m deep. Ships use this to measure depth (sonar)."
   }
  ]
 }

@@ -39,6 +39,22 @@
       "explain": "The shading for {2/3} reaches further. You can check with a common denominator: {2/3} = {10/15} and {3/5} = {9/15}, so {2/3} is bigger."
     },
     {
+      "id": "fdp-23", "sub": "meaning", "level": 1, "type": "mc",
+      "q": "A pizza is cut into 8 equal slices. Sam eats 3 slices. What fraction of the pizza is left?",
+      "options": ["{5/8}", "{3/8}", "{3/5}", "{5/3}"],
+      "answer": 0,
+      "hint": "How many slices are left? How many slices were there to start with?",
+      "explain": "8 − 3 = 5 slices are left out of 8, so {5/8} of the pizza is left."
+    },
+    {
+      "id": "fdp-24", "sub": "meaning", "level": 2, "type": "mc",
+      "q": "Which fraction is bigger than {1/2}?",
+      "options": ["{4/7}", "{3/8}", "{2/5}", "{5/12}"],
+      "answer": 0,
+      "hint": "For each fraction, work out half of the bottom number. Is the top number more than that?",
+      "explain": "Half of 7 is 3.5, and 4 is more than 3.5, so {4/7} is bigger than {1/2}. In the others the top is less than half the bottom: 3 < 4, 2 < 2.5 and 5 < 6."
+    },
+    {
       "id": "fdp-04", "sub": "equivalent", "level": 1, "type": "mc",
       "q": "Which fraction is the same as {1/2}?",
       "options": ["{3/6}", "{2/3}", "{3/5}", "{1/4}"],
@@ -66,6 +82,21 @@
       "answer": "3/4", "simplest": true,
       "hint": "Try the biggest number that divides both 18 and 24. If you are not sure, divide by 2 and then by 3.",
       "explain": "The biggest number that divides both 18 and 24 is 6: 18 ÷ 6 = 3 and 24 ÷ 6 = 4. So {18/24} = {3/4}."
+    },
+    {
+      "id": "fdp-25", "sub": "equivalent", "level": 1, "type": "num",
+      "q": "Write {10/15} in its simplest form.",
+      "answer": "2/3", "simplest": true,
+      "hint": "Find a number that divides both 10 and 15 exactly.",
+      "explain": "Divide the top and the bottom by 5: 10 ÷ 5 = 2 and 15 ÷ 5 = 3. So {10/15} = {2/3}."
+    },
+    {
+      "id": "fdp-26", "sub": "equivalent", "level": 2, "type": "mc",
+      "q": "Which mixed number is the same as {11/4}?",
+      "options": ["2{3/4}", "3{1/4}", "2{1/4}", "11{1/4}"],
+      "answer": 0,
+      "hint": "How many whole 4s go into 11? How many quarters are left over?",
+      "explain": "11 ÷ 4 = 2 remainder 3. That is 2 wholes ({8/4}) and 3 quarters left over, so {11/4} = 2{3/4}."
     },
     {
       "id": "fdp-08", "sub": "convert", "level": 1, "type": "num",
@@ -106,6 +137,27 @@
       "explain": "As decimals: 0.3 = 0.300, {1/3} = 0.333… and 35% = 0.350. So the order from smallest is 0.3, {1/3}, 35%."
     },
     {
+      "id": "fdp-27", "sub": "convert", "level": 1, "type": "num",
+      "q": "Write 45% as a decimal.",
+      "answer": "0.45",
+      "hint": "Per cent means \"out of 100\". Divide by 100.",
+      "explain": "45% = {45/100} = 45 ÷ 100 = 0.45."
+    },
+    {
+      "id": "fdp-28", "sub": "convert", "level": 2, "type": "num",
+      "q": "Write {7/20} as a decimal.",
+      "answer": "0.35",
+      "hint": "Make an equivalent fraction with 100 on the bottom.",
+      "explain": "20 × 5 = 100, so {7/20} = {35/100} = 0.35."
+    },
+    {
+      "id": "fdp-29", "sub": "convert", "level": 3, "type": "num",
+      "q": "Write {3/8} as a decimal.",
+      "answer": "0.375",
+      "hint": "Start with {1/8}. It is half of {1/4}, and {1/4} = 0.25.",
+      "explain": "{1/8} is half of 0.25, which is 0.125. So {3/8} = 3 × 0.125 = 0.375."
+    },
+    {
       "id": "fdp-13", "sub": "calc", "level": 1, "type": "num",
       "q": "Work out {2/7} + {3/7}.",
       "answer": "5/7",
@@ -132,6 +184,20 @@
       "answer": "3/10",
       "hint": "To multiply fractions, multiply the tops together and the bottoms together.",
       "explain": "Tops: 3 × 2 = 6. Bottoms: 4 × 5 = 20. So the answer is {6/20}, which simplifies to {3/10}."
+    },
+    {
+      "id": "fdp-30", "sub": "calc", "level": 2, "type": "num",
+      "q": "Work out {1/3} + {1/6}. Give your answer in its simplest form.",
+      "answer": "1/2", "simplest": true,
+      "hint": "Change {1/3} into sixths first.",
+      "explain": "{1/3} = {2/6}, so {2/6} + {1/6} = {3/6}. Divide the top and the bottom by 3: {3/6} = {1/2}."
+    },
+    {
+      "id": "fdp-31", "sub": "calc", "level": 3, "type": "num",
+      "q": "Work out 1{1/2} + 2{2/3}. Give your answer as a mixed number, for example 3 1/5.",
+      "answer": "25/6", "show": "4{1/6}",
+      "hint": "Add the whole numbers first. Then add {1/2} and {2/3} using sixths.",
+      "explain": "Wholes: 1 + 2 = 3. Fractions: {1/2} + {2/3} = {3/6} + {4/6} = {7/6} = 1{1/6}. So the total is 3 + 1{1/6} = 4{1/6}."
     },
     {
       "id": "fdp-17", "sub": "amounts", "level": 1, "type": "num",
@@ -174,6 +240,27 @@
       "answer": "40", "unit": "%",
       "hint": "First find how many children there are altogether. Then write the girls as a fraction of that.",
       "explain": "There are 12 + 18 = 30 children. Girls are {12/30} = {4/10} of the class, and {4/10} = {40/100} = 40%."
+    },
+    {
+      "id": "fdp-32", "sub": "amounts", "level": 1, "type": "num",
+      "q": "There are 30 children in a class. {1/5} of them walk to school. How many children walk to school?",
+      "answer": "6",
+      "hint": "To find {1/5} of something, divide it by 5.",
+      "explain": "30 ÷ 5 = 6, so 6 children walk to school."
+    },
+    {
+      "id": "fdp-33", "sub": "amounts", "level": 2, "type": "num",
+      "q": "Mia has £8 pocket money. She spends 75% of it on a new game. How much does the game cost? Type the answer in pounds.",
+      "answer": "6", "show": "£6",
+      "hint": "75% is the same as {3/4}. Find {1/4} first.",
+      "explain": "{1/4} of £8 is £8 ÷ 4 = £2. 75% is {3/4}, so the game costs 3 × £2 = £6."
+    },
+    {
+      "id": "fdp-34", "sub": "amounts", "level": 3, "type": "num",
+      "q": "A puppy weighs 4 kg. Over two months its weight goes up by 35%. How much does it weigh now, in kilograms?",
+      "answer": "5.4", "unit": "kg",
+      "hint": "Find 35% of 4 kg (try 10% and 5% first), then add it on.",
+      "explain": "10% of 4 kg is 0.4 kg, so 30% is 1.2 kg. 5% is half of 10%, 0.2 kg. So 35% is 1.2 + 0.2 = 1.4 kg. The new weight is 4 + 1.4 = 5.4 kg."
     }
   ]
 }

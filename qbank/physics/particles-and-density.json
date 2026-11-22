@@ -87,6 +87,38 @@
    "explain": "The particles vibrate more and push a little further apart, so the solid expands slightly. The particles themselves don't get bigger."
   },
   {
+   "id": "prt-15",
+   "sub": "states",
+   "level": 1,
+   "type": "mc",
+   "q": "Which state takes the shape of its container but keeps the same volume?",
+   "options": [
+    "Liquid",
+    "Solid",
+    "Gas",
+    "All three states"
+   ],
+   "answer": 0,
+   "hint": "Think of juice poured from a carton into a glass.",
+   "explain": "A liquid flows to take the shape of its container, but its volume stays the same. A solid keeps its shape, and a gas spreads out to fill the whole container."
+  },
+  {
+   "id": "prt-16",
+   "sub": "states",
+   "level": 2,
+   "type": "mc",
+   "q": "Steam and liquid water are both made of water particles. Why does 1 g of steam take up much more space than 1 g of liquid water?",
+   "options": [
+    "The particles in steam are much further apart",
+    "The particles in steam are bigger",
+    "Steam has more particles in it",
+    "The particles in steam weigh less"
+   ],
+   "answer": 0,
+   "hint": "Compare the spaces between the particles in a gas and in a liquid.",
+   "explain": "The particles are the same, and 1 g of each has the same number of them. In a gas they are much further apart, so the steam takes up more space and is much less dense."
+  },
+  {
    "id": "prt-05",
    "sub": "changes",
    "level": 1,
@@ -132,6 +164,54 @@
    "answer": 0,
    "hint": "The particles are rearranged, but none are added or lost.",
    "explain": "Mass is conserved in a change of state: the same particles are still there, so the water has a mass of 20 g."
+  },
+  {
+   "id": "prt-17",
+   "sub": "changes",
+   "level": 1,
+   "type": "mc",
+   "q": "What is it called when a liquid turns into a solid?",
+   "options": [
+    "Freezing",
+    "Melting",
+    "Condensing",
+    "Evaporating"
+   ],
+   "answer": 0,
+   "hint": "Think of putting water in the freezer to make ice cubes.",
+   "explain": "A liquid turning into a solid is freezing. The opposite, a solid turning into a liquid, is melting."
+  },
+  {
+   "id": "prt-18",
+   "sub": "changes",
+   "level": 2,
+   "type": "mc",
+   "q": "A pan of water is boiling at 100 °C. You keep heating it. What happens to the temperature of the water while it boils?",
+   "options": [
+    "It stays at 100 °C",
+    "It keeps going up",
+    "It goes down",
+    "It goes up and down"
+   ],
+   "answer": 0,
+   "hint": "The energy is being used to change the state.",
+   "explain": "While the water boils, the temperature stays at 100 °C (at normal air pressure). The energy from the heater is used to pull the particles apart so they escape as a gas, not to make the water hotter."
+  },
+  {
+   "id": "prt-19",
+   "sub": "changes",
+   "level": 3,
+   "type": "mc",
+   "q": "A puddle dries up on a cool day, even though it never gets near 100 °C. Why?",
+   "options": [
+    "Some fast-moving particles at the surface have enough energy to escape into the air",
+    "The water particles are destroyed",
+    "The water soaks up into the clouds straight away",
+    "Water can only evaporate when it boils"
+   ],
+   "answer": 0,
+   "hint": "The particles in a liquid don't all move at the same speed.",
+   "explain": "This is evaporation. It happens at the surface at any temperature: the fastest particles have enough energy to break away into the air. Bit by bit, the puddle disappears."
   },
   {
    "id": "prt-08",
@@ -182,6 +262,54 @@
    "explain": "Moving gas particles keep hitting the walls of the box. Each hit pushes on the wall, and all the pushes together make the pressure."
   },
   {
+   "id": "prt-20",
+   "sub": "diffusion",
+   "level": 1,
+   "type": "mc",
+   "q": "A drop of food colouring is put into a glass of still water and left alone. What happens?",
+   "options": [
+    "The colour slowly spreads through all the water",
+    "The colour stays as one drop",
+    "The colour sinks and stays at the bottom",
+    "The water turns into food colouring"
+   ],
+   "answer": 0,
+   "hint": "The particles in a liquid are always moving.",
+   "explain": "The particles of colouring and water keep moving and mixing, so the colour slowly spreads out through all the water. This is diffusion."
+  },
+  {
+   "id": "prt-21",
+   "sub": "diffusion",
+   "level": 3,
+   "type": "mc",
+   "q": "Under a microscope, tiny specks of smoke in air jiggle about in a random way. What makes them move?",
+   "options": [
+    "Air particles, too small to see, keep hitting them from all sides",
+    "The specks are alive",
+    "The light from the microscope pushes them",
+    "The specks are melting"
+   ],
+   "answer": 0,
+   "hint": "The air is made of particles that are always moving.",
+   "explain": "Air particles are moving fast in all directions and keep bumping into the specks, unevenly from different sides. This random jiggling is called Brownian motion, and it is evidence that particles are moving."
+  },
+  {
+   "id": "prt-22",
+   "sub": "diffusion",
+   "level": 2,
+   "type": "mc",
+   "q": "In which state does diffusion happen fastest?",
+   "options": [
+    "Gas",
+    "Liquid",
+    "Solid",
+    "It is the same in all three"
+   ],
+   "answer": 0,
+   "hint": "In which state are the particles far apart and moving fastest?",
+   "explain": "Gas particles move fast and have lots of space between them, so they spread out and mix quickest. Diffusion is slower in liquids and almost does not happen in solids."
+  },
+  {
    "id": "prt-11",
    "sub": "density",
    "level": 2,
@@ -228,6 +356,55 @@
    "unit": "g/cm³",
    "hint": "The rise in water level is the volume of the stone.",
    "explain": "Volume = 80 − 50 = 30 cm³. Density = 150 g ÷ 30 cm³ = 5 g/cm³."
+  },
+  {
+   "id": "prt-23",
+   "sub": "density",
+   "level": 1,
+   "type": "mc",
+   "q": "Which is the formula for density?",
+   "options": [
+    "density = mass ÷ volume",
+    "density = volume ÷ mass",
+    "density = mass × volume",
+    "density = mass + volume"
+   ],
+   "answer": 0,
+   "hint": "Density tells you how much mass is packed into each cm³.",
+   "explain": "Density is the mass in each unit of volume, so density = mass ÷ volume. Its unit can be g/cm³ or kg/m³."
+  },
+  {
+   "id": "prt-24",
+   "sub": "density",
+   "level": 2,
+   "type": "num",
+   "q": "Water has a density of 1000 kg/m³. A hot tub holds 1.5 m³ of water. What is the mass of the water?",
+   "answer": "1500",
+   "unit": "kg",
+   "hint": "Mass = density × volume.",
+   "explain": "Mass = 1000 kg/m³ × 1.5 m³ = 1500 kg. That is as heavy as a car!"
+  },
+  {
+   "id": "prt-25",
+   "sub": "density",
+   "level": 2,
+   "type": "num",
+   "q": "A wooden block measures 10 cm × 5 cm × 2 cm and has a mass of 60 g. What is its density?",
+   "answer": "0.6",
+   "unit": "g/cm³",
+   "hint": "Work out the volume first: length × width × height.",
+   "explain": "Volume = 10 × 5 × 2 = 100 cm³. Density = 60 g ÷ 100 cm³ = 0.6 g/cm³. That is less than water (1 g/cm³), so it floats."
+  },
+  {
+   "id": "prt-26",
+   "sub": "density",
+   "level": 3,
+   "type": "num",
+   "q": "A block of ice has a volume of 100 cm³. Ice has a density of about 0.9 g/cm³ and water has a density of 1 g/cm³. The ice melts. What is the volume of the water?",
+   "answer": "90",
+   "unit": "cm³",
+   "hint": "Find the mass of the ice first. Does the mass change when it melts?",
+   "explain": "Mass of ice = 0.9 g/cm³ × 100 cm³ = 90 g. Melting does not change the mass, so there is 90 g of water. Volume = 90 g ÷ 1 g/cm³ = 90 cm³. Ice takes up more space than the same water, which is why ice floats."
   }
  ]
 }

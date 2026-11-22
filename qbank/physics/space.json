@@ -89,6 +89,38 @@
    "explain": "The Earth's axis is tilted. When the UK is tilted towards the Sun, the days are longer and the Sun is higher in the sky, so it is summer."
   },
   {
+   "id": "spc-15",
+   "sub": "earth",
+   "level": 1,
+   "type": "mc",
+   "q": "In the UK, in which direction does the Sun rise in the morning?",
+   "options": [
+    "East",
+    "West",
+    "North",
+    "South"
+   ],
+   "answer": 0,
+   "hint": "The Sun rises in the east and…",
+   "explain": "The Sun rises in the east and sets in the west. It only looks as if the Sun moves: really the Earth is spinning."
+  },
+  {
+   "id": "spc-16",
+   "sub": "earth",
+   "level": 2,
+   "type": "mc",
+   "q": "When it is summer in the UK, what season is it in Australia?",
+   "options": [
+    "Winter",
+    "Summer",
+    "Spring",
+    "Autumn"
+   ],
+   "answer": 0,
+   "hint": "Australia is in the other half (hemisphere) of the Earth.",
+   "explain": "When the northern half of the Earth is tilted towards the Sun (UK summer), the southern half is tilted away, so Australia has winter."
+  },
+  {
    "id": "spc-05",
    "sub": "solar",
    "level": 1,
@@ -169,6 +201,54 @@
    "explain": "The Moon takes about 27 days to orbit the Earth. From one full moon to the next is about 29½ days."
   },
   {
+   "id": "spc-17",
+   "sub": "solar",
+   "level": 1,
+   "type": "mc",
+   "q": "Which is the largest planet in our Solar System?",
+   "options": [
+    "Jupiter",
+    "Earth",
+    "Mars",
+    "Mercury"
+   ],
+   "answer": 0,
+   "hint": "It is a giant made mostly of gas.",
+   "explain": "Jupiter is the largest planet. More than 1000 Earths could fit inside it."
+  },
+  {
+   "id": "spc-18",
+   "sub": "solar",
+   "level": 2,
+   "type": "mc",
+   "q": "Why does the Moon seem to change shape over a month (its phases)?",
+   "options": [
+    "As it orbits the Earth, we see different amounts of its sunlit half",
+    "The Earth's shadow covers part of it",
+    "Clouds hide parts of it",
+    "The Moon really changes shape"
+   ],
+   "answer": 0,
+   "hint": "Half of the Moon is always lit by the Sun.",
+   "explain": "The Sun always lights up half of the Moon. As the Moon orbits the Earth, we see more or less of that lit half, from new moon to full moon and back."
+  },
+  {
+   "id": "spc-19",
+   "sub": "solar",
+   "level": 2,
+   "type": "mc",
+   "q": "What happens in a solar eclipse?",
+   "options": [
+    "The Moon passes between the Sun and the Earth and blocks the sunlight",
+    "The Earth passes between the Sun and the Moon",
+    "The Sun stops shining for a while",
+    "Clouds cover the Sun"
+   ],
+   "answer": 0,
+   "hint": "Something gets in the way of the Sun.",
+   "explain": "In a solar eclipse, the Moon moves between the Sun and the Earth, so its shadow falls on part of the Earth. Never look straight at the Sun, even during an eclipse."
+  },
+  {
    "id": "spc-10",
    "sub": "gravity",
    "level": 2,
@@ -212,6 +292,55 @@
    "explain": "The Sun's gravity pulls on the Earth and keeps it moving in its orbit."
   },
   {
+   "id": "spc-20",
+   "sub": "gravity",
+   "level": 1,
+   "type": "num",
+   "q": "An astronaut has a mass of 70 kg on Earth. What is her mass on the Moon?",
+   "answer": "70",
+   "unit": "kg",
+   "hint": "Mass is the amount of stuff in you. Does going to the Moon change that?",
+   "explain": "Mass does not change from place to place, so it is still 70 kg. Only her weight changes, because the Moon's gravity is weaker."
+  },
+  {
+   "id": "spc-21",
+   "sub": "gravity",
+   "level": 2,
+   "type": "num",
+   "q": "An astronaut has a mass of 80 kg. What is his weight on the Moon, where the gravitational field strength is 1.6 N/kg?",
+   "answer": "128",
+   "unit": "N",
+   "hint": "Weight = mass × gravitational field strength.",
+   "explain": "W = m × g = 80 kg × 1.6 N/kg = 128 N. On Earth he would weigh 80 × 10 = 800 N."
+  },
+  {
+   "id": "spc-22",
+   "sub": "gravity",
+   "level": 3,
+   "type": "num",
+   "q": "A Moon rover weighs 1600 N on Earth (g = 10 N/kg). What does it weigh on the Moon (g = 1.6 N/kg)?",
+   "answer": "256",
+   "unit": "N",
+   "hint": "Find the rover's mass first.",
+   "explain": "Mass = W ÷ g = 1600 N ÷ 10 N/kg = 160 kg. On the Moon, W = 160 kg × 1.6 N/kg = 256 N."
+  },
+  {
+   "id": "spc-23",
+   "sub": "gravity",
+   "level": 3,
+   "type": "mc",
+   "q": "Astronauts float around inside the International Space Station, about 400 km above the Earth. Is there gravity there?",
+   "options": [
+    "Yes, but they float because they and the station are falling round the Earth together",
+    "No, there is no gravity in space",
+    "No, because there is no air in space",
+    "Yes, but it pushes them upwards"
+   ],
+   "answer": 0,
+   "hint": "What keeps the space station going round the Earth?",
+   "explain": "The Earth's gravity is still strong there, only a little weaker than on the ground. It keeps the station in orbit. The station and the astronauts fall round the Earth together, so they float."
+  },
+  {
    "id": "spc-13",
    "sub": "beyond",
    "level": 2,
@@ -242,6 +371,49 @@
    "answer": 0,
    "hint": "On a very dark night you can see it as a milky band across the sky.",
    "explain": "We live in the Milky Way galaxy, which has hundreds of billions of stars. Andromeda is a different galaxy nearby."
+  },
+  {
+   "id": "spc-24",
+   "sub": "beyond",
+   "level": 1,
+   "type": "mc",
+   "q": "What are the stars that we see in the night sky?",
+   "options": [
+    "Suns like ours, but very far away",
+    "Planets",
+    "Small holes in the sky",
+    "Reflections of our Sun"
+   ],
+   "answer": 0,
+   "hint": "Our Sun is a star too.",
+   "explain": "Stars are huge, hot balls of gas that make their own light, like our Sun. They look tiny because they are so far away."
+  },
+  {
+   "id": "spc-25",
+   "sub": "beyond",
+   "level": 2,
+   "type": "mc",
+   "q": "Light from the Sun takes about 8 minutes to reach the Earth. If the Sun suddenly stopped shining, when would we notice?",
+   "options": [
+    "After about 8 minutes",
+    "Straight away",
+    "After 8 hours",
+    "After 8 years"
+   ],
+   "answer": 0,
+   "hint": "The last light to leave the Sun is still on its way to us.",
+   "explain": "Light already on its way would keep arriving for about 8 minutes, so we would not notice until then."
+  },
+  {
+   "id": "spc-26",
+   "sub": "beyond",
+   "level": 3,
+   "type": "num",
+   "q": "Proxima Centauri, the nearest star after the Sun, is about 4.2 light years away. How many years does its light take to reach us?",
+   "answer": "4.2",
+   "unit": "years",
+   "hint": "A light year is the distance light travels in one year.",
+   "explain": "Each light year takes light one year to cross, so 4.2 light years take 4.2 years. The light we see tonight left the star over 4 years ago."
   }
  ]
 }

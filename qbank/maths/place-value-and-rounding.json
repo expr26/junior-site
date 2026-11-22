@@ -81,6 +81,32 @@
    "explain": "3 tenths, 4 hundredths and 5 thousandths make 0.345."
   },
   {
+   "id": "pv-21",
+   "sub": "place-value",
+   "level": 1,
+   "type": "mc",
+   "q": "In the number 26.48, what is the value of the digit 4?",
+   "options": [
+    "4 tenths",
+    "4 hundredths",
+    "4 tens",
+    "4 ones"
+   ],
+   "answer": 0,
+   "hint": "The first digit after the decimal point is the tenths.",
+   "explain": "In 26.48 the 4 is the first digit after the decimal point, so it is worth 4 tenths (0.4)."
+  },
+  {
+   "id": "pv-22",
+   "sub": "place-value",
+   "level": 2,
+   "type": "num",
+   "q": "Write \"three hundred and four thousand and twenty\" in digits.",
+   "answer": "304020",
+   "hint": "Write the thousands part first (three hundred and four thousand), then fill the hundreds, tens and ones.",
+   "explain": "Three hundred and four thousand is 304,000. Add twenty: 304,000 + 20 = 304,020. There are 0 hundreds, so a zero holds that place."
+  },
+  {
    "id": "pv-05",
    "sub": "order",
    "level": 1,
@@ -126,6 +152,38 @@
    "answer": 0,
    "hint": "Both have 3 ones. Now compare the tenths.",
    "explain": "3.06 has 0 tenths and 3.6 has 6 tenths, so 3.06 < 3.6."
+  },
+  {
+   "id": "pv-23",
+   "sub": "order",
+   "level": 1,
+   "type": "mc",
+   "q": "Which number is the smallest?",
+   "options": [
+    "2.09",
+    "2.9",
+    "2.19",
+    "2.91"
+   ],
+   "answer": 0,
+   "hint": "They all start with 2. Compare the tenths digit next.",
+   "explain": "All four have 2 ones. Now look at the tenths: 2.09 has 0 tenths, which is fewer than the others, so 2.09 is the smallest."
+  },
+  {
+   "id": "pv-24",
+   "sub": "order",
+   "level": 2,
+   "type": "mc",
+   "q": "Four swimmers' times for one length, in seconds, are 12.8, 12.08, 12.81 and 12.18. Which list goes from the smallest time to the biggest?",
+   "options": [
+    "12.08, 12.18, 12.8, 12.81",
+    "12.08, 12.8, 12.18, 12.81",
+    "12.8, 12.08, 12.18, 12.81",
+    "12.81, 12.8, 12.18, 12.08"
+   ],
+   "answer": 0,
+   "hint": "Write them all with two decimal places, so 12.8 becomes 12.80. Then compare.",
+   "explain": "As 12.80, 12.08, 12.81 and 12.18, the order is 12.08, 12.18, 12.80, 12.81. 12.8 is not smaller than 12.18: it has 8 tenths and 12.18 has only 1 tenth."
   },
   {
    "id": "pv-08",
@@ -189,6 +247,36 @@
    "explain": "3.996 rounds up to 4.00 (the 9s roll over like a car's mileage counter). To 2 decimal places you write 4.00."
   },
   {
+   "id": "pv-25",
+   "sub": "round",
+   "level": 1,
+   "type": "num",
+   "q": "A football stadium holds 52,374 fans. Round 52,374 to the nearest thousand.",
+   "answer": "52000",
+   "hint": "Is 52,374 closer to 52,000 or to 53,000? Look at the hundreds digit.",
+   "explain": "The hundreds digit is 3, which is less than 5, so round down: 52,374 is about 52,000."
+  },
+  {
+   "id": "pv-26",
+   "sub": "round",
+   "level": 2,
+   "type": "num",
+   "q": "Round 7.849 to 1 decimal place.",
+   "answer": "7.8",
+   "hint": "Look only at the second decimal place to decide whether to round up or down.",
+   "explain": "7.849 is between 7.8 and 7.9. The second decimal digit is 4, which is less than 5, so round down to 7.8. (Don't round the 9 first: that would give the wrong answer, 7.9.)"
+  },
+  {
+   "id": "pv-27",
+   "sub": "round",
+   "level": 3,
+   "type": "num",
+   "q": "Round 38,620 to 1 significant figure.",
+   "answer": "40000",
+   "hint": "The first significant figure is the 3, worth 30,000. Round to the nearest ten thousand.",
+   "explain": "The first significant figure is 3 (30,000). The next digit is 8, which is 5 or more, so round up: 38,620 is 40,000 to 1 significant figure."
+  },
+  {
    "id": "pv-14",
    "sub": "times-ten",
    "level": 1,
@@ -228,6 +316,37 @@
    "unit": "mm",
    "hint": "Multiply by 1000.",
    "explain": "2.5 × 1000 = 2500, so 2.5 m = 2500 mm."
+  },
+  {
+   "id": "pv-28",
+   "sub": "times-ten",
+   "level": 1,
+   "type": "num",
+   "q": "Work out 450 ÷ 10",
+   "answer": "45",
+   "hint": "Dividing by 10 moves every digit one place to the right.",
+   "explain": "Each digit moves one place to the right: 450 ÷ 10 = 45."
+  },
+  {
+   "id": "pv-29",
+   "sub": "times-ten",
+   "level": 2,
+   "type": "num",
+   "q": "Work out 0.06 × 1000",
+   "answer": "60",
+   "hint": "Multiplying by 1000 moves every digit three places to the left.",
+   "explain": "Move each digit three places to the left: 0.06 → 0.6 → 6 → 60. So 0.06 × 1000 = 60."
+  },
+  {
+   "id": "pv-30",
+   "sub": "times-ten",
+   "level": 2,
+   "type": "num",
+   "q": "A bag of sweets weighs 0.25 kg. There are 1000 grams in 1 kilogram. How many grams does the bag weigh?",
+   "answer": "250",
+   "unit": "g",
+   "hint": "To change kilograms to grams, multiply by 1000.",
+   "explain": "0.25 × 1000 = 250, so the bag weighs 250 g."
   },
   {
    "id": "pv-18",
@@ -270,6 +389,27 @@
    "answer": 0,
    "hint": "198 is about 200 and £5.10 is about £5.",
    "explain": "200 × £5 = £1000. (The exact amount is £1009.80.)"
+  },
+  {
+   "id": "pv-31",
+   "sub": "estimate",
+   "level": 3,
+   "type": "num",
+   "q": "A cinema has 28 rows with 41 seats in each row. Tickets cost £7.90 each. Estimate the money taken if every seat is sold, by rounding each number to 1 significant figure. Type the answer in pounds.",
+   "answer": "9600",
+   "show": "£9,600",
+   "hint": "Round 28, 41 and £7.90 to 1 significant figure first, then multiply.",
+   "explain": "28 ≈ 30, 41 ≈ 40 and £7.90 ≈ £8. So about 30 × 40 = 1200 seats, and 1200 × £8 = £9600."
+  },
+  {
+   "id": "pv-32",
+   "sub": "estimate",
+   "level": 3,
+   "type": "num",
+   "q": "Estimate 0.48 × 61 by rounding each number to 1 significant figure.",
+   "answer": "30",
+   "hint": "0.48 to 1 significant figure is 0.5. Multiplying by 0.5 is the same as halving.",
+   "explain": "0.48 ≈ 0.5 and 61 ≈ 60. 0.5 × 60 is half of 60, which is 30."
   }
  ]
 }

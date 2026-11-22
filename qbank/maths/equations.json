@@ -81,6 +81,26 @@
    "explain": "Adding 3 undoes subtracting 3: 4x − 3 + 3 = 17 + 3, so 4x = 20 and x = 5."
   },
   {
+   "id": "eqn-19",
+   "sub": "one-step",
+   "level": 1,
+   "type": "num",
+   "q": "Solve 9 + x = 31",
+   "answer": "22",
+   "hint": "Take 9 from both sides.",
+   "explain": "x = 31 − 9 = 22. Check: 9 + 22 = 31."
+  },
+  {
+   "id": "eqn-20",
+   "sub": "one-step",
+   "level": 1,
+   "type": "num",
+   "q": "Solve 10 = x − 4",
+   "answer": "14",
+   "hint": "The x can be on the right. Add 4 to both sides.",
+   "explain": "Add 4 to both sides: 14 = x, so x = 14. Check: 14 − 4 = 10."
+  },
+  {
    "id": "eqn-06",
    "sub": "two-step",
    "level": 2,
@@ -121,6 +141,46 @@
    "explain": "Multiply both sides by 3: x + 4 = 15. Then x = 11. Check: (11 + 4) ÷ 3 = 5."
   },
   {
+   "id": "eqn-21",
+   "sub": "two-step",
+   "level": 1,
+   "type": "num",
+   "q": "Solve 2x + 1 = 11",
+   "answer": "5",
+   "hint": "Take 1 from both sides first, then divide by 2.",
+   "explain": "2x + 1 = 11 → 2x = 10 → x = 5. Check: 2 × 5 + 1 = 11."
+  },
+  {
+   "id": "eqn-22",
+   "sub": "two-step",
+   "level": 2,
+   "type": "num",
+   "q": "Solve x ÷ 4 − 2 = 3",
+   "answer": "20",
+   "hint": "Add 2 to both sides first, then multiply by 4.",
+   "explain": "x ÷ 4 − 2 = 3 → x ÷ 4 = 5 → x = 20. Check: 20 ÷ 4 − 2 = 5 − 2 = 3."
+  },
+  {
+   "id": "eqn-23",
+   "sub": "two-step",
+   "level": 2,
+   "type": "num",
+   "q": "Solve 20 − 3x = 8",
+   "answer": "4",
+   "hint": "Add 3x to both sides so the x term is positive, then take 8 from both sides.",
+   "explain": "20 − 3x = 8 → 20 = 8 + 3x → 12 = 3x → x = 4. Check: 20 − 12 = 8."
+  },
+  {
+   "id": "eqn-24",
+   "sub": "two-step",
+   "level": 2,
+   "type": "num",
+   "q": "Solve 4x + 3 = 5",
+   "answer": "0.5",
+   "hint": "Take 3 from both sides. The answer does not have to be a whole number.",
+   "explain": "4x + 3 = 5 → 4x = 2 → x = 2 ÷ 4 = 0.5 (or {1/2}). Check: 4 × 0.5 + 3 = 2 + 3 = 5."
+  },
+  {
    "id": "eqn-10",
    "sub": "harder",
    "level": 3,
@@ -159,6 +219,36 @@
    "answer": "7",
    "hint": "Expand the bracket first: 6x + 2.",
    "explain": "6x + 2 = 4x + 16 → 2x + 2 = 16 → 2x = 14 → x = 7. Check: 2 × 22 = 44 and 28 + 16 = 44."
+  },
+  {
+   "id": "eqn-25",
+   "sub": "harder",
+   "level": 2,
+   "type": "num",
+   "q": "Solve 6x = 2x + 20",
+   "answer": "5",
+   "hint": "Take 2x from both sides.",
+   "explain": "6x − 2x = 20 → 4x = 20 → x = 5. Check: 6 × 5 = 30 and 2 × 5 + 20 = 30."
+  },
+  {
+   "id": "eqn-26",
+   "sub": "harder",
+   "level": 3,
+   "type": "num",
+   "q": "Solve 5(x − 1) = 3x + 7",
+   "answer": "6",
+   "hint": "Expand the bracket first: 5x − 5.",
+   "explain": "5x − 5 = 3x + 7 → 2x − 5 = 7 → 2x = 12 → x = 6. Check: 5 × 5 = 25 and 18 + 7 = 25."
+  },
+  {
+   "id": "eqn-27",
+   "sub": "harder",
+   "level": 3,
+   "type": "num",
+   "q": "Solve 3x + 10 = x + 2",
+   "answer": "-4",
+   "hint": "Take x from both sides, then take 10 from both sides. The answer can be negative.",
+   "explain": "3x − x + 10 = 2 → 2x + 10 = 2 → 2x = −8 → x = −4. Check: 3 × (−4) + 10 = −2 and −4 + 2 = −2."
   },
   {
    "id": "eqn-14",
@@ -211,6 +301,38 @@
    "unit": "years",
    "hint": "Call Ada's age a. Then Ben's age is a + 3.",
    "explain": "a + (a + 3) = 25 → 2a + 3 = 25 → 2a = 22 → a = 11. Ada is 11 and Ben is 14."
+  },
+  {
+   "id": "eqn-28",
+   "sub": "form",
+   "level": 1,
+   "type": "num",
+   "q": "Ella buys 5 cinema tickets that all cost the same. She pays £35 in total. How much is one ticket, in pounds?",
+   "answer": "7",
+   "hint": "Call the price of one ticket t. Then 5t = 35.",
+   "explain": "5t = 35, so t = 35 ÷ 5 = 7. One ticket costs £7."
+  },
+  {
+   "id": "eqn-29",
+   "sub": "form",
+   "level": 2,
+   "type": "num",
+   "q": "A phone deal costs £15 up front, then £8 every month. So far Zara has paid £71 altogether. For how many months has she paid?",
+   "answer": "7",
+   "unit": "months",
+   "hint": "Write it as 15 + 8m = 71.",
+   "explain": "15 + 8m = 71 → 8m = 56 → m = 7. Check: 15 + 8 × 7 = 15 + 56 = 71."
+  },
+  {
+   "id": "eqn-30",
+   "sub": "form",
+   "level": 3,
+   "type": "num",
+   "q": "Jo has 3 packs of football stickers and 5 loose stickers. Kai has 1 pack and 21 loose stickers. Every pack has the same number of stickers, and they have the same number of stickers in total. How many stickers are in a pack?",
+   "answer": "8",
+   "unit": "stickers",
+   "hint": "Call the number in a pack p. Then 3p + 5 = p + 21.",
+   "explain": "3p + 5 = p + 21 → 2p + 5 = 21 → 2p = 16 → p = 8. Check: Jo has 24 + 5 = 29 and Kai has 8 + 21 = 29."
   }
  ]
 }

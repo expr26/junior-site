@@ -30,6 +30,10 @@ Unlike ExaminerPrep there is no second repository for the built output: Cloudfla
 | `build.py` | The generator. |
 | `pages/` | One `.html` file per page. `pages/a/b.html` becomes `/a/b/`. The first line is a JSON header: `<!-- {"title": "...", "description": "...", "noindex": false} -->`. |
 | `partials/` | `layout.html`, `head.html`, `header.html`, `footer.html`. `{{placeholders}}` are filled from `config.py`. |
+| `topics/*.json` | One file per topic: units with short Learn cards (with pictures) and practice questions. Format at the top of `topics.py`. |
+| `topics.py` | Turns topics into `/<subject>/<topic>/` maps and `/<subject>/<topic>/<unit>/` pages, and draws the pictures as inline SVG. |
+| `static/js/game.js` | Stars, levels, streaks, badges, toasts and confetti (localStorage only). |
+| `static/js/practice.js` | The practice runner on unit pages. |
 | `static/` | CSS, fonts and JS, served at `/static/`. Fonts are copied from examinerprep-generator. |
 | `_headers`, `_redirects` | Cloudflare Pages headers (strict CSP) and redirects. |
 

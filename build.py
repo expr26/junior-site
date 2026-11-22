@@ -5,6 +5,7 @@ Static site generator for the junior Maths and Science site (ages 9 to 14).
 
 Same approach as examinerprep-generator, kept small on purpose:
   pages/*.html       one file per page; the first line is a JSON header comment, the rest is the page body
+  topics/*.json      one file per topic: explanations and practice questions (rendered by topics.py)
   partials/*.html    shared head, header and footer, with {{placeholders}}
   static/            CSS, fonts and JS, copied to /static/
 The build stops with an error if a page is missing its title or description, or if two pages share a URL.
@@ -135,13 +136,22 @@ def main():
         if (HERE / name).exists():
             shutil.copy(HERE / name, DIST / name)
 
-    seen, sitemap = {}, []
+    jobs = []   # (url, meta, body, where it came from)
     for src in sorted(PAGES.rglob("*.html")):
         meta, body = read_page(src)
-        url = url_for(src)
+        jobs.append((url_for(src), meta, body, src.relative_to(HERE)))
+    import topics   # topic hubs and unit pages from topics/*.json
+    try:
+        jobs += topics.pages()
+        (DIST / "static" / "topics.json").write_text(json.dumps(topics.index()), encoding="utf-8")
+    except topics.ContentError as e:
+        fail(str(e))
+
+    seen, sitemap = {}, []
+    for url, meta, body, origin in jobs:
         if url in seen:
-            fail(f"{src.relative_to(HERE)} and {seen[url]} both make {url}")
-        seen[url] = src.relative_to(HERE)
+            fail(f"{origin} and {seen[url]} both make {url}")
+        seen[url] = origin
         dest = out_path(url)
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(render(meta, body, url), encoding="utf-8")

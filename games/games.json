@@ -1021,6 +1021,55 @@
           "a": "A prism does not add colours. White light is already a mixture of colours, and the prism bends each colour by a different amount, so they spread out. Violet bends the most and red the least."
         }
       ]
+    },
+    {
+      "slug": "sound-studio",
+      "title": "Sound Studio",
+      "icon": "🎧",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Shape sound waves on an oscilloscope: make them louder, higher and lower, work out an echo and find where sound can't go.",
+      "live": true,
+      "learn": "Sound comes from vibrations. Amplitude and loudness, frequency and pitch, why sound needs a medium, echoes with the speed of sound, and the human hearing range.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: sound: vibrations, amplitude, frequency and echoes",
+        "PYP": "How the world works: sound and hearing"
+      },
+      "guide_title": "Sound waves, loudness and pitch: a quick guide",
+      "guide": [
+        {
+          "h": "Sound is made by vibrations",
+          "p": "Every sound starts with something vibrating: a guitar string, a drum skin or your vocal cords. The vibrations push on the particles of the air next to them, and those particles pass the vibrations on to the next ones, all the way to your ear. That is why sound needs a medium (a solid, a liquid or a gas) to travel through. Space is a vacuum with no particles, so it is silent."
+        },
+        {
+          "h": "Amplitude and loudness",
+          "p": "An oscilloscope draws a sound as a wave. The amplitude is the height of the wave from the middle line. A bigger amplitude means bigger vibrations carrying more energy, so the sound is louder. A smaller amplitude means a quieter sound. Changing the loudness does not change the pitch. (The waves in the game are a picture of the sound, not the air itself.)"
+        },
+        {
+          "h": "Frequency and pitch",
+          "p": "The frequency is the number of vibrations (or waves) each second. It is measured in hertz (Hz): 1 Hz means one vibration each second. More waves squeezed onto the screen means a higher frequency and a higher pitch, like a whistle. Fewer, wider waves mean a lower pitch, like a drum. In the game the screen shows one hundredth of a second, so 4 waves on it is 400 Hz."
+        },
+        {
+          "h": "Echoes and hearing",
+          "p": "An echo is sound that reflects off a hard surface, such as a cliff, and comes back to you. In air, sound travels at about 340 metres per second. If an echo takes 2 seconds, the sound travelled about 680 m there and back, so the cliff is about 340 m away. Most humans hear from about 20 Hz to about 20 000 Hz. Higher sounds are called ultrasound."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the difference between amplitude and frequency?",
+          "a": "Amplitude is how big the vibrations are, shown by how tall the wave is: it sets the loudness. Frequency is how many vibrations there are each second, shown by how many waves fit on the screen: it sets the pitch."
+        },
+        {
+          "q": "Why is there no sound in space?",
+          "a": "Sound is passed on by particles bumping into each other. Space is almost a perfect vacuum, with hardly any particles, so the vibrations cannot be passed on and no sound travels. Astronauts use radios, because radio waves can cross empty space."
+        },
+        {
+          "q": "How do you work out the distance to a cliff from an echo?",
+          "a": "Multiply the speed of sound (about 340 m/s in air) by the time for the echo. That gives the distance there and back, so halve it. An echo after 2 seconds means the cliff is about 340 m away."
+        }
+      ]
     }
   ]
 }

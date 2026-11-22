@@ -734,3 +734,33 @@ button.am-tile:hover:not(:disabled){transform:translateY(-3px)}button.am-tile:di
 .mm-step .btn{padding:0 10px;min-width:0}
 .mm-deg{font:700 26px var(--serif);min-width:2.6em;text-align:center}
 .mm-act{justify-content:center;margin:.6em 0 0}
+/* Sound Studio */
+.ss-svg{width:100%;max-width:460px;display:block;margin:4px auto;background:#0E2A24;border-radius:16px}
+.ss-grid{stroke:#1F4A40;stroke-width:1}.ss-mid{stroke:#2F6B5C;stroke-width:1.5}
+.ss-panel{fill:#0E2A24}
+.ss-wave{fill:none;stroke:#5CFFB0;stroke-width:3.5;stroke-linejoin:round}.ss-wave.b{stroke:#FFD15C}
+.ss-goal{fill:none;stroke:#FF8FB5;stroke-width:3;stroke-dasharray:7 6}
+.ss-cap{font:600 13px var(--sans);fill:#BDE7DA}
+.ss-cap2{font:700 14px var(--sans);fill:#1E1B3A}
+.ss-cap.ss-ns{fill:#55526E}
+.ss-tag{font:700 20px var(--serif);fill:#fff}
+.ss-space{fill:#0B0A24}.ss-star{fill:#fff}
+.ss-big{font-size:46px}.ss-mid-e{font-size:30px}
+.ss-ring{fill:none;stroke:#FFD15C;stroke-width:3;stroke-linecap:round}.ss-ring.off{opacity:.35}
+.ss-x{stroke:#FF5D5D;stroke-width:6;stroke-linecap:round}
+.ss-sky{fill:#DFF3FF}.ss-ground{fill:#7CCB7E}.ss-cliff{fill:#A07850;stroke:#6E4F31;stroke-width:2}
+.ss-go{stroke:#6C4DF6;stroke-width:3}.ss-back{stroke:#FF5D8F;stroke-width:3;stroke-dasharray:6 5}
+.ss-ahd{fill:#6C4DF6}.ss-ahd2{fill:#FF5D8F}
+.ss-dist{fill:none;stroke:#1E1B3A;stroke-width:2}
+.ss-dl{font:700 15px var(--sans);fill:#1E1B3A;paint-order:stroke;stroke:#7CCB7E;stroke-width:6px}
+.ss-infra,.ss-ultra{fill:#C9D1DE}.ss-human{fill:#34C77B}
+.ss-bt{font:700 14px var(--sans);fill:#fff}
+.ss-tick{stroke:#1E1B3A;stroke-width:2.5}.ss-pin{stroke:#E5484D;stroke-width:3}
+.ss-out{text-align:center;min-height:1.6em;margin:4px 0 8px}
+.ss-row{display:grid;grid-template-columns:1fr 6.4em 1fr;gap:8px;align-items:center;max-width:400px;margin:0 auto 8px}
+.ss-row .btn,.ss-echo .btn{padding:0 8px;min-width:0}
+.ss-val{font:700 20px var(--serif);text-align:center;white-space:nowrap}
+.ss-bars{display:inline-flex;gap:4px;align-items:flex-end;height:28px}
+.ss-bars i{width:9px;border-radius:3px;background:var(--line)}.ss-bars i.on{background:var(--sci)}
+.ss-echo{display:grid;grid-template-columns:1fr 1fr 5em 1fr 1fr;gap:6px;align-items:center;max-width:420px;margin:0 auto}
+.ss-act{justify-content:center;margin:.6em 0 0}

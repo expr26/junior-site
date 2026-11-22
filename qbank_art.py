@@ -426,3 +426,206 @@ def fig_sankey(total, useful, wasted, unit="J", **_):
 
 
 topics.EXTRA_FIGS.update({"pattern": fig_pattern, "sankey": fig_sankey})
+
+
+# ---------- batch 4: coordinates, ratio, angles, sound, light ----------
+def art_coordinates():
+    grid = "".join(f'<path d="M{40 + 20 * i} 30 V170 M40 {30 + 20 * i} H200" stroke="#C9D1DE" stroke-width="1.5"/>' for i in range(8) if 30 + 20 * i <= 170 or True)
+    return _svg(
+        f'<rect x="40" y="30" width="160" height="140" fill="#fff" stroke="{INK}" stroke-width="3" rx="4"/>{grid}'
+        f'<path d="M40 170 H206 M40 170 V24" stroke="{INK}" stroke-width="3.5"/>'
+        f'<path d="M40 150 L200 50" stroke="{P}" stroke-width="5" stroke-linecap="round"/>'
+        + "".join(f'<circle cx="{x}" cy="{y}" r="8" fill="{c}" stroke="{INK}" stroke-width="2.5"/>' for x, y, c in ((80, 125, ORANGE), (120, 100, TEAL), (160, 75, PINK)))
+        + f'<g font-family="Fredoka,Trebuchet MS,sans-serif" font-weight="700"><rect x="132" y="112" width="70" height="30" rx="10" fill="{SUN}" stroke="{INK}" stroke-width="2.5"/>'
+          f'<text x="167" y="133" text-anchor="middle" font-size="17" fill="{INK}">(4, 3)</text>'
+          f'<text x="210" y="176" font-size="16" fill="{INK}">x</text><text x="30" y="24" font-size="16" fill="{INK}">y</text></g>'
+        + _sparkles((24, 60, 6, P), (220, 40, 7, SUN)),
+        "A coordinate grid with three points on a straight line")
+
+
+def art_ratio():
+    return _svg(
+        # glass with two layers 2:3
+        f'<path d="M70 40 L84 176 H156 L170 40 Z" fill="#fff" stroke="{INK}" stroke-width="4" stroke-linejoin="round"/>'
+        f'<path d="M77 108 L84 172 H156 L163 108 Z" fill="{ORANGE}"/><path d="M73 70 L77 108 H163 L167 70 Z" fill="#CFE8FF"/>'
+        f'<path d="M150 20 L132 120" stroke="{PINK}" stroke-width="7" stroke-linecap="round"/>'
+        f'<circle cx="106" cy="140" r="6" fill="#fff" opacity=".6"/><circle cx="128" cy="150" r="4" fill="#fff" opacity=".6"/>'
+        + f'<g font-family="Fredoka,Trebuchet MS,sans-serif" font-weight="700"><g transform="rotate(-8 40 100)"><rect x="10" y="84" width="58" height="34" rx="12" fill="{P}"/>'
+          f'<text x="39" y="108" text-anchor="middle" font-size="21" fill="#fff">2 : 3</text></g>'
+          f'<g transform="rotate(6 200 140)"><circle cx="200" cy="140" r="24" fill="{TEAL}"/><text x="200" y="147" text-anchor="middle" font-size="18" fill="#fff">⅖</text></g></g>'
+        + _sparkles((204, 50, 7, SUN), (36, 160, 6, TEAL)),
+        "A glass of squash: 2 parts orange to 3 parts water")
+
+
+def art_angles():
+    import math as m
+    return _svg(
+        f'<path d="M28 160 A92 92 0 0 1 212 160 Z" fill="{SUN}" stroke="{INK}" stroke-width="4" stroke-linejoin="round"/>'
+        f'<path d="M58 160 A62 62 0 0 1 182 160" fill="none" stroke="{INK}" stroke-width="2"/>'
+        + "".join(f'<path d="M{120 + 92 * m.cos(m.radians(a)):.1f} {160 - 92 * m.sin(m.radians(a)):.1f} L{120 + (80 if a % 30 else 72) * m.cos(m.radians(a)):.1f} {160 - (80 if a % 30 else 72) * m.sin(m.radians(a)):.1f}" stroke="{INK}" stroke-width="2"/>' for a in range(10, 180, 10))
+        + f'<circle cx="120" cy="160" r="6" fill="{INK}"/>'
+        f'<path d="M120 160 L{120 + 104 * m.cos(m.radians(50)):.1f} {160 - 104 * m.sin(m.radians(50)):.1f}" stroke="{P}" stroke-width="6" stroke-linecap="round"/>'
+        f'<path d="M120 160 L226 160" stroke="{P}" stroke-width="6" stroke-linecap="round"/>'
+        f'<path d="M150 160 A30 30 0 0 0 {120 + 30 * m.cos(m.radians(50)):.1f} {160 - 30 * m.sin(m.radians(50)):.1f}" fill="none" stroke="{PINK}" stroke-width="5"/>'
+        + f'<g font-family="Fredoka,Trebuchet MS,sans-serif" font-weight="700"><rect x="150" y="104" width="56" height="30" rx="10" fill="{PINK}"/>'
+          f'<text x="178" y="125" text-anchor="middle" font-size="18" fill="#fff">50°</text></g>'
+        + f'<path d="M30 40 L74 40 L52 76 Z" fill="{TEAL}" stroke="{INK}" stroke-width="3" stroke-linejoin="round"/>'
+        + _sparkles((210, 40, 7, SUN), (100, 30, 5, ORANGE)),
+        "A protractor measuring a 50 degree angle, and a triangle")
+
+
+def art_sound():
+    return _svg(
+        # speaker
+        f'<rect x="26" y="78" width="30" height="46" rx="4" fill="{P}" stroke="{INK}" stroke-width="3"/>'
+        f'<path d="M56 80 L92 52 V150 L56 122 Z" fill="{P2}" stroke="{INK}" stroke-width="3" stroke-linejoin="round"/>'
+        + "".join(f'<path d="M{108 + 22 * i} {72 - 8 * i} q{14 + 4 * i} {29 + 8 * i} 0 {58 + 16 * i}" fill="none" stroke="{TEAL}" stroke-width="5" stroke-linecap="round" opacity="{1 - .2 * i}"/>' for i in range(3))
+        # notes
+        + f'<g fill="{PINK}"><ellipse cx="190" cy="66" rx="10" ry="7" transform="rotate(-20 190 66)"/><path d="M198 62 V28 l16 6 v8 l-12 -4" stroke="{PINK}" stroke-width="3"/></g>'
+          f'<g fill="{ORANGE}"><ellipse cx="200" cy="150" rx="9" ry="6.5" transform="rotate(-20 200 150)"/><path d="M207 146 V118" stroke="{ORANGE}" stroke-width="3"/></g>'
+        + _sparkles((40, 40, 7, SUN), (60, 172, 6, P)),
+        "A loudspeaker sending out sound waves, with musical notes")
+
+
+def art_light():
+    return _svg(
+        # prism and rainbow
+        f'<path d="M120 46 L170 140 H70 Z" fill="#E8F4FF" stroke="{INK}" stroke-width="4" stroke-linejoin="round"/>'
+        f'<path d="M18 112 L100 92" stroke="#fff" stroke-width="7" stroke-linecap="round"/><path d="M18 112 L100 92" stroke="{SUN}" stroke-width="3" stroke-linecap="round"/>'
+        + "".join(f'<path d="M140 98 L224 {112 + 10 * i}" stroke="{c}" stroke-width="6" stroke-linecap="round"/>'
+                  for i, c in enumerate(("#E5484D", ORANGE, SUN, "#3BB273", BLUE, "#4F46E5", "#9333EA")))
+        + f'<path d="M100 92 L140 98" stroke="#fff" stroke-width="6" opacity=".9"/>'
+        # sun
+        + f'<circle cx="40" cy="44" r="16" fill="{SUN}" stroke="{INK}" stroke-width="3"/>'
+        + "".join(f'<path d="M{40 + 22 * math.cos(a * math.pi / 4):.1f} {44 + 22 * math.sin(a * math.pi / 4):.1f} l{5 * math.cos(a * math.pi / 4):.1f} {5 * math.sin(a * math.pi / 4):.1f}" stroke="{ORANGE}" stroke-width="3.5" stroke-linecap="round"/>' for a in range(8))
+        + _sparkles((206, 40, 7, P), (60, 170, 6, TEAL)),
+        "White light going into a glass prism and splitting into a rainbow of colours")
+
+
+ART.update({"coordinates": art_coordinates, "ratio": art_ratio, "angles": art_angles, "sound": art_sound, "light": art_light})
+
+
+def fig_grid(points=(), lo=-1, hi=6, line=None, ylo=None, yhi=None, **_):
+    """Coordinate grid from lo to hi (x) and ylo to yhi (y). points: [[x, y, "A"], ...]; line: [[x1, y1], [x2, y2]]."""
+    ylo = lo if ylo is None else ylo
+    yhi = hi if yhi is None else yhi
+    s, pad = 30, 28
+    W, H = (hi - lo) * s + 2 * pad, (yhi - ylo) * s + 2 * pad
+    X = lambda x: pad + (x - lo) * s
+    Y = lambda y: H - pad - (y - ylo) * s
+    g = []
+    for x in range(lo, hi + 1):
+        g.append(f'<path d="M{X(x)} {Y(ylo)} V{Y(yhi)}" stroke="var(--line)" stroke-width="1.5"/>')
+        if x:
+            g.append(f'<text x="{X(x)}" y="{Y(0) + 17}" text-anchor="middle" font-size="13" fill="var(--ink)">{str(x).replace("-", "−")}</text>')
+    for y in range(ylo, yhi + 1):
+        g.append(f'<path d="M{X(lo)} {Y(y)} H{X(hi)}" stroke="var(--line)" stroke-width="1.5"/>')
+        if y:
+            g.append(f'<text x="{X(0) - 7}" y="{Y(y) + 5}" text-anchor="end" font-size="13" fill="var(--ink)">{str(y).replace("-", "−")}</text>')
+    g.append(f'<text x="{X(0) - 7}" y="{Y(0) + 17}" text-anchor="end" font-size="13" fill="var(--ink)">0</text>')
+    g.append(f'<path d="M{X(lo)} {Y(0)} H{X(hi) + 10} M{X(0)} {Y(ylo)} V{Y(yhi) - 10}" stroke="var(--navy)" stroke-width="2.5"/>')
+    g.append(f'<text x="{X(hi) + 12}" y="{Y(0) + 5}" font-size="15" font-style="italic" font-family="Georgia,serif" fill="var(--navy)">x</text>'
+             f'<text x="{X(0) + 6}" y="{Y(yhi) - 10}" font-size="15" font-style="italic" font-family="Georgia,serif" fill="var(--navy)">y</text>')
+    if line:
+        (a, b), (c, d) = line
+        g.append(f'<path d="M{X(a)} {Y(b)} L{X(c)} {Y(d)}" stroke="var(--fun)" stroke-width="4" stroke-linecap="round"/>')
+    for p in points:
+        x, y, lab = p
+        g.append(f'<circle cx="{X(x)}" cy="{Y(y)}" r="6" fill="var(--pink)" stroke="var(--navy)" stroke-width="2"/>'
+                 f'<text x="{X(x) + 9}" y="{Y(y) - 8}" font-size="16" font-weight="700" fill="var(--navy)" paint-order="stroke" stroke="var(--card)" stroke-width="4">{html.escape(lab)}</text>')
+    return (f'<svg class="fig" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" '
+            f'aria-label="A coordinate grid with points {html.escape(", ".join(p[2] for p in points))}">{"".join(g)}</svg>')
+
+
+def fig_angles(kind, a=None, b=None, labels=(), **_):
+    """kind 'line': a straight line with a ray making angle a (labels[0]) and the rest (labels[1]).
+       kind 'triangle': angles a and b at the base (labels[0], labels[1]) and labels[2] at the top.
+       kind 'point': angles round a point; a = list of angles, labels = their labels."""
+    R = math.radians
+    if kind == "line":
+        W, H, cx, cy = 300, 150, 150, 120
+        ex, ey = cx + 120 * math.cos(R(180 - a)), cy - 120 * math.sin(R(180 - a))
+        g = [f'<path d="M20 {cy} H280" stroke="var(--navy)" stroke-width="4" stroke-linecap="round"/>',
+             f'<path d="M{cx} {cy} L{ex:.1f} {ey:.1f}" stroke="var(--navy)" stroke-width="4" stroke-linecap="round"/>',
+             _arc(cx, cy, 34, 180 - a, 180, "var(--pink)"), _arc(cx, cy, 26, 0, 180 - a, "var(--fun)")]
+        g.append(_alab(cx, cy, 56, 180 - a / 2, labels[0]))
+        g.append(_alab(cx, cy, 50, (180 - a) / 2, labels[1]))
+        desc = f"A straight line with angles {labels[0]} and {labels[1]} next to each other"
+    elif kind == "triangle":
+        W, H = 300, 200
+        A, B = (30, 175), (270, 175)
+        t = (B[0] - A[0]) * math.tan(R(b)) / (math.tan(R(a)) + math.tan(R(b)))
+        C = (A[0] + t, A[1] - t * math.tan(R(a)))
+        g = [f'<path d="M{A[0]} {A[1]} L{B[0]} {B[1]} L{C[0]:.1f} {C[1]:.1f} Z" fill="var(--fun-bg)" stroke="var(--navy)" stroke-width="4" stroke-linejoin="round"/>',
+             _arc(A[0], A[1], 30, 0, a, "var(--pink)"), _arc(B[0], B[1], 30, 180 - b, 180, "var(--pink)"),
+             _alab(A[0], A[1], 52, a / 2, labels[0]), _alab(B[0], B[1], 52, 180 - b / 2, labels[1]),
+             f'<text x="{C[0]:.1f}" y="{C[1] + 34:.1f}" text-anchor="middle" font-size="17" font-weight="700" fill="var(--navy)">{html.escape(labels[2])}</text>']
+        desc = f"A triangle with angles {labels[0]}, {labels[1]} and {labels[2]}"
+    else:
+        W, H, cx, cy = 240, 220, 120, 110
+        g, start = [], 90
+        for k, ang in enumerate(a):
+            g.append(f'<path d="M{cx} {cy} L{cx + 95 * math.cos(R(start)):.1f} {cy - 95 * math.sin(R(start)):.1f}" stroke="var(--navy)" stroke-width="4" stroke-linecap="round"/>')
+            g.append(_arc(cx, cy, 24 + 6 * (k % 2), start, start + ang, ("var(--pink)", "var(--fun)", "var(--sci)", "var(--gold)")[k % 4]))
+            g.append(_alab(cx, cy, 58, start + ang / 2, labels[k]))
+            start += ang
+        desc = "Angles round a point: " + ", ".join(labels)
+    return (f'<svg class="fig" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{html.escape(desc, quote=True)}">{"".join(g)}</svg>')
+
+
+def _arc(cx, cy, r, a0, a1, col):
+    R = math.radians
+    x0, y0 = cx + r * math.cos(R(a0)), cy - r * math.sin(R(a0))
+    x1, y1 = cx + r * math.cos(R(a1)), cy - r * math.sin(R(a1))
+    big = 1 if a1 - a0 > 180 else 0
+    return f'<path d="M{x0:.1f} {y0:.1f} A{r} {r} 0 {big} 0 {x1:.1f} {y1:.1f}" fill="none" stroke="{col}" stroke-width="4"/>'
+
+
+def _alab(cx, cy, r, ang, text):
+    x, y = cx + r * math.cos(math.radians(ang)), cy - r * math.sin(math.radians(ang))
+    return (f'<text x="{x:.1f}" y="{y + 6:.1f}" text-anchor="middle" font-size="17" font-weight="700" fill="var(--navy)" '
+            f'paint-order="stroke" stroke="var(--card)" stroke-width="4">{html.escape(text)}</text>')
+
+
+def fig_waves(waves, **_):
+    """Sound waves to compare: [{"amp": 1, "cycles": 3, "label": "A"}, ...]  amp 0.3 to 1."""
+    W, rowh = 320, 90
+    g = []
+    for k, w in enumerate(waves):
+        y0 = 45 + k * rowh
+        pts = " ".join(f"{40 + x:.1f},{y0 - 34 * w['amp'] * math.sin(2 * math.pi * w['cycles'] * x / 260):.1f}" for x in range(0, 261, 2))
+        g.append(f'<path d="M40 {y0} H300" stroke="var(--line)" stroke-width="2"/>')
+        g.append(f'<polyline points="{pts}" fill="none" stroke="{("var(--fun)", "var(--sci)", "var(--pink)")[k % 3]}" stroke-width="3.5"/>')
+        g.append(f'<text x="14" y="{y0 + 6}" font-size="18" font-weight="700" fill="var(--navy)">{html.escape(w["label"])}</text>')
+    return (f'<svg class="fig" viewBox="0 0 {W} {len(waves) * rowh}" width="{W}" height="{len(waves) * rowh}" role="img" '
+            f'aria-label="{len(waves)} sound waves drawn on the same scale, labelled {html.escape(", ".join(w["label"] for w in waves))}">{"".join(g)}</svg>')
+
+
+def fig_mirror(i=40, **_):
+    """A ray hitting a flat mirror at angle of incidence i, with the normal and the reflected ray."""
+    W, H, cx, cy, L = 300, 190, 150, 160, 130
+    R = math.radians
+    ix, iy = cx - L * math.sin(R(i)), cy - L * math.cos(R(i))
+    rx, ry = cx + L * math.sin(R(i)), cy - L * math.cos(R(i))
+    g = [f'<rect x="30" y="{cy}" width="240" height="12" fill="#C9D1DE" stroke="var(--navy)" stroke-width="2"/>',
+         "".join(f'<path d="M{40 + 18 * k} {cy + 12} l-10 12" stroke="var(--navy)" stroke-width="2"/>' for k in range(13)),
+         f'<path d="M{cx} {cy} V20" stroke="var(--navy)" stroke-width="2" stroke-dasharray="6 5"/>',
+         f'<text x="{cx}" y="14" text-anchor="middle" font-size="13" fill="var(--muted)">normal</text>',
+         f'<path d="M{ix:.1f} {iy:.1f} L{cx} {cy}" stroke="#E5484D" stroke-width="4"/>',
+         f'<path d="M{cx} {cy} L{rx:.1f} {ry:.1f}" stroke="#E5484D" stroke-width="4"/>',
+         _arrow_mid(ix, iy, cx, cy), _arrow_mid(cx, cy, rx, ry),
+         _arc(cx, cy, 44, 90, 90 + i, "var(--fun)"), _alab(cx, cy, 64, 90 + i / 2, f"{i}°"),
+         _arc(cx, cy, 40, 90 - i, 90, "var(--sci)"), _alab(cx, cy, 62, 90 - i / 2, "r")]
+    return (f'<svg class="fig" viewBox="0 0 {W} {H + 14}" width="{W}" height="{H + 14}" role="img" '
+            f'aria-label="A ray of light hits a flat mirror. The angle between the ray and the normal is {i} degrees; the reflected angle is marked r">{"".join(g)}</svg>')
+
+
+def _arrow_mid(x0, y0, x1, y1):
+    mx, my = (x0 + x1) / 2, (y0 + y1) / 2
+    a = math.atan2(y1 - y0, x1 - x0)
+    p = [(mx + 9 * math.cos(a), my + 9 * math.sin(a)), (mx - 7 * math.cos(a) + 7 * math.sin(a), my - 7 * math.sin(a) - 7 * math.cos(a)),
+         (mx - 7 * math.cos(a) - 7 * math.sin(a), my - 7 * math.sin(a) + 7 * math.cos(a))]
+    return f'<path d="M{p[0][0]:.1f} {p[0][1]:.1f} L{p[1][0]:.1f} {p[1][1]:.1f} L{p[2][0]:.1f} {p[2][1]:.1f} Z" fill="#E5484D"/>'
+
+
+topics.EXTRA_FIGS.update({"grid": fig_grid, "angles": fig_angles, "waves": fig_waves, "mirror": fig_mirror})

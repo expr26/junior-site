@@ -1,0 +1,231 @@
+{
+ "slug": "ratio-and-proportion",
+ "title": "Ratio and proportion",
+ "ks3": "Ratio, proportion and rates of change: ratio, sharing, direct and inverse proportion, scales",
+ "art": "ratio",
+ "intro": "Mixing drinks, sharing sweets, scaling recipes and reading maps. Practise ratios, sharing in a ratio, proportion and scale.",
+ "description": "Free KS3 Maths ratio and proportion questions with answers: simplifying ratios, sharing in a ratio, recipes, best buys, inverse proportion and map scales. Marked instantly, for ages 9 to 14.",
+ "subtopics": [
+  {
+   "slug": "ratio",
+   "title": "Writing and simplifying ratios"
+  },
+  {
+   "slug": "share",
+   "title": "Sharing in a ratio"
+  },
+  {
+   "slug": "proportion",
+   "title": "Proportion and best buys"
+  },
+  {
+   "slug": "scale",
+   "title": "Maps and scales"
+  }
+ ],
+ "questions": [
+  {
+   "id": "rat-01",
+   "sub": "ratio",
+   "level": 1,
+   "type": "mc",
+   "q": "A bag has 3 red sweets and 5 blue sweets. What is the ratio of red to blue?",
+   "options": [
+    "3 : 5",
+    "5 : 3",
+    "3 : 8",
+    "8 : 3"
+   ],
+   "answer": 0,
+   "hint": "Write red first, because the question says \"red to blue\".",
+   "explain": "There are 3 red and 5 blue, so red : blue = 3 : 5."
+  },
+  {
+   "id": "rat-02",
+   "sub": "ratio",
+   "level": 1,
+   "type": "mc",
+   "q": "Which ratio is the same as 1 : 4?",
+   "options": [
+    "3 : 12",
+    "4 : 1",
+    "2 : 6",
+    "1 : 5"
+   ],
+   "answer": 0,
+   "hint": "Multiply both parts by the same number.",
+   "explain": "1 : 4 multiplied by 3 is 3 : 12. (2 : 6 is the same as 1 : 3.)"
+  },
+  {
+   "id": "rat-03",
+   "sub": "ratio",
+   "level": 1,
+   "type": "mc",
+   "q": "Simplify the ratio 6 : 9",
+   "options": [
+    "2 : 3",
+    "3 : 2",
+    "1 : 3",
+    "6 : 3"
+   ],
+   "answer": 0,
+   "hint": "Divide both parts by the biggest number that goes into both.",
+   "explain": "Divide both by 3: 6 : 9 = 2 : 3."
+  },
+  {
+   "id": "rat-04",
+   "sub": "ratio",
+   "level": 2,
+   "type": "mc",
+   "q": "Simplify the ratio 20 : 35 : 15",
+   "options": [
+    "4 : 7 : 3",
+    "2 : 7 : 3",
+    "4 : 5 : 3",
+    "It can't be simplified"
+   ],
+   "answer": 0,
+   "hint": "5 goes into all three numbers.",
+   "explain": "Divide all three parts by 5: 20 : 35 : 15 = 4 : 7 : 3."
+  },
+  {
+   "id": "rat-05",
+   "sub": "ratio",
+   "level": 2,
+   "type": "mc",
+   "q": "A drink is made with squash and water in the ratio 2 : 3. What fraction of the drink is squash?",
+   "options": [
+    "{2/5}",
+    "{2/3}",
+    "{3/5}",
+    "{1/2}"
+   ],
+   "answer": 0,
+   "hint": "How many parts are there altogether?",
+   "explain": "There are 2 + 3 = 5 parts and 2 of them are squash, so {2/5} of the drink is squash."
+  },
+  {
+   "id": "rat-06",
+   "sub": "share",
+   "level": 2,
+   "type": "num",
+   "q": "Share £30 in the ratio 1 : 2. How much is the bigger share, in pounds?",
+   "answer": "20",
+   "show": "£20",
+   "hint": "How many parts altogether? How much is one part worth?",
+   "explain": "1 + 2 = 3 parts. One part = £30 ÷ 3 = £10. The bigger share is 2 parts = £20."
+  },
+  {
+   "id": "rat-07",
+   "sub": "share",
+   "level": 2,
+   "type": "num",
+   "q": "Squash and water are mixed in the ratio 2 : 3. How much water is needed for 100 ml of squash?",
+   "answer": "150",
+   "unit": "ml",
+   "hint": "2 parts are 100 ml. How much is 1 part?",
+   "explain": "2 parts = 100 ml, so 1 part = 50 ml. Water is 3 parts = 150 ml."
+  },
+  {
+   "id": "rat-08",
+   "sub": "share",
+   "level": 3,
+   "type": "num",
+   "q": "Ann and Bo share 48 sweets in the ratio 5 : 3. How many sweets does Ann get?",
+   "answer": "30",
+   "hint": "5 + 3 = 8 parts. Find one part first.",
+   "explain": "One part = 48 ÷ 8 = 6 sweets. Ann gets 5 × 6 = 30 and Bo gets 3 × 6 = 18."
+  },
+  {
+   "id": "rat-09",
+   "sub": "share",
+   "level": 3,
+   "type": "num",
+   "q": "The ratio of boys to girls in a club is 4 : 5. There are 20 boys. How many children are in the club altogether?",
+   "answer": "45",
+   "hint": "4 parts are 20 boys. How many is one part?",
+   "explain": "4 parts = 20, so one part = 5. Girls = 5 × 5 = 25. Altogether 20 + 25 = 45 children."
+  },
+  {
+   "id": "rat-10",
+   "sub": "proportion",
+   "level": 1,
+   "type": "num",
+   "q": "3 pencils cost 60p. How much do 5 pencils cost, in pence?",
+   "answer": "100",
+   "unit": "p",
+   "hint": "Find the cost of 1 pencil first.",
+   "explain": "1 pencil costs 60 ÷ 3 = 20p. 5 pencils cost 5 × 20 = 100p (£1)."
+  },
+  {
+   "id": "rat-11",
+   "sub": "proportion",
+   "level": 2,
+   "type": "num",
+   "q": "A recipe for 4 people uses 200 g of flour. How much flour is needed for 6 people?",
+   "answer": "300",
+   "unit": "g",
+   "hint": "Work out the flour for 1 person, or for 2 people.",
+   "explain": "For 2 people you need 100 g, so for 6 people you need 3 × 100 = 300 g."
+  },
+  {
+   "id": "rat-12",
+   "sub": "proportion",
+   "level": 2,
+   "type": "mc",
+   "q": "Which is better value?",
+   "options": [
+    "500 g for £2.00",
+    "200 g for £1.00",
+    "They are the same value"
+   ],
+   "answer": 0,
+   "hint": "Work out the cost of 100 g for each.",
+   "explain": "500 g for £2.00 is 40p per 100 g. 200 g for £1.00 is 50p per 100 g. So the 500 g pack is better value."
+  },
+  {
+   "id": "rat-13",
+   "sub": "proportion",
+   "level": 3,
+   "type": "num",
+   "q": "4 painters take 6 hours to paint a fence. How long would 3 painters take, working at the same speed?",
+   "answer": "8",
+   "unit": "hours",
+   "hint": "Fewer painters take longer. How long would 1 painter take?",
+   "explain": "1 painter would take 4 × 6 = 24 hours. 3 painters take 24 ÷ 3 = 8 hours. This is inverse proportion."
+  },
+  {
+   "id": "rat-14",
+   "sub": "proportion",
+   "level": 3,
+   "type": "num",
+   "q": "A tap fills a 12-litre bucket in 3 minutes. How long does it take to fill a 20-litre bucket?",
+   "answer": "5",
+   "unit": "minutes",
+   "hint": "How many litres does the tap fill each minute?",
+   "explain": "12 ÷ 3 = 4 litres per minute. 20 ÷ 4 = 5 minutes."
+  },
+  {
+   "id": "rat-15",
+   "sub": "scale",
+   "level": 2,
+   "type": "num",
+   "q": "A map has a scale of 1 : 50,000. Two places are 2 cm apart on the map. How far apart are they in real life, in kilometres?",
+   "answer": "1",
+   "unit": "km",
+   "hint": "1 cm on the map is 50,000 cm in real life. 100,000 cm = 1 km.",
+   "explain": "2 cm × 50,000 = 100,000 cm = 1000 m = 1 km."
+  },
+  {
+   "id": "rat-16",
+   "sub": "scale",
+   "level": 3,
+   "type": "num",
+   "q": "A model car is made to a scale of 1 : 20. The model is 21 cm long. How long is the real car, in metres?",
+   "answer": "4.2",
+   "unit": "m",
+   "hint": "The real car is 20 times as long.",
+   "explain": "21 cm × 20 = 420 cm = 4.2 m."
+  }
+ ]
+}

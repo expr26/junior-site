@@ -81,7 +81,16 @@
       "icon": "🧊",
       "subject": "science",
       "kind": "sim",
-      "blurb": "Heat it up or cool it down: solid, liquid or gas?"
+      "blurb": "Heat it up or cool it down and watch the particles: is the water a solid, a liquid or a gas?",
+      "live": true,
+      "learn": "How particles are arranged and move in solids, liquids and gases, what happens when you heat or cool them, and the melting and boiling points of water.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Chemistry: the particulate nature of matter; changes of state",
+        "PYP": "How the world works: materials and changes",
+        "MYP": "Sciences (chemistry strand): states of matter"
+      }
     },
     {
       "slug": "circuit-builder",

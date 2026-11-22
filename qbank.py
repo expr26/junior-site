@@ -204,6 +204,8 @@ def subject_page(s, rows):
   <div class="wrap">
     <ol class="qb-topics">{"".join(cards)}</ol>
     <p class="small">The topics follow the KS3 national curriculum for England. New topics are added often.</p>
+    <h2 class="qb-ws-head"><span aria-hidden="true">🖨️</span> Printable {html.escape(s['title'])} worksheets with answers</h2>
+    <ul class="qb-ws-all">{"".join(f'<li><a href="{ROOT}{s["slug"]}/{t["slug"]}/worksheet/">{html.escape(t["title"])}</a></li>' for _, t in rows if t)}</ul>
     <p><a class="btn ghost" href="{ROOT}{other}/">Try {other.title()} questions →</a></p>
   </div>
 </section>"""
@@ -213,11 +215,16 @@ def subject_page(s, rows):
     return (f"{ROOT}{s['slug']}/", meta, body, "qbank/subjects.json")
 
 
+def _order(q):
+    """Fixed mix of the options for pages without JavaScript and for worksheets, so A is not always right."""
+    return sorted(range(len(q["options"])), key=lambda k: hashlib.md5(f"{q['id']}/{k}".encode()).hexdigest())
+
+
 def _question_html(n, q, subs):
     d = q["_data"]
     name, icon = LEVELS[q["level"]]
     if d["t"] == "mc":
-        order = sorted(range(len(d["options"])), key=lambda k: hashlib.md5(f"{q['id']}/{k}".encode()).hexdigest())   # fixed mix, so A is not always right
+        order = _order(q)
         static = '<ol class="qb-static-opts" type="A">' + "".join(f"<li>{d['options'][k]}</li>" for k in order) + "</ol>"
         answer = f'<p>Answer: <b>{d["options"][d["answer"]]}</b></p>'
     else:
@@ -288,12 +295,14 @@ def topic_page(s, plan, t, prev, nxt):
         <button type="button" class="qb-f" data-f="mine" data-v="" aria-pressed="true">All questions</button>
         <button type="button" class="qb-f" data-f="mine" data-v="new" aria-pressed="false">Not tried yet <span class="qb-c"></span></button>
         <button type="button" class="qb-f" data-f="mine" data-v="mistakes" aria-pressed="false">My mistakes <span class="qb-c"></span></button>
+        <button type="button" class="qb-f" data-f="mine" data-v="quiz" aria-pressed="false"><span aria-hidden="true">🎲</span> Quick quiz: 10 mixed</button>
       </div>
       <p class="qb-shown small" aria-live="polite"></p>
     </div>
     <div class="runner-mascot qb-owl">{mascot()}<p class="bubble">Take your time: there's no timer. Got one wrong? You get a hint and another go.</p></div>
     <ol class="qb-list" id="qb-list">{"".join(_question_html(n, q, subs) for n, q in enumerate(qs, 1))}</ol>
     <p class="qb-empty note" hidden>No questions match these filters. Try "All questions".</p>
+    <p class="qb-ws-link"><a class="btn ghost" href="{ROOT}{s['slug']}/{t['slug']}/worksheet/"><span aria-hidden="true">🖨️</span> Printable worksheet with answers</a></p>
     <p class="actions qb-nav">{"".join(nav)}</p>
   </div>
 </section>
@@ -302,6 +311,52 @@ def topic_page(s, plan, t, prev, nxt):
     meta = {"title": f"KS3 {t['title']} questions and answers (Year 7–9 {s['title']})", "description": t["description"], "body_class": f"qbank qb-topic-page {s['slug']}",
             "noindex": t.get("noindex", False)}
     return (f"{ROOT}{s['slug']}/{t['slug']}/", meta, body, f"qbank/{s['slug']}/{t['slug']}.json")
+
+
+def worksheet_page(s, plan, t):
+    """Printable version of a topic: every question by part, space to write, and the answers on a separate page."""
+    qs, n, parts, answers = t["questions"], 0, [], []
+    for sub in t["subtopics"]:
+        items = []
+        for q in (q for q in qs if q["sub"] == sub["slug"]):
+            n += 1
+            d = q["_data"]
+            if d["t"] == "mc":
+                order = _order(q)
+                body = '<ol class="qb-ws-opts" type="A">' + "".join(f"<li>{d['options'][k]}</li>" for k in order) + "</ol>"
+                ans = f"{'ABCD'[order.index(d['answer'])]}: {d['options'][d['answer']]}"
+            else:
+                body = f'<p class="qb-ws-line">Answer: <span></span> {d["unit"]}</p>'
+                ans = f"{d['show']}{(' ' + d['unit']) if d['unit'] else ''}"
+            fig = f'<div class="q-fig">{d["fig"]}</div>' if d["fig"] else ""
+            items.append(f'<li class="qb-ws-q"><span class="qb-ws-lv" title="{LEVELS[q["level"]][0]}">{LEVELS[q["level"]][1]}</span>'
+                         f'<div class="q-text">{d["q"]}</div>{fig}{body}</li>')
+            answers.append(f"<li><b>{ans}</b><br><span class=\"small\">{d['explain']}</span></li>")
+        if items:
+            parts.append(f'<h2>{html.escape(sub["title"])}</h2><ol class="qb-ws-list" start="{n - len(items) + 1}">{"".join(items)}</ol>')
+    body = CSS + f"""
+<section class="section tight qb-ws {s['slug']}">
+  <div class="wrap narrow">
+    {_crumbs(("Question bank", ROOT), (s['title'], f"{ROOT}{s['slug']}/"), (t['title'], f"{ROOT}{s['slug']}/{t['slug']}/"), ("Worksheet", None))}
+    <h1>{html.escape(t['title'])} worksheet</h1>
+    <p class="qb-ws-meta">KS3 {html.escape(s['title'])} · Year 7 to 9 · {_count(len(qs), 'question')} · answers on the last page</p>
+    <p class="qb-ws-tools"><button type="button" class="btn" data-print><span aria-hidden="true">🖨️</span> Print or save as PDF</button>
+      <a class="btn ghost" href="{ROOT}{s['slug']}/{t['slug']}/">Do it online with hints</a></p>
+    <p class="qb-ws-name">Name: <span></span> Date: <span></span></p>
+    <p class="small">Levels: 🌱 Warm-up · 🌿 Core · 🌳 Challenge. Show your working.</p>
+    {"".join(parts)}
+    <div class="qb-ws-answers">
+      <h2>Answers: {html.escape(t['title'])}</h2>
+      <ol>{"".join(answers)}</ol>
+    </div>
+  </div>
+</section>
+<script src="/static/js/qbank.js" defer></script>"""
+    meta = {"title": f"KS3 {t['title']} worksheet with answers (printable, Year 7–9)", "body_class": f"qbank qb-ws-page {s['slug']}",
+            "description": f"Free printable KS3 {s['title']} worksheet on {t['title'].lower()} with answers and worked solutions: "
+                           f"{len(qs)} questions for Year 7, 8 and 9, from warm-up to challenge. Print it or save it as a PDF.",
+            "noindex": t.get("noindex", False)}
+    return (f"{ROOT}{s['slug']}/{t['slug']}/worksheet/", meta, body, f"qbank/{s['slug']}/{t['slug']}.json")
 
 
 def pages():
@@ -314,4 +369,5 @@ def pages():
             prev = live[i - 1][1] if i else None
             nxt = live[i + 1][1] if i + 1 < len(live) else None
             out.append(topic_page(s, plan, t, prev, nxt))
+            out.append(worksheet_page(s, plan, t))
     return out

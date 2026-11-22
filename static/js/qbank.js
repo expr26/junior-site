@@ -5,6 +5,7 @@
      S.qb[questionId] = { r: 'good' | 'fixed' | 'missed', t: 'subject/topic' }
    so it is saved with the stars and goes nowhere else. Points come from JG.answer; no timers, nothing rewards speed. */
 (function () {
+  document.addEventListener('click', function (e) { if (e.target.closest('[data-print]')) window.print(); });   /* worksheet pages */
   if (!window.JG) return;
   var S = JG.state(); S.qb = S.qb || {};
 
@@ -174,6 +175,14 @@
   /* ---------- filters ---------- */
   var F = { sub: '', level: '', mine: '' };
   var items = [].slice.call(list.querySelectorAll('.qb-q'));
+  var quiz = null;   /* Quick quiz: up to 10 random questions from the chosen part and level, in a random order */
+  function match(li) { return (!F.sub || li.getAttribute('data-sub') === F.sub) && (!F.level || li.getAttribute('data-level') === F.level); }
+  function newQuiz() {
+    var pool = items.filter(match);
+    for (var i = pool.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), x = pool[i]; pool[i] = pool[j]; pool[j] = x; }
+    quiz = pool.slice(0, 10);
+    quiz.forEach(function (li) { list.appendChild(li); build(li); });   /* fresh cards, so each quiz can be answered again */
+  }
   var box = document.getElementById('qb-filters');
 
   function counts() {
@@ -184,20 +193,23 @@
   }
   function apply() {
     var shown = 0, n = 0;
+    if (F.mine !== 'quiz') items.forEach(function (li) { list.appendChild(li); });
     items.forEach(function (li) {
       var r = S.qb[li.getAttribute('data-id')];
-      var ok = (!F.sub || li.getAttribute('data-sub') === F.sub) && (!F.level || li.getAttribute('data-level') === F.level) &&
+      var ok = F.mine === 'quiz' ? quiz.indexOf(li) >= 0 : match(li) &&
         (!F.mine || (F.mine === 'new' ? !r : r && r.r !== 'good'));
       li.hidden = !ok;
-      if (ok) { shown++; li.querySelector('.qb-n').textContent = ++n; }
+      if (ok) shown++;
     });
-    box.querySelector('.qb-shown').textContent = shown === items.length ? 'Showing all ' + shown + ' questions' : 'Showing ' + shown + ' of ' + items.length + ' questions';
+    [].forEach.call(list.children, function (li) { if (!li.hidden) li.querySelector('.qb-n').textContent = ++n; });
+    box.querySelector('.qb-shown').textContent = F.mine === 'quiz' ? 'Quick quiz: ' + shown + ' mixed questions. Press the button again for a new quiz.' : shown === items.length ? 'Showing all ' + shown + ' questions' : 'Showing ' + shown + ' of ' + items.length + ' questions';
     document.querySelector('.qb-empty').hidden = shown > 0;
   }
   box.addEventListener('click', function (e) {
     var b = e.target.closest('.qb-f'); if (!b) return;
     var f = b.getAttribute('data-f');
     F[f] = b.getAttribute('data-v');
+    if (F.mine === 'quiz') newQuiz();
     box.querySelectorAll('[data-f="' + f + '"]').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
     apply();
   });

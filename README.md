@@ -1,4 +1,4 @@
-# Junior site (working name)
+# ExaminerPrep Junior
 
 Maths and Science practice for students aged 9 to 14 (KS2, KS3, Lower Secondary, IB MYP, pre-IGCSE).
 Sister site of [examinerprep.com](https://examinerprep.com), with the same branding (navy/gold, Playfair Display + IBM Plex Sans).
@@ -21,6 +21,12 @@ Set up once in the Cloudflare dashboard: Workers & Pages → Create → Pages �
 
 Every push to `main` goes live, and every pull request gets its own preview URL.
 Unlike ExaminerPrep there is no second repository for the built output: Cloudflare builds from this one.
+### Custom domain: junior.examinerprep.com
+Pages project → **Custom domains** → **Set up a custom domain** → `junior.examinerprep.com` → Activate.
+If examinerprep.com's DNS is managed by Cloudflare, it adds the `CNAME junior → <project>.pages.dev` record and the HTTPS certificate itself
+(if the DNS is elsewhere, add that CNAME at your DNS provider). It usually goes live within a few minutes.
+`SITE_URL` in `config.py` must match the domain, because canonical links and the sitemap use it.
+
 `*.pages.dev` addresses are sent with `X-Robots-Tag: noindex` (see `_headers`), so only the real domain is indexed.
 
 ## Folders

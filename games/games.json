@@ -350,7 +350,48 @@
       "icon": "💡",
       "subject": "science",
       "kind": "sim",
-      "blurb": "Build circuits with cells, bulbs and switches."
+      "blurb": "Fix circuits, test which materials conduct, and compare series and parallel circuits with cells, bulbs and switches.",
+      "live": true,
+      "learn": "Complete circuits, conductors and insulators, switches, and how bulbs behave in series and parallel circuits.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: electric current, series and parallel circuits",
+        "PYP": "How the world works: electricity and simple circuits"
+      },
+      "guide_title": "Electric circuits: a quick guide",
+      "guide": [
+        {
+          "h": "A complete loop",
+          "p": "Electric current only flows when there is a complete loop from one end of the cell (battery) back to the other. Any gap, like an open switch or a missing wire, stops the current everywhere in that loop."
+        },
+        {
+          "h": "Conductors and insulators",
+          "p": "Conductors let electricity flow through them. Metals such as copper, steel and aluminium are good conductors. Insulators, such as plastic, rubber and wood, do not let electricity flow, which is why wires are covered in plastic."
+        },
+        {
+          "h": "Series circuits",
+          "p": "In a series circuit all the parts are in one loop. Adding more bulbs makes each one dimmer, and if one bulb breaks or is unscrewed, they all go out. Adding another cell makes the bulbs brighter."
+        },
+        {
+          "h": "Parallel circuits",
+          "p": "In a parallel circuit there is more than one path (branch). Each bulb gets the full push from the cell, so they stay bright, and if one bulb breaks the others stay on. Lights in a house are wired in parallel."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why do bulbs get dimmer in series?",
+          "a": "The bulbs share the push (voltage) from the cell. With two bulbs in series, each gets about half, so each one glows less brightly."
+        },
+        {
+          "q": "Is a metal spoon a conductor?",
+          "a": "Yes. Metals are good conductors of electricity, so a metal spoon in the gap completes the circuit and lights the bulb."
+        },
+        {
+          "q": "What does a switch do?",
+          "a": "A switch opens or closes a gap in the circuit. Closed, current flows; open, the circuit is broken and the current stops."
+        }
+      ]
     },
     {
       "slug": "food-web-island",

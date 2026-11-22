@@ -874,6 +874,55 @@
           "a": "The meter keeps counting up the kWh used. Write down the reading, then read it again later. Take the first reading away from the second to find how many kWh were used in between."
         }
       ]
+    },
+    {
+      "slug": "garden-designer",
+      "title": "Garden Designer",
+      "icon": "🌻",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Design garden plots on a grid: fence them, turf them, plant a triangle bed and fill a planter with cubes.",
+      "live": true,
+      "learn": "Perimeter and area of rectangles, the same area with a different perimeter, the area of a triangle as half a rectangle, compound L-shapes and the volume of a cuboid.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Geometry and measures: perimeter, area and volume",
+        "PYP": "Measurement: perimeter, area and volume"
+      },
+      "guide_title": "Perimeter, area and volume: a quick guide",
+      "guide": [
+        {
+          "h": "Perimeter: the distance round the edge",
+          "p": "The perimeter is the total distance all the way round a shape, like the fence round a garden. For a rectangle, add all four sides: length + width + length + width, which is the same as 2 × (length + width). A plot 5 m long and 4 m wide needs 18 m of fence. Perimeter is a length, so it is measured in cm or m."
+        },
+        {
+          "h": "Area: the space inside",
+          "p": "Area is how much surface a shape covers, like the turf on a lawn. On a grid, count the squares inside. For a rectangle, multiply: area = length × width, so 4 m × 3 m = 12 m². Area is measured in square units such as cm² or m². Two shapes can have the same area but different perimeters: a 6 m × 2 m plot and a 4 m × 3 m plot both cover 12 m², but need 16 m and 14 m of fence."
+        },
+        {
+          "h": "Triangles and L-shapes",
+          "p": "Cut a rectangle from one corner to the opposite corner and you get two matching triangles, so each triangle has half the area: length × width ÷ 2. For a compound shape like an L, split it into rectangles, find each area and add them. You can also find the area of the big rectangle and take away the missing corner. Both ways give the same answer."
+        },
+        {
+          "h": "Volume: the space in 3D",
+          "p": "Volume is the amount of space inside a 3D shape, like the soil in a planter or the water in a pond. For a cuboid, count the cubes in one layer (length × width), then multiply by the number of layers (the height): volume = length × width × height. A 4 m × 3 m × 2 m pond holds 24 m³. Volume uses cubic units such as cm³ or m³."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the difference between perimeter and area?",
+          "a": "Perimeter is the distance round the outside of a shape, measured in units like m. Area is the space inside, measured in square units like m². A fence is about perimeter; turf is about area."
+        },
+        {
+          "q": "How do you find the area of a triangle?",
+          "a": "Multiply the base by the perpendicular height and divide by 2. This works because a triangle is half of a rectangle (or parallelogram) with the same base and height."
+        },
+        {
+          "q": "How do you work out the volume of a cuboid?",
+          "a": "Multiply length × width × height. If a cuboid is 3 cm long, 3 cm wide and 2 cm high, it holds 3 × 3 × 2 = 18 one-centimetre cubes, so its volume is 18 cm³."
+        }
+      ]
     }
   ]
 }

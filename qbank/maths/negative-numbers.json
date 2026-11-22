@@ -1,0 +1,363 @@
+{
+ "slug": "negative-numbers",
+ "title": "Negative numbers",
+ "ks3": "Number: negative numbers and the four operations",
+ "art": "negative",
+ "intro": "Numbers below zero: temperatures, bank balances and depths below the sea. Practise ordering, adding, subtracting, multiplying and dividing them.",
+ "description": "Free KS3 Maths negative numbers questions with answers: ordering, temperature, adding and subtracting negatives, multiplying and dividing, and real-life problems. Marked instantly, for Year 7, 8 and 9 (ages 9 to 14).",
+ "subtopics": [
+  {
+   "slug": "order",
+   "title": "Ordering and temperature"
+  },
+  {
+   "slug": "addsub",
+   "title": "Adding and subtracting"
+  },
+  {
+   "slug": "muldiv",
+   "title": "Multiplying and dividing"
+  },
+  {
+   "slug": "life",
+   "title": "Real-life problems"
+  }
+ ],
+ "questions": [
+  {
+   "id": "neg-01",
+   "sub": "order",
+   "level": 1,
+   "type": "mc",
+   "q": "What temperature does the thermometer show?",
+   "options": [
+    "−4 °C",
+    "4 °C",
+    "−6 °C",
+    "−3 °C"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "thermo",
+    "temp": -4,
+    "lo": -10,
+    "hi": 10,
+    "step": 2
+   },
+   "hint": "The red liquid stops below 0. Count down from 0 in steps of 2.",
+   "explain": "The liquid stops two marks below 0, and each mark is 2 degrees. So it shows −4 °C."
+  },
+  {
+   "id": "neg-02",
+   "sub": "order",
+   "level": 1,
+   "type": "mc",
+   "q": "Which is colder: −8 °C or −3 °C?",
+   "options": [
+    "−8 °C",
+    "−3 °C"
+   ],
+   "answer": 0,
+   "hint": "Which one is further below zero?",
+   "explain": "−8 °C is 8 degrees below zero and −3 °C is only 3 below, so −8 °C is colder."
+  },
+  {
+   "id": "neg-03",
+   "sub": "order",
+   "level": 1,
+   "type": "mc",
+   "q": "Which list goes from smallest to largest?",
+   "options": [
+    "−5, −2, 0, 3",
+    "−2, −5, 0, 3",
+    "0, −2, −5, 3",
+    "3, 0, −2, −5"
+   ],
+   "answer": 0,
+   "hint": "On a number line, smaller numbers are further to the left.",
+   "explain": "Going along the number line from left to right: −5, −2, 0, 3."
+  },
+  {
+   "id": "neg-04",
+   "sub": "order",
+   "level": 2,
+   "type": "num",
+   "q": "At night the temperature is −3 °C. At midday it is 5 °C. How many degrees warmer is it at midday?",
+   "answer": "8",
+   "unit": "°C",
+   "hint": "Count from −3 up to 0, then from 0 up to 5.",
+   "explain": "From −3 up to 0 is 3 degrees, and from 0 up to 5 is 5 more. 3 + 5 = 8 degrees warmer."
+  },
+  {
+   "id": "neg-18",
+   "sub": "order",
+   "level": 1,
+   "type": "mc",
+   "q": "Which sign makes this true? −7 ☐ −4",
+   "options": [
+    "<  (is less than)",
+    ">  (is greater than)",
+    "=  (equals)"
+   ],
+   "answer": 0,
+   "hint": "Picture a number line. Which number is further to the left?",
+   "explain": "−7 is further left on the number line than −4, so −7 is less than −4: −7 < −4. (It is colder at −7 °C than at −4 °C.)"
+  },
+  {
+   "id": "neg-19",
+   "sub": "order",
+   "level": 1,
+   "type": "num",
+   "q": "The temperature is 4 °C. Overnight it falls by 9 degrees. What is the temperature now?",
+   "answer": "-5",
+   "unit": "°C",
+   "hint": "Count down 4 degrees to get to 0, then keep going.",
+   "explain": "4 − 9: going down 4 gets to 0 °C, and the other 5 degrees take it to −5 °C."
+  },
+  {
+   "id": "neg-20",
+   "sub": "order",
+   "level": 2,
+   "type": "mc",
+   "q": "Which list goes from largest to smallest?",
+   "options": [
+    "1, −0.5, −1.5, −2",
+    "1, −2, −1.5, −0.5",
+    "−2, −1.5, −0.5, 1",
+    "−0.5, 1, −1.5, −2"
+   ],
+   "answer": 0,
+   "hint": "The positive number is the largest. For negatives, the one closest to zero is the largest.",
+   "explain": "1 is the only positive number, so it is the largest. Then −0.5 is closest to zero, then −1.5, and −2 is the smallest: 1, −0.5, −1.5, −2."
+  },
+  {
+   "id": "neg-05",
+   "sub": "addsub",
+   "level": 1,
+   "type": "num",
+   "q": "Work out −2 + 6",
+   "answer": "4",
+   "hint": "Start at −2 on a number line and move 6 to the right.",
+   "explain": "From −2, moving 6 to the right gets you to 4."
+  },
+  {
+   "id": "neg-06",
+   "sub": "addsub",
+   "level": 1,
+   "type": "num",
+   "q": "Work out 3 − 7",
+   "answer": "-4",
+   "hint": "Start at 3 and move 7 to the left. You will go past zero.",
+   "explain": "From 3, moving 3 left gets you to 0, and 4 more gets you to −4."
+  },
+  {
+   "id": "neg-07",
+   "sub": "addsub",
+   "level": 2,
+   "type": "num",
+   "q": "Work out −4 − 5",
+   "answer": "-9",
+   "hint": "Start at −4 and move 5 further to the left.",
+   "explain": "Taking 5 away from −4 moves you further down: −4 − 5 = −9."
+  },
+  {
+   "id": "neg-08",
+   "sub": "addsub",
+   "level": 2,
+   "type": "num",
+   "q": "Work out 6 − (−3)",
+   "answer": "9",
+   "hint": "Taking away a negative is the same as adding.",
+   "explain": "Subtracting −3 is the same as adding 3: 6 − (−3) = 6 + 3 = 9."
+  },
+  {
+   "id": "neg-09",
+   "sub": "addsub",
+   "level": 3,
+   "type": "num",
+   "q": "Work out −7 + (−5) − (−2)",
+   "answer": "-10",
+   "hint": "Adding a negative means take away; taking away a negative means add.",
+   "explain": "−7 + (−5) = −12. Then −12 − (−2) = −12 + 2 = −10."
+  },
+  {
+   "id": "neg-10",
+   "sub": "addsub",
+   "level": 2,
+   "type": "num",
+   "q": "What number take away 4 gives −10?",
+   "answer": "-6",
+   "hint": "Work backwards: add 4 to −10.",
+   "explain": "−10 + 4 = −6. Check: −6 − 4 = −10."
+  },
+  {
+   "id": "neg-21",
+   "sub": "addsub",
+   "level": 1,
+   "type": "num",
+   "q": "Work out −8 + 3",
+   "answer": "-5",
+   "hint": "Start at −8 on a number line and move 3 to the right.",
+   "explain": "Starting at −8 and moving 3 to the right: −7, −6, −5. So −8 + 3 = −5."
+  },
+  {
+   "id": "neg-22",
+   "sub": "addsub",
+   "level": 2,
+   "type": "num",
+   "q": "Work out −3 − (−9)",
+   "answer": "6",
+   "hint": "Taking away a negative is the same as adding: − (−9) becomes + 9.",
+   "explain": "−3 − (−9) = −3 + 9 = 6."
+  },
+  {
+   "id": "neg-11",
+   "sub": "muldiv",
+   "level": 2,
+   "type": "num",
+   "q": "Work out −6 × 4",
+   "answer": "-24",
+   "hint": "A negative times a positive gives a negative.",
+   "explain": "6 × 4 = 24, and the signs are different, so the answer is −24."
+  },
+  {
+   "id": "neg-12",
+   "sub": "muldiv",
+   "level": 2,
+   "type": "num",
+   "q": "Work out −20 ÷ −5",
+   "answer": "4",
+   "hint": "Two negatives in a division give a positive.",
+   "explain": "20 ÷ 5 = 4, and the signs are the same, so the answer is positive: 4."
+  },
+  {
+   "id": "neg-13",
+   "sub": "muldiv",
+   "level": 3,
+   "type": "num",
+   "q": "Work out (−3)²",
+   "answer": "9",
+   "hint": "(−3)² means −3 × −3.",
+   "explain": "−3 × −3 = 9, because a negative times a negative is positive."
+  },
+  {
+   "id": "neg-14",
+   "sub": "muldiv",
+   "level": 3,
+   "type": "mc",
+   "q": "Which of these gives a negative answer?",
+   "options": [
+    "−2 × −3 × −1",
+    "−2 × −3",
+    "(−4)²",
+    "−8 ÷ −2"
+   ],
+   "answer": 0,
+   "hint": "Count the negative signs being multiplied or divided. An odd number of them gives a negative answer.",
+   "explain": "−2 × −3 = 6, then 6 × −1 = −6. The other three have two negatives each, so they are positive."
+  },
+  {
+   "id": "neg-23",
+   "sub": "muldiv",
+   "level": 2,
+   "type": "num",
+   "q": "Work out −36 ÷ 4",
+   "answer": "-9",
+   "hint": "Work out 36 ÷ 4 first. A negative divided by a positive gives a negative.",
+   "explain": "36 ÷ 4 = 9. The signs are different (− and +), so the answer is negative: −9."
+  },
+  {
+   "id": "neg-24",
+   "sub": "muldiv",
+   "level": 3,
+   "type": "num",
+   "q": "Work out (−2)³",
+   "answer": "-8",
+   "hint": "(−2)³ means −2 × −2 × −2. Do it one step at a time.",
+   "explain": "−2 × −2 = 4 (same signs give a positive). Then 4 × −2 = −8. So (−2)³ = −8."
+  },
+  {
+   "id": "neg-25",
+   "sub": "muldiv",
+   "level": 3,
+   "type": "num",
+   "q": "Work out 3 × (−4) + 10 ÷ (−2)",
+   "answer": "-17",
+   "hint": "Do the × and ÷ before the +. Then add the two answers.",
+   "explain": "3 × (−4) = −12 and 10 ÷ (−2) = −5. Then −12 + (−5) = −17."
+  },
+  {
+   "id": "neg-15",
+   "sub": "life",
+   "level": 2,
+   "type": "num",
+   "q": "A diver is 12 m below sea level (−12 m). They swim up 5 m. Where are they now?",
+   "answer": "-7",
+   "unit": "m",
+   "hint": "Swimming up means adding 5.",
+   "explain": "−12 + 5 = −7, so the diver is 7 m below sea level."
+  },
+  {
+   "id": "neg-16",
+   "sub": "life",
+   "level": 3,
+   "type": "num",
+   "q": "A bank account has £15 in it. £22 is spent from it. What is the balance now, in pounds?",
+   "answer": "-7",
+   "show": "−£7",
+   "hint": "15 − 22 goes below zero.",
+   "explain": "15 − 22 = −7, so the balance is −£7 (the account is £7 overdrawn)."
+  },
+  {
+   "id": "neg-17",
+   "sub": "life",
+   "level": 3,
+   "type": "num",
+   "q": "What number is exactly halfway between −6 and 2?",
+   "answer": "-2",
+   "hint": "The gap from −6 to 2 is 8. Go half of that from −6.",
+   "explain": "The gap is 8, so halfway is 4 steps from −6: −6 + 4 = −2. Check: −2 + 4 = 2."
+  },
+  {
+   "id": "neg-26",
+   "sub": "life",
+   "level": 1,
+   "type": "num",
+   "q": "A lift is on floor 2. The ground floor is floor 0 and the floors below it are −1, −2 and so on. The lift goes down 5 floors. Which floor is it on now?",
+   "answer": "-3",
+   "hint": "Count down from 2: 1, 0, ... and keep going below the ground.",
+   "explain": "2 − 5: down 2 floors reaches the ground floor (0), and 3 more floors takes it to floor −3."
+  },
+  {
+   "id": "neg-27",
+   "sub": "life",
+   "level": 2,
+   "type": "num",
+   "q": "In golf, a score below par is written as a negative number. Zara scores −2, then +3, then −4 on three holes. What is her total score?",
+   "answer": "-3",
+   "hint": "Add them one at a time: −2 + 3 first, then − 4.",
+   "explain": "−2 + 3 = 1. Then 1 − 4 = −3. Her total is −3 (3 under par)."
+  },
+  {
+   "id": "neg-28",
+   "sub": "life",
+   "level": 2,
+   "type": "num",
+   "q": "A football team scored 18 goals and let in 23 goals. Goal difference = goals scored − goals let in. What is the team's goal difference?",
+   "answer": "-5",
+   "hint": "Work out 18 − 23. Will the answer be above or below zero?",
+   "explain": "18 − 23 = −5, because they let in 5 more goals than they scored."
+  },
+  {
+   "id": "neg-29",
+   "sub": "life",
+   "level": 3,
+   "type": "num",
+   "q": "The temperature at midnight on five nights was −3 °C, 2 °C, −5 °C, 0 °C and 1 °C. What was the mean temperature?",
+   "answer": "-1",
+   "unit": "°C",
+   "hint": "Add all five temperatures, then divide by 5.",
+   "explain": "Total: −3 + 2 − 5 + 0 + 1 = −5. Mean = −5 ÷ 5 = −1 °C."
+  }
+ ]
+}

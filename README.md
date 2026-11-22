@@ -38,6 +38,8 @@ If examinerprep.com's DNS is managed by Cloudflare, it adds the `CNAME junior â†
 | `partials/` | `layout.html`, `head.html`, `header.html`, `footer.html`. `{{placeholders}}` are filled from `config.py`. |
 | `topics/*.json` | One file per topic: units with short Learn cards (with pictures) and practice questions. Format at the top of `topics.py`. |
 | `topics.py` | Turns topics into `/<subject>/<topic>/` maps and `/<subject>/<topic>/<unit>/` pages, and draws the pictures as inline SVG. |
+| `qbank/` | The KS3 question bank: `subjects.json` (every planned topic per subject) and one file per live topic in `qbank/maths/` and `qbank/physics/`. Format at the top of `qbank.py`. |
+| `qbank.py`, `qbank_art.py` | Builds `/question-bank/` pages; draws the topic pictures and the extra question figures as inline SVG. |
 | `static/js/game.js` | Stars, levels, streaks, badges, toasts and confetti (localStorage only). |
 | `static/js/practice.js` | The practice runner on unit pages. |
 | `static/` | CSS, fonts and JS, served at `/static/`. Fonts are copied from examinerprep-generator. |

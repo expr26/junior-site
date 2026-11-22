@@ -1,0 +1,570 @@
+{
+ "slug": "speed-and-motion",
+ "title": "Speed and motion",
+ "ks3": "Motion and forces: speed, distance-time graphs and relative motion",
+ "art": "speed",
+ "intro": "How fast? Practise speed = distance ÷ time, units like m/s and km/h, reading distance-time graphs, and relative motion.",
+ "description": "Free KS3 Physics speed questions with answers: speed, distance and time calculations, units, distance-time graphs and relative motion. Marked instantly, for Year 7, 8 and 9 (ages 9 to 14).",
+ "subtopics": [
+  {
+   "slug": "speed",
+   "title": "Speed, distance and time"
+  },
+  {
+   "slug": "units",
+   "title": "Units and changing units"
+  },
+  {
+   "slug": "graphs",
+   "title": "Distance-time graphs"
+  },
+  {
+   "slug": "relative",
+   "title": "Relative motion"
+  }
+ ],
+ "questions": [
+  {
+   "id": "spd-01",
+   "sub": "speed",
+   "level": 1,
+   "type": "mc",
+   "q": "Which is the formula for speed?",
+   "options": [
+    "speed = distance ÷ time",
+    "speed = distance × time",
+    "speed = time ÷ distance",
+    "speed = distance + time"
+   ],
+   "answer": 0,
+   "hint": "Speed tells you how far something goes in each second (or each hour).",
+   "explain": "Speed is the distance travelled in each unit of time, so speed = distance ÷ time."
+  },
+  {
+   "id": "spd-02",
+   "sub": "speed",
+   "level": 1,
+   "type": "num",
+   "q": "A car travels 100 m in 20 s. What is its speed?",
+   "answer": "5",
+   "unit": "m/s",
+   "fig": {
+    "type": "journey",
+    "distance": "100 m",
+    "time": "20 s",
+    "obj": "car"
+   },
+   "hint": "Speed = distance ÷ time.",
+   "explain": "Speed = 100 m ÷ 20 s = 5 m/s."
+  },
+  {
+   "id": "spd-03",
+   "sub": "speed",
+   "level": 2,
+   "type": "num",
+   "q": "A cyclist rides 30 km in 2 hours. What is the average speed?",
+   "answer": "15",
+   "unit": "km/h",
+   "hint": "Divide the distance by the time.",
+   "explain": "30 km ÷ 2 h = 15 km/h."
+  },
+  {
+   "id": "spd-04",
+   "sub": "speed",
+   "level": 2,
+   "type": "num",
+   "q": "A car travels at 20 m/s for 15 s. How far does it go?",
+   "answer": "300",
+   "unit": "m",
+   "hint": "Distance = speed × time.",
+   "explain": "Distance = 20 m/s × 15 s = 300 m."
+  },
+  {
+   "id": "spd-05",
+   "sub": "speed",
+   "level": 2,
+   "type": "num",
+   "q": "A runner runs 400 m at a steady 8 m/s. How long does it take?",
+   "answer": "50",
+   "unit": "s",
+   "hint": "Time = distance ÷ speed.",
+   "explain": "Time = 400 m ÷ 8 m/s = 50 s."
+  },
+  {
+   "id": "spd-06",
+   "sub": "speed",
+   "level": 3,
+   "type": "num",
+   "q": "A train travels 150 km in 1 hour 30 minutes. What is its average speed?",
+   "answer": "100",
+   "unit": "km/h",
+   "hint": "Write the time in hours first: 30 minutes is half an hour.",
+   "explain": "1 hour 30 minutes = 1.5 hours. Speed = 150 km ÷ 1.5 h = 100 km/h."
+  },
+  {
+   "id": "spd-19",
+   "sub": "speed",
+   "level": 1,
+   "type": "num",
+   "q": "Sam runs 90 m in 15 s. What is Sam's speed?",
+   "fig": {
+    "type": "journey",
+    "distance": "90 m",
+    "time": "15 s",
+    "obj": "person"
+   },
+   "answer": "6",
+   "unit": "m/s",
+   "hint": "Speed = distance ÷ time.",
+   "explain": "Speed = 90 m ÷ 15 s = 6 m/s."
+  },
+  {
+   "id": "spd-20",
+   "sub": "speed",
+   "level": 1,
+   "type": "mc",
+   "q": "Mia skates 100 m in 20 s. Leo skates the same 100 m in 25 s. Who is faster?",
+   "options": [
+    "Mia",
+    "Leo",
+    "They are the same speed",
+    "You can't tell"
+   ],
+   "answer": 0,
+   "hint": "They go the same distance. Who takes less time?",
+   "explain": "Over the same distance, the one who takes less time is faster. Mia: 100 ÷ 20 = 5 m/s. Leo: 100 ÷ 25 = 4 m/s. Mia is faster."
+  },
+  {
+   "id": "spd-21",
+   "sub": "speed",
+   "level": 2,
+   "type": "num",
+   "q": "A swimmer swims 4 lengths of a 25 m pool in 80 s. What is the swimmer's average speed?",
+   "answer": "1.25",
+   "unit": "m/s",
+   "hint": "Work out the total distance first.",
+   "explain": "Distance = 4 × 25 m = 100 m. Average speed = 100 m ÷ 80 s = 1.25 m/s."
+  },
+  {
+   "id": "spd-22",
+   "sub": "speed",
+   "level": 2,
+   "type": "mc",
+   "q": "A bus has an average speed of 30 km/h for a journey. What does this tell you?",
+   "options": [
+    "On average it went 30 km in each hour, but its speed changed along the way",
+    "It went at exactly 30 km/h the whole time",
+    "It never went faster than 30 km/h",
+    "It never stopped"
+   ],
+   "answer": 0,
+   "hint": "Buses speed up, slow down and stop at bus stops.",
+   "explain": "Average speed = total distance ÷ total time. The bus went faster at some times and slower (or stopped) at others; 30 km/h is the steady speed that would cover the same distance in the same time."
+  },
+  {
+   "id": "spd-23",
+   "sub": "speed",
+   "level": 3,
+   "type": "num",
+   "q": "A family drives 120 km at an average speed of 80 km/h. How many hours does the journey take?",
+   "answer": "1.5",
+   "unit": "hours",
+   "hint": "Time = distance ÷ speed.",
+   "explain": "Time = 120 km ÷ 80 km/h = 1.5 hours, which is 1 hour 30 minutes."
+  },
+  {
+   "id": "spd-07",
+   "sub": "units",
+   "level": 1,
+   "type": "mc",
+   "q": "Which of these is a unit of speed?",
+   "options": [
+    "m/s",
+    "m",
+    "s",
+    "N"
+   ],
+   "answer": 0,
+   "hint": "Speed is a distance divided by a time.",
+   "explain": "m/s means metres per second: a distance divided by a time. m is a distance, s is a time and N is a force."
+  },
+  {
+   "id": "spd-08",
+   "sub": "units",
+   "level": 2,
+   "type": "num",
+   "q": "How many metres are there in 3.5 km?",
+   "answer": "3500",
+   "unit": "m",
+   "hint": "1 km = 1000 m.",
+   "explain": "3.5 × 1000 = 3500 m."
+  },
+  {
+   "id": "spd-09",
+   "sub": "units",
+   "level": 3,
+   "type": "num",
+   "q": "A sprinter runs 100 m in 10 s. What is their speed in km/h?",
+   "answer": "36",
+   "unit": "km/h",
+   "hint": "Work out the speed in m/s first. Then: how many metres in an hour (3600 s)? How many km is that?",
+   "explain": "Speed = 100 ÷ 10 = 10 m/s. In one hour (3600 s) that is 10 × 3600 = 36,000 m = 36 km. So the speed is 36 km/h."
+  },
+  {
+   "id": "spd-10",
+   "sub": "units",
+   "level": 3,
+   "type": "num",
+   "q": "A snail crawls at 0.5 cm/s. How many minutes does it take to crawl 1.2 m?",
+   "answer": "4",
+   "unit": "minutes",
+   "hint": "Change 1.2 m into centimetres first.",
+   "explain": "1.2 m = 120 cm. Time = 120 ÷ 0.5 = 240 s, and 240 s = 4 minutes."
+  },
+  {
+   "id": "spd-24",
+   "sub": "units",
+   "level": 1,
+   "type": "mc",
+   "q": "What does the speed unit **km/h** mean?",
+   "options": [
+    "Kilometres travelled in each hour",
+    "Kilometres travelled in each second",
+    "Kilograms in each hour",
+    "Hours for each kilometre"
+   ],
+   "answer": 0,
+   "hint": "The / means \"per\" or \"in each\".",
+   "explain": "km/h means kilometres per hour: how many kilometres are travelled in each hour. m/s means metres per second."
+  },
+  {
+   "id": "spd-25",
+   "sub": "units",
+   "level": 2,
+   "type": "num",
+   "q": "A car travels at 72 km/h. What is its speed in m/s?",
+   "answer": "20",
+   "unit": "m/s",
+   "hint": "Change the kilometres into metres and the hour into seconds.",
+   "explain": "72 km = 72,000 m and 1 hour = 3600 s. Speed = 72,000 m ÷ 3600 s = 20 m/s."
+  },
+  {
+   "id": "spd-11",
+   "sub": "graphs",
+   "level": 1,
+   "type": "mc",
+   "q": "The graph shows a cyclist's journey. What is the cyclist doing between 10 s and 20 s?",
+   "options": [
+    "Stopped (not moving)",
+    "Moving at a steady speed",
+    "Speeding up",
+    "Going backwards"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "dtgraph",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      50
+     ],
+     [
+      20,
+      50
+     ],
+     [
+      30,
+      120
+     ]
+    ],
+    "tmax": 30,
+    "dmax": 120,
+    "tstep": 5,
+    "dstep": 20
+   },
+   "hint": "Does the distance change between 10 s and 20 s?",
+   "explain": "The line is flat: the distance stays at 50 m, so the cyclist is not moving."
+  },
+  {
+   "id": "spd-12",
+   "sub": "graphs",
+   "level": 2,
+   "type": "num",
+   "q": "Use the graph. What is the cyclist's speed in the first 10 s?",
+   "answer": "5",
+   "unit": "m/s",
+   "fig": {
+    "type": "dtgraph",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      50
+     ],
+     [
+      20,
+      50
+     ],
+     [
+      30,
+      120
+     ]
+    ],
+    "tmax": 30,
+    "dmax": 120,
+    "tstep": 5,
+    "dstep": 20
+   },
+   "hint": "Read the distance at 10 s, then divide by the time.",
+   "explain": "In the first 10 s the cyclist goes 50 m. Speed = 50 ÷ 10 = 5 m/s."
+  },
+  {
+   "id": "spd-13",
+   "sub": "graphs",
+   "level": 3,
+   "type": "num",
+   "q": "Use the graph. What is the cyclist's speed between 20 s and 30 s?",
+   "answer": "7",
+   "unit": "m/s",
+   "fig": {
+    "type": "dtgraph",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      50
+     ],
+     [
+      20,
+      50
+     ],
+     [
+      30,
+      120
+     ]
+    ],
+    "tmax": 30,
+    "dmax": 120,
+    "tstep": 5,
+    "dstep": 20
+   },
+   "hint": "Find how far the cyclist goes in those 10 s: subtract the two distances.",
+   "explain": "The distance goes from 50 m to 120 m, so 70 m in 10 s. Speed = 70 ÷ 10 = 7 m/s."
+  },
+  {
+   "id": "spd-14",
+   "sub": "graphs",
+   "level": 3,
+   "type": "num",
+   "q": "Use the graph. What is the cyclist's average speed for the whole 30 s?",
+   "answer": "4",
+   "unit": "m/s",
+   "fig": {
+    "type": "dtgraph",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      50
+     ],
+     [
+      20,
+      50
+     ],
+     [
+      30,
+      120
+     ]
+    ],
+    "tmax": 30,
+    "dmax": 120,
+    "tstep": 5,
+    "dstep": 20
+   },
+   "hint": "Average speed = total distance ÷ total time, including the stop.",
+   "explain": "Total distance 120 m, total time 30 s. Average speed = 120 ÷ 30 = 4 m/s."
+  },
+  {
+   "id": "spd-15",
+   "sub": "graphs",
+   "level": 2,
+   "type": "mc",
+   "q": "On a distance-time graph, what does a steeper straight line show?",
+   "options": [
+    "A faster speed",
+    "A slower speed",
+    "Stopped",
+    "Going downhill"
+   ],
+   "answer": 0,
+   "hint": "A steeper line means more distance in the same time.",
+   "explain": "The steeper the line, the more distance is covered each second, so the speed is faster."
+  },
+  {
+   "id": "spd-26",
+   "sub": "graphs",
+   "level": 2,
+   "type": "num",
+   "q": "The graph shows a skateboarder's journey. For how many seconds was the skateboarder stopped?",
+   "fig": {
+    "type": "dtgraph",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      40
+     ],
+     [
+      20,
+      40
+     ],
+     [
+      30,
+      100
+     ]
+    ],
+    "tmax": 30,
+    "dmax": 100,
+    "tstep": 5,
+    "dstep": 20
+   },
+   "answer": "10",
+   "unit": "s",
+   "hint": "Look for the part of the line that is flat.",
+   "explain": "The line is flat from 10 s to 20 s: the distance stays at 40 m. So the skateboarder was stopped for 20 − 10 = 10 s."
+  },
+  {
+   "id": "spd-27",
+   "sub": "graphs",
+   "level": 2,
+   "type": "num",
+   "q": "Use the graph. What is the skateboarder's speed between 20 s and 30 s?",
+   "fig": {
+    "type": "dtgraph",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      40
+     ],
+     [
+      20,
+      40
+     ],
+     [
+      30,
+      100
+     ]
+    ],
+    "tmax": 30,
+    "dmax": 100,
+    "tstep": 5,
+    "dstep": 20
+   },
+   "answer": "6",
+   "unit": "m/s",
+   "hint": "How far does the skateboarder go in those 10 seconds?",
+   "explain": "The distance goes from 40 m to 100 m, so 60 m in 10 s. Speed = 60 ÷ 10 = 6 m/s."
+  },
+  {
+   "id": "spd-28",
+   "sub": "graphs",
+   "level": 3,
+   "type": "mc",
+   "q": "On a distance-time graph, the line slopes **down** towards the time axis. What does this show?",
+   "options": [
+    "The object is moving back towards where it started",
+    "The object is slowing down",
+    "The object is stopped",
+    "The object is moving downhill"
+   ],
+   "answer": 0,
+   "hint": "The graph shows distance from the start. What is happening to that distance?",
+   "explain": "The distance from the start is getting smaller, so the object is coming back towards the start. A straight line sloping down means it comes back at a steady speed."
+  },
+  {
+   "id": "spd-16",
+   "sub": "relative",
+   "level": 2,
+   "type": "num",
+   "q": "Two cars drive the same way along a motorway. One goes at 30 m/s and the other at 25 m/s. How fast does the faster car pull away from the slower one?",
+   "answer": "5",
+   "unit": "m/s",
+   "hint": "Same direction: find the difference.",
+   "explain": "Moving the same way, the gap grows by 30 − 25 = 5 m every second: 5 m/s."
+  },
+  {
+   "id": "spd-17",
+   "sub": "relative",
+   "level": 3,
+   "type": "num",
+   "q": "Two trains travel towards each other on side-by-side tracks, at 40 m/s and 35 m/s. How fast does the gap between them close?",
+   "answer": "75",
+   "unit": "m/s",
+   "hint": "Opposite directions: both trains make the gap smaller.",
+   "explain": "Each second the gap shrinks by 40 + 35 = 75 m, so it closes at 75 m/s."
+  },
+  {
+   "id": "spd-18",
+   "sub": "relative",
+   "level": 3,
+   "type": "mc",
+   "q": "A train moves forwards at 20 m/s. You walk towards the back of the train at 1 m/s. What is your speed compared with the ground?",
+   "options": [
+    "19 m/s forwards",
+    "21 m/s forwards",
+    "20 m/s forwards",
+    "1 m/s backwards"
+   ],
+   "answer": 0,
+   "hint": "The train carries you forwards, but you are walking the other way.",
+   "explain": "Compared with the ground you move 20 − 1 = 19 m/s forwards. Compared with the train you move 1 m/s backwards."
+  },
+  {
+   "id": "spd-29",
+   "sub": "relative",
+   "level": 1,
+   "type": "mc",
+   "q": "You skate at 3 m/s. Your friend skates right beside you, the same way, also at 3 m/s. How fast does your friend seem to move compared with you?",
+   "options": [
+    "0 m/s, they seem to stay still",
+    "3 m/s",
+    "6 m/s",
+    "1.5 m/s"
+   ],
+   "answer": 0,
+   "hint": "Does the gap between you change?",
+   "explain": "You both go the same way at the same speed, so the gap does not change: 3 − 3 = 0 m/s. Compared with you, your friend seems to stay still."
+  },
+  {
+   "id": "spd-30",
+   "sub": "relative",
+   "level": 3,
+   "type": "num",
+   "q": "A jogger runs along a path at 3 m/s. A cyclist 100 m behind rides the same way at 8 m/s. How many seconds does the cyclist take to catch up with the jogger?",
+   "answer": "20",
+   "unit": "s",
+   "hint": "First find how fast the gap closes. Both move the same way.",
+   "explain": "The gap closes at 8 − 3 = 5 m/s. Time = 100 m ÷ 5 m/s = 20 s."
+  }
+ ]
+}

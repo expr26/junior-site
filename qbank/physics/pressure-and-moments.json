@@ -1,0 +1,420 @@
+{
+ "slug": "pressure-and-moments",
+ "title": "Pressure and moments",
+ "ks3": "Motion and forces: pressure on surfaces, pressure in liquids and gases, and moments",
+ "art": "pressure",
+ "intro": "Why snowshoes work, why dams are thick at the bottom and how a see-saw balances. Practise pressure = force ÷ area, pressure in fluids and moments.",
+ "description": "Free KS3 Physics pressure and moments questions with answers: pressure = force ÷ area, pressure in liquids and the atmosphere, moments, levers and balancing see-saws. Marked instantly, for Year 7, 8 and 9 (ages 9 to 14).",
+ "subtopics": [
+  {
+   "slug": "solids",
+   "title": "Pressure on surfaces"
+  },
+  {
+   "slug": "fluids",
+   "title": "Pressure in liquids and gases"
+  },
+  {
+   "slug": "moments",
+   "title": "Moments"
+  }
+ ],
+ "questions": [
+  {
+   "id": "prm-01",
+   "sub": "solids",
+   "level": 1,
+   "type": "mc",
+   "q": "Why does a drawing pin have a sharp point?",
+   "options": [
+    "The tiny area makes a big pressure, so it pushes in easily",
+    "It makes the pin lighter",
+    "It makes the force smaller",
+    "It stops the pin from rusting"
+   ],
+   "answer": 0,
+   "hint": "Pressure = force ÷ area. What happens when the area is very small?",
+   "explain": "The same push on a tiny area gives a very big pressure, so the point goes into the board easily. The flat head spreads the force on your thumb."
+  },
+  {
+   "id": "prm-02",
+   "sub": "solids",
+   "level": 1,
+   "type": "mc",
+   "q": "Why do snowshoes stop you sinking into deep snow?",
+   "options": [
+    "They spread your weight over a bigger area, so the pressure is less",
+    "They make you lighter",
+    "They melt the snow",
+    "They push down harder on the snow"
+   ],
+   "answer": 0,
+   "hint": "Your weight stays the same. What changes?",
+   "explain": "Snowshoes have a big area, so your weight is spread out and the pressure on the snow is smaller."
+  },
+  {
+   "id": "prm-03",
+   "sub": "solids",
+   "level": 2,
+   "type": "num",
+   "q": "A box weighing 200 N rests on an area of 4 m². What pressure does it put on the floor? (pressure = force ÷ area)",
+   "answer": "50",
+   "unit": "N/m²",
+   "hint": "Divide the force by the area.",
+   "explain": "200 N ÷ 4 m² = 50 N/m² (50 pascals)."
+  },
+  {
+   "id": "prm-04",
+   "sub": "solids",
+   "level": 2,
+   "type": "num",
+   "q": "A force of 60 N pushes on an area of 3 m². What is the pressure?",
+   "answer": "20",
+   "unit": "N/m²",
+   "hint": "Pressure = force ÷ area.",
+   "explain": "60 N ÷ 3 m² = 20 N/m²."
+  },
+  {
+   "id": "prm-05",
+   "sub": "solids",
+   "level": 3,
+   "type": "num",
+   "q": "A person weighing 600 N stands on one foot. The foot has an area of 0.02 m². What pressure does it put on the floor?",
+   "answer": "30000",
+   "unit": "N/m²",
+   "hint": "Divide 600 by 0.02. Dividing by 0.02 is the same as multiplying by 50.",
+   "explain": "600 ÷ 0.02 = 30,000 N/m²."
+  },
+  {
+   "id": "prm-06",
+   "sub": "solids",
+   "level": 3,
+   "type": "num",
+   "q": "A pressure of 500 N/m² acts on an area of 2 m². What is the force?",
+   "answer": "1000",
+   "unit": "N",
+   "hint": "Force = pressure × area.",
+   "explain": "500 N/m² × 2 m² = 1000 N."
+  },
+  {
+   "id": "prm-15",
+   "sub": "solids",
+   "level": 1,
+   "type": "mc",
+   "q": "Which shoes would sink deepest into a soft, muddy lawn? (The person wearing them is the same.)",
+   "options": [
+    "Shoes with thin, pointed heels",
+    "Flat trainers",
+    "Wide wellies",
+    "Snowshoes"
+   ],
+   "answer": 0,
+   "hint": "The weight is the same. Which shoes have the smallest area touching the ground?",
+   "explain": "Pressure = force ÷ area. The same weight on the smallest area gives the biggest pressure, so thin, pointed heels sink in deepest."
+  },
+  {
+   "id": "prm-16",
+   "sub": "solids",
+   "level": 2,
+   "type": "num",
+   "q": "A full suitcase weighs 240 N. Its base has an area of 0.12 m². What pressure does it put on the floor, in pascals? (1 Pa = 1 N/m²)",
+   "answer": "2000",
+   "unit": "Pa",
+   "hint": "Pressure = force ÷ area.",
+   "explain": "Pressure = 240 N ÷ 0.12 m² = 2000 N/m² = 2000 Pa."
+  },
+  {
+   "id": "prm-17",
+   "sub": "solids",
+   "level": 3,
+   "type": "num",
+   "q": "An elephant weighs 40,000 N. It stands on four feet, and each foot has an area of 0.1 m². What pressure does the elephant put on the ground?",
+   "answer": "100000",
+   "unit": "N/m²",
+   "hint": "First find the total area of all four feet.",
+   "explain": "Total area = 4 × 0.1 m² = 0.4 m². Pressure = 40,000 N ÷ 0.4 m² = 100,000 N/m²."
+  },
+  {
+   "id": "prm-07",
+   "sub": "fluids",
+   "level": 2,
+   "type": "mc",
+   "q": "What happens to the pressure in water as you go deeper?",
+   "options": [
+    "It increases",
+    "It decreases",
+    "It stays the same"
+   ],
+   "answer": 0,
+   "hint": "There is more water above you pushing down.",
+   "explain": "The deeper you go, the more water there is above you, so the pressure increases. That is why your ears hurt at the bottom of a deep pool."
+  },
+  {
+   "id": "prm-08",
+   "sub": "fluids",
+   "level": 2,
+   "type": "mc",
+   "q": "What happens to air pressure as you climb a high mountain?",
+   "options": [
+    "It decreases",
+    "It increases",
+    "It stays the same"
+   ],
+   "answer": 0,
+   "hint": "Is there more or less air above you at the top?",
+   "explain": "Higher up there is less air above you pushing down, so the air pressure decreases."
+  },
+  {
+   "id": "prm-09",
+   "sub": "fluids",
+   "level": 3,
+   "type": "mc",
+   "q": "Why is a dam built much thicker at the bottom than at the top?",
+   "options": [
+    "The water pressure is much greater at the bottom",
+    "The water is warmer at the bottom",
+    "The top holds more water",
+    "To make the dam look nicer"
+   ],
+   "answer": 0,
+   "hint": "Think about how pressure changes with depth.",
+   "explain": "Water pressure increases with depth, so the bottom of the dam must be strongest to hold back the bigger push."
+  },
+  {
+   "id": "prm-18",
+   "sub": "fluids",
+   "level": 1,
+   "type": "mc",
+   "q": "A bottle of water has three holes, one above the other. From which hole does the water come out fastest?",
+   "options": [
+    "The bottom hole",
+    "The top hole",
+    "The middle hole",
+    "They are all the same"
+   ],
+   "answer": 0,
+   "hint": "Where is the water deepest?",
+   "explain": "The bottom hole has the most water above it, so the pressure there is biggest and the water is pushed out fastest."
+  },
+  {
+   "id": "prm-19",
+   "sub": "fluids",
+   "level": 1,
+   "type": "mc",
+   "q": "You push a beach ball under the water in a swimming pool. What do you feel?",
+   "options": [
+    "The water pushes it back up",
+    "The water pulls it down",
+    "Nothing at all",
+    "The ball gets heavier"
+   ],
+   "answer": 0,
+   "hint": "Let go and see what the ball does.",
+   "explain": "The water pushes up on the ball with a force called upthrust. Under the water the upthrust is bigger than the ball's weight, so you feel it pushing back up."
+  },
+  {
+   "id": "prm-20",
+   "sub": "fluids",
+   "level": 2,
+   "type": "mc",
+   "q": "A sealed bag of crisps is carried to the top of a high mountain. It puffs up. Why?",
+   "options": [
+    "The air pressure outside is lower, so the air inside pushes the bag out",
+    "The air pressure outside is higher, so it squashes the bag",
+    "The crisps get bigger",
+    "More air gets into the bag"
+   ],
+   "answer": 0,
+   "hint": "Is there more or less air above you at the top of a mountain?",
+   "explain": "Air pressure is lower high up, because there is less air above pushing down. The air sealed in the bag now pushes out harder than the air outside pushes in, so the bag swells."
+  },
+  {
+   "id": "prm-21",
+   "sub": "fluids",
+   "level": 2,
+   "type": "mc",
+   "q": "A boat floats still on a lake. How does the upthrust on it compare with its weight?",
+   "options": [
+    "They are equal",
+    "The upthrust is bigger",
+    "The weight is bigger",
+    "There is no upthrust on a floating boat"
+   ],
+   "answer": 0,
+   "hint": "The boat is not moving up or down.",
+   "explain": "The boat stays still, so the forces on it are balanced: the upthrust pushing up is the same size as its weight pulling down."
+  },
+  {
+   "id": "prm-22",
+   "sub": "fluids",
+   "level": 3,
+   "type": "mc",
+   "q": "Pool A is small and 2 m deep. Pool B is huge but only 1 m deep. Both are full of water. Where is the water pressure on the bottom greater?",
+   "options": [
+    "Pool A, because it is deeper",
+    "Pool B, because it holds more water",
+    "It is the same in both",
+    "You can't tell without the width"
+   ],
+   "answer": 0,
+   "hint": "Pressure in a liquid depends on how much water is above that point.",
+   "explain": "Water pressure depends on depth (and on the liquid), not on how wide the pool is. The bottom of pool A is deeper, so the pressure there is greater."
+  },
+  {
+   "id": "prm-10",
+   "sub": "moments",
+   "level": 1,
+   "type": "mc",
+   "q": "A moment is the turning effect of a force. What does the size of a moment depend on?",
+   "options": [
+    "The force and its distance from the pivot",
+    "Only the size of the force",
+    "Only the distance from the pivot",
+    "The colour of the lever"
+   ],
+   "answer": 0,
+   "hint": "Moment = force × distance.",
+   "explain": "Moment = force × perpendicular distance from the pivot. A bigger force or a bigger distance gives a bigger turning effect."
+  },
+  {
+   "id": "prm-11",
+   "sub": "moments",
+   "level": 2,
+   "type": "num",
+   "q": "A force of 20 N acts 3 m from a pivot. What is its moment? (moment = force × distance)",
+   "answer": "60",
+   "unit": "N m",
+   "hint": "Multiply the force by the distance.",
+   "explain": "20 N × 3 m = 60 N m (newton metres)."
+  },
+  {
+   "id": "prm-12",
+   "sub": "moments",
+   "level": 2,
+   "type": "mc",
+   "q": "Is this see-saw balanced?",
+   "options": [
+    "Yes, both moments are 60 N m",
+    "No, the left side goes down",
+    "No, the right side goes down"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "seesaw",
+    "left": [
+     "30 N",
+     2
+    ],
+    "right": [
+     "20 N",
+     3
+    ]
+   },
+   "hint": "Work out force × distance on each side.",
+   "explain": "Left: 30 N × 2 m = 60 N m. Right: 20 N × 3 m = 60 N m. The moments are equal, so it balances."
+  },
+  {
+   "id": "prm-13",
+   "sub": "moments",
+   "level": 3,
+   "type": "num",
+   "q": "The see-saw is balanced. How far from the pivot is the 20 N block?",
+   "answer": "3",
+   "unit": "m",
+   "fig": {
+    "type": "seesaw",
+    "left": [
+     "40 N",
+     1.5
+    ],
+    "right": [
+     "20 N",
+     "?"
+    ]
+   },
+   "hint": "When it balances, the moments on each side are equal.",
+   "explain": "Left moment: 40 N × 1.5 m = 60 N m. The right moment must also be 60 N m, so 20 N × distance = 60, and the distance is 3 m."
+  },
+  {
+   "id": "prm-14",
+   "sub": "moments",
+   "level": 3,
+   "type": "mc",
+   "q": "Why is it easier to open a door by pushing near the handle than near the hinge?",
+   "options": [
+    "The bigger distance from the hinge gives a bigger moment for the same force",
+    "The door is lighter near the handle",
+    "There is less friction near the handle",
+    "The hinge pushes back less"
+   ],
+   "answer": 0,
+   "hint": "The hinge is the pivot.",
+   "explain": "Moment = force × distance. Pushing far from the hinge gives a bigger turning effect with the same push."
+  },
+  {
+   "id": "prm-23",
+   "sub": "moments",
+   "level": 1,
+   "type": "mc",
+   "q": "When you open a door, where is the pivot (the point it turns around)?",
+   "options": [
+    "The hinges",
+    "The handle",
+    "The middle of the door",
+    "The floor"
+   ],
+   "answer": 0,
+   "hint": "Which part of the door stays still while the rest swings round?",
+   "explain": "The door turns around its hinges, so the hinges are the pivot."
+  },
+  {
+   "id": "prm-24",
+   "sub": "moments",
+   "level": 2,
+   "type": "num",
+   "q": "Dad weighs 800 N and sits 1 m from the pivot. The see-saw balances when a child sits 2 m from the pivot on the other side. What is the child's weight?",
+   "fig": {
+    "type": "seesaw",
+    "left": [
+     "800 N",
+     1
+    ],
+    "right": [
+     "?",
+     2
+    ]
+   },
+   "answer": "400",
+   "unit": "N",
+   "hint": "When it balances, the moments on each side are equal.",
+   "explain": "Dad's moment: 800 N × 1 m = 800 N m. The child's moment must also be 800 N m, so weight × 2 m = 800 N m, and the weight is 800 ÷ 2 = 400 N."
+  },
+  {
+   "id": "prm-25",
+   "sub": "moments",
+   "level": 2,
+   "type": "mc",
+   "q": "Why does a wheelbarrow have long handles?",
+   "options": [
+    "Lifting far from the pivot (the wheel) gives a bigger moment, so you need less force",
+    "Long handles make the load lighter",
+    "Long handles stop the wheel from turning",
+    "Long handles make the load move faster"
+   ],
+   "answer": 0,
+   "hint": "Where is the pivot of a wheelbarrow?",
+   "explain": "The wheel is the pivot. Moment = force × distance, so lifting at the end of long handles gives a big turning effect with a small force."
+  },
+  {
+   "id": "prm-26",
+   "sub": "moments",
+   "level": 3,
+   "type": "num",
+   "q": "You need a moment of 20 N m to undo a nut on your bike. Your spanner is 0.25 m long. What force must you push with at the end of the spanner?",
+   "answer": "80",
+   "unit": "N",
+   "hint": "Moment = force × distance, so force = moment ÷ distance.",
+   "explain": "Force = 20 N m ÷ 0.25 m = 80 N. A longer spanner would need a smaller force."
+  }
+ ]
+}

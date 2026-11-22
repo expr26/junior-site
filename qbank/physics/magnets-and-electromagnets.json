@@ -1,0 +1,448 @@
+{
+ "slug": "magnets-and-electromagnets",
+ "title": "Magnets and electromagnets",
+ "ks3": "Electricity and electromagnetism: magnetic poles, fields, the Earth's magnetism and electromagnets",
+ "art": "magnets",
+ "intro": "North and south poles, magnetic fields, compasses and electromagnets you can switch on and off.",
+ "description": "Free KS3 Physics magnets questions with answers: magnetic materials, poles, attraction and repulsion, magnetic fields, compasses and electromagnets. Marked instantly, for Year 7, 8 and 9 (ages 9 to 14).",
+ "subtopics": [
+  {
+   "slug": "magnets",
+   "title": "Magnets and poles"
+  },
+  {
+   "slug": "fields",
+   "title": "Magnetic fields"
+  },
+  {
+   "slug": "electro",
+   "title": "Electromagnets"
+  }
+ ],
+ "questions": [
+  {
+   "id": "mag-01",
+   "sub": "magnets",
+   "level": 1,
+   "type": "mc",
+   "q": "What are the two ends of a bar magnet called?",
+   "options": [
+    "The north and south poles",
+    "Positive and negative",
+    "The top and bottom",
+    "Left and right"
+   ],
+   "answer": 0,
+   "hint": "A compass uses them to find directions.",
+   "explain": "The ends of a magnet are its north (N) and south (S) poles. That is where the magnetic force is strongest."
+  },
+  {
+   "id": "mag-02",
+   "sub": "magnets",
+   "level": 1,
+   "type": "mc",
+   "q": "Which metal is attracted to a magnet?",
+   "options": [
+    "Iron",
+    "Copper",
+    "Aluminium",
+    "Gold"
+   ],
+   "answer": 0,
+   "hint": "Only a few metals are magnetic.",
+   "explain": "Iron is a magnetic material. Copper, aluminium and gold are metals, but they are not attracted to magnets."
+  },
+  {
+   "id": "mag-03",
+   "sub": "magnets",
+   "level": 2,
+   "type": "mc",
+   "q": "Which of these metals is magnetic?",
+   "options": [
+    "Nickel",
+    "Copper",
+    "Aluminium",
+    "Silver"
+   ],
+   "answer": 0,
+   "hint": "The three magnetic metals are iron, nickel and cobalt.",
+   "explain": "Nickel is magnetic, like iron and cobalt. Most other metals are not."
+  },
+  {
+   "id": "mag-04",
+   "sub": "magnets",
+   "level": 1,
+   "type": "mc",
+   "q": "What happens when these two magnets are close together?",
+   "options": [
+    "They attract",
+    "They repel",
+    "Nothing"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "magnets",
+    "left": "NS",
+    "right": "NS"
+   },
+   "hint": "Look at the two poles that face each other.",
+   "explain": "A south pole faces a north pole. Opposite poles attract."
+  },
+  {
+   "id": "mag-05",
+   "sub": "magnets",
+   "level": 1,
+   "type": "mc",
+   "q": "What happens when these two magnets are close together?",
+   "options": [
+    "They repel",
+    "They attract",
+    "Nothing"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "magnets",
+    "left": "NS",
+    "right": "SN"
+   },
+   "hint": "Look at the two poles that face each other.",
+   "explain": "A south pole faces a south pole. Like poles repel."
+  },
+  {
+   "id": "mag-06",
+   "sub": "magnets",
+   "level": 3,
+   "type": "mc",
+   "q": "A bar magnet is cut in half. What do you get?",
+   "options": [
+    "Two smaller magnets, each with a north and a south pole",
+    "A north piece and a south piece",
+    "Two pieces that are not magnets",
+    "One magnet and one piece of plain iron"
+   ],
+   "answer": 0,
+   "hint": "You can never get a pole on its own.",
+   "explain": "Each half becomes a complete magnet with its own north and south pole."
+  },
+  {
+   "id": "mag-15",
+   "sub": "magnets",
+   "level": 1,
+   "type": "mc",
+   "q": "Which of these would a magnet pick up?",
+   "options": [
+    "A steel paper clip",
+    "A plastic ruler",
+    "An aluminium drinks can",
+    "A glass marble"
+   ],
+   "answer": 0,
+   "hint": "Steel is mostly iron.",
+   "explain": "Steel is made mostly of iron, so it is a magnetic material. Plastic, aluminium and glass are not attracted to magnets."
+  },
+  {
+   "id": "mag-16",
+   "sub": "magnets",
+   "level": 1,
+   "type": "mc",
+   "q": "A fridge magnet holds a paper note on the fridge door. What does this show?",
+   "options": [
+    "Magnetism can act through paper",
+    "Paper is magnetic",
+    "The fridge is a magnet",
+    "Magnets only work on paper"
+   ],
+   "answer": 0,
+   "hint": "The magnet is not touching the fridge directly.",
+   "explain": "The magnetic force passes through the paper, which is not magnetic, and pulls on the steel door."
+  },
+  {
+   "id": "mag-17",
+   "sub": "magnets",
+   "level": 2,
+   "type": "mc",
+   "q": "A steel needle is stroked many times, in the same direction, with one end of a magnet. What happens?",
+   "options": [
+    "The needle becomes a magnet",
+    "The needle becomes charged",
+    "The needle becomes copper",
+    "Nothing happens"
+   ],
+   "answer": 0,
+   "hint": "This is how you can make a simple compass needle.",
+   "explain": "Stroking a steel needle with a magnet magnetises it. Steel keeps its magnetism, so the needle becomes a permanent magnet."
+  },
+  {
+   "id": "mag-18",
+   "sub": "magnets",
+   "level": 3,
+   "type": "mc",
+   "q": "You have two metal bars that look the same. One is a magnet and one is plain iron. Which test proves that a bar is a magnet?",
+   "options": [
+    "One end of it repels a pole of a known magnet",
+    "It is attracted to a known magnet",
+    "It sticks to a steel fridge",
+    "It is shiny"
+   ],
+   "answer": 0,
+   "hint": "Plain iron is attracted to both poles of a magnet.",
+   "explain": "Iron is attracted to any magnet, so attraction proves nothing. Only a magnet can repel another magnet (like poles repel), so repulsion is the test."
+  },
+  {
+   "id": "mag-07",
+   "sub": "fields",
+   "level": 2,
+   "type": "mc",
+   "q": "Where is the magnetic field of a bar magnet strongest?",
+   "options": [
+    "At the poles",
+    "In the middle",
+    "Far away from the magnet",
+    "It is the same everywhere"
+   ],
+   "answer": 0,
+   "hint": "Where do paper clips stick to a magnet most?",
+   "explain": "The field lines are closest together at the poles, so the field is strongest there."
+  },
+  {
+   "id": "mag-08",
+   "sub": "fields",
+   "level": 2,
+   "type": "mc",
+   "q": "Outside a magnet, which way do the magnetic field lines point?",
+   "options": [
+    "From the north pole to the south pole",
+    "From the south pole to the north pole",
+    "Round in circles in the middle",
+    "They have no direction"
+   ],
+   "answer": 0,
+   "hint": "A small compass placed near the north pole points away from it.",
+   "explain": "Field lines go from the north pole round to the south pole. A compass needle lines up with them."
+  },
+  {
+   "id": "mag-09",
+   "sub": "fields",
+   "level": 2,
+   "type": "mc",
+   "q": "Why does a compass needle point north?",
+   "options": [
+    "The Earth has a magnetic field",
+    "The Sun pulls it",
+    "Gravity pulls it",
+    "It is made of copper"
+   ],
+   "answer": 0,
+   "hint": "The Earth behaves like a giant magnet.",
+   "explain": "The Earth has a magnetic field. The compass needle is a small magnet that lines up with it."
+  },
+  {
+   "id": "mag-19",
+   "sub": "fields",
+   "level": 1,
+   "type": "mc",
+   "q": "What can you sprinkle round a magnet to see the shape of its magnetic field?",
+   "options": [
+    "Iron filings",
+    "Salt",
+    "Sand",
+    "Sugar"
+   ],
+   "answer": 0,
+   "hint": "It must be a magnetic material.",
+   "explain": "Tiny iron filings line up along the magnetic field lines and show the field's shape."
+  },
+  {
+   "id": "mag-20",
+   "sub": "fields",
+   "level": 2,
+   "type": "mc",
+   "q": "A small plotting compass is put next to a bar magnet. What does its needle do?",
+   "options": [
+    "It lines up along the magnetic field line there",
+    "It always points to the Earth's North",
+    "It spins round and round",
+    "It points straight at the middle of the magnet"
+   ],
+   "answer": 0,
+   "hint": "The needle is a tiny magnet itself.",
+   "explain": "The needle lines up with the field. Its north end points along the field line, away from the magnet's north pole and towards its south pole. Moving the compass around lets you draw the field lines."
+  },
+  {
+   "id": "mag-21",
+   "sub": "fields",
+   "level": 3,
+   "type": "mc",
+   "q": "The north pole of a compass needle points towards the Arctic. What kind of magnetic pole must be in the Arctic?",
+   "options": [
+    "A magnetic south pole",
+    "A magnetic north pole",
+    "No pole at all",
+    "A positive charge"
+   ],
+   "answer": 0,
+   "hint": "Opposite poles attract.",
+   "explain": "A north pole is attracted to a south pole, so the Earth's magnetic pole near the geographic North Pole is actually a magnetic south pole."
+  },
+  {
+   "id": "mag-10",
+   "sub": "electro",
+   "level": 2,
+   "type": "mc",
+   "q": "How can you make an electromagnet?",
+   "options": [
+    "Pass a current through a coil of wire wrapped round an iron core",
+    "Rub an iron bar with a cloth",
+    "Heat a piece of iron",
+    "Put copper in salty water"
+   ],
+   "answer": 0,
+   "hint": "\"Electro\" means you need electricity.",
+   "explain": "A current in a coil of wire makes a magnetic field. An iron core inside the coil makes the field much stronger."
+  },
+  {
+   "id": "mag-11",
+   "sub": "electro",
+   "level": 2,
+   "type": "mc",
+   "q": "Which material makes the best core for an electromagnet?",
+   "options": [
+    "Iron",
+    "Plastic",
+    "Copper",
+    "Wood"
+   ],
+   "answer": 0,
+   "hint": "The core must be a magnetic material.",
+   "explain": "Iron is magnetic and easily magnetised, so it makes the electromagnet much stronger. It also loses its magnetism when the current is switched off."
+  },
+  {
+   "id": "mag-12",
+   "sub": "electro",
+   "level": 3,
+   "type": "mc",
+   "q": "Which change makes an electromagnet stronger?",
+   "options": [
+    "More turns of wire on the coil",
+    "Fewer turns of wire",
+    "A smaller current",
+    "Taking out the iron core"
+   ],
+   "answer": 0,
+   "hint": "There are three ways: more turns, more current, an iron core.",
+   "explain": "More turns of wire make a stronger field. A bigger current and an iron core also make it stronger."
+  },
+  {
+   "id": "mag-13",
+   "sub": "electro",
+   "level": 3,
+   "type": "mc",
+   "q": "Why do scrapyard cranes use electromagnets instead of ordinary magnets?",
+   "options": [
+    "They can be switched off to drop the metal",
+    "They are lighter",
+    "They can pick up copper",
+    "They don't need electricity"
+   ],
+   "answer": 0,
+   "hint": "How would you let go of the car with an ordinary magnet?",
+   "explain": "An electromagnet only works while the current is on. Switch it off and the metal drops."
+  },
+  {
+   "id": "mag-14",
+   "sub": "electro",
+   "level": 3,
+   "type": "mc",
+   "q": "Which of these uses an electromagnet?",
+   "options": [
+    "An electric doorbell",
+    "A candle",
+    "A bicycle bell",
+    "A wooden ruler"
+   ],
+   "answer": 0,
+   "hint": "Which one has a current flowing in it?",
+   "explain": "An electric bell uses an electromagnet to pull a metal arm that hits the bell, many times a second."
+  },
+  {
+   "id": "mag-22",
+   "sub": "electro",
+   "level": 1,
+   "type": "mc",
+   "q": "What does an electric current in a wire make around the wire?",
+   "options": [
+    "A magnetic field",
+    "A gravitational field",
+    "Light",
+    "Sound"
+   ],
+   "answer": 0,
+   "hint": "A compass needle near the wire moves when the current is switched on.",
+   "explain": "Any electric current makes a magnetic field around it. That is why a compass needle near the wire moves when the current flows."
+  },
+  {
+   "id": "mag-23",
+   "sub": "electro",
+   "level": 2,
+   "type": "mc",
+   "q": "The current in an electromagnet is made to flow the other way. What happens?",
+   "options": [
+    "Its north and south poles swap over",
+    "It stops working",
+    "It becomes twice as strong",
+    "Nothing changes"
+   ],
+   "answer": 0,
+   "hint": "The direction of the field depends on the direction of the current.",
+   "explain": "Reversing the current reverses the magnetic field, so the north and south poles swap ends."
+  },
+  {
+   "id": "mag-24",
+   "sub": "electro",
+   "level": 2,
+   "type": "mc",
+   "q": "What shape is the magnetic field around a coil of wire carrying a current?",
+   "options": [
+    "Like the field around a bar magnet",
+    "Circles only inside the coil",
+    "A straight line",
+    "There is no field"
+   ],
+   "answer": 0,
+   "hint": "A coil has a north end and a south end.",
+   "explain": "A current-carrying coil has a field like a bar magnet's, with a north pole at one end and a south pole at the other."
+  },
+  {
+   "id": "mag-25",
+   "sub": "electro",
+   "level": 2,
+   "type": "mc",
+   "q": "Maglev trains float just above the track without touching it. What holds them up?",
+   "options": [
+    "Magnetic forces from powerful electromagnets",
+    "Jets of air",
+    "Static electricity",
+    "Very strong springs"
+   ],
+   "answer": 0,
+   "hint": "\"Mag\" is short for magnetic.",
+   "explain": "Maglev means magnetic levitation. Electromagnets in the train and track push or pull so the train floats, with no wheel friction."
+  },
+  {
+   "id": "mag-26",
+   "sub": "electro",
+   "level": 3,
+   "type": "mc",
+   "q": "In a simple electric motor, a coil carrying a current sits between the poles of a magnet. Why does the coil turn?",
+   "options": [
+    "The magnet's field and the current in the coil make forces that push the sides of the coil",
+    "The current heats the coil and it expands",
+    "The coil becomes charged and is repelled",
+    "Gravity pulls the coil round"
+   ],
+   "answer": 0,
+   "hint": "A wire carrying a current has its own magnetic field.",
+   "explain": "The current makes a magnetic field around the coil. This field and the magnet's field push on each other, so forces act on the sides of the coil and make it turn."
+  }
+ ]
+}

@@ -1,0 +1,501 @@
+{
+ "slug": "transformations",
+ "title": "Transformations",
+ "ks3": "Geometry and measures: reflection, rotation, translation, enlargement and symmetry",
+ "art": "transform",
+ "intro": "Flip it, turn it, slide it or make it bigger. Practise reflections, rotations, translations, enlargements and symmetry.",
+ "description": "Free KS3 Maths transformations questions with answers: reflection, rotation, translation, enlargement and scale factor, line and rotational symmetry. Marked instantly, for Year 7, 8 and 9 (ages 9 to 14).",
+ "subtopics": [
+  {
+   "slug": "reflect",
+   "title": "Reflection"
+  },
+  {
+   "slug": "translate",
+   "title": "Translation"
+  },
+  {
+   "slug": "rotate",
+   "title": "Rotation"
+  },
+  {
+   "slug": "enlarge",
+   "title": "Enlargement"
+  },
+  {
+   "slug": "symmetry",
+   "title": "Symmetry"
+  }
+ ],
+ "questions": [
+  {
+   "id": "trn-01",
+   "sub": "reflect",
+   "level": 1,
+   "type": "mc",
+   "q": "Which transformation takes shape A to shape B?",
+   "options": [
+    "Reflection in the y-axis",
+    "Rotation of 90° clockwise",
+    "Translation 4 squares left",
+    "Enlargement by scale factor 2"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "grid",
+    "lo": -5,
+    "hi": 5,
+    "polys": [
+     [
+      [
+       [
+        1,
+        1
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "A"
+     ],
+     [
+      [
+       [
+        -1,
+        1
+       ],
+       [
+        -3,
+        1
+       ],
+       [
+        -1,
+        4
+       ]
+      ],
+      "B"
+     ]
+    ]
+   },
+   "hint": "Look at where the right angle is on each shape.",
+   "explain": "B is the mirror image of A, with the y-axis as the mirror line. A translation would not flip the shape."
+  },
+  {
+   "id": "trn-02",
+   "sub": "reflect",
+   "level": 2,
+   "type": "mc",
+   "q": "The point (3, 2) is reflected in the y-axis. Where does it go?",
+   "options": [
+    "(−3, 2)",
+    "(3, −2)",
+    "(−3, −2)",
+    "(2, 3)"
+   ],
+   "answer": 0,
+   "hint": "The y-axis is the vertical line. The point flips from right to left.",
+   "explain": "Reflecting in the y-axis changes the sign of the x-coordinate: (3, 2) → (−3, 2)."
+  },
+  {
+   "id": "trn-03",
+   "sub": "reflect",
+   "level": 2,
+   "type": "mc",
+   "q": "The point (2, 5) is reflected in the x-axis. Where does it go?",
+   "options": [
+    "(2, −5)",
+    "(−2, 5)",
+    "(−2, −5)",
+    "(5, 2)"
+   ],
+   "answer": 0,
+   "hint": "The x-axis is the horizontal line. The point flips from above to below.",
+   "explain": "Reflecting in the x-axis changes the sign of the y-coordinate: (2, 5) → (2, −5)."
+  },
+  {
+   "id": "trn-16",
+   "sub": "reflect",
+   "level": 1,
+   "type": "mc",
+   "q": "A shape is reflected in a mirror line. Each point of the image is…",
+   "options": [
+    "the same distance from the mirror line, on the other side",
+    "twice as far from the mirror line",
+    "on the same side of the mirror line",
+    "moved one square to the right"
+   ],
+   "answer": 0,
+   "hint": "Think of standing in front of a mirror. How far away does your reflection look?",
+   "explain": "In a reflection, every point moves straight across the mirror line and ends up the same distance away on the other side."
+  },
+  {
+   "id": "trn-20",
+   "sub": "reflect",
+   "level": 2,
+   "type": "mc",
+   "q": "The point (4, −1) is reflected in the x-axis. Where does it go?",
+   "options": [
+    "(4, 1)",
+    "(−4, −1)",
+    "(−4, 1)",
+    "(−1, 4)"
+   ],
+   "answer": 0,
+   "hint": "The x-axis is the horizontal line. Which coordinate changes?",
+   "explain": "Reflecting in the x-axis changes the sign of the y-coordinate: (4, −1) → (4, 1)."
+  },
+  {
+   "id": "trn-25",
+   "sub": "reflect",
+   "level": 3,
+   "type": "mc",
+   "q": "The point (5, 3) is reflected in the line x = 2. Where does it go?",
+   "options": [
+    "(−1, 3)",
+    "(−5, 3)",
+    "(−3, 3)",
+    "(5, −3)"
+   ],
+   "answer": 0,
+   "hint": "x = 2 is a vertical line through 2 on the x-axis. How far is the point from that line?",
+   "explain": "The point is 5 − 2 = 3 squares to the right of the line, so its image is 3 squares to the left: x = 2 − 3 = −1. The y-coordinate stays 3, so the image is (−1, 3)."
+  },
+  {
+   "id": "trn-04",
+   "sub": "translate",
+   "level": 1,
+   "type": "mc",
+   "q": "Which transformation slides a shape without turning or flipping it?",
+   "options": [
+    "Translation",
+    "Reflection",
+    "Rotation",
+    "Enlargement"
+   ],
+   "answer": 0,
+   "hint": "Think of sliding a book across a table.",
+   "explain": "A translation slides a shape. Every point moves the same distance in the same direction."
+  },
+  {
+   "id": "trn-05",
+   "sub": "translate",
+   "level": 2,
+   "type": "mc",
+   "q": "The point (4, 1) is translated 2 squares left and 3 squares up. Where does it go?",
+   "options": [
+    "(2, 4)",
+    "(6, 4)",
+    "(2, −2)",
+    "(7, −1)"
+   ],
+   "answer": 0,
+   "hint": "Left changes x, up changes y.",
+   "explain": "Left 2: x = 4 − 2 = 2. Up 3: y = 1 + 3 = 4. So the point goes to (2, 4)."
+  },
+  {
+   "id": "trn-06",
+   "sub": "translate",
+   "level": 2,
+   "type": "mc",
+   "q": "After a reflection, a rotation or a translation, the new shape is…",
+   "options": [
+    "exactly the same size and shape (congruent)",
+    "bigger",
+    "smaller",
+    "a different shape"
+   ],
+   "answer": 0,
+   "hint": "None of these three transformations stretches the shape.",
+   "explain": "Reflections, rotations and translations keep the size and shape the same: the image is congruent to the original. Only enlargement changes the size."
+  },
+  {
+   "id": "trn-17",
+   "sub": "translate",
+   "level": 1,
+   "type": "mc",
+   "q": "Which translation takes shape A to shape B?",
+   "options": [
+    "3 squares right and 1 square up",
+    "1 square right and 3 squares up",
+    "3 squares left and 1 square down",
+    "4 squares right and 2 squares up"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "grid",
+    "lo": -1,
+    "hi": 7,
+    "polys": [
+     [
+      [
+       [
+        1,
+        1
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        1,
+        3
+       ]
+      ],
+      "A"
+     ],
+     [
+      [
+       [
+        4,
+        2
+       ],
+       [
+        6,
+        2
+       ],
+       [
+        4,
+        4
+       ]
+      ],
+      "B"
+     ]
+    ]
+   },
+   "hint": "Pick one corner of A and count how far it moves across, then how far up, to the same corner of B.",
+   "explain": "The corner at (1, 1) moves to (4, 2): that is 3 squares right and 1 square up. Every other corner moves the same way."
+  },
+  {
+   "id": "trn-21",
+   "sub": "translate",
+   "level": 2,
+   "type": "mc",
+   "q": "The point (−2, 3) is translated 5 squares right and 4 squares down. Where does it go?",
+   "options": [
+    "(3, −1)",
+    "(−7, −1)",
+    "(3, 7)",
+    "(2, 8)"
+   ],
+   "answer": 0,
+   "hint": "Right adds to x. Down takes away from y.",
+   "explain": "Right 5: x = −2 + 5 = 3. Down 4: y = 3 − 4 = −1. So the point goes to (3, −1)."
+  },
+  {
+   "id": "trn-07",
+   "sub": "rotate",
+   "level": 3,
+   "type": "mc",
+   "q": "The point (3, 1) is rotated 180° about the origin (0, 0). Where does it go?",
+   "options": [
+    "(−3, −1)",
+    "(3, −1)",
+    "(−3, 1)",
+    "(1, 3)"
+   ],
+   "answer": 0,
+   "hint": "A half turn about the origin sends a point to the opposite side of (0, 0).",
+   "explain": "A 180° rotation about the origin changes the signs of both coordinates: (3, 1) → (−3, −1)."
+  },
+  {
+   "id": "trn-08",
+   "sub": "rotate",
+   "level": 3,
+   "type": "mc",
+   "q": "The point (2, 0) is rotated 90° anticlockwise about the origin. Where does it go?",
+   "options": [
+    "(0, 2)",
+    "(0, −2)",
+    "(−2, 0)",
+    "(2, 2)"
+   ],
+   "answer": 0,
+   "hint": "Start on the positive x-axis and turn a quarter turn anticlockwise.",
+   "explain": "(2, 0) is on the x-axis, 2 to the right. A quarter turn anticlockwise moves it to the y-axis, 2 up: (0, 2)."
+  },
+  {
+   "id": "trn-18",
+   "sub": "rotate",
+   "level": 1,
+   "type": "mc",
+   "q": "How many degrees is a quarter turn?",
+   "options": [
+    "90°",
+    "45°",
+    "180°",
+    "25°"
+   ],
+   "answer": 0,
+   "hint": "A full turn is 360°.",
+   "explain": "A quarter of 360° is 360° ÷ 4 = 90°. A half turn is 180°."
+  },
+  {
+   "id": "trn-22",
+   "sub": "rotate",
+   "level": 2,
+   "type": "mc",
+   "q": "A shape is rotated 90° clockwise. Which other rotation (about the same centre) gives the same result?",
+   "options": [
+    "270° anticlockwise",
+    "90° anticlockwise",
+    "180°",
+    "360°"
+   ],
+   "answer": 0,
+   "hint": "Turning one way and turning the other way add up to a full turn of 360°.",
+   "explain": "360° − 90° = 270°, so 90° clockwise ends up in the same place as 270° anticlockwise."
+  },
+  {
+   "id": "trn-26",
+   "sub": "rotate",
+   "level": 3,
+   "type": "mc",
+   "q": "The point (1, 3) is rotated 90° clockwise about the origin (0, 0). Where does it go?",
+   "options": [
+    "(3, −1)",
+    "(−3, 1)",
+    "(−1, −3)",
+    "(3, 1)"
+   ],
+   "answer": 0,
+   "hint": "Try it with tracing paper, or think: a point straight above the origin would end up straight to the right.",
+   "explain": "A 90° clockwise turn about the origin sends (x, y) to (y, −x), so (1, 3) → (3, −1). (−3, 1) would be 90° anticlockwise, and (−1, −3) would be a half turn."
+  },
+  {
+   "id": "trn-09",
+   "sub": "enlarge",
+   "level": 2,
+   "type": "mc",
+   "q": "A rectangle 3 cm by 2 cm is enlarged by scale factor 3. What are its new measurements?",
+   "options": [
+    "9 cm by 6 cm",
+    "6 cm by 5 cm",
+    "3 cm by 6 cm",
+    "9 cm by 2 cm"
+   ],
+   "answer": 0,
+   "hint": "Multiply every length by 3.",
+   "explain": "3 × 3 = 9 cm and 2 × 3 = 6 cm."
+  },
+  {
+   "id": "trn-10",
+   "sub": "enlarge",
+   "level": 3,
+   "type": "num",
+   "q": "Shape P is 4 cm wide. It is enlarged to make shape Q, which is 10 cm wide. What is the scale factor?",
+   "answer": "2.5",
+   "hint": "Scale factor = new length ÷ old length.",
+   "explain": "10 ÷ 4 = 2.5."
+  },
+  {
+   "id": "trn-11",
+   "sub": "enlarge",
+   "level": 3,
+   "type": "num",
+   "q": "A triangle has an area of 5 cm². It is enlarged by scale factor 2. What is the area of the new triangle?",
+   "answer": "20",
+   "unit": "cm²",
+   "hint": "Both the base and the height double. What happens to base × height?",
+   "explain": "The base and height both double, so the area is 2 × 2 = 4 times bigger: 5 × 4 = 20 cm². (Not 10!)"
+  },
+  {
+   "id": "trn-23",
+   "sub": "enlarge",
+   "level": 2,
+   "type": "num",
+   "q": "A photo is 10 cm wide and 15 cm tall. It is enlarged by scale factor 1.5. How tall is the new photo?",
+   "answer": "22.5",
+   "unit": "cm",
+   "hint": "Multiply the height by the scale factor.",
+   "explain": "15 × 1.5 = 22.5 cm. (The width becomes 10 × 1.5 = 15 cm.)"
+  },
+  {
+   "id": "trn-27",
+   "sub": "enlarge",
+   "level": 3,
+   "type": "num",
+   "q": "A rectangle 8 cm by 6 cm is enlarged by scale factor {1/2}. What is the area of the new rectangle?",
+   "answer": "12",
+   "unit": "cm²",
+   "hint": "A scale factor of {1/2} makes every length half as long. Find the new lengths first.",
+   "explain": "The new rectangle is 4 cm by 3 cm, so its area is 4 × 3 = 12 cm². The old area was 48 cm², so the area is a quarter of it, not a half."
+  },
+  {
+   "id": "trn-12",
+   "sub": "symmetry",
+   "level": 1,
+   "type": "num",
+   "q": "How many lines of symmetry does an equilateral triangle have?",
+   "answer": "3",
+   "hint": "Try folding from each corner to the middle of the opposite side.",
+   "explain": "An equilateral triangle has 3 lines of symmetry, one from each corner."
+  },
+  {
+   "id": "trn-13",
+   "sub": "symmetry",
+   "level": 2,
+   "type": "num",
+   "q": "What is the order of rotational symmetry of a square?",
+   "answer": "4",
+   "hint": "How many times does it look the same in one full turn?",
+   "explain": "A square looks the same after turns of 90°, 180°, 270° and 360°, so it has rotational symmetry of order 4."
+  },
+  {
+   "id": "trn-14",
+   "sub": "symmetry",
+   "level": 2,
+   "type": "mc",
+   "q": "Which capital letter has rotational symmetry of order 2?",
+   "options": [
+    "S",
+    "A",
+    "E",
+    "T"
+   ],
+   "answer": 0,
+   "hint": "Turn each letter upside down. Which one looks the same?",
+   "explain": "S looks the same after a half turn, so it has order 2. A, E and T only have line symmetry."
+  },
+  {
+   "id": "trn-15",
+   "sub": "symmetry",
+   "level": 3,
+   "type": "mc",
+   "q": "Which shape has rotational symmetry but no lines of symmetry?",
+   "options": [
+    "A parallelogram (that is not a rectangle or rhombus)",
+    "A rectangle",
+    "A kite",
+    "An isosceles triangle"
+   ],
+   "answer": 0,
+   "hint": "Which one looks the same after a half turn, but can't be folded in half exactly?",
+   "explain": "A parallelogram looks the same after a half turn (order 2), but folding it never makes the halves match. A rectangle has both kinds; a kite and an isosceles triangle only have a line of symmetry."
+  },
+  {
+   "id": "trn-19",
+   "sub": "symmetry",
+   "level": 1,
+   "type": "num",
+   "q": "How many lines of symmetry does a rectangle (that is not a square) have?",
+   "answer": "2",
+   "hint": "Fold a sheet of paper. Does folding along a diagonal make the halves match?",
+   "explain": "A rectangle has 2 lines of symmetry: one across and one down. The diagonals are not lines of symmetry."
+  },
+  {
+   "id": "trn-24",
+   "sub": "symmetry",
+   "level": 2,
+   "type": "num",
+   "q": "What is the order of rotational symmetry of a regular hexagon?",
+   "answer": "6",
+   "hint": "How many times does it look the same in one full turn?",
+   "explain": "A regular hexagon looks the same after every turn of 60°, which happens 6 times in a full turn, so the order is 6."
+  }
+ ]
+}

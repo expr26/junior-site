@@ -52,7 +52,48 @@
       "icon": "🐸",
       "subject": "maths",
       "kind": "game",
-      "blurb": "Help the frog hop along the number line, even below zero."
+      "blurb": "Help the frog hop along the number line to add and subtract with negative numbers.",
+      "live": true,
+      "learn": "Adding and subtracting with negative numbers on a number line, including temperatures below zero and taking away a negative number.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Number: use the four operations with negative numbers",
+        "PYP": "Number: negative numbers in context"
+      },
+      "guide_title": "Negative numbers on a number line",
+      "guide": [
+        {
+          "h": "Left is smaller, right is bigger",
+          "p": "On a number line, numbers get bigger as you go right and smaller as you go left. Numbers to the left of zero are negative: −1, −2, −3 and so on. So −7 is smaller than −2."
+        },
+        {
+          "h": "Adding and taking away",
+          "p": "Adding a positive number moves you right. Taking away a positive number moves you left. For example, 4 − 6: start on 4, hop 6 to the left, and you land on −2."
+        },
+        {
+          "h": "Taking away a negative",
+          "p": "Taking away a negative number is the same as adding. 1 − (−4) = 1 + 4 = 5. Think of it as removing a debt: you end up better off."
+        },
+        {
+          "h": "Temperatures",
+          "p": "Thermometers are number lines standing up. If it is −4 °C and the temperature rises by 6 degrees, count 6 up from −4 to reach 2 °C."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is −3 + 7?",
+          "a": "Start on −3 and hop 7 to the right: −2, −1, 0, 1, 2, 3, 4. The answer is 4."
+        },
+        {
+          "q": "Why is subtracting a negative the same as adding?",
+          "a": "Subtraction finds the difference. The difference between 1 and −4 on a number line is 5 steps, so 1 − (−4) = 5, the same as 1 + 4."
+        },
+        {
+          "q": "Which is bigger, −2 or −7?",
+          "a": "−2 is bigger, because it is further to the right on the number line (closer to zero)."
+        }
+      ]
     },
     {
       "slug": "balance-scale",

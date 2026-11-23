@@ -6,6 +6,21 @@
 
   var F = 'font-family="Fredoka, Trebuchet MS, sans-serif"';
   var R = Math.PI / 180;
+  /* soft gradients: every id starts mCa and is numbered, so no two drawings on the page share one */
+  var GN = 0;
+  function mix(hex, t) {   // t > 0 lightens towards white, t < 0 darkens towards black
+    var n = parseInt(hex.slice(1), 16), c = [n >> 16, n >> 8 & 255, n & 255], to = t < 0 ? 0 : 255, k = Math.abs(t);
+    return '#' + c.map(function (v) { return ('0' + Math.round(v + (to - v) * k).toString(16)).slice(-2); }).join('');
+  }
+  function lg(a, b) {   // a top-to-bottom gradient, as { def, url }
+    var id = 'mCa' + (++GN);
+    return { def: '<defs><linearGradient id="' + id + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="' + a + '"/><stop offset="1" stop-color="' + b + '"/></linearGradient></defs>', url: 'url(#' + id + ')' };
+  }
+  function ball(x, y, r, col) {   // a shiny dot (vertices, the centre of a turn)
+    var id = 'mCa' + (++GN);
+    return '<defs><radialGradient id="' + id + '" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="' + mix(col, .55) + '"/><stop offset=".6" stop-color="' + col + '"/><stop offset="1" stop-color="' + mix(col, -.3) + '"/></radialGradient></defs>' +
+      '<circle cx="' + x + '" cy="' + y + '" r="' + r + '" fill="url(#' + id + ')"/>';
+  }
   function pt(v, r, a) { return [v[0] + r * Math.cos(a * R), v[1] - r * Math.sin(a * R)]; }
   function dir(a, b) { var d = Math.atan2(-(b[1] - a[1]), b[0] - a[0]) / R; return (d + 360) % 360; }
   function n1(x) { return Math.round(x * 10) / 10; }
@@ -33,8 +48,9 @@
     if (o.label) out += label(pt(v, o.lr || r + 24, (a0 + a1) / 2), o.label, col, o.size);
     return out;
   }
-  function poly(pts, fill, stroke, w) {
-    return '<path d="M' + pts.map(function (p) { return n1(p[0]) + ' ' + n1(p[1]); }).join(' L') + ' Z" fill="' + fill + '" stroke="' + (stroke || '#1E1B3A') + '" stroke-width="' + (w || 4) + '" stroke-linejoin="round"/>';
+  function poly(pts, fill, stroke, w) {   // a shape with a soft top-lit fill; the corners stay exactly where they are
+    var g = lg(mix(fill, .45), mix(fill, -.06));
+    return g.def + '<path d="M' + pts.map(function (p) { return n1(p[0]) + ' ' + n1(p[1]); }).join(' L') + ' Z" fill="' + g.url + '" stroke="' + (stroke || '#1E1B3A') + '" stroke-width="' + (w || 4) + '" stroke-linejoin="round"/>';
   }
   function regular(c, r, n, start) { var p = []; for (var k = 0; k < n; k++) p.push(pt(c, r, start + k * 360 / n)); return p; }
   function tick(a, b, n) {   // n small dashes across the middle of side ab: "these sides are equal"
@@ -61,8 +77,10 @@
     'turn': function (s) {
       title(s, 'One full turn = 360°');
       var v = [320, 200];
-      s.add('<circle cx="320" cy="200" r="110" fill="none" stroke="#C9CED8" stroke-width="3" stroke-dasharray="8 8"/>' + ray(v, 0, 110, '#1E1B3A') + '<circle cx="320" cy="200" r="7" fill="#1E1B3A"/>', { enter: 'fade' });
-      var arm = s.add('<circle r="110" fill="none"/><path d="M0 0 H110" stroke="#6C4DF6" stroke-width="7" stroke-linecap="round"/><circle cx="110" r="9" fill="#6C4DF6"/>', { x: 320, y: 200, enter: 'fade', delay: 300 });
+      s.add('<defs><radialGradient id="mCaDisc" cx=".5" cy=".5" r=".5"><stop offset=".6" stop-color="#F1ECFF" stop-opacity="0"/><stop offset="1" stop-color="#E4DBFF" stop-opacity=".9"/></radialGradient></defs>' +
+        '<circle cx="320" cy="200" r="110" fill="url(#mCaDisc)" stroke="#B9AEE0" stroke-width="3" stroke-dasharray="8 8"/>' + ray(v, 0, 110, '#1E1B3A'), { enter: 'fade', flat: true });
+      var arm = s.add('<circle r="110" fill="none"/><path d="M0 0 H110" stroke="#6C4DF6" stroke-width="7" stroke-linecap="round"/><path d="M4 -1.5 H104" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".45"/>' + ball(110, 0, 10, '#6C4DF6'), { x: 320, y: 200, enter: 'fade', delay: 300 });
+      s.add(ball(320, 200, 8, '#1E1B3A'), { enter: 'fade', delay: 300 });
       s.anim(arm, [{ transform: 'rotate(0deg)' }, { transform: 'rotate(-360deg)' }], 2600, { delay: 600, easing: 'ease-in-out' });
       s.text(520, 200, '360°', { size: 40, weight: 700, colour: s.C.fun, enter: 'pop', delay: 3200 });
       s.owl(80, 345, 110, { delay: 200 });
@@ -79,7 +97,7 @@
     },
     'acute-obtuse': function (s) {
       s.clear(); s.ref = {};
-      s.add('<path d="M320 20 V340" stroke="#EAE2D6" stroke-width="3" stroke-dasharray="8 8"/>', { enter: 'fade' });
+      s.add('<path d="M320 20 V340" stroke="#E3DCEF" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round"/>', { enter: 'fade', flat: true });
       var a = [90, 280], o = [450, 280];
       s.text(165, 50, 'acute', { size: 32, weight: 700, colour: s.C.blue });
       s.text(165, 86, 'less than 90°', { size: 20, colour: s.C.muted, delay: 200 });
@@ -90,11 +108,11 @@
     },
     'straight-reflex': function (s) {
       s.clear(); s.ref = {};
-      s.add('<path d="M320 20 V340" stroke="#EAE2D6" stroke-width="3" stroke-dasharray="8 8"/>', { enter: 'none' });
+      s.add('<path d="M320 20 V340" stroke="#E3DCEF" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round"/>', { enter: 'none', flat: true });
       var a = [160, 230], o = [470, 200];
       s.text(160, 50, 'straight line', { size: 30, weight: 700, colour: s.C.deep });
       s.text(160, 86, 'exactly 180°', { size: 20, colour: s.C.muted, delay: 200 });
-      s.add(ray(a, 0, 130) + ray(a, 180, 130) + mark(a, 0, 180, { r: 42, label: '180°' }) + '<circle cx="160" cy="230" r="6" fill="#1E1B3A"/>', { enter: 'fade', delay: 400 });
+      s.add(ray(a, 0, 130) + ray(a, 180, 130) + mark(a, 0, 180, { r: 42, label: '180°' }) + ball(160, 230, 6, '#3A3560'), { enter: 'fade', delay: 400 });
       s.text(475, 50, 'reflex', { size: 32, weight: 700, colour: s.C.pink, delay: 1300 });
       s.text(475, 86, 'more than 180°', { size: 20, colour: s.C.muted, delay: 1500 });
       s.add(ray(o, 0, 130) + ray(o, 240, 130) + mark(o, 0, 240, { r: 38, colour: s.C.pink, fill: 'rgba(255,93,143,.18)', label: '240°', lr: 62 }), { enter: 'fade', delay: 1700 });
@@ -113,7 +131,7 @@
       s.clear(); s.ref = {};
       title(s, 'Angles round a point add up to 360°', s.C.fun, 24);
       var v = [200, 205];
-      s.add(ray(v, 90, 125) + ray(v, 190, 125) + ray(v, 330, 125) + '<circle cx="200" cy="205" r="6" fill="#1E1B3A"/>', { enter: 'fade' });
+      s.add(ray(v, 90, 125) + ray(v, 190, 125) + ray(v, 330, 125) + ball(200, 205, 6, '#3A3560'), { enter: 'fade' });
       s.add(mark(v, 90, 190, { colour: s.C.blue, fill: 'rgba(47,128,237,.18)', label: '100°', lr: 72 }), { enter: 'pop', delay: 400 });
       s.add(mark(v, 190, 330, { colour: s.C.orange, fill: 'rgba(255,138,61,.2)', label: '140°', lr: 72 }), { enter: 'pop', delay: 800 });
       s.add(mark(v, 330, 450, { colour: s.C.green, fill: 'rgba(34,160,107,.2)', label: 'y', lr: 70, size: 26 }), { enter: 'pop', delay: 1200 });
@@ -170,7 +188,7 @@
       hideAll(s, ['p1', 'p2', 'p3']);
       var d = [Math.cos(T * R), -Math.sin(T * R)];
       s.add(seg([P2[0] - 75 * d[0], P2[1] - 75 * d[1]], [P1[0] + 75 * d[0], P1[1] + 75 * d[1]], '#1E1B3A', 5), { enter: 'fade' });
-      s.add('<path d="M' + (P1[0] - 120) + ' 130 L' + P1[0] + ' 130 L' + P2[0] + ' 250 L' + (P2[0] + 120) + ' 250" fill="none" stroke="#FFC93C" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" opacity=".7"/>', { enter: 'fade', delay: 600, name: 'z' });
+      s.add('<path d="M' + (P1[0] - 120) + ' 130 L' + P1[0] + ' 130 L' + P2[0] + ' 250 L' + (P2[0] + 120) + ' 250" fill="none" stroke="#FFC93C" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" opacity=".7"/>', { enter: 'fade', delay: 600, name: 'z', flat: true });
       s.add(mark(P1, 180, 180 + T, { r: 40, colour: s.C.fun, label: '55°', lr: 66 }), { enter: 'pop', delay: 1200, name: 'z1' });
       s.add(mark(P2, 0, T, { r: 40, colour: s.C.fun, label: '55°', lr: 66 }), { enter: 'pop', delay: 1600, name: 'z2' });
       s.text(530, 320, 'Z: equal', { size: 28, weight: 700, colour: s.C.fun, enter: 'pop', delay: 2200, name: 'z3' });
@@ -178,14 +196,14 @@
     'f-angles': function (s) {
       hideAll(s, ['z', 'z1', 'z2', 'z3']);
       var d = [Math.cos(T * R), -Math.sin(T * R)];
-      s.add('<path d="M' + P1[0] + ' 130 L' + (P2[0] - 60 * d[0]) + ' ' + (250 - 60 * d[1]) + ' M' + P1[0] + ' 130 H' + (P1[0] + 120) + ' M' + P2[0] + ' 250 H' + (P2[0] + 120) + '" fill="none" stroke="#7DE3C8" stroke-width="16" stroke-linecap="round" opacity=".8"/>', { enter: 'fade', delay: 300, name: 'f' });
+      s.add('<path d="M' + P1[0] + ' 130 L' + (P2[0] - 60 * d[0]) + ' ' + (250 - 60 * d[1]) + ' M' + P1[0] + ' 130 H' + (P1[0] + 120) + ' M' + P2[0] + ' 250 H' + (P2[0] + 120) + '" fill="none" stroke="#7DE3C8" stroke-width="16" stroke-linecap="round" opacity=".8"/>', { enter: 'fade', delay: 300, name: 'f', flat: true });
       s.add(mark(P1, 180 + T, 360, { r: 36, colour: s.C.sci, fill: 'rgba(15,148,136,.18)', label: '125°', lr: 62 }), { enter: 'pop', delay: 900, name: 'f1' });
       s.add(mark(P2, 180 + T, 360, { r: 36, colour: s.C.sci, fill: 'rgba(15,148,136,.18)', label: '125°', lr: 62 }), { enter: 'pop', delay: 1300, name: 'f2' });
       s.text(530, 320, 'F: equal', { size: 28, weight: 700, colour: s.C.sci, enter: 'pop', delay: 1900, name: 'f3' });
     },
     'c-angles': function (s) {
       hideAll(s, ['f', 'f1', 'f2', 'f3']);
-      s.add('<path d="M' + (P1[0] + 120) + ' 130 H' + P1[0] + ' L' + P2[0] + ' 250 H' + (P2[0] + 120) + '" fill="none" stroke="#FFB3C9" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" opacity=".8"/>', { enter: 'fade', delay: 300 });
+      s.add('<path d="M' + (P1[0] + 120) + ' 130 H' + P1[0] + ' L' + P2[0] + ' 250 H' + (P2[0] + 120) + '" fill="none" stroke="#FFB3C9" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" opacity=".8"/>', { enter: 'fade', delay: 300, flat: true });
       s.add(mark(P1, 180 + T, 360, { r: 36, colour: s.C.pink, fill: 'rgba(255,93,143,.18)', label: '125°', lr: 62 }), { enter: 'pop', delay: 900 });
       s.add(mark(P2, 0, T, { r: 40, colour: s.C.pink, fill: 'rgba(255,93,143,.18)', label: '55°', lr: 66 }), { enter: 'pop', delay: 1300 });
       s.text(500, 320, '55° + 125° = 180°', { size: 26, weight: 700, colour: s.C.pink, enter: 'pop', delay: 1900 });
@@ -312,7 +330,7 @@
       s.add(poly([B, b(B), b(C), C], '#9EE6D4', '#1E1B3A', 3) + poly([A, B, C], '#5CC8B0', '#1E1B3A', 3) +
         seg(b(A), b(C), '#1E1B3A', 3, true) + seg(b(A), b(B), '#1E1B3A', 3, true) + seg(A, b(A), '#1E1B3A', 3, true), { enter: 'pop' });
       var dots = '';
-      [A, B, C, b(A), b(B), b(C)].forEach(function (p) { dots += '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="7" fill="#FF5D8F" stroke="#fff" stroke-width="2"/>'; });
+      [A, B, C, b(A), b(B), b(C)].forEach(function (p) { dots += '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="8.5" fill="#fff"/>' + ball(p[0], p[1], 7, '#FF5D8F'); });
       s.add(dots, { enter: 'fade', delay: 2400 });
       s.text(545, 140, '5 faces', { size: 28, weight: 700, colour: s.C.sci, delay: 700 });
       s.text(545, 190, '9 edges', { size: 28, weight: 700, colour: s.C.deep, delay: 1500 });

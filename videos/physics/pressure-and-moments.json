@@ -1,0 +1,62 @@
+{
+  "title": "Pressure and moments",
+  "description": "Animated KS3 Physics lesson on pressure and moments for ages 9 to 14: pressure = force ÷ area, N/m² and pascals, pressure in liquids and gases, moments, levers and balancing a see-saw.",
+  "intro": "Why do drawing pins work, why are dams thick at the bottom, and how does a see-saw balance? Five short parts with the owl.",
+  "chapters": [
+    {
+      "title": "What is pressure?",
+      "steps": [
+        {"say": "**Pressure** is about how spread out a force is. These two bricks weigh the same. One stands on its end and one lies flat on a soft sponge.", "do": "bricks"},
+        {"say": "On its end, the brick pushes on a **small area**, so the pressure is **big** and it sinks in deep. Lying flat, the same weight is spread over a **big area**, so the pressure is **small**.", "do": "bricks-sink"},
+        {"say": "A drawing pin has a tiny point. The small area makes a huge pressure, so it goes into the board easily. The wide flat head spreads the force on your thumb.", "do": "pin"},
+        {"say": "Snowshoes do the opposite. They spread your weight over a big area, so the pressure on the snow is small and you don't sink in.", "do": "snowshoes"}
+      ],
+      "check": {"q": "Why do tractors have very wide tyres?", "options": ["To spread the weight over a big area, so the pressure on the ground is small", "To make the pressure on the ground bigger", "To make the tractor lighter", "To make the tractor go faster"], "answer": 0,
+                "hint": "Think of snowshoes. What does a big area do to the pressure?", "explain": "Wide tyres spread the tractor's weight over a **big area**, so the pressure is **small** and the tractor doesn't sink into soft mud. The tractor weighs just the same."}
+    },
+    {
+      "title": "Calculating pressure",
+      "steps": [
+        {"say": "To work out pressure: **pressure = force ÷ area**. The force is in newtons, N. The area is in square metres, **m²**.", "speak": "To work out pressure: pressure equals force divided by area. The force is in newtons. The area is in square metres.", "do": "p-formula"},
+        {"say": "So pressure is measured in **N/m²**, newtons per square metre. Another name for 1 N/m² is 1 **pascal**, written Pa.", "speak": "So pressure is measured in newtons per square metre. Another name for 1 newton per square metre is 1 pascal.", "do": "p-unit"},
+        {"say": "A crate weighing 200 N lies on 4 m² of floor. Pressure = 200 ÷ 4 = 50 N/m². Each square metre of floor gets 50 N.", "speak": "A crate weighing 200 newtons lies on 4 square metres of floor. Pressure equals 200 divided by 4, which is 50 newtons per square metre. Each square metre of floor gets 50 newtons.", "do": "p-box4"},
+        {"say": "Turn the crate onto a smaller side, with an area of 2 m². Now the same 200 N is shared by only 2 squares. Pressure = 200 ÷ 2 = 100 N/m². Half the area, double the pressure!", "speak": "Turn the crate onto a smaller side, with an area of 2 square metres. Now the same 200 newtons is shared by only 2 squares. Pressure equals 200 divided by 2, which is 100 newtons per square metre. Half the area, double the pressure!", "do": "p-box2"}
+      ],
+      "check": {"q": "A crate weighing 300 N rests on an area of 6 m². What pressure does it put on the floor?", "options": ["50 N/m²", "1800 N/m²", "0.02 N/m²", "306 N/m²"], "answer": 0,
+                "hint": "Pressure = force ÷ area. Divide the force by the area.", "explain": "Pressure = force ÷ area = 300 N ÷ 6 m² = **50 N/m²** (50 pascals)."}
+    },
+    {
+      "title": "Pressure in liquids and gases",
+      "steps": [
+        {"say": "Liquids and gases press on every surface they touch, in **all directions**: down, up and sideways.", "do": "fluid-all"},
+        {"say": "The deeper you go, the more water there is above you, pushing down. So water pressure **increases with depth**. Water squirts out hardest from the lowest hole.", "do": "jets"},
+        {"say": "That's why a dam is built much thicker at the bottom. The water pushes hardest at the bottom, so that part must be strongest.", "do": "dam"},
+        {"say": "Air has pressure too, because of all the air above pressing down. High up a mountain there is less air above you, so the air pressure is **lower**.", "do": "mountain"}
+      ],
+      "check": {"q": "A diver swims down from 2 m deep to 10 m deep. What happens to the water pressure on her?", "options": ["It increases", "It decreases", "It stays the same", "It drops to zero"], "answer": 0,
+                "hint": "Is there more water or less water above her when she goes deeper?", "explain": "Deeper down there is more water above her pushing down, so the pressure **increases**."}
+    },
+    {
+      "title": "Moments: forces that turn",
+      "steps": [
+        {"say": "Forces can make things **turn**. The point something turns around is called the **pivot**. Here the pivot is the nut in the middle.", "do": "spanner"},
+        {"say": "The turning effect of a force is called a **moment**. To work it out: **moment = force × distance** from the pivot.", "speak": "The turning effect of a force is called a moment. To work it out: moment equals force times distance from the pivot.", "do": "moment-formula"},
+        {"say": "A 20 N force pushes 3 m from the pivot. Its moment is 20 × 3 = 60 N m. We say 60 newton metres.", "speak": "A 20 newton force pushes 3 metres from the pivot. Its moment is 20 times 3, which is 60 newton metres.", "do": "moment-calc"},
+        {"say": "A bigger distance gives a bigger moment. That's why you push a door near the handle, far from the hinge. Pushing near the hinge is much harder.", "do": "door"}
+      ],
+      "check": {"q": "A force of 15 N acts 2 m from a pivot. What is its moment?", "options": ["30 N m", "7.5 N m", "17 N m", "13 N m"], "answer": 0,
+                "hint": "Moment = force × distance. Multiply, don't divide or add.", "explain": "Moment = force × distance = 15 N × 2 m = **30 N m** (newton metres)."}
+    },
+    {
+      "title": "Balancing a see-saw",
+      "steps": [
+        {"say": "On a see-saw, each weight tries to turn it. The 30 N block on the left tries to turn it **anticlockwise**. The 20 N block on the right tries to turn it **clockwise**.", "speak": "On a see-saw, each weight tries to turn it. The 30 newton block on the left tries to turn it anticlockwise. The 20 newton block on the right tries to turn it clockwise.", "do": "seesaw"},
+        {"say": "Left: 30 N × 2 m = 60 N m. Right: 20 N × 3 m = 60 N m.", "speak": "Left: 30 newtons times 2 metres is 60 newton metres. Right: 20 newtons times 3 metres is also 60 newton metres.", "do": "seesaw-calc"},
+        {"say": "The moments are equal, so the see-saw **balances**. This is the **principle of moments**: it balances when the clockwise and anticlockwise moments are equal.", "do": "seesaw-balance"},
+        {"say": "So a lighter person can balance a heavier person by sitting further from the pivot.", "do": "seesaw-people"}
+      ],
+      "check": {"q": "A see-saw is balanced. A 30 N block sits 2 m left of the pivot. A 60 N block sits on the right. How far from the pivot is the 60 N block?", "options": ["1 m", "4 m", "2 m", "0.5 m"], "answer": 0,
+                "hint": "Work out the left moment first. The right moment must be the same. The heavier block needs to be closer, not further.", "explain": "Left moment: 30 N × 2 m = 60 N m. Right moment must also be 60 N m, so 60 N × distance = 60 N m. The distance is **1 m**."}
+    }
+  ]
+}

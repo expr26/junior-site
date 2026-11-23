@@ -28,6 +28,7 @@
     { id: 'topic-fractions', icon: '🍕', name: 'Fraction hero', desc: 'Finish every Fractions unit.' },
     { id: 'topic-forces-and-motion', icon: '🧲', name: 'Force master', desc: 'Finish every Forces and motion unit.' },
     { id: 'first-game', icon: '🎮', name: 'Game on', desc: 'Finish your first game.' },
+    { id: 'first-video', icon: '🎬', name: 'Watch and learn', desc: 'Watch a whole theory video.' },
     { id: 'welcome-back', icon: '👋', name: 'Welcome back', desc: 'Come back after a few days away.' }
   ];
 
@@ -141,6 +142,23 @@
     return { stars: st, improved: improved, points: pts };
   }
 
+  /* a theory video from /videos/ (d = { key, subject }): stars from the quick checks, saved under S.videos */
+  function finishVideo(d, firstTry, total) {
+    S.videos = S.videos || {};
+    var v = S.videos[d.key] || { stars: 0, best: 0, runs: 0 };
+    var st = stars(firstTry, total), improved = st > v.stars;
+    v.runs++; v.best = Math.max(v.best, firstTry); v.total = total; v.stars = Math.max(v.stars, st); v.at = Date.now();
+    S.videos[d.key] = v;
+    var pts = POINTS.unit + (firstTry === total ? POINTS.perfect : 0);
+    quiet = true;
+    award('first-video');
+    if (firstTry === total) award('perfect');
+    if (st === 3) award('three-stars');
+    quiet = false;
+    addXP(pts);
+    return { stars: st, improved: improved, points: pts };
+  }
+
   function drain() { var p = pending; pending = []; return p; }
 
   /* ---------- show ---------- */
@@ -177,7 +195,7 @@
   }
 
   window.JG = { state: function () { return S; }, level: level, LEVELS: LEVELS, BADGES: BADGES, POINTS: POINTS, DAILY_GOAL: DAILY_GOAL,
-    answer: answer, finishUnit: finishUnit, finishGame: finishGame, stars: stars, drain: drain, toast: toast, confetti: confetti, today: today, dayDiff: dayDiff, chip: chip };
+    answer: answer, finishUnit: finishUnit, finishGame: finishGame, finishVideo: finishVideo, stars: stars, drain: drain, toast: toast, confetti: confetti, today: today, dayDiff: dayDiff, chip: chip };
 
   function ready() {
     chip();
@@ -188,6 +206,10 @@
     });
     document.querySelectorAll('[data-game]').forEach(function (el) {   // stars on the Games page
       var g = S.games['game/' + el.getAttribute('data-game')]; var n = g ? g.stars : 0;
+      el.querySelectorAll('.g-stars i').forEach(function (i, k) { if (k < n) i.className = 'on'; });
+    });
+    document.querySelectorAll('[data-tv]').forEach(function (el) {   // stars on the Videos page
+      var v = (S.videos || {})['video/' + el.getAttribute('data-tv')]; var n = v ? v.stars : 0;
       el.querySelectorAll('.g-stars i').forEach(function (i, k) { if (k < n) i.className = 'on'; });
     });
     document.querySelectorAll('.unit-path').forEach(function (ol) {   // "start here" on the first unfinished unit

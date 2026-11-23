@@ -1,0 +1,67 @@
+{
+  "title": "Light",
+  "description": "Animated KS3 Physics lesson on light for ages 9 to 14: light sources, straight-line rays, how we see, transparent and opaque materials, shadows, the law of reflection, refraction, the spectrum, coloured objects and filters.",
+  "intro": "Light sources, shadows, mirrors, bending light and colour, explained by the owl in five short parts.",
+  "chapters": [
+    {
+      "title": "How light travels",
+      "steps": [
+        {"say": "A **light source** gives out its own light. The Sun, a lamp and a candle are all light sources.", "do": "sources"},
+        {"say": "The Moon is not a light source. It looks bright because it **reflects** light from the Sun.", "do": "moon"},
+        {"say": "Light travels in **straight lines**. We draw it as a **ray**: a straight line with an arrow on it.", "do": "rays"},
+        {"say": "Light is very fast: it travels about 300,000 km every second. Light from the Sun reaches the Earth in about 8 minutes.", "speak": "Light is very fast: it travels about three hundred thousand kilometres every second. Light from the Sun reaches the Earth in about 8 minutes.", "do": "fast"},
+        {"say": "We see things when light from a source bounces off them and goes **into our eyes**. Nothing comes out of our eyes.", "do": "seeing"}
+      ],
+      "check": {"q": "How do we see a book on a table?", "options": ["Light from a lamp bounces off the book into our eyes", "Light comes out of our eyes and lands on the book", "The book gives out its own light", "Light goes from our eyes to the lamp"], "answer": 0,
+                "hint": "A book is not a light source. Where does the light start, and where does it end up?", "explain": "Light starts at a **source** (the lamp), **reflects** off the book, and some of it goes **into our eyes**. Our eyes only receive light; they don't send it out."}
+    },
+    {
+      "title": "Materials and shadows",
+      "steps": [
+        {"say": "**Transparent** materials, like clear glass, let almost all light through. You can see clearly through them.", "do": "transparent"},
+        {"say": "**Translucent** materials, like tracing paper, let some light through but scatter it. Things look blurry through them.", "do": "translucent"},
+        {"say": "**Opaque** materials, like wood, metal and card, let no light through at all.", "do": "opaque"},
+        {"say": "An opaque ball blocks the light. Light travels in straight lines and can't bend round it, so a dark **shadow** forms behind it.", "do": "shadow"},
+        {"say": "Move the ball closer to the lamp and it blocks more of the light, so the shadow gets **bigger**.", "do": "shadow-bigger"}
+      ],
+      "check": {"q": "Why does a shadow form behind an opaque object?", "options": ["Light can't pass through it and can't bend round it", "The object gives out dark light", "Light bends round the object and cancels out", "The shadow is a reflection of the object"], "answer": 0,
+                "hint": "Opaque means no light gets through. And light travels in straight lines.", "explain": "The object is **opaque**, so it blocks the light. Light travels in **straight lines**, so it can't go round the object, and a dark area, the **shadow**, is left behind it."}
+    },
+    {
+      "title": "Reflection",
+      "steps": [
+        {"say": "When light hits a mirror, it bounces off. This is called **reflection**.", "do": "mirror"},
+        {"say": "Where the ray hits the mirror, we draw a dashed line at right angles to the mirror. This line is called the **normal**.", "do": "normal"},
+        {"say": "The angle between the ray going in and the normal is the **angle of incidence**. Here it is 40°.", "speak": "The angle between the ray going in and the normal is the angle of incidence. Here it is 40 degrees.", "do": "angle-i"},
+        {"say": "The **law of reflection**: the angle of incidence equals the angle of reflection. So the angle of reflection is 40° too.", "speak": "The law of reflection: the angle of incidence equals the angle of reflection. So the angle of reflection is 40 degrees too.", "do": "angle-r"},
+        {"say": "A smooth, shiny surface reflects light neatly, so you can see an image in it. A rough surface, like paper, **scatters** light in all directions.", "do": "scatter"}
+      ],
+      "check": {"q": "A ray hits a flat mirror. The angle of incidence is 30°. What is the angle of reflection?", "options": ["30°", "60°", "90°", "15°"], "answer": 0,
+                "hint": "Both angles are measured from the normal, not from the mirror. What does the law of reflection say?", "explain": "The law of reflection says the angle of incidence equals the angle of reflection, so it is **30°**. (60° would be the angle from the mirror, not from the normal.)"}
+    },
+    {
+      "title": "Refraction",
+      "steps": [
+        {"say": "Light slows down when it goes from air into glass or water.", "do": "block"},
+        {"say": "If light hits the glass at an angle, it changes direction. This bending of light is called **refraction**.", "do": "bend"},
+        {"say": "Going into the glass, the ray bends **towards** the normal. Coming out into the air, it bends **away** from the normal.", "do": "normals"},
+        {"say": "Refraction makes a straw in water look bent. Light from the straw bends as it leaves the water, so the straw looks as if it is in a different place.", "do": "straw"}
+      ],
+      "check": {"q": "A ray of light goes from air into a glass block at an angle. Which way does it bend?", "options": ["Towards the normal", "Away from the normal", "It doesn't change direction at all", "It bounces straight back"], "answer": 0,
+                "hint": "Light slows down in glass. Look back at the ray going into the block: does it get closer to the dashed line or further away?", "explain": "Light slows down as it goes into glass, so it bends **towards the normal**. When it comes back out into air it speeds up and bends away from the normal."}
+    },
+    {
+      "title": "Colour",
+      "steps": [
+        {"say": "White light is really a mix of colours. A **prism** splits it into a **spectrum**: red, orange, yellow, green, blue, indigo and violet.", "do": "prism"},
+        {"say": "This is called **dispersion**. Each colour refracts by a different amount: violet bends the most and red bends the least.", "do": "prism-bend"},
+        {"say": "A red apple **reflects** red light into our eyes. It **absorbs** all the other colours.", "do": "apple"},
+        {"say": "White things reflect all the colours. Black things absorb all the colours.", "do": "white-black"},
+        {"say": "A coloured **filter** only lets its own colour through. A red filter absorbs every other colour, so only red light comes out.", "do": "filter"},
+        {"say": "Shine pure blue light on a red apple and it looks **black**. It absorbs the blue light, and there is no red light for it to reflect.", "do": "apple-blue"}
+      ],
+      "check": {"q": "A green leaf is lit by pure red light. What colour does it look?", "options": ["Black", "Green", "Red", "Yellow"], "answer": 0,
+                "hint": "A green leaf only reflects green light. Is there any green light in pure red light?", "explain": "The leaf absorbs the red light, and there is no green light for it to reflect. No light reaches your eyes from it, so it looks **black**."}
+    }
+  ]
+}

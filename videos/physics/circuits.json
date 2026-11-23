@@ -1,0 +1,77 @@
+{
+  "title": "Electric circuits",
+  "description": "Animated KS3 Physics lesson on electric circuits for ages 9 to 14: circuit symbols, complete circuits, conductors and insulators, current and ammeters, potential difference and voltmeters, series and parallel circuits, and resistance with R = V ÷ I.",
+  "intro": "Circuit symbols, current, voltage, series and parallel circuits and resistance, explained by the owl in six short parts.",
+  "chapters": [
+    {
+      "title": "Complete circuits",
+      "steps": [
+        {"say": "A simple circuit needs a **cell** to push the current, **wires** to carry it, and a **component** such as a bulb.", "do": "parts"},
+        {"say": "In circuit diagrams we draw **symbols**. Here are the symbols for a cell, a bulb, a switch and a wire. The long line of the cell is its positive side.", "do": "symbols"},
+        {"say": "Current can only flow round a **complete loop** with no gaps. The switch is closed, so the bulb lights up.", "do": "loop"},
+        {"say": "Open the switch and you make a **gap**. The circuit is broken, so no current flows and the bulb goes out.", "do": "open"},
+        {"say": "Current flows easily through **conductors**, like copper and other metals. **Insulators**, like plastic and rubber, stop it. That's why wires are covered in plastic.", "do": "conductors"}
+      ],
+      "check": {"q": "A circuit has a cell, a bulb and an **open** switch. Does the bulb light?", "options": ["No, because the circuit is not a complete loop", "Yes, because the cell is still connected", "Yes, but only dimly", "No, because the cell is the wrong way round"], "answer": 0,
+                "hint": "Current needs a complete loop with no gaps. What does an open switch make?", "explain": "An open switch makes a **gap**, so the circuit is not complete. No current flows anywhere in the loop, so the bulb stays **off**."}
+    },
+    {
+      "title": "Current",
+      "steps": [
+        {"say": "**Current** is a flow of electric **charge** round the circuit. A bigger current makes the same bulb glow more brightly.", "do": "current"},
+        {"say": "We measure current in **amps** (A) with an **ammeter**. Its symbol is a circle with an A inside.", "speak": "We measure current in amps, with an ammeter. Its symbol is a circle with the letter A inside.", "do": "amps"},
+        {"say": "An ammeter goes **in series**: right in the loop, so all the current flows through it. This one reads 0.2 A.", "speak": "An ammeter goes in series: right in the loop, so all the current flows through it. This one reads nought point two amps.", "do": "ammeter-series"},
+        {"say": "We say current flows out of the **positive** side of the cell (the long line), round the circuit, and back into the **negative** side (the short line).", "do": "direction"},
+        {"say": "In a metal wire, the charges that really move are tiny **electrons**. They are negative, so they drift the other way: from negative to positive.", "do": "electrons"}
+      ],
+      "check": {"q": "Which meter measures current, and how is it connected?", "options": ["An ammeter, in series", "A voltmeter, in series", "An ammeter, in parallel", "A voltmeter, in parallel"], "answer": 0,
+                "hint": "A for amps. And all the current must flow through the meter, so it goes in the loop itself.", "explain": "Current is measured with an **ammeter**, in amps. It goes **in series**, in the loop, so all the current flows through it."}
+    },
+    {
+      "title": "Potential difference",
+      "steps": [
+        {"say": "The cell gives the charges a push, and they carry energy to the bulb. The size of this push is the **potential difference**, also called the **voltage**.", "do": "pd"},
+        {"say": "Potential difference is measured in **volts** (V) with a **voltmeter**. Its symbol is a circle with a V inside.", "speak": "Potential difference is measured in volts, with a voltmeter. Its symbol is a circle with the letter V inside.", "do": "volts"},
+        {"say": "A voltmeter is connected **in parallel**: across the bulb, with one wire on each side of it.", "do": "voltmeter"},
+        {"say": "One cell gives about 1.5 V. Two cells joined in a line give 3 V. The bigger push makes a bigger current, so the bulb is brighter.", "speak": "One cell gives about 1.5 volts. Two cells joined in a line give 3 volts. The bigger push makes a bigger current, so the bulb is brighter.", "do": "more-cells"}
+      ],
+      "check": {"q": "How should you connect a voltmeter to measure the potential difference across a bulb?", "options": ["In parallel, across the bulb", "In series, next to the bulb", "Anywhere in the loop", "In place of the cell"], "answer": 0,
+                "hint": "A voltmeter compares the two sides of the bulb, so it needs a wire on each side.", "explain": "A voltmeter goes **in parallel**, across the bulb, with one wire each side. Ammeters go in series; voltmeters go across."}
+    },
+    {
+      "title": "Series circuits",
+      "steps": [
+        {"say": "In a **series circuit**, everything is joined in one loop. There is only one path for the current.", "do": "series"},
+        {"say": "The current is the **same everywhere** in a series circuit. Every ammeter here reads 0.2 A.", "speak": "The current is the same everywhere in a series circuit. Every ammeter here reads nought point two amps.", "do": "series-current"},
+        {"say": "The potential difference is **shared** between the bulbs. Two cells give 3 V, so two identical bulbs get 1.5 V each.", "speak": "The potential difference is shared between the bulbs. Two cells give 3 volts, so two identical bulbs get 1.5 volts each.", "do": "series-share"},
+        {"say": "Add another bulb in series and the current gets smaller, so every bulb is **dimmer**.", "do": "series-more"},
+        {"say": "If one bulb breaks, it leaves a gap in the only path. The current stops and **all** the bulbs go out.", "do": "series-break"}
+      ],
+      "check": {"q": "Three bulbs are in series. The ammeter next to the cell reads 0.3 A. What is the current through the last bulb?", "options": ["0.3 A", "0.1 A", "0.9 A", "0 A"], "answer": 0,
+                "hint": "In a series circuit there is only one path. Is the current used up as it goes round?", "explain": "In a series circuit the current is **the same everywhere**, so it is **0.3 A** through every bulb. Current is not used up; energy is what the bulbs take."}
+    },
+    {
+      "title": "Parallel circuits",
+      "steps": [
+        {"say": "In a **parallel circuit**, the current splits into separate **branches**. Each bulb has its own loop back to the cell.", "do": "parallel"},
+        {"say": "The currents in the branches **add up** to the current from the cell. These bulbs are identical: 0.3 A + 0.3 A = 0.6 A.", "speak": "The currents in the branches add up to the current from the cell. These bulbs are identical: nought point three amps plus nought point three amps equals nought point six amps.", "do": "parallel-add"},
+        {"say": "If one bulb breaks, the other branch is still a complete loop, so the other bulb **stays on**.", "do": "parallel-break"},
+        {"say": "That's why the lights in a house are wired in parallel. Each light has its own switch, so one can be off while the others stay on.", "do": "house"}
+      ],
+      "check": {"q": "A parallel circuit has two branches. One branch ammeter reads 0.2 A and the other reads 0.3 A. What does the ammeter next to the cell read?", "options": ["0.5 A", "0.1 A", "0.3 A", "0.06 A"], "answer": 0,
+                "hint": "All the current from the cell splits up into the branches, then joins up again. So add the branches.", "explain": "The branch currents add up to the current from the cell: 0.2 + 0.3 = **0.5 A**."}
+    },
+    {
+      "title": "Resistance",
+      "steps": [
+        {"say": "**Resistance** tells you how hard it is for current to flow through something. A **resistor** adds resistance. Its symbol is a rectangle.", "do": "resistance"},
+        {"say": "Resistance is measured in **ohms** (Ω). With the same cells, more resistance means **less current**.", "speak": "Resistance is measured in ohms. With the same cells, more resistance means less current.", "do": "ohms"},
+        {"say": "To work out resistance: **resistance = potential difference ÷ current**, or R = V ÷ I.", "speak": "To work out resistance: resistance equals potential difference divided by current, or R equals V divided by I.", "do": "formula"},
+        {"say": "This resistor has 6 V across it and 2 A through it. R = 6 ÷ 2 = 3 Ω.", "speak": "This resistor has 6 volts across it and 2 amps through it. R equals 6 divided by 2, which is 3 ohms.", "do": "calc"},
+        {"say": "You can turn it round to find the potential difference: V = I × R. A current of 4 A through 3 Ω needs 4 × 3 = 12 V.", "speak": "You can turn it round to find the potential difference: V equals I times R. A current of 4 amps through 3 ohms needs 4 times 3, which is 12 volts.", "do": "rearrange"}
+      ],
+      "check": {"q": "A resistor has a potential difference of 12 V across it and a current of 3 A through it. What is its resistance? (R = V ÷ I)", "options": ["4 Ω", "36 Ω", "9 Ω", "15 Ω"], "answer": 0,
+                "hint": "Divide the potential difference by the current. Don't multiply or add them.", "explain": "R = V ÷ I = 12 ÷ 3 = **4 Ω**."}
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "d600f2a478da",
+   "s": 8.23,
+   "text": "Part one. Magnets and poles. ... This is a bar magnet. Its two ends are called poles: a north pole and a south pole."
+  },
+  "1-2": {
+   "h": "316eb31c69f3",
+   "s": 6.72,
+   "text": "The magnetic force is strongest at the poles. See how the paper clips cling to the ends, not the middle."
+  },
+  "1-3": {
+   "h": "d649ddc39350",
+   "s": 10.52,
+   "text": "Magnets attract magnetic materials. The magnetic metals are iron, nickel and cobalt. Most steel is magnetic too, because it is mostly iron."
+  },
+  "1-4": {
+   "h": "67f756d3ea2e",
+   "s": 7.34,
+   "text": "Most other metals are not magnetic: copper, aluminium and gold stay put. So do wood and plastic."
+  },
+  "2-1": {
+   "h": "0700b601acd1",
+   "s": 8.41,
+   "text": "Part two. Attract and repel. ... Bring two magnets close. A north pole and a south pole pull together: opposite poles attract."
+  },
+  "2-2": {
+   "h": "a619caadf564",
+   "s": 5.76,
+   "text": "Two north poles push each other apart. So do two south poles: like poles repel."
+  },
+  "2-3": {
+   "h": "6fcb9a10395b",
+   "s": 7.47,
+   "text": "Magnetism is a non-contact force. The magnet pulls the paper clip up across the gap, without touching it."
+  },
+  "2-4": {
+   "h": "b6eb97edb18b",
+   "s": 6.95,
+   "text": "Cut a magnet in half and you get two smaller magnets. Each half has its own north pole and south pole."
+  },
+  "3-1": {
+   "h": "b7513250b644",
+   "s": 10.18,
+   "text": "Part three. Magnetic fields. ... Around every magnet is a magnetic field. It is the space where the magnet pushes or pulls on magnetic things."
+  },
+  "3-2": {
+   "h": "24be9bf0ec5c",
+   "s": 5.72,
+   "text": "Sprinkle iron filings round a magnet and they line up in a pattern of curved lines."
+  },
+  "3-3": {
+   "h": "cac8bf6eb330",
+   "s": 7.83,
+   "text": "We draw the pattern as field lines. Outside the magnet, the arrows always go from the north pole to the south pole."
+  },
+  "3-4": {
+   "h": "63289a3996ca",
+   "s": 5.33,
+   "text": "The lines are closest together at the poles. That is where the field is strongest."
+  },
+  "3-5": {
+   "h": "22e73d1f164b",
+   "s": 6.38,
+   "text": "A small plotting compass points along the field lines, so you can use one to map a magnet's field."
+  },
+  "4-1": {
+   "h": "6d0a6d758191",
+   "s": 9.79,
+   "text": "Part four. Compasses and the Earth. ... A compass needle is a tiny magnet that can spin freely. Wherever you stand, it settles pointing north."
+  },
+  "4-2": {
+   "h": "ee24ec3d8a6a",
+   "s": 6.21,
+   "text": "That's because the Earth has a magnetic field, a bit like a giant bar magnet inside it."
+  },
+  "4-3": {
+   "h": "d7772371e4e8",
+   "s": 6.42,
+   "text": "The compass needle lines up with the Earth's field, so its north end points towards the North Pole."
+  },
+  "4-4": {
+   "h": "2ee93e2bbd2a",
+   "s": 9.47,
+   "text": "Here's a twist! Opposite poles attract, so the Earth's magnet must have its south pole up near the Arctic. That's what pulls the north end of the needle."
+  },
+  "5-1": {
+   "h": "862c9d5f9511",
+   "s": 9.19,
+   "text": "Part five. Electromagnets. ... An electric current flowing in a wire makes a magnetic field around the wire. Look how the compasses turn."
+  },
+  "5-2": {
+   "h": "87ba7d93d3f6",
+   "s": 6.87,
+   "text": "Wind the wire into a coil and the field is stronger. It has the same shape as a bar magnet's field."
+  },
+  "5-3": {
+   "h": "920cf3058e84",
+   "s": 6.61,
+   "text": "Put an iron core inside the coil and the field gets much stronger. Now it is an electromagnet."
+  },
+  "5-4": {
+   "h": "fbd936e39829",
+   "s": 4.82,
+   "text": "Switch the current off and the magnetism stops. The paper clips drop!"
+  },
+  "5-5": {
+   "h": "71f2cc9a6bde",
+   "s": 6.4,
+   "text": "To make an electromagnet stronger, use more turns of wire, a bigger current, or an iron core."
+  },
+  "6-1": {
+   "h": "5dd881814af4",
+   "s": 7.68,
+   "text": "Part six. Using electromagnets. ... The best thing about an electromagnet is that you can switch it on and off."
+  },
+  "6-2": {
+   "h": "ff9da7761e35",
+   "s": 7.36,
+   "text": "A scrapyard crane uses a huge electromagnet to lift old cars. Switch it off and the car drops."
+  },
+  "6-3": {
+   "h": "7aa35f536033",
+   "s": 10.58,
+   "text": "In an electric bell, the electromagnet pulls an iron arm and the hammer hits the bell. This breaks the circuit, the arm springs back, and it all starts again."
+  },
+  "6-4": {
+   "h": "5eab5b43e098",
+   "s": 6.98,
+   "text": "Electromagnets are also in loudspeakers, electric door locks and the scanners used in hospitals."
+  }
+ }
+}

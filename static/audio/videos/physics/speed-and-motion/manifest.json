@@ -1,0 +1,110 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "8b35e72c8f46",
+   "s": 11.71,
+   "text": "Part one. What is speed? ... Speed tells you how far something goes in a certain time. The snail and the car both move for the same time, but the car goes much further. It is faster."
+  },
+  "1-2": {
+   "h": "3d27a9b4d894",
+   "s": 5.63,
+   "text": "Here a car travels 100 metres along a road. It takes 20 seconds."
+  },
+  "1-3": {
+   "h": "a78921c2309a",
+   "s": 5.44,
+   "text": "Each second the car goes 5 metres. So its speed is 5 metres per second."
+  },
+  "1-4": {
+   "h": "3585a2b3a15a",
+   "s": 11.58,
+   "text": "To work out speed, divide the distance by the time: speed equals distance divided by time. Here, 100 divided by 20 is 5 metres per second."
+  },
+  "2-1": {
+   "h": "fc8f8e8adc7a",
+   "s": 10.11,
+   "text": "Part two. The formula triangle. ... Speed, distance and time fit in a formula triangle. Distance goes on top. Speed and time sit underneath."
+  },
+  "2-2": {
+   "h": "15ba0e9bdeba",
+   "s": 8.83,
+   "text": "Cover the one you want to find. Cover distance and you see speed and time side by side, so distance equals speed times time."
+  },
+  "2-3": {
+   "h": "32e0e330f2c9",
+   "s": 9.0,
+   "text": "A car goes at 20 metres per second for 15 seconds. Distance equals 20 times 15, which is 300 metres."
+  },
+  "2-4": {
+   "h": "9716bc978376",
+   "s": 15.19,
+   "text": "Cover time and you see distance over speed, so time equals distance divided by speed. A runner runs 400 metres at 8 metres per second. Time equals 400 divided by 8, which is 50 seconds."
+  },
+  "3-1": {
+   "h": "b6a14abac188",
+   "s": 11.65,
+   "text": "Part three. Units of speed. ... A speed always has a distance unit and a time unit. The first one here means metres per second. The second one means kilometres per hour."
+  },
+  "3-2": {
+   "h": "a49d24c8adbe",
+   "s": 9.09,
+   "text": "A cyclist rides 30 kilometres in 2 hours. Speed equals 30 divided by 2, which is 15 kilometres per hour."
+  },
+  "3-3": {
+   "h": "7dcdde0ad3ea",
+   "s": 13.42,
+   "text": "Make sure the units match before you divide. Remember: 1 kilometre is 1000 metres, 1 minute is 60 seconds, and 1 hour is 60 minutes, which is 3600 seconds."
+  },
+  "3-4": {
+   "h": "99caed1b894b",
+   "s": 15.91,
+   "text": "A train goes 150 kilometres in 1 hour 30 minutes. That is 1.5 hours, not 1.3! So speed equals 150 divided by 1.5, which is 100 kilometres per hour."
+  },
+  "4-1": {
+   "h": "5d8545bb13e8",
+   "s": 10.9,
+   "text": "Part four. Distance-time graphs. ... A distance-time graph shows how far something has gone at each moment. Time goes along the bottom. Distance goes up the side."
+  },
+  "4-2": {
+   "h": "bde38cf90eb4",
+   "s": 11.18,
+   "text": "In the first 10 seconds a cyclist rides 50 metres. A straight sloping line means a steady speed: 50 divided by 10 is 5 metres per second."
+  },
+  "4-3": {
+   "h": "e97c7c689ac5",
+   "s": 8.02,
+   "text": "From 10 seconds to 20 seconds the line is flat. The distance stays at 50 metres, so the cyclist has stopped."
+  },
+  "4-4": {
+   "h": "691b8597cea6",
+   "s": 15.55,
+   "text": "From 20 seconds to 30 seconds the line is steeper. The cyclist goes from 50 metres to 120 metres: that is 70 metres in 10 seconds, or 7 metres per second. A steeper line means a faster speed."
+  },
+  "4-5": {
+   "h": "b09cc00dca3b",
+   "s": 10.84,
+   "text": "The average speed for the whole trip is the total distance divided by the total time: 120 divided by 30 is 4 metres per second."
+  },
+  "5-1": {
+   "h": "14c26c709a6a",
+   "s": 13.57,
+   "text": "Part five. Relative motion. ... Relative motion is how fast something moves compared with something else. Two cars drive the same way, at 30 metres per second and 25 metres per second."
+  },
+  "5-2": {
+   "h": "921d39f535b0",
+   "s": 11.52,
+   "text": "Each second the gap between them grows by 30 minus 25, which is 5 metres. Compared with the slow car, the fast car moves at only 5 metres per second."
+  },
+  "5-3": {
+   "h": "7873add52392",
+   "s": 15.79,
+   "text": "Two trains come towards each other at 40 metres per second and 35 metres per second. Each second the gap shrinks by 40 plus 35, which is 75 metres. The gap closes at 75 metres per second."
+  },
+  "5-4": {
+   "h": "8e158fabdb6a",
+   "s": 8.94,
+   "text": "On a moving train, your friend in the next seat seems to sit still, because you move together. Compared with the ground, you are both moving fast!"
+  }
+ }
+}

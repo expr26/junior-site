@@ -1,0 +1,100 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "8a001ed950c9",
+   "s": 8.36,
+   "text": "Part one. Charges in atoms. ... Everything is made of tiny atoms. Inside each atom are even tinier particles."
+  },
+  "1-2": {
+   "h": "fbd31f746dc9",
+   "s": 6.95,
+   "text": "Protons have a positive charge. Electrons have a negative charge. Neutrons have no charge at all."
+  },
+  "1-3": {
+   "h": "639a82b3653b",
+   "s": 9.19,
+   "text": "Protons and neutrons are held tightly in the centre of the atom, the nucleus. Electrons are on the outside, and some can be rubbed off."
+  },
+  "1-4": {
+   "h": "c24b4daa3909",
+   "s": 9.6,
+   "text": "Most things have the same number of positive and negative charges. They cancel out, so the object is neutral: it has no overall charge."
+  },
+  "2-1": {
+   "h": "cd47b56b33ad",
+   "s": 7.66,
+   "text": "Part two. Charging by rubbing. ... Rub a balloon on your hair. The rubbing moves some electrons from your hair onto the balloon."
+  },
+  "2-2": {
+   "h": "77dd9661e412",
+   "s": 8.17,
+   "text": "The balloon has gained electrons, so it has more negative charges than positive ones. It is now negatively charged."
+  },
+  "2-3": {
+   "h": "11587d0167c9",
+   "s": 8.0,
+   "text": "Your hair has lost electrons, so it has more positive charges than negative ones. It is now positively charged."
+  },
+  "2-4": {
+   "h": "7a462a95a6f9",
+   "s": 9.86,
+   "text": "Only electrons move. Protons are stuck in the nucleus. So an object becomes positive by losing electrons, never by gaining protons."
+  },
+  "3-1": {
+   "h": "13b08e6a1a8b",
+   "s": 8.38,
+   "text": "Part three. Attract and repel. ... Charged objects push or pull on each other without touching. This is a non-contact force."
+  },
+  "3-2": {
+   "h": "b29f8715b0d8",
+   "s": 7.0,
+   "text": "Like charges repel. Two negative balloons push each other apart. Two positive charges repel too."
+  },
+  "3-3": {
+   "h": "ecbeaac201cf",
+   "s": 6.19,
+   "text": "Opposite charges attract. A negative balloon and a positive balloon pull towards each other."
+  },
+  "3-4": {
+   "h": "d3096acd8074",
+   "s": 11.5,
+   "text": "The space around a charged object where it pushes or pulls other charges is its electric field. The force is stronger close to the object and weaker further away."
+  },
+  "4-1": {
+   "h": "08656dfb80e6",
+   "s": 7.51,
+   "text": "Part four. Sticky balloons. ... A charged balloon can stick to a wall, even though the wall is not charged. How?"
+  },
+  "4-2": {
+   "h": "2657daf583ff",
+   "s": 10.13,
+   "text": "The negative balloon pushes electrons in the wall's surface a little way back. That leaves the surface slightly positive, and opposite charges attract."
+  },
+  "4-3": {
+   "h": "1082df3c9f76",
+   "s": 8.09,
+   "text": "The same thing happens when a charged rod picks up tiny bits of paper. The bits are so light that the pull lifts them up."
+  },
+  "5-1": {
+   "h": "9c4cf74ebb4e",
+   "s": 6.1,
+   "text": "Part five. Sparks and lightning. ... Shuffle across a carpet and charge can build up on you."
+  },
+  "5-2": {
+   "h": "2068adb1ccb9",
+   "s": 9.69,
+   "text": "Touch a metal door handle and the charge suddenly flows away through the metal, which is a conductor. You feel a tiny shock and may even see a spark."
+  },
+  "5-3": {
+   "h": "ddee65bfa91c",
+   "s": 7.94,
+   "text": "Lightning is a giant spark. Charge builds up in storm clouds until it jumps to the ground or to another cloud."
+  },
+  "5-4": {
+   "h": "77d04b579eb9",
+   "s": 7.62,
+   "text": "Tall buildings have a lightning conductor: a thick metal strip that gives the charge a safe path down to the ground."
+  }
+ }
+}

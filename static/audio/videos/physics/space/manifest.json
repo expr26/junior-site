@@ -1,0 +1,140 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "c0f69f782820",
+   "s": 10.26,
+   "text": "Part one. Day and night. ... The Earth is a giant ball that spins. It spins round its axis: an imaginary line through the North Pole and the South Pole."
+  },
+  "1-2": {
+   "h": "98cc9c2c3830",
+   "s": 6.29,
+   "text": "The half of the Earth facing the Sun has day. The half facing away is in shadow: that's night."
+  },
+  "1-3": {
+   "h": "7f4126838fce",
+   "s": 6.17,
+   "text": "The Earth spins round once in about 24 hours. That gives us one day and one night."
+  },
+  "1-4": {
+   "h": "855b6899eb65",
+   "s": 9.22,
+   "text": "The Sun isn't moving round us. It only seems to cross the sky because the Earth turns. It rises in the east and sets in the west."
+  },
+  "2-1": {
+   "h": "c55a73065b79",
+   "s": 12.67,
+   "text": "Part two. Years and seasons. ... As it spins, the Earth also travels round the Sun. One trip, called an orbit, takes about 365 and a quarter days. That's one year."
+  },
+  "2-2": {
+   "h": "223312f288f6",
+   "s": 7.49,
+   "text": "The quarter days add up. So every four years we add an extra day, the 29th of February. That's a leap year."
+  },
+  "2-3": {
+   "h": "2df3958717ac",
+   "s": 7.21,
+   "text": "The Earth's axis is tilted. As the Earth goes round the Sun, the axis always leans the same way."
+  },
+  "2-4": {
+   "h": "3c5b83480843",
+   "s": 7.34,
+   "text": "In June the UK leans towards the Sun. The Sun climbs high in the sky and the days are long. It's summer."
+  },
+  "2-5": {
+   "h": "993e641784df",
+   "s": 6.91,
+   "text": "In December the UK leans away from the Sun. The Sun stays low and the days are short. It's winter."
+  },
+  "3-1": {
+   "h": "98779c0e1f9b",
+   "s": 9.73,
+   "text": "Part three. The Solar System. ... At the centre of our Solar System is the Sun. The Sun is a star: a huge ball of very hot, glowing gas."
+  },
+  "3-2": {
+   "h": "dd7c0dea85f0",
+   "s": 8.02,
+   "text": "Eight planets orbit the Sun. In order: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune."
+  },
+  "3-3": {
+   "h": "4fcee49de0ed",
+   "s": 6.19,
+   "text": "A silly sentence helps you remember the order: My Very Easy Method Just Speeds Up Naming."
+  },
+  "3-4": {
+   "h": "199f4fd4ad9f",
+   "s": 7.49,
+   "text": "The four inner planets are small and rocky. The four outer planets are giants, made mostly of gas and ice."
+  },
+  "3-5": {
+   "h": "8ce68e74b134",
+   "s": 9.0,
+   "text": "Planets further from the Sun take longer to go round. The Earth takes one year, but Neptune takes about 165 years!"
+  },
+  "4-1": {
+   "h": "bb4a53ff5520",
+   "s": 7.15,
+   "text": "Part four. The Moon. ... The Moon orbits the Earth. One orbit takes about 27 days, roughly a month."
+  },
+  "4-2": {
+   "h": "b4bea3c6a5b9",
+   "s": 5.46,
+   "text": "The Moon doesn't make its own light. We see it because it reflects light from the Sun."
+  },
+  "4-3": {
+   "h": "d496140129a8",
+   "s": 7.47,
+   "text": "The Sun always lights up half of the Moon. As the Moon goes round the Earth, we see different amounts of that lit half."
+  },
+  "4-4": {
+   "h": "414cd819582c",
+   "s": 9.26,
+   "text": "So the Moon seems to change shape. These shapes are called the phases of the Moon: new moon, crescent, half moon, full moon, and back again."
+  },
+  "5-1": {
+   "h": "2ca9acbdfbac",
+   "s": 10.62,
+   "text": "Part five. Gravity in space. ... Gravity is a pull between any two objects with mass. The bigger the mass, the stronger the pull. It gets weaker further away."
+  },
+  "5-2": {
+   "h": "6441131ac113",
+   "s": 7.89,
+   "text": "The Sun's gravity keeps the Earth and the other planets in their orbits. The Earth's gravity keeps the Moon in its orbit."
+  },
+  "5-3": {
+   "h": "f546d7a22fd7",
+   "s": 12.63,
+   "text": "Different worlds have different gravity. It is about 10 newtons per kilogram on the Earth, 1 point 6 newtons per kilogram on the Moon and 25 newtons per kilogram on Jupiter."
+  },
+  "5-4": {
+   "h": "73e7d1ffe643",
+   "s": 16.34,
+   "text": "An astronaut's mass is 60 kilograms. She weighs 60 times 10, which is 600 newtons, on the Earth, but only 60 times 1 point 6, which is 96 newtons, on the Moon. Her mass is still 60 kilograms."
+  },
+  "6-1": {
+   "h": "80abb0fac4fa",
+   "s": 9.37,
+   "text": "Part six. Stars and galaxies. ... The Sun is our nearest star. The stars you see at night are suns too, but they are much, much further away."
+  },
+  "6-2": {
+   "h": "8a0a08fe04cf",
+   "s": 6.68,
+   "text": "Light is the fastest thing there is. Even so, light from the Sun takes about 8 minutes to reach us."
+  },
+  "6-3": {
+   "h": "daf830717b37",
+   "s": 7.4,
+   "text": "Space is so big that we use light years. A light year is a distance: how far light travels in one year."
+  },
+  "6-4": {
+   "h": "6333800dbba2",
+   "s": 9.37,
+   "text": "One light year is about nine and a half million million kilometres. The next nearest star after the Sun is over 4 light years away."
+  },
+  "6-5": {
+   "h": "98521e2da6b7",
+   "s": 8.92,
+   "text": "Stars are grouped in huge galaxies. We live in the Milky Way, with hundreds of billions of stars. And there are billions of galaxies!"
+  }
+ }
+}

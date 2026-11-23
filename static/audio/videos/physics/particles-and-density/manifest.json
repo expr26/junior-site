@@ -1,0 +1,120 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "9c201caee319",
+   "s": 10.54,
+   "text": "Part one. Solids, liquids and gases. ... Everything around you is made of tiny particles. They are far too small to see, even with a magnifying glass."
+  },
+  "1-2": {
+   "h": "29caddd2a1a1",
+   "s": 10.13,
+   "text": "In a solid, the particles are packed close together in a regular pattern. They can't move about, but they vibrate on the spot. That's why a solid keeps its shape."
+  },
+  "1-3": {
+   "h": "f7c613454035",
+   "s": 9.39,
+   "text": "In a liquid, the particles are still close together, but they can slide past each other. So a liquid can flow and takes the shape of its container."
+  },
+  "1-4": {
+   "h": "ba7f1951ebd0",
+   "s": 8.36,
+   "text": "In a gas, the particles are far apart and move quickly in all directions. A gas spreads out to fill its whole container."
+  },
+  "1-5": {
+   "h": "d838240075de",
+   "s": 9.79,
+   "text": "Gas particles have big gaps between them, so a gas can be squashed. In a solid the particles are already touching, so it can hardly be squashed at all."
+  },
+  "2-1": {
+   "h": "8a6d516ffbd7",
+   "s": 10.41,
+   "text": "Part two. Changes of state. ... Heat a solid and its particles vibrate more and more. In the end they break out of their pattern: the solid melts into a liquid."
+  },
+  "2-2": {
+   "h": "ba38b5dc99e6",
+   "s": 8.92,
+   "text": "A liquid can evaporate into a gas from its surface. Heat it to its boiling point and bubbles of gas form all through it: that is boiling."
+  },
+  "2-3": {
+   "h": "4f7255250f47",
+   "s": 6.72,
+   "text": "Cool a gas and it condenses back into a liquid. That's why drops of water form on a cold window."
+  },
+  "2-4": {
+   "h": "4f653254aa26",
+   "s": 3.31,
+   "text": "Cool a liquid enough and it freezes into a solid."
+  },
+  "2-5": {
+   "h": "98082a8e2570",
+   "s": 10.09,
+   "text": "When something changes state, no particles are made or lost, so the mass stays the same. 20 grams of ice melts into 20 grams of water."
+  },
+  "3-1": {
+   "h": "393d1ec394ae",
+   "s": 10.15,
+   "text": "Part three. Diffusion. ... The particles in liquids and gases are always moving and bumping into each other. Here are two gases, kept apart by a wall."
+  },
+  "3-2": {
+   "h": "36cda489b10b",
+   "s": 10.37,
+   "text": "Take the wall away and the particles spread out and mix by themselves. This is diffusion: particles spread from where there are lots of them to where there are fewer."
+  },
+  "3-3": {
+   "h": "eabcba275112",
+   "s": 6.51,
+   "text": "That's how a smell spreads. Open a bottle of perfume and soon someone across the room can smell it."
+  },
+  "3-4": {
+   "h": "26bca63c5ccd",
+   "s": 9.6,
+   "text": "Diffusion is faster when it's warmer, because warmer particles move faster. A drop of ink spreads quicker in hot water than in cold water."
+  },
+  "4-1": {
+   "h": "da5702f2918b",
+   "s": 5.8,
+   "text": "Part four. Gas pressure. ... Gas particles in a box zoom about and keep hitting the walls."
+  },
+  "4-2": {
+   "h": "2b229835fafd",
+   "s": 5.48,
+   "text": "Each hit gives the wall a tiny push. All the pushes together make gas pressure."
+  },
+  "4-3": {
+   "h": "a6e601d99ac8",
+   "s": 7.06,
+   "text": "Heat the gas and the particles move faster. They hit the walls harder and more often, so the pressure goes up."
+  },
+  "4-4": {
+   "h": "c488513f6b03",
+   "s": 6.83,
+   "text": "Pump more air into a ball and the pressure goes up too: more particles means more hits on the inside."
+  },
+  "5-1": {
+   "h": "410cfe95e1f6",
+   "s": 11.99,
+   "text": "Part five. Density. ... Density tells you how much mass is packed into each bit of space. These two cubes are the same size, but the metal cube has much more mass than the cork cube."
+  },
+  "5-2": {
+   "h": "297209bfeb44",
+   "s": 11.82,
+   "text": "To work it out: density equals mass divided by volume. Mass is in grams. Volume is in cubic centimetres. So density is in grams per cubic centimetre."
+  },
+  "5-3": {
+   "h": "c0019ee858db",
+   "s": 12.18,
+   "text": "A block has a mass of 200 grams and a volume of 50 cubic centimetres. Density equals 200 divided by 50, which is 4 grams per cubic centimetre."
+  },
+  "5-4": {
+   "h": "4937516e3a55",
+   "s": 15.19,
+   "text": "Water has a density of 1 gram per cubic centimetre. Things that are less dense than water float, and things that are denser sink. A wooden block with a density of 0.7 grams per cubic centimetre floats."
+  },
+  "5-5": {
+   "h": "3385db5a9766",
+   "s": 21.44,
+   "text": "To find the volume of a lumpy stone, lower it into water. The level rises from 50 to 80 cubic centimetres, so the stone's volume is 30 cubic centimetres. Its mass is 150 grams, so its density is 150 divided by 30, which is 5 grams per cubic centimetre."
+  }
+ }
+}

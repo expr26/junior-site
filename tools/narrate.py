@@ -47,7 +47,8 @@ def lines(v):
         for s, st in enumerate(ch["steps"], 1):
             text = spoken(st)
             if s == 1:
-                text = f"Part {NUM[c] if c < len(NUM) else c}. {ch['title'].rstrip('?!.')}{'?' if ch['title'].endswith('?') else '.'} ... {text}"
+                head = spoken({"say": ch["title"]}).replace("=", " equals ")
+                text = f"Part {NUM[c] if c < len(NUM) else c}. {head.rstrip('?!.')}{'?' if head.endswith('?') else '.'} ... {text}"
             out[f"{c}-{s}"] = text
     return out
 
@@ -80,7 +81,7 @@ def main(only):
         d = OUT / f.parent.name / f.stem
         d.mkdir(parents=True, exist_ok=True)
         mpath = d / "manifest.json"
-        old = json.loads(mpath.read_text()) if mpath.exists() else {}
+        old = json.loads(mpath.read_text()).get("lines", {}) if mpath.exists() else {}
         new, made = {}, 0
         for name, text in lines(v).items():
             h = hashlib.sha1(f"{VOICE}|{SPEED}|{text}".encode()).hexdigest()[:12]

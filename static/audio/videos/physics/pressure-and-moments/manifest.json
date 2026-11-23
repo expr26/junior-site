@@ -1,0 +1,105 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "d7ea9358c344",
+   "s": 10.84,
+   "text": "Part one. What is pressure? ... Pressure is about how spread out a force is. These two bricks weigh the same. One stands on its end and one lies flat on a soft sponge."
+  },
+  "1-2": {
+   "h": "2a0576b836b2",
+   "s": 11.2,
+   "text": "On its end, the brick pushes on a small area, so the pressure is big and it sinks in deep. Lying flat, the same weight is spread over a big area, so the pressure is small."
+  },
+  "1-3": {
+   "h": "3ca91bd099d6",
+   "s": 10.82,
+   "text": "A drawing pin has a tiny point. The small area makes a huge pressure, so it goes into the board easily. The wide flat head spreads the force on your thumb."
+  },
+  "1-4": {
+   "h": "f4569f5fa50a",
+   "s": 7.81,
+   "text": "Snowshoes do the opposite. They spread your weight over a big area, so the pressure on the snow is small and you don't sink in."
+  },
+  "2-1": {
+   "h": "a874b6fa29da",
+   "s": 10.43,
+   "text": "Part two. Calculating pressure. ... To work out pressure: pressure equals force divided by area. The force is in newtons. The area is in square metres."
+  },
+  "2-2": {
+   "h": "2360c21b851d",
+   "s": 7.98,
+   "text": "So pressure is measured in newtons per square metre. Another name for 1 newton per square metre is 1 pascal."
+  },
+  "2-3": {
+   "h": "063e979119b7",
+   "s": 14.27,
+   "text": "A crate weighing 200 newtons lies on 4 square metres of floor. Pressure equals 200 divided by 4, which is 50 newtons per square metre. Each square metre of floor gets 50 newtons."
+  },
+  "2-4": {
+   "h": "bff2ef6eb852",
+   "s": 17.47,
+   "text": "Turn the crate onto a smaller side, with an area of 2 square metres. Now the same 200 newtons is shared by only 2 squares. Pressure equals 200 divided by 2, which is 100 newtons per square metre. Half the area, double the pressure!"
+  },
+  "3-1": {
+   "h": "b13049e63afd",
+   "s": 9.79,
+   "text": "Part three. Pressure in liquids and gases. ... Liquids and gases press on every surface they touch, in all directions: down, up and sideways."
+  },
+  "3-2": {
+   "h": "ec32e3388aa1",
+   "s": 10.11,
+   "text": "The deeper you go, the more water there is above you, pushing down. So water pressure increases with depth. Water squirts out hardest from the lowest hole."
+  },
+  "3-3": {
+   "h": "10083ffa2bfe",
+   "s": 7.81,
+   "text": "That's why a dam is built much thicker at the bottom. The water pushes hardest at the bottom, so that part must be strongest."
+  },
+  "3-4": {
+   "h": "ff4ec9c44f62",
+   "s": 9.32,
+   "text": "Air has pressure too, because of all the air above pressing down. High up a mountain there is less air above you, so the air pressure is lower."
+  },
+  "4-1": {
+   "h": "f777dcc6c5f9",
+   "s": 11.01,
+   "text": "Part four. Moments: forces that turn. ... Forces can make things turn. The point something turns around is called the pivot. Here the pivot is the nut in the middle."
+  },
+  "4-2": {
+   "h": "e6eced106a6d",
+   "s": 7.64,
+   "text": "The turning effect of a force is called a moment. To work it out: moment equals force times distance from the pivot."
+  },
+  "4-3": {
+   "h": "aeda2b5afe93",
+   "s": 8.49,
+   "text": "A 20 newton force pushes 3 metres from the pivot. Its moment is 20 times 3, which is 60 newton metres."
+  },
+  "4-4": {
+   "h": "550ffd17a166",
+   "s": 8.75,
+   "text": "A bigger distance gives a bigger moment. That's why you push a door near the handle, far from the hinge. Pushing near the hinge is much harder."
+  },
+  "5-1": {
+   "h": "52cb521851ac",
+   "s": 13.89,
+   "text": "Part five. Balancing a see-saw. ... On a see-saw, each weight tries to turn it. The 30 newton block on the left tries to turn it anticlockwise. The 20 newton block on the right tries to turn it clockwise."
+  },
+  "5-2": {
+   "h": "0f7ba90783f4",
+   "s": 9.88,
+   "text": "Left: 30 newtons times 2 metres is 60 newton metres. Right: 20 newtons times 3 metres is also 60 newton metres."
+  },
+  "5-3": {
+   "h": "5b3dc0ccc4fe",
+   "s": 10.09,
+   "text": "The moments are equal, so the see-saw balances. This is the principle of moments: it balances when the clockwise and anticlockwise moments are equal."
+  },
+  "5-4": {
+   "h": "f232331f4aaa",
+   "s": 5.59,
+   "text": "So a lighter person can balance a heavier person by sitting further from the pivot."
+  }
+ }
+}

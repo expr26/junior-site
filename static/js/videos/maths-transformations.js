@@ -138,7 +138,7 @@
     'tr-count': function (s) {
       s.arrow(px(-4), py(1), 5 * U, 'r', { colour: s.C.orange, width: 6, delay: 200, name: 'ar' });
       s.arrow(px(1), py(1), 2 * U, 'd', { colour: s.C.orange, width: 6, delay: 900, name: 'ad' });
-      s.add(label(px(-0.6), py(1) - 16, '5 right', 18, '#C2570C'), { enter: 'fade', delay: 600, name: 'lr' });
+      s.add(label(px(-2.7), py(1) + 18, '5 right', 18, '#C2570C'), { enter: 'fade', delay: 600, name: 'lr' });
       s.add(label(px(1) - 10, py(0.5), '2 down', 18, '#C2570C', 'end'), { enter: 'fade', delay: 1300, name: 'ld' });
       hideAll(s, ['t1', 't2']);
       panel(s, 160, 'every corner:', { delay: 400, name: 'c1' });

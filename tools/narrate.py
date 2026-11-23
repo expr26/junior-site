@@ -81,7 +81,7 @@ def main(only):
         d = OUT / f.parent.name / f.stem
         d.mkdir(parents=True, exist_ok=True)
         mpath = d / "manifest.json"
-        old = json.loads(mpath.read_text()) if mpath.exists() else {}
+        old = json.loads(mpath.read_text()).get("lines", {}) if mpath.exists() else {}
         new, made = {}, 0
         for name, text in lines(v).items():
             h = hashlib.sha1(f"{VOICE}|{SPEED}|{text}".encode()).hexdigest()[:12]

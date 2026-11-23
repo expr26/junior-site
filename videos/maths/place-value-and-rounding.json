@@ -37,7 +37,7 @@
                 "hint": "Look at the tens digit, the one just after the hundreds.", "explain": "The tens digit is **4**, which is 4 or less, so the hundreds stay the same: 2,649 rounds to **2,600**."}
     },
     {
-      "title": "× and ÷ by 10, 100 and 1000",
+      "title": "Multiplying and dividing by 10, 100 and 1000",
       "steps": [
         {"say": "When you multiply by 10, every digit moves **one place to the left**. 36 × 10 = 360.", "speak": "When you multiply by 10, every digit moves one place to the left. 36 times 10 equals 360.", "do": "times-ten"},
         {"say": "× 100 moves the digits **two places** left. 4.7 × 100 = 470. A zero fills the empty ones place.", "speak": "Times 100 moves the digits two places left. 4 point 7 times 100 equals 470. A zero fills the empty ones place.", "do": "times-hundred"},

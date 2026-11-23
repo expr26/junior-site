@@ -1,0 +1,120 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "417ded1af43b",
+   "s": 11.05,
+   "text": "Part one. Types of angle. ... An angle measures a turn. We measure angles in degrees, written with a little circle. One full turn is 360 degrees."
+  },
+  "1-2": {
+   "h": "b2f0ecf0bc71",
+   "s": 6.08,
+   "text": "A right angle is a quarter turn: exactly 90 degrees. We mark it with a little square."
+  },
+  "1-3": {
+   "h": "1e79fba1bb95",
+   "s": 9.47,
+   "text": "An acute angle is less than 90 degrees. An obtuse angle is more than 90 degrees but less than 180 degrees."
+  },
+  "1-4": {
+   "h": "60e790e7cca3",
+   "s": 11.63,
+   "text": "A straight line makes an angle of 180 degrees. A reflex angle is more than 180 degrees but less than 360 degrees."
+  },
+  "2-1": {
+   "h": "8cfe766fc30a",
+   "s": 16.28,
+   "text": "Part two. Angle rules. ... Angles on a straight line add up to 180 degrees. One angle is 115 degrees, so the other is x equals 180 minus 115, which is 65 degrees."
+  },
+  "2-2": {
+   "h": "a63e71ed1873",
+   "s": 16.36,
+   "text": "Angles round a point add up to 360 degrees. 100 plus 140 is 240 degrees, so y equals 360 minus 240, which is 120 degrees."
+  },
+  "2-3": {
+   "h": "b8877a253d47",
+   "s": 15.02,
+   "text": "The angles in a triangle add up to 180 degrees. 40 plus 75 is 115 degrees, so x equals 180 minus 115, which is 65 degrees."
+  },
+  "2-4": {
+   "h": "24ad89218c0f",
+   "s": 11.8,
+   "text": "The angles in a quadrilateral add up to 360 degrees. Why? Cut it into two triangles: 2 times 180 is 360 degrees."
+  },
+  "3-1": {
+   "h": "5a7c2cd0083f",
+   "s": 9.86,
+   "text": "Part three. Crossing and parallel lines. ... When two straight lines cross, the angles opposite each other are equal. They are called vertically opposite angles."
+  },
+  "3-2": {
+   "h": "ca4c4450e5ce",
+   "s": 7.23,
+   "text": "Parallel lines go in the same direction and never meet, like train tracks. We mark them with little arrows."
+  },
+  "3-3": {
+   "h": "ead612a2f28d",
+   "s": 8.49,
+   "text": "Draw a line across two parallel lines. The angles inside a Z shape are alternate angles. Alternate angles are equal."
+  },
+  "3-4": {
+   "h": "b8f0f49f27c6",
+   "s": 4.84,
+   "text": "The angles in an F shape are corresponding angles. They are equal too."
+  },
+  "3-5": {
+   "h": "cb4ed78f22ba",
+   "s": 12.78,
+   "text": "The angles inside a C or U shape are co-interior angles. They add up to 180 degrees: 55 plus 125 is 180 degrees."
+  },
+  "4-1": {
+   "h": "a7dae2ba762e",
+   "s": 12.27,
+   "text": "Part four. Polygons. ... A polygon is a flat shape with straight sides. A triangle has 3 sides, a quadrilateral 4, a pentagon 5, a hexagon 6 and an octagon 8."
+  },
+  "4-2": {
+   "h": "5c9c4b08b483",
+   "s": 6.04,
+   "text": "In a regular polygon, all the sides are the same length and all the angles are the same size."
+  },
+  "4-3": {
+   "h": "bf4cb3c9a4db",
+   "s": 14.72,
+   "text": "The angles inside a hexagon add up to 720 degrees. A regular hexagon has 6 equal angles, so each one is 720 divided by 6, which is 120 degrees."
+  },
+  "4-4": {
+   "h": "b36d41370c49",
+   "s": 16.0,
+   "text": "Walk all the way round a polygon and you make one full turn. So the exterior angles add up to 360 degrees. Each exterior angle of a regular hexagon is 360 divided by 6, which is 60 degrees."
+  },
+  "4-5": {
+   "h": "5eaad99f8c1c",
+   "s": 12.22,
+   "text": "An interior angle and its exterior angle sit on a straight line, so they add up to 180 degrees: 120 plus 60 is 180 degrees."
+  },
+  "5-1": {
+   "h": "5fde706b498c",
+   "s": 13.25,
+   "text": "Part five. Properties of shapes. ... Triangles: an equilateral triangle has 3 equal sides, an isosceles triangle has 2 equal sides, and a scalene triangle has no equal sides."
+  },
+  "5-2": {
+   "h": "ee709d704203",
+   "s": 10.5,
+   "text": "A square has 4 equal sides and 4 right angles. A rectangle has 4 right angles. A rhombus has 4 equal sides, like a square pushed over."
+  },
+  "5-3": {
+   "h": "ef724037a8b7",
+   "s": 7.57,
+   "text": "A parallelogram has two pairs of parallel sides. A trapezium has exactly one pair of parallel sides."
+  },
+  "5-4": {
+   "h": "c18cf76d7a2e",
+   "s": 9.17,
+   "text": "A line of symmetry is a mirror line: fold along it and the two halves match. A square has 4 lines of symmetry. A rectangle has 2."
+  },
+  "5-5": {
+   "h": "f057a1968f67",
+   "s": 9.66,
+   "text": "3D shapes have faces, edges and vertices (corners). A triangular prism has 5 faces, 9 edges and 6 vertices."
+  }
+ }
+}

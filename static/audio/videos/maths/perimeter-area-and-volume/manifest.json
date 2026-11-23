@@ -1,0 +1,105 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "048d0fe0a7d2",
+   "s": 8.32,
+   "text": "Part one. Perimeter. ... Perimeter is the distance all the way round the edge of a shape. Watch the owl walk round this rectangle."
+  },
+  "1-2": {
+   "h": "4c50ddf86b61",
+   "s": 14.46,
+   "text": "The rectangle is 7 centimetres long and 4 centimetres wide. Add all four sides: 7 plus 4 plus 7 plus 4 is 22 centimetres. Perimeter is a length, so it is in centimetres."
+  },
+  "1-3": {
+   "h": "49ff948da8a5",
+   "s": 11.48,
+   "text": "For an L shape, find the missing sides first. The top is 9 minus 4, which is 5 centimetres. The right side is 7 minus 3, which is 4 centimetres."
+  },
+  "1-4": {
+   "h": "b87801855963",
+   "s": 7.77,
+   "text": "Then add all six sides: 9 plus 4 plus 4 plus 3 plus 5 plus 7 is 32 centimetres."
+  },
+  "2-1": {
+   "h": "79d0817f3d02",
+   "s": 13.29,
+   "text": "Part two. Area of rectangles. ... Area is how much flat surface a shape covers. We measure it in squares. A square 1 centimetre by 1 centimetre has an area of 1 square centimetre."
+  },
+  "2-2": {
+   "h": "38fa831dd3ec",
+   "s": 13.59,
+   "text": "This rectangle is 7 centimetres long and 4 centimetres wide. It has 4 rows of 7 squares. Area equals length times width: 7 times 4 is 28 square centimetres."
+  },
+  "2-3": {
+   "h": "4dc17af274cc",
+   "s": 11.03,
+   "text": "Don't mix them up! The same rectangle has a perimeter of 22 centimetres but an area of 28 square centimetres. Area is always in square units."
+  },
+  "2-4": {
+   "h": "da8a5c5ae166",
+   "s": 17.22,
+   "text": "For the L shape, take the whole rectangle, 9 times 7, which is 63 square centimetres, and subtract the missing corner, 4 times 3, which is 12 square centimetres. The area is 63 minus 12, which is 51 square centimetres."
+  },
+  "3-1": {
+   "h": "808afc4f289c",
+   "s": 18.07,
+   "text": "Part three. Triangles and other shapes. ... A triangle is half of a rectangle. This one has a base of 8 centimetres and a height of 5 centimetres. Area equals base times height divided by 2: 8 times 5 divided by 2 is 20 square centimetres."
+  },
+  "3-2": {
+   "h": "9dee975797ae",
+   "s": 7.27,
+   "text": "The height must be perpendicular to the base: it meets the base at a right angle. It is not the slanted side."
+  },
+  "3-3": {
+   "h": "5f195ca7e319",
+   "s": 13.46,
+   "text": "A parallelogram: cut a triangle off one end and move it to the other end. Now it is a rectangle! Area equals base times perpendicular height: 8 times 4 is 32 square centimetres."
+  },
+  "3-4": {
+   "h": "2435147d1174",
+   "s": 13.25,
+   "text": "A trapezium: add the two parallel sides, halve the answer, then multiply by the height. 3 plus 7 is 10, divided by 2 is 5, and 5 times 4 is 20 square centimetres."
+  },
+  "4-1": {
+   "h": "ad9c5d1a2d79",
+   "s": 11.75,
+   "text": "Part four. Circles. ... The radius goes from the centre of a circle to the edge. The diameter goes all the way across, through the centre. The diameter is 2 times the radius."
+  },
+  "4-2": {
+   "h": "c1ef1ec5bfce",
+   "s": 12.69,
+   "text": "The circumference is the distance all the way round a circle. Unroll it and it is just over 3 diameters long: about 3.14 diameters. This number is called pi."
+  },
+  "4-3": {
+   "h": "aa489931b3c7",
+   "s": 13.91,
+   "text": "So circumference equals pi times diameter. A circle with a diameter of 20 centimetres has a circumference of 3.14 times 20, which is 62.8 centimetres."
+  },
+  "4-4": {
+   "h": "dd454fc83efb",
+   "s": 17.0,
+   "text": "Area of a circle equals pi times radius times radius, written pi r squared. This circle has a radius of 10 centimetres, so its area is 3.14 times 10 times 10, which is 314 square centimetres."
+  },
+  "5-1": {
+   "h": "762e7baaf98e",
+   "s": 13.29,
+   "text": "Part five. Volume and surface area. ... Volume is how much space a 3D shape takes up. We measure it in cubes. A cube 1 centimetre on each side has a volume of 1 cubic centimetre."
+  },
+  "5-2": {
+   "h": "78e809d52bf3",
+   "s": 18.35,
+   "text": "This cuboid is 4 centimetres long, 3 centimetres wide and 2 centimetres tall. Each layer has 4 times 3, which is 12 cubes, and there are 2 layers. Volume equals length times width times height: 4 times 3 times 2 is 24 cubic centimetres."
+  },
+  "5-3": {
+   "h": "3f3b1a34ef17",
+   "s": 21.33,
+   "text": "Surface area is the total area of all the faces. A cuboid has 6 faces in 3 matching pairs: 4 times 3 is 12, 4 times 2 is 8 and 3 times 2 is 6. So the surface area is 2 times 12 plus 8 plus 6, which is 2 times 26, which is 52 square centimetres."
+  },
+  "5-4": {
+   "h": "a9fa9ccbf063",
+   "s": 21.63,
+   "text": "Watch the units. 1 metre is 100 centimetres, so 1 square metre is 100 times 100, which is 10 thousand square centimetres, not 100! And 1 litre is 1000 cubic centimetres. Use square centimetres for small things like a book and square metres for big things like a football pitch."
+  }
+ }
+}

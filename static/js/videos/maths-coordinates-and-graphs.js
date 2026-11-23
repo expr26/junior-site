@@ -3,13 +3,37 @@
 (function () {
   if (!window.Theory) return;
 
+  /* Soft gradients and highlights, as in the Forces video. Every drawing gets fresh gradient ids from a counter, so no id is used twice on the page. */
+  var LINE = 'rgba(30,27,58,.35)', NID = 0;
+  function uid() { return 'mBc' + (++NID); }
+  function lin(id, a, b) { return '<linearGradient id="' + id + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="' + a + '"/><stop offset="1" stop-color="' + b + '"/></linearGradient>'; }
+  function gloss(id) {   // a white shine at the top left fading to a soft shade, laid over any colour
+    return '<radialGradient id="' + id + '" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#fff" stop-opacity=".6"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#1E1B3A" stop-opacity=".14"/></radialGradient>';
+  }
+  /* a rounded card with top left (x, y), w by h: a gradient from a (top) to b (bottom), an outline and a white sheen along the top */
+  function card(x, y, w, h, a, b, o) {
+    o = o || {};
+    var id = uid(), r = o.rx === undefined ? Math.min(18, h / 3) : o.rx, ins = Math.max(6, r * .7);
+    return '<defs>' + lin(id, a, b) + '</defs><rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" rx="' + r + '" fill="url(#' + id + ')" stroke="' + (o.stroke || LINE) + '" stroke-width="' + (o.sw || 2.5) + '"/>' +
+      '<rect x="' + (x + ins) + '" y="' + (y + 4) + '" width="' + Math.max(0, w - 2 * ins) + '" height="' + Math.max(3, Math.round(h * .14)) + '" rx="' + Math.max(1.5, h * .07) + '" fill="#fff" opacity=".55"/>';
+  }
+
   var GREEN = '#22A06B', BLUE = '#2F80ED', PINK = '#E0437A', ORANGE = '#FF8A3D', PURPLE = '#6C4DF6';
   var FONT = 'font-family="Fredoka, Trebuchet MS, sans-serif"';
 
+  /* a sheet of paper behind a grid: a soft white card a little bigger than the grid (it does not move any line) */
+  function paper(x0, y0, x1, y1) {
+    var id = uid();
+    return '<defs>' + lin(id, '#FFFFFF', '#F7F4FF') + '</defs><rect x="' + x0 + '" y="' + y0 + '" width="' + (x1 - x0) + '" height="' + (y1 - y0) + '" rx="14" fill="url(#' + id + ')" stroke="rgba(108,77,246,.22)" stroke-width="2"/>';
+  }
+  function paperFor(g) {
+    var P = at(g), L = P(g.x0, 0)[0], R = P(g.x1, 0)[0], T = P(0, g.y1)[1], B = P(0, g.y0)[1];
+    return paper(L - 26, T - 30, R + 34, Math.min(356, B + 30));
+  }
   /* g = {ox, oy: pixel of the origin; u: pixels per unit; x0, x1, y0, y1: the range; every: label step}. Returns P(x, y) -> [px, py] */
   function grid(s, g, o) {
     o = o || {};
-    var m = '', ev = g.every || 1, P = function (x, y) { return [g.ox + x * g.u, g.oy - y * g.u]; };
+    var m = o.paper === false ? '' : paperFor(g), ev = g.every || 1, P = function (x, y) { return [g.ox + x * g.u, g.oy - y * g.u]; };
     for (var x = g.x0; x <= g.x1; x++) m += '<path d="M' + P(x, 0)[0] + ' ' + P(0, g.y0)[1] + ' V' + P(0, g.y1)[1] + '" stroke="#E4DEF5" stroke-width="2"/>';
     for (var y = g.y0; y <= g.y1; y++) m += '<path d="M' + P(g.x0, 0)[0] + ' ' + P(0, y)[1] + ' H' + P(g.x1, 0)[0] + '" stroke="#E4DEF5" stroke-width="2"/>';
     var L = P(g.x0, 0), R = P(g.x1, 0), B = P(0, g.y0), T = P(0, g.y1);
@@ -24,14 +48,15 @@
     if (g.x0 >= 0) m += lab(g.ox - 9, g.oy + 16, '0', 'end');
     m += '<text x="' + (R[0] + 22) + '" y="' + (R[1] - 16) + '" ' + FONT + ' font-size="22" font-weight="700" fill="#1E1B3A" text-anchor="middle">x</text>' +
          '<text x="' + (T[0] + 18) + '" y="' + (T[1] - 10) + '" ' + FONT + ' font-size="22" font-weight="700" fill="#1E1B3A" text-anchor="middle">y</text>';
-    s.add(m, { enter: o.enter || 'fade', delay: o.delay || 0, name: o.name });
+    s.add(m, { enter: o.enter || 'fade', delay: o.delay || 0, name: o.name, flat: true });
     return P;
   }
   function at(g) { return function (x, y) { return [g.ox + x * g.u, g.oy - y * g.u]; }; }
   function point(s, p, label, o) {   // a dot at pixel p with a label; o.dx/o.dy move the label
     o = o || {};
     var c = o.colour || PURPLE;
-    s.add('<circle r="8" fill="' + c + '" stroke="#fff" stroke-width="3"/>', { x: p[0], y: p[1], enter: 'pop', delay: o.delay || 0, name: o.name });
+    var gl = uid();
+    s.add('<defs>' + gloss(gl) + '</defs><circle r="13" fill="' + c + '" opacity=".16"/><circle r="8" fill="' + c + '"/><circle r="8" fill="url(#' + gl + ')" stroke="#fff" stroke-width="3"/>', { x: p[0], y: p[1], enter: 'pop', delay: o.delay || 0, name: o.name });
     if (label) s.text(p[0] + (o.dx === undefined ? 12 : o.dx), p[1] + (o.dy === undefined ? -18 : o.dy), label,
       { size: o.size || 22, weight: 700, colour: c, anchor: o.anchor || 'start', delay: (o.delay || 0) + 150, name: o.name && o.name + 't' });
   }
@@ -100,10 +125,10 @@
 
     /* ---------- 2. Four quadrants ---------- */
     'four-quadrants': function (s) {
-      s.add('<rect x="' + (G2.ox - 4 * G2.u) + '" y="' + G2.oy + '" width="' + (4 * G2.u) + '" height="' + (4 * G2.u) + '" fill="#FFF1E6"/>' +
+      s.add(paperFor(G2) + '<rect x="' + (G2.ox - 4 * G2.u) + '" y="' + G2.oy + '" width="' + (4 * G2.u) + '" height="' + (4 * G2.u) + '" fill="#FFF1E6"/>' +
             '<rect x="' + (G2.ox - 4 * G2.u) + '" y="' + (G2.oy - 4 * G2.u) + '" width="' + (4 * G2.u) + '" height="' + (4 * G2.u) + '" fill="#FFF8EC"/>' +
-            '<rect x="' + G2.ox + '" y="' + G2.oy + '" width="' + (4 * G2.u) + '" height="' + (4 * G2.u) + '" fill="#FFF8EC"/>', { enter: 'fade' });
-      grid(s, G2, { enter: 'none' });
+            '<rect x="' + G2.ox + '" y="' + G2.oy + '" width="' + (4 * G2.u) + '" height="' + (4 * G2.u) + '" fill="#FFF8EC"/>', { enter: 'fade', flat: true });
+      grid(s, G2, { enter: 'none', paper: false });
       panel(s, 500, 80, '← left: x is negative', { colour: PINK, delay: 700 });
       panel(s, 500, 125, '↓ below: y is negative', { colour: PINK, delay: 1500 });
     },
@@ -164,7 +189,7 @@
       grid(s, G4);
       panel(s, 180, 60, 'y = x + 1', { size: 32, colour: PURPLE, delay: 200, name: 't0' });
       var xs = [140, 200, 260, 320];
-      s.add('<rect x="30" y="110" width="320" height="100" rx="12" fill="#FFFFFF" stroke="#C9BFF0" stroke-width="3"/><path d="M30 160 H350 M110 110 V210" stroke="#C9BFF0" stroke-width="3"/>', { enter: 'fade', delay: 400, name: 't1' });
+      s.add(card(30, 110, 320, 100, '#FFFFFF', '#F1ECFF', { stroke: '#C9BFF0', sw: 3, rx: 12 }) + '<path d="M30 160 H350 M110 110 V210" stroke="#C9BFF0" stroke-width="3"/>', { enter: 'fade', delay: 400, name: 't1' });
       panel(s, 70, 135, 'x', { size: 24, colour: s.C.ink, delay: 400, name: 't2' });
       panel(s, 70, 185, 'y', { size: 24, colour: PURPLE, delay: 400, name: 't3' });
       xs.forEach(function (x, i) {
@@ -206,7 +231,7 @@
 
     /* ---------- 5. Real-life graphs (1 minute = 36 px across, 1 litre = 4 px up) ---------- */
     'tank-graph': function (s) {
-      var ox = 110, oy = 300, m = '';
+      var ox = 110, oy = 300, m = paper(46, 40, 572, 330);
       for (var t = 0; t <= 12; t++) m += '<path d="M' + (ox + t * 36) + ' 60 V300" stroke="#E4DEF5" stroke-width="2"/>';
       for (var v = 0; v <= 60; v += 10) m += '<path d="M110 ' + (oy - v * 4) + ' H542" stroke="#E4DEF5" stroke-width="2"/>';
       m += '<path d="M110 300 H556 M110 300 V46" stroke="#1E1B3A" stroke-width="3"/>';
@@ -214,18 +239,26 @@
       for (v = 10; v <= 60; v += 10) m += '<text x="100" y="' + (oy - v * 4) + '" ' + FONT + ' font-size="18" font-weight="600" fill="#55526E" text-anchor="end" dominant-baseline="middle">' + v + '</text>';
       m += '<text x="326" y="344" ' + FONT + ' font-size="20" font-weight="700" fill="#1E1B3A" text-anchor="middle" dominant-baseline="middle">time (minutes)</text>' +
            '<text x="20" y="30" ' + FONT + ' font-size="20" font-weight="700" fill="#1E1B3A" dominant-baseline="middle">water (litres)</text>';
-      s.add(m, { enter: 'fade' });
-      s.add('<rect x="0" y="0" width="80" height="90" rx="8" fill="#FFFFFF" stroke="#55526E" stroke-width="4"/><rect x="4" y="20" width="72" height="66" rx="5" fill="#8EC5FF"/>' +
-            '<path d="M80 78 h18 v20" fill="none" stroke="#55526E" stroke-width="6"/><path d="M98 104 v12 M94 124 v8 M102 124 v8" stroke="#2F80ED" stroke-width="3" stroke-linecap="round"/>', { x: 520, y: 46, enter: 'pop', delay: 400 });
+      s.add(m, { enter: 'fade', flat: true });
+      var gw = uid(), gg = uid(), gp = uid();
+      s.add('<defs>' + lin(gw, '#B8DCFF', '#4E98EE') + lin(gp, '#A9AEC2', '#6E7390') +
+            '<linearGradient id="' + gg + '" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset=".5" stop-color="#EEF5FF" stop-opacity=".55"/><stop offset="1" stop-color="#DCE8FA" stop-opacity=".8"/></linearGradient></defs>' +
+            '<path d="M80 78 h18 v20" fill="none" stroke="url(#' + gp + ')" stroke-width="6" stroke-linejoin="round"/><rect x="92" y="96" width="12" height="6" rx="2" fill="#6E7390"/>' +
+            '<path d="M98 108 v8 M94 124 v8 M102 124 v8" stroke="#2F80ED" stroke-width="3" stroke-linecap="round"/>' +
+            '<rect x="0" y="0" width="80" height="90" rx="10" fill="url(#' + gg + ')" stroke="rgba(30,27,58,.45)" stroke-width="3"/>' +
+            '<rect x="4" y="20" width="72" height="66" rx="6" fill="url(#' + gw + ')"/><path d="M8 24 Q40 18 72 24" stroke="#fff" stroke-width="2" fill="none" opacity=".7"/>' +
+            '<rect x="9" y="8" width="6" height="74" rx="3" fill="#fff" opacity=".6"/>', { x: 520, y: 46, enter: 'pop', delay: 400 });
       s.text(420, 70, '60 litres', { size: 20, weight: 700, colour: BLUE, delay: 700 });
       s.text(420, 100, '− 5 each minute', { size: 20, weight: 700, colour: PINK, delay: 1000 });
       path(s, [[110, 60], [542, 300]], PURPLE, { width: 5, delay: 1400, ms: 1200 });
-      s.add('<circle r="7" fill="#6C4DF6" stroke="#fff" stroke-width="3"/>', { x: 110, y: 60, enter: 'pop', delay: 1300 });
+      var g1 = uid();
+      s.add('<defs>' + gloss(g1) + '</defs><circle r="7" fill="#6C4DF6"/><circle r="7" fill="url(#' + g1 + ')" stroke="#fff" stroke-width="3"/>', { x: 110, y: 60, enter: 'pop', delay: 1300 });
     },
     'tank-read': function (s) {
       var x8 = 110 + 8 * 36, y20 = 300 - 20 * 4;
       path(s, [[x8, 300], [x8, y20], [110, y20]], ORANGE, { dash: '8 6', width: 4, delay: 200 });
-      s.add('<circle r="8" fill="#FF8A3D" stroke="#fff" stroke-width="3"/>', { x: x8, y: y20, enter: 'pop', delay: 1000 });
+      var g2 = uid();
+      s.add('<defs>' + gloss(g2) + '</defs><circle r="8" fill="#FF8A3D"/><circle r="8" fill="url(#' + g2 + ')" stroke="#fff" stroke-width="3"/>', { x: x8, y: y20, enter: 'pop', delay: 1000 });
       s.text(x8 + 14, y20 - 30, '20 litres left', { size: 22, weight: 700, colour: '#C2570C', anchor: 'start', delay: 1300 });
       s.text(420, 150, '60 − 5 × 8 = 20', { size: 24, weight: 700, colour: s.C.ink, delay: 1700 });
     },

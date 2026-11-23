@@ -3,11 +3,31 @@
 (function () {
   if (!window.Theory) return;
 
+  /* Soft gradients and highlights, as in the Forces video. Every drawing gets fresh gradient ids from a counter, so no id is used twice on the page. */
+  var LINE = 'rgba(30,27,58,.35)', NID = 0;
+  function uid() { return 'mBq' + (++NID); }
+  function lin(id, a, b) { return '<linearGradient id="' + id + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="' + a + '"/><stop offset="1" stop-color="' + b + '"/></linearGradient>'; }
+  /* a rounded card with top left (x, y), w by h: a gradient from a (top) to b (bottom), an outline and a white sheen along the top */
+  function card(x, y, w, h, a, b, o) {
+    o = o || {};
+    var id = uid(), r = o.rx === undefined ? Math.min(18, h / 3) : o.rx, ins = Math.max(6, r * .7);
+    return '<defs>' + lin(id, a, b) + '</defs><rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" rx="' + r + '" fill="url(#' + id + ')" stroke="' + (o.stroke || LINE) + '" stroke-width="' + (o.sw || 2.5) + '"/>' +
+      '<rect x="' + (x + ins) + '" y="' + (y + 4) + '" width="' + Math.max(0, w - 2 * ins) + '" height="' + Math.max(3, Math.round(h * .14)) + '" rx="' + Math.max(1.5, h * .07) + '" fill="#fff" opacity=".55"/>';
+  }
+
   var GREEN = '#22A06B', RED = '#E5484D', BLUE = '#2F80ED';
-  var BAG = '<rect x="0" y="0" width="34" height="34" rx="9" fill="#6C4DF6" stroke="#2D1B69" stroke-width="2"/>' +
-            '<text x="17" y="18" font-family="Fredoka, sans-serif" font-size="22" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">x</text>';
-  function block(x, y) { return '<rect x="' + x + '" y="' + y + '" width="24" height="24" rx="4" fill="#FFC93C" stroke="#C2570C" stroke-width="2"/>'; }
-  function pill(w, fill, stroke) { return '<rect x="' + (-w / 2) + '" y="-26" width="' + w + '" height="52" rx="16" fill="' + fill + '" stroke="' + stroke + '" stroke-width="3"/>'; }
+  /* a purple x bag (34 by 34) and a yellow 1 block (24 by 24); id is a gradient defined once in the group that holds them */
+  function BAG(id) {
+    return '<rect x="0" y="0" width="34" height="34" rx="9" fill="url(#' + id + ')" stroke="rgba(45,27,105,.6)" stroke-width="1.5"/>' +
+      '<rect x="5" y="3" width="24" height="5" rx="2.5" fill="#fff" opacity=".35"/>' +
+      '<text x="17" y="19" font-family="Fredoka, sans-serif" font-size="22" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">x</text>';
+  }
+  var BAGC = ['#9A82FF', '#5B3FE0'], BLOCKC = ['#FFE08A', '#F5B52A'];
+  function block(x, y, id) {
+    return '<rect x="' + x + '" y="' + y + '" width="24" height="24" rx="5" fill="url(#' + id + ')" stroke="rgba(160,70,10,.55)" stroke-width="1.5"/>' +
+      '<rect x="' + (x + 4) + '" y="' + (y + 3) + '" width="16" height="4" rx="2" fill="#fff" opacity=".55"/>';
+  }
+  function pill(w, fill, stroke) { return card(-w / 2, -26, w, 52, '#FFFFFF', fill, { stroke: stroke, sw: 3, rx: 16 }); }
   function answer(s, x, y, w, t, o) {
     o = o || {};
     s.add(pill(w, '#DDF7EE', GREEN), { x: x, y: y, enter: 'pop', delay: o.delay || 0, name: o.name });
@@ -17,9 +37,13 @@
   /* the balance: a level beam with two plates, left centred at x = 180, right at x = 460, plate top at y = 298 */
   function balance(s, o) {
     o = o || {};
-    s.add('<path d="M320 306 L292 346 H348 Z" fill="#9AA0B4" stroke="#55526E" stroke-width="3"/>' +
-          '<rect x="40" y="298" width="560" height="10" rx="5" fill="#C98A4B" stroke="#8A5A2B" stroke-width="3"/>' +
-          '<rect x="60" y="292" width="240" height="8" rx="4" fill="#E9DFCB"/><rect x="340" y="292" width="240" height="8" rx="4" fill="#E9DFCB"/>',
+    var m = uid(), w = uid(), p = uid();
+    s.add('<defs>' + lin(m, '#D5D9E3', '#8A90A6') + lin(w, '#E8B57A', '#B8773A') + lin(p, '#FFFFFF', '#E6DCC6') + '</defs>' +
+          '<path d="M320 306 L292 346 H348 Z" fill="url(#' + m + ')" stroke="' + LINE + '" stroke-width="2.5" stroke-linejoin="round"/>' +
+          '<rect x="284" y="342" width="72" height="8" rx="4" fill="#7A7F96"/>' +
+          '<rect x="40" y="298" width="560" height="10" rx="5" fill="url(#' + w + ')" stroke="rgba(110,60,20,.5)" stroke-width="2"/>' +
+          '<rect x="48" y="299.5" width="544" height="2.5" rx="1.25" fill="#fff" opacity=".45"/>' +
+          '<rect x="60" y="292" width="240" height="8" rx="4" fill="url(#' + p + ')" stroke="' + LINE + '" stroke-width="1.5"/><rect x="340" y="292" width="240" height="8" rx="4" fill="url(#' + p + ')" stroke="' + LINE + '" stroke-width="1.5"/>',
           { enter: o.enter || 'up', delay: o.delay || 0, name: 'beam' });
   }
   /* load one plate: bags in rows of 6 at the bottom, blocks in rows of 8 above them.
@@ -28,20 +52,20 @@
     var nb = bagGroups.reduce(function (a, b) { return a + b; }, 0), nk = blockGroups.reduce(function (a, b) { return a + b; }, 0);
     var k = 0;
     bagGroups.forEach(function (n, gi) {
-      var m = '';
+      var id = uid(), m = '<defs>' + lin(id, BAGC[0], BAGC[1]) + '</defs>';
       for (var j = 0; j < n; j++, k++) {
         var row = Math.floor(k / 6), cnt = Math.min(6, nb - row * 6), c = k % 6;
-        m += '<g transform="translate(' + (cx - (cnt * 40 - 6) / 2 + c * 40) + ',' + (292 - 34 - row * 40) + ')">' + BAG + '</g>';
+        m += '<g transform="translate(' + (cx - (cnt * 40 - 6) / 2 + c * 40) + ',' + (292 - 34 - row * 40) + ')">' + BAG(id) + '</g>';
       }
       s.add(m, { enter: 'pop', delay: (delay || 0) + gi * 150, name: pfx + 'b' + gi });
     });
     var base = 292 - Math.ceil(nb / 6) * 40;
     k = 0;
     blockGroups.forEach(function (n, gi) {
-      var m = '';
+      var id = uid(), m = '<defs>' + lin(id, BLOCKC[0], BLOCKC[1]) + '</defs>';
       for (var j = 0; j < n; j++, k++) {
         var row = Math.floor(k / 8), cnt = Math.min(8, nk - row * 8), c = k % 8;
-        m += block(cx - (cnt * 27 - 3) / 2 + c * 27, base - 24 - row * 27);
+        m += block(cx - (cnt * 27 - 3) / 2 + c * 27, base - 24 - row * 27, id);
       }
       s.add(m, { enter: 'pop', delay: (delay || 0) + 300 + gi * 150, name: pfx + 'k' + gi });
     });
@@ -133,7 +157,10 @@
       s.text(320, 36, 'Opposites undo each other', { size: 30, weight: 700, colour: s.C.fun });
       [['+', '−', 0], ['×', '÷', 1]].forEach(function (p) {
         var x = 190 + p[2] * 260, d = p[2] * 700;
-        s.add('<circle cx="-50" r="30" fill="#D6E6FF" stroke="#2F80ED" stroke-width="3"/><circle cx="50" r="30" fill="#FFE1EB" stroke="#E0437A" stroke-width="3"/>' +
+        var ga = uid(), gb = uid();
+        s.add('<defs><radialGradient id="' + ga + '" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C4DAFF"/></radialGradient>' +
+              '<radialGradient id="' + gb + '" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFCFDF"/></radialGradient></defs>' +
+              '<circle cx="-50" r="30" fill="url(#' + ga + ')" stroke="#2F80ED" stroke-width="3"/><circle cx="50" r="30" fill="url(#' + gb + ')" stroke="#E0437A" stroke-width="3"/>' +
               '<path d="M-14 -6 H14 M8 -12 L14 -6 L8 0 M14 6 H-14 M-8 0 L-14 6 L-8 12" stroke="#55526E" stroke-width="3" fill="none" stroke-linecap="round"/>', { x: x, y: 110, enter: 'pop', delay: d });
         s.text(x - 50, 112, p[0], { size: 36, weight: 700, colour: BLUE, enter: 'pop', delay: d });
         s.text(x + 50, 112, p[1], { size: 36, weight: 700, colour: '#E0437A', enter: 'pop', delay: d });
@@ -158,8 +185,8 @@
     },
     'two-step-2': function (s) {
       s.hide(s.ref.Rk0, { ms: 300 });
-      var m = '';
-      for (var g = 0; g < 3; g++) for (var j = 0; j < 4; j++) m += block(375 + g * 60 + (j % 2) * 27, 241 + Math.floor(j / 2) * 27);
+      var id = uid(), m = '<defs>' + lin(id, BLOCKC[0], BLOCKC[1]) + '</defs>';
+      for (var g = 0; g < 3; g++) for (var j = 0; j < 4; j++) m += block(375 + g * 60 + (j % 2) * 27, 241 + Math.floor(j / 2) * 27, id);
       s.add(m, { enter: 'pop', delay: 400 });
       s.add('<path d="M160 230 V290 M200 230 V290 M430 230 V290 M490 230 V290" stroke="#55526E" stroke-width="3" stroke-dasharray="6 6"/>', { enter: 'fade', delay: 1000 });
       both(s, 200, '÷ 3', 1300);
@@ -221,13 +248,15 @@
       var steps = [['n', s.C.fun], ['× 3', BLUE], ['− 5', '#E0437A'], ['16', GREEN]];
       steps.forEach(function (st, i) {
         var x = 110 + i * 140, d = i * 700;
-        s.add('<rect x="-48" y="-30" width="96" height="60" rx="14" fill="#FFFFFF" stroke="' + st[1] + '" stroke-width="4"/>', { x: x, y: 115, enter: 'pop', delay: d });
+        s.add(card(-48, -30, 96, 60, '#FFFFFF', '#F1EEFA', { stroke: st[1], sw: 3.5, rx: 14 }), { x: x, y: 115, enter: 'pop', delay: d });
         s.text(x, 117, st[0], { size: 32, weight: 700, colour: st[1], enter: 'pop', delay: d });
         if (i < 3) s.arrow(x + 52, 115, 36, 'r', { colour: s.C.grey, width: 6, delay: d + 400 });
       });
       s.owl(585, 340, 80, { delay: 2400 });
-      s.add('<circle cx="-30" cy="0" r="6" fill="#fff" stroke="#9AA0B4" stroke-width="2"/><circle cx="-14" cy="-16" r="9" fill="#fff" stroke="#9AA0B4" stroke-width="2"/>' +
-            '<ellipse cx="18" cy="-46" rx="30" ry="24" fill="#fff" stroke="#9AA0B4" stroke-width="2"/>' +
+      var th = uid();
+      s.add('<defs>' + lin(th, '#FFFFFF', '#ECE7FB') + '</defs>' +
+            '<circle cx="-30" cy="0" r="6" fill="url(#' + th + ')" stroke="' + LINE + '" stroke-width="2"/><circle cx="-14" cy="-16" r="9" fill="url(#' + th + ')" stroke="' + LINE + '" stroke-width="2"/>' +
+            '<ellipse cx="18" cy="-46" rx="30" ry="24" fill="url(#' + th + ')" stroke="' + LINE + '" stroke-width="2"/>' +
             '<text x="18" y="-44" font-family="Fredoka, sans-serif" font-size="30" font-weight="700" fill="#6C4DF6" text-anchor="middle" dominant-baseline="middle">?</text>', { x: 550, y: 255, enter: 'pop', delay: 2900 });
     },
     'think-solve': function (s) {
@@ -240,7 +269,8 @@
       s.clear(); s.ref = {};
       s.text(320, 34, 'Angles in a triangle add up to 180°', { size: 26, weight: 700, colour: s.C.fun });
       // right angle at A (90, 310); B (350, 310) has 30°; C (90, 160) has 60°. AC = AB × tan 30° = 260 × 0.577 = 150
-      s.add('<path d="M90 310 L350 310 L90 160 Z" fill="#F1ECFF" stroke="#6C4DF6" stroke-width="4" stroke-linejoin="round"/>' +
+      var tg = uid();
+      s.add('<defs>' + lin(tg, '#FBF9FF', '#DED3FF') + '</defs><path d="M90 310 L350 310 L90 160 Z" fill="url(#' + tg + ')" stroke="#6C4DF6" stroke-width="4" stroke-linejoin="round"/>' +
             '<path d="M90 290 H110 V310" fill="none" stroke="#6C4DF6" stroke-width="3"/>', { enter: 'pop', delay: 200 });
       s.text(130, 285, '3x', { size: 24, weight: 700, colour: s.C.deep, delay: 700, name: 'a1' });
       s.text(288, 296, 'x', { size: 24, weight: 700, colour: s.C.deep, delay: 900, name: 'a2' });

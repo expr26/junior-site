@@ -3,23 +3,63 @@
 (function () {
   if (!window.Theory) return;
 
+  /* Soft gradients and highlights, as in the Forces video. Every drawing gets fresh gradient ids from a counter, so no id is used twice on the page. */
+  var LINE = 'rgba(30,27,58,.35)', NID = 0;
+  function uid() { return 'mBe' + (++NID); }
+  function lin(id, a, b) { return '<linearGradient id="' + id + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="' + a + '"/><stop offset="1" stop-color="' + b + '"/></linearGradient>'; }
+  function gloss(id) {   // a white shine at the top left fading to a soft shade, laid over any colour
+    return '<radialGradient id="' + id + '" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#fff" stop-opacity=".6"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#1E1B3A" stop-opacity=".14"/></radialGradient>';
+  }
+  /* a rounded card with top left (x, y), w by h: a gradient from a (top) to b (bottom), an outline and a white sheen along the top */
+  function card(x, y, w, h, a, b, o) {
+    o = o || {};
+    var id = uid(), r = o.rx === undefined ? Math.min(18, h / 3) : o.rx, ins = Math.max(6, r * .7);
+    return '<defs>' + lin(id, a, b) + '</defs><rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" rx="' + r + '" fill="url(#' + id + ')" stroke="' + (o.stroke || LINE) + '" stroke-width="' + (o.sw || 2.5) + '"/>' +
+      '<rect x="' + (x + ins) + '" y="' + (y + 4) + '" width="' + Math.max(0, w - 2 * ins) + '" height="' + Math.max(3, Math.round(h * .14)) + '" rx="' + Math.max(1.5, h * .07) + '" fill="#fff" opacity=".55"/>';
+  }
+
   var BLUE = '#2F80ED', PINK = '#E0437A', GREEN = '#22A06B';
   function col(c, t) { return '<tspan fill="' + c + '">' + t + '</tspan>'; }
-  var BAG = '<path d="M-46 -40 L-30 -64 H30 L46 -40 Z" fill="#FF5D8F" stroke="#B42318" stroke-width="3"/>' +
-            '<rect x="-56" y="-42" width="112" height="100" rx="20" fill="#FF8FB1" stroke="#B42318" stroke-width="3"/>' +
-            '<text y="10" font-family="Fredoka, sans-serif" font-size="54" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">n</text>';
-  function sweet(c) {
-    return '<path d="M-26 0 L-38 -10 V10 Z M26 0 L38 -10 V10 Z" fill="' + c + '"/><circle r="17" fill="' + c + '" stroke="#1E1B3A" stroke-width="2"/>' +
-      '<path d="M-8 -8 Q0 -14 8 -8" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>';
+  function bag() {   // a bag of sweets, centred on (0, 0)
+    var a = uid(), b = uid();
+    return '<defs>' + lin(a, '#FFB0C8', '#F2648F') + lin(b, '#FF86AB', '#D9416F') + '</defs>' +
+      '<path d="M-46 -40 L-30 -64 H30 L46 -40 Z" fill="url(#' + b + ')" stroke="' + LINE + '" stroke-width="2.5" stroke-linejoin="round"/>' +
+      '<rect x="-56" y="-42" width="112" height="100" rx="22" fill="url(#' + a + ')" stroke="' + LINE + '" stroke-width="2.5"/>' +
+      '<path d="M-44 -40 H44" stroke="#C93A68" stroke-width="4" stroke-linecap="round"/>' +
+      '<rect x="-48" y="-32" width="10" height="76" rx="5" fill="#fff" opacity=".28"/>' +
+      '<text y="10" font-family="Fredoka, sans-serif" font-size="54" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle" stroke="#C93A68" stroke-width="3" paint-order="stroke">n</text>';
   }
-  var APPLE = '<circle r="26" fill="#E5484D" stroke="#B42318" stroke-width="3"/><path d="M0 -24 q3 -12 12 -14" stroke="#22A06B" stroke-width="5" fill="none" stroke-linecap="round"/>' +
-              '<text y="3" font-family="Fredoka, sans-serif" font-size="28" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">a</text>';
-  function pill(w, fill, stroke) {
-    return '<rect x="' + (-w / 2) + '" y="-30" width="' + w + '" height="60" rx="18" fill="' + fill + '" stroke="' + stroke + '" stroke-width="3"/>';
+  function sweet(c) {
+    var g = uid();
+    return '<defs>' + gloss(g) + '</defs>' +
+      '<path d="M-24 0 L-38 -11 Q-41 0 -38 11 Z M24 0 L38 -11 Q41 0 38 11 Z" fill="' + c + '" stroke="' + LINE + '" stroke-width="1.5" stroke-linejoin="round"/>' +
+      '<circle r="17" fill="' + c + '"/><circle r="17" fill="url(#' + g + ')" stroke="' + LINE + '" stroke-width="2"/>' +
+      '<path d="M-9 -8 Q-3 -13 4 -12" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" opacity=".85"/>';
+  }
+  function apple() {
+    var g = uid();
+    return '<defs>' + gloss(g) + '</defs>' +
+      '<path d="M0 -22 q2 -10 8 -14" stroke="#8A5A2B" stroke-width="4" fill="none" stroke-linecap="round"/>' +
+      '<path d="M4 -26 q10 -12 22 -8 q-8 12 -22 8 Z" fill="#3CBF7A" stroke="rgba(20,90,50,.45)" stroke-width="1.5"/>' +
+      '<circle r="26" fill="#E5484D"/><circle r="26" fill="url(#' + g + ')" stroke="' + LINE + '" stroke-width="2"/>' +
+      '<ellipse cx="-11" cy="-12" rx="6" ry="4" fill="#fff" opacity=".45" transform="rotate(-30 -11 -12)"/>' +
+      '<text y="3" font-family="Fredoka, sans-serif" font-size="28" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">a</text>';
+  }
+  function pill(w, fill, stroke, h) { h = h || 60; return card(-w / 2, -h / 2, w, h, '#FFFFFF', fill, { stroke: stroke, sw: 3, rx: Math.min(18, h * .3) }); }
+  function taxi() {   // a yellow taxi, the same shape as the cars in the Forces video
+    var id = uid(), body = 'M6 42 Q8 22 32 19 L50 4 Q58 -1 86 2 L106 19 Q128 22 130 42 V50 Q130 54 126 54 H10 Q6 54 6 50 Z';
+    return '<defs><linearGradient id="' + id + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".45"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient></defs>' +
+      '<rect x="50" y="-14" width="36" height="15" rx="4" fill="#2A2740"/><rect x="55" y="-10" width="26" height="5" rx="2.5" fill="#FFC93C"/>' +
+      '<path d="' + body + '" fill="#FFC93C"/><path d="' + body + '" fill="url(#' + id + ')" stroke="rgba(30,27,58,.55)" stroke-width="2"/>' +
+      '<path d="M44 19 L56 8 H76 V19 Z M82 19 V8 H90 L101 19 Z" fill="#D8EEFF" stroke="rgba(30,27,58,.35)" stroke-width="1.5"/>' +
+      '<path d="M10 34 H126" stroke="#2A2740" stroke-width="4" stroke-dasharray="6 6" opacity=".55"/>' +
+      '<rect x="118" y="26" width="10" height="6" rx="3" fill="#FFF6C7"/><rect x="8" y="26" width="8" height="6" rx="3" fill="#FF8A8A"/>' +
+      '<circle cx="36" cy="54" r="13" fill="#2A2740"/><circle cx="36" cy="54" r="6" fill="#D5D9E3"/>' +
+      '<circle cx="104" cy="54" r="13" fill="#2A2740"/><circle cx="104" cy="54" r="6" fill="#D5D9E3"/>';
   }
   function answer(s, x, y, w, t, o) {   // green answer box
     o = o || {};
-    s.add(pill(w, '#DDF7EE', GREEN), { x: x, y: y, enter: 'pop', delay: o.delay || 0, name: o.name });
+    s.add(pill(w, '#DDF7EE', GREEN, o.h), { x: x, y: y, enter: 'pop', delay: o.delay || 0, name: o.name });
     s.text(x, y + 2, t, { size: o.size || 30, weight: 700, colour: '#0E7A5A', enter: 'pop', delay: o.delay || 0 });
   }
   function tick(s, x, y, delay) { s.text(x, y, '✓', { size: 34, weight: 700, colour: GREEN, enter: 'pop', delay: delay }); }
@@ -45,7 +85,7 @@
     /* ---------- 1. Letters for numbers ---------- */
     'bag-n': function (s) {
       s.text(320, 40, 'A letter stands for a number', { size: 30, weight: 700, colour: s.C.fun });
-      s.add(BAG, { x: 320, y: 190, enter: 'pop', delay: 300, name: 'bag' });
+      s.add(bag(), { x: 320, y: 190, enter: 'pop', delay: 300, name: 'bag' });
       s.text(320, 290, 'n sweets', { size: 28, colour: s.C.ink, delay: 900, name: 'nlabel' });
       s.owl(90, 330, 110, { delay: 600 });
       s.text(110, 180, '?', { size: 48, weight: 700, colour: s.C.sun, enter: 'pop', delay: 1200 });
@@ -85,7 +125,7 @@
     'four-a': function (s) {
       s.text(320, 40, 'Collecting the same letter', { size: 30, weight: 700, colour: s.C.fun });
       for (var i = 0; i < 4; i++) {
-        s.add(APPLE, { x: 110 + i * 120, y: 150, enter: 'pop', delay: i * 350 });
+        s.add(apple(), { x: 110 + i * 120, y: 150, enter: 'pop', delay: i * 350 });
         if (i < 3) s.text(170 + i * 120, 152, '+', { size: 40, weight: 700, delay: i * 350 + 200 });
       }
       s.text(320, 230, 'four lots of a', { size: 26, colour: s.C.muted, delay: 1700 });
@@ -183,9 +223,9 @@
       s.text(320, 50, '3(x + 4)', { size: 52, weight: 700, colour: s.C.deep, enter: 'pop', name: 'br' });
       for (var i = 0; i < 3; i++) {
         var y = 140 + i * 62, d = 600 + i * 400;
-        s.add('<rect x="0" y="-22" width="200" height="44" rx="10" fill="#D6E6FF" stroke="#2F80ED" stroke-width="3"/>' +
+        s.add(card(0, -22, 200, 44, '#EEF4FF', '#C4DAFF', { stroke: '#2F80ED', rx: 10 }) +
               '<text x="100" y="2" font-family="Fredoka, sans-serif" font-size="26" font-weight="700" fill="#2F80ED" text-anchor="middle" dominant-baseline="middle">x</text>' +
-              '<rect x="206" y="-22" width="90" height="44" rx="10" fill="#FFF4D6" stroke="#C2570C" stroke-width="3"/>' +
+              card(206, -22, 90, 44, '#FFFAEC', '#FFE3A8', { stroke: '#C2570C', rx: 10 }) +
               '<text x="251" y="2" font-family="Fredoka, sans-serif" font-size="26" font-weight="700" fill="#C2570C" text-anchor="middle" dominant-baseline="middle">4</text>',
               { x: 120, y: y, enter: 'left', delay: d });
       }
@@ -201,9 +241,9 @@
     'expand-area': function (s) {
       s.clear(); s.ref = {};
       s.text(320, 34, 'Area picture (not to scale)', { size: 24, weight: 700, colour: s.C.fun });
-      s.add('<rect x="0" y="0" width="260" height="150" fill="#D6E6FF" stroke="#2F80ED" stroke-width="3"/>' +
+      s.add(card(0, 0, 260, 150, '#EEF4FF', '#C4DAFF', { stroke: '#2F80ED', sw: 3, rx: 6 }) +
             '<text x="130" y="78" font-family="Fredoka, sans-serif" font-size="34" font-weight="700" fill="#2F80ED" text-anchor="middle" dominant-baseline="middle">3x</text>', { x: 120, y: 110, enter: 'pop', delay: 300 });
-      s.add('<rect x="0" y="0" width="110" height="150" fill="#FFF4D6" stroke="#C2570C" stroke-width="3"/>' +
+      s.add(card(0, 0, 110, 150, '#FFFAEC', '#FFE3A8', { stroke: '#C2570C', sw: 3, rx: 6 }) +
             '<text x="55" y="78" font-family="Fredoka, sans-serif" font-size="34" font-weight="700" fill="#C2570C" text-anchor="middle" dominant-baseline="middle">12</text>', { x: 380, y: 110, enter: 'pop', delay: 700 });
       s.text(250, 88, 'x', { size: 28, weight: 700, colour: s.C.blue, delay: 1100 });
       s.text(435, 88, '4', { size: 28, weight: 700, colour: '#C2570C', delay: 1100 });
@@ -233,11 +273,7 @@
     /* ---------- 5. Formulae ---------- */
     'taxi': function (s) {
       s.text(320, 40, 'A formula for the taxi', { size: 30, weight: 700, colour: s.C.fun });
-      s.add('<path d="M8 40 Q10 20 34 18 L52 2 Q60 -2 84 2 L104 18 Q126 20 128 40 V52 H8 Z" fill="#FFC93C" stroke="#1E1B3A" stroke-width="3"/>' +
-            '<rect x="50" y="-14" width="36" height="14" rx="3" fill="#1E1B3A"/>' +
-            '<path d="M44 18 L56 7 H76 V18 Z M82 18 V7 H90 L100 18 Z" fill="#CFE8FF"/>' +
-            '<circle cx="36" cy="54" r="13" fill="#1E1B3A"/><circle cx="36" cy="54" r="5" fill="#C9CED8"/>' +
-            '<circle cx="104" cy="54" r="13" fill="#1E1B3A"/><circle cx="104" cy="54" r="5" fill="#C9CED8"/>', { x: 40, y: 110, enter: 'left', name: 'taxi' });
+      s.add(taxi(), { x: 40, y: 110, enter: 'left', name: 'taxi' });
       s.text(380, 110, '£3 to start', { size: 26, delay: 600 });
       s.text(380, 150, '+ £2 for each mile', { size: 26, delay: 1100 });
       s.add(pill(260, '#F1ECFF', s.C.fun), { x: 320, y: 225, enter: 'pop', delay: 1800, name: 'formula' });
@@ -250,12 +286,12 @@
       s.move(s.ref.taxi, 110, 110, 1400);
       s.text(160, 285, 'm = 7', { size: 28, weight: 700, colour: s.C.orange, delay: 300 });
       s.text(400, 285, 'C = 3 + 2 × 7 = 3 + 14', { size: 26, delay: 900 });
-      answer(s, 320, 330, 120, '£17', { delay: 1800, size: 28 });
+      answer(s, 320, 328, 120, '£17', { delay: 1800, size: 28, h: 46 });
     },
     'perimeter': function (s) {
       s.clear(); s.ref = {};
       s.text(320, 34, 'Rectangle: P = 2(l + w)', { size: 28, weight: 700, colour: s.C.fun });
-      s.add('<rect x="0" y="0" width="176" height="110" fill="#DDF7EE" stroke="#22A06B" stroke-width="4"/>', { x: 50, y: 110, enter: 'pop', delay: 300 });
+      s.add(card(0, 0, 176, 110, '#F2FCF8', '#C6EEDC', { stroke: '#22A06B', sw: 4, rx: 2 }), { x: 50, y: 110, enter: 'pop', delay: 300 });
       s.text(138, 90, 'l = 8 cm', { size: 22, weight: 700, colour: s.C.ink, delay: 700 });
       s.text(240, 165, 'w = 5 cm', { size: 22, weight: 700, colour: s.C.ink, anchor: 'start', delay: 900 });
       s.text(138, 260, '(drawn to scale)', { size: 18, colour: s.C.muted, delay: 900 });

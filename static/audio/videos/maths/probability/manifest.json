@@ -1,0 +1,95 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "bf6eb78c8255",
+   "s": 10.84,
+   "text": "Part one. How likely? ... Probability tells us how likely something is to happen. We can use words: impossible, unlikely, even chance, likely and certain."
+  },
+  "1-2": {
+   "h": "a068140a55ef",
+   "s": 10.94,
+   "text": "Rolling a 7 on a dice numbered 1 to 6 is impossible. Getting heads when you flip a fair coin is an even chance. The Sun rising tomorrow is certain."
+  },
+  "1-3": {
+   "h": "3200c1e0b573",
+   "s": 11.65,
+   "text": "We can also use numbers. Impossible is 0. Certain is 1. An even chance is one half, or 0.5. Every probability is somewhere from 0 to 1."
+  },
+  "2-1": {
+   "h": "f258759ae2b7",
+   "s": 11.33,
+   "text": "Part two. Working out probabilities. ... When all the outcomes are equally likely, the probability is the number of ways it can happen, divided by the total number of outcomes."
+  },
+  "2-2": {
+   "h": "5e6cb13d8c00",
+   "s": 8.45,
+   "text": "A fair dice has 6 equally likely outcomes. There is only one 6, so the probability of rolling a 6 is one sixth."
+  },
+  "2-3": {
+   "h": "3eb22284936a",
+   "s": 9.49,
+   "text": "Rolling a number greater than 4 can happen 2 ways: a 5 or a 6. So the probability is two sixths, which simplifies to one third."
+  },
+  "2-4": {
+   "h": "1cfdded66d3d",
+   "s": 11.33,
+   "text": "A bag has 3 red, 5 blue and 2 green counters. That is 10 counters. 5 are blue, so the probability of picking blue is five tenths, which equals one half."
+  },
+  "3-1": {
+   "h": "db436e41a680",
+   "s": 7.1,
+   "text": "Part three. Not happening. ... Something either happens or it doesn't. The two probabilities always add up to 1."
+  },
+  "3-2": {
+   "h": "5aba9b92ce4e",
+   "s": 9.75,
+   "text": "The probability of rain tomorrow is 0.3. So the probability of no rain is 1 minus 0.3, which is 0.7."
+  },
+  "3-3": {
+   "h": "d82fcdd0e763",
+   "s": 11.33,
+   "text": "Back to the bag of 10 counters. The probability of green is two tenths. So the probability of not green is 1 minus two tenths, which is eight tenths, or four fifths."
+  },
+  "4-1": {
+   "h": "cd874a05f9c4",
+   "s": 10.62,
+   "text": "Part four. Expected results. ... If you repeat something many times, you can work out how many times you expect an outcome: probability times number of tries."
+  },
+  "4-2": {
+   "h": "fde038329b1c",
+   "s": 11.82,
+   "text": "Flip a fair coin 200 times. The probability of heads is one half, and one half times 200 equals 100. So we expect about 100 heads."
+  },
+  "4-3": {
+   "h": "636693a0be77",
+   "s": 10.52,
+   "text": "This spinner has 4 equal parts and 1 is red. Spin it 80 times: one quarter times 80 equals 20. We expect red about 20 times."
+  },
+  "4-4": {
+   "h": "9d98d7408200",
+   "s": 10.03,
+   "text": "Real results are usually close, but not exact. And a coin has no memory: after 5 heads in a row, the chance of heads next time is still one half."
+  },
+  "5-1": {
+   "h": "b271a5302d53",
+   "s": 10.84,
+   "text": "Part five. Two events. ... Flip two coins. List every outcome carefully: HH, HT, TH and TT. That is 4 equally likely outcomes."
+  },
+  "5-2": {
+   "h": "8350190b7bfa",
+   "s": 6.23,
+   "text": "Only one of the 4 outcomes is two heads, so the probability of two heads is one quarter."
+  },
+  "5-3": {
+   "h": "541ed70ff3dd",
+   "s": 6.44,
+   "text": "Now flip a coin and roll a dice. A table helps you list every outcome without missing any."
+  },
+  "5-4": {
+   "h": "4c896ee1aad2",
+   "s": 10.75,
+   "text": "The coin has 2 outcomes and the dice has 6, so there are 2 times 6, which is 12 outcomes. The probability of heads and a 6 is one twelfth."
+  }
+ }
+}

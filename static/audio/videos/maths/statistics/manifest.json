@@ -1,0 +1,110 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "ff4635fa46ef",
+   "s": 10.3,
+   "text": "Part one. The mean. ... An average is one number that sums up a set of data. The first kind is the mean. Here are three towers of 4, 6 and 8 blocks."
+  },
+  "1-2": {
+   "h": "e575db0f8433",
+   "s": 7.59,
+   "text": "Share the blocks out fairly so every tower is the same height. Each tower now has 6 blocks. The mean is 6."
+  },
+  "1-3": {
+   "h": "037ad3e982ee",
+   "s": 12.05,
+   "text": "The quick way: add them all up, then divide by how many there are. 2 plus 5 plus 9 plus 4 equals 20, and 20 divided by 4 equals 5. The mean is 5."
+  },
+  "1-4": {
+   "h": "0cf9b3cd3183",
+   "s": 9.9,
+   "text": "You can work backwards too: total equals mean times how many. If 4 numbers have a mean of 6, they add up to 6 times 4, which is 24."
+  },
+  "2-1": {
+   "h": "9a4db36c4878",
+   "s": 12.71,
+   "text": "Part two. Median and mode. ... The median is the middle value. First put the numbers in order. 5, 1, 9, 3, 7 becomes 1, 3, 5, 7, 9. The middle one is 5."
+  },
+  "2-2": {
+   "h": "974149148c14",
+   "s": 9.22,
+   "text": "With an even number of values there are two in the middle. For 2, 4, 6, 8 the median is halfway between 4 and 6: it is 5."
+  },
+  "2-3": {
+   "h": "62ce78dc5f7a",
+   "s": 6.98,
+   "text": "The mode is the value that comes up most often. In 3, 7, 7, 2, 9 the mode is 7."
+  },
+  "2-4": {
+   "h": "9145d716a240",
+   "s": 5.72,
+   "text": "A trick to remember: mode is the most common. Median sounds like medium: the middle."
+  },
+  "3-1": {
+   "h": "f3ee99b863f5",
+   "s": 14.98,
+   "text": "Part three. Range and choosing an average. ... The range shows how spread out the data is. The range is the biggest minus the smallest. For 12, 4, 9, 20, 15 the range is 20 minus 4, which is 16."
+  },
+  "3-2": {
+   "h": "7825e1fede19",
+   "s": 13.4,
+   "text": "Which average is best? A shoe shop wants the most popular size, so it uses the mode: size 5. The mean of these sizes is about 5 point 0 7, which isn't even a real shoe size!"
+  },
+  "3-3": {
+   "h": "c7a7d0bfbb1e",
+   "s": 18.45,
+   "text": "Five people earn 20 thousand, 21 thousand, 22 thousand, 23 thousand and 200 thousand pounds. The mean is 57 thousand 200 pounds, which is more than four of them earn. The median, 22 thousand pounds, is much more typical."
+  },
+  "3-4": {
+   "h": "2588451e30ed",
+   "s": 7.21,
+   "text": "So when one value is much bigger or smaller than the rest, the median is usually the best average to use."
+  },
+  "4-1": {
+   "h": "50e53e6f40f6",
+   "s": 6.68,
+   "text": "Part four. Bar charts and scatter graphs. ... This bar chart shows how many books a class borrowed each day."
+  },
+  "4-2": {
+   "h": "755e24f5c46d",
+   "s": 6.89,
+   "text": "To read a bar, look across from the top of the bar to the scale. On Tuesday they borrowed 6 books."
+  },
+  "4-3": {
+   "h": "4e2f3706d7f2",
+   "s": 11.82,
+   "text": "Altogether: 3 plus 6 plus 2 plus 5 plus 4 equals 20 books. That is over 5 days, so the mean is 20 divided by 5, which is 4 books a day."
+  },
+  "4-4": {
+   "h": "d939054d7d9a",
+   "s": 8.81,
+   "text": "A scatter graph compares two things. Taller people tend to have longer feet. The points slope upwards: this is positive correlation."
+  },
+  "4-5": {
+   "h": "cf158c1a247b",
+   "s": 8.85,
+   "text": "If one goes up while the other goes down, that is negative correlation. If the points are all over the place, there is no correlation."
+  },
+  "5-1": {
+   "h": "f85d47749432",
+   "s": 8.06,
+   "text": "Part five. Pie charts. ... A pie chart shows how a whole is shared out. The whole circle is 360 degrees."
+  },
+  "5-2": {
+   "h": "5f117f27844d",
+   "s": 10.75,
+   "text": "24 people chose their favourite fruit. Each person gets 360 degrees divided by 24, which is 15 degrees of the circle."
+  },
+  "5-3": {
+   "h": "bf2dbbd97c0b",
+   "s": 18.05,
+   "text": "12 chose apples: 12 times 15 is 180 degrees. 8 chose bananas: 8 times 15 is 120 degrees. 4 chose grapes: 4 times 15 is 60 degrees. Together that makes 360 degrees."
+  },
+  "5-4": {
+   "h": "8de34bf07c55",
+   "s": 16.0,
+   "text": "Reading a pie chart works backwards. The banana slice is 120 degrees, and 120 degrees is one third of 360 degrees. So one third of the 24 people chose bananas: 8 people."
+  }
+ }
+}

@@ -3,6 +3,33 @@
 (function () {
   if (!window.Theory) return;
 
+  /* Soft gradients (the Forces look). Every call makes fresh ids (prefix mDp), so groups on screen together never share one. */
+  var gN = 0, EDGE = 'rgba(30,27,58,.35)';
+  function gid() { return 'mDp' + (++gN); }
+  function mix(hex, t) {   // t > 0 mixes towards white, t < 0 towards black
+    var n = parseInt(hex.slice(1), 16), c = [n >> 16, (n >> 8) & 255, n & 255], to = t > 0 ? 255 : 0, a = Math.abs(t);
+    return '#' + c.map(function (v) { return ('0' + Math.round(v + (to - v) * a).toString(16)).slice(-2); }).join('');
+  }
+  function lin(id, a, b, across) {
+    return '<linearGradient id="' + id + '" x1="0" y1="0" x2="' + (across ? 1 : 0) + '" y2="' + (across ? 0 : 1) + '"><stop offset="0" stop-color="' + a + '"/><stop offset="1" stop-color="' + b + '"/></linearGradient>';
+  }
+  function rad(id, a, b) { return '<radialGradient id="' + id + '" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="' + a + '"/><stop offset="1" stop-color="' + b + '"/></radialGradient>'; }
+  function sheen(id) { return '<linearGradient id="' + id + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".06"/></linearGradient>'; }
+  /* a solid shape: tag + its geometry attributes, filled with a soft gradient of col, a white sheen on top and a thin outline */
+  function solid(tag, geo, col, o) {
+    o = o || {};
+    var g = gid(), h = gid();
+    return '<defs>' + lin(g, o.top || mix(col, .4), col) + sheen(h) + '</defs>' +
+      '<' + tag + ' ' + geo + ' fill="url(#' + g + ')"' + (o.op ? ' fill-opacity="' + o.op + '"' : '') + '/>' +
+      '<' + tag + ' ' + geo + ' fill="url(#' + h + ')" stroke="' + (o.stroke || EDGE) + '" stroke-width="' + (o.sw || 2.5) + '" stroke-linejoin="round"' + (o.dash ? ' stroke-dasharray="' + o.dash + '"' : '') + '/>';
+  }
+  /* a shiny ball (dots, counters), centred at cx, cy */
+  function ball(cx, cy, r, col, ring) {
+    var g = gid();
+    return '<defs>' + rad(g, mix(col, .5), mix(col, -.12)) + '</defs><circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="url(#' + g + ')" stroke="' + (ring || '#fff') + '" stroke-width="2"/>' +
+      '<ellipse cx="' + (cx - r * .3) + '" cy="' + (cy - r * .38) + '" rx="' + (r * .34) + '" ry="' + (r * .22) + '" fill="#fff" opacity=".55"/>';
+  }
+
   var FONT = 'font-family="Fredoka, Trebuchet MS, sans-serif"';
   function T(x, y, t, size, col, anchor, weight) {
     return '<text x="' + x + '" y="' + y + '" ' + FONT + ' font-size="' + size + '" font-weight="' + (weight || 600) + '" fill="' + col + '" text-anchor="' + (anchor || 'middle') +
@@ -29,20 +56,29 @@
   function die(n, size, hi) {   // a dice face centred on 0, 0
     var h = size / 2, r = size * 0.09, q = size * 0.26, P = { 1: [[0, 0]], 2: [[-q, -q], [q, q]], 3: [[-q, -q], [0, 0], [q, q]], 4: [[-q, -q], [q, -q], [-q, q], [q, q]],
       5: [[-q, -q], [q, -q], [0, 0], [-q, q], [q, q]], 6: [[-q, -q], [q, -q], [-q, 0], [q, 0], [-q, q], [q, q]] }[n];
-    return '<rect x="' + (-h) + '" y="' + (-h) + '" width="' + size + '" height="' + size + '" rx="' + size * 0.18 + '" fill="' + (hi ? '#FFF4D6' : '#FFFFFF') + '" stroke="' + (hi ? '#FF8A3D' : '#2D1B69') + '" stroke-width="' + (hi ? 5 : 3) + '"/>' +
-      P.map(function (p) { return '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="' + r + '" fill="#2D1B69"/>'; }).join('');
+    var g = gid(), k = gid();
+    return '<defs>' + lin(g, hi ? '#FFFBF0' : '#FFFFFF', hi ? '#FFE2B8' : '#E6E3F2') + rad(k, '#5A48A8', '#1E1B3A') + '</defs>' +
+      '<rect x="' + (-h) + '" y="' + (-h) + '" width="' + size + '" height="' + size + '" rx="' + size * 0.18 + '" fill="url(#' + g + ')" stroke="' + (hi ? '#FF8A3D' : 'rgba(45,27,105,.55)') + '" stroke-width="' + (hi ? 5 : 2.5) + '"/>' +
+      '<rect x="' + (-h + size * 0.12) + '" y="' + (-h + size * 0.07) + '" width="' + size * 0.76 + '" height="' + size * 0.1 + '" rx="' + size * 0.05 + '" fill="#fff" opacity=".8"/>' +
+      P.map(function (p) { return '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="' + r + '" fill="url(#' + k + ')"/>'; }).join('');
   }
   function coin(letter, r, col) {
-    col = col || (letter === 'H' ? '#FFC93C' : '#C9CED8');
-    return '<circle r="' + r + '" fill="' + col + '" stroke="#B7791F" stroke-width="3"/><circle r="' + (r * 0.78) + '" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2"/>' +
+    var gold = letter === 'H', g = gid(), k = gid();
+    col = col || (gold ? '#F2B31B' : '#B4BACB');
+    return '<defs>' + rad(g, mix(col, .6), col) + lin(k, mix(col, -.2), mix(col, .5)) + '</defs>' +
+      '<circle r="' + r + '" fill="url(#' + g + ')" stroke="' + (gold ? '#A8680F' : '#6E7486') + '" stroke-opacity=".8" stroke-width="2.5"/>' +
+      '<circle r="' + (r * 0.78) + '" fill="none" stroke="url(#' + k + ')" stroke-width="2.5"/>' +
+      '<path d="M' + (-r * .62) + ' ' + (-r * .28) + ' A' + (r * .68) + ' ' + (r * .68) + ' 0 0 1 ' + (-r * .1) + ' ' + (-r * .66) + '" fill="none" stroke="#fff" stroke-width="' + Math.max(3, r * .1) + '" stroke-linecap="round" opacity=".6"/>' +
       T(0, 2, letter, r, '#2D1B69', 'middle', 700);
   }
   var RED = '#E5484D', BLUE = '#2F80ED', GREEN = '#22A06B';
-  function counter(col, r) { return '<circle r="' + (r || 20) + '" fill="' + col + '" stroke="#fff" stroke-width="3"/><circle cx="-6" cy="-6" r="5" fill="#fff" opacity=".45"/>'; }
+  function counter(col, r) { return ball(0, 0, r || 20, col).replace('stroke-width="2"', 'stroke-width="3"'); }
   function hideAll(s, names) { names.forEach(function (n) { s.hide(s.ref[n]); }); }
   function sector(cx, cy, r, a0, a1, fill) {   // angles in degrees, clockwise from 12 o'clock
     function pt(a) { a = a * Math.PI / 180; return (cx + r * Math.sin(a)).toFixed(1) + ' ' + (cy - r * Math.cos(a)).toFixed(1); }
-    return '<path d="M' + cx + ' ' + cy + ' L' + pt(a0) + ' A' + r + ' ' + r + ' 0 ' + (a1 - a0 > 180 ? 1 : 0) + ' 1 ' + pt(a1) + ' Z" fill="' + fill + '" stroke="#fff" stroke-width="3"/>';
+    var g = gid();   // lighter towards the middle, so each part looks rounded
+    return '<defs><radialGradient id="' + g + '" gradientUnits="userSpaceOnUse" cx="' + cx + '" cy="' + cy + '" r="' + r + '"><stop offset="0" stop-color="' + mix(fill, .45) + '"/><stop offset="1" stop-color="' + fill + '"/></radialGradient></defs>' +
+      '<path d="M' + cx + ' ' + cy + ' L' + pt(a0) + ' A' + r + ' ' + r + ' 0 ' + (a1 - a0 > 180 ? 1 : 0) + ' 1 ' + pt(a1) + ' Z" fill="url(#' + g + ')" stroke="#fff" stroke-width="3"/>';
   }
 
   Theory.scenes({
@@ -50,11 +86,12 @@
     'pw-words': function (s) {
       s.text(320, 40, 'How likely?', { size: 36, weight: 700, colour: s.C.fun });
       s.owl(80, 150, 90, { name: 'owl', delay: 200 });
-      s.add('<defs><linearGradient id="pwg" x1="0" x2="1"><stop offset="0" stop-color="#E5484D"/><stop offset=".5" stop-color="#FFC93C"/><stop offset="1" stop-color="#22A06B"/></linearGradient></defs>' +
-        '<rect x="60" y="194" width="520" height="12" rx="6" fill="url(#pwg)"/>', { enter: 'fade', delay: 300 });
+      var gw = gid();
+      s.add('<defs><linearGradient id="' + gw + '" x1="0" x2="1"><stop offset="0" stop-color="#E5484D"/><stop offset=".5" stop-color="#FFC93C"/><stop offset="1" stop-color="#22A06B"/></linearGradient></defs>' +
+        '<rect x="60" y="194" width="520" height="12" rx="6" fill="url(#' + gw + ')" stroke="' + EDGE + '" stroke-width="1.5"/><rect x="66" y="196" width="508" height="3" rx="1.5" fill="#fff" opacity=".5"/>', { enter: 'fade', delay: 300 });
       ['impossible', 'unlikely', 'even chance', 'likely', 'certain'].forEach(function (w, i) {
         var x = 60 + i * 130;
-        s.add('<circle cx="' + x + '" cy="200" r="9" fill="#fff" stroke="#1E1B3A" stroke-width="3"/>', { enter: 'pop', delay: 600 + i * 400 });
+        s.add(ball(x, 200, 9, '#FFFFFF', '#1E1B3A').replace('stroke-width="2"', 'stroke-width="3"'), { enter: 'pop', delay: 600 + i * 400 });
         s.text(x, 234, w, { size: 20, colour: s.C.ink, delay: 650 + i * 400 });
       });
     },
@@ -64,9 +101,10 @@
       s.text(60, 165, 'roll a 7', { size: 18, colour: s.C.red, delay: 300 });
       s.add(coin('H', 28), { x: 320, y: 118, enter: 'pop', delay: 1000 });
       s.text(320, 165, 'heads', { size: 18, colour: s.C.orange, delay: 1100 });
-      s.add('<circle r="20" fill="#FFC93C"/>' + [0, 45, 90, 135, 180, 225, 270, 315].map(function (a) {
-        return '<path d="M0 -26 V-34" stroke="#FFC93C" stroke-width="4" stroke-linecap="round" transform="rotate(' + a + ')"/>';
-      }).join(''), { x: 580, y: 116, enter: 'pop', delay: 1800 });
+      var gs = gid();
+      s.add('<defs>' + rad(gs, '#FFF3B0', '#FFB21E') + '</defs>' + [0, 45, 90, 135, 180, 225, 270, 315].map(function (a) {
+        return '<path d="M0 -26 V-34" stroke="#FFB21E" stroke-width="4.5" stroke-linecap="round" transform="rotate(' + a + ')"/>';
+      }).join('') + '<circle r="20" fill="url(#' + gs + ')" stroke="rgba(194,87,12,.45)" stroke-width="2"/><ellipse cx="-7" cy="-8" rx="6" ry="4" fill="#fff" opacity=".6"/>', { x: 580, y: 116, enter: 'pop', delay: 1800 });
       s.text(580, 165, 'Sun rises', { size: 18, colour: s.C.green, delay: 1900 });
     },
     'pw-scale': function (s) {
@@ -106,8 +144,11 @@
     },
     'ps-bag': function (s) {
       s.clear(); s.ref = {};
-      s.add('<path d="M70 120 Q60 100 90 92 L250 92 Q280 100 270 120 Q320 200 290 300 Q170 340 50 300 Q20 200 70 120 Z" fill="#F3E6CF" stroke="#C98A4B" stroke-width="4"/>' +
-        '<path d="M90 92 Q170 70 250 92" fill="none" stroke="#C98A4B" stroke-width="4"/>', { enter: 'pop' });
+      var gb = gid();
+      s.add('<defs>' + rad(gb, '#FFF6E6', '#E8D2AC') + '</defs>' +
+        '<path d="M70 120 Q60 100 90 92 L250 92 Q280 100 270 120 Q320 200 290 300 Q170 340 50 300 Q20 200 70 120 Z" fill="url(#' + gb + ')" stroke="rgba(140,90,40,.6)" stroke-width="3"/>' +
+        '<path d="M58 160 Q46 220 66 280" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity=".5"/>' +
+        '<path d="M90 92 Q170 70 250 92" fill="none" stroke="#B57A40" stroke-width="5" stroke-linecap="round"/><path d="M92 90 Q170 70 248 90" fill="none" stroke="#F4CF9E" stroke-width="1.5" opacity=".9"/>', { enter: 'pop' });
       var cols = [RED, RED, RED, BLUE, BLUE, BLUE, BLUE, BLUE, GREEN, GREEN], spots = [[110, 150], [170, 145], [230, 150], [90, 205], [145, 200], [200, 200], [255, 205], [120, 260], [180, 258], [235, 262]];
       cols.forEach(function (c, i) { s.add(counter(c, 22), { x: spots[i][0], y: spots[i][1], enter: 'pop', delay: 300 + i * 120 }); });
       s.text(460, 60, '3 red', { size: 22, colour: s.C.red, weight: 700, delay: 1600 });
@@ -120,15 +161,15 @@
     /* ---------- 3. Not happening ---------- */
     'pn-total': function (s) {
       s.text(320, 40, 'It happens, or it doesn\'t', { size: 32, weight: 700, colour: s.C.fun });
-      s.add('<rect x="70" y="120" width="500" height="70" rx="12" fill="#E8E3FF" stroke="#6C4DF6" stroke-width="3"/>' + T(320, 156, 'all the chances together = 1', 22, '#2D1B69', 'middle', 700), { enter: 'left', delay: 300, name: 'whole' });
+      s.add(solid('rect', 'x="70" y="120" width="500" height="70" rx="12"', '#D9D0FF', { stroke: '#6C4DF6', sw: 3, top: '#F6F3FF' }) + T(320, 156, 'all the chances together = 1', 22, '#2D1B69', 'middle', 700), { enter: 'left', delay: 300, name: 'whole' });
       s.text(320, 260, 'happens + doesn\'t happen = 1', { size: 26, weight: 700, colour: s.C.deep, delay: 1100, name: 'rule' });
       s.owl(570, 352, 80, { delay: 1500, name: 'owl' });
     },
     'pn-rain': function (s) {
       hideAll(s, ['whole', 'rule']);
-      s.add('<rect x="70" y="120" width="150" height="70" rx="12" fill="#BFDBFF" stroke="#2F80ED" stroke-width="3"/>' + T(145, 155, 'rain 0.3', 22, '#1E4FA0', 'middle', 700), { enter: 'left', delay: 300 });
-      s.add('<rect x="220" y="120" width="350" height="70" rx="12" fill="#FFF4D6" stroke="#FFC93C" stroke-width="3"/>' + T(395, 155, 'no rain 0.7', 22, '#8A5A00', 'middle', 700), { enter: 'right', delay: 900 });
-      s.add('<path d="M70 205 V215 H570 V205" fill="none" stroke="#55526E" stroke-width="3"/>' + T(320, 236, '1', 24, '#55526E', 'middle', 700), { enter: 'fade', delay: 1300 });
+      s.add(solid('rect', 'x="70" y="120" width="150" height="70" rx="12"', '#A9CCFF', { stroke: '#2F80ED', sw: 3, top: '#E6F0FF' }) + T(145, 155, 'rain 0.3', 22, '#1E4FA0', 'middle', 700), { enter: 'left', delay: 300 });
+      s.add(solid('rect', 'x="220" y="120" width="350" height="70" rx="12"', '#FFE7A6', { stroke: '#F0B400', sw: 3, top: '#FFFAEB' }) + T(395, 155, 'no rain 0.7', 22, '#8A5A00', 'middle', 700), { enter: 'right', delay: 900 });
+      s.add('<path d="M70 205 V215 H570 V205" fill="none" stroke="#55526E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>' + T(320, 236, '1', 24, '#55526E', 'middle', 700), { enter: 'fade', delay: 1300 });
       s.text(300, 300, '1 − 0.3 = 0.7', { size: 34, weight: 700, colour: s.C.deep, enter: 'pop', delay: 1700 });
     },
     'pn-bag': function (s) {
@@ -136,8 +177,8 @@
       s.text(320, 36, 'Not green', { size: 32, weight: 700, colour: s.C.green });
       var cols = [RED, RED, RED, BLUE, BLUE, BLUE, BLUE, BLUE, GREEN, GREEN];
       cols.forEach(function (c, i) { s.add(counter(c, 22), { x: 72 + i * 55, y: 110, enter: 'pop', delay: i * 100 }); });
-      [8, 9].forEach(function (i) { s.add('<path d="M-22 -22 L22 22 M22 -22 L-22 22" stroke="#1E1B3A" stroke-width="5" stroke-linecap="round"/>', { x: 72 + i * 55, y: 110, enter: 'pop', delay: 1200 }); });
-      s.add('<path d="M50 150 V160 H490 V150" fill="none" stroke="#6C4DF6" stroke-width="3"/>' + T(270, 182, '8 are not green', 20, '#6C4DF6', 'middle', 700), { enter: 'fade', delay: 1600 });
+      [8, 9].forEach(function (i) { s.add('<path d="M-22 -22 L22 22 M22 -22 L-22 22" stroke="#fff" stroke-width="10" stroke-linecap="round"/><path d="M-22 -22 L22 22 M22 -22 L-22 22" stroke="#1E1B3A" stroke-width="5" stroke-linecap="round"/>', { x: 72 + i * 55, y: 110, enter: 'pop', delay: 1200 }); });
+      s.add('<path d="M50 150 V160 H490 V150" fill="none" stroke="#6C4DF6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>' + T(270, 182, '8 are not green', 20, '#6C4DF6', 'middle', 700), { enter: 'fade', delay: 1600 });
       eq(s, 320, 270, ['1 −', [2, 10], '=', [8, 10], '=', [4, 5]], { size: 30, delay: 2200 });
     },
 
@@ -161,8 +202,8 @@
       s.clear(); s.ref = {};
       s.text(320, 36, 'Spin it 80 times', { size: 30, weight: 700, colour: s.C.fun });
       s.add(sector(150, 195, 100, 0, 90, RED) + sector(150, 195, 100, 90, 180, '#FFC93C') + sector(150, 195, 100, 180, 270, '#2F80ED') + sector(150, 195, 100, 270, 360, '#22A06B') +
-        '<circle cx="150" cy="195" r="100" fill="none" stroke="#2D1B69" stroke-width="4"/>', { enter: 'pop' });
-      var arm = s.add('<path d="M0 0 L0 -70" stroke="#1E1B3A" stroke-width="7" stroke-linecap="round"/><path d="M-11 -62 L0 -84 L11 -62 Z" fill="#1E1B3A"/><circle r="10" fill="#1E1B3A"/>', { x: 150, y: 195, enter: 'fade', delay: 200 });
+        '<circle cx="150" cy="195" r="100" fill="none" stroke="#2D1B69" stroke-width="4"/>' + '<path d="M78 150 A84 84 0 0 1 150 111" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".45"/>', { enter: 'pop' });
+      var arm = s.add('<path d="M0 0 L0 -70" stroke="#1E1B3A" stroke-width="7" stroke-linecap="round"/><path d="M-1 -6 L-1 -66" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".35"/><path d="M-11 -62 L0 -84 L11 -62 Z" fill="#1E1B3A" stroke="#1E1B3A" stroke-width="2" stroke-linejoin="round"/>' + ball(0, 0, 10, '#3A3560', '#1E1B3A'), { x: 150, y: 195, enter: 'fade', delay: 200 });
       arm._inner.style.transformBox = 'view-box'; arm._inner.style.transformOrigin = '0 0';
       s.anim(arm, [{ transform: 'rotate(0deg)' }, { transform: 'rotate(765deg)' }], 2200, { delay: 400, easing: 'cubic-bezier(.2,.7,.3,1)' });
       s.text(150, 322, '1 of 4 equal parts is red', { size: 18, colour: s.C.muted, delay: 600 });
@@ -173,7 +214,7 @@
       s.clear(); s.ref = {};
       s.text(320, 36, 'A coin has no memory', { size: 30, weight: 700, colour: s.C.fun });
       for (var i = 0; i < 5; i++) s.add(coin('H', 30), { x: 70 + i * 75, y: 120, enter: 'pop', delay: i * 250 });
-      s.add('<circle r="30" fill="#fff" stroke="#6C4DF6" stroke-width="4" stroke-dasharray="6 5"/>' + T(0, 2, '?', 32, '#6C4DF6', 'middle', 700), { x: 540, y: 120, enter: 'pop', delay: 1500 });
+      s.add('<circle r="30" fill="#F6F3FF" stroke="#6C4DF6" stroke-width="4" stroke-dasharray="6 5"/>' + T(0, 2, '?', 32, '#6C4DF6', 'middle', 700), { x: 540, y: 120, enter: 'pop', delay: 1500 });
       s.text(540, 175, 'next flip', { size: 18, colour: s.C.fun, delay: 1600 });
       eq(s, 320, 255, ['P(heads) is still', [1, 2]], { size: 30, delay: 2100 });
       s.owl(580, 352, 80, { delay: 2600 });
@@ -190,19 +231,23 @@
       s.text(320, 260, '4 equally likely outcomes', { size: 24, colour: s.C.muted, delay: 2800 });
     },
     'pc-hh': function (s) {
-      s.add('<rect x="-75" y="-45" width="150" height="130" rx="18" fill="none" stroke="#FF8A3D" stroke-width="5"/>', { x: 110, y: 160, enter: 'pop' });
+      s.add('<rect x="-75" y="-45" width="150" height="130" rx="18" fill="#FF8A3D" fill-opacity=".08" stroke="#FF8A3D" stroke-width="5"/>', { x: 110, y: 160, enter: 'pop', flat: true });
       eq(s, 320, 318, ['P(two heads) =', [1, 4]], { size: 28, delay: 600 });
     },
     'pc-grid': function (s) {
       s.clear(); s.ref = {};
       var x0 = 160, w = 75, y0 = 30, h = 60;
-      var m = '<rect x="' + x0 + '" y="' + y0 + '" width="' + 6 * w + '" height="' + h * 0.7 + '" fill="#E8E3FF"/>';
+      var gh = gid(), gc = gid(), clip = gid();
+      var card = 'x="' + (x0 - 60) + '" y="' + y0 + '" width="' + (6 * w + 60) + '" height="' + (h * 0.7 + 2 * h) + '" rx="12"';
+      var m = '<defs>' + lin(gh, '#F3F0FF', '#DCD4FF') + lin(gc, '#FFFBEF', '#FFEBC0') + '<clipPath id="' + clip + '"><rect ' + card + '/></clipPath></defs>' +
+        '<g clip-path="url(#' + clip + ')"><rect ' + card + ' fill="#FFFFFF"/>' +
+        '<rect x="' + x0 + '" y="' + y0 + '" width="' + 6 * w + '" height="' + h * 0.7 + '" fill="url(#' + gh + ')"/>';
       for (var i = 0; i < 6; i++) m += T(x0 + w * (i + 0.5), y0 + h * 0.35, String(i + 1), 22, '#2D1B69', 'middle', 700);
-      m += '<rect x="' + (x0 - 60) + '" y="' + (y0 + h * 0.7) + '" width="60" height="' + 2 * h + '" fill="#FFF4D6"/>' +
+      m += '<rect x="' + (x0 - 60) + '" y="' + (y0 + h * 0.7) + '" width="60" height="' + 2 * h + '" fill="url(#' + gc + ')"/>' +
         T(x0 - 30, y0 + h * 0.7 + h / 2, 'H', 24, '#B7791F', 'middle', 700) + T(x0 - 30, y0 + h * 0.7 + 1.5 * h, 'T', 24, '#55526E', 'middle', 700);
       for (var r = 0; r <= 2; r++) m += '<path d="M' + (x0 - 60) + ' ' + (y0 + h * 0.7 + r * h) + ' H' + (x0 + 6 * w) + '" stroke="#C9C3E6" stroke-width="2"/>';
       for (var c = 0; c <= 6; c++) m += '<path d="M' + (x0 + c * w) + ' ' + y0 + ' V' + (y0 + h * 0.7 + 2 * h) + '" stroke="#C9C3E6" stroke-width="2"/>';
-      s.add(m, { enter: 'fade' });
+      s.add(m + '</g><rect ' + card + ' fill="none" stroke="rgba(30,27,58,.18)" stroke-width="2"/>', { enter: 'fade', flat: true });
       s.text(x0 - 30, y0 + 21, 'coin', { size: 18, colour: s.C.muted, delay: 200 });
       s.text(x0 + 3 * w, 13, 'dice', { size: 18, colour: s.C.muted, delay: 200 });
       ['H', 'T'].forEach(function (cn, r) {
@@ -213,7 +258,7 @@
     },
     'pc-count': function (s) {
       var x0 = 160, w = 75, y0 = 30, h = 60;
-      s.add('<rect x="' + (x0 + 5 * w + 4) + '" y="' + (y0 + h * 0.7 + 4) + '" width="' + (w - 8) + '" height="' + (h - 8) + '" rx="10" fill="none" stroke="#FF8A3D" stroke-width="5"/>', { enter: 'pop', delay: 1200 });
+      s.add('<rect x="' + (x0 + 5 * w + 4) + '" y="' + (y0 + h * 0.7 + 4) + '" width="' + (w - 8) + '" height="' + (h - 8) + '" rx="10" fill="#FF8A3D" fill-opacity=".1" stroke="#FF8A3D" stroke-width="5"/>', { enter: 'pop', delay: 1200, flat: true });
       s.text(320, 238, '2 × 6 = 12 outcomes', { size: 30, weight: 700, colour: s.C.deep, delay: 200 });
       eq(s, 320, 310, ['P(heads and a 6) =', [1, 12]], { size: 26, delay: 1400 });
     }

@@ -47,7 +47,8 @@ def lines(v):
         for s, st in enumerate(ch["steps"], 1):
             text = spoken(st)
             if s == 1:
-                text = f"Part {NUM[c] if c < len(NUM) else c}. {ch['title'].rstrip('?!.')}{'?' if ch['title'].endswith('?') else '.'} ... {text}"
+                head = spoken({"say": ch["title"]}).replace("=", " equals ")
+                text = f"Part {NUM[c] if c < len(NUM) else c}. {head.rstrip('?!.')}{'?' if head.endswith('?') else '.'} ... {text}"
             out[f"{c}-{s}"] = text
     return out
 

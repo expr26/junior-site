@@ -1,0 +1,115 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "25bee03ac21d",
+   "s": 7.79,
+   "text": "Part one. Letters for numbers. ... In algebra, a letter stands for a number we don't know yet. This bag holds n sweets."
+  },
+  "1-2": {
+   "h": "8f459f3ba4d8",
+   "s": 6.36,
+   "text": "Sam is given 3 more sweets. Now Sam has n plus 3 sweets. That is an expression."
+  },
+  "1-3": {
+   "h": "f4b66fd7defd",
+   "s": 6.57,
+   "text": "We leave out the times sign and write the number first. So 5 times x is written 5 x."
+  },
+  "1-4": {
+   "h": "c7cbddc6cc15",
+   "s": 10.15,
+   "text": "n minus 2 means 2 less than n. n divided by 4 means n shared into 4 equal parts. And x times x is written x squared."
+  },
+  "2-1": {
+   "h": "b985f09b9a84",
+   "s": 6.4,
+   "text": "Part two. Simplifying. ... a plus a plus a plus a is four lots of a, so we write it as 4 a."
+  },
+  "2-2": {
+   "h": "ef780a43b814",
+   "s": 7.7,
+   "text": "Like terms have exactly the same letters. 3 x and 5 x are like terms. 3 x and 5 y are not."
+  },
+  "2-3": {
+   "h": "54aa880092e1",
+   "s": 13.65,
+   "text": "To simplify 3 x plus 5 y minus x plus 2 y, collect each kind. x terms: 3 x minus x equals 2 x. y terms: 5 y plus 2 y equals 7 y."
+  },
+  "2-4": {
+   "h": "64a84f7cde9e",
+   "s": 7.74,
+   "text": "So the answer is 2 x plus 7 y. We can't add 2 x and 7 y together, because they are not like terms."
+  },
+  "2-5": {
+   "h": "b48a25067ffd",
+   "s": 10.43,
+   "text": "Multiplying is different. For 3 a times 4 b, multiply the numbers, 3 times 4 equals 12, then write the letters together: 12 a b."
+  },
+  "3-1": {
+   "h": "c83b77cb9fea",
+   "s": 10.62,
+   "text": "Part three. Substitution. ... Substitution means putting a number in place of a letter. If a equals 6, then 3 a equals 3 times 6, which is 18."
+  },
+  "3-2": {
+   "h": "56949cf319b9",
+   "s": 11.86,
+   "text": "If p equals 5 and q equals 2, then 4 p minus 3 q equals 4 times 5, minus 3 times 2. That is 20 minus 6, which is 14."
+  },
+  "3-3": {
+   "h": "123546aa0cd7",
+   "s": 13.5,
+   "text": "Powers come before multiplying and adding. If y equals 3, then y squared equals 3 times 3, which is 9. So y squared plus 2 y equals 9 plus 6, which is 15."
+  },
+  "3-4": {
+   "h": "1f4c2781ed84",
+   "s": 11.26,
+   "text": "Careful with 2 x squared. Only the x is squared. If x equals 4, then 2 x squared equals 2 times 16, which is 32, not 8 times 8."
+  },
+  "3-5": {
+   "h": "3dee788e8929",
+   "s": 13.38,
+   "text": "Letters can be negative too. If a equals negative 2, then 3 a equals negative 6. So 5 minus 3 a equals 5 minus negative 6, which is 5 plus 6, which is 11."
+  },
+  "4-1": {
+   "h": "811ef9a815f9",
+   "s": 5.53,
+   "text": "Part four. Brackets. ... 3 bracket x plus 4 means 3 lots of x plus 4."
+  },
+  "4-2": {
+   "h": "048cd23852fd",
+   "s": 12.48,
+   "text": "To expand it, multiply everything inside by 3: 3 times x is 3 x, and 3 times 4 is 12. So 3 bracket x plus 4 equals 3 x plus 12."
+  },
+  "4-3": {
+   "h": "9f88e68b90f1",
+   "s": 7.89,
+   "text": "Here is a picture: a rectangle 3 tall and x plus 4 wide. Its two parts have areas 3 x and 12."
+  },
+  "4-4": {
+   "h": "54b73aded4d4",
+   "s": 10.73,
+   "text": "Expand and simplify 2 bracket a plus 3, plus 4 bracket a minus 1. That is 2 a plus 6 plus 4 a minus 4, which equals 6 a plus 2."
+  },
+  "4-5": {
+   "h": "486cb63f4bf2",
+   "s": 9.34,
+   "text": "Factorising is the reverse. 3 goes into both 6 x and 9, so 6 x plus 9 equals 3 bracket 2 x plus 3."
+  },
+  "5-1": {
+   "h": "b7f06f7cac60",
+   "s": 11.58,
+   "text": "Part five. Formulae. ... A formula is a rule that links things. A taxi costs 3 pounds, plus 2 pounds for each mile. So the cost is C equals 3 plus 2 m."
+  },
+  "5-2": {
+   "h": "5421ed2328b4",
+   "s": 11.18,
+   "text": "For a 7 mile journey, put m equals 7: C equals 3 plus 2 times 7, which is 3 plus 14, which is 17. It costs 17 pounds."
+  },
+  "5-3": {
+   "h": "defe1a5503a5",
+   "s": 15.74,
+   "text": "The perimeter of a rectangle is P equals 2 bracket l plus w. If l is 8 centimetres and w is 5 centimetres, work out the bracket first: P equals 2 times 13, which is 26 centimetres."
+  }
+ }
+}

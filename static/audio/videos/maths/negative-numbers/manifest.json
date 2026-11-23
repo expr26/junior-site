@@ -1,0 +1,100 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "6c43942e05f4",
+   "s": 10.94,
+   "text": "Part one. Numbers below zero. ... Numbers below zero are negative. A thermometer shows them: negative 4 degrees Celsius means 4 degrees below zero."
+  },
+  "1-2": {
+   "h": "e9d5c062d026",
+   "s": 6.49,
+   "text": "On a number line, negative numbers are to the left of zero and positive numbers are to the right."
+  },
+  "1-3": {
+   "h": "5c466200a4b3",
+   "s": 10.26,
+   "text": "Numbers get smaller as you go left. Negative 8 is further left than negative 3, so negative 8 is smaller: negative 8 degrees is colder."
+  },
+  "1-4": {
+   "h": "50a55c40e1c9",
+   "s": 7.81,
+   "text": "From negative 3 degrees to 5 degrees: 3 degrees up to zero, then 5 more. That is 8 degrees warmer."
+  },
+  "2-1": {
+   "h": "72bccfc23fa6",
+   "s": 11.33,
+   "text": "Part two. Adding and subtracting. ... Adding means moving right on the number line. Negative 2 plus 6: start at negative 2 and hop 6 to the right. You land on 4."
+  },
+  "2-2": {
+   "h": "4a34eae7fa43",
+   "s": 8.0,
+   "text": "Subtracting means moving left. 3 minus 7: start at 3 and hop 7 to the left. You land on negative 4."
+  },
+  "2-3": {
+   "h": "1e9cd8f78dd8",
+   "s": 7.51,
+   "text": "Negative 4 minus 5: start at negative 4 and hop 5 more to the left. You land on negative 9."
+  },
+  "3-1": {
+   "h": "276994f040cf",
+   "s": 7.66,
+   "text": "Part three. Two signs together. ... Look at this pattern. Each time we take away 1 less, the answer goes up by 1."
+  },
+  "3-2": {
+   "h": "7acc3b439fa3",
+   "s": 10.07,
+   "text": "So taking away negative 1 gives 7: 6 minus negative 1 equals 6 plus 1. Subtracting a negative is the same as adding."
+  },
+  "3-3": {
+   "h": "2f8c35713c86",
+   "s": 5.03,
+   "text": "6 minus negative 3 equals 6 plus 3, which equals 9."
+  },
+  "3-4": {
+   "h": "e9cffe3c058a",
+   "s": 8.41,
+   "text": "And adding a negative is the same as subtracting: 5 plus negative 3 equals 5 minus 3, which equals 2."
+  },
+  "4-1": {
+   "h": "707564f4575f",
+   "s": 8.26,
+   "text": "Part four. Multiplying and dividing. ... To multiply or divide, work out the numbers as normal. Then sort out the sign."
+  },
+  "4-2": {
+   "h": "d1e025bb94dd",
+   "s": 5.42,
+   "text": "Same signs give a positive answer. Different signs give a negative answer."
+  },
+  "4-3": {
+   "h": "e10cb1e1f872",
+   "s": 12.54,
+   "text": "Negative 6 times 4 equals negative 24, because the signs are different. Negative 20 divided by negative 5 equals 4, because the signs are the same."
+  },
+  "4-4": {
+   "h": "cd9a5b7e97a0",
+   "s": 7.87,
+   "text": "Negative 3, all squared, means negative 3 times negative 3. Same signs, so the answer is 9."
+  },
+  "4-5": {
+   "h": "23d859a8a9ce",
+   "s": 9.58,
+   "text": "With three numbers, go two at a time: negative 2 times negative 3 equals 6, then 6 times negative 1 equals negative 6."
+  },
+  "5-1": {
+   "h": "e6b7532e7a12",
+   "s": 17.58,
+   "text": "Part five. Negative numbers in real life. ... A diver is 12 metres below sea level, at negative 12 metres. The diver swims up 5 metres: negative 12 plus 5 equals negative 7. The diver is now 7 metres below sea level."
+  },
+  "5-2": {
+   "h": "0d251ad13b68",
+   "s": 13.82,
+   "text": "A bank account has 15 pounds. 22 pounds is spent: 15 minus 22 equals negative 7. The balance is negative 7 pounds, which means 7 pounds is owed to the bank."
+  },
+  "5-3": {
+   "h": "a8628803db2e",
+   "s": 9.11,
+   "text": "What is halfway between negative 6 and 2? The gap is 8. Half of 8 is 4. Negative 6 plus 4 equals negative 2."
+  }
+ }
+}

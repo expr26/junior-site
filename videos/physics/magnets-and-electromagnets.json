@@ -1,0 +1,75 @@
+{
+  "title": "Magnets and electromagnets",
+  "description": "Animated KS3 Physics lesson on magnets for ages 9 to 14: north and south poles, magnetic materials, attract and repel, magnetic fields and field lines, compasses and the Earth's magnetic field, electromagnets and their uses.",
+  "intro": "Poles, magnetic materials, field lines, compasses, electromagnets and how we use them, explained by the owl in six short parts.",
+  "chapters": [
+    {
+      "title": "Magnets and poles",
+      "steps": [
+        {"say": "This is a bar magnet. Its two ends are called **poles**: a **north pole** and a **south pole**.", "do": "bar-magnet"},
+        {"say": "The magnetic force is strongest at the poles. See how the paper clips cling to the ends, not the middle.", "do": "clips-poles"},
+        {"say": "Magnets attract **magnetic materials**. The magnetic metals are **iron**, **nickel** and **cobalt**. Most steel is magnetic too, because it is mostly iron.", "do": "materials"},
+        {"say": "Most other metals are **not** magnetic: copper, aluminium and gold stay put. So do wood and plastic.", "do": "not-magnetic"}
+      ],
+      "check": {"q": "Which of these is attracted to a magnet?", "options": ["An iron nail", "A piece of copper wire", "An aluminium can", "A gold ring"], "answer": 0,
+                "hint": "Only a few metals are magnetic. Remember the three: iron, nickel and cobalt.", "explain": "**Iron** is a magnetic material, so the nail is pulled to the magnet. Copper, aluminium and gold are metals, but they are not magnetic."}
+    },
+    {
+      "title": "Attract and repel",
+      "steps": [
+        {"say": "Bring two magnets close. A north pole and a south pole pull together: **opposite poles attract**.", "do": "attract"},
+        {"say": "Two north poles push each other apart. So do two south poles: **like poles repel**.", "do": "repel"},
+        {"say": "Magnetism is a **non-contact force**. The magnet pulls the paper clip up across the gap, without touching it.", "do": "gap"},
+        {"say": "Cut a magnet in half and you get two smaller magnets. Each half has its own north pole and south pole.", "do": "cut"}
+      ],
+      "check": {"q": "The north pole of one magnet is held near the north pole of another. What happens?", "options": ["They repel (push apart)", "They attract (pull together)", "Nothing happens", "The poles swap over"], "answer": 0,
+                "hint": "Are the two poles the same (like) or different (opposite)?", "explain": "North and north are **like poles**, and like poles **repel**. Only opposite poles, north and south, attract."}
+    },
+    {
+      "title": "Magnetic fields",
+      "steps": [
+        {"say": "Around every magnet is a **magnetic field**. It is the space where the magnet pushes or pulls on magnetic things.", "do": "field-area"},
+        {"say": "Sprinkle iron filings round a magnet and they line up in a pattern of curved lines.", "do": "filings"},
+        {"say": "We draw the pattern as **field lines**. Outside the magnet, the arrows always go from the **north pole** to the **south pole**.", "do": "field-lines"},
+        {"say": "The lines are closest together at the poles. That is where the field is **strongest**.", "do": "strongest"},
+        {"say": "A small **plotting compass** points along the field lines, so you can use one to map a magnet's field.", "do": "compasses"}
+      ],
+      "check": {"q": "Outside a bar magnet, which way do the field lines point?", "options": ["From the north pole to the south pole", "From the south pole to the north pole", "From the middle out to both ends", "They don't have a direction"], "answer": 0,
+                "hint": "Think N to S, like reading the letters in \"North to South\".", "explain": "Outside a magnet the field lines go **from north to south**. A plotting compass shows the direction: its north end points along the line."}
+    },
+    {
+      "title": "Compasses and the Earth",
+      "steps": [
+        {"say": "A **compass** needle is a tiny magnet that can spin freely. Wherever you stand, it settles pointing north.", "do": "compass"},
+        {"say": "That's because the Earth has a **magnetic field**, a bit like a giant bar magnet inside it.", "do": "earth-field"},
+        {"say": "The compass needle lines up with the Earth's field, so its north end points towards the North Pole.", "do": "earth-compass"},
+        {"say": "Here's a twist! Opposite poles attract, so the Earth's magnet must have its **south** pole up near the Arctic. That's what pulls the north end of the needle.", "do": "twist"}
+      ],
+      "check": {"q": "Why does a compass needle point north?", "options": ["It lines up with the Earth's magnetic field", "The North Pole is made of iron", "The Sun's light pulls it", "Cold air pulls the needle"], "answer": 0,
+                "hint": "The needle is a small magnet. What is all around us that a magnet can line up with?", "explain": "The Earth has a **magnetic field**. The compass needle is a small magnet, so it lines up with the field and its north end points north."}
+    },
+    {
+      "title": "Electromagnets",
+      "steps": [
+        {"say": "An electric **current** flowing in a wire makes a magnetic field around the wire. Look how the compasses turn.", "do": "wire-field"},
+        {"say": "Wind the wire into a **coil** and the field is stronger. It has the same shape as a bar magnet's field.", "do": "coil"},
+        {"say": "Put an **iron core** inside the coil and the field gets much stronger. Now it is an **electromagnet**.", "do": "core"},
+        {"say": "Switch the current off and the magnetism stops. The paper clips drop!", "do": "switch-off"},
+        {"say": "To make an electromagnet stronger, use **more turns** of wire, a **bigger current**, or an **iron core**.", "do": "stronger"}
+      ],
+      "check": {"q": "Which change makes an electromagnet **weaker**?", "options": ["Using fewer turns of wire", "Using a bigger current", "Putting an iron core inside", "Using more turns of wire"], "answer": 0,
+                "hint": "Three things make it stronger: more turns, a bigger current and an iron core. Which option is the opposite of one of those?", "explain": "More turns make a stronger field, so **fewer turns** make it weaker. A bigger current and an iron core both make it stronger."}
+    },
+    {
+      "title": "Using electromagnets",
+      "steps": [
+        {"say": "The best thing about an electromagnet is that you can switch it **on** and **off**.", "do": "uses-title"},
+        {"say": "A scrapyard crane uses a huge electromagnet to lift old cars. Switch it off and the car drops.", "do": "crane"},
+        {"say": "In an **electric bell**, the electromagnet pulls an iron arm and the hammer hits the bell. This breaks the circuit, the arm springs back, and it all starts again.", "do": "bell"},
+        {"say": "Electromagnets are also in loudspeakers, electric door locks and the scanners used in hospitals.", "do": "more-uses"}
+      ],
+      "check": {"q": "Why does a scrapyard crane use an electromagnet instead of an ordinary magnet?", "options": ["It can be switched off to drop the metal", "It can pick up every metal, even aluminium", "It doesn't need any electricity", "Ordinary magnets don't work outdoors"], "answer": 0,
+                "hint": "What can an electromagnet do that a normal magnet can't?", "explain": "An electromagnet only works while the current is on. **Switch it off and the metal drops.** An ordinary magnet would never let go. (Neither kind can lift aluminium.)"}
+    }
+  ]
+}

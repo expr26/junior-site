@@ -3,7 +3,7 @@
 A "video" here is an animation drawn in the browser (SVG + JS), not a video file: it is sharp on every screen,
 tiny to download, needs no third-party player (so no trackers and no CSP change), and every word is also on the
 page as text, which search engines can read. The child presses Play; each step shows a picture and a caption,
-read aloud by the device's own voice if they want. After each chapter there is a quick check question
+read aloud by a recorded voice (tools/narrate.py). After each chapter there is a quick check question
 (stars, as everywhere else). There is no timer: the child can pause, go back or skip at any point.
 
 videos/<subject>/<topic>.json, where <subject>/<topic> is a topic in qbank/subjects.json:
@@ -123,7 +123,7 @@ def hub(rows):
   <div class="wrap">{"".join(groups)}
     <div class="card parents-note"><h3>For parents</h3>
       <p>Each video explains one KS3 topic in small steps, with a quick check after each part and the full text on the page.
-      The voice is your device's own reading voice; nothing is sent anywhere. No ads, no autoplay of the next video.</p></div>
+      Every video is narrated in clear British English, and the sound can be switched off. No ads, no autoplay of the next video.</p></div>
   </div>
 </section>"""
     return (ROOT, {"title": "KS3 Maths and Physics theory videos", "body_class": "videos",
@@ -138,6 +138,13 @@ def page(s, t, v):
             "chapters": [{"title": ch["title"],
                           "steps": [{"say": rich(st["say"]), "speak": st.get("speak", ""), "do": st["do"]} for st in ch["steps"]],
                           "check": ch.get("_check")} for ch in v["chapters"]]}
+    audio = HERE / "static" / "audio" / "videos" / s["slug"] / t["slug"]
+    if (audio / "manifest.json").exists():   # recorded narration (tools/narrate.py): every step needs its file
+        need = {f"{c}-{k}" for c, ch in enumerate(v["chapters"], 1) for k in range(1, len(ch["steps"]) + 1)}
+        have = set(json.loads((audio / "manifest.json").read_text(encoding="utf-8"))["lines"])
+        if need - have or any(not (audio / f"{n}.mp3").exists() for n in need):
+            raise ContentError(f"videos/{s['slug']}/{t['slug']}.json: narration is out of date, run tools/narrate.py {s['slug']}/{t['slug']}")
+        data["audio"] = f"/static/audio/videos/{s['slug']}/{t['slug']}/"
     blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     chips = "".join(f'<li><button type="button" class="tv-ch" data-ch="{n}"><span class="tv-ch-n">{n + 1}</span> {e(ch["title"])}</button></li>'
                     for n, ch in enumerate(v["chapters"]))
@@ -162,6 +169,7 @@ def page(s, t, v):
     <div class="tv" id="tv">
       <div class="tv-screen">
         <svg class="tv-stage" viewBox="0 0 640 360" role="img" aria-label="Animation for this step"></svg>
+        <div class="tv-title" aria-hidden="true"><span class="tv-title-k"></span><b class="tv-title-t"></b></div>
         <div class="tv-cover">
           <div class="tv-cover-owl">{mascot()}</div>
           <button type="button" class="btn tv-start">▶ Play the video</button>
@@ -173,7 +181,7 @@ def page(s, t, v):
         <button type="button" class="tv-b tv-play" aria-label="Pause">⏸</button>
         <button type="button" class="tv-b tv-next" aria-label="Next step">⏭</button>
         <span class="tv-seg" aria-hidden="true"></span>
-        <button type="button" class="tv-b tv-voice" aria-pressed="true" aria-label="Read aloud">🔊</button>
+        <button type="button" class="tv-b tv-voice" aria-pressed="true" aria-label="Sound on">🔊</button>
       </div>
       <p class="tv-cap" aria-live="polite"></p>
       <div class="tv-check" hidden></div>

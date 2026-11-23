@@ -1,0 +1,76 @@
+{
+  "title": "Space",
+  "description": "Animated KS3 Physics lesson on space for ages 9 to 14: day and night, years and seasons, the Solar System, the Moon and its phases, gravity and weight on other worlds, stars, galaxies and light years.",
+  "intro": "Day and night, seasons, the planets, the Moon, gravity in space and light years, explained by the owl in six short parts.",
+  "chapters": [
+    {
+      "title": "Day and night",
+      "steps": [
+        {"say": "The Earth is a giant ball that **spins**. It spins round its **axis**: an imaginary line through the North Pole and the South Pole.", "do": "earth-axis"},
+        {"say": "The half of the Earth facing the Sun has **day**. The half facing away is in shadow: that's **night**.", "do": "day-night"},
+        {"say": "The Earth spins round once in about 24 hours. That gives us one day and one night.", "speak": "The Earth spins round once in about 24 hours. That gives us one day and one night.", "do": "spin-24"},
+        {"say": "The Sun isn't moving round us. It only **seems** to cross the sky because the Earth turns. It rises in the east and sets in the west.", "do": "sun-sky"}
+      ],
+      "check": {"q": "At midday in the UK it is night-time in Australia. Why?", "options": ["Australia is on the side of the Earth facing away from the Sun", "The Sun has moved round to the other side of the Earth", "The Moon is blocking the Sun over Australia", "Australia is further away from the Sun"], "answer": 0,
+                "hint": "The Earth spins. Which way is each country facing at that moment?", "explain": "The Earth spins on its axis. At that moment the UK faces the Sun, so it has day, and **Australia faces away from the Sun**, so it has night. The Sun doesn't move round the Earth."}
+    },
+    {
+      "title": "Years and seasons",
+      "steps": [
+        {"say": "As it spins, the Earth also travels round the Sun. One trip, called an **orbit**, takes about 365¼ days. That's one **year**.", "speak": "As it spins, the Earth also travels round the Sun. One trip, called an orbit, takes about 365 and a quarter days. That's one year.", "do": "orbit"},
+        {"say": "The quarter days add up. So every four years we add an extra day, 29 February. That's a **leap year**.", "speak": "The quarter days add up. So every four years we add an extra day, the 29th of February. That's a leap year.", "do": "leap"},
+        {"say": "The Earth's axis is **tilted**. As the Earth goes round the Sun, the axis always leans the same way.", "do": "tilt"},
+        {"say": "In June the UK leans **towards** the Sun. The Sun climbs high in the sky and the days are long. It's **summer**.", "do": "summer"},
+        {"say": "In December the UK leans **away** from the Sun. The Sun stays low and the days are short. It's **winter**.", "do": "winter"}
+      ],
+      "check": {"q": "Why is it summer in the UK in June?", "options": ["The UK is tilted towards the Sun", "The Earth is closest to the Sun in June", "The Sun burns hotter in June", "The Earth spins more slowly in June"], "answer": 0,
+                "hint": "It isn't about distance: the Earth is actually closest to the Sun in early January!", "explain": "The Earth's axis is **tilted**. In June the UK leans **towards** the Sun, so the Sun is higher in the sky and the days are longer. Distance isn't the reason: the Earth is closest to the Sun in January, in the UK's winter."}
+    },
+    {
+      "title": "The Solar System",
+      "steps": [
+        {"say": "At the centre of our **Solar System** is the **Sun**. The Sun is a **star**: a huge ball of very hot, glowing gas.", "do": "sun"},
+        {"say": "Eight **planets** orbit the Sun. In order: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune.", "do": "planets"},
+        {"say": "A silly sentence helps you remember the order: **M**y **V**ery **E**asy **M**ethod **J**ust **S**peeds **U**p **N**aming.", "speak": "A silly sentence helps you remember the order: My Very Easy Method Just Speeds Up Naming.", "do": "mnemonic"},
+        {"say": "The four inner planets are small and rocky. The four outer planets are giants, made mostly of gas and ice.", "do": "inner-outer"},
+        {"say": "Planets further from the Sun take longer to go round. The Earth takes one year, but Neptune takes about 165 years!", "speak": "Planets further from the Sun take longer to go round. The Earth takes one year, but Neptune takes about 165 years!", "do": "further"}
+      ],
+      "check": {"q": "Which planet comes between the Earth and Jupiter?", "options": ["Mars", "Venus", "Saturn", "Mercury"], "answer": 0,
+                "hint": "My Very Easy Method Just... Which word comes after Easy (Earth) and before Just (Jupiter)?", "explain": "The order is Mercury, Venus, Earth, **Mars**, Jupiter, Saturn, Uranus, Neptune. Mars comes after the Earth and before Jupiter."}
+    },
+    {
+      "title": "The Moon",
+      "steps": [
+        {"say": "The **Moon** orbits the Earth. One orbit takes about 27 days, roughly a month.", "do": "moon-orbit"},
+        {"say": "The Moon doesn't make its own light. We see it because it **reflects** light from the Sun.", "do": "moon-reflect"},
+        {"say": "The Sun always lights up half of the Moon. As the Moon goes round the Earth, we see different amounts of that lit half.", "do": "phases-diagram"},
+        {"say": "So the Moon seems to change shape. These shapes are called the **phases** of the Moon: new moon, crescent, half moon, full moon, and back again.", "do": "phases-row"}
+      ],
+      "check": {"q": "Why can we see the Moon in the night sky?", "options": ["It reflects light from the Sun", "It makes its own light", "It glows because it is very hot", "It reflects light from street lights on the Earth"], "answer": 0,
+                "hint": "The Moon is a cold, rocky ball. Where could its light come from?", "explain": "The Moon makes no light of its own. We see it because it **reflects sunlight**. Only the Sun, a star, makes its own light in our Solar System."}
+    },
+    {
+      "title": "Gravity in space",
+      "steps": [
+        {"say": "**Gravity** is a pull between any two objects with mass. The bigger the mass, the stronger the pull. It gets weaker further away.", "do": "gravity-pull"},
+        {"say": "The Sun's gravity keeps the Earth and the other planets in their orbits. The Earth's gravity keeps the Moon in its orbit.", "do": "orbit-gravity"},
+        {"say": "Different worlds have different gravity. It is about 10 N/kg on the Earth, 1.6 N/kg on the Moon and 25 N/kg on Jupiter.", "speak": "Different worlds have different gravity. It is about 10 newtons per kilogram on the Earth, 1 point 6 newtons per kilogram on the Moon and 25 newtons per kilogram on Jupiter.", "do": "g-table"},
+        {"say": "An astronaut's mass is 60 kg. She weighs 60 × 10 = 600 N on the Earth, but only 60 × 1.6 = 96 N on the Moon. Her mass is still 60 kg.", "speak": "An astronaut's mass is 60 kilograms. She weighs 60 times 10, which is 600 newtons, on the Earth, but only 60 times 1 point 6, which is 96 newtons, on the Moon. Her mass is still 60 kilograms.", "do": "astronaut"}
+      ],
+      "check": {"q": "A rock has a mass of 3 kg. What does it weigh on Jupiter, where gravity is about 25 N/kg?", "options": ["75 N", "30 N", "28 N", "75 kg"], "answer": 0,
+                "hint": "Weight = mass × gravitational field strength. And weight is a force, so which unit does it use?", "explain": "3 × 25 = 75, so the rock weighs **75 N** on Jupiter. (30 N would be its weight on the Earth.) Weight is a force, so it is in newtons, not kilograms."}
+    },
+    {
+      "title": "Stars and galaxies",
+      "steps": [
+        {"say": "The Sun is our nearest **star**. The stars you see at night are suns too, but they are much, much further away.", "do": "stars"},
+        {"say": "Light is the fastest thing there is. Even so, light from the Sun takes about 8 minutes to reach us.", "do": "sun-8min"},
+        {"say": "Space is so big that we use **light years**. A light year is a **distance**: how far light travels in one year.", "do": "light-year"},
+        {"say": "One light year is about 9.5 million million km. The next nearest star after the Sun is over 4 light years away.", "speak": "One light year is about nine and a half million million kilometres. The next nearest star after the Sun is over 4 light years away.", "do": "far"},
+        {"say": "Stars are grouped in huge **galaxies**. We live in the **Milky Way**, with hundreds of billions of stars. And there are billions of galaxies!", "do": "galaxy"}
+      ],
+      "check": {"q": "What is a light year?", "options": ["The distance light travels in one year", "The time light takes to go round the Sun", "How long a year lasts on another planet", "How bright a star is"], "answer": 0,
+                "hint": "It has \"year\" in its name, but it isn't a time. We use it to say how far away stars are.", "explain": "A light year is a **distance**: how far light travels in one year, about 9.5 million million km. We use it for the huge distances to stars and galaxies."}
+    }
+  ]
+}

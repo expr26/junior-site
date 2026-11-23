@@ -20,7 +20,8 @@
   var D = JSON.parse(dataEl.textContent);
   var NS = 'http://www.w3.org/2000/svg';
   var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var synth = window.speechSynthesis || null;
+  var AUD = D.audio || '', player = AUD ? new Audio() : null;   // recorded narration (tools/narrate.py)
+  if (player) player.preload = 'auto';
 
   var svg = box.querySelector('.tv-stage'), cap = box.querySelector('.tv-cap'), chk = box.querySelector('.tv-check');
   var cover = box.querySelector('.tv-cover'), seg = box.querySelector('.tv-seg');
@@ -30,8 +31,8 @@
 
   var SC = null, ch = 0, st = -1, playing = false, waiting = false, tick = null, minEnd = 0, spoke = false;
   var results = [], firstTry = 0, earned = 0, combo = 0;
-  var voiceOn = !!synth;
-  try { if (localStorage.getItem('js-tv-voice') === '0') voiceOn = false; } catch (e) {}
+  var voiceOn = !!player;
+  try { if (localStorage.getItem('js-tv-sound') === '0') voiceOn = false; } catch (e) {}
 
   /* ---------- drawing helpers ---------- */
   var C = { ink: '#1E1B3A', muted: '#55526E', fun: '#6C4DF6', deep: '#2D1B69', sci: '#0F9488', pink: '#FF5D8F', sun: '#FFC93C',
@@ -70,6 +71,7 @@
       inner.innerHTML = markup; inner.style.transformBox = 'fill-box'; inner.style.transformOrigin = 'center';
       outer.appendChild(inner); outer._inner = inner;
       place(outer, o.x || 0, o.y || 0);
+      if (!o.flat) outer.style.filter = 'drop-shadow(0 3px 2.5px rgba(30,27,58,.16))';   // soft shadow: drawings sit on the page
       svg.appendChild(outer);
       var enter = o.enter || 'fade';
       if (enter !== 'none') anim(inner, ENTER[enter], o.ms || 500, { delay: o.delay });
@@ -88,20 +90,26 @@
       o = o || {};
       var col = o.colour || C.red, w = o.width || 10, head = Math.max(16, w * 2);
       var rot = { r: 0, d: 90, l: 180, u: 270 }[dir];
-      var shaft = el('rect', { x: 0, y: -w / 2, width: Math.max(0, len - head + 2), height: w, rx: w / 2, fill: col });
-      var tip = el('path', { d: 'M' + (len - head) + ' ' + (-head * 0.75) + ' L' + len + ' 0 L' + (len - head) + ' ' + (head * 0.75) + ' Z', fill: col });
+      var shaft = el('rect', { x: 0, y: -w / 2, width: Math.max(0, len - head + 4), height: w, rx: w / 2, fill: col });
+      var shine = el('rect', { x: w / 2, y: -w / 2 + 2, width: Math.max(0, len - head - w), height: Math.max(1.5, w / 4), rx: w / 8, fill: '#fff', opacity: .35 });
+      var tip = el('path', { d: 'M' + (len - head) + ' ' + (-head * 0.72) + ' L' + len + ' 0 L' + (len - head) + ' ' + (head * 0.72) + ' Z', fill: col,
+        stroke: col, 'stroke-width': 3, 'stroke-linejoin': 'round' });
+      if (len < head + 2) { shaft.setAttribute('width', 0); shine.setAttribute('width', 0); }
       var g = s.add('', { x: x, y: y, enter: 'none', name: o.name });
       var body = el('g', { transform: 'rotate(' + rot + ')' });
-      body.appendChild(shaft); body.appendChild(tip); g._inner.appendChild(body);
+      body.appendChild(shaft); body.appendChild(shine); body.appendChild(tip); g._inner.appendChild(body);
       body.style.transformBox = 'view-box'; body.style.transformOrigin = '0 0';
       anim(body, [{ transform: 'rotate(' + rot + 'deg) scaleX(0)' }, { transform: 'rotate(' + rot + 'deg) scaleX(1)' }], 600, { delay: o.delay, easing: 'cubic-bezier(.3,1.4,.6,1)' });
       if (o.label) {
         var rad = rot * Math.PI / 180, mx = Math.cos(rad) * len / 2, my = Math.sin(rad) * len / 2;
-        var off = o.labelSide === 'below' ? 26 : -26, dx = 0, anchor = 'middle';
-        if (dir === 'u' || dir === 'd') { off = 0; dx = o.labelSide === 'left' ? -14 : 14; anchor = o.labelSide === 'left' ? 'end' : 'start'; }
-        var lbl = el('text', { x: mx + dx, y: my + off, 'font-family': 'Fredoka, Trebuchet MS, sans-serif', 'font-size': o.size || 22, 'font-weight': 700,
-          fill: col, 'text-anchor': anchor, 'dominant-baseline': 'middle', stroke: '#FFFDF7', 'stroke-width': 5, 'paint-order': 'stroke' });
-        lbl.textContent = o.label; g._inner.appendChild(lbl);
+        var fs = o.size || 22, tw = o.label.length * fs * 0.56 + fs * 0.9, th = fs * 1.45;   // a pill label, sized from the text
+        var off = o.labelSide === 'below' ? th / 2 + w / 2 + 4 : -(th / 2 + w / 2 + 4), cx = mx;
+        if (dir === 'u' || dir === 'd') { off = 0; cx = mx + (o.labelSide === 'left' ? -(tw / 2 + w / 2 + 8) : tw / 2 + w / 2 + 8); }
+        var lbl = el('g', {});
+        lbl.appendChild(el('rect', { x: cx - tw / 2, y: my + off - th / 2, width: tw, height: th, rx: th / 2, fill: '#FFFFFF', stroke: col, 'stroke-width': 2.5 }));
+        var tx = el('text', { x: cx, y: my + off + 1, 'font-family': 'Fredoka, Trebuchet MS, sans-serif', 'font-size': fs, 'font-weight': 700,
+          fill: col, 'text-anchor': 'middle', 'dominant-baseline': 'middle' });
+        tx.textContent = o.label; lbl.appendChild(tx); g._inner.appendChild(lbl);
         anim(lbl, [{ opacity: 0 }, { opacity: 1 }], 300, { delay: (o.delay || 0) + 450 });
       }
       return g;
@@ -128,33 +136,27 @@
       var m = g.querySelector('svg'); if (m) { m.setAttribute('width', 120); m.setAttribute('height', 120); }
       return g;
     };
-    s.ground = function (y, o) { return s.add('<rect x="0" y="' + y + '" width="640" height="' + (360 - y) + '" fill="#E9DFCB"/><rect x="0" y="' + y + '" width="640" height="5" fill="#C9B48E"/>', Object.assign({ enter: 'fade' }, o || {})); };
+    s.ground = function (y, o) {   // grass on soil, with a soft top edge
+      return s.add('<defs><linearGradient id="tvSoil" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3E6CC"/><stop offset="1" stop-color="#E2CFA8"/></linearGradient></defs>' +
+        '<rect x="0" y="' + y + '" width="640" height="' + (360 - y) + '" fill="url(#tvSoil)"/>' +
+        '<rect x="0" y="' + (y - 2) + '" width="640" height="9" rx="4" fill="#7ACB7E"/><rect x="0" y="' + (y - 2) + '" width="640" height="3" rx="1.5" fill="#A6E3A1"/>' +
+        '<path d="M40 ' + (y + 22) + ' h18 M210 ' + (y + 34) + ' h12 M420 ' + (y + 26) + ' h20 M560 ' + (y + 40) + ' h14" stroke="#D6BF92" stroke-width="3" stroke-linecap="round"/>',
+        Object.assign({ enter: 'fade', flat: true }, o || {}));
+    };
     return s;
   }
   var S = makeStage(false); S.ref = {};
 
   /* ---------- playing ---------- */
   function words(html) { return html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim(); }
-  function spoken(step) {
-    if (step.speak) return step.speak;
-    return words(step.say).replace(/(\d)\s*N\/kg/g, '$1 newtons per kilogram').replace(/(\d)\s*N\b/g, '$1 newtons')
-      .replace(/(\d)\s*kg\b/g, '$1 kilograms').replace(/(\d)\s*cm\b/g, '$1 centimetres').replace(/(\d)\s*m\/s\b/g, '$1 metres per second')
-      .replace(/×/g, ' times ').replace(/−/g, ' minus ').replace(/ = /g, ' equals ').replace(/\*\*/g, '');
+  function say(name) {   // play the recorded line for a step ("<chapter>-<step>", or a full URL)
+    if (!player || !voiceOn) return;
+    player.src = name.indexOf('/') >= 0 ? name : AUD + name + '.mp3';
+    var p = player.play(); if (p && p.catch) p.catch(function () {});
+    spoke = true;
   }
-  function voice() {
-    if (!synth) return null;
-    var vs = synth.getVoices();
-    return vs.filter(function (v) { return v.lang === 'en-GB'; })[0] || vs.filter(function (v) { return /^en/.test(v.lang); })[0] || null;
-  }
-  function say(text) {
-    if (!synth || !voiceOn) return;
-    synth.cancel();
-    var u = new SpeechSynthesisUtterance(text), v = voice();
-    if (v) u.voice = v;
-    u.lang = v ? v.lang : 'en-GB'; u.rate = 0.95; u.pitch = 1.05;
-    synth.speak(u); spoke = true;
-  }
-  function hush() { if (synth) synth.cancel(); }
+  function talking() { return player && voiceOn && spoke && !player.paused && !player.ended; }
+  function hush() { if (player) player.pause(); }
 
   function stopTick() { if (tick) { clearInterval(tick); tick = null; } }
   function wait() {
@@ -162,7 +164,7 @@
     if (!playing) return;
     tick = setInterval(function () {
       if (Date.now() < minEnd) return;
-      if (synth && voiceOn && spoke && (synth.speaking || synth.pending)) return;
+      if (talking() || (player && voiceOn && spoke && player.readyState < 2 && !player.error && Date.now() < minEnd + 4000)) return;
       stopTick(); forward();
     }, 250);
   }
@@ -179,18 +181,30 @@
     for (var k = 0; k <= upTo; k++) drawStep(k, k < upTo);
   }
 
+  var tCard = box.querySelector('.tv-title'), drawTimer = null;
+  function title() {   // a short title card at the start of each part, while the voice says "Part N. <title>"
+    if (!tCard || still) return;
+    tCard.querySelector('.tv-title-k').textContent = 'Part ' + (ch + 1) + ' of ' + D.chapters.length;
+    tCard.querySelector('.tv-title-t').textContent = chapter().title;
+    tCard.classList.remove('on'); void tCard.offsetWidth; tCard.classList.add('on');
+  }
   function settle() {   // finish whatever is still moving (e.g. after a pause) before the next step draws
+    if (drawTimer) { clearTimeout(drawTimer); drawTimer = null; drawStep(0, true); }
+    if (tCard) tCard.classList.remove('on');
     if (svg.getAnimations) svg.getAnimations({ subtree: true }).forEach(function (a) { try { a.finish(); } catch (e) { a.cancel(); } });
   }
   function show(k, animate) {
     settle();
     chk.hidden = true; chk.innerHTML = ''; box.classList.remove('checking');
     st = k;
-    if (animate) { if (k === 0) { S.clear(); S.ref = {}; } drawStep(k, false); } else rebuild(k);
+    if (animate && k === 0 && tCard && !still) {   // title card first, then the first picture
+      title(); S.clear(); S.ref = {};
+      drawTimer = setTimeout(function () { drawTimer = null; drawStep(0, false); }, 1700);
+    } else if (animate) { if (k === 0) { S.clear(); S.ref = {}; } drawStep(k, false); } else rebuild(k);
     var step = chapter().steps[k];
     cap.innerHTML = step.say;
-    minEnd = Date.now() + Math.max(3200, words(step.say).split(' ').length * 330 + 1200);
-    spoke = false; say(spoken(step));
+    minEnd = Date.now() + Math.max(3200, words(step.say).split(' ').length * 330 + 1200) + (drawTimer ? 1700 : 0);
+    spoke = false; say((ch + 1) + '-' + (k + 1));
     marks(); wait();
   }
 
@@ -216,7 +230,7 @@
     bPlay.textContent = on ? '⏸' : '▶'; bPlay.setAttribute('aria-label', on ? 'Pause' : 'Play');
     box.classList.toggle('paused', !on);
     svg.getAnimations && svg.getAnimations({ subtree: true }).forEach(function (a) { on ? a.play() : a.pause(); });
-    if (on) { if (!waiting && st >= 0) { minEnd = Date.now() + 1500; spoke = false; say(spoken(chapter().steps[st])); wait(); } }
+    if (on) { if (!waiting && st >= 0) { if (player && voiceOn && spoke && !player.ended) { var p = player.play(); if (p && p.catch) p.catch(function () {}); } else minEnd = Math.max(minEnd, Date.now() + 1500); wait(); } }
     else { hush(); stopTick(); }
   }
 
@@ -290,7 +304,7 @@
     S.clear(); S.ref = {};
     S.owl(320, 300, 190, { enter: 'pop' });
     cap.innerHTML = '<b>You watched the whole video!</b>';
-    say('You watched the whole video! Well done.');
+    if (AUD) say(AUD.replace(/[^/]+\/[^/]+\/$/, '') + 'end.mp3');
     var msg = r.stars === 3 ? 'Amazing work!' : r.stars === 2 ? 'Great job!' : 'Well done for finishing!';
     var qb = document.querySelector('.actions .btn:not(.ghost)');
     chk.hidden = false;
@@ -316,16 +330,16 @@
 
   /* ---------- controls ---------- */
   function setVoice(on) {
-    voiceOn = on && !!synth;
+    voiceOn = on && !!player;
     bVoice.textContent = voiceOn ? '🔊' : '🔇'; bVoice.setAttribute('aria-pressed', voiceOn ? 'true' : 'false');
-    bVoice.setAttribute('aria-label', voiceOn ? 'Read aloud is on' : 'Read aloud is off');
-    try { localStorage.setItem('js-tv-voice', voiceOn ? '1' : '0'); } catch (e) {}
-    if (!voiceOn) hush(); else if (playing && !waiting && st >= 0) { spoke = false; say(spoken(chapter().steps[st])); }
+    bVoice.setAttribute('aria-label', voiceOn ? 'Sound is on' : 'Sound is off');
+    try { localStorage.setItem('js-tv-sound', voiceOn ? '1' : '0'); } catch (e) {}
+    if (!voiceOn) hush(); else if (playing && !waiting && st >= 0) { spoke = false; say((ch + 1) + '-' + (st + 1)); }
   }
 
   function init() {
     if (!SC) return;
-    if (!synth) bVoice.hidden = true;
+    if (!player) bVoice.hidden = true;
     setVoice(voiceOn);
     box.querySelector('.tv-start').addEventListener('click', function () { restart(0); });
     bPlay.addEventListener('click', function () { if (st < 0) return restart(0); setPlaying(!playing); });
@@ -342,7 +356,6 @@
     });
     document.addEventListener('visibilitychange', function () { if (document.hidden && playing && !waiting) setPlaying(false); });
     box.classList.add('ready');
-    if (synth && synth.onvoiceschanged !== undefined) synth.onvoiceschanged = function () {};
   }
 
   window.Theory = { scenes: function (map) { SC = map; init(); } };

@@ -1,8 +1,18 @@
 /* Theory videos (/videos/): player, cards and the lesson text. Player logic: static/js/theory.js */
 .tv{display:flex;flex-direction:column;gap:12px}
-.tv-screen{position:relative;aspect-ratio:16/9;border-radius:22px;overflow:hidden;border:3px solid var(--line);box-shadow:0 8px 0 var(--line);
-  background:radial-gradient(circle at 12% 18%,#FFE9A8 0 8%,transparent 9%),radial-gradient(circle at 88% 82%,#D6F5F0 0 12%,transparent 13%),
-  radial-gradient(circle at 92% 12%,#FFD6E3 0 6%,transparent 7%),linear-gradient(160deg,#FFFDF7,#F4EFFF)}
+.tv-screen{position:relative;aspect-ratio:16/9;border-radius:24px;overflow:hidden;isolation:isolate;
+  background:radial-gradient(rgba(108,77,246,.11) 1.3px,transparent 1.5px) 0 0/22px 22px,
+  radial-gradient(90% 70% at 18% 8%,#FFF6DC 0,rgba(255,246,220,0) 60%),radial-gradient(80% 70% at 92% 100%,#DDF6F1 0,rgba(221,246,241,0) 60%),
+  linear-gradient(170deg,#FFFFFF 0%,#F6F2FF 100%);
+  box-shadow:0 0 0 1px rgba(45,27,105,.08),0 2px 0 rgba(45,27,105,.06),0 22px 44px -18px rgba(45,27,105,.35)}
+.tv-screen::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;box-shadow:inset 0 0 60px rgba(45,27,105,.06)}
+.tv-title{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;pointer-events:none;opacity:0;
+  background:radial-gradient(70% 60% at 50% 50%,rgba(108,77,246,.96),rgba(45,27,105,.97));color:#fff;text-align:center;padding:0 8%}
+.tv-title-k{font:700 clamp(12px,2.2vw,17px)/1 var(--serif);letter-spacing:.14em;text-transform:uppercase;color:#FFC93C}
+.tv-title-t{font:700 clamp(22px,5vw,44px)/1.1 var(--serif)}
+.tv-title.on{animation:tvTitle 2.6s ease both}
+.tv.paused .tv-title.on{animation-play-state:paused}
+@keyframes tvTitle{0%{opacity:0;transform:scale(1.04)}12%{opacity:1;transform:scale(1)}72%{opacity:1}100%{opacity:0;visibility:hidden}}
 .tv-stage{position:absolute;inset:0;width:100%;height:100%;display:block}
 .tv-cover{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;
   background:linear-gradient(160deg,rgba(255,249,240,.9),rgba(238,233,255,.95));padding:12px}

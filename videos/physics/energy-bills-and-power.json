@@ -1,0 +1,62 @@
+{
+  "title": "Power and energy bills",
+  "description": "Animated KS3 Physics lesson on power and energy bills for ages 9 to 14: watts and kilowatts, energy = power × time, kilowatt-hours, working out the cost of electricity, meter readings and saving energy.",
+  "intro": "Watts, kilowatt-hours, electricity meters and what energy costs, explained by the owl in five short parts.",
+  "chapters": [
+    {
+      "title": "What is power?",
+      "steps": [
+        {"say": "Every electrical device has a **power**. Power tells you how **fast** a device transfers energy.", "do": "power-intro"},
+        {"say": "Power is measured in **watts**, written **W**. 1 W means 1 J of energy is transferred every second.", "speak": "Power is measured in watts, written W. 1 watt means 1 joule of energy is transferred every second.", "do": "watt"},
+        {"say": "A 10 W LED bulb transfers 10 J every second. A 60 W bulb transfers 60 J every second, so it uses energy six times as fast.", "speak": "A 10 watt LED bulb transfers 10 joules every second. A 60 watt bulb transfers 60 joules every second, so it uses energy six times as fast.", "do": "two-bulbs"},
+        {"say": "Big powers are written in **kilowatts**, **kW**. Kilo means a thousand, so 1 kW = 1000 W. A 2000 W kettle is a 2 kW kettle.", "speak": "Big powers are written in kilowatts. Kilo means a thousand, so 1 kilowatt equals 1000 watts. A 2000 watt kettle is a 2 kilowatt kettle.", "do": "kilowatt"}
+      ],
+      "check": {"q": "A heater has a power of 2000 W. How much energy does it transfer every second?", "options": ["2000 J", "2 J", "20 J", "1 J"], "answer": 0,
+                "hint": "1 W means 1 J every second. So how many joules does 2000 W mean?", "explain": "Power in watts tells you the joules every second. 2000 W means **2000 J** every second. (2000 W is the same as 2 kW, but that is still 2000 J each second, not 2 J.)"}
+    },
+    {
+      "title": "Energy = power × time",
+      "steps": [
+        {"say": "To work out the energy transferred: **energy = power × time**. Power in watts × time in seconds gives energy in joules.", "speak": "To work out the energy transferred: energy equals power times time. Power in watts, times time in seconds, gives energy in joules.", "do": "ept-formula"},
+        {"say": "A 40 W lamp is on for 10 s. Energy = 40 × 10 = 400 J.", "speak": "A 40 watt lamp is on for 10 seconds. Energy equals 40 times 10, which is 400 joules.", "do": "ept-lamp"},
+        {"say": "The time must be in **seconds**. A 10 W lamp is on for 2 minutes. 2 minutes = 120 s, so energy = 10 × 120 = 1200 J.", "speak": "The time must be in seconds. A 10 watt lamp is on for 2 minutes. 2 minutes is 120 seconds, so energy equals 10 times 120, which is 1200 joules.", "do": "ept-minutes"},
+        {"say": "You can go the other way too: **power = energy ÷ time**. A hairdryer transfers 12,000 J in 10 s. Power = 12,000 ÷ 10 = 1200 W.", "speak": "You can go the other way too: power equals energy divided by time. A hairdryer transfers 12,000 joules in 10 seconds. Power equals 12,000 divided by 10, which is 1200 watts.", "do": "ept-back"}
+      ],
+      "check": {"q": "A 20 W fan runs for 30 s. How much energy does it transfer?", "options": ["600 J", "50 J", "1.5 J", "600 W"], "answer": 0,
+                "hint": "Energy = power × time. Multiply, don't add. And energy is measured in joules.", "explain": "Energy = 20 W × 30 s = **600 J**. Adding gives 50, which is wrong, and watts are for power, not energy."}
+    },
+    {
+      "title": "Kilowatt-hours",
+      "steps": [
+        {"say": "A home uses millions of joules every day. So energy companies use a much bigger unit of energy: the **kilowatt-hour**, **kWh**.", "speak": "A home uses millions of joules every day. So energy companies use a much bigger unit of energy: the kilowatt-hour.", "do": "kwh-intro"},
+        {"say": "1 kWh is the energy a 1 kW device transfers in 1 hour. That is 3,600,000 J!", "speak": "1 kilowatt-hour is the energy a 1 kilowatt device transfers in 1 hour. That is 3.6 million joules!", "do": "kwh-one"},
+        {"say": "**Energy in kWh = power in kW × time in hours**. A 2 kW heater on for 4 hours uses 2 × 4 = 8 kWh.", "speak": "Energy in kilowatt-hours equals power in kilowatts times time in hours. A 2 kilowatt heater on for 4 hours uses 2 times 4, which is 8 kilowatt-hours.", "do": "kwh-heater"},
+        {"say": "Change watts to kilowatts first. A 200 W TV is 0.2 kW. On for 5 hours, it uses 0.2 × 5 = 1 kWh.", "speak": "Change watts to kilowatts first. A 200 watt TV is 0.2 kilowatts. On for 5 hours, it uses 0.2 times 5, which is 1 kilowatt-hour.", "do": "kwh-tv"}
+      ],
+      "check": {"q": "A 3 kW oven is on for 2 hours. How much energy does it use?", "options": ["6 kWh", "5 kWh", "1.5 kWh", "6000 kWh"], "answer": 0,
+                "hint": "kWh = kW × hours. The power is already in kW, so just multiply.", "explain": "3 kW × 2 h = **6 kWh**. Don't add (5) or divide (1.5). The power is already in kW, so there is no need to multiply by 1000."}
+    },
+    {
+      "title": "Paying for energy",
+      "steps": [
+        {"say": "You pay for every kWh you use. In our examples, electricity costs **25p for each kWh**.", "speak": "You pay for every kilowatt-hour you use. In our examples, electricity costs 25 pence for each kilowatt-hour.", "do": "price"},
+        {"say": "**Cost = energy in kWh × price per kWh**. The heater used 8 kWh. 8 × 25p = 200p, which is £2.", "speak": "Cost equals energy in kilowatt-hours times the price per kilowatt-hour. The heater used 8 kilowatt-hours. 8 times 25 pence is 200 pence, which is 2 pounds.", "do": "cost-heater"},
+        {"say": "An **electricity meter** counts the kWh a home uses. On Monday it reads 05120. On Friday it reads 05150. 5150 − 5120 = 30 kWh used.", "speak": "An electricity meter counts the kilowatt-hours a home uses. On Monday it reads 5120. On Friday it reads 5150. 5150 minus 5120 is 30 kilowatt-hours used.", "do": "meter"},
+        {"say": "So the cost from Monday to Friday is 30 × 25p = 750p, which is £7.50.", "speak": "So the cost from Monday to Friday is 30 times 25 pence, which is 750 pence, or 7 pounds 50.", "do": "meter-cost"}
+      ],
+      "check": {"q": "A meter reads 02400 kWh one week and 02420 kWh the next. Electricity costs 25p per kWh. What did that week's energy cost?", "options": ["£5", "£20", "£500", "50p"], "answer": 0,
+                "hint": "First take the readings away to find the kWh used. Then multiply by 25p. Remember 100p = £1.", "explain": "2420 − 2400 = 20 kWh. 20 × 25p = 500p, which is **£5**."}
+    },
+    {
+      "title": "Comparing and saving",
+      "steps": [
+        {"say": "How much energy a device uses depends on two things: its **power** and **how long** it is on.", "do": "compare-intro"},
+        {"say": "A 2 kW hairdryer on for 15 minutes uses 2 × 0.25 = 0.5 kWh. A 100 W TV on for 5 hours uses 0.1 × 5 = 0.5 kWh. Exactly the same!", "speak": "A 2 kilowatt hairdryer on for 15 minutes, which is a quarter of an hour, uses 2 times 0.25, which is 0.5 kilowatt-hours. A 100 watt TV on for 5 hours uses 0.1 times 5, which is 0.5 kilowatt-hours. Exactly the same!", "do": "compare"},
+        {"say": "Ways to save energy: switch off lights and screens, use LED bulbs, have shorter showers, and turn the heating down a little.", "do": "save"},
+        {"say": "Saving energy saves money. It can also mean less fuel is burned in power stations, which is better for the planet.", "do": "save-planet"}
+      ],
+      "check": {"q": "Which uses more energy: a 1 kW heater on for 3 hours, or a 2 kW heater on for 1 hour?", "options": ["The 1 kW heater on for 3 hours", "The 2 kW heater on for 1 hour", "They use the same", "You can't tell without the price"], "answer": 0,
+                "hint": "Work out kWh = kW × hours for each heater, then compare.", "explain": "1 kW × 3 h = **3 kWh**. 2 kW × 1 h = 2 kWh. The smaller heater uses more, because it is on for much longer."}
+    }
+  ]
+}

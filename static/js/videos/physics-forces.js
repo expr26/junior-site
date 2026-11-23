@@ -3,28 +3,40 @@
 (function () {
   if (!window.Theory) return;
 
-  var BOX = '<rect width="100" height="80" rx="6" fill="#E0A96D" stroke="#8A5A2B" stroke-width="3"/>' +
-            '<path d="M0 24 H100 M50 0 V24" stroke="#8A5A2B" stroke-width="3" fill="none"/>';
+  /* Drawings with soft gradients and highlights (ids are shared, so each gradient is defined once per drawing that uses it). */
+  var BOX = '<defs><linearGradient id="fBox" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2C08A"/><stop offset="1" stop-color="#D99A5B"/></linearGradient></defs>' +
+            '<rect width="100" height="80" rx="8" fill="url(#fBox)" stroke="#9A6532" stroke-width="2.5"/>' +
+            '<path d="M4 24 H96" stroke="#B57A40" stroke-width="2.5"/><rect x="40" y="0" width="20" height="24" fill="#F7E3B5" opacity=".9"/>' +
+            '<path d="M14 40 l10 10 M24 40 l-10 10" stroke="#B57A40" stroke-width="2.5" stroke-linecap="round" opacity=".7"/>' +
+            '<rect x="3" y="3" width="94" height="6" rx="3" fill="#fff" opacity=".25"/>';
   function car(col) {
-    return '<path d="M8 40 Q10 20 34 18 L52 2 Q60 -2 84 2 L104 18 Q126 20 128 40 V52 H8 Z" fill="' + col + '" stroke="#1E1B3A" stroke-width="3"/>' +
-      '<path d="M44 18 L56 7 H76 V18 Z M82 18 V7 H90 L100 18 Z" fill="#CFE8FF"/>' +
-      '<circle cx="36" cy="54" r="13" fill="#1E1B3A"/><circle cx="36" cy="54" r="5" fill="#C9CED8"/>' +
-      '<circle cx="104" cy="54" r="13" fill="#1E1B3A"/><circle cx="104" cy="54" r="5" fill="#C9CED8"/>';
+    var id = 'fCar' + col.replace('#', '');
+    return '<defs><linearGradient id="' + id + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".45"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".18"/></linearGradient></defs>' +
+      '<path d="M6 42 Q8 22 32 19 L50 4 Q58 -1 86 2 L106 19 Q128 22 130 42 V50 Q130 54 126 54 H10 Q6 54 6 50 Z" fill="' + col + '"/>' +
+      '<path d="M6 42 Q8 22 32 19 L50 4 Q58 -1 86 2 L106 19 Q128 22 130 42 V50 Q130 54 126 54 H10 Q6 54 6 50 Z" fill="url(#' + id + ')" stroke="rgba(30,27,58,.55)" stroke-width="2"/>' +
+      '<path d="M44 19 L56 8 H76 V19 Z M82 19 V8 H90 L101 19 Z" fill="#D8EEFF" stroke="rgba(30,27,58,.35)" stroke-width="1.5"/>' +
+      '<rect x="118" y="30" width="10" height="6" rx="3" fill="#FFE08A"/><rect x="8" y="30" width="8" height="6" rx="3" fill="#FF8A8A"/>' +
+      '<g><circle cx="36" cy="54" r="13" fill="#2A2740"/><circle cx="36" cy="54" r="6" fill="#D5D9E3"/></g>' +
+      '<g><circle cx="104" cy="54" r="13" fill="#2A2740"/><circle cx="104" cy="54" r="6" fill="#D5D9E3"/></g>';
   }
-  var BAG = '<path d="M30 18 Q50 -6 70 18" fill="none" stroke="#2D1B69" stroke-width="7" stroke-linecap="round"/>' +
-            '<rect x="8" y="16" width="84" height="92" rx="18" fill="#6C4DF6" stroke="#2D1B69" stroke-width="3"/>' +
-            '<rect x="22" y="56" width="56" height="34" rx="8" fill="#4A33C9"/>' +
-            '<rect x="30" y="28" width="40" height="18" rx="5" fill="#FFF4D6"/><text x="50" y="38" font-family="Fredoka, sans-serif" font-size="15" font-weight="700" text-anchor="middle" dominant-baseline="middle" fill="#1E1B3A">2 kg</text>';
+  var BAG = '<defs><linearGradient id="fBag" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8B70FF"/><stop offset="1" stop-color="#5B3FE0"/></linearGradient></defs>' +
+            '<path d="M30 18 Q50 -6 70 18" fill="none" stroke="#3B2A8F" stroke-width="7" stroke-linecap="round"/>' +
+            '<rect x="8" y="16" width="84" height="92" rx="20" fill="url(#fBag)"/>' +
+            '<rect x="20" y="58" width="60" height="38" rx="10" fill="#4A33C9"/><path d="M20 70 H80" stroke="#6C4DF6" stroke-width="2"/>' +
+            '<rect x="14" y="22" width="8" height="70" rx="4" fill="#fff" opacity=".18"/>' +
+            '<rect x="30" y="28" width="40" height="20" rx="6" fill="#FFF4D6"/><text x="50" y="39" font-family="Fredoka, sans-serif" font-size="15" font-weight="700" text-anchor="middle" dominant-baseline="middle" fill="#2D1B69">2 kg</text>';
   function spring(len) {   // a hanging spring, top at 0, 100 units long before scaling
     var d = 'M0 0 V10', n = 9;
     for (var i = 0; i < n; i++) d += ' L' + (i % 2 ? -14 : 14) + ' ' + (10 + (i + .5) * 80 / n);
     d += ' L0 90 V100';
-    return '<path d="' + d + '" fill="none" stroke="#55526E" stroke-width="4" stroke-linejoin="round"/>';
+    return '<path d="' + d + '" fill="none" stroke="#7A7F96" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>' +
+      '<path d="' + d + '" fill="none" stroke="#E6E9F2" stroke-width="1.5" stroke-linejoin="round" opacity=".8"/>';
   }
   function weight(label, w) {
     w = w || 50;
-    return '<path d="M0 -14 V0" stroke="#55526E" stroke-width="4"/><path d="M' + (-w / 2) + ' 0 H' + (w / 2) + ' L' + (w / 2 - 6) + ' 40 H' + (-w / 2 + 6) + ' Z" fill="#55526E"/>' +
-      '<text x="0" y="22" font-family="Fredoka, sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">' + label + '</text>';
+    return '<defs><linearGradient id="fW" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4A4E63"/><stop offset=".35" stop-color="#8A8FA8"/><stop offset="1" stop-color="#3E4256"/></linearGradient></defs>' +
+      '<path d="M0 -14 V0" stroke="#55526E" stroke-width="4" stroke-linecap="round"/><path d="M' + (-w / 2) + ' 0 H' + (w / 2) + ' L' + (w / 2 - 6) + ' 40 Q' + (w / 2 - 7) + ' 44 ' + (w / 2 - 11) + ' 44 H' + (-w / 2 + 11) + ' Q' + (-w / 2 + 7) + ' 44 ' + (-w / 2 + 6) + ' 40 Z" fill="url(#fW)"/>' +
+      '<text x="0" y="23" font-family="Fredoka, sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">' + label + '</text>';
   }
   function hideAll(s, names) { names.forEach(function (n) { s.hide(s.ref[n]); }); }
 
@@ -121,7 +133,7 @@
       s.clear(); s.ref = {};
       s.text(320, 36, 'Non-contact forces act across a gap', { size: 26, weight: 700, colour: s.C.pink });
       s.ground(300);
-      s.add('<rect x="-14" y="0" width="28" height="140" fill="#8A5A2B"/><circle cx="0" cy="-10" r="70" fill="#22A06B"/><circle cx="-50" cy="20" r="45" fill="#22A06B"/><circle cx="55" cy="25" r="45" fill="#1B8A5A"/>',
+      s.add('<defs><radialGradient id="fLeaf" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#5CD18F"/><stop offset="1" stop-color="#178A55"/></radialGradient></defs><path d="M-14 140 Q-10 60 -4 0 H6 Q10 60 14 140 Z" fill="#8A5A2B"/><path d="M-2 40 Q-20 20 -34 22 M4 30 Q20 10 30 12" stroke="#8A5A2B" stroke-width="7" stroke-linecap="round" fill="none"/><circle cx="-50" cy="20" r="45" fill="url(#fLeaf)"/><circle cx="55" cy="25" r="45" fill="url(#fLeaf)"/><circle cx="0" cy="-10" r="70" fill="url(#fLeaf)"/><circle cx="-24" cy="-34" r="16" fill="#fff" opacity=".12"/>',
         { x: 140, y: 160, enter: 'up' });
       var ap = s.add('<circle r="14" fill="#E5484D"/><path d="M0 -12 q2 -8 8 -10" stroke="#22A06B" stroke-width="4" fill="none"/>', { x: 220, y: 170, enter: 'pop', delay: 300 });
       s.move(ap, 300, 284, 1300, { delay: 900, easing: 'cubic-bezier(.5,0,1,1)' });
@@ -172,7 +184,7 @@
 
     /* ---------- 4. Balanced and unbalanced forces ---------- */
     'book': function (s) {
-      s.add('<rect x="0" y="0" width="300" height="16" rx="4" fill="#C98A4B" stroke="#8A5A2B" stroke-width="3"/><rect x="20" y="16" width="16" height="110" fill="#8A5A2B"/><rect x="264" y="16" width="16" height="110" fill="#8A5A2B"/>',
+      s.add('<defs><linearGradient id="fWood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E0A86A"/><stop offset="1" stop-color="#B8773A"/></linearGradient></defs><rect x="20" y="16" width="16" height="110" rx="3" fill="#9A6532"/><rect x="264" y="16" width="16" height="110" rx="3" fill="#9A6532"/><rect x="0" y="0" width="300" height="18" rx="6" fill="url(#fWood)"/><path d="M14 6 H120 M170 10 H280" stroke="#F4CF9E" stroke-width="2" stroke-linecap="round" opacity=".7"/>',
         { x: 170, y: 220, enter: 'up' });
       s.add('<rect x="0" y="0" width="120" height="34" rx="4" fill="#2F80ED" stroke="#1E1B3A" stroke-width="3"/><rect x="8" y="8" width="104" height="6" fill="#CFE8FF"/>',
         { x: 260, y: 186, enter: 'down', delay: 300 });
@@ -249,14 +261,14 @@
       s.text(160, 30, 'Earth', { size: 28, weight: 700, colour: s.C.blue });
       s.add('<circle r="170" fill="#2F80ED"/><path d="M-120 -120 q40 -14 80 0 M30 -150 q40 -10 70 6" stroke="#22A06B" stroke-width="16" fill="none" stroke-linecap="round"/>', { x: 160, y: 470, enter: 'up' });
       s.add(BAG, { x: 110, y: 70, enter: 'none' });
-      s.arrow(160, 182, 80, 'd', { label: '20 N', colour: s.C.red });
+      s.arrow(160, 182, 80, 'd', { label: '20 N', labelSide: 'left', colour: s.C.red });
       s.text(480, 30, 'Moon', { size: 28, weight: 700, colour: s.C.muted, delay: 500 });
       s.add('<circle r="170" fill="#C9CED8"/><circle cx="-60" cy="-140" r="14" fill="#9AA0B4"/><circle cx="50" cy="-150" r="9" fill="#9AA0B4"/><circle cx="10" cy="-120" r="6" fill="#9AA0B4"/>', { x: 480, y: 470, enter: 'up', delay: 500 });
       s.add(BAG, { x: 430, y: 70, enter: 'pop', delay: 900 });
       s.arrow(480, 182, 13, 'd', { colour: s.C.red, width: 8, delay: 1500 });
       s.text(530, 196, '3.2 N', { size: 22, weight: 700, colour: s.C.red, delay: 1700 });
-      s.add('<rect x="-150" y="-22" width="300" height="44" rx="22" fill="#FFFFFF" stroke="#6C4DF6" stroke-width="3"/>', { x: 320, y: 236, enter: 'pop', delay: 2300 });
-      s.text(320, 238, 'mass 2 kg in both places', { size: 22, weight: 700, colour: s.C.fun, delay: 2300 });
+      s.add('<rect x="-100" y="-21" width="200" height="42" rx="21" fill="#FFFFFF" stroke="#6C4DF6" stroke-width="3"/>', { x: 320, y: 250, enter: 'pop', delay: 2300 });
+      s.text(320, 252, 'same mass: 2 kg', { size: 22, weight: 700, colour: s.C.fun, delay: 2300 });
     },
 
     /* ---------- 6. Stretching springs (1 cm = 15 units) ---------- */

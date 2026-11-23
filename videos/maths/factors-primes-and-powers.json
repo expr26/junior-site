@@ -1,0 +1,59 @@
+{
+  "title": "Factors, primes and powers",
+  "description": "Animated KS3 Maths lesson on factors, multiples and primes for ages 9 to 14: factor pairs, highest common factor (HCF), multiples and lowest common multiple (LCM), prime numbers, prime factor trees, and squares, cubes, square roots and cube roots.",
+  "intro": "Factors, multiples, prime numbers, factor trees, HCF and LCM, and squares, cubes and roots, explained by the owl in five short parts.",
+  "chapters": [
+    {
+      "title": "Factors",
+      "steps": [
+        {"say": "A **factor** of a number divides into it exactly, with nothing left over. Let's arrange 12 counters into rectangles.", "do": "fac-arrays"},
+        {"say": "12 makes 1 row of 12, 2 rows of 6 and 3 rows of 4. So the factors come in **pairs**: 1 and 12, 2 and 6, 3 and 4.", "do": "fac-pairs"},
+        {"say": "That gives 12 exactly **6 factors**: 1, 2, 3, 4, 6 and 12.", "do": "fac-list"},
+        {"say": "The **highest common factor (HCF)** is the biggest factor that two numbers share. The HCF of 24 and 36 is **12**.", "do": "fac-hcf"}
+      ],
+      "check": {"q": "What is the highest common factor (HCF) of 18 and 24?", "options": ["6", "3", "12", "72"], "answer": 0,
+                "hint": "List the factors of 18 and of 24. Which is the biggest number in both lists?", "explain": "Factors of 18: 1, 2, 3, **6**, 9, 18. Factors of 24: 1, 2, 3, 4, **6**, 8, 12, 24. The biggest one in both lists is **6**."}
+    },
+    {
+      "title": "Multiples",
+      "steps": [
+        {"say": "The **multiples** of a number are the answers in its times table. The multiples of 4 are 4, 8, 12, 16, 20, 24 and so on.", "do": "mul-list"},
+        {"say": "The **lowest common multiple (LCM)** is the smallest number in both lists. The multiples of 6 are 6, 12, 18, 24… so the LCM of 4 and 6 is **12**.", "do": "mul-lcm"},
+        {"say": "One bus comes every 12 minutes and another every 18 minutes. They both leave at 9:00. The LCM of 12 and 18 is 36, so they next leave together **36 minutes** later.", "do": "mul-bus"}
+      ],
+      "check": {"q": "What is the lowest common multiple (LCM) of 3 and 5?", "options": ["15", "8", "1", "30"], "answer": 0,
+                "hint": "Write out the 3 times table and the 5 times table. What is the first number in both?", "explain": "Multiples of 3: 3, 6, 9, 12, **15**… Multiples of 5: 5, 10, **15**… The first one in both lists is **15**."}
+    },
+    {
+      "title": "Prime numbers",
+      "steps": [
+        {"say": "A **prime number** has exactly **two factors**: 1 and itself. 7 is prime: the only way to make it is 1 × 7.", "speak": "A prime number has exactly two factors: 1 and itself. 7 is prime: the only way to make it is 1 times 7.", "do": "prime-def"},
+        {"say": "9 is **not** prime: it has three factors, 1, 3 and 9. And **1 is not prime** either, because it has only one factor.", "do": "prime-not"},
+        {"say": "Here are the primes up to 30: 2, 3, 5, 7, 11, 13, 17, 19, 23 and 29. **2 is the only even prime.**", "do": "prime-grid"}
+      ],
+      "check": {"q": "Which of these is a prime number?", "options": ["23", "21", "27", "15"], "answer": 0,
+                "hint": "Try dividing each number by 3 and by 5.", "explain": "21 = 3 × 7, 27 = 3 × 9 and 15 = 3 × 5, so they are not prime. **23** has only the factors 1 and 23, so it is prime."}
+    },
+    {
+      "title": "Prime factor trees",
+      "steps": [
+        {"say": "Every whole number bigger than 1 is either prime or can be made by multiplying primes. A **factor tree** finds them. Start by splitting 60 into 6 × 10.", "speak": "Every whole number bigger than 1 is either prime or can be made by multiplying primes. A factor tree finds them. Start by splitting 60 into 6 times 10.", "do": "tree-start"},
+        {"say": "Keep splitting until every branch ends in a prime: 6 = 2 × 3 and 10 = 2 × 5. Ring the primes.", "speak": "Keep splitting until every branch ends in a prime: 6 equals 2 times 3, and 10 equals 2 times 5. Ring the primes.", "do": "tree-grow"},
+        {"say": "So 60 = 2 × 2 × 3 × 5. With a power, that is 60 = 2² × 3 × 5.", "speak": "So 60 equals 2 times 2 times 3 times 5. With a power, that is 2 squared, times 3, times 5.", "do": "tree-answer"}
+      ],
+      "check": {"q": "Which shows 24 written as a product of prime factors?", "options": ["2³ × 3", "2 × 12", "4 × 6", "2² × 6"], "answer": 0,
+                "hint": "Every number in the answer must be prime. 4, 6 and 12 are not prime.", "explain": "24 = 2 × 2 × 2 × 3, which is **2³ × 3**. Check: 8 × 3 = 24."}
+    },
+    {
+      "title": "Powers and roots",
+      "steps": [
+        {"say": "A **square number** is a number times itself. 4² means 4 × 4 = **16**: a square that is 4 by 4.", "speak": "A square number is a number times itself. 4 squared means 4 times 4, which equals 16: a square that is 4 by 4.", "do": "sq"},
+        {"say": "A **cube number** multiplies three times: 4³ = 4 × 4 × 4 = **64**.", "speak": "A cube number multiplies three times: 4 cubed equals 4 times 4 times 4, which equals 64.", "do": "cube"},
+        {"say": "Roots go backwards. √81 = 9, because 9 × 9 = 81. And ∛125 = 5, because 5 × 5 × 5 = 125.", "speak": "Roots go backwards. The square root of 81 is 9, because 9 times 9 equals 81. And the cube root of 125 is 5, because 5 times 5 times 5 equals 125.", "do": "roots"},
+        {"say": "The square numbers to learn: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121 and 144.", "do": "sq-list"}
+      ],
+      "check": {"q": "Work out 3³", "options": ["27", "9", "6", "33"], "answer": 0,
+                "hint": "3³ means 3 × 3 × 3. It is not 3 × 3.", "explain": "3 × 3 = 9, and 9 × 3 = **27**. So 3³ = 27."}
+    }
+  ]
+}

@@ -4,7 +4,7 @@
 (function () {
   if (!window.Arcade) return;
   var h = Arcade.h;
-  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var still = (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) || document.documentElement.getAttribute('data-rs-calm') === 'on';
 
   var OBJ = [
     { id: 'clip', name: 'Steel paper clip', icon: '📎', mag: true }, { id: 'bolt', name: 'Iron bolt', icon: '🔩', mag: true },

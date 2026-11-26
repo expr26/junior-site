@@ -13,7 +13,7 @@
 (function () {
   if (!window.Arcade) return;
   var h = Arcade.h;
-  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var still = (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) || document.documentElement.getAttribute('data-rs-calm') === 'on';
 
   var COL = { r: ['#E5484D', 'red', 'R'], b: ['#3B82F6', 'blue', 'B'], y: ['#FFC93C', 'yellow', 'Y'], g: ['#34C77B', 'green', 'G'], w: ['#FFFFFF', 'white', ''] };
   var WORDS = ['Impossible', 'Unlikely', 'Even chance', 'Likely', 'Certain'];

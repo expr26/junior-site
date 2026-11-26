@@ -19,7 +19,7 @@
   if (!box || !dataEl) return;
   var D = JSON.parse(dataEl.textContent);
   var NS = 'http://www.w3.org/2000/svg';
-  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var still = (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) || document.documentElement.getAttribute('data-rs-calm') === 'on';
   var AUD = D.audio || '', player = AUD ? new Audio() : null;   // recorded narration (tools/narrate.py)
   if (player) player.preload = 'auto';
 

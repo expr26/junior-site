@@ -7,7 +7,7 @@
 (function () {
   if (!window.Arcade) return;
   var h = Arcade.h;
-  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var still = (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) || document.documentElement.getAttribute('data-rs-calm') === 'on';
 
   var ROUNDS = [
     { lo: 40, hi: 50, v: 47, ans: 1, text: 'Round <b>47</b> to the <b>nearest 10</b>. Send the car to the nearest station!',

@@ -177,9 +177,9 @@
     setTimeout(function () { t.classList.add('out'); setTimeout(function () { t.remove(); }, 400); }, 3200);
   }
 
-  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var still = (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) || document.documentElement.getAttribute('data-rs-calm') === 'on';
   function confetti(n) {
-    if (still) return;
+    if (still || document.documentElement.getAttribute('data-rs-calm') === 'on') return;
     var cv = document.createElement('canvas'), ctx = cv.getContext('2d'), W = cv.width = innerWidth, H = cv.height = innerHeight;
     cv.className = 'confetti'; document.body.appendChild(cv);
     var colours = ['#E2C67E', '#8A6416', '#1D5FA8', '#1F6B45', '#C2410C', '#8DB8F0'], ps = [];

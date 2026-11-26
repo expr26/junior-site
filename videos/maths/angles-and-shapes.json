@@ -1,0 +1,65 @@
+{
+  "title": "Angles and shapes",
+  "description": "Animated KS3 Maths lesson on angles and shapes for ages 9 to 14: acute, obtuse and reflex angles, angles on a line, round a point and in a triangle, vertically opposite, alternate, corresponding and co-interior angles, polygons and the properties of 2D and 3D shapes.",
+  "intro": "Types of angle, the angle rules, parallel lines, polygons and the properties of shapes, explained by the owl in five short parts.",
+  "chapters": [
+    {
+      "title": "Types of angle",
+      "steps": [
+        {"say": "An **angle** measures a turn. We measure angles in **degrees**, written °. One full turn is 360°.", "speak": "An angle measures a turn. We measure angles in degrees, written with a little circle. One full turn is 360 degrees.", "do": "turn"},
+        {"say": "A **right angle** is a quarter turn: exactly 90°. We mark it with a little square.", "speak": "A right angle is a quarter turn: exactly 90 degrees. We mark it with a little square.", "do": "right"},
+        {"say": "An **acute** angle is less than 90°. An **obtuse** angle is more than 90° but less than 180°.", "speak": "An acute angle is less than 90 degrees. An obtuse angle is more than 90 degrees but less than 180 degrees.", "do": "acute-obtuse"},
+        {"say": "A straight line makes an angle of 180°. A **reflex** angle is more than 180° but less than 360°.", "speak": "A straight line makes an angle of 180 degrees. A reflex angle is more than 180 degrees but less than 360 degrees.", "do": "straight-reflex"}
+      ],
+      "check": {"q": "What type of angle is 210°?", "options": ["Reflex", "Obtuse", "Acute", "Right angle"], "answer": 0,
+                "hint": "Is 210° more or less than a straight line, 180°?", "explain": "210° is more than 180° and less than 360°, so it is a **reflex** angle."}
+    },
+    {
+      "title": "Angle rules",
+      "steps": [
+        {"say": "Angles on a **straight line** add up to 180°. One angle is 115°, so the other is x = 180° − 115° = 65°.", "speak": "Angles on a straight line add up to 180 degrees. One angle is 115 degrees, so the other is x equals 180 minus 115, which is 65 degrees.", "do": "line-rule"},
+        {"say": "Angles **round a point** add up to 360°. 100° + 140° = 240°, so y = 360° − 240° = 120°.", "speak": "Angles round a point add up to 360 degrees. 100 plus 140 is 240 degrees, so y equals 360 minus 240, which is 120 degrees.", "do": "point-rule"},
+        {"say": "The angles in a **triangle** add up to 180°. 40° + 75° = 115°, so x = 180° − 115° = 65°.", "speak": "The angles in a triangle add up to 180 degrees. 40 plus 75 is 115 degrees, so x equals 180 minus 115, which is 65 degrees.", "do": "triangle-rule"},
+        {"say": "The angles in a **quadrilateral** add up to 360°. Why? Cut it into two triangles: 2 × 180° = 360°.", "speak": "The angles in a quadrilateral add up to 360 degrees. Why? Cut it into two triangles: 2 times 180 is 360 degrees.", "do": "quad-rule"}
+      ],
+      "check": {"q": "Two angles in a triangle are 45° and 85°. What is the third angle?", "options": ["50°", "40°", "130°", "230°"], "answer": 0,
+                "hint": "The three angles in a triangle add up to 180°. Add the two you know first.", "explain": "45° + 85° = 130°, and 180° − 130° = **50°**."}
+    },
+    {
+      "title": "Crossing and parallel lines",
+      "steps": [
+        {"say": "When two straight lines cross, the angles opposite each other are equal. They are called **vertically opposite** angles.", "do": "cross"},
+        {"say": "**Parallel** lines go in the same direction and never meet, like train tracks. We mark them with little arrows.", "do": "parallel"},
+        {"say": "Draw a line across two parallel lines. The angles inside a **Z** shape are **alternate angles**. Alternate angles are equal.", "do": "z-angles"},
+        {"say": "The angles in an **F** shape are **corresponding angles**. They are equal too.", "do": "f-angles"},
+        {"say": "The angles inside a **C** or **U** shape are **co-interior angles**. They add up to 180°: 55° + 125° = 180°.", "speak": "The angles inside a C or U shape are co-interior angles. They add up to 180 degrees: 55 plus 125 is 180 degrees.", "do": "c-angles"}
+      ],
+      "check": {"q": "A line crosses two parallel lines. One angle is 65°. What is the angle alternate to it?", "options": ["65°", "115°", "25°", "295°"], "answer": 0,
+                "hint": "Look for the Z shape. Are alternate angles equal, or do they add up to 180°?", "explain": "Alternate angles are **equal**, so it is also **65°**."}
+    },
+    {
+      "title": "Polygons",
+      "steps": [
+        {"say": "A **polygon** is a flat shape with straight sides. A triangle has 3 sides, a quadrilateral 4, a pentagon 5, a hexagon 6 and an octagon 8.", "do": "polygon-names"},
+        {"say": "In a **regular** polygon, all the sides are the same length and all the angles are the same size.", "do": "regular"},
+        {"say": "The angles inside a hexagon add up to 720°. A regular hexagon has 6 equal angles, so each one is 720° ÷ 6 = 120°.", "speak": "The angles inside a hexagon add up to 720 degrees. A regular hexagon has 6 equal angles, so each one is 720 divided by 6, which is 120 degrees.", "do": "hexagon"},
+        {"say": "Walk all the way round a polygon and you make one full turn. So the **exterior angles** add up to 360°. Each exterior angle of a regular hexagon is 360° ÷ 6 = 60°.", "speak": "Walk all the way round a polygon and you make one full turn. So the exterior angles add up to 360 degrees. Each exterior angle of a regular hexagon is 360 divided by 6, which is 60 degrees.", "do": "exterior"},
+        {"say": "An interior angle and its exterior angle sit on a straight line, so they add up to 180°: 120° + 60° = 180°.", "speak": "An interior angle and its exterior angle sit on a straight line, so they add up to 180 degrees: 120 plus 60 is 180 degrees.", "do": "int-ext"}
+      ],
+      "check": {"q": "What is the size of each exterior angle of a regular octagon?", "options": ["45°", "40°", "60°", "135°"], "answer": 0,
+                "hint": "An octagon has 8 sides. The exterior angles of any polygon add up to 360°.", "explain": "360° ÷ 8 = **45°**. (Each interior angle is 180° − 45° = 135°.)"}
+    },
+    {
+      "title": "Properties of shapes",
+      "steps": [
+        {"say": "Triangles: an **equilateral** triangle has 3 equal sides, an **isosceles** triangle has 2 equal sides, and a **scalene** triangle has no equal sides.", "do": "triangles"},
+        {"say": "A **square** has 4 equal sides and 4 right angles. A **rectangle** has 4 right angles. A **rhombus** has 4 equal sides, like a square pushed over.", "do": "quads1"},
+        {"say": "A **parallelogram** has two pairs of parallel sides. A **trapezium** has exactly one pair of parallel sides.", "do": "quads2"},
+        {"say": "A **line of symmetry** is a mirror line: fold along it and the two halves match. A square has 4 lines of symmetry. A rectangle has 2.", "do": "symmetry"},
+        {"say": "3D shapes have **faces**, **edges** and **vertices** (corners). A triangular prism has 5 faces, 9 edges and 6 vertices.", "do": "prism"}
+      ],
+      "check": {"q": "How many lines of symmetry does an equilateral triangle have?", "options": ["3", "1", "0", "6"], "answer": 0,
+                "hint": "Try folding from each corner to the middle of the opposite side.", "explain": "You can fold an equilateral triangle in half from each of its 3 corners, so it has **3** lines of symmetry."}
+    }
+  ]
+}

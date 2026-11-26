@@ -98,6 +98,9 @@ def render(meta, body, url):
         "description": html.escape(meta["description"], quote=True),
         "canonical": html.escape(canonical, quote=True),
         "robots": "noindex" if meta.get("noindex") else "index,follow",
+        # share picture: a page can set "image" (a path under the site) and "image_alt" in its header
+        "og_image": html.escape(config.SITE_URL.rstrip("/") + meta.get("image", "/static/img/og-default.png"), quote=True),
+        "og_image_alt": html.escape(meta.get("image_alt", f"{config.SITE_NAME}: {config.TAGLINE}"), quote=True),
         "site_name": html.escape(config.SITE_NAME),
         "tagline": html.escape(config.TAGLINE),
         "sister_name": html.escape(config.SISTER_NAME),
@@ -133,7 +136,7 @@ def main():
         shutil.rmtree(DIST)
     DIST.mkdir()
     shutil.copytree(STATIC, DIST / "static")
-    for name in ("_headers", "_redirects"):
+    for name in ("_headers", "_redirects", "favicon.ico"):
         if (HERE / name).exists():
             shutil.copy(HERE / name, DIST / name)
 

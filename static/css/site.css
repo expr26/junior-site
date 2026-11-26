@@ -974,3 +974,13 @@ button.am-tile:hover:not(:disabled){transform:translateY(-3px)}button.am-tile:di
 .gl-keys>span{font-weight:700}
 .gl-key{display:inline-flex;gap:4px;align-items:center;min-height:36px;padding:2px 12px;border-radius:999px;background:var(--card);border:2px solid var(--line);color:var(--ink);text-decoration:none}
 .gl-key:hover{border-color:var(--fun)}
+
+/* ---------- parent report (/parent-report/) ---------- */
+.pr-stats{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+@media (min-width:720px){.pr-stats{grid-template-columns:1fr 1fr 1fr}}
+.pr-list{padding-left:0;list-style:none}.pr-list li{margin:6px 0}
+.pr-table-wrap{overflow-x:auto}
+.pr-table{width:100%;border-collapse:collapse;font-size:16px;background:var(--card);border-radius:12px}
+.pr-table th,.pr-table td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left}
+.pr-table th{font-family:var(--serif)}
+@media print{.site-header,.site-footer,.no-print,.skip{display:none!important}body{background:#fff!important}.pr-stats{grid-template-columns:1fr 1fr 1fr}.card{break-inside:avoid}}

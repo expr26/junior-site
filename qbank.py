@@ -412,6 +412,12 @@ def write_pool(data):
                 pool[q["id"]] = {"k": key, "s": subj, "lv": q["level"], "h": li.strip(), "d": q["_data"],
                                  "u": f"{ROOT}{s['slug']}/{t['slug']}/#{q['id']}"}
     out = HERE / "dist" / POOL.lstrip("/")
+    topics = {}
+    for s, rows in data:
+        for plan, t in rows:
+            if t:
+                topics[f"{s['slug']}/{t['slug']}"] = {"title": t["title"], "subject": s["title"], "n": len(t["questions"]), "href": f"{ROOT}{s['slug']}/{t['slug']}/"}
+    (HERE / "dist" / "static" / "qb-topics.json").write_text(json.dumps(topics, ensure_ascii=False), encoding="utf-8")
     blob = json.dumps(pool, ensure_ascii=False, separators=(",", ":"))
     out.write_text(blob, encoding="utf-8")
     global POOL_URL

@@ -12,7 +12,7 @@
 (function () {
   if (!window.Arcade) return;
   var h = Arcade.h;
-  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var still = (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) || document.documentElement.getAttribute('data-rs-calm') === 'on';
   var CAP = 12;
 
   var F = {

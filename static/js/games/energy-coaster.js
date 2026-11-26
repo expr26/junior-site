@@ -11,7 +11,7 @@
 (function () {
   if (!window.Arcade) return;
   var h = Arcade.h;
-  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var still = (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) || document.documentElement.getAttribute('data-rs-calm') === 'on';
 
   var KEYS = [[40, 20], [120, 0], [200, 12], [280, 0], [360, 20]];
   var NAMES = ['the start', 'the bottom of the first dip', 'the top of the middle hill', 'the bottom of the second dip', 'the last hill'];

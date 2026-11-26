@@ -11,7 +11,7 @@
     [1, 3, 0, 7, 4], [1, 5, 0, 12, 7], [2, 0, 0, 10, 5], [2, 1, 0, 9, 4],
     [3, 2, 0, 14, 4], [2, 3, 1, 8, 5], [3, 1, 1, 9, 4], [4, 2, 2, 12, 5]
   ];
-  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var still = (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) || document.documentElement.getAttribute('data-rs-calm') === 'on';
 
   function side(x, n) {
     var parts = [];

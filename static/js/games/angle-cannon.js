@@ -4,7 +4,7 @@
 (function () {
   if (!window.Arcade) return;
   var h = Arcade.h;
-  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var still = (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) || document.documentElement.getAttribute('data-rs-calm') === 'on';
 
   var ROUNDS = [
     { aim: 40, pro: true, text: 'Pop the balloon! Turn the cannon to the right angle and fire.', hint: 'Use the protractor numbers. Start from 0° on the right-hand ground.' },

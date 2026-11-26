@@ -149,6 +149,98 @@
    "explain": "x = −5 is to the left and y = −2 is down, so the point is below and to the left of the origin."
   },
   {
+   "id": "crd-16",
+   "sub": "read",
+   "level": 1,
+   "type": "mc",
+   "q": "What are the coordinates of point F?",
+   "options": [
+    "(0, 4)",
+    "(4, 0)",
+    "(4, 4)",
+    "(1, 4)"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "grid",
+    "lo": -1,
+    "hi": 6,
+    "points": [
+     [
+      5,
+      2,
+      "D"
+     ],
+     [
+      2,
+      5,
+      "E"
+     ],
+     [
+      0,
+      4,
+      "F"
+     ]
+    ]
+   },
+   "hint": "F is on the y-axis. How far along is that?",
+   "explain": "F is 0 along and 4 up, so F is (0, 4). Every point on the y-axis has x-coordinate 0."
+  },
+  {
+   "id": "crd-17",
+   "sub": "read",
+   "level": 1,
+   "type": "mc",
+   "q": "Which of these points is on the x-axis?",
+   "options": [
+    "(6, 0)",
+    "(0, 6)",
+    "(6, 6)",
+    "(1, 6)"
+   ],
+   "answer": 0,
+   "hint": "A point on the x-axis has not gone up or down at all.",
+   "explain": "On the x-axis the height is 0, so the y-coordinate is 0. That is (6, 0). (0, 6) is on the y-axis."
+  },
+  {
+   "id": "crd-18",
+   "sub": "read",
+   "level": 2,
+   "type": "mc",
+   "q": "What are the coordinates of point R?",
+   "options": [
+    "(−2, −3)",
+    "(−3, −2)",
+    "(2, 3)",
+    "(−2, 3)"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "grid",
+    "lo": -4,
+    "hi": 4,
+    "points": [
+     [
+      -2,
+      -3,
+      "R"
+     ],
+     [
+      3,
+      -1,
+      "S"
+     ],
+     [
+      1,
+      3,
+      "T"
+     ]
+    ]
+   },
+   "hint": "R is left of the y-axis and below the x-axis, so both coordinates are negative. Which comes first?",
+   "explain": "R is 2 to the left (x = −2) and 3 down (y = −3), so R is (−2, −3)."
+  },
+  {
    "id": "crd-05",
    "sub": "points",
    "level": 2,
@@ -179,6 +271,54 @@
    "answer": 0,
    "hint": "Sketch it on a grid. The sides are 3 long.",
    "explain": "The square goes from x = 1 to x = 4 and from y = 1 to y = 4, so the missing corner is (1, 4)."
+  },
+  {
+   "id": "crd-19",
+   "sub": "points",
+   "level": 1,
+   "type": "mc",
+   "q": "A robot starts at (1, 2). It moves 3 squares right and 4 squares up. Where is it now?",
+   "options": [
+    "(4, 6)",
+    "(3, 4)",
+    "(5, 5)",
+    "(4, 2)"
+   ],
+   "answer": 0,
+   "hint": "Moving right changes the x-coordinate. Moving up changes the y-coordinate.",
+   "explain": "x: 1 + 3 = 4. y: 2 + 4 = 6. The robot is at (4, 6)."
+  },
+  {
+   "id": "crd-20",
+   "sub": "points",
+   "level": 2,
+   "type": "mc",
+   "q": "What is the midpoint of (−2, 3) and (4, 7)?",
+   "options": [
+    "(1, 5)",
+    "(3, 5)",
+    "(2, 10)",
+    "(1, 2)"
+   ],
+   "answer": 0,
+   "hint": "Add the x-coordinates and halve, then do the same for the y-coordinates.",
+   "explain": "x: (−2 + 4) ÷ 2 = 2 ÷ 2 = 1. y: (3 + 7) ÷ 2 = 10 ÷ 2 = 5. The midpoint is (1, 5)."
+  },
+  {
+   "id": "crd-21",
+   "sub": "points",
+   "level": 3,
+   "type": "mc",
+   "q": "M is the midpoint of A and B. A is at (1, 2) and M is at (4, 5). Where is B?",
+   "options": [
+    "(7, 8)",
+    "(2.5, 3.5)",
+    "(5, 7)",
+    "(3, 3)"
+   ],
+   "answer": 0,
+   "hint": "To get from A to M you go 3 along and 3 up. B is the same again past M.",
+   "explain": "From A to M: x goes up 3 and y goes up 3. Do the same from M: (4 + 3, 5 + 3) = (7, 8). Check: the midpoint of (1, 2) and (7, 8) is (4, 5). ✓"
   },
   {
    "id": "crd-07",
@@ -296,6 +436,48 @@
    "explain": "Put x = 0: y = 2 × 0 + 3 = 3. So it crosses at (0, 3)."
   },
   {
+   "id": "crd-22",
+   "sub": "lines",
+   "level": 1,
+   "type": "num",
+   "q": "The points (1, 4), (2, 5) and (3, 6) are on a straight line. What is y when x = 4?",
+   "answer": "7",
+   "hint": "How does y change each time x goes up by 1?",
+   "explain": "y goes up by 1 each time x goes up by 1 (the rule is y = x + 3), so when x = 4, y = 7."
+  },
+  {
+   "id": "crd-23",
+   "sub": "lines",
+   "level": 2,
+   "type": "mc",
+   "q": "Which point lies on the line x = −2?",
+   "options": [
+    "(−2, 5)",
+    "(5, −2)",
+    "(2, −2)",
+    "(0, −2)"
+   ],
+   "answer": 0,
+   "hint": "On the line x = −2, every point has the same x-coordinate.",
+   "explain": "Every point on x = −2 has x-coordinate −2, so (−2, 5) is on it. x = −2 is a vertical line."
+  },
+  {
+   "id": "crd-24",
+   "sub": "lines",
+   "level": 3,
+   "type": "mc",
+   "q": "Which line is parallel to y = 3x + 1?",
+   "options": [
+    "y = 3x − 5",
+    "y = x + 1",
+    "y = 4x + 1",
+    "y = 1 − 3x"
+   ],
+   "answer": 0,
+   "hint": "Parallel lines have the same steepness (gradient), the number in front of x.",
+   "explain": "y = 3x + 1 has gradient 3. Only y = 3x − 5 also has gradient 3, so it is parallel. It just crosses the y-axis lower, at −5."
+  },
+  {
    "id": "crd-14",
    "sub": "real",
    "level": 2,
@@ -316,6 +498,44 @@
    "unit": "minutes",
    "hint": "Work out 20 × 3 first, then add 30.",
    "explain": "20 × 3 = 60 minutes, plus 30 = 90 minutes. The rule is time = 20 × mass + 30, which makes a straight-line graph."
+  },
+  {
+   "id": "crd-25",
+   "sub": "real",
+   "level": 2,
+   "type": "num",
+   "q": "A conversion graph between miles and kilometres is a straight line through (0, 0) and (5, 8): 5 miles is about 8 km. About how many kilometres is 20 miles?",
+   "answer": "32",
+   "unit": "km",
+   "hint": "How many lots of 5 miles are in 20 miles?",
+   "explain": "20 miles is 4 lots of 5 miles, so it is about 4 × 8 = 32 km."
+  },
+  {
+   "id": "crd-26",
+   "sub": "real",
+   "level": 2,
+   "type": "num",
+   "q": "On a distance–time graph, a cyclist's line goes straight from (0, 0) to (2, 30). Time is in hours along the x-axis and distance is in km up the y-axis. What is her speed?",
+   "answer": "15",
+   "unit": "km/h",
+   "hint": "Speed = distance ÷ time.",
+   "explain": "She rides 30 km in 2 hours, so her speed is 30 ÷ 2 = 15 km per hour. This is the gradient of the line."
+  },
+  {
+   "id": "crd-27",
+   "sub": "real",
+   "level": 3,
+   "type": "mc",
+   "q": "A climbing centre charges £20 to join and then £5 for each visit. Which equation gives the total cost C (in £) for v visits?",
+   "options": [
+    "C = 5v + 20",
+    "C = 20v + 5",
+    "C = 25v",
+    "C = 5v"
+   ],
+   "answer": 0,
+   "hint": "Which amount is paid once, and which is paid every visit?",
+   "explain": "£5 is paid each visit (5v) and £20 is paid once, so C = 5v + 20. On a graph, the line crosses the C-axis at 20 and has gradient 5. Check: 2 visits cost 10 + 20 = £30."
   }
  ]
 }

@@ -73,6 +73,38 @@
    "explain": "Heads and tails are equally likely, so heads has an even chance: a probability of {1/2}."
   },
   {
+   "id": "prb-15",
+   "sub": "words",
+   "level": 1,
+   "type": "mc",
+   "q": "On the probability scale from 0 to 1, where is \"impossible\"?",
+   "options": [
+    "0",
+    "1",
+    "{1/2}",
+    "10"
+   ],
+   "answer": 0,
+   "hint": "The scale starts with things that can never happen.",
+   "explain": "Impossible is 0, even chance is {1/2} and certain is 1. A probability can never be more than 1."
+  },
+  {
+   "id": "prb-16",
+   "sub": "words",
+   "level": 1,
+   "type": "mc",
+   "q": "A bag has 9 red sweets and 1 green sweet. You take one without looking. Getting a red sweet is…",
+   "options": [
+    "likely",
+    "unlikely",
+    "impossible",
+    "certain"
+   ],
+   "answer": 0,
+   "hint": "There are lots of red ones, but is there any other colour?",
+   "explain": "Most of the sweets are red, so red is likely. It is not certain, because you could pick the green one."
+  },
+  {
    "id": "prb-04",
    "sub": "single",
    "level": 1,
@@ -155,6 +187,66 @@
    "explain": "1 − 0.3 = 0.7."
   },
   {
+   "id": "prb-17",
+   "sub": "single",
+   "level": 1,
+   "type": "num",
+   "q": "The spinner is spun once. What is the probability that it lands on blue?",
+   "answer": "3/5",
+   "fig": {
+    "type": "spinner",
+    "sections": [
+     "blue",
+     "red",
+     "blue",
+     "yellow",
+     "blue"
+    ]
+   },
+   "hint": "Count the blue sections and all the sections.",
+   "explain": "3 of the 5 equal sections are blue, so the probability is {3/5}."
+  },
+  {
+   "id": "prb-18",
+   "sub": "single",
+   "level": 1,
+   "type": "num",
+   "q": "A fair dice numbered 1 to 6 is rolled. What is the probability of rolling a 4?",
+   "answer": "1/6",
+   "hint": "How many 4s are there? How many numbers altogether?",
+   "explain": "There is one 4 out of 6 equally likely numbers, so the probability is {1/6}."
+  },
+  {
+   "id": "prb-19",
+   "sub": "single",
+   "level": 2,
+   "type": "num",
+   "q": "The letters of the word BANANA are put on cards. One card is picked at random. What is the probability that it shows the letter A?",
+   "answer": "1/2",
+   "hint": "Count every letter, including the ones that repeat.",
+   "explain": "BANANA has 6 letters and 3 of them are A, so the probability is {3/6} = {1/2}."
+  },
+  {
+   "id": "prb-20",
+   "sub": "single",
+   "level": 2,
+   "type": "num",
+   "q": "A jar has 24 sweets. The probability of picking a red sweet is {3/8}. How many red sweets are in the jar?",
+   "answer": "9",
+   "hint": "Find {1/8} of 24 first.",
+   "explain": "{1/8} of 24 is 24 ÷ 8 = 3, so {3/8} of 24 is 3 × 3 = 9 red sweets."
+  },
+  {
+   "id": "prb-24",
+   "sub": "single",
+   "level": 3,
+   "type": "num",
+   "q": "A bag has only red, blue and green counters. The probability of red is 0.25 and the probability of blue is 0.4. What is the probability of green?",
+   "answer": "0.35",
+   "hint": "All the probabilities must add up to 1.",
+   "explain": "0.25 + 0.4 = 0.65, so the probability of green is 1 − 0.65 = 0.35."
+  },
+  {
    "id": "prb-10",
    "sub": "expect",
    "level": 2,
@@ -191,6 +283,26 @@
    "explain": "0.15 × 60 = 9 times."
   },
   {
+   "id": "prb-21",
+   "sub": "expect",
+   "level": 2,
+   "type": "num",
+   "q": "A fair dice is rolled 60 times. About how many times would you expect to roll a 6?",
+   "answer": "10",
+   "hint": "The probability of a 6 is {1/6}.",
+   "explain": "{1/6} × 60 = 60 ÷ 6 = 10 times."
+  },
+  {
+   "id": "prb-22",
+   "sub": "expect",
+   "level": 2,
+   "type": "num",
+   "q": "Ella drops a piece of toast 50 times. It lands butter side down 30 times. Estimate the probability that it lands butter side down. Give your answer as a decimal.",
+   "answer": "0.6",
+   "hint": "Estimated probability = number of times it happened ÷ number of tries.",
+   "explain": "30 ÷ 50 = {3/5} = 0.6. This is called the relative frequency."
+  },
+  {
    "id": "prb-13",
    "sub": "combined",
    "level": 3,
@@ -209,6 +321,36 @@
    "answer": "1/4",
    "hint": "List all the outcomes: HH, HT, …",
    "explain": "The outcomes are HH, HT, TH and TT. Only 1 of the 4 is two heads, so the probability is {1/4}."
+  },
+  {
+   "id": "prb-23",
+   "sub": "combined",
+   "level": 2,
+   "type": "num",
+   "q": "The school lunch menu has 3 main courses and 2 puddings. How many different meals of one main and one pudding can you choose?",
+   "answer": "6",
+   "hint": "List them, or multiply the number of choices for each part.",
+   "explain": "Each of the 3 mains can go with either of the 2 puddings: 3 × 2 = 6 meals."
+  },
+  {
+   "id": "prb-25",
+   "sub": "combined",
+   "level": 3,
+   "type": "num",
+   "q": "Two fair dice are rolled and the scores are added. What is the probability that the total is 7?",
+   "answer": "1/6",
+   "hint": "Draw a 6 by 6 grid of all the outcomes. How many give a total of 7?",
+   "explain": "There are 6 × 6 = 36 outcomes. Six give 7: 1+6, 2+5, 3+4, 4+3, 5+2, 6+1. The probability is {6/36} = {1/6}."
+  },
+  {
+   "id": "prb-26",
+   "sub": "combined",
+   "level": 3,
+   "type": "num",
+   "q": "A fair spinner numbered 1, 2 and 3 is spun and a fair coin is flipped. What is the probability of getting tails and an odd number?",
+   "answer": "1/3",
+   "hint": "List every outcome, like H1, H2, …",
+   "explain": "The 6 outcomes are H1, H2, H3, T1, T2, T3. Tails and odd is T1 or T3: 2 out of 6, so the probability is {2/6} = {1/3}."
   }
  ]
 }

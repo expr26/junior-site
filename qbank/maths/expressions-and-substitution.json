@@ -77,6 +77,54 @@
    "explain": "4 pens cost 4p pence, and the rubber adds 30, so the total is 4p + 30."
   },
   {
+   "id": "alg-20",
+   "sub": "write",
+   "level": 1,
+   "type": "mc",
+   "q": "A bag has a apples in it. Mia eats 2 of them. Which expression shows how many apples are left?",
+   "options": [
+    "a − 2",
+    "2 − a",
+    "a + 2",
+    "2a"
+   ],
+   "answer": 0,
+   "hint": "Eating some means there are fewer left.",
+   "explain": "Mia takes 2 away from a, so there are a − 2 apples left. (2 − a would mean taking a away from 2.)"
+  },
+  {
+   "id": "alg-21",
+   "sub": "write",
+   "level": 2,
+   "type": "mc",
+   "q": "A pizza has 8 slices. It is shared equally between k friends. Which expression gives the number of slices each friend gets?",
+   "options": [
+    "8 ÷ k",
+    "k ÷ 8",
+    "8k",
+    "8 − k"
+   ],
+   "answer": 0,
+   "hint": "Sharing equally means dividing.",
+   "explain": "8 slices shared between k friends is 8 ÷ k slices each. For example, with 4 friends: 8 ÷ 4 = 2 slices each."
+  },
+  {
+   "id": "alg-22",
+   "sub": "write",
+   "level": 3,
+   "type": "mc",
+   "q": "Leo is y years old. His sister is 4 years younger than him, and his mum is three times as old as Leo. Which expression gives their three ages added together?",
+   "options": [
+    "5y − 4",
+    "4y − 4",
+    "5y + 4",
+    "3y − 4"
+   ],
+   "answer": 0,
+   "hint": "Write each age first: Leo y, sister y − 4, mum 3y. Then add.",
+   "explain": "y + (y − 4) + 3y = 5y − 4. Check with y = 10: 10 + 6 + 30 = 46, and 5 × 10 − 4 = 46. ✓"
+  },
+  {
    "id": "alg-04",
    "sub": "simplify",
    "level": 1,
@@ -141,6 +189,38 @@
    "explain": "m² terms: 2m² − m² = m². m terms: 3m + m = 4m. So the answer is m² + 4m."
   },
   {
+   "id": "alg-23",
+   "sub": "simplify",
+   "level": 1,
+   "type": "mc",
+   "q": "Simplify 5b − 2b",
+   "options": [
+    "3b",
+    "7b",
+    "3",
+    "3b²"
+   ],
+   "answer": 0,
+   "hint": "You have 5 lots of b and take away 2 lots of b.",
+   "explain": "5b − 2b = 3b. The b stays: it is like 5 bananas take away 2 bananas leaves 3 bananas."
+  },
+  {
+   "id": "alg-24",
+   "sub": "simplify",
+   "level": 2,
+   "type": "mc",
+   "q": "Simplify 4x + 3 + 2x − 7",
+   "options": [
+    "6x − 4",
+    "6x + 4",
+    "6x − 10",
+    "2x − 4"
+   ],
+   "answer": 0,
+   "hint": "Collect the x terms, then the plain numbers. Watch the sign in front of the 7.",
+   "explain": "x terms: 4x + 2x = 6x. Numbers: 3 − 7 = −4. So the answer is 6x − 4."
+  },
+  {
    "id": "alg-08",
    "sub": "substitute",
    "level": 1,
@@ -201,6 +281,36 @@
    "explain": "x² = 16, so 2x² = 2 × 16 = 32. (Squaring 2x would give 64, which is a different expression.)"
   },
   {
+   "id": "alg-25",
+   "sub": "substitute",
+   "level": 1,
+   "type": "num",
+   "q": "If b = 7, work out 20 − b.",
+   "answer": "13",
+   "hint": "Replace b with 7.",
+   "explain": "20 − b = 20 − 7 = 13."
+  },
+  {
+   "id": "alg-26",
+   "sub": "substitute",
+   "level": 2,
+   "type": "num",
+   "q": "If m = 12, work out m ÷ 4 + 5.",
+   "answer": "8",
+   "hint": "Divide first, then add.",
+   "explain": "m ÷ 4 = 12 ÷ 4 = 3, and 3 + 5 = 8."
+  },
+  {
+   "id": "alg-27",
+   "sub": "substitute",
+   "level": 3,
+   "type": "num",
+   "q": "If x = −3, work out x² − 4.",
+   "answer": "5",
+   "hint": "x² means x × x, and a negative times a negative is positive.",
+   "explain": "x² = (−3) × (−3) = 9, so x² − 4 = 9 − 4 = 5."
+  },
+  {
    "id": "alg-14",
    "sub": "brackets",
    "level": 2,
@@ -249,6 +359,54 @@
    "explain": "3 divides both: 6x = 3 × 2x and 9 = 3 × 3. So 6x + 9 = 3(2x + 3). Check by expanding: 3 × 2x + 3 × 3 = 6x + 9."
   },
   {
+   "id": "alg-28",
+   "sub": "brackets",
+   "level": 1,
+   "type": "mc",
+   "q": "Expand 2(y + 5)",
+   "options": [
+    "2y + 10",
+    "2y + 5",
+    "y + 10",
+    "2y + 7"
+   ],
+   "answer": 0,
+   "hint": "Multiply both terms inside the bracket by 2.",
+   "explain": "2 × y = 2y and 2 × 5 = 10, so 2(y + 5) = 2y + 10."
+  },
+  {
+   "id": "alg-29",
+   "sub": "brackets",
+   "level": 2,
+   "type": "mc",
+   "q": "Expand 5(2x − 3)",
+   "options": [
+    "10x − 15",
+    "10x − 3",
+    "7x − 15",
+    "10x + 15"
+   ],
+   "answer": 0,
+   "hint": "Multiply 2x by 5 and 3 by 5. Keep the minus sign.",
+   "explain": "5 × 2x = 10x and 5 × 3 = 15, so 5(2x − 3) = 10x − 15."
+  },
+  {
+   "id": "alg-30",
+   "sub": "brackets",
+   "level": 2,
+   "type": "mc",
+   "q": "Factorise 4a + 12",
+   "options": [
+    "4(a + 3)",
+    "4(a + 12)",
+    "2(a + 6)",
+    "4a(1 + 3)"
+   ],
+   "answer": 0,
+   "hint": "Which number divides both 4 and 12? Take it outside the bracket.",
+   "explain": "4 divides both: 4a = 4 × a and 12 = 4 × 3. So 4a + 12 = 4(a + 3). Check by expanding: 4a + 12. ✓"
+  },
+  {
    "id": "alg-17",
    "sub": "formulae",
    "level": 2,
@@ -280,6 +438,16 @@
    "unit": "°F",
    "hint": "Multiply 25 by 1.8 first, then add 32.",
    "explain": "1.8 × 25 = 45, and 45 + 32 = 77. So 25 °C = 77 °F."
+  },
+  {
+   "id": "alg-31",
+   "sub": "formulae",
+   "level": 3,
+   "type": "num",
+   "q": "A go-kart's speed is given by v = u + at, where u is its starting speed, a is how fast it speeds up, and t is the time in seconds. Find a when v = 25, u = 5 and t = 4.",
+   "answer": "5",
+   "hint": "Put the numbers in: 25 = 5 + 4a. Then solve for a.",
+   "explain": "25 = 5 + 4 × a. Take 5 from both sides: 20 = 4a. Divide by 4: a = 5."
   }
  ]
 }

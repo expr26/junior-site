@@ -89,6 +89,54 @@
    "explain": "Stretched or squashed objects, like rubber bands and springs, have energy in an elastic store."
   },
   {
+   "id": "enr-17",
+   "sub": "stores",
+   "level": 1,
+   "type": "mc",
+   "q": "A hot cup of tea has lots of energy in which store?",
+   "options": [
+    "Thermal",
+    "Elastic",
+    "Gravitational",
+    "Magnetic"
+   ],
+   "answer": 0,
+   "hint": "Hotter things have more energy in this store.",
+   "explain": "The hot tea has energy in its thermal store. As it cools down, energy moves to the thermal store of the room."
+  },
+  {
+   "id": "enr-18",
+   "sub": "stores",
+   "level": 2,
+   "type": "mc",
+   "q": "The Sun gives out huge amounts of energy. Which store does this energy come from?",
+   "options": [
+    "Nuclear",
+    "Chemical",
+    "Elastic",
+    "Kinetic"
+   ],
+   "answer": 0,
+   "hint": "Deep inside the Sun, the tiny centres of atoms join together.",
+   "explain": "Reactions in the centres (nuclei) of atoms in the Sun's core release energy from the nuclear store. It reaches us as light and other radiation."
+  },
+  {
+   "id": "enr-19",
+   "sub": "stores",
+   "level": 3,
+   "type": "mc",
+   "q": "A bungee jumper reaches the very bottom of the jump and is still for a moment. Which store has the most energy now?",
+   "options": [
+    "The elastic store of the stretched cord",
+    "The kinetic store of the jumper",
+    "The gravitational store of the jumper",
+    "The chemical store of the cord"
+   ],
+   "answer": 0,
+   "hint": "At the bottom the jumper is not moving, and is as low as they go. What is stretched as far as it can be?",
+   "explain": "At the bottom the jumper is still (kinetic store empty) and at the lowest point (gravitational store as low as it gets). The energy is now in the elastic store of the stretched cord, which then pulls the jumper back up."
+  },
+  {
    "id": "enr-05",
    "sub": "transfers",
    "level": 2,
@@ -135,6 +183,54 @@
    "answer": 0,
    "hint": "Which one makes something move?",
    "explain": "A fan's motor makes the blades spin: that is a kinetic store. A kettle and a toaster heat things (thermal) and a bulb gives out light."
+  },
+  {
+   "id": "enr-20",
+   "sub": "transfers",
+   "level": 1,
+   "type": "mc",
+   "q": "A charger cable carries energy from the wall socket to a phone battery. How is the energy transferred?",
+   "options": [
+    "Electrically",
+    "By sound",
+    "By light",
+    "By heating"
+   ],
+   "answer": 0,
+   "hint": "What flows along the cable?",
+   "explain": "The energy is transferred electrically, by an electric current in the cable. It ends up in the chemical store of the phone's battery."
+  },
+  {
+   "id": "enr-21",
+   "sub": "transfers",
+   "level": 2,
+   "type": "mc",
+   "q": "A child on a swing goes from the lowest point up to the highest point. Energy is transferred from…",
+   "options": [
+    "the kinetic store to the gravitational store",
+    "the gravitational store to the kinetic store",
+    "the elastic store to the chemical store",
+    "the thermal store to the kinetic store"
+   ],
+   "answer": 0,
+   "hint": "On the way up, the swing slows down and gets higher.",
+   "explain": "Slowing down empties the kinetic store, and getting higher fills the gravitational store. On the way back down it happens the other way round."
+  },
+  {
+   "id": "enr-22",
+   "sub": "transfers",
+   "level": 2,
+   "type": "mc",
+   "q": "You wind up a toy car, which squashes a spring inside it, then let it go. Which energy transfer happens as the car moves off?",
+   "options": [
+    "Elastic store to kinetic store",
+    "Kinetic store to elastic store",
+    "Chemical store to gravitational store",
+    "Nuclear store to kinetic store"
+   ],
+   "answer": 0,
+   "hint": "Winding it up squashes the spring. What happens to the spring when you let go?",
+   "explain": "Winding the car fills the elastic store of the spring. When you let go, the spring unwinds and energy moves to the kinetic store of the car."
   },
   {
    "id": "enr-08",
@@ -219,11 +315,66 @@
    "sub": "efficiency",
    "level": 3,
    "type": "num",
-   "q": "An LED bulb gives out 45 J of light for every 50 J of electrical energy put in. What is its efficiency as a percentage?",
-   "answer": "90",
+   "q": "An LED bulb gives out 20 J of light for every 50 J of electrical energy put in. What is its efficiency as a percentage?",
+   "answer": "40",
    "unit": "%",
    "hint": "Divide useful energy by total energy, then change to a percentage.",
-   "explain": "45 ÷ 50 = 0.9 = 90%. LED bulbs waste much less energy than filament bulbs."
+   "explain": "20 ÷ 50 = 0.4 = 40%. The other 30 J heats the bulb and the room. That still beats a filament bulb, which turns only about 5% into light."
+  },
+  {
+   "id": "enr-23",
+   "sub": "efficiency",
+   "level": 1,
+   "type": "mc",
+   "q": "An electric kettle is used to boil water. Which energy transfer is the useful one?",
+   "options": [
+    "Heating the water",
+    "Heating the air around the kettle",
+    "The sound of the water bubbling",
+    "Light from the little lamp on the switch"
+   ],
+   "answer": 0,
+   "hint": "What do you want the kettle to do?",
+   "explain": "A kettle is for heating water, so energy going to the thermal store of the water is useful. Heating the air and the noise are wasted."
+  },
+  {
+   "id": "enr-24",
+   "sub": "efficiency",
+   "level": 3,
+   "type": "mc",
+   "q": "A ball is dropped. Each bounce is lower than the one before. What has happened to the energy?",
+   "options": [
+    "It has been transferred to thermal stores of the ball and the floor, and to the air as sound",
+    "It has been destroyed each time the ball hits the floor",
+    "It has been used up by gravity",
+    "It has turned into new air particles"
+   ],
+   "answer": 0,
+   "hint": "Energy cannot be created or destroyed. Listen and feel: what happens each time the ball hits the floor?",
+   "explain": "Energy is conserved. At each bounce some energy is transferred by sound and heats the ball, the floor and the air a tiny bit. Less energy is left, so the ball cannot get as high. The energy has spread out, so it is hard to use again."
+  },
+  {
+   "id": "enr-25",
+   "sub": "efficiency",
+   "level": 3,
+   "type": "num",
+   "q": "This energy diagram is for a TV. What is the efficiency of the TV, as a percentage?",
+   "answer": "30",
+   "unit": "%",
+   "fig": {
+    "type": "sankey",
+    "total": 200,
+    "useful": [
+     "Light and sound",
+     60
+    ],
+    "wasted": [
+     "Heating",
+     140
+    ]
+   },
+   "hint": "Efficiency = useful energy out ÷ total energy in. Then change to a percentage.",
+   "explain": "A TV is for light and sound, so 60 J is useful.\nEfficiency = 60 J ÷ 200 J = 0.3 = 30%. The other 140 J heats the TV and the room."
   },
   {
    "id": "enr-13",
@@ -288,6 +439,54 @@
    "answer": 0,
    "hint": "Which one uses heat from deep inside the Earth?",
    "explain": "Geothermal power uses heat from underground rocks, which is there whatever the weather. Wind and solar change from day to day, and hydroelectric needs rain to fill the reservoirs."
+  },
+  {
+   "id": "enr-26",
+   "sub": "resources",
+   "level": 1,
+   "type": "mc",
+   "q": "Which energy resource uses sunlight to make electricity?",
+   "options": [
+    "Solar panels",
+    "Wind turbines",
+    "Coal power stations",
+    "Tidal barrages"
+   ],
+   "answer": 0,
+   "hint": "Which one has the Sun in its name?",
+   "explain": "Solar panels (solar cells) transfer energy from sunlight straight into electricity. Solar power is renewable."
+  },
+  {
+   "id": "enr-27",
+   "sub": "resources",
+   "level": 2,
+   "type": "mc",
+   "q": "Why can't a country get all of its electricity from wind turbines alone?",
+   "options": [
+    "The wind does not always blow, so it is not always reliable",
+    "Wind turbines make too much carbon dioxide",
+    "The wind will run out one day",
+    "Wind turbines only work at night"
+   ],
+   "answer": 0,
+   "hint": "Think about a calm, still day.",
+   "explain": "On calm days the turbines stop, so there is little or no electricity from them. So other resources, or ways of storing energy, are needed as well. Wind is renewable and does not give out carbon dioxide while it works."
+  },
+  {
+   "id": "enr-28",
+   "sub": "resources",
+   "level": 2,
+   "type": "mc",
+   "q": "Wood is burned as a fuel in some stoves. Why is wood called a renewable resource?",
+   "options": [
+    "New trees can be grown to replace the ones cut down",
+    "Burning wood does not give out any carbon dioxide",
+    "Wood never burns away completely",
+    "Wood is a fossil fuel"
+   ],
+   "answer": 0,
+   "hint": "Can we make more of it in a human lifetime?",
+   "explain": "Trees grow in a few years or tens of years, so we can plant more to replace the wood we burn. Fossil fuels take millions of years to form. Burning wood still gives out carbon dioxide."
   }
  ]
 }

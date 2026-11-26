@@ -90,6 +90,44 @@
    "explain": "1 minute = 60 s. Energy = 5 W × 60 s = 300 J."
   },
   {
+   "id": "pow-16",
+   "sub": "power",
+   "level": 1,
+   "type": "mc",
+   "q": "Two hairdryers are the same except for their power. Which one transfers energy faster?",
+   "options": [
+    "The 1800 W hairdryer",
+    "The 1200 W hairdryer",
+    "They transfer energy at the same rate",
+    "You cannot tell"
+   ],
+   "answer": 0,
+   "hint": "Power tells you how many joules are transferred each second.",
+   "explain": "1800 W means 1800 J every second, and 1200 W means 1200 J every second. The bigger the power, the faster energy is transferred."
+  },
+  {
+   "id": "pow-17",
+   "sub": "power",
+   "level": 2,
+   "type": "num",
+   "q": "A microwave oven has a power of 1000 W. You heat some soup for 2 minutes. How much energy does it transfer?",
+   "answer": "120000",
+   "unit": "J",
+   "hint": "Change 2 minutes into seconds, then use energy = power × time.",
+   "explain": "2 minutes = 120 s.\nEnergy = power × time = 1000 W × 120 s = 120,000 J."
+  },
+  {
+   "id": "pow-18",
+   "sub": "power",
+   "level": 3,
+   "type": "num",
+   "q": "A 2000 W kettle needs to transfer 300,000 J of energy to boil some water. How long does it take, in seconds?",
+   "answer": "150",
+   "unit": "s",
+   "hint": "Energy = power × time, so time = energy ÷ power.",
+   "explain": "Time = energy ÷ power = 300,000 J ÷ 2000 W = 150 s (2 and a half minutes)."
+  },
+  {
    "id": "pow-06",
    "sub": "kwh",
    "level": 2,
@@ -121,6 +159,44 @@
    "unit": "kWh",
    "hint": "Change 100 W into kW first.",
    "explain": "100 W = 0.1 kW. Energy = 0.1 kW × 5 h = 0.5 kWh."
+  },
+  {
+   "id": "pow-19",
+   "sub": "kwh",
+   "level": 1,
+   "type": "mc",
+   "q": "What does a kilowatt-hour (kWh) measure?",
+   "options": [
+    "An amount of energy",
+    "How fast energy is transferred",
+    "A length of time",
+    "How heavy something is"
+   ],
+   "answer": 0,
+   "hint": "It is the unit on an electricity bill. Is a bill for how fast, or for how much?",
+   "explain": "A kilowatt-hour is an amount of energy: the energy a 1 kW device transfers in 1 hour. Power (how fast) is measured in watts or kilowatts."
+  },
+  {
+   "id": "pow-20",
+   "sub": "kwh",
+   "level": 2,
+   "type": "num",
+   "q": "A 200 W games console is used for 3 hours. How many kilowatt-hours does it use?",
+   "answer": "0.6",
+   "unit": "kWh",
+   "hint": "Change the watts into kilowatts first.",
+   "explain": "200 W = 0.2 kW.\nEnergy = 0.2 kW × 3 h = 0.6 kWh."
+  },
+  {
+   "id": "pow-21",
+   "sub": "kwh",
+   "level": 3,
+   "type": "num",
+   "q": "How many joules are there in 1 kWh?",
+   "answer": "3600000",
+   "unit": "J",
+   "hint": "1 kWh is 1000 W for 1 hour. How many seconds are in 1 hour?",
+   "explain": "1 kW = 1000 W and 1 hour = 3600 s.\nEnergy = 1000 W × 3600 s = 3,600,000 J. That is why bills use kWh: joules would give huge numbers."
   },
   {
    "id": "pow-09",
@@ -165,6 +241,39 @@
    "show": "£9.00",
    "hint": "30 × 30p, then change pence to pounds.",
    "explain": "30 × 30p = 900p = £9."
+  },
+  {
+   "id": "pow-22",
+   "sub": "cost",
+   "level": 1,
+   "type": "num",
+   "q": "Electricity costs 25p per kWh. One wash in a washing machine uses 2 kWh. How much does one wash cost, in pence?",
+   "answer": "50",
+   "unit": "p",
+   "hint": "Cost = number of kWh × price of one kWh.",
+   "explain": "Cost = 2 × 25p = 50p."
+  },
+  {
+   "id": "pow-23",
+   "sub": "cost",
+   "level": 2,
+   "type": "num",
+   "q": "A 2 kW tumble dryer runs for 1.5 hours. Electricity costs 30p per kWh. How much does it cost, in pence?",
+   "answer": "90",
+   "unit": "p",
+   "hint": "Find the kWh first (kW × hours), then multiply by the price.",
+   "explain": "Energy = 2 kW × 1.5 h = 3 kWh.\nCost = 3 × 30p = 90p."
+  },
+  {
+   "id": "pow-24",
+   "sub": "cost",
+   "level": 2,
+   "type": "num",
+   "q": "A 10 W LED bulb is left on for 100 hours. Electricity costs 25p per kWh. How much does that cost, in pence?",
+   "answer": "25",
+   "unit": "p",
+   "hint": "Change 10 W into kW, then find the kWh, then the cost.",
+   "explain": "10 W = 0.01 kW.\nEnergy = 0.01 kW × 100 h = 1 kWh.\nCost = 1 × 25p = 25p."
   },
   {
    "id": "pow-13",
@@ -212,6 +321,48 @@
    "answer": 0,
    "hint": "Work out the kWh for each. 6 minutes is 0.1 hours and 10 W is 0.01 kW.",
    "explain": "Kettle: 2 kW × 0.1 h = 0.2 kWh. Bulb: 0.01 kW × 10 h = 0.1 kWh. The kettle transfers twice as much, even though it is on for a much shorter time."
+  },
+  {
+   "id": "pow-25",
+   "sub": "compare",
+   "level": 1,
+   "type": "mc",
+   "q": "Both bulbs give the same amount of light. Which one uses less energy in an hour?",
+   "options": [
+    "A 10 W LED bulb",
+    "A 60 W filament bulb",
+    "They use the same",
+    "You cannot tell"
+   ],
+   "answer": 0,
+   "hint": "For the same time, a smaller power means less energy.",
+   "explain": "The LED bulb has the smaller power, so in the same time it transfers less energy: 10 J every second instead of 60 J."
+  },
+  {
+   "id": "pow-26",
+   "sub": "compare",
+   "level": 2,
+   "type": "mc",
+   "q": "Heater A (2 kW) is on for 1 hour. Heater B (1 kW) is on for 3 hours. Which uses more energy?",
+   "options": [
+    "Heater B",
+    "Heater A",
+    "They use the same"
+   ],
+   "answer": 0,
+   "hint": "Work out kW × hours for each heater.",
+   "explain": "Heater A: 2 kW × 1 h = 2 kWh. Heater B: 1 kW × 3 h = 3 kWh. Heater B uses more, even though its power is smaller, because it is on for longer."
+  },
+  {
+   "id": "pow-27",
+   "sub": "compare",
+   "level": 3,
+   "type": "num",
+   "q": "An electric shower has a power of 9 kW. You cut your shower from 10 minutes to 5 minutes. How many kWh do you save?",
+   "answer": "0.75",
+   "unit": "kWh",
+   "hint": "You save 5 minutes of showering. Change 5 minutes into hours (a fraction of 60 minutes).",
+   "explain": "5 minutes = 5 ÷ 60 = {1/12} of an hour.\nEnergy saved = 9 kW × {1/12} h = 0.75 kWh."
   }
  ]
 }

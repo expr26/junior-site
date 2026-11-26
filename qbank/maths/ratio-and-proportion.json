@@ -105,6 +105,54 @@
    "explain": "There are 2 + 3 = 5 parts and 2 of them are squash, so {2/5} of the drink is squash."
   },
   {
+   "id": "rat-17",
+   "sub": "ratio",
+   "level": 1,
+   "type": "mc",
+   "q": "A pet shop has 4 cats and 10 dogs. What is the ratio of dogs to cats, in its simplest form?",
+   "options": [
+    "5 : 2",
+    "2 : 5",
+    "5 : 7",
+    "7 : 5"
+   ],
+   "answer": 0,
+   "hint": "Dogs come first. Then divide both numbers by the same number.",
+   "explain": "Dogs to cats is 10 : 4. Divide both by 2 to get 5 : 2."
+  },
+  {
+   "id": "rat-18",
+   "sub": "ratio",
+   "level": 2,
+   "type": "mc",
+   "q": "Write the ratio 50p : £2 in its simplest form.",
+   "options": [
+    "1 : 4",
+    "25 : 1",
+    "50 : 2",
+    "1 : 2"
+   ],
+   "answer": 0,
+   "hint": "Change both amounts into pence first.",
+   "explain": "£2 = 200p, so the ratio is 50 : 200. Divide both by 50 to get 1 : 4."
+  },
+  {
+   "id": "rat-19",
+   "sub": "ratio",
+   "level": 3,
+   "type": "mc",
+   "q": "Write the ratio 4 : 10 in the form 1 : n.",
+   "options": [
+    "1 : 2.5",
+    "1 : 6",
+    "1 : 2",
+    "2 : 5"
+   ],
+   "answer": 0,
+   "hint": "To make the first number 1, divide both numbers by 4.",
+   "explain": "Divide both sides by 4: 4 ÷ 4 = 1 and 10 ÷ 4 = 2.5. So 4 : 10 = 1 : 2.5."
+  },
+  {
    "id": "rat-06",
    "sub": "share",
    "level": 2,
@@ -145,6 +193,48 @@
    "answer": "45",
    "hint": "4 parts are 20 boys. How many is one part?",
    "explain": "4 parts = 20, so one part = 5. Girls = 5 × 5 = 25. Altogether 20 + 25 = 45 children."
+  },
+  {
+   "id": "rat-20",
+   "sub": "share",
+   "level": 1,
+   "type": "num",
+   "q": "Share 20 sweets in the ratio 1 : 4. How many sweets are in the smaller share?",
+   "answer": "4",
+   "hint": "How many parts are there altogether?",
+   "explain": "1 + 4 = 5 parts. One part = 20 ÷ 5 = 4 sweets. The smaller share is 1 part, which is 4 sweets."
+  },
+  {
+   "id": "rat-21",
+   "sub": "share",
+   "level": 2,
+   "type": "num",
+   "q": "Tom and Ella share £45 in the ratio 4 : 5. How much does Ella get, in pounds?",
+   "answer": "25",
+   "show": "£25",
+   "hint": "Add the parts, then find what one part is worth.",
+   "explain": "4 + 5 = 9 parts. One part = £45 ÷ 9 = £5. Ella gets 5 parts = 5 × £5 = £25."
+  },
+  {
+   "id": "rat-22",
+   "sub": "share",
+   "level": 2,
+   "type": "num",
+   "q": "A bracelet has red, blue and green beads in the ratio 2 : 3 : 5. There are 60 beads. How many beads are blue?",
+   "answer": "18",
+   "hint": "There are 2 + 3 + 5 parts. Find one part first.",
+   "explain": "2 + 3 + 5 = 10 parts. One part = 60 ÷ 10 = 6 beads. Blue is 3 parts = 3 × 6 = 18 beads."
+  },
+  {
+   "id": "rat-23",
+   "sub": "share",
+   "level": 3,
+   "type": "num",
+   "q": "Sam and Kai share some money in the ratio 3 : 7. Kai gets £24 more than Sam. How much does Sam get, in pounds?",
+   "answer": "18",
+   "show": "£18",
+   "hint": "How many more parts does Kai have than Sam? Those parts are worth £24.",
+   "explain": "Kai has 7 − 3 = 4 more parts than Sam, and 4 parts = £24, so 1 part = £6. Sam gets 3 parts = 3 × £6 = £18. (Check: Kai gets £42, and £42 − £18 = £24.)"
   },
   {
    "id": "rat-10",
@@ -206,6 +296,43 @@
    "explain": "12 ÷ 3 = 4 litres per minute. 20 ÷ 4 = 5 minutes."
   },
   {
+   "id": "rat-24",
+   "sub": "proportion",
+   "level": 1,
+   "type": "num",
+   "q": "5 apples cost £1.50. How much does 1 apple cost, in pence?",
+   "answer": "30",
+   "unit": "p",
+   "hint": "Change £1.50 into pence, then divide by 5.",
+   "explain": "£1.50 = 150p. 150 ÷ 5 = 30, so 1 apple costs 30p."
+  },
+  {
+   "id": "rat-25",
+   "sub": "proportion",
+   "level": 2,
+   "type": "mc",
+   "q": "Which pack of dog treats is better value?",
+   "options": [
+    "12 treats for £3.00",
+    "8 treats for £2.40",
+    "They are the same value"
+   ],
+   "answer": 0,
+   "hint": "Work out the cost of one treat in each pack.",
+   "explain": "£3.00 ÷ 12 = 25p per treat. £2.40 ÷ 8 = 30p per treat. 25p is cheaper, so the pack of 12 is better value."
+  },
+  {
+   "id": "rat-26",
+   "sub": "proportion",
+   "level": 2,
+   "type": "num",
+   "q": "A recipe for 12 cupcakes uses 150 g of butter. How much butter is needed for 30 cupcakes?",
+   "answer": "375",
+   "unit": "g",
+   "hint": "Find the butter for 6 cupcakes first (half of the recipe). How many lots of 6 make 30?",
+   "explain": "6 cupcakes need 150 ÷ 2 = 75 g. 30 cupcakes is 5 lots of 6, so 5 × 75 = 375 g."
+  },
+  {
    "id": "rat-15",
    "sub": "scale",
    "level": 2,
@@ -226,6 +353,28 @@
    "unit": "m",
    "hint": "The real car is 20 times as long.",
    "explain": "21 cm × 20 = 420 cm = 4.2 m."
+  },
+  {
+   "id": "rat-27",
+   "sub": "scale",
+   "level": 1,
+   "type": "num",
+   "q": "On a map, 1 cm stands for 5 km. Two towns are 3 cm apart on the map. How far apart are they in real life?",
+   "answer": "15",
+   "unit": "km",
+   "hint": "Each centimetre on the map is 5 km in real life.",
+   "explain": "3 × 5 = 15, so the towns are 15 km apart."
+  },
+  {
+   "id": "rat-28",
+   "sub": "scale",
+   "level": 3,
+   "type": "num",
+   "q": "A map has a scale of 1 : 25,000. A real path is 1.5 km long. How long is the path on the map, in centimetres?",
+   "answer": "6",
+   "unit": "cm",
+   "hint": "Change 1.5 km into centimetres first (1 km = 100,000 cm), then divide by 25,000.",
+   "explain": "1.5 km = 150,000 cm. On the map it is 150,000 ÷ 25,000 = 6 cm."
   }
  ]
 }

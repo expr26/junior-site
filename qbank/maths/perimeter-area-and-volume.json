@@ -83,6 +83,28 @@
    "explain": "Area = 12 × 7 = 84 m². Cost = 84 × £5 = £420."
   },
   {
+   "id": "pav-18",
+   "sub": "rectangles",
+   "level": 1,
+   "type": "num",
+   "q": "A square floor tile has sides of 6 cm. What is its perimeter?",
+   "answer": "24",
+   "unit": "cm",
+   "hint": "A square has 4 equal sides.",
+   "explain": "6 + 6 + 6 + 6 = 4 × 6 = 24 cm."
+  },
+  {
+   "id": "pav-22",
+   "sub": "rectangles",
+   "level": 2,
+   "type": "num",
+   "q": "A rectangle has an area of 54 cm² and a length of 9 cm. What is its width?",
+   "answer": "6",
+   "unit": "cm",
+   "hint": "Length × width = area. Which number times 9 makes 54?",
+   "explain": "Width = 54 ÷ 9 = 6 cm."
+  },
+  {
    "id": "pav-05",
    "sub": "shapes",
    "level": 2,
@@ -164,6 +186,55 @@
    "explain": "The missing sides are 4 cm and 3 cm. Perimeter = 10 + 8 + 6 + 3 + 4 + 5 = 36 cm. (It is the same as the perimeter of the 10 × 8 rectangle.)"
   },
   {
+   "id": "pav-19",
+   "sub": "shapes",
+   "level": 1,
+   "type": "num",
+   "q": "A triangle has sides of 5 cm, 7 cm and 9 cm. What is its perimeter?",
+   "answer": "21",
+   "unit": "cm",
+   "hint": "Perimeter is the distance all the way round.",
+   "explain": "5 + 7 + 9 = 21 cm."
+  },
+  {
+   "id": "pav-23",
+   "sub": "shapes",
+   "level": 2,
+   "type": "num",
+   "q": "What is the area of the triangle?",
+   "answer": "35",
+   "unit": "cm²",
+   "fig": {
+    "type": "rect",
+    "w": 10,
+    "h": 7,
+    "shape": "triangle"
+   },
+   "hint": "Area of a triangle = base × height ÷ 2.",
+   "explain": "10 × 7 = 70, and 70 ÷ 2 = 35 cm²."
+  },
+  {
+   "id": "pav-27",
+   "sub": "shapes",
+   "level": 3,
+   "type": "num",
+   "q": "What is the area of the L shape?",
+   "answer": "88",
+   "unit": "cm²",
+   "fig": {
+    "type": "rect",
+    "w": 12,
+    "h": 9,
+    "shape": "L",
+    "cut": [
+     5,
+     4
+    ]
+   },
+   "hint": "Work out the big rectangle, then take away the missing corner.",
+   "explain": "Big rectangle: 12 × 9 = 108 cm². Missing corner: (12 − 7) × (9 − 5) = 5 × 4 = 20 cm². Area = 108 − 20 = 88 cm²."
+  },
+  {
    "id": "pav-10",
    "sub": "circles",
    "level": 3,
@@ -184,6 +255,28 @@
    "unit": "cm²",
    "hint": "Area of a circle = π × radius × radius.",
    "explain": "3.14 × 5 × 5 = 3.14 × 25 = 78.5 cm²."
+  },
+  {
+   "id": "pav-24",
+   "sub": "circles",
+   "level": 2,
+   "type": "num",
+   "q": "A bicycle wheel has a diameter of 60 cm. Use π = 3.14 to find how far the bike moves when the wheel turns once.",
+   "answer": "188.4",
+   "unit": "cm",
+   "hint": "One full turn moves the bike the distance round the wheel: the circumference.",
+   "explain": "Circumference = π × diameter = 3.14 × 60 = 188.4 cm."
+  },
+  {
+   "id": "pav-28",
+   "sub": "circles",
+   "level": 3,
+   "type": "num",
+   "q": "A circular pond has a radius of 3 m. Use π = 3.14 to find its area.",
+   "answer": "28.26",
+   "unit": "m²",
+   "hint": "Area of a circle = π × radius × radius.",
+   "explain": "3.14 × 3 × 3 = 3.14 × 9 = 28.26 m²."
   },
   {
    "id": "pav-12",
@@ -230,6 +323,44 @@
    "explain": "The faces are 5 × 3 = 15, 5 × 2 = 10 and 3 × 2 = 6, two of each. 2 × (15 + 10 + 6) = 62 cm²."
   },
   {
+   "id": "pav-21",
+   "sub": "volume",
+   "level": 1,
+   "type": "num",
+   "q": "How many 1 cm cubes are needed to build this cuboid?",
+   "answer": "24",
+   "fig": {
+    "type": "cuboid",
+    "l": 4,
+    "w": 2,
+    "h": 3
+   },
+   "hint": "Count the cubes in the bottom layer, then multiply by the number of layers.",
+   "explain": "The bottom layer has 4 × 2 = 8 cubes, and there are 3 layers: 8 × 3 = 24 cubes. (Volume = 24 cm³.)"
+  },
+  {
+   "id": "pav-25",
+   "sub": "volume",
+   "level": 2,
+   "type": "num",
+   "q": "A cuboid has a volume of 60 cm³. It is 5 cm long and 4 cm wide. How tall is it?",
+   "answer": "3",
+   "unit": "cm",
+   "hint": "Volume = length × width × height. Work out length × width first.",
+   "explain": "5 × 4 = 20, so the height is 60 ÷ 20 = 3 cm."
+  },
+  {
+   "id": "pav-29",
+   "sub": "volume",
+   "level": 3,
+   "type": "num",
+   "q": "A cube has a total surface area of 54 cm². What is its volume?",
+   "answer": "27",
+   "unit": "cm³",
+   "hint": "A cube has 6 equal square faces. Find the area of one face, then the length of one side.",
+   "explain": "One face is 54 ÷ 6 = 9 cm², so each side is 3 cm (3 × 3 = 9). Volume = 3 × 3 × 3 = 27 cm³."
+  },
+  {
    "id": "pav-15",
    "sub": "units",
    "level": 1,
@@ -266,6 +397,33 @@
    "unit": "litres",
    "hint": "Find the volume in cm³, then divide by 1000.",
    "explain": "50 × 30 × 40 = 60,000 cm³, and 60,000 ÷ 1000 = 60 litres."
+  },
+  {
+   "id": "pav-20",
+   "sub": "units",
+   "level": 1,
+   "type": "mc",
+   "q": "Which unit would you use for the volume of a juice carton?",
+   "options": [
+    "cm³",
+    "cm²",
+    "cm",
+    "kg"
+   ],
+   "answer": 0,
+   "hint": "Volume is the space inside. It needs cubed units.",
+   "explain": "Volume is measured in cubic units, like cm³. (cm² is for area, cm is for length and kg is for mass.)"
+  },
+  {
+   "id": "pav-26",
+   "sub": "units",
+   "level": 2,
+   "type": "num",
+   "q": "A rug is 150 cm long and 80 cm wide. What is its area in square metres?",
+   "answer": "1.2",
+   "unit": "m²",
+   "hint": "Change both lengths into metres first.",
+   "explain": "150 cm = 1.5 m and 80 cm = 0.8 m. Area = 1.5 × 0.8 = 1.2 m². (Or 12,000 cm² ÷ 10,000 = 1.2 m².)"
   }
  ]
 }

@@ -29,6 +29,9 @@
     { id: 'topic-forces-and-motion', icon: '🧲', name: 'Force master', desc: 'Finish every Forces and motion unit.' },
     { id: 'first-game', icon: '🎮', name: 'Game on', desc: 'Finish your first game.' },
     { id: 'first-video', icon: '🎬', name: 'Watch and learn', desc: 'Watch a whole theory video.' },
+    { id: 'daily-1', icon: '☀️', name: 'Daily starter', desc: 'Finish your first daily challenge.' },
+    { id: 'daily-7', icon: '📆', name: 'Challenge champ', desc: 'Finish 7 daily challenges.' },
+    { id: 'mender-10', icon: '🩹', name: 'Mistake mender', desc: 'Get 10 old mistakes right in My mistakes.' },
     { id: 'welcome-back', icon: '👋', name: 'Welcome back', desc: 'Come back after a few days away.' }
   ];
 
@@ -159,6 +162,29 @@
     return { stars: st, improved: improved, points: pts };
   }
 
+  /* the daily challenge (d = { date, subject }): stars as for a unit, saved under S.daily[date]; only the first finish of a day earns the bonus */
+  function finishDaily(d, firstTry, total) {
+    S.daily = S.daily || {};
+    var had = S.daily[d.date], st = stars(firstTry, total);
+    S.daily[d.date] = { stars: Math.max(st, had ? had.stars : 0), first: Math.max(firstTry, had ? had.first : 0), total: total };
+    var pts = had ? 0 : POINTS.unit + (firstTry === total ? POINTS.perfect : 0);
+    quiet = true;
+    award('daily-1');
+    if (Object.keys(S.daily).length >= 7) award('daily-7');
+    if (firstTry === total) award('perfect');
+    if (st === 3) award('three-stars');
+    quiet = false;
+    if (pts) addXP(pts); else save();
+    return { stars: st, points: pts, again: !!had };
+  }
+
+  /* an old mistake answered right in My mistakes */
+  function mended() {
+    S.mended = (S.mended || 0) + 1;
+    if (S.mended >= 10) award('mender-10');
+    save();
+  }
+
   function drain() { var p = pending; pending = []; return p; }
 
   /* ---------- show ---------- */
@@ -195,10 +221,14 @@
   }
 
   window.JG = { state: function () { return S; }, level: level, LEVELS: LEVELS, BADGES: BADGES, POINTS: POINTS, DAILY_GOAL: DAILY_GOAL,
-    answer: answer, finishUnit: finishUnit, finishGame: finishGame, finishVideo: finishVideo, stars: stars, drain: drain, toast: toast, confetti: confetti, today: today, dayDiff: dayDiff, chip: chip };
+    answer: answer, finishUnit: finishUnit, finishGame: finishGame, finishVideo: finishVideo, finishDaily: finishDaily, mended: mended, stars: stars, drain: drain, toast: toast, confetti: confetti, today: today, dayDiff: dayDiff, chip: chip };
 
   function ready() {
     chip();
+    var mend = document.querySelector('[data-has-mistakes]');   /* home page: show "My mistakes" once there are some */
+    if (mend && S.qb) for (var q in S.qb) if (q.indexOf('_done_') && S.qb[q].r !== 'good') { mend.hidden = false; break; }
+    var dc = document.querySelector('.daily-card small');
+    if (dc && S.daily && S.daily[today()]) dc.textContent = '✅ Done today! Come back tomorrow for five new questions.';
     document.querySelectorAll('[data-stars]').forEach(function (el) {   // stars on topic maps
       var u = S.units[el.getAttribute('data-stars')]; var n = u ? u.stars : 0;
       el.querySelectorAll('i').forEach(function (i, k) { if (k < n) i.className = 'on'; });

@@ -32,14 +32,36 @@
     });
   }
 
-  var raw = document.getElementById('qbdata');
-  if (!raw) {
+  var raw = document.getElementById('qbdata'), list = document.getElementById('qb-list');
+  var mixed = list && list.getAttribute('data-mixed');   /* "daily" or "mistakes": questions from every topic, fetched from the pool */
+  if (!raw && !mixed) {
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bars); else bars();
     return;
   }
+  if (mixed) {
+    fetch(list.getAttribute('data-pool')).then(function (r) { return r.json(); }).then(function (pool) { start(choose(pool), pool); })
+      .catch(function () { document.querySelector('.qb-mixed-msg').textContent = 'Sorry, the questions did not load. Please check your connection and try again.'; });
+  } else start(JSON.parse(raw.textContent));
 
-  var D = JSON.parse(raw.textContent);
-  var list = document.getElementById('qb-list');
+  /* ---------- daily challenge and My mistakes: pick the questions ---------- */
+  function hash(t) { var x = 2166136261; for (var i = 0; i < t.length; i++) { x ^= t.charCodeAt(i); x = Math.imul(x, 16777619); } return x >>> 0; }
+  function choose(pool) {
+    var ids = Object.keys(pool), out;
+    if (mixed === 'daily') {
+      var day = JG.today();
+      ids = ids.filter(function (id) { return pool[id].lv <= 2; }).sort(function (a, b) { return hash(day + a) - hash(day + b); });
+      var m = ids.filter(function (id) { return pool[id].s === 'maths'; }).slice(0, 3), p = ids.filter(function (id) { return pool[id].s !== 'maths'; }).slice(0, 2);
+      out = [m[0], p[0], m[1], p[1], m[2]].filter(Boolean);
+    } else {
+      out = ids.filter(function (id) { var r = S.qb[id]; return r && r.r !== 'good'; })
+        .sort(function (a, b) { return (S.qb[a].r === 'missed' ? 0 : 1) - (S.qb[b].r === 'missed' ? 0 : 1); }).slice(0, 20);
+    }
+    var D = { key: '', subject: '', questions: {} };
+    out.forEach(function (id) { D.questions[id] = pool[id].d; list.insertAdjacentHTML('beforeend', pool[id].h); });
+    return D;
+  }
+
+  function start(D) {
   var mascotSvg = document.querySelector('.qb-owl .mascot').outerHTML;
   var combo = 0;
 
@@ -90,7 +112,7 @@
   function build(li) {
     var id = li.getAttribute('data-id'), q = D.questions[id];
     var area = li.querySelector('.qb-area'), fb = li.querySelector('.q-feedback');
-    var tries = 0, usedHint = false;
+    var tries = 0, usedHint = false, KEY = li.getAttribute('data-key') || D.key, SUBJ = li.getAttribute('data-subject') || D.subject;
     area.innerHTML = ''; fb.innerHTML = ''; fb.className = 'q-feedback';
     li.classList.remove('pop', 'shake');
 
@@ -100,14 +122,14 @@
       if (ok) {
         combo++;
         var r = tries === 1 ? 'good' : 'fixed';
-        if (!before || before.r !== 'good') S.qb[id] = { r: r, t: D.key };
+        if (!before || before.r !== 'good') S.qb[id] = { r: r, t: KEY };
         el.classList.remove('wrong'); el.classList.add('right'); lock();
         li.classList.add('pop');
         var why = '<details class="why"><summary>Why?</summary><div>' + q.explain + '</div></details>';
         if (before && before.r === 'good') {
           say(fb, 'good', 'Still right! You already had this one.', why);
         } else {
-          var pts = JG.answer(tries === 1 ? 'first' : 'second', combo, usedHint, D.subject);
+          var pts = JG.answer(tries === 1 ? 'first' : 'second', combo, usedHint, SUBJ);
           say(fb, 'good', (tries === 1 ? pick(PRAISE) : pick(FIXED)) + ' <span class="plus">+' + pts + ' ⭐</span>', why);
         }
         if (combo === 3 || combo === 5 || combo === 8 || (combo > 8 && combo % 5 === 0)) { JG.confetti(50); if (combo >= 5) JG.toast('🔥 ' + combo + ' in a row!'); }
@@ -120,10 +142,10 @@
         if (el.tagName === 'INPUT') el.select();
       } else {
         combo = 0;
-        if (!before || before.r === 'missed') S.qb[id] = { r: 'missed', t: D.key };
+        if (!before || before.r === 'missed') S.qb[id] = { r: 'missed', t: KEY };
         el.classList.add('wrong'); lock();
         if (q.t === 'mc') area.querySelectorAll('.opt').forEach(function (b) { if (+b.getAttribute('data-i') === q.answer) b.classList.add('right'); });
-        var pts2 = before && before.r === 'good' ? 0 : JG.answer('missed', 0, usedHint, D.subject);
+        var pts2 = before && before.r === 'good' ? 0 : JG.answer('missed', 0, usedHint, SUBJ);
         say(fb, 'missed', pick(MISSED) + (pts2 ? ' <span class="plus">+' + pts2 + ' ⭐ for trying</span>' : ''),
           (q.t === 'num' ? '<p class="answer">Answer: <b>' + q.show + (q.unit ? ' ' + q.unit : '') + '</b></p>' : '') + '<div class="explain">' + q.explain + '</div>');
         done();
@@ -135,6 +157,7 @@
       var again = h('button', 'btn ghost qb-again', 'Try this one again'); again.type = 'button';
       again.addEventListener('click', function () { build(li); });
       fb.appendChild(again);
+      if (mixed) { mixedDone(li, tries === 1 && fb.classList.contains('good')); return; }
       var p = topicDone(D.key), total = Object.keys(D.questions).length;
       if (p.done === total && !S.qb['_done_' + D.key]) {
         S.qb['_done_' + D.key] = { r: 'good', t: '' }; save();
@@ -172,6 +195,30 @@
     }
   }
 
+  /* ---------- daily challenge and My mistakes: the end of the set ---------- */
+  var result = {};   /* question id -> right first time (this visit) */
+  function mixedDone(li, first) {
+    var id = li.getAttribute('data-id');
+    if (mixed === 'mistakes' && first && !(id in result)) JG.mended();
+    if (!(id in result)) result[id] = first;
+    var ids = Object.keys(D.questions), n = Object.keys(result).length;
+    if (mixed !== 'daily' || n < ids.length || mixedDone.shown) return;
+    mixedDone.shown = true;
+    var firstTry = ids.filter(function (k) { return result[k]; }).length;
+    var r = JG.finishDaily({ date: JG.today() }, firstTry, ids.length), badges = JG.drain();
+    var end = document.querySelector('.qb-mixed-end');
+    end.innerHTML = '<div class="end-card card"><div class="end-mascot cheer">' + mascotSvg + '</div>' +
+      '<h2>Daily challenge done!</h2>' +
+      '<div class="big-stars" aria-label="' + r.stars + ' out of 3 stars">' + [1, 2, 3].map(function (k) { return '<i class="' + (k <= r.stars ? 'on' : '') + '" style="animation-delay:' + (k * .25) + 's"></i>'; }).join('') + '</div>' +
+      '<p class="end-score">' + firstTry + ' of ' + ids.length + ' right first time' + (r.points ? ' · <b>+' + r.points + ' ⭐ bonus</b>' : '') + '</p>' +
+      (r.again ? '<p class="small">You already earned today\'s bonus. A new challenge comes tomorrow!</p>' : '<p>Come back tomorrow for five new questions.</p>') +
+      (badges.length ? '<div class="end-badges"><p><b>New badges</b></p>' + badges.map(function (b) { return '<span class="badge-pill"><span>' + b.icon + '</span>' + b.name + '</span>'; }).join('') + '</div>' : '') +
+      '<p class="actions"><a class="btn" href="/my-mistakes/">Fix my mistakes</a><a class="btn ghost" href="/games/">Play a game</a></p></div>';
+    end.hidden = false;
+    end.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    JG.confetti(r.stars === 3 ? 180 : 90);
+  }
+
   /* ---------- filters ---------- */
   var F = { sub: '', level: '', mine: '' };
   var items = [].slice.call(list.querySelectorAll('.qb-q'));
@@ -184,8 +231,22 @@
     quiz.forEach(function (li) { list.appendChild(li); build(li); });   /* fresh cards, so each quiz can be answered again */
   }
   var box = document.getElementById('qb-filters');
+  if (!box) {   /* daily challenge and My mistakes have no filters */
+    document.documentElement.classList.add('qb-live');
+    items.forEach(function (li, k) { li.querySelector('.qb-n').textContent = k + 1; setStatus(li); build(li); });
+    var msg = document.querySelector('.qb-mixed-msg');
+    if (mixed === 'daily') {
+      var had = (S.daily || {})[JG.today()];
+      msg.textContent = had ? '✅ You finished today\'s challenge (' + had.first + ' of ' + had.total + ' first time). You can try it again for fun.' : 'Today\'s challenge: ' + items.length + ' questions.';
+    } else {
+      msg.innerHTML = items.length ? 'You have <b>' + items.length + '</b> question' + (items.length === 1 ? '' : 's') + ' to fix' + (items.length === 20 ? ' (showing the first 20)' : '') + '.' :
+        '🎉 No mistakes to fix right now! Try the <a href="/daily/">daily challenge</a> or the <a href="/question-bank/">question bank</a>.';
+    }
+    return;
+  }
 
   function counts() {
+    if (!box) return;
     var nNew = 0, nMis = 0;
     items.forEach(function (li) { var r = S.qb[li.getAttribute('data-id')]; if (!r) nNew++; else if (r.r !== 'good') nMis++; });
     box.querySelector('[data-f="mine"][data-v="new"] .qb-c').textContent = nNew;
@@ -222,4 +283,5 @@
   box.hidden = false;
   counts(); apply(); bars();
   if (location.hash) { var t = document.getElementById(location.hash.slice(1)); if (t) t.scrollIntoView(); }
+  }
 })();

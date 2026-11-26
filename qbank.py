@@ -386,9 +386,71 @@ def worksheet_page(s, plan, t):
     return (f"{ROOT}{s['slug']}/{t['slug']}/worksheet/", meta, body, f"qbank/{s['slug']}/{t['slug']}.json")
 
 
+POOL = "/static/qb-pool.json"
+POOL_URL = POOL
+
+
+def write_pool(data):
+    """Every question, ready to drop into a page, for the daily challenge and My mistakes (static/js/qbank.js fetches it)."""
+    pool = {}
+    for s, rows in data:
+        subj = "maths" if s["slug"] == "maths" else "science"
+        for plan, t in rows:
+            if not t:
+                continue
+            key = f"{s['slug']}/{t['slug']}"
+            names = {x["slug"]: t["title"] for x in t["subtopics"]}   # the chip shows the topic, as questions come from everywhere
+            for q in t["questions"]:
+                li = _question_html(0, q, names).replace(
+                    f'data-id="{q["id"]}"', f'data-id="{q["id"]}" data-key="{key}" data-subject="{subj}"', 1)
+                pool[q["id"]] = {"k": key, "s": subj, "lv": q["level"], "h": li.strip(), "d": q["_data"],
+                                 "u": f"{ROOT}{s['slug']}/{t['slug']}/#{q['id']}"}
+    out = HERE / "dist" / POOL.lstrip("/")
+    blob = json.dumps(pool, ensure_ascii=False, separators=(",", ":"))
+    out.write_text(blob, encoding="utf-8")
+    global POOL_URL
+    POOL_URL = POOL + "?v=" + hashlib.md5(blob.encode()).hexdigest()[:8]   # a new version is fetched as soon as questions change
+
+
+def _mixed_page(url, mode, title, h1, lede, bubble, meta_desc, noindex):
+    body = CSS + f"""
+<section class="hero qb-hero">
+  <div class="wrap narrow">
+    {_crumbs((h1, None))}
+    <h1>{h1}</h1>
+    <p class="lede">{lede}</p>
+  </div>
+</section>
+<section class="section tight qb-main">
+  <div class="wrap narrow">
+    <div class="runner-mascot qb-owl">{mascot()}<p class="bubble">{bubble}</p></div>
+    <p class="qb-mixed-msg note" aria-live="polite"><noscript>This page needs JavaScript switched on.</noscript></p>
+    <ol class="qb-list" id="qb-list" data-mixed="{mode}" data-pool="{POOL_URL}"></ol>
+    <div class="qb-mixed-end" hidden></div>
+  </div>
+</section>
+<script src="/static/js/qbank.js" defer></script>"""
+    return (url, {"title": title, "description": meta_desc, "body_class": "qbank qb-topic-page qb-mixed", "noindex": noindex}, body, "qbank.py")
+
+
+def daily_page():
+    return _mixed_page("/daily/", "daily", "Daily maths and science challenge for ages 9 to 14", "Daily challenge",
+                       "Five new questions every day: three Maths and two Physics. Finish them to earn bonus stars and keep your streak going.",
+                       "Today's five are waiting! No timer, and you get a hint if you need one.",
+                       "A free daily challenge of five KS3 Maths and Physics questions, with hints, stars and streaks. No timer, no sign-up.", False)
+
+
+def mistakes_page():
+    return _mixed_page("/my-mistakes/", "mistakes", "My mistakes", "My mistakes",
+                       "Questions you found tricky, from every topic. Get one right first time and it leaves the list.",
+                       "Mistakes are how brains grow. Let's fix a few!",
+                       "Practise the questions you found tricky.", True)
+
+
 def pages():
     data = load()
-    out = [hub_page(data)]
+    write_pool(data)
+    out = [hub_page(data), daily_page(), mistakes_page()]
     for s, rows in data:
         out.append(subject_page(s, rows))
         live = [(plan, t) for plan, t in rows if t]

@@ -939,3 +939,17 @@ button.am-tile:hover:not(:disabled){transform:translateY(-3px)}button.am-tile:di
 .sb-board{fill:#D9A066}.sb-thumb{font-size:44px}
 .sb-head{fill:#E5484D}.sb-shaft{fill:#8A94A6;stroke:#55526E;stroke-width:1.5}
 .sb-lead{stroke:#55526E;stroke-width:1.5}
+
+/* ---------- daily challenge and My mistakes cards (home page) ---------- */
+.daily-strip .wrap{display:grid;gap:12px}
+@media (min-width:720px){.daily-strip .wrap{grid-template-columns:1fr 1fr}}
+.daily-card{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:var(--radius);background:linear-gradient(120deg,#FFF1C9,#FFD8C2);border:3px solid var(--sun);color:#1E1B3A;text-decoration:none;box-shadow:0 6px 0 #E0A800}
+.daily-card[hidden]{display:none}
+.daily-card.mend{background:linear-gradient(120deg,#E3F8F3,#DCD3FF);border-color:var(--sci);box-shadow:0 6px 0 #0B7A70}
+.daily-card b{display:block;font:700 22px/1.2 var(--serif)}
+.daily-card small{display:block;font-size:16px;color:#3F3A5E}
+.daily-ic{font-size:38px;line-height:1}
+.daily-go{margin-left:auto;font:700 28px/1 var(--serif)}
+.daily-card:hover{transform:translateY(-2px)}
+.qb-mixed-end{margin-top:20px}
+.qb-mixed-end .end-card{text-align:center;padding:20px}

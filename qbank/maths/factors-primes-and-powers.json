@@ -1,0 +1,244 @@
+{
+ "slug": "factors-primes-and-powers",
+ "title": "Factors, primes and powers",
+ "ks3": "Number: factors, multiples, primes, HCF, LCM, powers and roots",
+ "art": "factors",
+ "intro": "Factors, multiples and prime numbers, prime factor trees, HCF and LCM, and squares, cubes and their roots.",
+ "description": "Free KS3 Maths questions with answers on factors, multiples, prime numbers, prime factorisation, HCF and LCM, squares, cubes and roots. Marked instantly, for Year 7, 8 and 9 (ages 9 to 14).",
+ "subtopics": [
+  {
+   "slug": "factors",
+   "title": "Factors and HCF"
+  },
+  {
+   "slug": "multiples",
+   "title": "Multiples and LCM"
+  },
+  {
+   "slug": "primes",
+   "title": "Prime numbers"
+  },
+  {
+   "slug": "powers",
+   "title": "Powers and roots"
+  }
+ ],
+ "questions": [
+  {
+   "id": "fac-01",
+   "sub": "factors",
+   "level": 1,
+   "type": "mc",
+   "q": "Which of these is a factor of 18?",
+   "options": [
+    "6",
+    "4",
+    "8",
+    "36"
+   ],
+   "answer": 0,
+   "hint": "A factor divides into 18 exactly, with nothing left over.",
+   "explain": "18 ÷ 6 = 3 exactly, so 6 is a factor. 4 and 8 leave a remainder, and 36 is a multiple of 18, not a factor."
+  },
+  {
+   "id": "fac-02",
+   "sub": "factors",
+   "level": 1,
+   "type": "num",
+   "q": "How many factors does 12 have?",
+   "answer": "6",
+   "hint": "List them in pairs that multiply to 12: 1 × 12, 2 × …",
+   "explain": "The factor pairs are 1 × 12, 2 × 6 and 3 × 4. So the factors are 1, 2, 3, 4, 6 and 12: that is 6 factors."
+  },
+  {
+   "id": "fac-03",
+   "sub": "factors",
+   "level": 2,
+   "type": "num",
+   "q": "What is the highest common factor (HCF) of 24 and 36?",
+   "answer": "12",
+   "hint": "List the factors of each number and find the biggest one in both lists.",
+   "explain": "Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. The biggest in both is 12."
+  },
+  {
+   "id": "fac-04",
+   "sub": "factors",
+   "level": 3,
+   "type": "num",
+   "q": "Ali puts 24 apples and 40 oranges into identical fruit bags, with nothing left over. What is the largest number of bags that can be made?",
+   "answer": "8",
+   "hint": "The number of bags must divide both 24 and 40. You want the biggest such number.",
+   "explain": "This is the HCF of 24 and 40. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Factors of 40: 1, 2, 4, 5, 8, 10, 20, 40. The HCF is 8, so 8 bags, each with 3 apples and 5 oranges."
+  },
+  {
+   "id": "fac-05",
+   "sub": "multiples",
+   "level": 1,
+   "type": "mc",
+   "q": "Which number is a multiple of 7?",
+   "options": [
+    "42",
+    "27",
+    "17",
+    "57"
+   ],
+   "answer": 0,
+   "hint": "Count up the 7 times table: 7, 14, 21, …",
+   "explain": "6 × 7 = 42. The others are not in the 7 times table (57 = 3 × 19)."
+  },
+  {
+   "id": "fac-06",
+   "sub": "multiples",
+   "level": 2,
+   "type": "num",
+   "q": "What is the lowest common multiple (LCM) of 4 and 6?",
+   "answer": "12",
+   "hint": "Write out the multiples of each and find the first one in both lists.",
+   "explain": "Multiples of 4: 4, 8, 12, 16, … Multiples of 6: 6, 12, 18, … The first in both lists is 12."
+  },
+  {
+   "id": "fac-07",
+   "sub": "multiples",
+   "level": 3,
+   "type": "num",
+   "q": "One bus leaves every 12 minutes and another leaves every 18 minutes. They both leave at 9:00. How many minutes later do they next leave together?",
+   "answer": "36",
+   "unit": "minutes",
+   "hint": "You need the lowest common multiple of 12 and 18.",
+   "explain": "Multiples of 12: 12, 24, 36, … Multiples of 18: 18, 36, … The LCM is 36, so they leave together again after 36 minutes, at 9:36."
+  },
+  {
+   "id": "fac-08",
+   "sub": "primes",
+   "level": 1,
+   "type": "mc",
+   "q": "Which of these is a prime number?",
+   "options": [
+    "29",
+    "21",
+    "27",
+    "39"
+   ],
+   "answer": 0,
+   "hint": "A prime number has exactly two factors: 1 and itself.",
+   "explain": "29 can only be divided by 1 and 29. The others are not prime: 21 = 3 × 7, 27 = 3 × 9 and 39 = 3 × 13."
+  },
+  {
+   "id": "fac-09",
+   "sub": "primes",
+   "level": 2,
+   "type": "num",
+   "q": "How many prime numbers are there between 10 and 20?",
+   "answer": "4",
+   "hint": "Check each number from 11 to 19. Even numbers (except 2) are never prime.",
+   "explain": "The primes between 10 and 20 are 11, 13, 17 and 19. That is 4. (15 = 3 × 5, so it is not prime.)"
+  },
+  {
+   "id": "fac-10",
+   "sub": "primes",
+   "level": 2,
+   "type": "mc",
+   "q": "Is 1 a prime number?",
+   "options": [
+    "No, because a prime has exactly two factors and 1 has only one",
+    "Yes, because it only divides by 1 and itself",
+    "Yes, because it is odd",
+    "No, because it is too small to be a number"
+   ],
+   "answer": 0,
+   "hint": "Think about how many factors a prime number must have.",
+   "explain": "A prime number has exactly two different factors. 1 has only one factor (itself), so 1 is not prime. The smallest prime is 2."
+  },
+  {
+   "id": "fac-11",
+   "sub": "primes",
+   "level": 3,
+   "type": "mc",
+   "q": "Which shows 60 written as a product of prime factors?",
+   "options": [
+    "2² × 3 × 5",
+    "2 × 3 × 10",
+    "4 × 15",
+    "2 × 3² × 5"
+   ],
+   "answer": 0,
+   "hint": "Every number in the answer must be prime, and they must multiply to 60.",
+   "explain": "60 = 2 × 30 = 2 × 2 × 15 = 2 × 2 × 3 × 5 = 2² × 3 × 5. The others use 10, 4 or 15, which are not prime, or multiply to 90."
+  },
+  {
+   "id": "fac-12",
+   "sub": "powers",
+   "level": 1,
+   "type": "num",
+   "q": "Work out 7²",
+   "answer": "49",
+   "hint": "7² means 7 × 7.",
+   "explain": "7² = 7 × 7 = 49."
+  },
+  {
+   "id": "fac-13",
+   "sub": "powers",
+   "level": 1,
+   "type": "num",
+   "q": "What is the square root of 81?",
+   "answer": "9",
+   "hint": "Which number times itself makes 81?",
+   "explain": "9 × 9 = 81, so the square root of 81 is 9."
+  },
+  {
+   "id": "fac-14",
+   "sub": "powers",
+   "level": 2,
+   "type": "num",
+   "q": "Work out 4³",
+   "answer": "64",
+   "hint": "4³ means 4 × 4 × 4.",
+   "explain": "4 × 4 = 16, and 16 × 4 = 64."
+  },
+  {
+   "id": "fac-15",
+   "sub": "powers",
+   "level": 2,
+   "type": "num",
+   "q": "What is the cube root of 125?",
+   "answer": "5",
+   "hint": "Which number times itself times itself makes 125?",
+   "explain": "5 × 5 × 5 = 125, so the cube root of 125 is 5."
+  },
+  {
+   "id": "fac-16",
+   "sub": "powers",
+   "level": 2,
+   "type": "num",
+   "q": "Work out 2⁵",
+   "answer": "32",
+   "hint": "Multiply 2 by itself 5 times.",
+   "explain": "2 × 2 × 2 × 2 × 2 = 32."
+  },
+  {
+   "id": "fac-17",
+   "sub": "powers",
+   "level": 3,
+   "type": "mc",
+   "q": "Which is bigger: 2⁶ or 6²?",
+   "options": [
+    "2⁶",
+    "6²",
+    "They are the same"
+   ],
+   "answer": 0,
+   "hint": "Work out each one.",
+   "explain": "2⁶ = 2 × 2 × 2 × 2 × 2 × 2 = 64 and 6² = 6 × 6 = 36. So 2⁶ is bigger."
+  },
+  {
+   "id": "fac-18",
+   "sub": "powers",
+   "level": 3,
+   "type": "num",
+   "q": "5³ × 5⁴ = 5ⁿ. What is n?",
+   "answer": "7",
+   "hint": "Write it out: (5 × 5 × 5) × (5 × 5 × 5 × 5). How many 5s?",
+   "explain": "There are 3 + 4 = 7 fives multiplied together, so 5³ × 5⁴ = 5⁷. When you multiply powers of the same number, add the powers."
+  }
+ ]
+}

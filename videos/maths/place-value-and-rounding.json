@@ -1,0 +1,62 @@
+{
+  "title": "Place value and rounding",
+  "description": "Animated KS3 Maths lesson on place value and rounding for ages 9 to 14: what each digit is worth, decimals, ordering numbers, rounding to the nearest 10 or 100 and to decimal places, multiplying and dividing by 10, 100 and 1000, and estimating with significant figures.",
+  "intro": "What each digit is worth, putting decimals in order, rounding, × and ÷ by 10, 100 and 1000, and quick estimates, explained by the owl in five short parts.",
+  "chapters": [
+    {
+      "title": "What each digit is worth",
+      "steps": [
+        {"say": "Every digit sits in a **place**. The place tells you what the digit is worth.", "do": "pv-chart"},
+        {"say": "In 4,735 the 7 is in the **hundreds** column, so it is worth **700**. 4,735 = 4000 + 700 + 30 + 5.", "speak": "In four thousand seven hundred and thirty five, the 7 is in the hundreds column, so it is worth 700. Four thousand seven hundred and thirty five equals 4000, plus 700, plus 30, plus 5.", "do": "pv-values"},
+        {"say": "After the decimal point come **tenths**, **hundredths** and **thousandths**.", "do": "pv-decimals"},
+        {"say": "In 3.482 the 8 is in the hundredths column, so it is worth **8 hundredths**, which is 0.08.", "speak": "In 3 point 4 8 2, the 8 is in the hundredths column, so it is worth 8 hundredths, which is nought point nought 8.", "do": "pv-decimal-value"}
+      ],
+      "check": {"q": "In the number 5,286, what is the value of the digit 2?", "options": ["200", "20", "2", "2000"], "answer": 0,
+                "hint": "Count the columns from the right: ones, tens, hundreds, thousands.", "explain": "The 2 is in the **hundreds** column, so it is worth **200**. 5,286 = 5000 + 200 + 80 + 6."}
+    },
+    {
+      "title": "Putting numbers in order",
+      "steps": [
+        {"say": "To compare decimals, write them in a column with the **decimal points lined up**.", "do": "order-line-up"},
+        {"say": "Fill the empty places with **zeros**, so every number has the same number of digits. A zero at the end does not change a decimal.", "do": "order-zeros"},
+        {"say": "Now compare them like whole numbers: 700 is the biggest, so **0.7** is the biggest. 0.07 is the smallest.", "speak": "Now compare them like whole numbers: 700 is the biggest, so nought point 7 is the biggest. Nought point nought 7 is the smallest.", "do": "order-result"},
+        {"say": "The sign **<** means 'is less than' and **>** means 'is greater than'. The open side faces the bigger number: 3.06 < 3.6.", "speak": "The less than sign means is less than, and the greater than sign means is greater than. The open side faces the bigger number: 3 point nought 6 is less than 3 point 6.", "do": "order-signs"}
+      ],
+      "check": {"q": "Which number is the biggest?", "options": ["0.8", "0.799", "0.75", "0.09"], "answer": 0,
+                "hint": "Line up the decimal points and fill the gaps with zeros: 0.800, 0.799, 0.750, 0.090.", "explain": "0.800 is bigger than 0.799, so **0.8** is the biggest. More digits does not mean bigger!"}
+    },
+    {
+      "title": "Rounding",
+      "steps": [
+        {"say": "Let's round 467 to the nearest 10. On a number line, 467 sits between **460** and **470**.", "do": "round-line"},
+        {"say": "467 is closer to 470, so 467 rounded to the nearest 10 is **470**.", "do": "round-closer"},
+        {"say": "The quick rule: look at the digit just after the place you are rounding to. **5 or more**, round up. **4 or less**, keep it the same. 3,850 to the nearest 100 is 3,900.", "speak": "The quick rule: look at the digit just after the place you are rounding to. 5 or more, round up. 4 or less, keep it the same. 3 thousand 8 hundred and 50 to the nearest 100 is 3 thousand 9 hundred.", "do": "round-rule"},
+        {"say": "Decimal places work the same way. To round 6.47 to **1 decimal place**, look at the 7. It is 5 or more, so round up to **6.5**.", "speak": "Decimal places work the same way. To round 6 point 4 7 to 1 decimal place, look at the 7. It is 5 or more, so round up to 6 point 5.", "do": "round-dp"}
+      ],
+      "check": {"q": "Round 2,649 to the nearest 100.", "options": ["2,600", "2,700", "2,650", "3,000"], "answer": 0,
+                "hint": "Look at the tens digit, the one just after the hundreds.", "explain": "The tens digit is **4**, which is 4 or less, so the hundreds stay the same: 2,649 rounds to **2,600**."}
+    },
+    {
+      "title": "Multiplying and dividing by 10, 100 and 1000",
+      "steps": [
+        {"say": "When you multiply by 10, every digit moves **one place to the left**. 36 × 10 = 360.", "speak": "When you multiply by 10, every digit moves one place to the left. 36 times 10 equals 360.", "do": "times-ten"},
+        {"say": "× 100 moves the digits **two places** left. 4.7 × 100 = 470. A zero fills the empty ones place.", "speak": "Times 100 moves the digits two places left. 4 point 7 times 100 equals 470. A zero fills the empty ones place.", "do": "times-hundred"},
+        {"say": "Dividing moves the digits to the **right**. ÷ 1000 moves them three places: 52 ÷ 1000 = 0.052.", "speak": "Dividing moves the digits to the right. Dividing by 1000 moves them three places: 52 divided by 1000 equals nought point nought 5 2.", "do": "divide-thousand"},
+        {"say": "Count the zeros: 10 has one, 100 has two, 1000 has three. That is how many places the digits move.", "do": "count-zeros"}
+      ],
+      "check": {"q": "Work out 3.2 × 100", "options": ["320", "32", "3200", "3.200"], "answer": 0,
+                "hint": "× 100 moves every digit two places to the left.", "explain": "The 3 moves from ones to hundreds and the 2 from tenths to tens: 3.2 × 100 = **320**."}
+    },
+    {
+      "title": "Estimating",
+      "steps": [
+        {"say": "The **first significant figure** is the first digit that is not zero. To estimate, round each number to **1 significant figure**.", "do": "sf-title"},
+        {"say": "49 becomes 50, 21 becomes 20, 6.2 becomes 6 and 0.38 becomes 0.4.", "speak": "49 becomes 50, 21 becomes 20, 6 point 2 becomes 6, and nought point 3 8 becomes nought point 4.", "do": "sf-examples"},
+        {"say": "Estimate 49 × 21: round to 50 × 20 = 1000. The exact answer is 1029, so the estimate is close.", "speak": "Estimate 49 times 21: round to 50 times 20, which equals 1000. The exact answer is 1029, so the estimate is close.", "do": "estimate-calc"},
+        {"say": "Estimates help you spot mistakes. If your calculator said 102.9, you would know something went wrong.", "speak": "Estimates help you spot mistakes. If your calculator said 102 point 9, you would know something went wrong.", "do": "estimate-check"}
+      ],
+      "check": {"q": "Estimate 31 × 58 by rounding each number to 1 significant figure.", "options": ["1800", "1500", "180", "2000"], "answer": 0,
+                "hint": "31 rounds to 30 and 58 rounds to 60.", "explain": "30 × 60 = **1800**. (The exact answer is 1798, very close!)"}
+    }
+  ]
+}

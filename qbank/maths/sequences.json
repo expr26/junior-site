@@ -1,0 +1,242 @@
+{
+ "slug": "sequences",
+ "title": "Sequences",
+ "ks3": "Algebra: sequences, term-to-term rules and the nth term",
+ "art": "sequences",
+ "intro": "Spot the pattern and keep it going. Practise term-to-term rules, special sequences, growing patterns and the nth term.",
+ "description": "Free KS3 Maths sequences questions with answers: next terms, term-to-term rules, square and triangular numbers, Fibonacci, patterns and the nth term. Marked instantly, for Year 7, 8 and 9 (ages 9 to 14).",
+ "subtopics": [
+  {
+   "slug": "next",
+   "title": "Next terms and rules"
+  },
+  {
+   "slug": "special",
+   "title": "Special sequences"
+  },
+  {
+   "slug": "patterns",
+   "title": "Growing patterns"
+  },
+  {
+   "slug": "nth",
+   "title": "The nth term"
+  }
+ ],
+ "questions": [
+  {
+   "id": "seq-01",
+   "sub": "next",
+   "level": 1,
+   "type": "num",
+   "q": "What is the next number? 4, 9, 14, 19, …",
+   "answer": "24",
+   "hint": "How much does it go up by each time?",
+   "explain": "It goes up by 5 each time: 19 + 5 = 24."
+  },
+  {
+   "id": "seq-02",
+   "sub": "next",
+   "level": 1,
+   "type": "num",
+   "q": "What is the next number? 50, 44, 38, 32, …",
+   "answer": "26",
+   "hint": "It goes down by the same amount each time.",
+   "explain": "It goes down by 6 each time: 32 − 6 = 26."
+  },
+  {
+   "id": "seq-03",
+   "sub": "next",
+   "level": 1,
+   "type": "mc",
+   "q": "What is the term-to-term rule for 3, 6, 12, 24, …?",
+   "options": [
+    "Multiply by 2",
+    "Add 3",
+    "Add 6",
+    "Multiply by 3"
+   ],
+   "answer": 0,
+   "hint": "The gaps are 3, 6, 12, so it is not adding the same number.",
+   "explain": "Each term is double the one before: 3 × 2 = 6, 6 × 2 = 12, 12 × 2 = 24."
+  },
+  {
+   "id": "seq-04",
+   "sub": "next",
+   "level": 2,
+   "type": "num",
+   "q": "A sequence starts at 7 and the rule is \"add 5\". What is the 4th term?",
+   "answer": "22",
+   "hint": "Write out the terms: 7, 12, …",
+   "explain": "The terms are 7, 12, 17, 22. The 4th term is 22."
+  },
+  {
+   "id": "seq-05",
+   "sub": "next",
+   "level": 3,
+   "type": "num",
+   "q": "What is the 6th term of 2, 6, 18, 54, …?",
+   "answer": "486",
+   "hint": "Each term is multiplied by the same number.",
+   "explain": "The rule is \"multiply by 3\": 54 × 3 = 162 (5th term) and 162 × 3 = 486 (6th term)."
+  },
+  {
+   "id": "seq-06",
+   "sub": "special",
+   "level": 2,
+   "type": "num",
+   "q": "What is the next number? 1, 4, 9, 16, 25, …",
+   "answer": "36",
+   "hint": "Try 1 × 1, 2 × 2, 3 × 3, …",
+   "explain": "These are the square numbers. The next is 6 × 6 = 36."
+  },
+  {
+   "id": "seq-07",
+   "sub": "special",
+   "level": 2,
+   "type": "num",
+   "q": "What is the next number? 1, 3, 6, 10, 15, …",
+   "answer": "21",
+   "hint": "The gaps are 2, 3, 4, 5, …",
+   "explain": "These are the triangle numbers. The gaps grow by 1, so the next gap is 6: 15 + 6 = 21."
+  },
+  {
+   "id": "seq-08",
+   "sub": "special",
+   "level": 2,
+   "type": "num",
+   "q": "What is the next number? 1, 1, 2, 3, 5, 8, …",
+   "answer": "13",
+   "hint": "Look at the two numbers before each term.",
+   "explain": "Each term is the sum of the two before it (the Fibonacci sequence): 5 + 8 = 13."
+  },
+  {
+   "id": "seq-09",
+   "sub": "patterns",
+   "level": 1,
+   "type": "num",
+   "q": "Look at the pattern. How many squares will Pattern 4 have?",
+   "answer": "9",
+   "fig": {
+    "type": "pattern",
+    "counts": [
+     3,
+     5,
+     7
+    ]
+   },
+   "hint": "How many squares are added each time?",
+   "explain": "Each pattern adds 2 squares: 3, 5, 7, so Pattern 4 has 9."
+  },
+  {
+   "id": "seq-10",
+   "sub": "patterns",
+   "level": 2,
+   "type": "num",
+   "q": "Look at the pattern. How many squares will Pattern 10 have?",
+   "answer": "21",
+   "fig": {
+    "type": "pattern",
+    "counts": [
+     3,
+     5,
+     7
+    ]
+   },
+   "hint": "Pattern 1 has 3 squares and each new pattern adds 2. How many 2s are added to get to Pattern 10?",
+   "explain": "From Pattern 1 to Pattern 10 you add 2 nine times: 3 + 9 × 2 = 21. Or use the rule 2n + 1: 2 × 10 + 1 = 21."
+  },
+  {
+   "id": "seq-11",
+   "sub": "patterns",
+   "level": 3,
+   "type": "mc",
+   "q": "Look at the pattern. Which rule gives the number of squares in Pattern n?",
+   "options": [
+    "2n + 1",
+    "n + 2",
+    "3n",
+    "2n + 3"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "pattern",
+    "counts": [
+     3,
+     5,
+     7
+    ]
+   },
+   "hint": "It goes up by 2 each time, so the rule starts with 2n. Then check Pattern 1.",
+   "explain": "Going up by 2 means 2n. For Pattern 1, 2 × 1 = 2, but there are 3 squares, so add 1: 2n + 1. Check Pattern 3: 2 × 3 + 1 = 7. ✓"
+  },
+  {
+   "id": "seq-12",
+   "sub": "nth",
+   "level": 2,
+   "type": "num",
+   "q": "The nth term of a sequence is 3n + 1. What is the 10th term?",
+   "answer": "31",
+   "hint": "Put n = 10 into 3n + 1.",
+   "explain": "3 × 10 + 1 = 31."
+  },
+  {
+   "id": "seq-13",
+   "sub": "nth",
+   "level": 2,
+   "type": "num",
+   "q": "The nth term of a sequence is 5n − 2. What is the 1st term?",
+   "answer": "3",
+   "hint": "Put n = 1.",
+   "explain": "5 × 1 − 2 = 3."
+  },
+  {
+   "id": "seq-14",
+   "sub": "nth",
+   "level": 3,
+   "type": "mc",
+   "q": "What is the nth term of 5, 8, 11, 14, …?",
+   "options": [
+    "3n + 2",
+    "n + 3",
+    "3n + 5",
+    "5n + 3"
+   ],
+   "answer": 0,
+   "hint": "It goes up by 3, so start with 3n. What do you add to 3 to get the first term, 5?",
+   "explain": "Going up by 3 means 3n. When n = 1, 3n = 3, and the first term is 5, so add 2: 3n + 2. Check: 3 × 4 + 2 = 14. ✓"
+  },
+  {
+   "id": "seq-15",
+   "sub": "nth",
+   "level": 3,
+   "type": "mc",
+   "q": "What is the nth term of 10, 8, 6, 4, …?",
+   "options": [
+    "12 − 2n",
+    "2n + 8",
+    "10 − 2n",
+    "n − 2"
+   ],
+   "answer": 0,
+   "hint": "It goes down by 2, so it has −2n in it.",
+   "explain": "Going down by 2 means −2n. When n = 1, −2n = −2, and the first term is 10, so add 12: 12 − 2n. Check: 12 − 2 × 4 = 4. ✓"
+  },
+  {
+   "id": "seq-16",
+   "sub": "nth",
+   "level": 3,
+   "type": "mc",
+   "q": "Is 50 a term of the sequence with nth term 4n + 1?",
+   "options": [
+    "No",
+    "Yes, it is the 12th term",
+    "Yes, it is the 13th term",
+    "Yes, it is the 50th term"
+   ],
+   "answer": 0,
+   "hint": "Try solving 4n + 1 = 50. Does n come out as a whole number?",
+   "explain": "4n + 1 = 50 gives 4n = 49 and n = 12.25, which is not a whole number, so 50 is not in the sequence. (Another way: 4n + 1 is always odd, and 50 is even.)"
+  }
+ ]
+}

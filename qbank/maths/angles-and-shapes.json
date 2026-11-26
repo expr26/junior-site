@@ -1,0 +1,291 @@
+{
+ "slug": "angles-and-shapes",
+ "title": "Angles and shapes",
+ "ks3": "Geometry and measures: angle facts, parallel lines, polygons and properties of shapes",
+ "art": "angles",
+ "intro": "Acute, obtuse and reflex angles, angle rules, parallel lines, polygons and the properties of 2D and 3D shapes.",
+ "description": "Free KS3 Maths angles and shapes questions with answers: types of angle, angles on a line, round a point and in a triangle, parallel lines, polygons and properties of shapes. Marked instantly, for Year 7, 8 and 9 (ages 9 to 14).",
+ "subtopics": [
+  {
+   "slug": "types",
+   "title": "Types of angle"
+  },
+  {
+   "slug": "rules",
+   "title": "Angle rules"
+  },
+  {
+   "slug": "parallel",
+   "title": "Crossing and parallel lines"
+  },
+  {
+   "slug": "polygons",
+   "title": "Polygons"
+  },
+  {
+   "slug": "shapes",
+   "title": "Properties of shapes"
+  }
+ ],
+ "questions": [
+  {
+   "id": "ang-01",
+   "sub": "types",
+   "level": 1,
+   "type": "mc",
+   "q": "What type of angle is 120°?",
+   "options": [
+    "Obtuse",
+    "Acute",
+    "Right angle",
+    "Reflex"
+   ],
+   "answer": 0,
+   "hint": "Is it more or less than 90°? More or less than 180°?",
+   "explain": "120° is between 90° and 180°, so it is obtuse."
+  },
+  {
+   "id": "ang-02",
+   "sub": "types",
+   "level": 1,
+   "type": "mc",
+   "q": "What do we call an angle that is less than 90°?",
+   "options": [
+    "Acute",
+    "Obtuse",
+    "Reflex",
+    "Straight"
+   ],
+   "answer": 0,
+   "hint": "It is smaller than a right angle.",
+   "explain": "An angle less than 90° is acute. Between 90° and 180° is obtuse, and more than 180° is reflex."
+  },
+  {
+   "id": "ang-03",
+   "sub": "rules",
+   "level": 1,
+   "type": "num",
+   "q": "The two angles are on a straight line. Find x.",
+   "answer": "50",
+   "unit": "°",
+   "fig": {
+    "type": "angles",
+    "kind": "line",
+    "a": 130,
+    "labels": [
+     "130°",
+     "x"
+    ]
+   },
+   "hint": "Angles on a straight line add up to 180°.",
+   "explain": "x = 180° − 130° = 50°."
+  },
+  {
+   "id": "ang-04",
+   "sub": "rules",
+   "level": 2,
+   "type": "num",
+   "q": "Find the angle x in the triangle.",
+   "answer": "70",
+   "unit": "°",
+   "fig": {
+    "type": "angles",
+    "kind": "triangle",
+    "a": 50,
+    "b": 60,
+    "labels": [
+     "50°",
+     "60°",
+     "x"
+    ]
+   },
+   "hint": "The angles in a triangle add up to 180°.",
+   "explain": "50° + 60° = 110°, so x = 180° − 110° = 70°."
+  },
+  {
+   "id": "ang-05",
+   "sub": "rules",
+   "level": 2,
+   "type": "num",
+   "q": "Three angles meet at a point. Find y.",
+   "answer": "150",
+   "unit": "°",
+   "fig": {
+    "type": "angles",
+    "kind": "point",
+    "a": [
+     90,
+     120,
+     150
+    ],
+    "labels": [
+     "90°",
+     "120°",
+     "y"
+    ]
+   },
+   "hint": "Angles round a point add up to 360°.",
+   "explain": "90° + 120° = 210°, so y = 360° − 210° = 150°."
+  },
+  {
+   "id": "ang-06",
+   "sub": "rules",
+   "level": 2,
+   "type": "num",
+   "q": "An isosceles triangle has two equal angles. The other angle is 40°. What size is each of the equal angles?",
+   "answer": "70",
+   "unit": "°",
+   "hint": "Take 40° from 180°, then share what is left equally.",
+   "explain": "180° − 40° = 140°, and 140° ÷ 2 = 70°. The angles are 70°, 70° and 40°."
+  },
+  {
+   "id": "ang-07",
+   "sub": "rules",
+   "level": 3,
+   "type": "num",
+   "q": "The angles of a quadrilateral are 90°, 85°, 110° and x. Find x.",
+   "answer": "75",
+   "unit": "°",
+   "hint": "The angles in a quadrilateral add up to 360°.",
+   "explain": "90 + 85 + 110 = 285, and 360 − 285 = 75°."
+  },
+  {
+   "id": "ang-08",
+   "sub": "parallel",
+   "level": 2,
+   "type": "mc",
+   "q": "Two straight lines cross. The angles opposite each other (vertically opposite angles) are…",
+   "options": [
+    "equal",
+    "always 90°",
+    "add up to 90°",
+    "add up to 360°"
+   ],
+   "answer": 0,
+   "hint": "Draw an X and measure the angles opposite each other.",
+   "explain": "Vertically opposite angles are always equal."
+  },
+  {
+   "id": "ang-09",
+   "sub": "parallel",
+   "level": 3,
+   "type": "mc",
+   "q": "A line crosses two parallel lines. Alternate angles (making a Z shape) are…",
+   "options": [
+    "equal",
+    "add up to 180°",
+    "add up to 90°",
+    "always 45°"
+   ],
+   "answer": 0,
+   "hint": "Look for the Z shape.",
+   "explain": "Alternate angles are equal. Co-interior angles (a C or U shape) add up to 180°."
+  },
+  {
+   "id": "ang-10",
+   "sub": "polygons",
+   "level": 3,
+   "type": "num",
+   "q": "The angles inside a hexagon add up to 720°. What is each angle of a regular hexagon?",
+   "answer": "120",
+   "unit": "°",
+   "hint": "A regular hexagon has 6 equal angles.",
+   "explain": "720° ÷ 6 = 120°."
+  },
+  {
+   "id": "ang-11",
+   "sub": "polygons",
+   "level": 3,
+   "type": "num",
+   "q": "What is the size of each exterior angle of a regular pentagon?",
+   "answer": "72",
+   "unit": "°",
+   "hint": "The exterior angles of any polygon add up to 360°.",
+   "explain": "A pentagon has 5 sides, so each exterior angle is 360° ÷ 5 = 72°. (Each interior angle is 180° − 72° = 108°.)"
+  },
+  {
+   "id": "ang-12",
+   "sub": "shapes",
+   "level": 1,
+   "type": "mc",
+   "q": "How many sides does a hexagon have?",
+   "options": [
+    "6",
+    "5",
+    "7",
+    "8"
+   ],
+   "answer": 0,
+   "hint": "Think of a honeycomb cell.",
+   "explain": "A hexagon has 6 sides. A pentagon has 5 and an octagon has 8."
+  },
+  {
+   "id": "ang-13",
+   "sub": "shapes",
+   "level": 1,
+   "type": "mc",
+   "q": "Which shape has exactly one pair of parallel sides?",
+   "options": [
+    "Trapezium",
+    "Square",
+    "Rhombus",
+    "Parallelogram"
+   ],
+   "answer": 0,
+   "hint": "Squares, rhombuses and parallelograms all have two pairs.",
+   "explain": "A trapezium has exactly one pair of parallel sides."
+  },
+  {
+   "id": "ang-14",
+   "sub": "shapes",
+   "level": 2,
+   "type": "mc",
+   "q": "Which triangle has all three sides the same length?",
+   "options": [
+    "Equilateral",
+    "Isosceles",
+    "Scalene",
+    "Right-angled"
+   ],
+   "answer": 0,
+   "hint": "\"Equi\" means equal.",
+   "explain": "An equilateral triangle has three equal sides and three equal 60° angles. An isosceles triangle has two equal sides; a scalene triangle has none."
+  },
+  {
+   "id": "ang-15",
+   "sub": "shapes",
+   "level": 2,
+   "type": "num",
+   "q": "How many lines of symmetry does a square have?",
+   "answer": "4",
+   "hint": "Don't forget the diagonals.",
+   "explain": "A square has 4 lines of symmetry: 1 across, 1 down and 2 along the diagonals."
+  },
+  {
+   "id": "ang-16",
+   "sub": "shapes",
+   "level": 2,
+   "type": "mc",
+   "q": "A shape has 4 equal sides, but its angles are not right angles. What is it?",
+   "options": [
+    "Rhombus",
+    "Square",
+    "Rectangle",
+    "Kite"
+   ],
+   "answer": 0,
+   "hint": "It is like a square that has been pushed over.",
+   "explain": "A rhombus has 4 equal sides. If its angles were all 90° it would be a square."
+  },
+  {
+   "id": "ang-17",
+   "sub": "shapes",
+   "level": 3,
+   "type": "num",
+   "q": "How many edges does a triangular prism have?",
+   "answer": "9",
+   "hint": "Count the edges of the two triangles, then the edges joining them.",
+   "explain": "Each triangle has 3 edges (6 in total), and 3 more edges join the triangles: 9 edges. (It has 6 vertices and 5 faces.)"
+  }
+ ]
+}

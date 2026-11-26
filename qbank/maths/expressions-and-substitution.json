@@ -1,0 +1,285 @@
+{
+ "slug": "expressions-and-substitution",
+ "title": "Expressions and substitution",
+ "ks3": "Algebra: notation, simplifying, substitution, brackets and formulae",
+ "art": "algebra",
+ "intro": "Letters that stand for numbers. Practise writing and simplifying expressions, putting numbers into them, expanding brackets and using formulae.",
+ "description": "Free KS3 Maths algebra questions with answers: writing expressions, collecting like terms, substitution, expanding brackets, factorising and formulae. Marked instantly, for Year 7, 8 and 9 (ages 9 to 14).",
+ "subtopics": [
+  {
+   "slug": "write",
+   "title": "Writing expressions"
+  },
+  {
+   "slug": "simplify",
+   "title": "Simplifying"
+  },
+  {
+   "slug": "substitute",
+   "title": "Substitution"
+  },
+  {
+   "slug": "brackets",
+   "title": "Brackets"
+  },
+  {
+   "slug": "formulae",
+   "title": "Formulae"
+  }
+ ],
+ "questions": [
+  {
+   "id": "alg-01",
+   "sub": "write",
+   "level": 1,
+   "type": "mc",
+   "q": "Sam has n sweets and is given 3 more. Which expression shows how many sweets Sam has now?",
+   "options": [
+    "n + 3",
+    "3n",
+    "n − 3",
+    "n ÷ 3"
+   ],
+   "answer": 0,
+   "hint": "Being given more means adding.",
+   "explain": "Sam had n and gets 3 more, so Sam now has n + 3."
+  },
+  {
+   "id": "alg-02",
+   "sub": "write",
+   "level": 1,
+   "type": "mc",
+   "q": "Which expression means \"multiply x by 5\"?",
+   "options": [
+    "5x",
+    "x + 5",
+    "x⁵",
+    "5 + x"
+   ],
+   "answer": 0,
+   "hint": "In algebra we leave out the × sign and write the number first.",
+   "explain": "x × 5 is written 5x. (x⁵ means x × x × x × x × x.)"
+  },
+  {
+   "id": "alg-03",
+   "sub": "write",
+   "level": 2,
+   "type": "mc",
+   "q": "A pen costs p pence and a rubber costs 30p. Which expression gives the cost of 4 pens and 1 rubber, in pence?",
+   "options": [
+    "4p + 30",
+    "4 + p + 30",
+    "4p × 30",
+    "p + 34"
+   ],
+   "answer": 0,
+   "hint": "Four pens cost 4 lots of p.",
+   "explain": "4 pens cost 4p pence, and the rubber adds 30, so the total is 4p + 30."
+  },
+  {
+   "id": "alg-04",
+   "sub": "simplify",
+   "level": 1,
+   "type": "mc",
+   "q": "Simplify a + a + a + a",
+   "options": [
+    "4a",
+    "a⁴",
+    "4 + a",
+    "a + 4"
+   ],
+   "answer": 0,
+   "hint": "How many a's are there?",
+   "explain": "Four lots of a is 4a. (a⁴ would be a × a × a × a.)"
+  },
+  {
+   "id": "alg-05",
+   "sub": "simplify",
+   "level": 2,
+   "type": "mc",
+   "q": "Simplify 3x + 5y − x + 2y",
+   "options": [
+    "2x + 7y",
+    "4x + 7y",
+    "2x + 3y",
+    "9xy"
+   ],
+   "answer": 0,
+   "hint": "Collect the x terms together and the y terms together.",
+   "explain": "x terms: 3x − x = 2x. y terms: 5y + 2y = 7y. So the answer is 2x + 7y."
+  },
+  {
+   "id": "alg-06",
+   "sub": "simplify",
+   "level": 2,
+   "type": "mc",
+   "q": "Simplify 3a × 4b",
+   "options": [
+    "12ab",
+    "7ab",
+    "12a + b",
+    "34ab"
+   ],
+   "answer": 0,
+   "hint": "Multiply the numbers, then write the letters next to each other.",
+   "explain": "3 × 4 = 12 and a × b = ab, so 3a × 4b = 12ab."
+  },
+  {
+   "id": "alg-07",
+   "sub": "simplify",
+   "level": 3,
+   "type": "mc",
+   "q": "Simplify 2m² + 3m − m² + m",
+   "options": [
+    "m² + 4m",
+    "3m² + 4m",
+    "m² + 2m",
+    "5m³"
+   ],
+   "answer": 0,
+   "hint": "m² terms and m terms are different: collect each kind separately.",
+   "explain": "m² terms: 2m² − m² = m². m terms: 3m + m = 4m. So the answer is m² + 4m."
+  },
+  {
+   "id": "alg-08",
+   "sub": "substitute",
+   "level": 1,
+   "type": "num",
+   "q": "If a = 6, work out 3a.",
+   "answer": "18",
+   "hint": "3a means 3 × a.",
+   "explain": "3a = 3 × 6 = 18."
+  },
+  {
+   "id": "alg-09",
+   "sub": "substitute",
+   "level": 1,
+   "type": "num",
+   "q": "If x = 4, work out x + 9.",
+   "answer": "13",
+   "hint": "Replace x with 4.",
+   "explain": "x + 9 = 4 + 9 = 13."
+  },
+  {
+   "id": "alg-10",
+   "sub": "substitute",
+   "level": 2,
+   "type": "num",
+   "q": "If p = 5 and q = 2, work out 4p − 3q.",
+   "answer": "14",
+   "hint": "4p = 4 × 5 and 3q = 3 × 2.",
+   "explain": "4p = 20 and 3q = 6, so 4p − 3q = 20 − 6 = 14."
+  },
+  {
+   "id": "alg-11",
+   "sub": "substitute",
+   "level": 2,
+   "type": "num",
+   "q": "If y = 3, work out y² + 2y.",
+   "answer": "15",
+   "hint": "y² means y × y.",
+   "explain": "y² = 3 × 3 = 9 and 2y = 6, so y² + 2y = 9 + 6 = 15."
+  },
+  {
+   "id": "alg-12",
+   "sub": "substitute",
+   "level": 3,
+   "type": "num",
+   "q": "If a = −2, work out 5 − 3a.",
+   "answer": "11",
+   "hint": "3a = 3 × (−2). Then take that away from 5.",
+   "explain": "3a = 3 × (−2) = −6. Then 5 − (−6) = 5 + 6 = 11."
+  },
+  {
+   "id": "alg-13",
+   "sub": "substitute",
+   "level": 3,
+   "type": "num",
+   "q": "If x = 4, work out 2x².",
+   "answer": "32",
+   "hint": "Square first, then multiply by 2. 2x² is not the same as (2x)².",
+   "explain": "x² = 16, so 2x² = 2 × 16 = 32. (Squaring 2x would give 64, which is a different expression.)"
+  },
+  {
+   "id": "alg-14",
+   "sub": "brackets",
+   "level": 2,
+   "type": "mc",
+   "q": "Expand 3(x + 4)",
+   "options": [
+    "3x + 12",
+    "3x + 4",
+    "x + 12",
+    "3x + 7"
+   ],
+   "answer": 0,
+   "hint": "Multiply everything inside the bracket by 3.",
+   "explain": "3 × x = 3x and 3 × 4 = 12, so 3(x + 4) = 3x + 12."
+  },
+  {
+   "id": "alg-15",
+   "sub": "brackets",
+   "level": 3,
+   "type": "mc",
+   "q": "Expand and simplify 2(a + 3) + 4(a − 1)",
+   "options": [
+    "6a + 2",
+    "6a + 10",
+    "6a + 7",
+    "2a + 2"
+   ],
+   "answer": 0,
+   "hint": "Expand each bracket first, then collect like terms.",
+   "explain": "2(a + 3) = 2a + 6 and 4(a − 1) = 4a − 4. Together: 2a + 4a + 6 − 4 = 6a + 2."
+  },
+  {
+   "id": "alg-16",
+   "sub": "brackets",
+   "level": 3,
+   "type": "mc",
+   "q": "Factorise 6x + 9",
+   "options": [
+    "3(2x + 3)",
+    "6(x + 9)",
+    "3(2x + 9)",
+    "9(x + 6)"
+   ],
+   "answer": 0,
+   "hint": "What is the biggest number that divides both 6 and 9?",
+   "explain": "3 divides both: 6x = 3 × 2x and 9 = 3 × 3. So 6x + 9 = 3(2x + 3). Check by expanding: 3 × 2x + 3 × 3 = 6x + 9."
+  },
+  {
+   "id": "alg-17",
+   "sub": "formulae",
+   "level": 2,
+   "type": "num",
+   "q": "A taxi charges £3 plus £2 for each mile: C = 3 + 2m. What is the cost, in pounds, of a 7-mile journey?",
+   "answer": "17",
+   "show": "£17",
+   "hint": "Put m = 7 into the formula.",
+   "explain": "C = 3 + 2 × 7 = 3 + 14 = 17, so the journey costs £17."
+  },
+  {
+   "id": "alg-18",
+   "sub": "formulae",
+   "level": 3,
+   "type": "num",
+   "q": "The perimeter of a rectangle is P = 2(l + w). Find P when l = 8 cm and w = 5 cm.",
+   "answer": "26",
+   "unit": "cm",
+   "hint": "Work out the bracket first.",
+   "explain": "l + w = 8 + 5 = 13, and P = 2 × 13 = 26 cm."
+  },
+  {
+   "id": "alg-19",
+   "sub": "formulae",
+   "level": 3,
+   "type": "num",
+   "q": "You can change °C into °F with F = 1.8C + 32. What is 25 °C in °F?",
+   "answer": "77",
+   "unit": "°F",
+   "hint": "Multiply 25 by 1.8 first, then add 32.",
+   "explain": "1.8 × 25 = 45, and 45 + 32 = 77. So 25 °C = 77 °F."
+  }
+ ]
+}

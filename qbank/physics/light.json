@@ -1,0 +1,262 @@
+{
+ "slug": "light",
+ "title": "Light",
+ "ks3": "Waves: light, reflection, refraction and colour",
+ "art": "light",
+ "intro": "How light travels, shadows, mirrors, bending light and colour. Practise reflection, refraction, the spectrum and coloured filters.",
+ "description": "Free KS3 Physics light questions with answers: how light travels, shadows, reflection and the law of reflection, refraction, dispersion, colour and filters. Marked instantly, for Year 7, 8 and 9 (ages 9 to 14).",
+ "subtopics": [
+  {
+   "slug": "travel",
+   "title": "How light travels"
+  },
+  {
+   "slug": "reflection",
+   "title": "Reflection"
+  },
+  {
+   "slug": "refraction",
+   "title": "Refraction"
+  },
+  {
+   "slug": "colour",
+   "title": "Colour"
+  }
+ ],
+ "questions": [
+  {
+   "id": "lgt-01",
+   "sub": "travel",
+   "level": 1,
+   "type": "mc",
+   "q": "Light travels in…",
+   "options": [
+    "straight lines",
+    "curves",
+    "circles",
+    "zigzags"
+   ],
+   "answer": 0,
+   "hint": "Think of a torch beam or sunlight through a window.",
+   "explain": "Light travels in straight lines. That is why it makes sharp shadows and can't go round corners."
+  },
+  {
+   "id": "lgt-02",
+   "sub": "travel",
+   "level": 1,
+   "type": "mc",
+   "q": "Which of these is a light source?",
+   "options": [
+    "The Sun",
+    "The Moon",
+    "A mirror",
+    "A white page"
+   ],
+   "answer": 0,
+   "hint": "A light source gives out its own light.",
+   "explain": "The Sun makes its own light. The Moon, mirrors and white pages only reflect light from somewhere else."
+  },
+  {
+   "id": "lgt-03",
+   "sub": "travel",
+   "level": 1,
+   "type": "mc",
+   "q": "Which material is transparent?",
+   "options": [
+    "Clear glass",
+    "Wood",
+    "Metal",
+    "Cardboard"
+   ],
+   "answer": 0,
+   "hint": "You can see clearly through a transparent material.",
+   "explain": "Clear glass lets almost all light through, so it is transparent. Wood, metal and cardboard are opaque."
+  },
+  {
+   "id": "lgt-04",
+   "sub": "travel",
+   "level": 2,
+   "type": "mc",
+   "q": "How do we see a book?",
+   "options": [
+    "Light bounces off the book into our eyes",
+    "Light comes out of our eyes onto the book",
+    "The book gives out its own light",
+    "The book makes a sound we can see"
+   ],
+   "answer": 0,
+   "hint": "The book is not a light source.",
+   "explain": "Light from a source (like a lamp) reflects off the book, and some of it goes into our eyes."
+  },
+  {
+   "id": "lgt-05",
+   "sub": "travel",
+   "level": 2,
+   "type": "mc",
+   "q": "Why does a shadow form?",
+   "options": [
+    "Light can't pass through an opaque object",
+    "Light bends round the object",
+    "The object gives out darkness",
+    "The air absorbs the light"
+   ],
+   "answer": 0,
+   "hint": "Light travels in straight lines.",
+   "explain": "An opaque object blocks the light. Light travels in straight lines, so it can't bend round, and a dark area (a shadow) forms behind the object."
+  },
+  {
+   "id": "lgt-06",
+   "sub": "travel",
+   "level": 3,
+   "type": "num",
+   "q": "Light travels at about 300,000 km/s. Sunlight takes about 500 s to reach the Earth. About how far away is the Sun, in millions of km?",
+   "answer": "150",
+   "unit": "million km",
+   "hint": "Distance = speed × time. Then change to millions.",
+   "explain": "300,000 km/s × 500 s = 150,000,000 km, which is 150 million km."
+  },
+  {
+   "id": "lgt-07",
+   "sub": "reflection",
+   "level": 2,
+   "type": "mc",
+   "q": "What does the law of reflection say?",
+   "options": [
+    "Angle of incidence = angle of reflection",
+    "The angles add up to 90°",
+    "The angles add up to 180°",
+    "Light always reflects at 45°"
+   ],
+   "answer": 0,
+   "hint": "Both angles are measured from the normal.",
+   "explain": "The angle of incidence (the ray going in) equals the angle of reflection (the ray coming out). Both are measured from the normal, a line at 90° to the mirror."
+  },
+  {
+   "id": "lgt-08",
+   "sub": "reflection",
+   "level": 2,
+   "type": "num",
+   "q": "A ray of light hits a flat mirror. What is the angle of reflection, r?",
+   "answer": "40",
+   "unit": "°",
+   "fig": {
+    "type": "mirror",
+    "i": 40
+   },
+   "hint": "Use the law of reflection.",
+   "explain": "The angle of incidence is 40°, so the angle of reflection is also 40°."
+  },
+  {
+   "id": "lgt-09",
+   "sub": "refraction",
+   "level": 2,
+   "type": "mc",
+   "q": "A ray of light goes from air into a glass block at an angle. What happens?",
+   "options": [
+    "It changes direction (refracts)",
+    "It speeds up",
+    "It stops",
+    "It turns into sound"
+   ],
+   "answer": 0,
+   "hint": "Light slows down in glass.",
+   "explain": "Light slows down when it goes into glass, so it changes direction. This is called refraction."
+  },
+  {
+   "id": "lgt-10",
+   "sub": "refraction",
+   "level": 3,
+   "type": "mc",
+   "q": "A straw in a glass of water looks bent. Why?",
+   "options": [
+    "Light refracts as it passes from the water into the air",
+    "The water bends the straw",
+    "Light reflects off the glass",
+    "The straw absorbs the light"
+   ],
+   "answer": 0,
+   "hint": "The straw is really straight. Something happens to the light.",
+   "explain": "Light from the part of the straw under water bends (refracts) as it leaves the water, so that part looks as if it is in a different place."
+  },
+  {
+   "id": "lgt-11",
+   "sub": "colour",
+   "level": 2,
+   "type": "mc",
+   "q": "White light can be split into a spectrum of colours by a prism. What is this called?",
+   "options": [
+    "Dispersion",
+    "Reflection",
+    "Absorption",
+    "Diffusion"
+   ],
+   "answer": 0,
+   "hint": "The colours are spread out, or dispersed.",
+   "explain": "Splitting white light into its colours is called dispersion. Each colour refracts by a different amount."
+  },
+  {
+   "id": "lgt-12",
+   "sub": "colour",
+   "level": 2,
+   "type": "mc",
+   "q": "Which colour is bent (refracted) the most by a prism?",
+   "options": [
+    "Violet",
+    "Red",
+    "Green",
+    "Yellow"
+   ],
+   "answer": 0,
+   "hint": "Look at the bottom of a rainbow made by a prism.",
+   "explain": "Violet light is refracted the most and red light the least, so the colours spread out in the order red, orange, yellow, green, blue, indigo, violet."
+  },
+  {
+   "id": "lgt-13",
+   "sub": "colour",
+   "level": 2,
+   "type": "mc",
+   "q": "Why does a red apple look red in white light?",
+   "options": [
+    "It reflects red light and absorbs the other colours",
+    "It absorbs red light",
+    "It makes its own red light",
+    "It reflects all the colours"
+   ],
+   "answer": 0,
+   "hint": "White light contains all the colours.",
+   "explain": "The apple's skin reflects red light into our eyes and absorbs the other colours."
+  },
+  {
+   "id": "lgt-14",
+   "sub": "colour",
+   "level": 3,
+   "type": "mc",
+   "q": "What colour does a red apple look in pure blue light?",
+   "options": [
+    "Black",
+    "Red",
+    "Blue",
+    "Purple"
+   ],
+   "answer": 0,
+   "hint": "The apple only reflects red light. Is there any red light to reflect?",
+   "explain": "The apple absorbs the blue light, and there is no red light to reflect, so it looks black."
+  },
+  {
+   "id": "lgt-15",
+   "sub": "colour",
+   "level": 3,
+   "type": "mc",
+   "q": "A red filter is put in front of a white lamp. What colour light comes through?",
+   "options": [
+    "Red",
+    "White",
+    "Blue",
+    "Green"
+   ],
+   "answer": 0,
+   "hint": "A filter lets its own colour through.",
+   "explain": "A red filter absorbs all the other colours and only lets red light through."
+  }
+ ]
+}

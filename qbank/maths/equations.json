@@ -1,0 +1,216 @@
+{
+ "slug": "equations",
+ "title": "Solving equations",
+ "ks3": "Algebra: solving linear equations",
+ "art": "equations",
+ "intro": "Find the mystery number. Keep the equation balanced: whatever you do to one side, do to the other.",
+ "description": "Free KS3 Maths solving equations questions with answers: one-step and two-step equations, brackets, unknowns on both sides and writing your own equations. Marked instantly, for Year 7, 8 and 9 (ages 9 to 14).",
+ "subtopics": [
+  {
+   "slug": "one-step",
+   "title": "One-step equations"
+  },
+  {
+   "slug": "two-step",
+   "title": "Two-step equations"
+  },
+  {
+   "slug": "harder",
+   "title": "Brackets and both sides"
+  },
+  {
+   "slug": "form",
+   "title": "Writing equations"
+  }
+ ],
+ "questions": [
+  {
+   "id": "eqn-01",
+   "sub": "one-step",
+   "level": 1,
+   "type": "num",
+   "q": "Solve x + 7 = 12",
+   "answer": "5",
+   "hint": "What number add 7 makes 12? Or: take 7 from both sides.",
+   "explain": "Take 7 from both sides: x = 12 − 7 = 5. Check: 5 + 7 = 12."
+  },
+  {
+   "id": "eqn-02",
+   "sub": "one-step",
+   "level": 1,
+   "type": "num",
+   "q": "Solve 4x = 28",
+   "answer": "7",
+   "hint": "4x means 4 × x. Divide both sides by 4.",
+   "explain": "Divide both sides by 4: x = 28 ÷ 4 = 7. Check: 4 × 7 = 28."
+  },
+  {
+   "id": "eqn-03",
+   "sub": "one-step",
+   "level": 1,
+   "type": "num",
+   "q": "Solve x − 9 = 3",
+   "answer": "12",
+   "hint": "Add 9 to both sides.",
+   "explain": "Add 9 to both sides: x = 3 + 9 = 12. Check: 12 − 9 = 3."
+  },
+  {
+   "id": "eqn-04",
+   "sub": "one-step",
+   "level": 2,
+   "type": "num",
+   "q": "Solve x ÷ 5 = 6",
+   "answer": "30",
+   "hint": "Multiply both sides by 5.",
+   "explain": "Multiply both sides by 5: x = 6 × 5 = 30. Check: 30 ÷ 5 = 6."
+  },
+  {
+   "id": "eqn-05",
+   "sub": "one-step",
+   "level": 2,
+   "type": "mc",
+   "q": "Which step gets rid of the \"− 3\" in 4x − 3 = 17?",
+   "options": [
+    "Add 3 to both sides",
+    "Subtract 3 from both sides",
+    "Divide both sides by 3",
+    "Multiply both sides by 3"
+   ],
+   "answer": 0,
+   "hint": "Do the opposite of subtracting 3.",
+   "explain": "Adding 3 undoes subtracting 3: 4x − 3 + 3 = 17 + 3, so 4x = 20 and x = 5."
+  },
+  {
+   "id": "eqn-06",
+   "sub": "two-step",
+   "level": 2,
+   "type": "num",
+   "q": "Solve 3x + 2 = 14",
+   "answer": "4",
+   "hint": "First take 2 from both sides, then divide by 3.",
+   "explain": "3x + 2 = 14 → 3x = 12 → x = 4. Check: 3 × 4 + 2 = 14."
+  },
+  {
+   "id": "eqn-07",
+   "sub": "two-step",
+   "level": 2,
+   "type": "num",
+   "q": "Solve 5x − 4 = 21",
+   "answer": "5",
+   "hint": "First add 4 to both sides.",
+   "explain": "5x − 4 = 21 → 5x = 25 → x = 5. Check: 25 − 4 = 21."
+  },
+  {
+   "id": "eqn-08",
+   "sub": "two-step",
+   "level": 2,
+   "type": "num",
+   "q": "Solve 2x + 9 = 3",
+   "answer": "-3",
+   "hint": "Take 9 from both sides. The answer can be negative.",
+   "explain": "2x + 9 = 3 → 2x = −6 → x = −3. Check: 2 × (−3) + 9 = −6 + 9 = 3."
+  },
+  {
+   "id": "eqn-09",
+   "sub": "two-step",
+   "level": 3,
+   "type": "num",
+   "q": "Solve (x + 4) ÷ 3 = 5",
+   "answer": "11",
+   "hint": "Undo the ÷ 3 first by multiplying both sides by 3.",
+   "explain": "Multiply both sides by 3: x + 4 = 15. Then x = 11. Check: (11 + 4) ÷ 3 = 5."
+  },
+  {
+   "id": "eqn-10",
+   "sub": "harder",
+   "level": 3,
+   "type": "num",
+   "q": "Solve 5x + 3 = 2x + 15",
+   "answer": "4",
+   "hint": "Take 2x from both sides so that x is only on one side.",
+   "explain": "5x − 2x + 3 = 15 → 3x + 3 = 15 → 3x = 12 → x = 4. Check: 23 = 23."
+  },
+  {
+   "id": "eqn-11",
+   "sub": "harder",
+   "level": 3,
+   "type": "num",
+   "q": "Solve 3(x − 2) = 18",
+   "answer": "8",
+   "hint": "Divide both sides by 3 first, or expand the bracket.",
+   "explain": "Divide by 3: x − 2 = 6, so x = 8. Check: 3 × (8 − 2) = 18."
+  },
+  {
+   "id": "eqn-12",
+   "sub": "harder",
+   "level": 3,
+   "type": "num",
+   "q": "Solve 7x − 5 = 3x + 15",
+   "answer": "5",
+   "hint": "Take 3x from both sides, then add 5.",
+   "explain": "4x − 5 = 15 → 4x = 20 → x = 5. Check: 35 − 5 = 30 and 15 + 15 = 30."
+  },
+  {
+   "id": "eqn-13",
+   "sub": "harder",
+   "level": 3,
+   "type": "num",
+   "q": "Solve 2(3x + 1) = 4x + 16",
+   "answer": "7",
+   "hint": "Expand the bracket first: 6x + 2.",
+   "explain": "6x + 2 = 4x + 16 → 2x + 2 = 16 → 2x = 14 → x = 7. Check: 2 × 22 = 44 and 28 + 16 = 44."
+  },
+  {
+   "id": "eqn-14",
+   "sub": "form",
+   "level": 1,
+   "type": "num",
+   "q": "I think of a number and add 8. The answer is 20. What was my number?",
+   "answer": "12",
+   "hint": "Write it as n + 8 = 20.",
+   "explain": "n + 8 = 20, so n = 12."
+  },
+  {
+   "id": "eqn-15",
+   "sub": "form",
+   "level": 2,
+   "type": "num",
+   "q": "I think of a number, multiply it by 3 and then subtract 5. The answer is 16. What was my number?",
+   "answer": "7",
+   "hint": "Write it as 3n − 5 = 16, then solve.",
+   "explain": "3n − 5 = 16 → 3n = 21 → n = 7. Check: 3 × 7 − 5 = 16."
+  },
+  {
+   "id": "eqn-16",
+   "sub": "form",
+   "level": 2,
+   "type": "num",
+   "q": "The angles of a triangle are x, 2x and 3x degrees. Angles in a triangle add up to 180°. What is x?",
+   "answer": "30",
+   "unit": "°",
+   "hint": "x + 2x + 3x = 180.",
+   "explain": "x + 2x + 3x = 6x, so 6x = 180 and x = 30. The angles are 30°, 60° and 90°."
+  },
+  {
+   "id": "eqn-17",
+   "sub": "form",
+   "level": 3,
+   "type": "num",
+   "q": "A rectangle is (x + 3) cm long and 4 cm wide. Its perimeter is 26 cm. Find x.",
+   "answer": "6",
+   "hint": "Perimeter = 2 × (length + width).",
+   "explain": "2 × (x + 3 + 4) = 26 → x + 7 = 13 → x = 6. The rectangle is 9 cm by 4 cm, and 9 + 4 + 9 + 4 = 26."
+  },
+  {
+   "id": "eqn-18",
+   "sub": "form",
+   "level": 3,
+   "type": "num",
+   "q": "Ben is 3 years older than Ada. Their ages add up to 25. How old is Ada?",
+   "answer": "11",
+   "unit": "years",
+   "hint": "Call Ada's age a. Then Ben's age is a + 3.",
+   "explain": "a + (a + 3) = 25 → 2a + 3 = 25 → 2a = 22 → a = 11. Ada is 11 and Ben is 14."
+  }
+ ]
+}

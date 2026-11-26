@@ -1,0 +1,275 @@
+{
+ "slug": "place-value-and-rounding",
+ "title": "Place value and rounding",
+ "ks3": "Number: place value, ordering, rounding and estimating",
+ "art": "place-value",
+ "intro": "What each digit is worth, putting numbers and decimals in order, rounding, multiplying and dividing by 10, 100 and 1000, and quick estimates.",
+ "description": "Free KS3 Maths place value and rounding questions with answers: decimals, ordering, rounding to 10, 100, decimal places and significant figures, and estimating. Marked instantly, for Year 7, 8 and 9 (ages 9 to 14).",
+ "subtopics": [
+  {
+   "slug": "place-value",
+   "title": "Place value"
+  },
+  {
+   "slug": "order",
+   "title": "Ordering numbers"
+  },
+  {
+   "slug": "round",
+   "title": "Rounding"
+  },
+  {
+   "slug": "times-ten",
+   "title": "× and ÷ by 10, 100, 1000"
+  },
+  {
+   "slug": "estimate",
+   "title": "Estimating"
+  }
+ ],
+ "questions": [
+  {
+   "id": "pv-01",
+   "sub": "place-value",
+   "level": 1,
+   "type": "mc",
+   "q": "In the number 4,735, what is the value of the digit 7?",
+   "options": [
+    "700",
+    "70",
+    "7",
+    "7000"
+   ],
+   "answer": 0,
+   "hint": "Count the places from the right: ones, tens, hundreds, thousands.",
+   "explain": "4,735 is 4 thousands, 7 hundreds, 3 tens and 5 ones. So the 7 is worth 700."
+  },
+  {
+   "id": "pv-02",
+   "sub": "place-value",
+   "level": 1,
+   "type": "num",
+   "q": "Write \"five thousand and sixty-two\" in digits.",
+   "answer": "5062",
+   "hint": "There are no hundreds, so the hundreds digit is 0.",
+   "explain": "5 thousands, 0 hundreds, 6 tens and 2 ones: 5,062."
+  },
+  {
+   "id": "pv-03",
+   "sub": "place-value",
+   "level": 2,
+   "type": "mc",
+   "q": "In the number 3.482, what is the value of the digit 8?",
+   "options": [
+    "8 hundredths",
+    "8 tenths",
+    "8 thousandths",
+    "80"
+   ],
+   "answer": 0,
+   "hint": "After the decimal point the places are tenths, hundredths, thousandths.",
+   "explain": "3.482 is 3 ones, 4 tenths, 8 hundredths and 2 thousandths. So the 8 is worth 8 hundredths (0.08)."
+  },
+  {
+   "id": "pv-04",
+   "sub": "place-value",
+   "level": 2,
+   "type": "num",
+   "q": "Work out 0.3 + 0.04 + 0.005",
+   "answer": "0.345",
+   "hint": "Put each digit in its place: tenths, hundredths, thousandths.",
+   "explain": "3 tenths, 4 hundredths and 5 thousandths make 0.345."
+  },
+  {
+   "id": "pv-05",
+   "sub": "order",
+   "level": 1,
+   "type": "mc",
+   "q": "Which number is the biggest?",
+   "options": [
+    "0.7",
+    "0.65",
+    "0.07",
+    "0.605"
+   ],
+   "answer": 0,
+   "hint": "Compare the tenths digit first.",
+   "explain": "0.7 has 7 tenths. The others have 6 tenths or 0 tenths, so 0.7 is the biggest. Writing 0.7 as 0.700 can help."
+  },
+  {
+   "id": "pv-06",
+   "sub": "order",
+   "level": 2,
+   "type": "mc",
+   "q": "Which list goes from smallest to largest?",
+   "options": [
+    "0.09, 0.4, 0.45, 0.5",
+    "0.4, 0.45, 0.5, 0.09",
+    "0.09, 0.45, 0.4, 0.5",
+    "0.5, 0.45, 0.4, 0.09"
+   ],
+   "answer": 0,
+   "hint": "Give them all the same number of decimal places: 0.09, 0.40, 0.45, 0.50.",
+   "explain": "As hundredths: 0.09 = 9, 0.4 = 40, 0.45 = 45 and 0.5 = 50 hundredths. So the order is 0.09, 0.4, 0.45, 0.5."
+  },
+  {
+   "id": "pv-07",
+   "sub": "order",
+   "level": 2,
+   "type": "mc",
+   "q": "Which sign makes this true? 3.06 ☐ 3.6",
+   "options": [
+    "<  (is less than)",
+    ">  (is greater than)",
+    "=  (equals)"
+   ],
+   "answer": 0,
+   "hint": "Both have 3 ones. Now compare the tenths.",
+   "explain": "3.06 has 0 tenths and 3.6 has 6 tenths, so 3.06 < 3.6."
+  },
+  {
+   "id": "pv-08",
+   "sub": "round",
+   "level": 1,
+   "type": "num",
+   "q": "Round 467 to the nearest 10.",
+   "answer": "470",
+   "hint": "Is 467 closer to 460 or to 470? Look at the ones digit.",
+   "explain": "The ones digit is 7, which is 5 or more, so round up: 467 is about 470."
+  },
+  {
+   "id": "pv-09",
+   "sub": "round",
+   "level": 1,
+   "type": "num",
+   "q": "Round 3,850 to the nearest 100.",
+   "answer": "3900",
+   "hint": "Look at the tens digit. 5 or more rounds up.",
+   "explain": "3,850 is exactly halfway between 3,800 and 3,900. The rule is that 5 rounds up, so the answer is 3,900."
+  },
+  {
+   "id": "pv-10",
+   "sub": "round",
+   "level": 2,
+   "type": "num",
+   "q": "Round 6.47 to 1 decimal place.",
+   "answer": "6.5",
+   "hint": "Look at the second decimal place (the hundredths).",
+   "explain": "The hundredths digit is 7, so round the tenths up: 6.47 is 6.5 to 1 decimal place."
+  },
+  {
+   "id": "pv-11",
+   "sub": "round",
+   "level": 2,
+   "type": "num",
+   "q": "Round 12,499 to the nearest thousand.",
+   "answer": "12000",
+   "hint": "Look at the hundreds digit only.",
+   "explain": "The hundreds digit is 4, which is less than 5, so round down: 12,000."
+  },
+  {
+   "id": "pv-12",
+   "sub": "round",
+   "level": 3,
+   "type": "num",
+   "q": "Round 0.04682 to 2 significant figures.",
+   "answer": "0.047",
+   "hint": "Zeros at the start don't count. The first significant figure is the 4.",
+   "explain": "The first two significant figures are 4 and 6. The next digit is 8, so round the 6 up: 0.047."
+  },
+  {
+   "id": "pv-13",
+   "sub": "round",
+   "level": 3,
+   "type": "num",
+   "q": "Round 3.996 to 2 decimal places.",
+   "answer": "4",
+   "show": "4.00",
+   "hint": "The third decimal place is 6, so the 9 hundredths rounds up. What happens to the digits before it?",
+   "explain": "3.996 rounds up to 4.00 (the 9s roll over like a car's mileage counter). To 2 decimal places you write 4.00."
+  },
+  {
+   "id": "pv-14",
+   "sub": "times-ten",
+   "level": 1,
+   "type": "num",
+   "q": "Work out 36 × 10",
+   "answer": "360",
+   "hint": "Multiplying by 10 moves every digit one place to the left.",
+   "explain": "Each digit moves one place left: 36 × 10 = 360."
+  },
+  {
+   "id": "pv-15",
+   "sub": "times-ten",
+   "level": 2,
+   "type": "num",
+   "q": "Work out 4.7 × 100",
+   "answer": "470",
+   "hint": "Multiplying by 100 moves every digit two places to the left.",
+   "explain": "Each digit moves two places left: 4.7 × 100 = 470."
+  },
+  {
+   "id": "pv-16",
+   "sub": "times-ten",
+   "level": 2,
+   "type": "num",
+   "q": "Work out 52 ÷ 1000",
+   "answer": "0.052",
+   "hint": "Dividing by 1000 moves every digit three places to the right.",
+   "explain": "Each digit moves three places right: 52 ÷ 1000 = 0.052."
+  },
+  {
+   "id": "pv-17",
+   "sub": "times-ten",
+   "level": 3,
+   "type": "num",
+   "q": "There are 1000 millimetres in 1 metre. How many millimetres are there in 2.5 metres?",
+   "answer": "2500",
+   "unit": "mm",
+   "hint": "Multiply by 1000.",
+   "explain": "2.5 × 1000 = 2500, so 2.5 m = 2500 mm."
+  },
+  {
+   "id": "pv-18",
+   "sub": "estimate",
+   "level": 2,
+   "type": "mc",
+   "q": "Estimate 49 × 21 by rounding each number to 1 significant figure.",
+   "options": [
+    "1000",
+    "800",
+    "1200",
+    "100"
+   ],
+   "answer": 0,
+   "hint": "49 is about 50 and 21 is about 20.",
+   "explain": "50 × 20 = 1000. (The exact answer is 1029, so the estimate is close.)"
+  },
+  {
+   "id": "pv-19",
+   "sub": "estimate",
+   "level": 3,
+   "type": "num",
+   "q": "Estimate (6.2 × 9.8) ÷ 2.1 by rounding each number to 1 significant figure.",
+   "answer": "30",
+   "hint": "Round to 6, 10 and 2.",
+   "explain": "6 × 10 = 60, and 60 ÷ 2 = 30."
+  },
+  {
+   "id": "pv-20",
+   "sub": "estimate",
+   "level": 3,
+   "type": "mc",
+   "q": "A school sells 198 tickets at £5.10 each. Which is the best estimate of the money taken?",
+   "options": [
+    "About £1000",
+    "About £100",
+    "About £10,000",
+    "About £500"
+   ],
+   "answer": 0,
+   "hint": "198 is about 200 and £5.10 is about £5.",
+   "explain": "200 × £5 = £1000. (The exact amount is £1009.80.)"
+  }
+ ]
+}

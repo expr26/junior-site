@@ -1,0 +1,265 @@
+{
+ "slug": "sound",
+ "title": "Sound",
+ "ks3": "Waves: sound, vibrations, loudness and pitch, hearing and the speed of sound",
+ "art": "sound",
+ "intro": "Sound is made by vibrations. Practise how sound travels, loudness and pitch, how we hear, echoes and the speed of sound.",
+ "description": "Free KS3 Physics sound questions with answers: vibrations, how sound travels, amplitude and loudness, frequency and pitch, hearing range, echoes and the speed of sound. Marked instantly, for Year 7, 8 and 9 (ages 9 to 14).",
+ "subtopics": [
+  {
+   "slug": "travel",
+   "title": "How sound travels"
+  },
+  {
+   "slug": "waves",
+   "title": "Loudness and pitch"
+  },
+  {
+   "slug": "hearing",
+   "title": "Hearing"
+  },
+  {
+   "slug": "speed",
+   "title": "Speed of sound and echoes"
+  }
+ ],
+ "questions": [
+  {
+   "id": "snd-01",
+   "sub": "travel",
+   "level": 1,
+   "type": "mc",
+   "q": "What makes a sound?",
+   "options": [
+    "Something vibrating",
+    "Light hitting an object",
+    "Magnets",
+    "Heat"
+   ],
+   "answer": 0,
+   "hint": "Touch your throat while you hum.",
+   "explain": "All sounds are made by something vibrating (moving backwards and forwards quickly), like a guitar string or your vocal cords."
+  },
+  {
+   "id": "snd-02",
+   "sub": "travel",
+   "level": 1,
+   "type": "mc",
+   "q": "Sound cannot travel through…",
+   "options": [
+    "a vacuum (completely empty space)",
+    "water",
+    "air",
+    "steel"
+   ],
+   "answer": 0,
+   "hint": "Sound needs particles to pass the vibrations along.",
+   "explain": "Sound is passed on by particles bumping into each other. A vacuum has no particles, so sound can't travel through it. That is why space is silent."
+  },
+  {
+   "id": "snd-03",
+   "sub": "travel",
+   "level": 2,
+   "type": "mc",
+   "q": "Sound usually travels fastest through…",
+   "options": [
+    "solids",
+    "liquids",
+    "gases",
+    "a vacuum"
+   ],
+   "answer": 0,
+   "hint": "In which state are the particles closest together?",
+   "explain": "The particles in solids are close together and strongly joined, so they pass vibrations on quickly. Sound travels about 15 times faster in steel than in air."
+  },
+  {
+   "id": "snd-04",
+   "sub": "waves",
+   "level": 1,
+   "type": "mc",
+   "q": "What is the unit of frequency?",
+   "options": [
+    "Hertz (Hz)",
+    "Decibel (dB)",
+    "Metre (m)",
+    "Newton (N)"
+   ],
+   "answer": 0,
+   "hint": "It is named after the scientist Heinrich Hertz.",
+   "explain": "Frequency is measured in hertz (Hz). 1 Hz means one vibration each second."
+  },
+  {
+   "id": "snd-05",
+   "sub": "waves",
+   "level": 2,
+   "type": "mc",
+   "q": "The number of vibrations each second is called the…",
+   "options": [
+    "frequency",
+    "amplitude",
+    "wavelength",
+    "loudness"
+   ],
+   "answer": 0,
+   "hint": "It is measured in hertz.",
+   "explain": "Frequency is how many vibrations (waves) there are each second."
+  },
+  {
+   "id": "snd-06",
+   "sub": "waves",
+   "level": 2,
+   "type": "mc",
+   "q": "The two sound waves are drawn on the same scale. Which sound is louder?",
+   "options": [
+    "A",
+    "B",
+    "They are equally loud"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "waves",
+    "waves": [
+     {
+      "amp": 1,
+      "cycles": 3,
+      "label": "A"
+     },
+     {
+      "amp": 0.45,
+      "cycles": 3,
+      "label": "B"
+     }
+    ]
+   },
+   "hint": "Loudness depends on how tall the waves are (the amplitude).",
+   "explain": "Wave A has a bigger amplitude (taller waves), so A is louder. Both have the same number of waves, so the same pitch."
+  },
+  {
+   "id": "snd-07",
+   "sub": "waves",
+   "level": 2,
+   "type": "mc",
+   "q": "The two sound waves are drawn on the same scale. Which sound has the higher pitch?",
+   "options": [
+    "B",
+    "A",
+    "They have the same pitch"
+   ],
+   "answer": 0,
+   "fig": {
+    "type": "waves",
+    "waves": [
+     {
+      "amp": 0.8,
+      "cycles": 2,
+      "label": "A"
+     },
+     {
+      "amp": 0.8,
+      "cycles": 5,
+      "label": "B"
+     }
+    ]
+   },
+   "hint": "Pitch depends on how many waves fit in the same time (the frequency).",
+   "explain": "B has more waves in the same time, so it has a higher frequency and a higher pitch. Their heights are the same, so they are equally loud."
+  },
+  {
+   "id": "snd-08",
+   "sub": "hearing",
+   "level": 2,
+   "type": "mc",
+   "q": "Which part of the ear starts to vibrate first when sound arrives?",
+   "options": [
+    "The eardrum",
+    "The cochlea",
+    "The small ear bones",
+    "The brain"
+   ],
+   "answer": 0,
+   "hint": "It is a thin skin stretched across the end of the ear canal.",
+   "explain": "Sound waves make the eardrum vibrate. The small bones pass the vibrations to the cochlea, which sends signals to the brain."
+  },
+  {
+   "id": "snd-09",
+   "sub": "hearing",
+   "level": 2,
+   "type": "mc",
+   "q": "Young people can usually hear sounds with frequencies from about…",
+   "options": [
+    "20 Hz to 20,000 Hz",
+    "2 Hz to 200 Hz",
+    "200 Hz to 2,000,000 Hz",
+    "1000 Hz only"
+   ],
+   "answer": 0,
+   "hint": "The top of the range is about twenty thousand.",
+   "explain": "The human hearing range is about 20 Hz to 20,000 Hz. The top of the range goes down as people get older."
+  },
+  {
+   "id": "snd-10",
+   "sub": "hearing",
+   "level": 3,
+   "type": "mc",
+   "q": "A dog whistle makes a sound of 30,000 Hz. Why can't people hear it?",
+   "options": [
+    "It is above our hearing range (ultrasound)",
+    "It is too quiet",
+    "It is below our hearing range",
+    "Sound can't travel that fast"
+   ],
+   "answer": 0,
+   "hint": "Compare 30,000 Hz with the top of the human hearing range.",
+   "explain": "30,000 Hz is above 20,000 Hz, so it is ultrasound. Dogs can hear much higher frequencies than people."
+  },
+  {
+   "id": "snd-11",
+   "sub": "speed",
+   "level": 2,
+   "type": "num",
+   "q": "Sound travels at about 340 m/s in air. How far does it travel in 3 s?",
+   "answer": "1020",
+   "unit": "m",
+   "hint": "Distance = speed × time.",
+   "explain": "340 m/s × 3 s = 1020 m."
+  },
+  {
+   "id": "snd-12",
+   "sub": "speed",
+   "level": 3,
+   "type": "num",
+   "q": "You see lightning and hear the thunder 5 s later. Sound travels at about 340 m/s. About how far away is the storm?",
+   "answer": "1700",
+   "unit": "m",
+   "hint": "The light reaches you almost straight away. The sound takes 5 s.",
+   "explain": "Distance = 340 m/s × 5 s = 1700 m (about 1.7 km)."
+  },
+  {
+   "id": "snd-13",
+   "sub": "speed",
+   "level": 3,
+   "type": "num",
+   "q": "Someone shouts towards a cliff and hears the echo 2 s later. Sound travels at 340 m/s. How far away is the cliff?",
+   "answer": "340",
+   "unit": "m",
+   "hint": "The sound goes to the cliff and back again.",
+   "explain": "In 2 s the sound travels 340 × 2 = 680 m. That is there and back, so the cliff is 680 ÷ 2 = 340 m away."
+  },
+  {
+   "id": "snd-14",
+   "sub": "speed",
+   "level": 2,
+   "type": "mc",
+   "q": "Why do we see lightning before we hear the thunder?",
+   "options": [
+    "Light travels much faster than sound",
+    "Sound travels faster than light",
+    "The thunder is made later",
+    "Our eyes work faster than our ears"
+   ],
+   "answer": 0,
+   "hint": "Compare the speed of light with the speed of sound.",
+   "explain": "Light travels at about 300,000,000 m/s and sound at only about 340 m/s, so the light arrives almost at once and the sound later."
+  }
+ ]
+}

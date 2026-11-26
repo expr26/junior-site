@@ -1,0 +1,105 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "0b51907ad135",
+   "s": 7.21,
+   "text": "Part one. What each digit is worth. ... Every digit sits in a place. The place tells you what the digit is worth."
+  },
+  "1-2": {
+   "h": "d2f268c7a6c9",
+   "s": 14.78,
+   "text": "In four thousand seven hundred and thirty five, the 7 is in the hundreds column, so it is worth 700. Four thousand seven hundred and thirty five equals 4000, plus 700, plus 30, plus 5."
+  },
+  "1-3": {
+   "h": "5a34c9bca740",
+   "s": 4.25,
+   "text": "After the decimal point come tenths, hundredths and thousandths."
+  },
+  "1-4": {
+   "h": "7fa9047704b4",
+   "s": 8.23,
+   "text": "In 3 point 4 8 2, the 8 is in the hundredths column, so it is worth 8 hundredths, which is nought point nought 8."
+  },
+  "2-1": {
+   "h": "8a11ea82227b",
+   "s": 7.55,
+   "text": "Part two. Putting numbers in order. ... To compare decimals, write them in a column with the decimal points lined up."
+  },
+  "2-2": {
+   "h": "83fb104e4326",
+   "s": 8.94,
+   "text": "Fill the empty places with zeros, so every number has the same number of digits. A zero at the end does not change a decimal."
+  },
+  "2-3": {
+   "h": "5e20f68ca238",
+   "s": 9.73,
+   "text": "Now compare them like whole numbers: 700 is the biggest, so nought point 7 is the biggest. Nought point nought 7 is the smallest."
+  },
+  "2-4": {
+   "h": "07a042705e73",
+   "s": 12.1,
+   "text": "The less than sign means is less than, and the greater than sign means is greater than. The open side faces the bigger number: 3 point nought 6 is less than 3 point 6."
+  },
+  "3-1": {
+   "h": "627a2ffac9c6",
+   "s": 13.03,
+   "text": "Part three. Rounding. ... Let's round 467 to the nearest 10. On a number line, 467 sits between 460 and 470."
+  },
+  "3-2": {
+   "h": "e899a8aec9eb",
+   "s": 10.5,
+   "text": "467 is closer to 470, so 467 rounded to the nearest 10 is 470."
+  },
+  "3-3": {
+   "h": "4aa940ea0fdb",
+   "s": 14.23,
+   "text": "The quick rule: look at the digit just after the place you are rounding to. 5 or more, round up. 4 or less, keep it the same. 3 thousand 8 hundred and 50 to the nearest 100 is 3 thousand 9 hundred."
+  },
+  "3-4": {
+   "h": "97b9a2991d59",
+   "s": 11.41,
+   "text": "Decimal places work the same way. To round 6 point 4 7 to 1 decimal place, look at the 7. It is 5 or more, so round up to 6 point 5."
+  },
+  "4-1": {
+   "h": "0e1604e777e1",
+   "s": 13.93,
+   "text": "Part four. Multiplying and dividing by 10, 100 and 1000. ... When you multiply by 10, every digit moves one place to the left. 36 times 10 equals 360."
+  },
+  "4-2": {
+   "h": "302c040fb2e3",
+   "s": 11.52,
+   "text": "Times 100 moves the digits two places left. 4 point 7 times 100 equals 470. A zero fills the empty ones place."
+  },
+  "4-3": {
+   "h": "239c236858a3",
+   "s": 11.18,
+   "text": "Dividing moves the digits to the right. Dividing by 1000 moves them three places: 52 divided by 1000 equals nought point nought 5 2."
+  },
+  "4-4": {
+   "h": "ada4fdc48842",
+   "s": 8.11,
+   "text": "Count the zeros: 10 has one, 100 has two, 1000 has three. That is how many places the digits move."
+  },
+  "5-1": {
+   "h": "87a485465ca6",
+   "s": 10.92,
+   "text": "Part five. Estimating. ... The first significant figure is the first digit that is not zero. To estimate, round each number to 1 significant figure."
+  },
+  "5-2": {
+   "h": "f93204bb0caa",
+   "s": 9.3,
+   "text": "49 becomes 50, 21 becomes 20, 6 point 2 becomes 6, and nought point 3 8 becomes nought point 4."
+  },
+  "5-3": {
+   "h": "bc5eff2dc9b3",
+   "s": 11.95,
+   "text": "Estimate 49 times 21: round to 50 times 20, which equals 1000. The exact answer is 1029, so the estimate is close."
+  },
+  "5-4": {
+   "h": "2c74a7b2c592",
+   "s": 7.7,
+   "text": "Estimates help you spot mistakes. If your calculator said 102 point 9, you would know something went wrong."
+  }
+ }
+}

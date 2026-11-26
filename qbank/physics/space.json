@@ -1,0 +1,247 @@
+{
+ "slug": "space",
+ "title": "Space",
+ "ks3": "Space physics: the Solar System, day and night, seasons, gravity and light years",
+ "art": "space",
+ "intro": "The Sun, the planets and beyond. Practise day and night, years and seasons, the Moon, gravity on other worlds and light years.",
+ "description": "Free KS3 Physics space questions with answers: the Solar System, day and night, seasons, the Moon, gravity and weight on other planets, stars, galaxies and light years. Marked instantly, for Year 7, 8 and 9 (ages 9 to 14).",
+ "subtopics": [
+  {
+   "slug": "earth",
+   "title": "Days, years and seasons"
+  },
+  {
+   "slug": "solar",
+   "title": "The Solar System"
+  },
+  {
+   "slug": "gravity",
+   "title": "Gravity in space"
+  },
+  {
+   "slug": "beyond",
+   "title": "Stars and galaxies"
+  }
+ ],
+ "questions": [
+  {
+   "id": "spc-01",
+   "sub": "earth",
+   "level": 1,
+   "type": "mc",
+   "q": "Why do we have day and night?",
+   "options": [
+    "The Earth spins on its axis",
+    "The Sun moves round the Earth",
+    "The Moon blocks the Sun at night",
+    "Clouds cover the Sun"
+   ],
+   "answer": 0,
+   "hint": "Which way is your side of the Earth facing?",
+   "explain": "The Earth spins. The side facing the Sun has day, and the side facing away has night."
+  },
+  {
+   "id": "spc-02",
+   "sub": "earth",
+   "level": 1,
+   "type": "mc",
+   "q": "How long does the Earth take to travel once round the Sun?",
+   "options": [
+    "About 365 days (one year)",
+    "One day",
+    "One month",
+    "One week"
+   ],
+   "answer": 0,
+   "hint": "Think of birthdays.",
+   "explain": "The Earth takes about 365¼ days to orbit the Sun once. That is one year. (The extra quarter days make a leap year every four years.)"
+  },
+  {
+   "id": "spc-03",
+   "sub": "earth",
+   "level": 2,
+   "type": "mc",
+   "q": "How long does the Earth take to spin round once?",
+   "options": [
+    "About 24 hours",
+    "365 days",
+    "About 28 days",
+    "1 hour"
+   ],
+   "answer": 0,
+   "hint": "One spin gives one day and one night.",
+   "explain": "The Earth spins once about every 24 hours, giving one day and one night."
+  },
+  {
+   "id": "spc-04",
+   "sub": "earth",
+   "level": 2,
+   "type": "mc",
+   "q": "Why does the UK have summer and winter?",
+   "options": [
+    "The Earth's axis is tilted",
+    "The Earth is much closer to the Sun in summer",
+    "The Sun gets hotter in summer",
+    "The Moon blocks the Sun in winter"
+   ],
+   "answer": 0,
+   "hint": "It isn't about distance: the Earth is actually closest to the Sun in January.",
+   "explain": "The Earth's axis is tilted. When the UK is tilted towards the Sun, the days are longer and the Sun is higher in the sky, so it is summer."
+  },
+  {
+   "id": "spc-05",
+   "sub": "solar",
+   "level": 1,
+   "type": "mc",
+   "q": "What is at the centre of our Solar System?",
+   "options": [
+    "The Sun",
+    "The Earth",
+    "The Moon",
+    "Jupiter"
+   ],
+   "answer": 0,
+   "hint": "All the planets orbit it.",
+   "explain": "The Sun is at the centre. The Earth and the other planets orbit it."
+  },
+  {
+   "id": "spc-06",
+   "sub": "solar",
+   "level": 1,
+   "type": "mc",
+   "q": "Which of these is a star?",
+   "options": [
+    "The Sun",
+    "The Moon",
+    "Mars",
+    "The Earth"
+   ],
+   "answer": 0,
+   "hint": "A star makes its own light.",
+   "explain": "The Sun is our nearest star. The Moon is a moon, and Mars and the Earth are planets."
+  },
+  {
+   "id": "spc-07",
+   "sub": "solar",
+   "level": 2,
+   "type": "mc",
+   "q": "Which planet is closest to the Sun?",
+   "options": [
+    "Mercury",
+    "Venus",
+    "Earth",
+    "Mars"
+   ],
+   "answer": 0,
+   "hint": "The order starts: M, V, E, M…",
+   "explain": "The order from the Sun is Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune."
+  },
+  {
+   "id": "spc-08",
+   "sub": "solar",
+   "level": 2,
+   "type": "mc",
+   "q": "Why can we see the Moon?",
+   "options": [
+    "It reflects light from the Sun",
+    "It makes its own light",
+    "It is on fire",
+    "It glows because it is hot"
+   ],
+   "answer": 0,
+   "hint": "Is the Moon a light source?",
+   "explain": "The Moon doesn't make its own light. We see it because it reflects sunlight."
+  },
+  {
+   "id": "spc-09",
+   "sub": "solar",
+   "level": 3,
+   "type": "mc",
+   "q": "About how long does the Moon take to orbit the Earth once?",
+   "options": [
+    "About 27 days (roughly a month)",
+    "One day",
+    "One year",
+    "One week"
+   ],
+   "answer": 0,
+   "hint": "The word \"month\" comes from \"moon\".",
+   "explain": "The Moon takes about 27 days to orbit the Earth. From one full moon to the next is about 29½ days."
+  },
+  {
+   "id": "spc-10",
+   "sub": "gravity",
+   "level": 2,
+   "type": "num",
+   "q": "Jupiter's gravitational field strength is about 25 N/kg. What would a 2 kg bag weigh on Jupiter?",
+   "answer": "50",
+   "unit": "N",
+   "hint": "Weight = mass × gravitational field strength.",
+   "explain": "2 kg × 25 N/kg = 50 N. On Earth the same bag weighs only 20 N."
+  },
+  {
+   "id": "spc-11",
+   "sub": "gravity",
+   "level": 3,
+   "type": "mc",
+   "q": "Why does an astronaut weigh less on the Moon than on the Earth?",
+   "options": [
+    "The Moon has less mass, so its gravity is weaker",
+    "There is no air on the Moon",
+    "The astronaut's mass gets smaller",
+    "The Moon is further from the Sun"
+   ],
+   "answer": 0,
+   "hint": "Gravity depends on how much mass a planet or moon has.",
+   "explain": "The Moon has much less mass than the Earth, so its gravitational field is weaker. The astronaut's mass stays the same, but their weight is less."
+  },
+  {
+   "id": "spc-12",
+   "sub": "gravity",
+   "level": 3,
+   "type": "mc",
+   "q": "Which force keeps the Earth in orbit around the Sun?",
+   "options": [
+    "Gravity",
+    "Magnetism",
+    "Friction",
+    "Air resistance"
+   ],
+   "answer": 0,
+   "hint": "It is the same force that keeps the Moon going round the Earth.",
+   "explain": "The Sun's gravity pulls on the Earth and keeps it moving in its orbit."
+  },
+  {
+   "id": "spc-13",
+   "sub": "beyond",
+   "level": 2,
+   "type": "mc",
+   "q": "What is a light year?",
+   "options": [
+    "The distance light travels in one year",
+    "The time light takes to travel one year",
+    "A year on a different planet",
+    "How bright a star is"
+   ],
+   "answer": 0,
+   "hint": "It sounds like a time, but it isn't.",
+   "explain": "A light year is a distance: how far light travels in one year, about 9.5 million million km. It is used for distances to stars."
+  },
+  {
+   "id": "spc-14",
+   "sub": "beyond",
+   "level": 3,
+   "type": "mc",
+   "q": "What is the name of the galaxy that our Solar System is in?",
+   "options": [
+    "The Milky Way",
+    "The Solar System",
+    "Andromeda",
+    "The Universe"
+   ],
+   "answer": 0,
+   "hint": "On a very dark night you can see it as a milky band across the sky.",
+   "explain": "We live in the Milky Way galaxy, which has hundreds of billions of stars. Andromeda is a different galaxy nearby."
+  }
+ ]
+}

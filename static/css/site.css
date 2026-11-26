@@ -64,6 +64,7 @@ p{margin:0 0 1em}
 .site-header nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:16px;padding:10px 12px;border-radius:10px;min-height:44px;display:inline-flex;align-items:center}
 .site-header nav a{font-family:var(--serif);font-size:17px}
 .site-header nav a:hover{background:var(--fun-bg);color:var(--fun)}
+@media (max-width:480px){.site-header nav{flex-wrap:wrap;gap:2px}.site-header nav a{padding:8px 9px;font-size:16px}}
 .site-footer{margin-top:64px;padding:32px 0;border-top:6px solid transparent;border-image:linear-gradient(90deg,#FF8A3D,#FFC93C,#0F9488,#3B82F6,#6C4DF6,#FF5D8F) 1;background:color-mix(in srgb,var(--card) 82%,transparent);font-size:16px}
 
 /* building blocks for pages */

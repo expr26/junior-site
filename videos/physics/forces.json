@@ -1,0 +1,76 @@
+{
+  "title": "Forces",
+  "description": "Animated KS3 Physics lesson on forces for ages 9 to 14: pushes and pulls, newtons, force arrows, resultant force, balanced and unbalanced forces, mass and weight, and stretching springs.",
+  "intro": "Pushes, pulls, force arrows, balanced forces, weight and springs, explained by the owl in six short parts.",
+  "chapters": [
+    {
+      "title": "What is a force?",
+      "steps": [
+        {"say": "A force is a **push** or a **pull**. Here the owl is pushing a box.", "do": "push-box"},
+        {"say": "Forces can make things speed up, slow down or change direction.", "do": "ball-motion"},
+        {"say": "Forces can also change an object's shape. Squeeze a ball and it squashes.", "do": "ball-squash"},
+        {"say": "We measure forces in **newtons**. The short way to write newtons is **N**.", "do": "newtons"},
+        {"say": "We draw a force as an arrow. It points the way the force acts. A longer arrow means a bigger force: the 10 N arrow is twice as long as the 5 N arrow.", "do": "arrows"}
+      ],
+      "check": {"q": "Which unit do we use to measure force?", "options": ["Newtons (N)", "Kilograms (kg)", "Metres (m)", "Seconds (s)"], "answer": 0,
+                "hint": "The unit is named after the scientist Isaac Newton.", "explain": "Forces are measured in **newtons (N)**. Kilograms measure mass, not force."}
+    },
+    {
+      "title": "Contact and non-contact forces",
+      "steps": [
+        {"say": "**Contact forces** act when two things touch.", "do": "contact-title"},
+        {"say": "**Friction** acts where two surfaces rub together. It pushes against the way things slide.", "do": "friction"},
+        {"say": "**Air resistance** pushes back on things moving through air. Water resistance does the same in water.", "do": "air-resistance"},
+        {"say": "**Non-contact forces** act across a gap, without touching. **Gravity** pulls the apple down to the ground.", "do": "gravity"},
+        {"say": "**Magnetism** and **static electricity** are non-contact forces too. The magnet pulls the paper clip across the gap.", "do": "magnet"}
+      ],
+      "check": {"q": "Which of these is a **non-contact** force?", "options": ["Gravity", "Friction", "Air resistance", "Water resistance"], "answer": 0,
+                "hint": "Which force can act without anything touching, like the Earth pulling a falling apple?", "explain": "**Gravity** acts across a gap. Friction, air resistance and water resistance all need surfaces to touch."}
+    },
+    {
+      "title": "Resultant force",
+      "steps": [
+        {"say": "Usually more than one force acts on an object. The **resultant force** is what you get when you add them all up.", "do": "two-forces"},
+        {"say": "Forces in the **same direction** add up. Two friends push with 5 N and 3 N. The resultant is 5 + 3 = 8 N to the right.", "speak": "Forces in the same direction add up. Two friends push with 5 newtons and 3 newtons. The resultant is 5 plus 3, which is 8 newtons to the right.", "do": "same-way"},
+        {"say": "Forces in **opposite directions** take away. The owl pushes with 10 N and friction pulls back with 4 N.", "do": "opposite"},
+        {"say": "10 − 4 = 6, so the resultant force is 6 N, in the direction of the bigger force: to the right.", "speak": "10 minus 4 is 6, so the resultant force is 6 newtons, in the direction of the bigger force: to the right.", "do": "opposite-answer"}
+      ],
+      "check": {"q": "A 12 N force pushes a trolley to the right and a 5 N force pushes it to the left. What is the resultant force?", "options": ["7 N to the right", "17 N to the right", "7 N to the left", "5 N to the left"], "answer": 0,
+                "hint": "Opposite directions: take the smaller force away from the bigger one. Which way is the bigger force?", "explain": "12 − 5 = 7, and the bigger force is to the right, so the resultant is **7 N to the right**."}
+    },
+    {
+      "title": "Balanced and unbalanced forces",
+      "steps": [
+        {"say": "A book rests on a table. Gravity pulls it down with 5 N. The table pushes it up with 5 N.", "do": "book"},
+        {"say": "The forces are equal and opposite, so they are **balanced**. The resultant force is zero.", "do": "book-balanced"},
+        {"say": "Balanced forces do not change how something moves. A still object stays still, and a moving object keeps going at the same speed in the same direction.", "do": "car-steady"},
+        {"say": "If the forces are **unbalanced**, the motion changes. The driving force is now bigger than air resistance, so the car speeds up.", "do": "car-faster"},
+        {"say": "If air resistance and friction are bigger than the driving force, the car slows down.", "do": "car-slower"}
+      ],
+      "check": {"q": "A car moves at a steady speed in a straight line. What can you say about the forces on it?", "options": ["They are balanced", "They are unbalanced", "There are no forces on it", "Only gravity acts on it"], "answer": 0,
+                "hint": "Is the car speeding up, slowing down or turning? If its motion isn't changing, what does that tell you?", "explain": "Its motion is not changing, so the forces are **balanced**: the driving force equals the resistance forces. There are still forces acting; they just cancel out."}
+    },
+    {
+      "title": "Mass and weight",
+      "steps": [
+        {"say": "**Mass** is how much stuff is in an object. We measure it in kilograms, **kg**. Your mass is the same everywhere.", "do": "mass"},
+        {"say": "**Weight** is the force of gravity pulling on that mass. Weight is a force, so we measure it in newtons.", "do": "weight"},
+        {"say": "On Earth, gravity pulls about 10 N on every kilogram. So **weight = mass × 10 N/kg**. A 2 kg bag weighs 2 × 10 = 20 N.", "speak": "On Earth, gravity pulls about 10 newtons on every kilogram. So weight equals mass times 10 newtons per kilogram. A 2 kilogram bag weighs 2 times 10, which is 20 newtons.", "do": "weight-calc"},
+        {"say": "Gravity on the Moon is much weaker, about 1.6 N/kg. The same bag weighs only about 3.2 N there, but its mass is still 2 kg.", "speak": "Gravity on the Moon is much weaker, about 1.6 newtons per kilogram. The same bag weighs only about 3.2 newtons there, but its mass is still 2 kilograms.", "do": "moon"}
+      ],
+      "check": {"q": "A dog has a mass of 30 kg. What is its weight on Earth? (Use 10 N/kg.)", "options": ["300 N", "30 N", "3 N", "300 kg"], "answer": 0,
+                "hint": "Weight = mass × 10 N/kg. And weight is a force, so which unit does it use?", "explain": "30 × 10 = 300, so the dog weighs **300 N**. Not 300 kg: weight is a force, so it is in newtons."}
+    },
+    {
+      "title": "Stretching springs",
+      "steps": [
+        {"say": "Hang a weight on a spring and the spring stretches. How much longer it gets is called the **extension**.", "do": "spring-0"},
+        {"say": "With 1 N the spring stretches 2 cm. With 2 N it stretches 4 cm. With 3 N, 6 cm.", "speak": "With 1 newton the spring stretches 2 centimetres. With 2 newtons it stretches 4 centimetres. With 3 newtons, 6 centimetres.", "do": "spring-123"},
+        {"say": "Double the force and you double the extension. This is called **Hooke's law**.", "do": "spring-graph"},
+        {"say": "But pull too hard and the spring is damaged: it stays stretched and doesn't go back to its old shape. Then Hooke's law stops working.", "do": "spring-broken"}
+      ],
+      "check": {"q": "A spring stretches 3 cm when you hang 1 N on it. How far does it stretch with 4 N? (It isn't damaged.)", "options": ["12 cm", "7 cm", "4 cm", "3 cm"], "answer": 0,
+                "hint": "4 N is four times as big as 1 N. So the extension is four times as big too.", "explain": "4 times the force gives 4 times the extension: 4 × 3 = **12 cm**."}
+    }
+  ]
+}

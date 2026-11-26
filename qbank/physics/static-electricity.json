@@ -1,0 +1,213 @@
+{
+ "slug": "static-electricity",
+ "title": "Static electricity",
+ "ks3": "Electricity and electromagnetism: static charge, electrons, attraction and repulsion, electric fields",
+ "art": "static",
+ "intro": "Rub a balloon on your hair and it sticks to the wall. Practise charges, moving electrons, attraction and repulsion, sparks and lightning.",
+ "description": "Free KS3 Physics static electricity questions with answers: positive and negative charge, electrons, attraction and repulsion, electric fields, sparks and lightning. Marked instantly, for Year 7, 8 and 9 (ages 9 to 14).",
+ "subtopics": [
+  {
+   "slug": "charges",
+   "title": "Charges"
+  },
+  {
+   "slug": "electrons",
+   "title": "Moving electrons"
+  },
+  {
+   "slug": "effects",
+   "title": "Static in everyday life"
+  }
+ ],
+ "questions": [
+  {
+   "id": "sta-01",
+   "sub": "charges",
+   "level": 1,
+   "type": "mc",
+   "q": "You rub a balloon on your jumper. What happens to the balloon?",
+   "options": [
+    "It becomes charged",
+    "It becomes magnetic",
+    "It gets heavier",
+    "It becomes a conductor"
+   ],
+   "answer": 0,
+   "hint": "Rubbing two materials together moves tiny charged particles.",
+   "explain": "Rubbing moves electrons from one material to the other, so the balloon becomes electrically charged."
+  },
+  {
+   "id": "sta-02",
+   "sub": "charges",
+   "level": 1,
+   "type": "mc",
+   "q": "Two objects have the same type of charge. What happens when they are brought close together?",
+   "options": [
+    "They repel (push apart)",
+    "They attract (pull together)",
+    "Nothing",
+    "They swap charges straight away"
+   ],
+   "answer": 0,
+   "hint": "Like charges…",
+   "explain": "Like charges repel: two positives push apart, and so do two negatives."
+  },
+  {
+   "id": "sta-03",
+   "sub": "charges",
+   "level": 1,
+   "type": "mc",
+   "q": "A positively charged object is brought near a negatively charged object. What happens?",
+   "options": [
+    "They attract",
+    "They repel",
+    "Nothing",
+    "Both charges disappear"
+   ],
+   "answer": 0,
+   "hint": "Opposite charges…",
+   "explain": "Opposite charges attract, so the objects pull towards each other."
+  },
+  {
+   "id": "sta-04",
+   "sub": "charges",
+   "level": 2,
+   "type": "mc",
+   "q": "What type of charge does an electron have?",
+   "options": [
+    "Negative",
+    "Positive",
+    "No charge"
+   ],
+   "answer": 0,
+   "hint": "Electrons are the particles that move when things become charged.",
+   "explain": "Electrons are negatively charged. Protons are positive and neutrons have no charge."
+  },
+  {
+   "id": "sta-05",
+   "sub": "electrons",
+   "level": 2,
+   "type": "mc",
+   "q": "A balloon is rubbed on hair. Which particles move from one material to the other?",
+   "options": [
+    "Electrons",
+    "Protons",
+    "Neutrons",
+    "Whole atoms"
+   ],
+   "answer": 0,
+   "hint": "These are the tiny particles on the outside of atoms.",
+   "explain": "Only electrons move. Protons are held tightly in the centre of each atom and can't move off."
+  },
+  {
+   "id": "sta-06",
+   "sub": "electrons",
+   "level": 2,
+   "type": "mc",
+   "q": "A balloon gains electrons. What charge does it have now?",
+   "options": [
+    "Negative",
+    "Positive",
+    "No charge"
+   ],
+   "answer": 0,
+   "hint": "Electrons are negative.",
+   "explain": "It has gained extra negative electrons, so it is negatively charged."
+  },
+  {
+   "id": "sta-07",
+   "sub": "electrons",
+   "level": 2,
+   "type": "mc",
+   "q": "A balloon is rubbed on someone's hair, and the hair loses electrons. What charge does the hair have now?",
+   "options": [
+    "Positive",
+    "Negative",
+    "No charge"
+   ],
+   "answer": 0,
+   "hint": "It now has more protons than electrons.",
+   "explain": "Losing negative electrons leaves more positive charge than negative, so the hair is positively charged. That is why it is attracted to the balloon."
+  },
+  {
+   "id": "sta-08",
+   "sub": "effects",
+   "level": 2,
+   "type": "mc",
+   "q": "What do we call the region around a charged object where it can push or pull other charges?",
+   "options": [
+    "An electric field",
+    "A magnetic field",
+    "A gravitational field",
+    "A light field"
+   ],
+   "answer": 0,
+   "hint": "Charged objects can act on each other without touching.",
+   "explain": "A charged object has an electric field around it. Other charges inside the field feel a force."
+  },
+  {
+   "id": "sta-09",
+   "sub": "effects",
+   "level": 2,
+   "type": "mc",
+   "q": "What is lightning?",
+   "options": [
+    "A huge spark caused by charge building up in clouds",
+    "Sound from clouds",
+    "Sunlight reflected off clouds",
+    "A magnetic effect of rain"
+   ],
+   "answer": 0,
+   "hint": "Think of a tiny spark from a door handle, but much bigger.",
+   "explain": "Charge builds up in storm clouds. When there is enough, it jumps to the ground (or to another cloud) as a giant spark: lightning."
+  },
+  {
+   "id": "sta-10",
+   "sub": "effects",
+   "level": 3,
+   "type": "mc",
+   "q": "A charged balloon sticks to a wall that is not charged. Why?",
+   "options": [
+    "The balloon pulls the opposite charges in the wall closer, so they attract",
+    "The wall is magnetic",
+    "The balloon is sticky",
+    "Gravity pulls it to the wall"
+   ],
+   "answer": 0,
+   "hint": "The balloon's charge affects the electrons in the wall's surface.",
+   "explain": "The negative balloon pushes electrons in the wall's surface away, leaving the surface slightly positive. Opposite charges attract, so the balloon sticks."
+  },
+  {
+   "id": "sta-11",
+   "sub": "effects",
+   "level": 3,
+   "type": "mc",
+   "q": "You walk across a carpet, touch a metal door handle and feel a small shock. Why?",
+   "options": [
+    "Charge built up on you flows away through the metal",
+    "The handle has a battery in it",
+    "The carpet is magnetic",
+    "Your shoes make electricity"
+   ],
+   "answer": 0,
+   "hint": "Metal is a conductor.",
+   "explain": "Walking on the carpet charges you up. Metal is a conductor, so when you touch it the charge suddenly flows away, giving a tiny spark."
+  },
+  {
+   "id": "sta-12",
+   "sub": "effects",
+   "level": 3,
+   "type": "mc",
+   "q": "A charged plastic rod is held near tiny pieces of paper. What happens?",
+   "options": [
+    "The paper is attracted to the rod",
+    "Nothing happens",
+    "The paper is pushed away",
+    "The paper becomes magnetic"
+   ],
+   "answer": 0,
+   "hint": "It is like the balloon and the wall.",
+   "explain": "The rod's charge pulls opposite charges in the paper towards it, so the light pieces of paper jump up to the rod."
+  }
+ ]
+}

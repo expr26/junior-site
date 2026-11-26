@@ -1,0 +1,179 @@
+{
+  "slug": "fractions-decimals-percentages",
+  "title": "Fractions, decimals and percentages",
+  "ks3": "Number: fractions, decimals and percentages",
+  "art": "fdp",
+  "intro": "Three ways to write the same amount: {1/2}, 0.5 and 50%. Practise switching between them, adding fractions and finding percentages of amounts.",
+  "description": "Free KS3 Maths fractions, decimals and percentages questions with answers: equivalent fractions, converting, adding fractions and percentages of amounts, with instant marking and worked answers for Year 7, 8 and 9.",
+  "subtopics": [
+    {"slug": "meaning", "title": "What fractions mean"},
+    {"slug": "equivalent", "title": "Equivalent fractions"},
+    {"slug": "convert", "title": "Fractions, decimals and percentages"},
+    {"slug": "calc", "title": "Adding and multiplying fractions"},
+    {"slug": "amounts", "title": "Parts of amounts"}
+  ],
+  "questions": [
+    {
+      "id": "fdp-01", "sub": "meaning", "level": 1, "type": "num",
+      "q": "What fraction of the circle is shaded?",
+      "fig": {"type": "pie", "n": 3, "d": 8},
+      "answer": "3/8",
+      "hint": "Count all the equal parts first. That is the bottom number.",
+      "explain": "The circle is cut into 8 equal parts and 3 are shaded, so {3/8} is shaded."
+    },
+    {
+      "id": "fdp-02", "sub": "meaning", "level": 1, "type": "num",
+      "q": "What fraction is the arrow pointing to?",
+      "fig": {"type": "nline", "d": 5, "mark": 3},
+      "answer": "3/5",
+      "hint": "How many equal steps are there between 0 and 1? How many steps along is the arrow?",
+      "explain": "The line from 0 to 1 is cut into 5 equal steps, and the arrow is 3 steps along. So it points to {3/5}."
+    },
+    {
+      "id": "fdp-03", "sub": "meaning", "level": 2, "type": "mc",
+      "q": "Both bars are the same length. Which fraction is bigger?",
+      "fig": {"type": "bars", "rows": [{"n": 2, "d": 3, "label": "2/3"}, {"n": 3, "d": 5, "label": "3/5"}]},
+      "options": ["{2/3}", "{3/5}", "They are the same"],
+      "answer": 0,
+      "hint": "Compare how far the shading reaches along each bar.",
+      "explain": "The shading for {2/3} reaches further. You can check with a common denominator: {2/3} = {10/15} and {3/5} = {9/15}, so {2/3} is bigger."
+    },
+    {
+      "id": "fdp-04", "sub": "equivalent", "level": 1, "type": "mc",
+      "q": "Which fraction is the same as {1/2}?",
+      "options": ["{3/6}", "{2/3}", "{3/5}", "{1/4}"],
+      "answer": 0,
+      "hint": "In a half, the top number is half of the bottom number.",
+      "explain": "3 is half of 6, so {3/6} = {1/2}. You get it by multiplying the top and the bottom of {1/2} by 3."
+    },
+    {
+      "id": "fdp-05", "sub": "equivalent", "level": 1, "type": "num",
+      "q": "Write {6/8} in its simplest form.",
+      "answer": "3/4", "simplest": true,
+      "hint": "Find a number that divides both 6 and 8 exactly.",
+      "explain": "Divide the top and the bottom by 2: 6 ÷ 2 = 3 and 8 ÷ 2 = 4. So {6/8} = {3/4}."
+    },
+    {
+      "id": "fdp-06", "sub": "equivalent", "level": 2, "type": "num",
+      "q": "{2/5} is the same as how many twentieths? Type the missing top number: {2/5} = ?/20",
+      "answer": "8",
+      "hint": "What do you multiply 5 by to get 20? Do the same to the top.",
+      "explain": "5 × 4 = 20, so multiply the top by 4 too: 2 × 4 = 8. {2/5} = {8/20}."
+    },
+    {
+      "id": "fdp-07", "sub": "equivalent", "level": 2, "type": "num",
+      "q": "Write {18/24} in its simplest form.",
+      "answer": "3/4", "simplest": true,
+      "hint": "Try the biggest number that divides both 18 and 24. If you are not sure, divide by 2 and then by 3.",
+      "explain": "The biggest number that divides both 18 and 24 is 6: 18 ÷ 6 = 3 and 24 ÷ 6 = 4. So {18/24} = {3/4}."
+    },
+    {
+      "id": "fdp-08", "sub": "convert", "level": 1, "type": "num",
+      "q": "What percentage of the grid is coloured?",
+      "fig": {"type": "hundred", "shade": 25},
+      "answer": "25", "unit": "%",
+      "hint": "There are 100 squares. Per cent means \"out of 100\".",
+      "explain": "25 of the 100 squares are coloured. Per cent means \"out of 100\", so that is 25%."
+    },
+    {
+      "id": "fdp-09", "sub": "convert", "level": 1, "type": "mc",
+      "q": "Which decimal is the same as {3/4}?",
+      "options": ["0.75", "0.34", "3.4", "0.43"],
+      "answer": 0,
+      "hint": "{3/4} is three quarters. How much is one quarter of 1 as a decimal?",
+      "explain": "One quarter is 0.25, so three quarters is 3 × 0.25 = 0.75. You can also write {3/4} = {75/100} = 0.75."
+    },
+    {
+      "id": "fdp-10", "sub": "convert", "level": 2, "type": "num",
+      "q": "Write 0.4 as a fraction in its simplest form.",
+      "answer": "2/5", "simplest": true,
+      "hint": "0.4 means 4 tenths. Write that as a fraction, then simplify.",
+      "explain": "0.4 is 4 tenths, so 0.4 = {4/10}. Divide the top and the bottom by 2 to get {2/5}."
+    },
+    {
+      "id": "fdp-11", "sub": "convert", "level": 2, "type": "num",
+      "q": "Write {3/5} as a percentage.",
+      "answer": "60", "unit": "%",
+      "hint": "Make the bottom number 100. What do you multiply 5 by to get 100?",
+      "explain": "5 × 20 = 100, so {3/5} = {60/100} (3 × 20 = 60 on the top). 60 out of 100 is 60%."
+    },
+    {
+      "id": "fdp-12", "sub": "convert", "level": 3, "type": "mc",
+      "q": "Which list goes from smallest to largest?",
+      "options": ["0.3, {1/3}, 35%", "{1/3}, 0.3, 35%", "35%, {1/3}, 0.3", "0.3, 35%, {1/3}"],
+      "answer": 0,
+      "hint": "Change them all to decimals: 35% = 0.35, and {1/3} = 0.333…",
+      "explain": "As decimals: 0.3 = 0.300, {1/3} = 0.333… and 35% = 0.350. So the order from smallest is 0.3, {1/3}, 35%."
+    },
+    {
+      "id": "fdp-13", "sub": "calc", "level": 1, "type": "num",
+      "q": "Work out {2/7} + {3/7}.",
+      "answer": "5/7",
+      "hint": "The bottom numbers are the same, so add the top numbers only.",
+      "explain": "Both are sevenths, so add the tops: 2 + 3 = 5. The answer is {5/7}. The bottom number stays 7."
+    },
+    {
+      "id": "fdp-14", "sub": "calc", "level": 2, "type": "num",
+      "q": "Work out {1/2} + {1/4}.",
+      "answer": "3/4",
+      "hint": "Change {1/2} into quarters first.",
+      "explain": "{1/2} = {2/4}. Then {2/4} + {1/4} = {3/4}."
+    },
+    {
+      "id": "fdp-15", "sub": "calc", "level": 3, "type": "num",
+      "q": "Work out {2/3} − {1/4}.",
+      "answer": "5/12",
+      "hint": "Find a number that both 3 and 4 go into, and change both fractions to have it on the bottom.",
+      "explain": "12 is a multiple of 3 and of 4. {2/3} = {8/12} and {1/4} = {3/12}. So {8/12} − {3/12} = {5/12}."
+    },
+    {
+      "id": "fdp-16", "sub": "calc", "level": 3, "type": "num",
+      "q": "Work out {3/4} × {2/5}.",
+      "answer": "3/10",
+      "hint": "To multiply fractions, multiply the tops together and the bottoms together.",
+      "explain": "Tops: 3 × 2 = 6. Bottoms: 4 × 5 = 20. So the answer is {6/20}, which simplifies to {3/10}."
+    },
+    {
+      "id": "fdp-17", "sub": "amounts", "level": 1, "type": "num",
+      "q": "Find 50% of 36.",
+      "answer": "18",
+      "hint": "50% is the same as a half.",
+      "explain": "50% is a half, and half of 36 is 36 ÷ 2 = 18."
+    },
+    {
+      "id": "fdp-18", "sub": "amounts", "level": 1, "type": "num",
+      "q": "Find {3/4} of 20.",
+      "answer": "15",
+      "hint": "First find {1/4} of 20 by dividing by 4.",
+      "explain": "{1/4} of 20 is 20 ÷ 4 = 5. So {3/4} of 20 is 3 × 5 = 15."
+    },
+    {
+      "id": "fdp-19", "sub": "amounts", "level": 2, "type": "num",
+      "q": "Find 10% of £45. Type the answer in pounds.",
+      "answer": "4.5", "show": "£4.50",
+      "hint": "To find 10%, divide by 10.",
+      "explain": "10% is {1/10}, so divide by 10: £45 ÷ 10 = £4.50."
+    },
+    {
+      "id": "fdp-20", "sub": "amounts", "level": 2, "type": "num",
+      "q": "Find 25% of 80 kg.",
+      "answer": "20", "unit": "kg",
+      "hint": "25% is the same as a quarter.",
+      "explain": "25% is {1/4}, and 80 ÷ 4 = 20. So 25% of 80 kg is 20 kg."
+    },
+    {
+      "id": "fdp-21", "sub": "amounts", "level": 3, "type": "num",
+      "q": "A jacket costs £60. In a sale, the price goes down by 15%. What is the sale price in pounds?",
+      "answer": "51", "show": "£51",
+      "hint": "Find 10% and 5% of £60, add them to get 15%, then take that away from £60.",
+      "explain": "10% of £60 is £6, and 5% is half of that, £3. So 15% is £6 + £3 = £9. The sale price is £60 − £9 = £51."
+    },
+    {
+      "id": "fdp-22", "sub": "amounts", "level": 3, "type": "num",
+      "q": "A class has 12 girls and 18 boys. What percentage of the class are girls?",
+      "answer": "40", "unit": "%",
+      "hint": "First find how many children there are altogether. Then write the girls as a fraction of that.",
+      "explain": "There are 12 + 18 = 30 children. Girls are {12/30} = {4/10} of the class, and {4/10} = {40/100} = 40%."
+    }
+  ]
+}

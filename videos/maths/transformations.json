@@ -1,0 +1,72 @@
+{
+  "title": "Transformations",
+  "description": "Animated KS3 Maths lesson on transformations for ages 9 to 14: reflection in a mirror line, translation, rotation about a centre, enlargement by a scale factor, congruent shapes, line symmetry and rotational symmetry, with coordinates on a grid.",
+  "intro": "Flip it, slide it, turn it or make it bigger: reflections, translations, rotations, enlargements and symmetry, explained by the owl in six short parts.",
+  "chapters": [
+    {
+      "title": "Four ways to move a shape",
+      "steps": [
+        {"say": "A **transformation** changes where a shape is, which way it faces, or how big it is.", "do": "tf-intro"},
+        {"say": "There are four kinds. A **reflection** flips. A **rotation** turns. A **translation** slides. An **enlargement** makes a shape bigger or smaller.", "do": "tf-four"},
+        {"say": "After a reflection, rotation or translation, the new shape is exactly the same size and shape. We say it is **congruent**. Only an enlargement changes the size.", "do": "tf-congruent"}
+      ],
+      "check": {"q": "Which transformation can change the size of a shape?", "options": ["Enlargement", "Reflection", "Rotation", "Translation"], "answer": 0,
+                "hint": "Flipping, turning and sliding all keep the shape the same size. Which one is left?", "explain": "Only an **enlargement** changes the size. Reflections, rotations and translations give a congruent shape: same size, same shape."}
+    },
+    {
+      "title": "Reflection",
+      "steps": [
+        {"say": "A **reflection** flips a shape over a **mirror line**. Here the mirror line is the y-axis.", "do": "ref-mirror"},
+        {"say": "Every corner of the image is the **same distance** from the mirror line as the corner it came from, but on the other side. This corner is 4 squares from the line on each side.", "do": "ref-distance"},
+        {"say": "Reflect the point (3, 2) in the y-axis and it goes to (−3, 2). The **x-coordinate changes sign**. The y-coordinate stays the same.", "speak": "Reflect the point 3, 2 in the y-axis and it goes to negative 3, 2. The x-coordinate changes sign. The y-coordinate stays the same.", "do": "ref-yaxis"},
+        {"say": "Now the mirror line is the x-axis. The point (4, 3) goes to (4, −3). This time the **y-coordinate changes sign**.", "speak": "Now the mirror line is the x-axis. The point 4, 3 goes to 4, negative 3. This time the y-coordinate changes sign.", "do": "ref-xaxis"}
+      ],
+      "check": {"q": "The point (5, 2) is reflected in the y-axis. Where does it go?", "options": ["(−5, 2)", "(5, −2)", "(−5, −2)", "(2, 5)"], "answer": 0,
+                "hint": "The y-axis is the up-and-down line. The point jumps from the right side to the left side. Which coordinate changes?", "explain": "Reflecting in the y-axis changes the sign of the x-coordinate: (5, 2) → **(−5, 2)**."}
+    },
+    {
+      "title": "Translation",
+      "steps": [
+        {"say": "A **translation** slides a shape. It does not turn or flip.", "do": "tr-slide"},
+        {"say": "**Every point** moves the same distance in the same direction. Here each corner moves 5 squares right and 2 squares down.", "do": "tr-count"},
+        {"say": "With coordinates: moving right adds to x, left takes away from x. Up adds to y, down takes away from y. So (1, 2) moved 3 right and 2 up goes to (4, 4).", "speak": "With coordinates: moving right adds to x, left takes away from x. Up adds to y, down takes away from y. So 1, 2 moved 3 right and 2 up goes to 4, 4.", "do": "tr-point"},
+        {"say": "The image is **congruent**: the same size and shape, and it still faces the same way.", "do": "tr-same"}
+      ],
+      "check": {"q": "The point (5, 2) is translated 3 squares left and 1 square down. Where does it go?", "options": ["(2, 1)", "(8, 1)", "(2, 3)", "(8, 3)"], "answer": 0,
+                "hint": "Left takes away from x. Down takes away from y.", "explain": "x: 5 − 3 = 2. y: 2 − 1 = 1. So the point goes to **(2, 1)**."}
+    },
+    {
+      "title": "Rotation",
+      "steps": [
+        {"say": "A **rotation** turns a shape. A quarter turn is 90°. A half turn is 180°. A full turn is 360°.", "speak": "A rotation turns a shape. A quarter turn is 90 degrees. A half turn is 180 degrees. A full turn is 360 degrees.", "do": "rot-turn"},
+        {"say": "To describe a rotation, give three things: the **angle**, the **direction** (clockwise or anticlockwise) and the **centre**, the point it turns about.", "do": "rot-three"},
+        {"say": "This triangle turns 90° clockwise about the origin, (0, 0). Every point turns around the centre by the same angle.", "speak": "This triangle turns 90 degrees clockwise about the origin, 0, 0. Every point turns around the centre by the same angle.", "do": "rot-shape"},
+        {"say": "A half turn about the origin changes the sign of **both** coordinates. (3, 1) goes to (−3, −1).", "speak": "A half turn about the origin changes the sign of both coordinates. 3, 1 goes to negative 3, negative 1.", "do": "rot-point"}
+      ],
+      "check": {"q": "The point (0, 3) is rotated 90° clockwise about the origin. Where does it go?", "options": ["(3, 0)", "(−3, 0)", "(0, −3)", "(3, 3)"], "answer": 0,
+                "hint": "The point is on the y-axis, 3 squares up. Turn it a quarter turn the way a clock's hands go.", "explain": "A quarter turn clockwise takes a point that is 3 up round to 3 to the right: **(3, 0)**."}
+    },
+    {
+      "title": "Enlargement",
+      "steps": [
+        {"say": "An **enlargement** changes the size. The **scale factor** tells you how many times bigger. With scale factor 3, a 2 by 1 rectangle becomes 6 by 3.", "do": "en-grow"},
+        {"say": "To find the scale factor, divide: **new length ÷ old length**. Here 6 ÷ 2 = 3. The angles stay the same.", "speak": "To find the scale factor, divide the new length by the old length. Here 6 divided by 2 equals 3. The angles stay the same.", "do": "en-sf"},
+        {"say": "An enlargement can have a **centre**. With scale factor 2, every corner ends up twice as far from the centre as before.", "do": "en-centre"},
+        {"say": "Watch out for area! With scale factor 2, the length and the width both double, so the area is 2 × 2 = 4 times bigger.", "speak": "Watch out for area! With scale factor 2, the length and the width both double, so the area is 2 times 2, which is 4 times bigger.", "do": "en-area"}
+      ],
+      "check": {"q": "A rectangle 4 cm by 3 cm is enlarged by scale factor 2. What are its new measurements?", "options": ["8 cm by 6 cm", "6 cm by 5 cm", "8 cm by 3 cm", "16 cm by 12 cm"], "answer": 0,
+                "hint": "Multiply every length by the scale factor.", "explain": "4 × 2 = 8 cm and 3 × 2 = 6 cm, so the new rectangle is **8 cm by 6 cm**."}
+    },
+    {
+      "title": "Symmetry",
+      "steps": [
+        {"say": "A shape has **line symmetry** if you can fold it along a line and the two halves match exactly. That line is a **line of symmetry**.", "do": "sym-line"},
+        {"say": "An equilateral triangle has **3** lines of symmetry. A square has **4**.", "do": "sym-shapes"},
+        {"say": "**Rotational symmetry**: turn the shape. Count how many times it fits onto itself in one full turn. A square fits 4 times, so its **order** is 4.", "do": "sym-rot"},
+        {"say": "The letter S and a parallelogram both fit onto themselves after a half turn: order 2. A parallelogram has **no** lines of symmetry at all.", "do": "sym-order2"}
+      ],
+      "check": {"q": "How many lines of symmetry does a rectangle (that is not a square) have?", "options": ["2", "4", "1", "0"], "answer": 0,
+                "hint": "Imagine folding a sheet of paper. Which folds make the halves match? A diagonal fold does not!", "explain": "A rectangle has **2** lines of symmetry: one across the middle and one down the middle. The diagonals are not lines of symmetry."}
+    }
+  ]
+}

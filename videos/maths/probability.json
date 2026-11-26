@@ -1,0 +1,60 @@
+{
+  "title": "Probability",
+  "description": "Animated KS3 Maths lesson on probability for ages 9 to 14: probability words and the probability scale from 0 to 1, working out probabilities as fractions, the probability of something not happening, expected results, and listing outcomes for two events.",
+  "intro": "How likely is it? Probability words, the 0 to 1 scale, fractions, expected results and two events, explained by the owl in five short parts.",
+  "chapters": [
+    {
+      "title": "How likely?",
+      "steps": [
+        {"say": "**Probability** tells us how likely something is to happen. We can use words: impossible, unlikely, even chance, likely and certain.", "do": "pw-words"},
+        {"say": "Rolling a 7 on a dice numbered 1 to 6 is **impossible**. Getting heads when you flip a fair coin is an **even chance**. The Sun rising tomorrow is **certain**.", "do": "pw-examples"},
+        {"say": "We can also use numbers. Impossible is **0**. Certain is **1**. An even chance is {1/2}, or 0.5. Every probability is somewhere from 0 to 1.", "speak": "We can also use numbers. Impossible is 0. Certain is 1. An even chance is one half, or 0.5. Every probability is somewhere from 0 to 1.", "do": "pw-scale"}
+      ],
+      "check": {"q": "A drawer has only red socks in it. You take one sock without looking. How likely is it to be red?", "options": ["Certain", "Likely", "Even chance", "Impossible"], "answer": 0,
+                "hint": "Is there any other colour it could be?", "explain": "Every sock is red, so it **must** be red: it is **certain**, with a probability of 1."}
+    },
+    {
+      "title": "Working out probabilities",
+      "steps": [
+        {"say": "When all the outcomes are equally likely: **probability = number of ways it can happen ÷ total number of outcomes**.", "speak": "When all the outcomes are equally likely, the probability is the number of ways it can happen, divided by the total number of outcomes.", "do": "ps-formula"},
+        {"say": "A fair dice has 6 equally likely outcomes. There is only one 6, so the probability of rolling a 6 is {1/6}.", "speak": "A fair dice has 6 equally likely outcomes. There is only one 6, so the probability of rolling a 6 is one sixth.", "do": "ps-dice"},
+        {"say": "Rolling a number greater than 4 can happen 2 ways: a 5 or a 6. So the probability is {2/6}, which simplifies to {1/3}.", "speak": "Rolling a number greater than 4 can happen 2 ways: a 5 or a 6. So the probability is two sixths, which simplifies to one third.", "do": "ps-bigger"},
+        {"say": "A bag has 3 red, 5 blue and 2 green counters. That is 10 counters. 5 are blue, so the probability of picking blue is {5/10} = {1/2}.", "speak": "A bag has 3 red, 5 blue and 2 green counters. That is 10 counters. 5 are blue, so the probability of picking blue is five tenths, which equals one half.", "do": "ps-bag"}
+      ],
+      "check": {"q": "A bag has 4 red and 6 yellow counters. One is taken at random. What is the probability that it is red?", "options": ["{2/5}", "{2/3}", "{3/5}", "{1/4}"], "answer": 0,
+                "hint": "First count all the counters. How many of them are red?", "explain": "There are 4 + 6 = 10 counters and 4 are red, so the probability is {4/10} = **{2/5}**."}
+    },
+    {
+      "title": "Not happening",
+      "steps": [
+        {"say": "Something either happens or it doesn't. The two probabilities always **add up to 1**.", "do": "pn-total"},
+        {"say": "The probability of rain tomorrow is 0.3. So the probability of **no rain** is 1 − 0.3 = 0.7.", "speak": "The probability of rain tomorrow is 0.3. So the probability of no rain is 1 minus 0.3, which is 0.7.", "do": "pn-rain"},
+        {"say": "Back to the bag of 10 counters. The probability of green is {2/10}. So the probability of **not green** is 1 − {2/10} = {8/10} = {4/5}.", "speak": "Back to the bag of 10 counters. The probability of green is two tenths. So the probability of not green is 1 minus two tenths, which is eight tenths, or four fifths.", "do": "pn-bag"}
+      ],
+      "check": {"q": "The probability that a team wins its next match is 0.6. What is the probability that it does not win?", "options": ["0.4", "0.6", "1.6", "0.04"], "answer": 0,
+                "hint": "Winning and not winning add up to 1.", "explain": "1 − 0.6 = **0.4**."}
+    },
+    {
+      "title": "Expected results",
+      "steps": [
+        {"say": "If you repeat something many times, you can work out how many times you **expect** an outcome: **probability × number of tries**.", "speak": "If you repeat something many times, you can work out how many times you expect an outcome: probability times number of tries.", "do": "pe-expect"},
+        {"say": "Flip a fair coin 200 times. The probability of heads is {1/2}, and {1/2} × 200 = 100. So we expect about 100 heads.", "speak": "Flip a fair coin 200 times. The probability of heads is one half, and one half times 200 equals 100. So we expect about 100 heads.", "do": "pe-coin"},
+        {"say": "This spinner has 4 equal parts and 1 is red. Spin it 80 times: {1/4} × 80 = 20. We expect red about 20 times.", "speak": "This spinner has 4 equal parts and 1 is red. Spin it 80 times: one quarter times 80 equals 20. We expect red about 20 times.", "do": "pe-spinner"},
+        {"say": "Real results are usually close, but not exact. And a coin has **no memory**: after 5 heads in a row, the chance of heads next time is still {1/2}.", "speak": "Real results are usually close, but not exact. And a coin has no memory: after 5 heads in a row, the chance of heads next time is still one half.", "do": "pe-memory"}
+      ],
+      "check": {"q": "A fair dice numbered 1 to 6 is rolled 60 times. About how many times would you expect to roll a 6?", "options": ["10", "6", "1", "60"], "answer": 0,
+                "hint": "The probability of a 6 is {1/6}. What is {1/6} of 60?", "explain": "{1/6} × 60 = **10**, so we expect about 10 sixes."}
+    },
+    {
+      "title": "Two events",
+      "steps": [
+        {"say": "Flip two coins. List every outcome carefully: HH, HT, TH and TT. That is 4 equally likely outcomes.", "do": "pc-list"},
+        {"say": "Only one of the 4 outcomes is two heads, so the probability of two heads is {1/4}.", "speak": "Only one of the 4 outcomes is two heads, so the probability of two heads is one quarter.", "do": "pc-hh"},
+        {"say": "Now flip a coin **and** roll a dice. A table helps you list every outcome without missing any.", "do": "pc-grid"},
+        {"say": "The coin has 2 outcomes and the dice has 6, so there are 2 × 6 = 12 outcomes. The probability of heads and a 6 is {1/12}.", "speak": "The coin has 2 outcomes and the dice has 6, so there are 2 times 6, which is 12 outcomes. The probability of heads and a 6 is one twelfth.", "do": "pc-count"}
+      ],
+      "check": {"q": "Two fair coins are flipped. What is the probability of getting one head and one tail?", "options": ["{1/2}", "{1/4}", "{1/3}", "{3/4}"], "answer": 0,
+                "hint": "Look at the list HH, HT, TH, TT. How many of them have one head and one tail?", "explain": "HT and TH both have one head and one tail: 2 out of 4, so the probability is {2/4} = **{1/2}**."}
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "159a998866d7",
+   "s": 8.23,
+   "text": "Part one. Four ways to move a shape. ... A transformation changes where a shape is, which way it faces, or how big it is."
+  },
+  "1-2": {
+   "h": "9b9f2b9ec5b3",
+   "s": 9.34,
+   "text": "There are four kinds. A reflection flips. A rotation turns. A translation slides. An enlargement makes a shape bigger or smaller."
+  },
+  "1-3": {
+   "h": "4da6c6151ef5",
+   "s": 11.41,
+   "text": "After a reflection, rotation or translation, the new shape is exactly the same size and shape. We say it is congruent. Only an enlargement changes the size."
+  },
+  "2-1": {
+   "h": "39a05b9b19eb",
+   "s": 7.19,
+   "text": "Part two. Reflection. ... A reflection flips a shape over a mirror line. Here the mirror line is the y-axis."
+  },
+  "2-2": {
+   "h": "a1e3e7732b4b",
+   "s": 11.31,
+   "text": "Every corner of the image is the same distance from the mirror line as the corner it came from, but on the other side. This corner is 4 squares from the line on each side."
+  },
+  "2-3": {
+   "h": "54c9d1ebc8cc",
+   "s": 9.83,
+   "text": "Reflect the point 3, 2 in the y-axis and it goes to negative 3, 2. The x-coordinate changes sign. The y-coordinate stays the same."
+  },
+  "2-4": {
+   "h": "bd03372efe0a",
+   "s": 9.28,
+   "text": "Now the mirror line is the x-axis. The point 4, 3 goes to 4, negative 3. This time the y-coordinate changes sign."
+  },
+  "3-1": {
+   "h": "b2b4e8ef30fd",
+   "s": 5.93,
+   "text": "Part three. Translation. ... A translation slides a shape. It does not turn or flip."
+  },
+  "3-2": {
+   "h": "69931eaba239",
+   "s": 8.6,
+   "text": "Every point moves the same distance in the same direction. Here each corner moves 5 squares right and 2 squares down."
+  },
+  "3-3": {
+   "h": "6c03010328db",
+   "s": 11.71,
+   "text": "With coordinates: moving right adds to x, left takes away from x. Up adds to y, down takes away from y. So 1, 2 moved 3 right and 2 up goes to 4, 4."
+  },
+  "3-4": {
+   "h": "d6812c8471ae",
+   "s": 5.7,
+   "text": "The image is congruent: the same size and shape, and it still faces the same way."
+  },
+  "4-1": {
+   "h": "ab0908241b85",
+   "s": 12.57,
+   "text": "Part four. Rotation. ... A rotation turns a shape. A quarter turn is 90 degrees. A half turn is 180 degrees. A full turn is 360 degrees."
+  },
+  "4-2": {
+   "h": "139da8473ced",
+   "s": 9.56,
+   "text": "To describe a rotation, give three things: the angle, the direction (clockwise or anticlockwise) and the centre, the point it turns about."
+  },
+  "4-3": {
+   "h": "4bb68802b8e9",
+   "s": 9.34,
+   "text": "This triangle turns 90 degrees clockwise about the origin, 0, 0. Every point turns around the centre by the same angle."
+  },
+  "4-4": {
+   "h": "309516e7e35b",
+   "s": 8.28,
+   "text": "A half turn about the origin changes the sign of both coordinates. 3, 1 goes to negative 3, negative 1."
+  },
+  "5-1": {
+   "h": "0957ba7a5f7b",
+   "s": 12.65,
+   "text": "Part five. Enlargement. ... An enlargement changes the size. The scale factor tells you how many times bigger. With scale factor 3, a 2 by 1 rectangle becomes 6 by 3."
+  },
+  "5-2": {
+   "h": "fc530852006f",
+   "s": 8.73,
+   "text": "To find the scale factor, divide the new length by the old length. Here 6 divided by 2 equals 3. The angles stay the same."
+  },
+  "5-3": {
+   "h": "79271da2f45e",
+   "s": 7.77,
+   "text": "An enlargement can have a centre. With scale factor 2, every corner ends up twice as far from the centre as before."
+  },
+  "5-4": {
+   "h": "4d534e03b3da",
+   "s": 9.19,
+   "text": "Watch out for area! With scale factor 2, the length and the width both double, so the area is 2 times 2, which is 4 times bigger."
+  },
+  "6-1": {
+   "h": "cebab8560a73",
+   "s": 9.94,
+   "text": "Part six. Symmetry. ... A shape has line symmetry if you can fold it along a line and the two halves match exactly. That line is a line of symmetry."
+  },
+  "6-2": {
+   "h": "422106dd53e3",
+   "s": 5.1,
+   "text": "An equilateral triangle has 3 lines of symmetry. A square has 4."
+  },
+  "6-3": {
+   "h": "3fd5d9663420",
+   "s": 9.88,
+   "text": "Rotational symmetry: turn the shape. Count how many times it fits onto itself in one full turn. A square fits 4 times, so its order is 4."
+  },
+  "6-4": {
+   "h": "ace991493dd6",
+   "s": 9.49,
+   "text": "The letter S and a parallelogram both fit onto themselves after a half turn: order 2. A parallelogram has no lines of symmetry at all."
+  }
+ }
+}

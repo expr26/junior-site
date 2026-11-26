@@ -10,7 +10,7 @@
 (function () {
   if (!window.Arcade) return;
   var h = Arcade.h;
-  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var still = (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) || document.documentElement.getAttribute('data-rs-calm') === 'on';
   var CM3 = 'cm³', GCM3 = 'g/cm³';
 
   var ROUNDS = [

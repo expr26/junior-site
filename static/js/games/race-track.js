@@ -10,7 +10,7 @@
 (function () {
   if (!window.Arcade) return;
   var h = Arcade.h;
-  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var still = (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) || document.documentElement.getAttribute('data-rs-calm') === 'on';
   var COL = ['#E5484D', '#3B82F6', '#1F9D55'];
 
   function line(v, T) { return [[0, 0], [T, v * T]]; }

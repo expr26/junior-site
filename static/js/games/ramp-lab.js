@@ -6,7 +6,7 @@
 (function () {
   if (!window.Arcade) return;
   var h = Arcade.h;
-  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var still = (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) || document.documentElement.getAttribute('data-rs-calm') === 'on';
 
   var SURF = { ice: { mu: .05, name: 'Ice', fill: '#CFEFFF', edge: '#7CC6F0' },
                wood: { mu: .3, name: 'Wood', fill: '#D9A066', edge: '#9C6430' },

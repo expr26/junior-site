@@ -939,3 +939,48 @@ button.am-tile:hover:not(:disabled){transform:translateY(-3px)}button.am-tile:di
 .sb-board{fill:#D9A066}.sb-thumb{font-size:44px}
 .sb-head{fill:#E5484D}.sb-shaft{fill:#8A94A6;stroke:#55526E;stroke-width:1.5}
 .sb-lead{stroke:#55526E;stroke-width:1.5}
+
+/* ---------- daily challenge and My mistakes cards (home page) ---------- */
+.daily-strip .wrap{display:grid;gap:12px}
+@media (min-width:720px){.daily-strip .wrap{grid-template-columns:1fr 1fr}}
+.daily-card{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:var(--radius);background:linear-gradient(120deg,#FFF1C9,#FFD8C2);border:3px solid var(--sun);color:#1E1B3A;text-decoration:none;box-shadow:0 6px 0 #E0A800}
+.daily-card[hidden]{display:none}
+.daily-card.mend{background:linear-gradient(120deg,#E3F8F3,#DCD3FF);border-color:var(--sci);box-shadow:0 6px 0 #0B7A70}
+.daily-card b{display:block;font:700 22px/1.2 var(--serif)}
+.daily-card small{display:block;font-size:16px;color:#3F3A5E}
+.daily-ic{font-size:38px;line-height:1}
+.daily-go{margin-left:auto;font:700 28px/1 var(--serif)}
+.daily-card:hover{transform:translateY(-2px)}
+.qb-mixed-end{margin-top:20px}
+.qb-mixed-end .end-card{text-align:center;padding:20px}
+
+/* ---------- glossary (glossary.py) ---------- */
+.gl-search{display:flex;align-items:center;gap:10px;max-width:520px;margin:8px 0 0;padding:6px 14px;border:3px solid var(--fun);border-radius:999px;background:var(--card)}
+.gl-search input{flex:1;min-height:44px;border:0;background:transparent;color:var(--ink);font:inherit;font-size:18px;outline:none}
+.gl-group{margin-bottom:28px}.gl-group[hidden]{display:none}
+.gl-grid{display:grid;gap:14px}
+@media (min-width:720px){.gl-grid{grid-template-columns:1fr 1fr}}
+@media (min-width:1080px){.gl-grid{grid-template-columns:1fr 1fr 1fr}}
+.gl-card{display:flex;gap:14px;align-items:flex-start;padding:16px;border-radius:var(--radius);background:var(--card);border:2px solid var(--line);scroll-margin-top:16px}
+.gl-card[hidden]{display:none}
+.gl-card.maths{border-top:6px solid var(--fun)}.gl-card.physics{border-top:6px solid var(--sci)}
+.gl-card:target{outline:4px solid var(--sun);outline-offset:2px}
+.gl-pic{flex:none;display:grid;place-items:center;width:64px;height:64px;border-radius:18px;background:var(--bg-alt);font-size:36px;line-height:1}
+.gl-card h3{margin:0 0 4px;font:700 21px/1.25 var(--serif)}
+.gl-card p{margin:0 0 6px;font-size:17px}
+.gl-ex{color:var(--muted)}
+.gl-link{font-weight:600;font-size:16px}
+.gl-keys{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:16px;margin:8px 0}
+.gl-keys>span{font-weight:700}
+.gl-key{display:inline-flex;gap:4px;align-items:center;min-height:36px;padding:2px 12px;border-radius:999px;background:var(--card);border:2px solid var(--line);color:var(--ink);text-decoration:none}
+.gl-key:hover{border-color:var(--fun)}
+
+/* ---------- parent report (/parent-report/) ---------- */
+.pr-stats{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+@media (min-width:720px){.pr-stats{grid-template-columns:1fr 1fr 1fr}}
+.pr-list{padding-left:0;list-style:none}.pr-list li{margin:6px 0}
+.pr-table-wrap{overflow-x:auto}
+.pr-table{width:100%;border-collapse:collapse;font-size:16px;background:var(--card);border-radius:12px}
+.pr-table th,.pr-table td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left}
+.pr-table th{font-family:var(--serif)}
+@media print{.site-header,.site-footer,.no-print,.skip{display:none!important}body{background:#fff!important}.pr-stats{grid-template-columns:1fr 1fr 1fr}.card{break-inside:avoid}}

@@ -11,6 +11,7 @@ Same approach as examinerprep-generator, kept small on purpose:
 The build stops with an error if a page is missing its title or description, or if two pages share a URL.
 Standard library only: no pip install needed.
 """
+import hashlib
 import html
 import json
 import re
@@ -242,6 +243,20 @@ def write_sitemap(entries):
     (DIST / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {base}/sitemap.xml\n", encoding="utf-8")
 
 
+STATIC_REF = re.compile(r'((?:src|href)="/static/[^"?#]+\.(?:css|js))"')
+
+
+def bust(html, cache={}):
+    """/static/x.css -> /static/x.css?v=<hash>, so a changed file is not served from the one-week browser cache."""
+    def sub(m):
+        path = m.group(1).split('"', 1)[1]
+        if path not in cache:
+            f = DIST / path.lstrip("/")
+            cache[path] = hashlib.md5(f.read_bytes()).hexdigest()[:8] if f.exists() else ""
+        return m.group(1) + (f"?v={cache[path]}" if cache[path] else "") + '"'
+    return STATIC_REF.sub(sub, html)
+
+
 def main():
     if DIST.exists():
         shutil.rmtree(DIST)
@@ -259,11 +274,13 @@ def main():
     import games    # the /games/ page and one page per live game, from games/games.json
     import qbank    # the KS3 question bank, from qbank/
     import videos   # theory videos, from videos/
+    import glossary   # /glossary/, from glossary/terms.json
     try:
         jobs += topics.pages()
         jobs += games.pages()
         jobs += qbank.pages()
         jobs += videos.pages()
+        jobs += glossary.pages()
         (DIST / "static" / "topics.json").write_text(json.dumps(topics.index()), encoding="utf-8")
     except topics.ContentError as e:
         fail(str(e))
@@ -275,7 +292,7 @@ def main():
         seen[url] = origin
         dest = out_path(url)
         dest.parent.mkdir(parents=True, exist_ok=True)
-        dest.write_text(render(meta, body, url), encoding="utf-8")
+        dest.write_text(bust(render(meta, body, url)), encoding="utf-8")
         if not meta.get("noindex") and url != "/404.html":
             sitemap.append((url, lastmod(origin)))
 

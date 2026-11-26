@@ -1,0 +1,58 @@
+/* Reading help (static/js/reading.js, 26 Nov 2026). Adapted from ExaminerPrep's reading settings for ages 9 to 14. */
+.rs-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:44px;min-height:44px;padding:0 12px;border:2px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font:600 16px/1 var(--serif);cursor:pointer}
+.rs-btn .rs-aa{font:700 18px/1 var(--serif);color:var(--fun)}
+.rs-btn:hover{border-color:var(--fun)}
+@media (max-width:640px){.rs-btn .rs-l{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.rs-btn{padding:0}}
+.rs-wrap[hidden]{display:none}
+.rs-wrap{position:fixed;inset:0;z-index:1000}
+.rs-back{position:absolute;inset:0;background:rgba(20,14,50,.45)}
+.rs-dlg{position:absolute;top:0;right:0;bottom:0;width:min(420px,100%);overflow:auto;background:var(--card);color:var(--ink);padding:18px 20px 24px;box-shadow:-10px 0 30px rgba(0,0,0,.2);border-radius:20px 0 0 20px}
+.rs-head{display:flex;justify-content:space-between;align-items:center}
+.rs-head h2{margin:0;font:700 24px/1.2 var(--serif);color:var(--fun)}
+.rs-x{width:44px;height:44px;border:0;background:none;font-size:30px;line-height:1;cursor:pointer;color:inherit;border-radius:10px}
+.rs-sub{margin:4px 0 12px;color:var(--muted);font-size:16px}
+.rs-f{border:0;margin:0 0 16px;padding:0}
+.rs-f legend{font:700 17px/1.3 var(--serif);margin-bottom:6px}
+.rs-opts{display:flex;flex-wrap:wrap;gap:8px}
+.rs-opts input{position:absolute;opacity:0;width:1px;height:1px}
+.rs-opts label{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:2px solid var(--line);border-radius:12px;cursor:pointer;font-size:16px;background:var(--bg)}
+.rs-opts input:checked+label{border-color:var(--fun);background:var(--fun);color:#fff}
+.rs-opts input:focus-visible+label{outline:3px solid var(--fun);outline-offset:2px}
+.rs-note{margin:6px 0 0;font-size:14px;color:var(--muted);line-height:1.45}
+.rs-foot{display:flex;justify-content:space-between;gap:10px;margin-top:8px;position:sticky;bottom:-24px;background:var(--card);padding:10px 0}
+.rs-more{font-size:15px;margin:6px 0 0}
+html.rs-open{overflow:hidden}
+/* choices */
+html[data-rs-font="atkinson"]{--rs-font:"Atkinson Hyperlegible"}
+html[data-rs-font="lexend"]{--rs-font:"Lexend"}
+html[data-rs-font="opendyslexic"]{--rs-font:"OpenDyslexic"}
+html[data-rs-font] main :where(p,li,td,th,dd,dt,summary,label,a,button,input,span,small,strong,em,b,i,blockquote,figcaption,legend,div,h1,h2,h3,h4):not(svg *):not(code){font-family:var(--rs-font),var(--sans),sans-serif!important}
+html[data-rs-size="115"] main{zoom:1.15}
+html[data-rs-size="130"] main{zoom:1.3}
+html[data-rs-size="150"] main{zoom:1.5}
+html[data-rs-lh="18"] main :where(p,li,td,dd,blockquote,summary,figcaption,.q-text,.opt,.explain){line-height:1.8!important}
+html[data-rs-lh="20"] main :where(p,li,td,dd,blockquote,summary,figcaption,.q-text,.opt,.explain){line-height:2!important}
+html[data-rs-sp="wide"] main{letter-spacing:.05em;word-spacing:.14em}
+html[data-rs-bg="cream"]{--bg:#FBF5E6;--bg-alt:#F4EBD3;--card:#FFFAEE;--ink:#1E1B3A}
+html[data-rs-bg="blue"]{--bg:#EEF4FB;--bg-alt:#E2ECF8;--card:#F7FAFE;--ink:#1E1B3A}
+html[data-rs-bg="plain"]{--bg:#FFFFFF;--bg-alt:#F6F6F8;--card:#FFFFFF}
+html[data-rs-bg] body{background-image:none!important}
+html[data-rs-bg="cream"] body{background-color:#FBF5E6}
+html[data-rs-bg="blue"] body{background-color:#EEF4FB}
+html[data-rs-bg="plain"] body{background-color:#fff}
+.rs-ruler{position:fixed;inset:0;pointer-events:none;z-index:900}
+.rs-r-top,.rs-r-bot{position:fixed;left:0;right:0;background:rgba(20,14,50,.3)}
+.rs-r-top{top:0}.rs-r-bot{bottom:0}
+html[data-rs-focus="on"] body{background-image:none!important}
+html[data-rs-focus="on"] :is(.hero-owl,.fb-mascot,.end-mascot,.me-chip,.ep-foot,.hero-art,.qb-hero-art,.qb-topic-art,.qb-subject-art){display:none!important}
+html[data-rs-calm="on"] *,html[data-rs-calm="on"] *::before,html[data-rs-calm="on"] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+html[data-rs-calm="on"] .confetti{display:none!important}
+/* Read it to me */
+.rs-say{display:inline-flex;align-items:center;gap:6px;min-height:40px;margin:0 0 6px;padding:4px 14px;border:2px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font:600 15px/1 var(--serif);cursor:pointer}
+.rs-say:hover{border-color:var(--fun)}
+.rs-say[aria-pressed="true"]{background:var(--fun);border-color:var(--fun);color:#fff}
+.rs-cur{outline:3px solid var(--sun);outline-offset:3px;border-radius:8px;background:rgba(255,201,60,.22)}
+@media print{.rs-btn,.rs-wrap,.rs-ruler,.rs-say{display:none!important}}
+/* the Aa button sits next to the logo; on wide screens it moves to the end of the bar */
+.site-header .rs-btn{margin-left:auto}
+@media (min-width:900px){.site-header .rs-btn{order:9;margin-left:0}}

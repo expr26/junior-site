@@ -11,7 +11,7 @@
 (function () {
   if (!window.Arcade) return;
   var h = Arcade.h;
-  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var still = (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) || document.documentElement.getAttribute('data-rs-calm') === 'on';
 
   var ROUNDS = [
     { left: [[3, 20]], w: 20, d: 1, free: 'd',

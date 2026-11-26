@@ -953,3 +953,24 @@ button.am-tile:hover:not(:disabled){transform:translateY(-3px)}button.am-tile:di
 .daily-card:hover{transform:translateY(-2px)}
 .qb-mixed-end{margin-top:20px}
 .qb-mixed-end .end-card{text-align:center;padding:20px}
+
+/* ---------- glossary (glossary.py) ---------- */
+.gl-search{display:flex;align-items:center;gap:10px;max-width:520px;margin:8px 0 0;padding:6px 14px;border:3px solid var(--fun);border-radius:999px;background:var(--card)}
+.gl-search input{flex:1;min-height:44px;border:0;background:transparent;color:var(--ink);font:inherit;font-size:18px;outline:none}
+.gl-group{margin-bottom:28px}.gl-group[hidden]{display:none}
+.gl-grid{display:grid;gap:14px}
+@media (min-width:720px){.gl-grid{grid-template-columns:1fr 1fr}}
+@media (min-width:1080px){.gl-grid{grid-template-columns:1fr 1fr 1fr}}
+.gl-card{display:flex;gap:14px;align-items:flex-start;padding:16px;border-radius:var(--radius);background:var(--card);border:2px solid var(--line);scroll-margin-top:16px}
+.gl-card[hidden]{display:none}
+.gl-card.maths{border-top:6px solid var(--fun)}.gl-card.physics{border-top:6px solid var(--sci)}
+.gl-card:target{outline:4px solid var(--sun);outline-offset:2px}
+.gl-pic{flex:none;display:grid;place-items:center;width:64px;height:64px;border-radius:18px;background:var(--bg-alt);font-size:36px;line-height:1}
+.gl-card h3{margin:0 0 4px;font:700 21px/1.25 var(--serif)}
+.gl-card p{margin:0 0 6px;font-size:17px}
+.gl-ex{color:var(--muted)}
+.gl-link{font-weight:600;font-size:16px}
+.gl-keys{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:16px;margin:8px 0}
+.gl-keys>span{font-weight:700}
+.gl-key{display:inline-flex;gap:4px;align-items:center;min-height:36px;padding:2px 12px;border-radius:999px;background:var(--card);border:2px solid var(--line);color:var(--ink);text-decoration:none}
+.gl-key:hover{border-color:var(--fun)}

@@ -1,0 +1,59 @@
+{
+  "title": "Coordinates and graphs",
+  "description": "Animated KS3 Maths lesson on coordinates and graphs for ages 9 to 14: reading and plotting coordinates in all four quadrants, midpoints, shapes on a grid, straight-line graphs like y = 2x + 1, gradient, y-intercept and real-life graphs.",
+  "intro": "Find your way round a grid! Coordinates in four quadrants, midpoints, straight-line graphs and real-life graphs, explained by the owl in five short parts.",
+  "chapters": [
+    {
+      "title": "Reading coordinates",
+      "steps": [
+        {"say": "A coordinate grid has two number lines. The **x-axis** goes across. The **y-axis** goes up. They meet at the **origin**, (0, 0).", "speak": "A coordinate grid has two number lines. The x axis goes across. The y axis goes up. They meet at the origin, nought, nought.", "do": "grid-intro"},
+        {"say": "To find the point (2, 3), start at the origin. Go **along** 2 first, then **up** 3. \"Along the corridor, then up the stairs!\"", "speak": "To find the point 2, 3, start at the origin. Go along 2 first, then up 3. Along the corridor, then up the stairs!", "do": "walk-23"},
+        {"say": "The order matters. (3, 2) means 3 along and 2 up. That is a different point!", "speak": "The order matters. 3, 2 means 3 along and 2 up. That is a different point!", "do": "swap-32"}
+      ],
+      "check": {"q": "A point is 4 along and 1 up from the origin. What are its coordinates?", "options": ["(4, 1)", "(1, 4)", "(4, 4)", "(5, 1)"], "answer": 0,
+                "hint": "The number for \"along\" (x) always comes first.", "explain": "Along 4 gives x = 4 and up 1 gives y = 1, so the point is **(4, 1)**."}
+    },
+    {
+      "title": "Four quadrants",
+      "steps": [
+        {"say": "The axes keep going past zero. To the **left** of the origin, x is negative. **Below** the origin, y is negative.", "do": "four-quadrants"},
+        {"say": "P is 3 to the left and 2 up, so P is at (−3, 2).", "speak": "P is 3 to the left and 2 up, so P is at negative 3, 2.", "do": "point-p"},
+        {"say": "Q is 2 to the right and 3 down, so Q is at (2, −3). Still x first, then y.", "speak": "Q is 2 to the right and 3 down, so Q is at 2, negative 3. Still x first, then y.", "do": "point-q"}
+      ],
+      "check": {"q": "Where is the point (−4, −1)?", "options": ["Left of and below the origin", "Right of and below the origin", "Left of and above the origin", "Right of and above the origin"], "answer": 0,
+                "hint": "Negative x means left. Negative y means down.", "explain": "x = −4 is to the left and y = −1 is down, so the point is **left of and below** the origin."}
+    },
+    {
+      "title": "Midpoints and shapes",
+      "steps": [
+        {"say": "The **midpoint** is exactly halfway between two points. Here are A (2, 4) and B (8, 10).", "speak": "The midpoint is exactly halfway between two points. Here are A, at 2, 4, and B, at 8, 10.", "do": "mid-points"},
+        {"say": "Find halfway for x, then halfway for y. Halfway between 2 and 8 is 5. Halfway between 4 and 10 is 7. So the midpoint is **(5, 7)**.", "speak": "Find halfway for x, then halfway for y. Halfway between 2 and 8 is 5. Halfway between 4 and 10 is 7. So the midpoint is 5, 7.", "do": "mid-answer"},
+        {"say": "A quick way: add and halve. (2 + 8) ÷ 2 = 5 and (4 + 10) ÷ 2 = 7.", "speak": "A quick way: add and halve. 2 plus 8, divided by 2, is 5. And 4 plus 10, divided by 2, is 7.", "do": "mid-rule"},
+        {"say": "Grids help with shapes too. A square has corners at (1, 1), (4, 1) and (4, 4). The missing corner is **(1, 4)**.", "speak": "Grids help with shapes too. A square has corners at 1, 1, at 4, 1, and at 4, 4. The missing corner is 1, 4.", "do": "square-corner"}
+      ],
+      "check": {"q": "What is the midpoint of (0, 2) and (6, 4)?", "options": ["(3, 3)", "(6, 6)", "(3, 2)", "(2, 3)"], "answer": 0,
+                "hint": "Add the x-coordinates and halve, then do the same for the y-coordinates.", "explain": "(0 + 6) ÷ 2 = 3 and (2 + 4) ÷ 2 = 3, so the midpoint is **(3, 3)**."}
+    },
+    {
+      "title": "Straight-line graphs",
+      "steps": [
+        {"say": "A rule like **y = x + 1** makes a straight line. Make a table: when x is 0, 1, 2, 3, y is 1, 2, 3, 4.", "speak": "A rule like y equals x plus 1 makes a straight line. Make a table: when x is 0, 1, 2, 3, y is 1, 2, 3, 4.", "do": "line-table"},
+        {"say": "Plot the points (0, 1), (1, 2), (2, 3) and (3, 4). They line up, so join them with a ruler.", "speak": "Plot the points nought, 1. Then 1, 2. Then 2, 3. And 3, 4. They line up, so join them with a ruler.", "do": "line-plot"},
+        {"say": "**y = 2x + 1** is steeper: y goes up 2 for every 1 across. In y = mx + c, **m** is the **gradient** (how steep) and **c** is where the line crosses the y-axis.", "speak": "y equals 2 x plus 1 is steeper: y goes up 2 for every 1 across. In y equals m x plus c, m is the gradient, which means how steep, and c is where the line crosses the y axis.", "do": "line-steeper"},
+        {"say": "Some lines are special. **y = 4** is flat (horizontal): every point on it has y = 4. **x = 2** goes straight up (vertical).", "speak": "Some lines are special. y equals 4 is flat, or horizontal: every point on it has y equal to 4. x equals 2 goes straight up, or vertical.", "do": "line-flat"}
+      ],
+      "check": {"q": "Where does the line y = 3x + 2 cross the y-axis?", "options": ["(0, 2)", "(0, 3)", "(2, 0)", "(3, 2)"], "answer": 0,
+                "hint": "On the y-axis, x = 0. What is y when x = 0?", "explain": "When x = 0, y = 3 × 0 + 2 = 2. So it crosses at **(0, 2)**. In y = mx + c, that is the c."}
+    },
+    {
+      "title": "Real-life graphs",
+      "steps": [
+        {"say": "Graphs show real life too. A tank holds 60 litres of water. It drains at 5 litres every minute.", "do": "tank-graph"},
+        {"say": "After 8 minutes, 5 × 8 = 40 litres have drained, so 60 − 40 = **20 litres** are left. You can read it from the graph: up from 8, then across.", "speak": "After 8 minutes, 5 times 8 is 40 litres drained, so 60 minus 40 is 20 litres left. You can read it from the graph: up from 8, then across.", "do": "tank-read"},
+        {"say": "The tank is empty when the line reaches the time axis: after 60 ÷ 5 = **12 minutes**.", "speak": "The tank is empty when the line reaches the time axis: after 60 divided by 5, which is 12 minutes.", "do": "tank-empty"}
+      ],
+      "check": {"q": "The same tank starts with 60 litres and drains 5 litres a minute. How much is left after 4 minutes?", "options": ["40 litres", "20 litres", "56 litres", "55 litres"], "answer": 0,
+                "hint": "First work out how much drains in 4 minutes: 5 × 4.", "explain": "5 × 4 = 20 litres drain, so 60 − 20 = **40 litres** are left."}
+    }
+  ]
+}

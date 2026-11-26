@@ -1,0 +1,61 @@
+{
+  "title": "Solving equations",
+  "description": "Animated KS3 Maths lesson on solving equations for ages 9 to 14: the balance idea, inverse operations, one-step and two-step equations, brackets, unknowns on both sides and writing your own equations from word problems.",
+  "intro": "Find the mystery number! Balances, opposite operations, two-step equations, brackets and word puzzles, explained by the owl in five short parts.",
+  "chapters": [
+    {
+      "title": "What is an equation?",
+      "steps": [
+        {"say": "An **equation** says that two things are equal. x + 7 = 12 means: a mystery number, add 7, makes 12.", "speak": "An equation says that two things are equal. x plus 7 equals 12 means: a mystery number, add 7, makes 12.", "do": "eq-intro"},
+        {"say": "Think of a balance. The bag holds x. Each yellow block is 1. Both sides weigh the same, so the balance stays level.", "do": "balance"},
+        {"say": "To **solve** the equation, we find x. The golden rule: whatever you do to one side, do the same to the other side.", "do": "golden-rule"}
+      ],
+      "check": {"q": "Which number makes x + 4 = 10 true?", "options": ["6", "14", "4", "10"], "answer": 0,
+                "hint": "What do you add to 4 to make 10?", "explain": "6 + 4 = 10, so **x = 6**."}
+    },
+    {
+      "title": "One-step equations",
+      "steps": [
+        {"say": "x + 7 = 12. Take 7 away from **both** sides. The balance stays level, and x = 12 − 7 = **5**.", "speak": "x plus 7 equals 12. Take 7 away from both sides. The balance stays level, and x equals 12 minus 7, which is 5.", "do": "take-7"},
+        {"say": "Always check by putting your answer back in: 5 + 7 = 12. Correct!", "speak": "Always check by putting your answer back in: 5 plus 7 equals 12. Correct!", "do": "check-5"},
+        {"say": "4x = 28 means 4 × x = 28. Divide both sides by 4: x = 28 ÷ 4 = **7**.", "speak": "4 x equals 28 means 4 times x equals 28. Divide both sides by 4: x equals 28 divided by 4, which is 7.", "do": "divide-4"},
+        {"say": "Use the **opposite** operation. Adding undoes taking away. Multiplying undoes dividing. So x − 9 = 3 gives x = 12, and x ÷ 5 = 6 gives x = 30.", "speak": "Use the opposite operation. Adding undoes taking away. Multiplying undoes dividing. So x minus 9 equals 3 gives x equals 12, and x divided by 5 equals 6 gives x equals 30.", "do": "inverse"}
+      ],
+      "check": {"q": "Solve x − 6 = 10", "options": ["x = 16", "x = 4", "x = 60", "x = −4"], "answer": 0,
+                "hint": "Do the opposite of taking away 6: add 6 to both sides.", "explain": "Add 6 to both sides: x = 10 + 6 = **16**. Check: 16 − 6 = 10."}
+    },
+    {
+      "title": "Two-step equations",
+      "steps": [
+        {"say": "3x + 2 = 14 needs two steps. On the balance: 3 bags and 2 blocks on one side, 14 blocks on the other.", "speak": "3 x plus 2 equals 14 needs two steps. On the balance: 3 bags and 2 blocks on one side, 14 blocks on the other.", "do": "two-start"},
+        {"say": "Step 1: undo the + 2. Take 2 blocks from both sides. Now 3x = 12.", "speak": "Step 1: undo the plus 2. Take 2 blocks from both sides. Now 3 x equals 12.", "do": "two-step-1"},
+        {"say": "Step 2: undo the × 3. Share both sides into 3 equal groups: each bag matches 4 blocks. So x = **4**. Check: 3 × 4 + 2 = 14.", "speak": "Step 2: undo the times 3. Share both sides into 3 equal groups: each bag matches 4 blocks. So x equals 4. Check: 3 times 4, plus 2, equals 14.", "do": "two-step-2"},
+        {"say": "Answers can be negative. 2x + 9 = 3. Take 9 from both sides: 2x = −6. Divide by 2: x = **−3**.", "speak": "Answers can be negative. 2 x plus 9 equals 3. Take 9 from both sides: 2 x equals negative 6. Divide by 2: x equals negative 3.", "do": "two-step-neg"}
+      ],
+      "check": {"q": "Solve 4x + 3 = 23", "options": ["x = 5", "x = 20", "x = 6.5", "x = 26"], "answer": 0,
+                "hint": "First take 3 from both sides. Then divide both sides by 4.", "explain": "4x + 3 = 23 → 4x = 20 → x = **5**. Check: 4 × 5 + 3 = 23."}
+    },
+    {
+      "title": "Brackets and both sides",
+      "steps": [
+        {"say": "3(x − 2) = 18. Divide both sides by 3 first: x − 2 = 6. Then add 2: x = **8**.", "speak": "3 bracket x minus 2 equals 18. Divide both sides by 3 first: x minus 2 equals 6. Then add 2: x equals 8.", "do": "bracket-eq"},
+        {"say": "Or expand the bracket first: 3x − 6 = 18, so 3x = 24 and x = 8. Same answer!", "speak": "Or expand the bracket first: 3 x minus 6 equals 18, so 3 x equals 24 and x equals 8. Same answer!", "do": "bracket-expand"},
+        {"say": "Now x is on both sides: 5x + 3 = 2x + 15. Take 2 bags (2x) from both sides. That leaves 3x + 3 = 15.", "speak": "Now x is on both sides: 5 x plus 3 equals 2 x plus 15. Take 2 bags, that is 2 x, from both sides. That leaves 3 x plus 3 equals 15.", "do": "both-sides"},
+        {"say": "Take 3 from both sides: 3x = 12, so x = **4**. Check: 5 × 4 + 3 = 23 and 2 × 4 + 15 = 23.", "speak": "Take 3 from both sides: 3 x equals 12, so x equals 4. Check: 5 times 4, plus 3, is 23, and 2 times 4, plus 15, is 23.", "do": "both-sides-2"}
+      ],
+      "check": {"q": "Solve 6x + 1 = 4x + 9", "options": ["x = 4", "x = 5", "x = 1", "x = 8"], "answer": 0,
+                "hint": "Take 4x from both sides first, so x is only on one side.", "explain": "Take 4x from both sides: 2x + 1 = 9. Take 1: 2x = 8. So **x = 4**. Check: 25 = 25."}
+    },
+    {
+      "title": "Writing equations",
+      "steps": [
+        {"say": "Word puzzles turn into equations. \"I think of a number, multiply it by 3, then subtract 5. The answer is 16.\"", "do": "think-number"},
+        {"say": "Call the number n. Then 3n − 5 = 16. Add 5: 3n = 21. Divide by 3: n = **7**.", "speak": "Call the number n. Then 3 n minus 5 equals 16. Add 5: 3 n equals 21. Divide by 3: n equals 7.", "do": "think-solve"},
+        {"say": "A triangle's angles are x, 2x and 3x degrees. They add up to 180°, so 6x = 180 and x = **30**.", "speak": "A triangle's angles are x, 2 x and 3 x degrees. They add up to 180 degrees, so 6 x equals 180, and x equals 30.", "do": "triangle"},
+        {"say": "So the angles are 30°, 60° and 90°. Check: 30 + 60 + 90 = 180.", "speak": "So the angles are 30, 60 and 90 degrees. Check: 30 plus 60 plus 90 equals 180.", "do": "triangle-check"}
+      ],
+      "check": {"q": "I think of a number, double it and add 3. The answer is 19. What was my number?", "options": ["8", "11", "16", "10"], "answer": 0,
+                "hint": "Write it as 2n + 3 = 19. Undo the + 3 first, then undo the doubling.", "explain": "2n + 3 = 19 → 2n = 16 → n = **8**. Check: 8 × 2 + 3 = 19."}
+    }
+  ]
+}

@@ -272,6 +272,11 @@ def _video_link(subject, topic):
     return f'<p><a class="btn tv-link" href="{url}">▶ Watch the video first</a></p>' if url else ""
 
 
+def _keywords(subject, topic):
+    import glossary   # key words for this topic, linked to /glossary/
+    return glossary.for_topic(subject, topic)
+
+
 def topic_page(s, plan, t, prev, nxt):
     subs = {x["slug"]: x["title"] for x in t["subtopics"]}
     qs = t["questions"]
@@ -301,6 +306,7 @@ def topic_page(s, plan, t, prev, nxt):
       <h1>{html.escape(t['title'])}</h1>
       <p class="lede">{rich(t['intro'])}</p>
       {_video_link(s['slug'], t['slug'])}
+      {_keywords(s['slug'], t['slug'])}
       <p class="qb-count"><b>{_count(len(qs), 'question')}</b> · {_count(len(t['subtopics']), 'part')} · no timer</p>
       <div class="qb-progress" data-qb-topic="{key}" data-qb-total="{len(qs)}" hidden>
         <span class="qb-meter"><span></span></span><span class="qb-done small"></span>

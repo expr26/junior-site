@@ -202,7 +202,7 @@
     if (!TTS || !("MutationObserver" in window)) return;
     new MutationObserver(function () {
       if (pending) return; pending = true;
-      requestAnimationFrame(function () { pending = false; sayButtons(); });
+      setTimeout(function () { pending = false; sayButtons(); }, 60);   /* not requestAnimationFrame: it does not run in a background tab */
     }).observe(document.body, { childList: true, subtree: true });
   }
   addEventListener("pagehide", stop);

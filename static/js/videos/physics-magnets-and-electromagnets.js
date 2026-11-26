@@ -8,39 +8,78 @@
   var RED = '#E5484D', BLUE = '#2F80ED', LINE = '#6C4DF6';
 
   /* ---------- small helpers (own to this file) ---------- */
+  var uid = 0;
+  /* a gradient with a fresh id (prefix "mag"): G([[offset, colour, opacity?], ...], {h: across, radial, cx, cy, r}) -> {u: 'url(#..)', d: '<defs>..</defs>'} */
+  function G(stops, o) {
+    o = o || {};
+    var id = 'mag' + (++uid), tag = o.radial ? 'radialGradient' : 'linearGradient';
+    var at = o.radial ? 'cx="' + (o.cx || .35) + '" cy="' + (o.cy || .3) + '" r="' + (o.r || .8) + '"' : 'x1="0" y1="0" x2="' + (o.h ? 1 : 0) + '" y2="' + (o.h ? 0 : 1) + '"';
+    return { u: 'url(#' + id + ')', d: '<defs><' + tag + ' id="' + id + '" ' + at + '>' + stops.map(function (st) {
+      return '<stop offset="' + st[0] + '" stop-color="' + st[1] + '"' + (st[2] != null ? ' stop-opacity="' + st[2] + '"' : '') + '/>';
+    }).join('') + '</' + tag + '></defs>' };
+  }
+  var OUT = 'rgba(30,27,58,.5)';
   function rng(seed) { return function () { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }; }
   function lbl(x, y, t, o) {
     o = o || {};
     return '<text x="' + x + '" y="' + y + '" ' + F + ' font-size="' + (o.size || 16) + '" font-weight="' + (o.weight || 700) + '" fill="' + (o.colour || '#1E1B3A') +
       '" text-anchor="' + (o.anchor || 'middle') + '" dominant-baseline="middle" stroke="#FFFDF7" stroke-width="4" paint-order="stroke">' + t + '</text>';
   }
-  /* a bar magnet centred on (0, 0), length L, height H; left end is N unless flip */
+  /* a bar magnet centred on (0, 0), length L, height H; left end is N unless flip. Painted metal: soft top light, darker underside. */
   function magnet(L, H, flip, opacity) {
-    var a = flip ? BLUE : RED, b = flip ? RED : BLUE, la = flip ? 'S' : 'N', lb = flip ? 'N' : 'S', fs = Math.min(H * 0.62, 30);
-    return '<g opacity="' + (opacity || 1) + '"><rect x="' + (-L / 2) + '" y="' + (-H / 2) + '" width="' + L + '" height="' + H + '" rx="7" fill="' + b + '"/>' +
-      '<path d="M0 ' + (-H / 2) + ' H' + (-L / 2 + 7) + ' Q' + (-L / 2) + ' ' + (-H / 2) + ' ' + (-L / 2) + ' ' + (-H / 2 + 7) + ' V' + (H / 2 - 7) + ' Q' + (-L / 2) + ' ' + (H / 2) + ' ' + (-L / 2 + 7) + ' ' + (H / 2) + ' H0 Z" fill="' + a + '"/>' +
-      '<rect x="' + (-L / 2) + '" y="' + (-H / 2) + '" width="' + L + '" height="' + H + '" rx="7" fill="none" stroke="#1E1B3A" stroke-width="3"/>' +
-      '<text x="' + (-L / 4) + '" y="2" ' + F + ' font-size="' + fs + '" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">' + la + '</text>' +
-      '<text x="' + (L / 4) + '" y="2" ' + F + ' font-size="' + fs + '" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">' + lb + '</text></g>';
+    var gr = G([[0, '#FF8589'], [.5, RED], [1, '#B8323A']]), gb = G([[0, '#6AAAF7'], [.5, BLUE], [1, '#1D5DBA']]);
+    var a = flip ? gb : gr, b = flip ? gr : gb, la = flip ? 'S' : 'N', lb = flip ? 'N' : 'S', fs = Math.min(H * 0.62, 30), rx = Math.min(10, H / 4);
+    return a.d + b.d + '<g opacity="' + (opacity || 1) + '"><rect x="' + (-L / 2) + '" y="' + (-H / 2) + '" width="' + L + '" height="' + H + '" rx="' + rx + '" fill="' + b.u + '"/>' +
+      '<path d="M0 ' + (-H / 2) + ' H' + (-L / 2 + rx) + ' Q' + (-L / 2) + ' ' + (-H / 2) + ' ' + (-L / 2) + ' ' + (-H / 2 + rx) + ' V' + (H / 2 - rx) + ' Q' + (-L / 2) + ' ' + (H / 2) + ' ' + (-L / 2 + rx) + ' ' + (H / 2) + ' H0 Z" fill="' + a.u + '"/>' +
+      '<rect x="' + (-L / 2 + rx * .7) + '" y="' + (-H / 2 + 3) + '" width="' + (L - rx * 1.4) + '" height="' + Math.max(3, H * .14) + '" rx="' + Math.max(1.5, H * .07) + '" fill="#fff" opacity=".35"/>' +
+      '<path d="M0 ' + (-H / 2 + 2) + ' V' + (H / 2 - 2) + '" stroke="rgba(30,27,58,.25)" stroke-width="1.5"/>' +
+      '<rect x="' + (-L / 2) + '" y="' + (-H / 2) + '" width="' + L + '" height="' + H + '" rx="' + rx + '" fill="none" stroke="' + OUT + '" stroke-width="2"/>' +
+      '<text x="' + (-L / 4) + '" y="2" ' + F + ' font-size="' + fs + '" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle" stroke="rgba(30,27,58,.25)" stroke-width="3" paint-order="stroke">' + la + '</text>' +
+      '<text x="' + (L / 4) + '" y="2" ' + F + ' font-size="' + fs + '" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle" stroke="rgba(30,27,58,.25)" stroke-width="3" paint-order="stroke">' + lb + '</text></g>';
   }
-  function clip(rot) {   // a paper clip, about 14 x 40, centred
-    return '<g transform="rotate(' + (rot || 0) + ')"><path d="M-5 14 V-12 a5 5 0 0 1 10 0 V16 a7 7 0 0 1 -14 0 V-8" fill="none" stroke="#55526E" stroke-width="3" stroke-linecap="round"/></g>';
+  function clip(rot) {   // a steel paper clip, about 14 x 40, centred
+    var d = 'M-5 14 V-12 a5 5 0 0 1 10 0 V16 a7 7 0 0 1 -14 0 V-8';
+    return '<g transform="rotate(' + (rot || 0) + ')"><path d="' + d + '" fill="none" stroke="#5E6378" stroke-width="3.4" stroke-linecap="round"/>' +
+      '<path d="' + d + '" fill="none" stroke="#DDE1EA" stroke-width="1.1" stroke-linecap="round" transform="translate(-.5 -.5)"/></g>';
   }
   function needle(deg, k) {
     k = k || 1;
-    return '<g transform="rotate(' + deg + ') scale(' + k + ')"><path d="M0 -4.5 L16 0 L0 4.5 Z" fill="' + RED + '"/><path d="M0 -4.5 L-16 0 L0 4.5 Z" fill="#C9CED8"/><circle r="2.6" fill="#1E1B3A"/></g>';
+    return '<g transform="rotate(' + deg + ') scale(' + k + ')"><path d="M0 -4.5 L16 0 L0 4.5 Z" fill="#C9323A"/><path d="M0 -4.5 L16 0 L0 0 Z" fill="#FF7378"/>' +
+      '<path d="M0 -4.5 L-16 0 L0 4.5 Z" fill="#A9AEBF"/><path d="M0 -4.5 L-16 0 L0 0 Z" fill="#E4E7EF"/><circle r="2.8" fill="#C9962B" stroke="rgba(30,27,58,.45)" stroke-width="1"/></g>';
   }
-  function compassCase(r) { return '<circle r="' + r + '" fill="#FFFFFF" stroke="#55526E" stroke-width="2.5"/>'; }
+  function compassCase(r) {
+    var rim = G([[0, '#FFE29A'], [1, '#C98A2B']]), face = G([[0, '#FFFFFF'], [1, '#E9ECF4']], { radial: true, cx: .4, cy: .35, r: .75 });
+    return rim.d + face.d + '<circle r="' + r + '" fill="' + rim.u + '" stroke="rgba(30,27,58,.4)" stroke-width="1.5"/><circle r="' + (r - 3.5) + '" fill="' + face.u + '"/>' +
+      '<path d="M0 ' + (-r + 5) + ' v3" stroke="#E5484D" stroke-width="1.6" stroke-linecap="round"/>';
+  }
   /* compass at (x, y): a case and a needle pointing at deg (0 = right, -90 = up); returns the needle group */
   function compass(s, x, y, deg, o) {
     o = o || {};
     s.add(compassCase(o.r || 17), { x: x, y: y, enter: o.enter || 'pop', delay: o.delay });
-    return s.add(needle(deg, (o.r || 17) / 18), { x: x, y: y, enter: o.enter || 'pop', delay: o.delay });
+    return s.add(needle(deg, (o.r || 17) / 19), { x: x, y: y, enter: o.enter || 'pop', delay: o.delay, flat: true });
   }
   function turn(s, g, by, ms, delay) {   // spin a needle group by `by` degrees about its centre
     s.anim(g, [{ transform: 'rotate(0deg)' }, { transform: 'rotate(' + by + 'deg)' }], ms || 900, { delay: delay, easing: 'cubic-bezier(.3,1.5,.6,1)' });
   }
   function shortest(d) { d = ((d % 360) + 540) % 360 - 180; return d; }
+  /* copper wire turns: a gradient that runs along y, for strokes */
+  function copper(dark) { return dark ? G([[0, '#B06530'], [1, '#7A3F17']]) : G([[0, '#FFC08A'], [.5, '#E08A45'], [1, '#A9561F']]); }
+  function wood() { return G([[0, '#E0A86A'], [1, '#B8773A']]); }
+  /* a label on a soft white pill, so it stays readable on top of field lines */
+  function tag(s, x, y, t, o) {
+    o = o || {};
+    var fs = o.size || 18, w = t.length * fs * .5 + fs * .9, h = fs * 1.45;
+    return s.add('<rect x="' + (-w / 2) + '" y="' + (-h / 2) + '" width="' + w + '" height="' + h + '" rx="' + (h / 2) + '" fill="#FFFFFF" fill-opacity=".88"/>' +
+      lbl(0, 1, t, { size: fs, colour: o.colour, weight: o.weight }), Object.assign({ x: x, y: y, enter: 'up', flat: true }, o));
+  }
+  function pole(t, col) {   // a small round badge naming a pole
+    return '<circle r="16" fill="#FFFFFF" stroke="' + col + '" stroke-width="2.5"/><text y="1" ' + F + ' font-size="20" font-weight="700" fill="' + col + '" text-anchor="middle" dominant-baseline="middle">' + t + '</text>';
+  }
+  function card() {   // a white card, 180 x 200, centred
+    var g = G([[0, '#FFFFFF'], [1, '#F6F3FF']]);
+    return g.d + '<rect x="-90" y="-100" width="180" height="200" rx="20" fill="' + g.u + '" stroke="#E6E0F5" stroke-width="2"/>';
+  }
+  function iron() { return G([[0, '#B9BECE'], [.45, '#8A90A3'], [1, '#5E6378']]); }
 
   /* two-pole field model: N and S are points [x, y] */
   function fieldAt(p, N, S) {
@@ -89,7 +128,7 @@
     o = o || {};
     var g = s.add(ds.map(function (d) {
       return '<path d="' + d + '" fill="none" stroke="' + (o.colour || LINE) + '" stroke-opacity="' + (o.opacity || 1) + '" stroke-width="' + (o.width || 2.5) + '" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/>';
-    }).join(''), { enter: 'none', name: o.name });
+    }).join(''), { enter: 'none', name: o.name, flat: true });
     g.querySelectorAll('path').forEach(function (p, i) {
       if (p.animate && !s.fast) p.animate([{ strokeDashoffset: 1 }, { strokeDashoffset: 0 }], { duration: o.ms || 1400, delay: (o.delay || 0) + i * (o.stagger || 60), easing: 'ease-in-out', fill: 'both' });
       else p.setAttribute('stroke-dashoffset', '0');
@@ -127,12 +166,15 @@
     },
     'materials': function (s) {
       s.clear(); s.ref = {};
+      var nl = G([[0, '#5E6378'], [.4, '#C3C8D6'], [1, '#4A4E63']], { h: true }), ni = G([[0, '#F4F5F9'], [1, '#9AA0B4']], { radial: true });
+      var co = G([[0, '#8296C2'], [1, '#3E4C6E']]);
       s.add(magnet(320, 50), { x: 320, y: 70, enter: 'down' });
       var items = [
-        ['<rect x="-4" y="-22" width="8" height="40" fill="#7A7F90"/><rect x="-11" y="-26" width="22" height="7" rx="2" fill="#7A7F90"/><path d="M-4 18 L0 28 L4 18 Z" fill="#7A7F90"/>', 'iron'],
+        [nl.d + '<path d="M-4 -20 H4 V17 L0 28 L-4 17 Z" fill="' + nl.u + '" stroke="' + OUT + '" stroke-width="1.2" stroke-linejoin="round"/><rect x="-11" y="-27" width="22" height="7" rx="3" fill="' + nl.u + '" stroke="' + OUT + '" stroke-width="1.2"/>' +
+          '<path d="M-4 -8 l8 3 M-4 -1 l8 3 M-4 6 l8 3" stroke="rgba(30,27,58,.25)" stroke-width="1.2"/>', 'iron'],
         [clip(0), 'steel'],
-        ['<circle r="18" fill="#B8BCC8" stroke="#7A7F90" stroke-width="3"/><circle r="9" fill="none" stroke="#9AA0B4" stroke-width="2"/>', 'nickel'],
-        ['<path d="M-18 6 L-10 -14 L8 -16 L18 0 L10 16 L-12 16 Z" fill="#5C6B8A" stroke="#3B4660" stroke-width="3"/>', 'cobalt']
+        [ni.d + '<circle r="18" fill="' + ni.u + '" stroke="rgba(30,27,58,.4)" stroke-width="1.5"/><circle r="13.5" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/><text y="1" ' + F + ' font-size="12" font-weight="700" fill="#7A7F90" text-anchor="middle" dominant-baseline="middle">Ni</text>', 'nickel'],
+        [co.d + '<path d="M-18 6 L-10 -14 L8 -16 L18 0 L10 16 L-12 16 Z" fill="' + co.u + '" stroke="rgba(30,27,58,.45)" stroke-width="1.5" stroke-linejoin="round"/><path d="M-10 -14 L8 -16 L2 -2 Z" fill="#fff" opacity=".3"/><path d="M2 -2 L18 0 L10 16 Z" fill="#1E1B3A" opacity=".15"/>', 'cobalt']
       ];
       items.forEach(function (it, i) {
         var x = 200 + i * 80, g = s.add(it[0] + lbl(0, 44, it[1], { size: 18, colour: s.C.deep }), { x: x, y: 250, enter: 'pop', delay: 200 + i * 250 });
@@ -141,12 +183,15 @@
       s.text(320, 212, 'magnetic', { size: 24, weight: 700, colour: s.C.green, delay: 2400 });
     },
     'not-magnetic': function (s) {
+      var al = G([[0, '#9AA0B4'], [.35, '#F4F5F9'], [1, '#8A90A3']], { h: true }), lab = G([[0, '#5FA2F5'], [1, '#1D5DBA']]), au = G([[0, '#FFE680'], [.5, '#F2B705'], [1, '#B07F00']]);
+      var wd = wood(), pl = G([[0, '#FF8DB0'], [1, '#E23E72']]);
+      var wire = 'M-24 0 C-10 -20 10 20 24 0';
       var items = [
-        ['<path d="M-24 0 C-10 -20 10 20 24 0" fill="none" stroke="#C9733A" stroke-width="5" stroke-linecap="round"/>', 'copper'],
-        ['<rect x="-14" y="-20" width="28" height="40" rx="5" fill="#D4D8E2" stroke="#9AA0B4" stroke-width="3"/><rect x="-14" y="-6" width="28" height="12" fill="#2F80ED"/>', 'aluminium'],
-        ['<circle r="15" fill="none" stroke="#E0B100" stroke-width="6"/>', 'gold'],
-        ['<rect x="-20" y="-14" width="40" height="28" rx="3" fill="#C98A4B" stroke="#8A5A2B" stroke-width="3"/><path d="M-14 -4 H12 M-10 5 H16" stroke="#8A5A2B" stroke-width="2"/>', 'wood'],
-        ['<rect x="-18" y="-16" width="36" height="32" rx="8" fill="#FF5D8F" stroke="#B42318" stroke-width="3"/>', 'plastic']
+        ['<path d="' + wire + '" fill="none" stroke="#9A4A1C" stroke-width="6" stroke-linecap="round"/><path d="' + wire + '" fill="none" stroke="#E08A45" stroke-width="4" stroke-linecap="round"/><path d="' + wire + '" fill="none" stroke="#FFD2A8" stroke-width="1.3" stroke-linecap="round" transform="translate(0 -1)"/>', 'copper'],
+        [al.d + lab.d + '<rect x="-14" y="-20" width="28" height="40" rx="5" fill="' + al.u + '" stroke="rgba(30,27,58,.4)" stroke-width="1.5"/><rect x="-14" y="-7" width="28" height="13" fill="' + lab.u + '"/><ellipse cx="0" cy="-17" rx="10" ry="2.5" fill="#fff" opacity=".6"/>', 'aluminium'],
+        [au.d + '<circle r="15" fill="none" stroke="#9A6E00" stroke-width="8"/><circle r="15" fill="none" stroke="' + au.u + '" stroke-width="6"/><path d="M-11 -9 A15 15 0 0 1 4 -14.5" fill="none" stroke="#FFF6C8" stroke-width="2" stroke-linecap="round"/>', 'gold'],
+        [wd.d + '<rect x="-20" y="-14" width="40" height="28" rx="4" fill="' + wd.u + '" stroke="#9A6532" stroke-width="1.5"/><path d="M-14 -4 Q0 -7 12 -4 M-10 5 Q4 2 16 5" stroke="#9A6532" stroke-width="1.5" fill="none" opacity=".7"/><rect x="-17" y="-12" width="34" height="3" rx="1.5" fill="#fff" opacity=".25"/>', 'wood'],
+        [pl.d + '<rect x="-14" y="-22" width="9" height="7" rx="2" fill="#F0507F"/><rect x="5" y="-22" width="9" height="7" rx="2" fill="#F0507F"/><rect x="-18" y="-16" width="36" height="32" rx="6" fill="' + pl.u + '" stroke="rgba(30,27,58,.35)" stroke-width="1.5"/><rect x="-14" y="-12" width="28" height="4" rx="2" fill="#fff" opacity=".35"/>', 'plastic']
       ];
       items.forEach(function (it, i) {
         var x = 120 + i * 100, g = s.add(it[0] + lbl(0, 36, it[1], { size: 17, colour: s.C.muted }), { x: x, y: 268, enter: 'pop', delay: i * 200 });
@@ -176,11 +221,13 @@
     'gap': function (s) {
       s.clear(); s.ref = {};
       s.text(320, 34, 'A non-contact force', { size: 28, weight: 700, colour: s.C.pink });
-      s.add('<rect x="-130" y="-8" width="260" height="16" rx="4" fill="#C98A4B" stroke="#8A5A2B" stroke-width="3"/><rect x="-120" y="8" width="14" height="40" fill="#8A5A2B"/><rect x="106" y="8" width="14" height="40" fill="#8A5A2B"/>',
-        { x: 320, y: 90, enter: 'down' });
+      var wd = wood();
+      s.add(wd.d + '<rect x="-120" y="6" width="14" height="44" rx="3" fill="#9A6532"/><rect x="106" y="6" width="14" height="44" rx="3" fill="#9A6532"/><rect x="-130" y="-8" width="260" height="18" rx="6" fill="' + wd.u + '"/>' +
+        '<path d="M-116 -2 H-10 M40 2 H120" stroke="#F4CF9E" stroke-width="2" stroke-linecap="round" opacity=".7"/>', { x: 320, y: 90, enter: 'down' });
       s.add('<g transform="rotate(90)">' + magnet(110, 40, true) + '</g>', { x: 320, y: 153, enter: 'pop', delay: 300 });
-      s.add('<rect x="-200" y="0" width="400" height="16" rx="4" fill="#E9DFCB" stroke="#C9B48E" stroke-width="3"/>', { x: 320, y: 320, enter: 'up' });
-      var thread = s.add('<path d="M0 0 V-90" stroke="#55526E" stroke-width="2" stroke-dasharray="3 3"/>', { x: 320, y: 320, enter: 'fade', delay: 500 });
+      var bench = G([[0, '#F6EEDD'], [1, '#DCCBA6']]);
+      s.add(bench.d + '<rect x="-200" y="0" width="400" height="18" rx="6" fill="' + bench.u + '" stroke="rgba(154,101,50,.45)" stroke-width="1.5"/><rect x="-194" y="3" width="388" height="3" rx="1.5" fill="#fff" opacity=".5"/>', { x: 320, y: 320, enter: 'up' });
+      var thread = s.add('<path d="M0 0 V-90" stroke="#8A7A9E" stroke-width="2" stroke-dasharray="3 3"/>', { x: 320, y: 320, enter: 'fade', delay: 500 });
       thread._inner.style.transformOrigin = '50% 100%';
       var c = s.add(clip(0), { x: 320, y: 300, enter: 'fade', delay: 500 });
       s.anim(thread, [{ transform: 'scaleY(.2)' }, { transform: 'scaleY(1)' }], 1000, { delay: 900, easing: 'cubic-bezier(.4,1.4,.6,1)' });
@@ -193,7 +240,7 @@
       s.clear(); s.ref = {};
       s.text(320, 40, 'Cut a magnet in half...', { size: 28, weight: 700, colour: s.C.fun });
       var whole = s.add(magnet(360, 60), { x: 320, y: 170, enter: 'pop' });
-      s.add('<path d="M0 -50 V50" stroke="#1E1B3A" stroke-width="3" stroke-dasharray="7 6"/>', { x: 320, y: 170, enter: 'fade', delay: 600, name: 'cutline' });
+      s.add('<path d="M0 -50 V50" stroke="#55526E" stroke-width="3" stroke-dasharray="7 6" stroke-linecap="round"/>', { x: 320, y: 170, enter: 'fade', delay: 600, name: 'cutline' });
       s.hide(whole, { delay: 1500, ms: 1 }); s.hide(s.ref.cutline, { delay: 1500, ms: 1 });
       var a = s.add(magnet(180, 60), { x: 230, y: 170, enter: 'fade', ms: 1, delay: 1500 });
       var b = s.add(magnet(180, 60), { x: 410, y: 170, enter: 'fade', ms: 1, delay: 1500 });
@@ -204,8 +251,8 @@
 
     /* ---------- 3. Magnetic fields (one magnet in the middle) ---------- */
     'field-area': function (s) {
-      s.add('<defs><radialGradient id="mg-glow"><stop offset="0" stop-color="#6C4DF6" stop-opacity=".35"/><stop offset="1" stop-color="#6C4DF6" stop-opacity="0"/></radialGradient></defs>' +
-        '<ellipse rx="230" ry="150" fill="url(#mg-glow)"/>', { x: MX, y: MY, enter: 'pop', ms: 900, delay: 300, name: 'glow' });
+      s.add('<defs><radialGradient id="magGlow"><stop offset="0" stop-color="#6C4DF6" stop-opacity=".35"/><stop offset="1" stop-color="#6C4DF6" stop-opacity="0"/></radialGradient></defs>' +
+        '<ellipse rx="230" ry="150" fill="url(#magGlow)"/>', { x: MX, y: MY, enter: 'pop', ms: 900, delay: 300, name: 'glow', flat: true });
       s.add(magnet(ML, MH), { x: MX, y: MY, enter: 'pop', name: 'mag' });
       s.text(320, 34, 'The magnetic field', { size: 30, weight: 700, colour: s.C.fun, delay: 600, name: 'title' });
       var near = s.add(clip(90), { x: 140, y: 300, enter: 'pop', delay: 900, name: 'c1' });
@@ -224,7 +271,7 @@
         var ux = b[0] / m * 5, uy = b[1] / m * 5;
         d += 'M' + (x - ux).toFixed(1) + ' ' + (y - uy).toFixed(1) + ' L' + (x + ux).toFixed(1) + ' ' + (y + uy).toFixed(1);
       }
-      var g = s.add('<path d="' + d + '" stroke="#55526E" stroke-width="2" stroke-linecap="round"/>', { enter: 'fade', ms: 1500, name: 'filings' });
+      var g = s.add('<path d="' + d + '" stroke="#5E6378" stroke-width="2.2" stroke-linecap="round"/>', { enter: 'fade', ms: 1500, name: 'filings', flat: true });
       svgFront(s, 'mag');
       s.hide(s.ref.title);
       s.text(320, 34, 'Iron filings show the field', { size: 28, weight: 700, colour: s.C.fun, delay: 500, name: 'title2' });
@@ -241,8 +288,8 @@
       s.text(320, 34, 'Field lines go from N to S', { size: 28, weight: 700, colour: s.C.fun, delay: 500 });
     },
     'strongest': function (s) {
-      s.add('<circle r="34" fill="none" stroke="#FFC93C" stroke-width="6"/>', { x: MN[0], y: MY, enter: 'pop', delay: 100 });
-      s.add('<circle r="34" fill="none" stroke="#FFC93C" stroke-width="6"/>', { x: MS[0], y: MY, enter: 'pop', delay: 400 });
+      s.add('<circle r="34" fill="#FFC93C" fill-opacity=".12" stroke="#FFC93C" stroke-width="5"/><circle r="38" fill="none" stroke="#FFE7A3" stroke-width="2"/>', { x: MN[0], y: MY, enter: 'pop', delay: 100 });
+      s.add('<circle r="34" fill="#FFC93C" fill-opacity=".12" stroke="#FFC93C" stroke-width="5"/><circle r="38" fill="none" stroke="#FFE7A3" stroke-width="2"/>', { x: MS[0], y: MY, enter: 'pop', delay: 400 });
       svgFront(s, 'mag');
       s.text(MX, MY + 52, 'strongest at the poles', { size: 20, weight: 700, colour: '#C2570C', delay: 900 });
     },
@@ -255,8 +302,12 @@
 
     /* ---------- 4. Compasses and the Earth ---------- */
     'compass': function (s) {
-      s.add('<circle r="100" fill="#FFF4D6" stroke="#C2570C" stroke-width="6"/><circle r="84" fill="#FFFFFF" stroke="#EAE2D6" stroke-width="3"/>' +
-        lbl(0, -66, 'N', { size: 24, colour: RED }) + lbl(0, 68, 'S', { size: 22 }) + lbl(68, 2, 'E', { size: 22 }) + lbl(-68, 2, 'W', { size: 22 }), { x: 200, y: 190, enter: 'pop' });
+      var rim = G([[0, '#FFE29A'], [.5, '#E0A63A'], [1, '#A8701E']]), face = G([[0, '#FFFFFF'], [1, '#ECEEF5']], { radial: true, cx: .4, cy: .35, r: .8 }), ticks = '';
+      for (var a = 0; a < 360; a += 15) ticks += '<path d="M0 -84 V' + (a % 90 ? -78 : -74) + '" stroke="' + (a ? '#9AA0B4' : RED) + '" stroke-width="' + (a % 45 ? 1.5 : 2.5) + '" stroke-linecap="round" transform="rotate(' + a + ')"/>';
+      s.add(rim.d + face.d + '<circle r="100" fill="' + rim.u + '" stroke="rgba(120,70,10,.5)" stroke-width="2"/><circle r="92" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="2"/>' +
+        '<circle r="86" fill="' + face.u + '" stroke="rgba(120,70,10,.35)" stroke-width="2"/>' + ticks +
+        lbl(0, -60, 'N', { size: 24, colour: RED }) + lbl(0, 62, 'S', { size: 22 }) + lbl(62, 2, 'E', { size: 22 }) + lbl(-62, 2, 'W', { size: 22 }) +
+        '<path d="M-60 -50 A80 80 0 0 1 -20 -78" stroke="#fff" stroke-width="5" stroke-linecap="round" fill="none" opacity=".6"/>', { x: 200, y: 190, enter: 'pop' });
       var n = s.add(needle(-90 + 120, 3.2), { x: 200, y: 190, enter: 'pop' });
       s.anim(n, [{ transform: 'rotate(0deg)' }, { transform: 'rotate(-150deg)', offset: .35 }, { transform: 'rotate(-100deg)', offset: .6 }, { transform: 'rotate(-125deg)', offset: .8 }, { transform: 'rotate(-120deg)' }],
         2400, { delay: 500, easing: 'ease-in-out' });
@@ -270,8 +321,10 @@
       var f = fieldLines(EN, ES, Math.PI / 2, [0.45, 0.8, 1.15, 1.55], function (p) { return [p[0], 2 * EY - p[1]]; }, LINE);
       drawPaths(s, f.paths, { delay: 900, name: 'elines' });
       s.add(f.arrows.join(''), { enter: 'fade', delay: 2400 });
-      s.add('<circle r="92" fill="#2F80ED"/><path d="M-60 -40 q20 -26 50 -14 t30 30 q-10 20 -40 10 z M10 20 q30 -10 50 10 q-6 30 -36 34 q-20 -14 -14 -44 z M-70 40 q16 -6 24 10 q-8 14 -22 6 z" fill="#22A06B"/>' +
-        '<ellipse cx="0" cy="-84" rx="34" ry="9" fill="#FFFFFF"/><ellipse cx="0" cy="84" rx="34" ry="9" fill="#FFFFFF"/>', { x: EX, y: EY, enter: 'pop', name: 'earth' });
+      var sea = G([[0, '#7CC0FF'], [.55, '#2F80ED'], [1, '#1A4F9E']], { radial: true, cx: .38, cy: .32, r: .78 }), land = G([[0, '#5CD18F'], [1, '#178A55']]);
+      s.add(sea.d + land.d + '<circle r="92" fill="' + sea.u + '"/><path d="M-60 -40 q20 -26 50 -14 t30 30 q-10 20 -40 10 z M10 20 q30 -10 50 10 q-6 30 -36 34 q-20 -14 -14 -44 z M-70 40 q16 -6 24 10 q-8 14 -22 6 z" fill="' + land.u + '"/>' +
+        '<ellipse cx="0" cy="-84" rx="34" ry="9" fill="#F4F8FF"/><ellipse cx="0" cy="84" rx="34" ry="9" fill="#F4F8FF"/><ellipse cx="-38" cy="-44" rx="26" ry="14" fill="#fff" opacity=".18" transform="rotate(-35 -38 -44)"/>' +
+        '<circle r="92" fill="none" stroke="rgba(20,50,110,.45)" stroke-width="2"/>', { x: EX, y: EY, enter: 'pop', name: 'earth' });
       s.add('<g transform="rotate(90)">' + magnet(116, 34, true, 0.85) + '</g>', { x: EX, y: EY, enter: 'fade', delay: 500, name: 'emag' });
       s.text(500, 44, 'North Pole', { size: 22, weight: 700, colour: s.C.deep, delay: 400 });
       s.add('<path d="M0 0 L-140 50" stroke="#2D1B69" stroke-width="2.5" stroke-dasharray="5 4"/>', { x: 410, y: 52, enter: 'fade', delay: 400 });
@@ -292,7 +345,7 @@
       s.text(500, 220, 'with the field', { size: 22, weight: 700, colour: s.C.fun, delay: 1500 });
     },
     'twist': function (s) {
-      s.add('<rect x="-110" y="-56" width="220" height="112" rx="16" fill="#FFFFFF" stroke="#FFC93C" stroke-width="4"/>', { x: 510, y: 190, enter: 'pop' });
+      s.add('<rect x="-110" y="-56" width="220" height="112" rx="18" fill="#FFFFFF" stroke="#FFC93C" stroke-width="3.5"/><rect x="-102" y="-48" width="204" height="10" rx="5" fill="#FFF4D6"/>', { x: 510, y: 190, enter: 'pop' });
       s.add(lbl(0, -32, 'Near the Arctic is', { size: 18, colour: s.C.ink }) + lbl(0, -6, "the Earth magnet's", { size: 18, colour: s.C.ink }) +
         lbl(0, 22, 'SOUTH pole!', { size: 24, colour: BLUE }), { x: 510, y: 190, enter: 'fade', delay: 400 });
       s.add('<circle r="22" fill="none" stroke="#FFC93C" stroke-width="5"/>', { x: 230, y: 152, enter: 'pop', delay: 900 });
@@ -303,7 +356,7 @@
     'wire-field': function (s) {
       var WX = 220, WY = 205;
       s.text(320, 34, 'A current makes a magnetic field', { size: 26, weight: 700, colour: s.C.fun });
-      s.add('<rect x="-170" y="-140" width="340" height="280" rx="16" fill="#FFFFFF" stroke="#EAE2D6" stroke-width="3"/>', { x: WX, y: WY, enter: 'fade' });
+      s.add('<rect x="-170" y="-140" width="340" height="280" rx="18" fill="#FFFFFF" stroke="#EAE2D6" stroke-width="2"/>', { x: WX, y: WY, enter: 'fade' });
       var circles = [40, 75, 110].map(function (r) { return 'M' + (WX) + ' ' + (WY - r) + ' A' + r + ' ' + r + ' 0 1 1 ' + (WX - 0.1) + ' ' + (WY - r); });
       drawPaths(s, circles, { delay: 1300, ms: 1200, stagger: 200 });
       var heads = '';
@@ -314,14 +367,16 @@
         });
       });
       s.add(heads, { enter: 'fade', delay: 2400 });
-      s.add('<circle r="16" fill="#C9733A" stroke="#8A4B1E" stroke-width="3"/><path d="M-8 -8 L8 8 M8 -8 L-8 8" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>', { x: WX, y: WY, enter: 'pop', delay: 300 });
+      var cu = G([[0, '#FFC08A'], [.6, '#D2783A'], [1, '#8A4B1E']], { radial: true });
+      s.add(cu.d + '<circle r="17" fill="' + cu.u + '" stroke="rgba(110,50,15,.6)" stroke-width="2"/><path d="M-7 -7 L7 7 M7 -7 L-7 7" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>', { x: WX, y: WY, enter: 'pop', delay: 300 });
       [45, 135, 225, 315].forEach(function (a, i) {
         var t = a * Math.PI / 180, x = WX + 92 * Math.cos(t), y = WY + 92 * Math.sin(t);
         var g = compass(s, x, y, -90, { delay: 500 + i * 100, r: 15 });
         turn(s, g, shortest(a + 90 - (-90)), 900, 1300 + i * 100);
       });
       s.text(510, 150, 'a wire, seen end-on', { size: 20, weight: 700, colour: '#8A4B1E', delay: 400 });
-      s.add('<circle r="11" fill="#C9733A"/><path d="M-5 -5 L5 5 M5 -5 L-5 5" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>', { x: 430, y: 195, enter: 'pop', delay: 800 });
+      var cu2 = G([[0, '#FFC08A'], [.6, '#D2783A'], [1, '#8A4B1E']], { radial: true });
+      s.add(cu2.d + '<circle r="11" fill="' + cu2.u + '" stroke="rgba(110,50,15,.6)" stroke-width="1.5"/><path d="M-4.5 -4.5 L4.5 4.5 M4.5 -4.5 L-4.5 4.5" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>', { x: 430, y: 195, enter: 'pop', delay: 800 });
       s.text(450, 195, 'current flowing', { size: 18, colour: s.C.muted, anchor: 'start', delay: 800 });
       s.text(450, 219, 'into the screen', { size: 18, colour: s.C.muted, anchor: 'start', delay: 800 });
       s.text(510, 270, 'the field goes', { size: 20, weight: 700, colour: LINE, delay: 2400 });
@@ -330,16 +385,17 @@
     'coil': function (s) {
       s.clear(); s.ref = {};
       var CX = 320, CY = 150, half = 110;
-      s.text(320, 30, 'A coil of wire', { size: 28, weight: 700, colour: s.C.fun, name: 'ctitle' });
+      tag(s, 320, 30, 'A coil of wire', { size: 28, colour: s.C.fun, name: 'ctitle' });
       var f = fieldLines([CX - half, CY], [CX + half, CY], Math.PI, [0.7, 1.2, 1.7], function (p) { return [2 * CX - p[0], p[1]]; }, LINE);
       drawPaths(s, f.paths, { delay: 1400, name: 'clines', width: 2, opacity: .6 });
       s.add('<g opacity=".6">' + f.arrows.join('') + '</g>', { enter: 'fade', delay: 2800, name: 'carrows' });
       s.ref.coilField = f;
-      var back = '', front = '';
+      var cb = copper(true), cf = copper(), back = cb.d, front = cf.d;
       for (var i = 0; i < 9; i++) {
         var x = CX - half + 12 + i * 25.5;
-        back += '<path d="M' + x + ' ' + (CY - 30) + ' Q' + (x + 18) + ' ' + CY + ' ' + (x + 6) + ' ' + (CY + 30) + '" fill="none" stroke="#A55A24" stroke-width="5" stroke-linecap="round"/>';
-        front += '<path d="M' + (x + 6) + ' ' + (CY + 30) + ' Q' + (x - 6) + ' ' + CY + ' ' + (x + 25.5) + ' ' + (CY - 30) + '" fill="none" stroke="#E08A45" stroke-width="5" stroke-linecap="round"/>';
+        back += '<path d="M' + x + ' ' + (CY - 30) + ' Q' + (x + 18) + ' ' + CY + ' ' + (x + 6) + ' ' + (CY + 30) + '" fill="none" stroke="' + cb.u + '" stroke-width="5" stroke-linecap="round"/>';
+        front += '<path d="M' + (x + 6) + ' ' + (CY + 30) + ' Q' + (x - 6) + ' ' + CY + ' ' + (x + 25.5) + ' ' + (CY - 30) + '" fill="none" stroke="#8A4B1E" stroke-width="6.5" stroke-linecap="round" stroke-opacity=".55"/>' +
+          '<path d="M' + (x + 6) + ' ' + (CY + 30) + ' Q' + (x - 6) + ' ' + CY + ' ' + (x + 25.5) + ' ' + (CY - 30) + '" fill="none" stroke="' + cf.u + '" stroke-width="5" stroke-linecap="round"/>';
       }
       s.ref.coilFront = front;
       s.add(back, { enter: 'fade', delay: 200, name: 'back' });
@@ -350,27 +406,32 @@
         lbl(270, 340, 'cell', { size: 15, colour: s.C.muted }) +
         '<circle cx="380" cy="322" r="4" fill="#1E1B3A"/><circle cx="430" cy="322" r="4" fill="#1E1B3A"/>', { enter: 'fade', delay: 400 });
       s.add('<path d="M0 0 L50 0" stroke="#1E1B3A" stroke-width="4" stroke-linecap="round"/>', { x: 380, y: 322, enter: 'fade', delay: 400, name: 'sw' });
-      s.text(490, 330, 'switch on', { size: 15, colour: s.C.green, delay: 400, name: 'swt' });
-      s.add(lbl(0, 0, 'N', { size: 24, colour: RED }), { x: CX - half - 30, y: CY - 44, enter: 'pop', delay: 2600, name: 'pn' });
-      s.add(lbl(0, 0, 'S', { size: 24, colour: BLUE }), { x: CX + half + 30, y: CY - 44, enter: 'pop', delay: 2600, name: 'ps' });
+      tag(s, 490, 330, 'switch on', { size: 15, colour: s.C.green, delay: 400, name: 'swt' });
+      svgFront(s, 'ctitle');
+      s.add(pole('N', RED), { x: CX - half - 34, y: CY - 46, enter: 'pop', delay: 2600, name: 'pn' });
+      s.add(pole('S', BLUE), { x: CX + half + 34, y: CY - 46, enter: 'pop', delay: 2600, name: 'ps' });
     },
     'core': function (s) {
       var CX = 320, CY = 150, half = 110;
-      s.add('<rect x="' + (CX - half - 14) + '" y="' + (CY - 20) + '" width="' + (2 * half + 28) + '" height="40" rx="6" fill="#8A90A3" stroke="#55526E" stroke-width="3"/>', { enter: 'right', name: 'corebar' });
-      s.add(s.ref.coilFront, { enter: 'none' });
+      var fe = iron();
+      s.add(fe.d + '<rect x="' + (CX - half - 14) + '" y="' + (CY - 20) + '" width="' + (2 * half + 28) + '" height="40" rx="8" fill="' + fe.u + '" stroke="' + OUT + '" stroke-width="2"/>' +
+        '<rect x="' + (CX - half - 8) + '" y="' + (CY - 16) + '" width="' + (2 * half + 16) + '" height="5" rx="2.5" fill="#fff" opacity=".4"/>', { enter: 'right', name: 'corebar' });
+      s.add(s.ref.coilFront.replace(/mag(\d+)/g, 'mag$1c'), { enter: 'none' });
       s.hide(s.ref.clines); s.hide(s.ref.carrows); s.hide(s.ref.ctitle);
-      s.text(320, 30, 'Coil + iron core', { size: 28, weight: 700, colour: s.C.fun });
+      tag(s, 320, 30, 'Coil + iron core', { size: 28, colour: s.C.fun, name: 'ctitle2' });
       var f2 = fieldLines([CX - half - 14, CY], [CX + half + 14, CY], Math.PI, [0.45, 0.75, 1.05, 1.35, 1.65, 1.95], function (p) { return [2 * CX - p[0], p[1]]; }, LINE);
       drawPaths(s, f2.paths, { delay: 600, width: 3, name: 'clines2', opacity: .75 });
       s.add('<g opacity=".75">' + f2.arrows.join('') + '</g>', { enter: 'fade', delay: 2000, name: 'carrows2' });
-      s.text(140, 238, 'iron core', { size: 18, weight: 700, colour: '#55526E', delay: 400, name: 'ic' });
-      s.add('<path d="M0 0 L40 -64" stroke="#55526E" stroke-width="2"/>', { x: 170, y: 228, enter: 'fade', delay: 400 });
+      s.add('<path d="M0 0 L52 -54" stroke="#55526E" stroke-width="2" stroke-linecap="round"/>', { x: 166, y: 226, enter: 'fade', delay: 400, name: 'icl' });
+      tag(s, 136, 240, 'iron core', { size: 18, colour: '#55526E', delay: 400, name: 'ic' });
+      svgFront(s, 'ctitle2'); svgFront(s, 'swt');
       s.ref.clips = [482, 500, 518].map(function (x, i) {
         var c = s.add(clip(90), { x: x + 40, y: 300 - i * 6, enter: 'fade', delay: 1200 });
         s.anim(c, [{ transform: 'translate(0px,0px)' }, { transform: 'translate(' + (468 - x - 40) + 'px,' + (-14 + i * 6 + (i - 1) * 14 - 136) + 'px)' }], 600, { delay: 1500 + i * 150, easing: 'cubic-bezier(.6,0,.9,1.15)' });
         return c;
       });
-      s.text(530, 64, 'electromagnet!', { size: 24, weight: 700, colour: s.C.green, enter: 'pop', delay: 2400, name: 'em' });
+      tag(s, 530, 64, 'electromagnet!', { size: 24, colour: s.C.green, enter: 'pop', delay: 2400, name: 'em' });
+      svgFront(s, 'pn'); svgFront(s, 'ps');
     },
     'switch-off': function (s) {
       ['clines2', 'carrows2', 'em', 'swt', 'pn', 'ps'].forEach(function (n) { s.hide(s.ref[n]); });
@@ -386,14 +447,20 @@
     'stronger': function (s) {
       s.clear(); s.ref = {};
       s.text(320, 36, 'Three ways to make it stronger', { size: 28, weight: 700, colour: s.C.fun });
-      var card = '<rect x="-90" y="-100" width="180" height="200" rx="18" fill="#FFFFFF" stroke="#EAE2D6" stroke-width="3"/>';
-      var coil = ''; for (var i = 0; i < 12; i++) coil += '<path d="M' + (-60 + i * 10) + ' -22 Q' + (-48 + i * 10) + ' 0 ' + (-56 + i * 10) + ' 22" fill="none" stroke="#E08A45" stroke-width="4"/>';
-      s.add(card + coil + lbl(0, 60, 'more turns', { size: 20, colour: s.C.deep }), { x: 120, y: 200, enter: 'pop', delay: 200 });
-      var cells = '<path d="M-40 -16 V16 M-26 -8 V8 M4 -16 V16 M18 -8 V8" stroke="#1E1B3A" stroke-width="5"/><path d="M-26 0 H4 M-70 0 H-40 M18 0 H50" stroke="#1E1B3A" stroke-width="3"/>' +
-        '<path d="M-50 -40 H40" stroke="#FF8A3D" stroke-width="6" stroke-linecap="round"/><path d="M34 -50 L48 -40 L34 -30 Z" fill="#FF8A3D"/>';
-      s.add(card + cells + lbl(0, 60, 'bigger current', { size: 20, colour: s.C.deep }), { x: 320, y: 200, enter: 'pop', delay: 900 });
-      var core = '<rect x="-60" y="-18" width="120" height="36" rx="6" fill="#8A90A3" stroke="#55526E" stroke-width="3"/>' + coil.replace(/#E08A45/g, '#E08A45" opacity=".9');
-      s.add(card + core + lbl(0, 60, 'iron core', { size: 20, colour: s.C.deep }), { x: 520, y: 200, enter: 'pop', delay: 1600 });
+      var turns = function () {
+        var c = copper(), m = c.d;
+        for (var i = 0; i < 12; i++) {
+          var d = 'M' + (-60 + i * 10) + ' -22 Q' + (-48 + i * 10) + ' 0 ' + (-56 + i * 10) + ' 22';
+          m += '<path d="' + d + '" fill="none" stroke="#8A4B1E" stroke-opacity=".5" stroke-width="5.5" stroke-linecap="round"/><path d="' + d + '" fill="none" stroke="' + c.u + '" stroke-width="4" stroke-linecap="round"/>';
+        }
+        return m;
+      };
+      s.add(card() + turns() + lbl(0, 60, 'more turns', { size: 20, colour: s.C.deep }), { x: 120, y: 200, enter: 'pop', delay: 200 });
+      var cells = '<path d="M-40 -16 V16 M4 -16 V16" stroke="#1E1B3A" stroke-width="3" stroke-linecap="round"/><path d="M-26 -8 V8 M18 -8 V8" stroke="#1E1B3A" stroke-width="6" stroke-linecap="round"/><path d="M-26 0 H4 M-70 0 H-40 M18 0 H50" stroke="#1E1B3A" stroke-width="2.5"/>' +
+        '<path d="M-50 -40 H36" stroke="#FF8A3D" stroke-width="7" stroke-linecap="round"/><path d="M-46 -42 H30" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".4"/><path d="M30 -51 L50 -40 L30 -29 Z" fill="#FF8A3D" stroke="#FF8A3D" stroke-width="2" stroke-linejoin="round"/>';
+      s.add(card() + cells + lbl(0, 60, 'bigger current', { size: 20, colour: s.C.deep }), { x: 320, y: 200, enter: 'pop', delay: 900 });
+      var fe = iron(), core = fe.d + '<rect x="-64" y="-18" width="128" height="36" rx="8" fill="' + fe.u + '" stroke="' + OUT + '" stroke-width="1.5"/><rect x="-60" y="-15" width="120" height="4" rx="2" fill="#fff" opacity=".4"/>' + turns();
+      s.add(card() + core + lbl(0, 60, 'iron core', { size: 20, colour: s.C.deep }), { x: 520, y: 200, enter: 'pop', delay: 1600 });
     },
 
     /* ---------- 6. Using electromagnets ---------- */
@@ -401,29 +468,42 @@
       s.owl(130, 300, 150);
       s.text(400, 90, 'Switch on: magnet', { size: 30, weight: 700, colour: s.C.green, delay: 400 });
       s.text(400, 140, 'Switch off: no magnet', { size: 30, weight: 700, colour: RED, delay: 1100 });
-      s.add('<rect x="-60" y="-28" width="120" height="56" rx="28" fill="#DDF7EE" stroke="#22A06B" stroke-width="4"/>', { x: 400, y: 240, enter: 'pop', delay: 1600, name: 'tog' });
-      var knob = s.add('<circle r="22" fill="#22A06B"/>', { x: 430, y: 240, enter: 'pop', delay: 1600 });
+      var tr = G([[0, '#C8EFDD'], [1, '#EFFBF5']]), kn = G([[0, '#5CD18F'], [1, '#178A55']], { radial: true });
+      s.add(tr.d + '<rect x="-60" y="-28" width="120" height="56" rx="28" fill="' + tr.u + '" stroke="#22A06B" stroke-width="3"/>', { x: 400, y: 240, enter: 'pop', delay: 1600, name: 'tog' });
+      var knob = s.add(kn.d + '<circle r="22" fill="' + kn.u + '" stroke="rgba(14,90,60,.5)" stroke-width="1.5"/><ellipse cx="-6" cy="-9" rx="8" ry="5" fill="#fff" opacity=".35"/>', { x: 430, y: 240, enter: 'pop', delay: 1600 });
       s.anim(knob, [{ transform: 'translateX(0)' }, { transform: 'translateX(-60px)' }, { transform: 'translateX(0)' }], 1600, { delay: 2200, iterations: 3 });
     },
     'crane': function (s) {
       s.clear(); s.ref = {};
       s.ground(300);
-      s.add('<path d="M100 300 V40 M130 300 V40 M100 300 L130 260 L100 220 L130 180 L100 140 L130 100 L100 60" fill="none" stroke="#FFB020" stroke-width="6"/>' +
-        '<path d="M60 40 H440 M60 62 H440 M100 62 L140 40 L180 62 L220 40 L260 62 L300 40 L340 62 L380 40 L420 62" fill="none" stroke="#FFB020" stroke-width="5"/>' +
-        '<rect x="40" y="30" width="40" height="40" fill="#55526E"/><rect x="112" y="72" width="50" height="40" rx="4" fill="#2F80ED"/><rect x="120" y="78" width="34" height="18" rx="2" fill="#CFE8FF"/>', { enter: 'fade' });
-      var cable = s.add('<rect x="-2" y="0" width="4" height="80" fill="#1E1B3A"/>', { x: 400, y: 64, enter: 'none' });
+      var tower = 'M100 300 V40 M130 300 V40 M100 300 L130 260 L100 220 L130 180 L100 140 L130 100 L100 60', jib = 'M60 40 H440 M60 62 H440 M100 62 L140 40 L180 62 L220 40 L260 62 L300 40 L340 62 L380 40 L420 62';
+      var cw = G([[0, '#8A8FA8'], [1, '#4A4E63']]), cab = G([[0, '#5FA2F5'], [1, '#1D5DBA']]);
+      s.add(cw.d + cab.d + '<path d="M115 40 L115 14 M70 40 L115 14 L440 40" fill="none" stroke="#B9BECE" stroke-width="2"/>' +
+        '<path d="' + tower + '" fill="none" stroke="#C98400" stroke-width="7" stroke-linejoin="round"/><path d="' + tower + '" fill="none" stroke="#FFC93C" stroke-width="4" stroke-linejoin="round"/>' +
+        '<path d="' + jib + '" fill="none" stroke="#C98400" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/><path d="' + jib + '" fill="none" stroke="#FFC93C" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>' +
+        '<rect x="38" y="28" width="44" height="42" rx="6" fill="' + cw.u + '" stroke="' + OUT + '" stroke-width="1.5"/><rect x="42" y="32" width="36" height="4" rx="2" fill="#fff" opacity=".3"/>' +
+        '<rect x="110" y="70" width="54" height="42" rx="8" fill="' + cab.u + '" stroke="' + OUT + '" stroke-width="1.5"/><rect x="118" y="77" width="38" height="18" rx="4" fill="#D8EEFF" stroke="rgba(30,27,58,.3)" stroke-width="1"/>' +
+        '<rect x="88" y="292" width="54" height="10" rx="3" fill="#9AA0B4"/>' +
+        '<rect x="392" y="56" width="16" height="10" rx="3" fill="#55526E"/>', { enter: 'fade' });
+      var cable = s.add('<rect x="-1.5" y="0" width="3" height="80" rx="1.5" fill="#3E4256"/>', { x: 400, y: 64, enter: 'none', flat: true });
       cable._inner.style.transformOrigin = '50% 0%';
-      var disc = s.add('<rect x="-44" y="0" width="88" height="22" rx="6" fill="#55526E" stroke="#1E1B3A" stroke-width="3"/><rect x="-30" y="22" width="60" height="6" fill="#8A90A3"/>', { x: 400, y: 144, enter: 'none' });
-      var car = s.add('<path d="M-60 34 Q-58 16 -36 14 L-20 0 Q-12 -4 12 0 L28 14 Q56 16 60 34 V44 H-60 Z" fill="#E5484D" stroke="#1E1B3A" stroke-width="3"/>' +
-        '<circle cx="-34" cy="46" r="11" fill="#1E1B3A"/><circle cx="34" cy="46" r="11" fill="#1E1B3A"/><path d="M-14 14 L-4 4 H12 L22 14 Z" fill="#CFE8FF"/>', { x: 400, y: 243, enter: 'fade' });
+      var dfe = iron(), dcu = copper();
+      var disc = s.add(dfe.d + dcu.d + '<path d="M-10 0 L0 -6 L10 0" fill="none" stroke="#3E4256" stroke-width="3" stroke-linejoin="round"/><rect x="-46" y="0" width="92" height="24" rx="8" fill="' + dfe.u + '" stroke="' + OUT + '" stroke-width="1.5"/>' +
+        '<rect x="-46" y="9" width="92" height="7" fill="' + dcu.u + '"/><rect x="-40" y="3" width="80" height="3" rx="1.5" fill="#fff" opacity=".4"/><rect x="-34" y="24" width="68" height="5" rx="2" fill="#5E6378"/>', { x: 400, y: 144, enter: 'none' });
+      var cg = G([[0, '#fff', .45], [.45, '#fff', 0], [1, '#000', .18]]);
+      var carD = 'M6 42 Q8 22 32 19 L50 4 Q58 -1 86 2 L106 19 Q128 22 130 42 V50 Q130 54 126 54 H10 Q6 54 6 50 Z';
+      var car = s.add(cg.d + '<g transform="translate(-61 -3) scale(.9)"><path d="' + carD + '" fill="#E5484D"/><path d="' + carD + '" fill="' + cg.u + '" stroke="rgba(30,27,58,.55)" stroke-width="2"/>' +
+        '<path d="M44 19 L56 8 H76 V19 Z M82 19 V8 H90 L101 19 Z" fill="#D8EEFF" stroke="rgba(30,27,58,.35)" stroke-width="1.5"/>' +
+        '<rect x="118" y="30" width="10" height="6" rx="3" fill="#FFE08A"/><rect x="8" y="30" width="8" height="6" rx="3" fill="#FF8A8A"/>' +
+        '<circle cx="36" cy="54" r="13" fill="#2A2740"/><circle cx="36" cy="54" r="6" fill="#D5D9E3"/><circle cx="104" cy="54" r="13" fill="#2A2740"/><circle cx="104" cy="54" r="6" fill="#D5D9E3"/></g>', { x: 400, y: 243, enter: 'fade' });
       var T = 6500, ease = { easing: 'ease-in-out', delay: 300 };
       var kf = function (vals) { return vals.map(function (v) { return { transform: v[1], offset: v[0] }; }); };
       s.anim(cable, kf([[0, 'scaleY(1)'], [.22, 'scaleY(1.85)'], [.34, 'scaleY(1.85)'], [.56, 'scaleY(1)'], [1, 'scaleY(1)']]), T, ease);
       s.anim(disc, kf([[0, 'translateY(0px)'], [.22, 'translateY(68px)'], [.34, 'translateY(68px)'], [.56, 'translateY(0px)'], [1, 'translateY(0px)']]), T, ease);
       s.anim(car, kf([[0, 'translateY(0px)'], [.34, 'translateY(0px)'], [.56, 'translateY(-68px)'], [.72, 'translateY(-68px)'], [.84, 'translateY(0px)'], [.88, 'translateY(-6px)'], [.92, 'translateY(0px)'], [1, 'translateY(0px)']]),
         T, { easing: 'ease-in-out', delay: 300 });
-      var on = s.add('<rect x="-50" y="-20" width="100" height="40" rx="20" fill="#22A06B"/>' + lbl(0, 1, 'ON', { size: 22, colour: '#FFFFFF' }).replace('stroke="#FFFDF7"', 'stroke="#22A06B"'), { x: 540, y: 120, enter: 'none' });
-      var off = s.add('<rect x="-50" y="-20" width="100" height="40" rx="20" fill="#E5484D"/>' + lbl(0, 1, 'OFF', { size: 22, colour: '#FFFFFF' }).replace('stroke="#FFFDF7"', 'stroke="#E5484D"'), { x: 540, y: 120, enter: 'none' });
+      var on = s.add('<rect x="-50" y="-20" width="100" height="40" rx="20" fill="#22A06B"/><rect x="-42" y="-16" width="84" height="8" rx="4" fill="#fff" opacity=".25"/>' + lbl(0, 1, 'ON', { size: 22, colour: '#FFFFFF' }).replace('stroke="#FFFDF7"', 'stroke="#22A06B"'), { x: 540, y: 120, enter: 'none' });
+      var off = s.add('<rect x="-50" y="-20" width="100" height="40" rx="20" fill="#E5484D"/><rect x="-42" y="-16" width="84" height="8" rx="4" fill="#fff" opacity=".25"/>' + lbl(0, 1, 'OFF', { size: 22, colour: '#FFFFFF' }).replace('stroke="#FFFDF7"', 'stroke="#E5484D"'), { x: 540, y: 120, enter: 'none' });
       s.anim(on, kf([[0, 'scale(0)'], [.28, 'scale(0)'], [.31, 'scale(1)'], [.72, 'scale(1)'], [.73, 'scale(0)'], [1, 'scale(0)']]), T, { easing: 'linear', delay: 300 });
       s.anim(off, kf([[0, 'scale(1)'], [.27, 'scale(1)'], [.28, 'scale(0)'], [.72, 'scale(0)'], [.75, 'scale(1)'], [1, 'scale(1)']]), T, { easing: 'linear', delay: 300 });
       s.text(540, 170, 'electromagnet', { size: 20, colour: s.C.muted, delay: 300 });
@@ -432,15 +512,23 @@
       s.clear(); s.ref = {};
       s.text(320, 34, 'An electric bell', { size: 28, weight: 700, colour: s.C.fun });
       // electromagnet (coil on an iron core), standing up
-      var coil = '<rect x="-14" y="-50" width="28" height="100" rx="4" fill="#8A90A3" stroke="#55526E" stroke-width="3"/>';
-      for (var i = 0; i < 8; i++) coil += '<path d="M-20 ' + (-42 + i * 11) + ' Q0 ' + (-36 + i * 11) + ' 20 ' + (-42 + i * 11) + '" fill="none" stroke="#E08A45" stroke-width="5" stroke-linecap="round"/>';
+      var fe = iron(), cu = copper(), coil = fe.d + cu.d + '<rect x="-14" y="-50" width="28" height="100" rx="6" fill="' + fe.u + '" stroke="' + OUT + '" stroke-width="1.5"/><rect x="-10" y="-47" width="5" height="94" rx="2.5" fill="#fff" opacity=".3"/>';
+      for (var i = 0; i < 8; i++) {
+        var cd = 'M-20 ' + (-42 + i * 11) + ' Q0 ' + (-35 + i * 11) + ' 20 ' + (-42 + i * 11);
+        coil += '<path d="' + cd + '" fill="none" stroke="#8A4B1E" stroke-opacity=".5" stroke-width="6.5" stroke-linecap="round"/><path d="' + cd + '" fill="none" stroke="' + cu.u + '" stroke-width="5" stroke-linecap="round"/>';
+      }
       s.add(coil, { x: 300, y: 250, enter: 'up' });
-      s.add('<rect x="-160" y="0" width="420" height="14" rx="4" fill="#C98A4B" stroke="#8A5A2B" stroke-width="3"/>', { x: 300, y: 300, enter: 'fade' });
+      var wd = wood();
+      s.add(wd.d + '<rect x="-160" y="0" width="420" height="16" rx="6" fill="' + wd.u + '" stroke="#9A6532" stroke-width="1.5"/><path d="M-150 5 H-20 M60 9 H240" stroke="#F4CF9E" stroke-width="2" stroke-linecap="round" opacity=".7"/>', { x: 300, y: 300, enter: 'fade' });
       // gong
-      s.add('<path d="M-56 0 A56 56 0 0 1 56 0 Z" fill="#FFC93C" stroke="#C2570C" stroke-width="4"/><rect x="-6" y="0" width="12" height="38" fill="#8A5A2B"/>', { x: 500, y: 262, enter: 'pop', delay: 300 });
+      var br = G([[0, '#FFE7A0'], [.55, '#F5B82E'], [1, '#C98A00']], { radial: true, cx: .4, cy: .25, r: .9 });
+      s.add(br.d + '<rect x="-6" y="0" width="12" height="38" rx="3" fill="#9A6532"/><path d="M-56 0 A56 56 0 0 1 56 0 Z" fill="' + br.u + '" stroke="rgba(150,90,0,.6)" stroke-width="2"/>' +
+        '<path d="M-38 -10 A40 40 0 0 1 -10 -38" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".5"/><rect x="-58" y="-3" width="116" height="7" rx="3.5" fill="#C98A00"/>', { x: 500, y: 262, enter: 'pop', delay: 300 });
       // iron arm on a springy hinge at (180, 180), with the hammer at the far end
-      s.add('<rect x="-8" y="0" width="16" height="120" fill="#8A5A2B"/><path d="M0 0 c-14 -6 14 -12 0 -18 c-14 -6 14 -12 0 -18" fill="none" stroke="#55526E" stroke-width="3"/>', { x: 172, y: 182, enter: 'fade', delay: 400 });
-      var arm = s.add('<rect x="0" y="-5" width="270" height="10" rx="4" fill="#55526E"/><circle cx="276" cy="0" r="15" fill="#1E1B3A"/>', { x: 172, y: 182, enter: 'fade', delay: 500 });
+      s.add(wd.d.replace(/(mag\d+)/, '$1b') + '<rect x="-8" y="0" width="16" height="120" rx="3" fill="#9A6532"/><rect x="-5" y="3" width="4" height="114" rx="2" fill="#fff" opacity=".2"/>' +
+        '<path d="M0 0 c-14 -6 14 -12 0 -18 c-14 -6 14 -12 0 -18" fill="none" stroke="#7A7F96" stroke-width="3.5" stroke-linecap="round"/><path d="M0 0 c-14 -6 14 -12 0 -18 c-14 -6 14 -12 0 -18" fill="none" stroke="#E6E9F2" stroke-width="1.2" stroke-linecap="round"/>', { x: 172, y: 182, enter: 'fade', delay: 400 });
+      var ar = iron(), hm = G([[0, '#8A8FA8'], [1, '#2A2740']], { radial: true });
+      var arm = s.add(ar.d + hm.d + '<rect x="0" y="-5" width="270" height="10" rx="5" fill="' + ar.u + '" stroke="' + OUT + '" stroke-width="1"/><circle cx="276" cy="0" r="15" fill="' + hm.u + '"/><ellipse cx="271" cy="-6" rx="5" ry="3" fill="#fff" opacity=".35"/>', { x: 172, y: 182, enter: 'fade', delay: 500 });
       arm._inner.style.transformBox = 'view-box'; arm._inner.style.transformOrigin = '0 0';
       s.anim(arm, [{ transform: 'rotate(0deg)' }, { transform: 'rotate(3deg)' }, { transform: 'rotate(0deg)' }], 320, { delay: 1600, iterations: 8, easing: 'ease-in-out' });
       var ding = s.text(565, 150, 'ding!', { size: 28, weight: 700, colour: '#C2570C', delay: 1700 });
@@ -454,12 +542,17 @@
     'more-uses': function (s) {
       s.clear(); s.ref = {};
       s.text(320, 36, 'Electromagnets are everywhere', { size: 28, weight: 700, colour: s.C.fun });
-      var card = '<rect x="-90" y="-100" width="180" height="200" rx="18" fill="#FFFFFF" stroke="#EAE2D6" stroke-width="3"/>';
-      var speaker = '<rect x="-46" y="-50" width="92" height="96" rx="10" fill="#2D1B69"/><circle cy="-22" r="14" fill="#55526E" stroke="#9AA0B4" stroke-width="3"/><circle cy="16" r="24" fill="#55526E" stroke="#9AA0B4" stroke-width="3"/><circle cy="16" r="8" fill="#1E1B3A"/>';
-      var lock = '<path d="M-22 -10 V-30 a22 22 0 0 1 44 0 V-10" fill="none" stroke="#9AA0B4" stroke-width="9"/><rect x="-36" y="-12" width="72" height="58" rx="10" fill="#FFC93C" stroke="#C2570C" stroke-width="3"/><circle cy="12" r="7" fill="#1E1B3A"/><rect x="-3" y="14" width="6" height="16" fill="#1E1B3A"/>';
-      var scan = '<circle cy="-12" r="44" fill="#CFE8FF" stroke="#2F80ED" stroke-width="8"/><circle cy="-12" r="22" fill="#FFFFFF"/><rect x="-62" y="-14" width="124" height="10" rx="4" fill="#9AA0B4"/><path d="M-46 30 h92" stroke="#2F80ED" stroke-width="6"/>';
+      var box = G([[0, '#4A3596'], [1, '#22154F']]), cone = G([[0, '#B9BECE'], [.7, '#6B7088'], [1, '#3E4256']], { radial: true, cx: .5, cy: .5, r: .6 });
+      var speaker = box.d + cone.d + '<rect x="-46" y="-52" width="92" height="98" rx="12" fill="' + box.u + '" stroke="rgba(30,27,58,.5)" stroke-width="1.5"/><rect x="-40" y="-47" width="80" height="5" rx="2.5" fill="#fff" opacity=".15"/>' +
+        '<circle cy="-24" r="14" fill="' + cone.u + '" stroke="#C9CED8" stroke-width="2"/><circle cy="15" r="25" fill="' + cone.u + '" stroke="#C9CED8" stroke-width="2.5"/><circle cy="15" r="8" fill="#2A2740"/><circle cx="-2" cy="12" r="2.5" fill="#fff" opacity=".4"/>';
+      var gold = G([[0, '#FFE08A'], [1, '#E09A10']]), steel = G([[0, '#5E6378'], [.4, '#D5D9E3'], [1, '#6B7088']], { h: true });
+      var lock = gold.d + steel.d + '<path d="M-22 -10 V-30 a22 22 0 0 1 44 0 V-10" fill="none" stroke="#6B7088" stroke-width="11"/><path d="M-22 -10 V-30 a22 22 0 0 1 44 0 V-10" fill="none" stroke="#C9CED8" stroke-width="7"/><path d="M-24 -16 V-30 a20 20 0 0 1 10 -17" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".7"/>' +
+        '<rect x="-36" y="-12" width="72" height="58" rx="12" fill="' + gold.u + '" stroke="rgba(150,90,0,.6)" stroke-width="1.5"/><rect x="-30" y="-7" width="60" height="5" rx="2.5" fill="#fff" opacity=".4"/><circle cy="12" r="7" fill="#3A2A10"/><path d="M-3 14 H3 L4 30 H-4 Z" fill="#3A2A10"/>';
+      var ring = G([[0, '#8CC4FF'], [1, '#1D5DBA']]), bed = G([[0, '#F4F5F9'], [1, '#B9BECE']]);
+      var scan = ring.d + bed.d + '<rect x="-50" y="24" width="100" height="10" rx="4" fill="#9AA0B4"/><circle cy="-12" r="46" fill="' + ring.u + '" stroke="rgba(20,50,110,.5)" stroke-width="1.5"/><circle cy="-12" r="24" fill="#EAF4FF" stroke="rgba(20,50,110,.35)" stroke-width="1.5"/>' +
+        '<path d="M-34 -40 A44 44 0 0 1 -6 -56" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".5"/><rect x="-64" y="-15" width="128" height="10" rx="5" fill="' + bed.u + '" stroke="rgba(30,27,58,.35)" stroke-width="1"/>';
       [[speaker, 'loudspeakers'], [lock, 'door locks'], [scan, 'hospital scanners']].forEach(function (c, i) {
-        s.add(card + c[0] + lbl(0, 76, c[1], { size: 19, colour: s.C.deep }), { x: 120 + i * 200, y: 200, enter: 'pop', delay: 200 + i * 600 });
+        s.add(card() + c[0] + lbl(0, 76, c[1], { size: 19, colour: s.C.deep }), { x: 120 + i * 200, y: 200, enter: 'pop', delay: 200 + i * 600 });
       });
     }
   });

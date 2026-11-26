@@ -16,6 +16,7 @@ import html
 import json
 import re
 import shutil
+import subprocess
 import sys
 from datetime import date
 from pathlib import Path
@@ -90,8 +91,101 @@ def beacon():
             f'data-cf-beacon="{data}"></script>')
 
 
+TITLE_MAX = 65          # search results cut titles at about this length
+CRUMBS_RE = re.compile(r'<p class="crumbs">(.*?)</p>', re.S)
+LINK_RE = re.compile(r'<a href="([^"]+)">(.*?)</a>', re.S)
+SUBJECTS = {"maths": "Mathematics", "physics": "Physics", "science": "Science"}
+
+
+def page_title(meta):
+    """Page title plus " | site name", unless that makes it too long for search results."""
+    if meta.get("title_exact"):
+        return meta["title"]
+    full = f'{meta["title"]} | {config.SITE_NAME}'
+    return full if len(full) <= TITLE_MAX else meta["title"]
+
+
+def _text(fragment):
+    return html.unescape(re.sub(r"<[^>]+>", "", fragment)).strip()
+
+
+def _abs(path):
+    return config.SITE_URL.rstrip("/") + path
+
+
+def breadcrumbs(body, canonical):
+    """BreadcrumbList from the visible <p class="crumbs"> trail. Unlinked middle crumbs are labels, so they are left out."""
+    m = CRUMBS_RE.search(body)
+    if not m:
+        return None
+    parts = [p.strip() for p in m.group(1).split("›")]
+    items = []
+    for i, part in enumerate(parts):
+        link = LINK_RE.fullmatch(part)
+        if link:
+            items.append((_text(link.group(2)), _abs(link.group(1))))
+        elif i == len(parts) - 1:
+            items.append((_text(part), canonical))
+    if len(items) < 2:
+        return None
+    return {"@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": n, "name": name, "item": href} for n, (name, href) in enumerate(items, 1)]}
+
+
+def learning_resource(meta, url, canonical):
+    """LearningResource for a single lesson, game, question set or worksheet page; None for hubs and other pages."""
+    seg = url.strip("/").split("/")
+    kind = level = None
+    ages, subject = "9-14", SUBJECTS.get(seg[0])
+    if seg[0] == "games" and len(seg) == 2:
+        m = re.search(r": a (Maths|Science) (game|simulation)$", meta["title"])
+        if m:
+            subject, kind = SUBJECTS[m.group(1).lower()], m.group(2).capitalize()
+    elif seg[0] in ("maths", "science") and len(seg) == 3:
+        kind = "Lesson with practice questions"
+    elif seg[0] == "question-bank" and len(seg) in (3, 4):
+        subject, level, ages = SUBJECTS.get(seg[1]), "Key Stage 3", "11-14"
+        kind = "Worksheet" if len(seg) == 4 else "Practice questions with worked answers"
+    elif seg[0] == "videos" and len(seg) == 3:
+        subject, level, ages = SUBJECTS.get(seg[1]), "Key Stage 3", "11-14"
+        kind = "Animated lesson"
+    if not kind:
+        return None
+    data = {"@type": "LearningResource", "name": meta["title"], "description": meta["description"], "url": canonical,
+            "inLanguage": config.LANG, "isAccessibleForFree": True, "learningResourceType": kind,
+            "typicalAgeRange": ages, "audience": {"@type": "EducationalAudience", "educationalRole": "student"},
+            "publisher": {"@id": _abs("/#organization")}}
+    if subject:
+        data["about"] = {"@type": "Thing", "name": subject}
+    if level:
+        data["educationalLevel"] = level
+    return data
+
+
+def structured_data(meta, body, url, canonical):
+    """JSON-LD for the page head. Pages may already carry their own (games add an FAQPage); this adds to it."""
+    if meta.get("noindex") or url == "/404.html":
+        return ""
+    graph = []
+    if url == "/":
+        graph += [
+            {"@type": "Organization", "@id": _abs("/#organization"), "name": config.SITE_NAME, "url": _abs("/"),
+             "logo": _abs("/static/icon-512.png"),
+             "parentOrganization": {"@type": "Organization", "name": config.SISTER_NAME, "url": config.SISTER_URL}},
+            {"@type": "WebSite", "@id": _abs("/#website"), "name": config.SITE_NAME, "url": _abs("/"),
+             "description": config.TAGLINE, "inLanguage": config.LANG, "publisher": {"@id": _abs("/#organization")}},
+        ]
+    for item in (breadcrumbs(body, canonical), learning_resource(meta, url, canonical)):
+        if item:
+            graph.append(item)
+    if not graph:
+        return ""
+    blob = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False).replace("</", "<\\/")
+    return f'<script type="application/ld+json">{blob}</script>'
+
+
 def render(meta, body, url):
-    full_title = meta["title"] if meta.get("title_exact") else f'{meta["title"]} | {config.SITE_NAME}'
+    full_title = page_title(meta)
     canonical = config.SITE_URL.rstrip("/") + ("/" if url == "/" else url)
     values = {
         "lang": config.LANG,
@@ -99,12 +193,16 @@ def render(meta, body, url):
         "description": html.escape(meta["description"], quote=True),
         "canonical": html.escape(canonical, quote=True),
         "robots": "noindex" if meta.get("noindex") else "index,follow",
+        # share picture: a page can set "image" (a path under the site) and "image_alt" in its header
+        "og_image": html.escape(config.SITE_URL.rstrip("/") + meta.get("image", "/static/img/og-default.png"), quote=True),
+        "og_image_alt": html.escape(meta.get("image_alt", f"{config.SITE_NAME}: {config.TAGLINE}"), quote=True),
         "site_name": html.escape(config.SITE_NAME),
         "tagline": html.escape(config.TAGLINE),
         "sister_name": html.escape(config.SISTER_NAME),
         "sister_url": config.SISTER_URL,
         "year": str(date.today().year),
         "beacon": beacon(),
+        "jsonld": structured_data(meta, body, url, canonical),
         "contact_email": html.escape(config.CONTACT_EMAIL),
         "mascot": partial("mascot.svg"),
     }
@@ -119,10 +217,26 @@ def render(meta, body, url):
     return page
 
 
-def write_sitemap(urls):
+_LASTMOD = {}
+
+
+def lastmod(origin):
+    """Date of the last commit that touched the page's source file, or "" when git cannot tell (then it is left out)."""
+    src = str(origin).split()[0]
+    if src not in _LASTMOD:
+        try:
+            out = subprocess.run(["git", "log", "-1", "--format=%cs", "--", src], cwd=HERE,
+                                 capture_output=True, text=True, timeout=20).stdout.strip()
+        except (OSError, subprocess.SubprocessError):
+            out = ""
+        _LASTMOD[src] = out if re.fullmatch(r"\d{4}-\d{2}-\d{2}", out) else ""
+    return _LASTMOD[src]
+
+
+def write_sitemap(entries):
     base = config.SITE_URL.rstrip("/")
-    today = date.today().isoformat()
-    rows = "".join(f"  <url><loc>{html.escape(base + u)}</loc><lastmod>{today}</lastmod></url>\n" for u in urls)
+    rows = "".join(f"  <url><loc>{html.escape(base + u)}</loc>{f'<lastmod>{d}</lastmod>' if d else ''}</url>\n"
+                   for u, d in entries)
     (DIST / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + rows + "</urlset>\n", encoding="utf-8")
@@ -148,7 +262,7 @@ def main():
         shutil.rmtree(DIST)
     DIST.mkdir()
     shutil.copytree(STATIC, DIST / "static")
-    for name in ("_headers", "_redirects"):
+    for name in ("_headers", "_redirects", "favicon.ico"):
         if (HERE / name).exists():
             shutil.copy(HERE / name, DIST / name)
 
@@ -180,7 +294,7 @@ def main():
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(bust(render(meta, body, url)), encoding="utf-8")
         if not meta.get("noindex") and url != "/404.html":
-            sitemap.append(url)
+            sitemap.append((url, lastmod(origin)))
 
     write_sitemap(sitemap)
     print(f"built {len(seen)} pages into dist/ ({len(sitemap)} in sitemap)")

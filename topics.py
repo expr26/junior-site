@@ -233,7 +233,7 @@ def topic_pages(path):
 <section class="hero topic-hero">
   <div class="wrap hero-grid">
     <div>
-      <p class="crumbs"><a href="/">Home</a> › {subject}</p>
+      <p class="crumbs"><a href="/">Home</a> › {subject} › {html.escape(t["title"])}</p>
       <span class="{tag}">{subject} · {html.escape(t.get("level", ""))}</span>
       <h1>{html.escape(t["title"])}</h1>
       <p class="lede">{rich(t["intro"])}</p>
@@ -292,9 +292,18 @@ def topic_pages(path):
 </section>
 <script type="application/json" id="qdata">{blob}</script>
 <script src="/static/js/practice.js" defer></script>"""
-        pages.append((f"{base}{u['slug']}/", {"title": f"{u['title']} ({t['title']})", "description": u.get("description", u["blurb"]),
+        pages.append((f"{base}{u['slug']}/", {"title": f"{u['title']} ({t['title']})", "description": u.get("description", _unit_description(u, t)),
                                               "body_class": "unit", "noindex": t.get("noindex", False)}, body, uw))
     return pages
+
+
+def _unit_description(u, t):
+    """Search snippet for a unit with no "description" of its own: its blurb plus what the page offers."""
+    blurb = re.sub(r"\{(\d+)/(\d+)\}", r"\1/\2", u["blurb"]).replace("**", "").strip()
+    if blurb[-1:] not in ".?!":
+        blurb += "."
+    return (f"{blurb} A short, friendly explanation and {len(u['questions'])} practice questions with instant "
+            f"feedback, from {t['title']} for ages 9 to 14.")
 
 
 def pages():

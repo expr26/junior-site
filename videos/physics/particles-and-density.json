@@ -1,0 +1,65 @@
+{
+  "title": "Particles and density",
+  "description": "Animated KS3 Physics lesson on the particle model for ages 9 to 14: solids, liquids and gases, changes of state, diffusion, gas pressure, and density = mass ÷ volume with floating and sinking.",
+  "intro": "Everything is made of tiny particles. See how they behave in solids, liquids and gases, why smells spread, what gas pressure is, and what density means, in five short parts.",
+  "chapters": [
+    {
+      "title": "Solids, liquids and gases",
+      "steps": [
+        {"say": "Everything around you is made of tiny **particles**. They are far too small to see, even with a magnifying glass.", "do": "zoom"},
+        {"say": "In a **solid**, the particles are packed close together in a regular pattern. They can't move about, but they **vibrate** on the spot. That's why a solid keeps its shape.", "do": "solid"},
+        {"say": "In a **liquid**, the particles are still close together, but they can slide past each other. So a liquid can **flow** and takes the shape of its container.", "do": "liquid"},
+        {"say": "In a **gas**, the particles are far apart and move quickly in all directions. A gas spreads out to fill its whole container.", "do": "gas"},
+        {"say": "Gas particles have big gaps between them, so a gas can be **squashed**. In a solid the particles are already touching, so it can hardly be squashed at all.", "do": "squash"}
+      ],
+      "check": {"q": "In which state are the particles close together but able to slide past each other?", "options": ["Liquid", "Solid", "Gas", "All three"], "answer": 0,
+                "hint": "Which state can flow and take the shape of its container, but can't be squashed much?", "explain": "In a **liquid** the particles touch but can slide past each other, so it flows. In a solid they only vibrate on the spot, and in a gas they are far apart."}
+    },
+    {
+      "title": "Changes of state",
+      "steps": [
+        {"say": "Heat a solid and its particles vibrate more and more. In the end they break out of their pattern: the solid **melts** into a liquid.", "do": "melt"},
+        {"say": "A liquid can **evaporate** into a gas from its surface. Heat it to its boiling point and bubbles of gas form all through it: that is **boiling**.", "do": "evaporate"},
+        {"say": "Cool a gas and it **condenses** back into a liquid. That's why drops of water form on a cold window.", "do": "condense"},
+        {"say": "Cool a liquid enough and it **freezes** into a solid.", "do": "freeze"},
+        {"say": "When something changes state, no particles are made or lost, so the **mass stays the same**. 20 g of ice melts into 20 g of water.", "speak": "When something changes state, no particles are made or lost, so the mass stays the same. 20 grams of ice melts into 20 grams of water.", "do": "mass-same"}
+      ],
+      "check": {"q": "A 50 g ice cube melts completely inside a sealed bag. What is the mass of the water?", "options": ["50 g", "40 g", "60 g", "0 g"], "answer": 0,
+                "hint": "Are any particles made or lost when ice melts?", "explain": "No particles are made or lost in a change of state, so the mass is conserved: the water has a mass of **50 g**."}
+    },
+    {
+      "title": "Diffusion",
+      "steps": [
+        {"say": "The particles in liquids and gases are always moving and bumping into each other. Here are two gases, kept apart by a wall.", "do": "mix-start"},
+        {"say": "Take the wall away and the particles spread out and mix by themselves. This is **diffusion**: particles spread from where there are lots of them to where there are fewer.", "do": "mix-spread"},
+        {"say": "That's how a smell spreads. Open a bottle of perfume and soon someone across the room can smell it.", "do": "perfume"},
+        {"say": "Diffusion is faster when it's warmer, because warmer particles move faster. A drop of ink spreads quicker in hot water than in cold water.", "do": "ink"}
+      ],
+      "check": {"q": "A drop of ink is put into a glass of still water. An hour later, all the water is coloured. Why?", "options": ["The moving ink and water particles mixed by diffusion", "The ink particles grew bigger", "The ink particles sank and stayed at the bottom", "The water particles turned into ink"], "answer": 0,
+                "hint": "Nobody stirred it. What are particles in a liquid always doing?", "explain": "The particles are always moving, so the ink particles spread out among the water particles from where there are lots to where there are fewer. That is **diffusion**."}
+    },
+    {
+      "title": "Gas pressure",
+      "steps": [
+        {"say": "Gas particles in a box zoom about and keep hitting the walls.", "do": "box"},
+        {"say": "Each hit gives the wall a tiny push. All the pushes together make **gas pressure**.", "do": "pushes"},
+        {"say": "Heat the gas and the particles move faster. They hit the walls harder and more often, so the pressure goes **up**.", "do": "hot-box"},
+        {"say": "Pump more air into a ball and the pressure goes up too: more particles means more hits on the inside.", "do": "pump"}
+      ],
+      "check": {"q": "A sealed can of gas is heated. What happens to the pressure inside it?", "options": ["It goes up", "It goes down", "It stays the same", "It drops to zero"], "answer": 0,
+                "hint": "Hotter particles move faster. What happens to the hits on the walls?", "explain": "Hotter particles move faster, so they hit the walls harder and more often. The pressure **goes up**. That's why you must never heat a sealed can."}
+    },
+    {
+      "title": "Density",
+      "steps": [
+        {"say": "**Density** tells you how much mass is packed into each bit of space. These two cubes are the same size, but the metal cube has much more mass than the cork cube.", "do": "cubes"},
+        {"say": "To work it out: **density = mass ÷ volume**. Mass is in grams, g. Volume is in cubic centimetres, cm³. So density is in **g/cm³**.", "speak": "To work it out: density equals mass divided by volume. Mass is in grams. Volume is in cubic centimetres. So density is in grams per cubic centimetre.", "do": "d-formula"},
+        {"say": "A block has a mass of 200 g and a volume of 50 cm³. Density = 200 ÷ 50 = 4 g/cm³.", "speak": "A block has a mass of 200 grams and a volume of 50 cubic centimetres. Density equals 200 divided by 50, which is 4 grams per cubic centimetre.", "do": "d-calc"},
+        {"say": "Water has a density of 1 g/cm³. Things that are less dense than water **float**, and things that are denser **sink**. A wooden block with a density of 0.7 g/cm³ floats.", "speak": "Water has a density of 1 gram per cubic centimetre. Things that are less dense than water float, and things that are denser sink. A wooden block with a density of 0.7 grams per cubic centimetre floats.", "do": "float"},
+        {"say": "To find the volume of a lumpy stone, lower it into water. The level rises from 50 cm³ to 80 cm³, so the stone's volume is 30 cm³. Its mass is 150 g, so its density = 150 ÷ 30 = 5 g/cm³.", "speak": "To find the volume of a lumpy stone, lower it into water. The level rises from 50 to 80 cubic centimetres, so the stone's volume is 30 cubic centimetres. Its mass is 150 grams, so its density is 150 divided by 30, which is 5 grams per cubic centimetre.", "do": "displace"}
+      ],
+      "check": {"q": "A block has a mass of 60 g and a volume of 20 cm³. What is its density?", "options": ["3 g/cm³", "1200 g/cm³", "0.33 g/cm³", "40 g/cm³"], "answer": 0,
+                "hint": "Density = mass ÷ volume. Which number is the mass?", "explain": "Density = mass ÷ volume = 60 g ÷ 20 cm³ = **3 g/cm³**."}
+    }
+  ]
+}

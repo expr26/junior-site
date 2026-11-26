@@ -1,0 +1,1369 @@
+{
+  "_about": "The Games page. Each game has a page at /games/<slug>/ when live is true; planned games show as 'Coming soon'. The game itself is static/js/games/<slug>.js and uses static/js/arcade.js. curriculum: where it fits in UK KS3 and IB PYP (upper years).",
+  "games": [
+    {
+      "slug": "pizza-fractions",
+      "live": true,
+      "title": "Pizza Fractions",
+      "icon": "🍕",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Hungry animals order fractions of a pizza. Cut it, add the toppings and serve!",
+      "learn": "What a fraction of a whole means, equivalent fractions (2/4 is the same as 1/2) and choosing a number of slices that works.",
+      "topic": "/maths/fractions/",
+      "topic_title": "Practise more: Fractions",
+      "curriculum": {
+        "KS3": "Number: equivalent fractions",
+        "PYP": "Number: fractions"
+      },
+      "guide_title": "Fractions of a pizza: a quick guide",
+      "guide": [
+        {
+          "h": "What a fraction means",
+          "p": "A fraction like 3/4 means: split the whole into 4 equal parts and take 3 of them. The bottom number (the denominator) says how many equal parts; the top number (the numerator) says how many you take."
+        },
+        {
+          "h": "Equivalent fractions",
+          "p": "If a pizza is cut into 8 slices, 4 slices are the same amount as half a pizza. So 4/8 = 1/2. You get equivalent fractions by multiplying (or dividing) the top and bottom by the same number: 1/2 = 2/4 = 4/8."
+        },
+        {
+          "h": "Choosing how to cut",
+          "p": "To make thirds you need a number of slices that 3 goes into, like 3, 6 or 9. You can't share 8 slices into 3 equal parts, so 8 slices won't give you exactly 1/3."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is 2/4 the same as 1/2?",
+          "a": "Yes. Two quarters cover exactly the same amount as one half. Multiply the top and bottom of 1/2 by 2 and you get 2/4."
+        },
+        {
+          "q": "How do I find 3/4 of a pizza cut into 8 slices?",
+          "a": "One quarter of 8 slices is 8 ÷ 4 = 2 slices, so three quarters is 3 × 2 = 6 slices. That is 6/8, which equals 3/4."
+        },
+        {
+          "q": "Which year group is this game for?",
+          "a": "It suits ages 9 to 12: upper primary (KS2) and the start of KS3, and the upper years of the IB PYP."
+        }
+      ]
+    },
+    {
+      "slug": "frog-jump",
+      "title": "Frog Jump",
+      "icon": "🐸",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Help the frog hop along the number line to add and subtract with negative numbers.",
+      "live": true,
+      "learn": "Adding and subtracting with negative numbers on a number line, including temperatures below zero and taking away a negative number.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Number: use the four operations with negative numbers",
+        "PYP": "Number: negative numbers in context"
+      },
+      "guide_title": "Negative numbers on a number line",
+      "guide": [
+        {
+          "h": "Left is smaller, right is bigger",
+          "p": "On a number line, numbers get bigger as you go right and smaller as you go left. Numbers to the left of zero are negative: −1, −2, −3 and so on. So −7 is smaller than −2."
+        },
+        {
+          "h": "Adding and taking away",
+          "p": "Adding a positive number moves you right. Taking away a positive number moves you left. For example, 4 − 6: start on 4, hop 6 to the left, and you land on −2."
+        },
+        {
+          "h": "Taking away a negative",
+          "p": "Taking away a negative number is the same as adding. 1 − (−4) = 1 + 4 = 5. Think of it as removing a debt: you end up better off."
+        },
+        {
+          "h": "Temperatures",
+          "p": "Thermometers are number lines standing up. If it is −4 °C and the temperature rises by 6 degrees, count 6 up from −4 to reach 2 °C."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is −3 + 7?",
+          "a": "Start on −3 and hop 7 to the right: −2, −1, 0, 1, 2, 3, 4. The answer is 4."
+        },
+        {
+          "q": "Why is subtracting a negative the same as adding?",
+          "a": "Subtraction finds the difference. The difference between 1 and −4 on a number line is 5 steps, so 1 − (−4) = 5, the same as 1 + 4."
+        },
+        {
+          "q": "Which is bigger, −2 or −7?",
+          "a": "−2 is bigger, because it is further to the right on the number line (closer to zero)."
+        }
+      ]
+    },
+    {
+      "slug": "balance-scale",
+      "title": "Balance the Scale",
+      "icon": "⚖️",
+      "subject": "maths",
+      "kind": "sim",
+      "blurb": "The scale is balanced. Take the same away from both sides and find the mystery number x.",
+      "live": true,
+      "learn": "Solving equations like 2x + 3 = x + 8 by doing the same thing to both sides, and checking an answer by putting it back in.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Algebra: solve linear equations",
+        "PYP": "Pattern and function: finding unknowns"
+      },
+      "guide_title": "Solving equations with a balance",
+      "guide": [
+        {
+          "h": "An equation is a balanced scale",
+          "p": "In 2x + 3 = 11, the left side and the right side weigh the same. The letter x stands for a mystery number, like a box with an unknown weight."
+        },
+        {
+          "h": "Do the same to both sides",
+          "p": "Take 3 away from both sides and the scale stays balanced: 2x = 8. Then share both sides into 2 equal groups: x = 4. Whatever you do to one side, do to the other."
+        },
+        {
+          "h": "Check your answer",
+          "p": "Put your number back in. If x = 4, then 2 × 4 + 3 = 11. Both sides match, so the answer is right."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do you solve 2x + 3 = x + 8?",
+          "a": "Take x away from both sides to get x + 3 = 8, then take 3 away from both sides: x = 5. Check: 2 × 5 + 3 = 13 and 5 + 8 = 13."
+        },
+        {
+          "q": "Why must I do the same thing to both sides?",
+          "a": "An equation says two amounts are equal. Changing both sides in the same way keeps them equal, just like taking the same weight off both pans keeps a scale level."
+        },
+        {
+          "q": "What age is this for?",
+          "a": "Ages 11 to 14 (KS3). Younger children who like puzzles can play the first rounds too."
+        }
+      ]
+    },
+    {
+      "slug": "angle-cannon",
+      "title": "Angle Cannon",
+      "icon": "🎯",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Aim the laser cannon at the balloons: measure, estimate and work out angles.",
+      "live": true,
+      "learn": "Measuring angles with a protractor, estimating angles, acute and obtuse angles, angles on a straight line (180°) and angles in a triangle (180°).",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Geometry: measure and estimate angles; angles on a straight line and in a triangle",
+        "PYP": "Shape and space: measuring and classifying angles"
+      },
+      "guide_title": "Angles: a quick guide",
+      "guide": [
+        {
+          "h": "Measuring angles",
+          "p": "Angles are measured in degrees (°). A quarter turn is a right angle, 90°. Half a turn, a straight line, is 180°. A full turn is 360°. A protractor helps you measure: line up its middle with the corner and its 0° line with one arm of the angle."
+        },
+        {
+          "h": "Types of angle",
+          "p": "Acute angles are less than 90°. A right angle is exactly 90°. Obtuse angles are between 90° and 180°. Reflex angles are more than 180°."
+        },
+        {
+          "h": "Angles on a straight line",
+          "p": "Angles that sit together on a straight line add up to 180°. If one angle is 35°, the other is 180° − 35° = 145°."
+        },
+        {
+          "h": "Angles in a triangle",
+          "p": "The three angles inside any triangle add up to 180°. If two angles are 50° and 70°, the third is 180° − 50° − 70° = 60°."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is 120° acute or obtuse?",
+          "a": "Obtuse, because it is bigger than 90° but smaller than 180°."
+        },
+        {
+          "q": "How do I estimate an angle without a protractor?",
+          "a": "Compare it with angles you know: flat is 0°, straight up is 90°, and halfway between is 45°. Then decide if your angle is a bit more or a bit less."
+        },
+        {
+          "q": "What do angles in a triangle add up to?",
+          "a": "Always 180°, whatever the shape or size of the triangle."
+        }
+      ]
+    },
+    {
+      "slug": "treasure-map",
+      "title": "Treasure Map",
+      "icon": "🗺️",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Find buried treasure and read the map with coordinates, in all four quadrants.",
+      "live": true,
+      "learn": "Plotting and reading coordinates (x, y) on a grid, including negative coordinates in all four quadrants.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Geometry and algebra: work with coordinates in all four quadrants",
+        "PYP": "Shape and space: position and coordinates"
+      },
+      "guide_title": "Coordinates: a quick guide",
+      "guide": [
+        {
+          "h": "x first, then y",
+          "p": "Coordinates are written (x, y). The x number tells you how far to go along (left or right) from the middle. The y number tells you how far to go up or down. A handy reminder: along the corridor, then up the stairs."
+        },
+        {
+          "h": "The origin",
+          "p": "The middle of the grid, where the x-axis and the y-axis cross, is called the origin. Its coordinates are (0, 0)."
+        },
+        {
+          "h": "Negative coordinates",
+          "p": "A negative x means go left from the origin. A negative y means go down. So (−3, 2) is 3 left and 2 up, and (2, −4) is 2 right and 4 down."
+        },
+        {
+          "h": "The four quadrants",
+          "p": "The two axes split the grid into four parts called quadrants. Points in the top right have both numbers positive; points in the bottom left have both numbers negative."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is (2, 5) the same point as (5, 2)?",
+          "a": "No. (2, 5) is 2 along and 5 up, but (5, 2) is 5 along and 2 up. The order matters: x always comes first."
+        },
+        {
+          "q": "Where is the point (0, −3)?",
+          "a": "It is on the y-axis, 3 squares below the origin. An x of 0 means you don't move left or right at all."
+        },
+        {
+          "q": "Which quadrant is (−4, −1) in?",
+          "a": "The bottom-left quadrant, because both x and y are negative."
+        }
+      ]
+    },
+    {
+      "slug": "pattern-machine",
+      "title": "Pattern Machine",
+      "icon": "🎲",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "The Pattern Machine prints number sequences. Crack the rule, find the next number and the nth term.",
+      "live": true,
+      "learn": "Number sequences: finding the next term, describing the rule (adding, subtracting, doubling, square numbers) and using an nth term formula like 3n + 1.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Algebra: generate terms of a sequence and find the nth term of a linear sequence",
+        "PYP": "Pattern and function: number patterns and rules"
+      },
+      "guide_title": "Number sequences: a quick guide",
+      "guide": [
+        {
+          "h": "Look at the jumps",
+          "p": "Write down the difference between each pair of neighbouring numbers. If the jump is always the same, like +4 or −6, it is a linear (arithmetic) sequence and you can carry on the pattern by adding the same amount."
+        },
+        {
+          "h": "Other kinds of pattern",
+          "p": "Some sequences multiply each time, like 2, 4, 8, 16 (double each time). Others are special numbers, like the square numbers 1, 4, 9, 16, 25 (1 × 1, 2 × 2, 3 × 3 and so on)."
+        },
+        {
+          "h": "The nth term",
+          "p": "The nth term is a formula that gives the number in any position n. For 4, 7, 10, 13 the jump is 3, so the formula starts with 3n. When n = 1, 3n is 3, but the first term is 4, so add 1: the nth term is 3n + 1."
+        },
+        {
+          "h": "Using the formula",
+          "p": "Put the position number in place of n. For 3n + 1, the 10th term is 3 × 10 + 1 = 31 and the 100th term is 3 × 100 + 1 = 301."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do I find the nth term of a sequence?",
+          "a": "Find the jump between terms (say 5). The formula starts with 5n. Work out 5n when n = 1, compare it with the first term, and add or take away the difference. For 6, 11, 16, 21 the nth term is 5n + 1."
+        },
+        {
+          "q": "What are square numbers?",
+          "a": "Numbers you get by multiplying a whole number by itself: 1, 4, 9, 16, 25, 36 and so on."
+        },
+        {
+          "q": "Can a sequence go below zero?",
+          "a": "Yes. −7, −4, −1, 2, 5 goes up by 3 each time and simply carries on past zero."
+        }
+      ]
+    },
+    {
+      "slug": "ramp-lab",
+      "title": "Ramp Lab",
+      "icon": "🛷",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Change the slope and the surface (ice, wood or carpet), let the block go and watch friction at work.",
+      "live": true,
+      "learn": "What friction is, which way it acts, how rough and smooth surfaces change it, and how the steepness of a slope affects motion.",
+      "topic": "/science/forces-and-motion/",
+      "topic_title": "Practise more: Forces and motion",
+      "curriculum": {
+        "KS3": "Physics: forces, friction and motion",
+        "PYP": "How the world works: forces and movement"
+      },
+      "guide_title": "Friction and slopes: a quick guide",
+      "guide": [
+        {
+          "h": "What is friction?",
+          "p": "Friction is a force between two surfaces that rub or try to slide over each other. It always acts against the motion, so it slows things down or stops them from moving at all."
+        },
+        {
+          "h": "Rough and smooth surfaces",
+          "p": "Rough surfaces like carpet have lots of friction. Smooth surfaces like ice have very little. That's why a block slides a long way on ice but stops quickly on carpet."
+        },
+        {
+          "h": "Steeper slopes",
+          "p": "On a slope, part of the block's weight pulls it down the slope. The steeper the slope, the bigger this pull. When the pull is bigger than the friction holding the block, the block starts to slide."
+        },
+        {
+          "h": "About this simulation",
+          "p": "Ramp Lab uses a simple model with typical friction values for ice, wood and carpet. Real surfaces vary, but the patterns you see are the same as in real life."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which direction does friction act?",
+          "a": "Friction acts in the opposite direction to the motion (or to the way something is trying to move). On a block sliding down a ramp, friction points back up the ramp."
+        },
+        {
+          "q": "Why does a block not slide on a gentle slope?",
+          "a": "On a gentle slope, the pull down the slope is small. Friction can match it, so the forces are balanced and the block stays still."
+        },
+        {
+          "q": "Is friction always a bad thing?",
+          "a": "No. Friction lets our shoes grip the ground, car tyres grip the road and brakes stop bikes. Without friction, walking would be like walking on ice."
+        }
+      ]
+    },
+    {
+      "slug": "particle-party",
+      "title": "Particle Party",
+      "icon": "🧊",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Heat it up or cool it down and watch the particles: is the water a solid, a liquid or a gas?",
+      "live": true,
+      "learn": "How particles are arranged and move in solids, liquids and gases, what happens when you heat or cool them, and the melting and boiling points of water.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Chemistry: the particulate nature of matter; changes of state",
+        "PYP": "How the world works: materials and changes"
+      },
+      "guide_title": "Solids, liquids and gases: the particle model",
+      "guide": [
+        {
+          "h": "Solid",
+          "p": "Particles are close together in a regular pattern. They can only vibrate in fixed places, so a solid keeps its shape."
+        },
+        {
+          "h": "Liquid",
+          "p": "Particles are still close together but can move past each other. A liquid flows and takes the shape of its container, but its volume stays the same."
+        },
+        {
+          "h": "Gas",
+          "p": "Particles are far apart and move quickly in all directions. A gas spreads out to fill its whole container and can be squashed."
+        },
+        {
+          "h": "Heating and cooling",
+          "p": "Heating gives particles more energy, so they move faster. Water melts at 0 °C and boils at 100 °C (at normal air pressure). Cooling reverses this: steam condenses and water freezes."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do particles get bigger when they are heated?",
+          "a": "No. The particles stay the same size. They move faster and, in a gas, spread further apart. That is why things often expand when heated."
+        },
+        {
+          "q": "What is condensation?",
+          "a": "Condensation is when a gas cools and turns into a liquid, like water drops forming on a cold window."
+        },
+        {
+          "q": "At what temperature does water boil?",
+          "a": "At 100 °C at normal air pressure. It freezes and melts at 0 °C."
+        }
+      ]
+    },
+    {
+      "slug": "circuit-builder",
+      "title": "Circuit Builder",
+      "icon": "💡",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Fix circuits, test which materials conduct, and compare series and parallel circuits with cells, bulbs and switches.",
+      "live": true,
+      "learn": "Complete circuits, conductors and insulators, switches, and how bulbs behave in series and parallel circuits.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: electric current, series and parallel circuits",
+        "PYP": "How the world works: electricity and simple circuits"
+      },
+      "guide_title": "Electric circuits: a quick guide",
+      "guide": [
+        {
+          "h": "A complete loop",
+          "p": "Electric current only flows when there is a complete loop from one end of the cell (battery) back to the other. Any gap, like an open switch or a missing wire, stops the current everywhere in that loop."
+        },
+        {
+          "h": "Conductors and insulators",
+          "p": "Conductors let electricity flow through them. Metals such as copper, steel and aluminium are good conductors. Insulators, such as plastic, rubber and wood, do not let electricity flow, which is why wires are covered in plastic."
+        },
+        {
+          "h": "Series circuits",
+          "p": "In a series circuit all the parts are in one loop. Adding more bulbs makes each one dimmer, and if one bulb breaks or is unscrewed, they all go out. Adding another cell makes the bulbs brighter."
+        },
+        {
+          "h": "Parallel circuits",
+          "p": "In a parallel circuit there is more than one path (branch). Each bulb gets the full push from the cell, so they stay bright, and if one bulb breaks the others stay on. Lights in a house are wired in parallel."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why do bulbs get dimmer in series?",
+          "a": "The bulbs share the push (voltage) from the cell. With two bulbs in series, each gets about half, so each one glows less brightly."
+        },
+        {
+          "q": "Is a metal spoon a conductor?",
+          "a": "Yes. Metals are good conductors of electricity, so a metal spoon in the gap completes the circuit and lights the bulb."
+        },
+        {
+          "q": "What does a switch do?",
+          "a": "A switch opens or closes a gap in the circuit. Closed, current flows; open, the circuit is broken and the current stops."
+        }
+      ]
+    },
+    {
+      "slug": "food-web-island",
+      "title": "Food Web Island",
+      "icon": "🦊",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Explore an island food web, then take one animal away and predict what happens to all the others.",
+      "live": true,
+      "learn": "Producers and consumers, reading the arrows in a food web, and how removing one species affects the others (interdependence).",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Biology: interactions and interdependencies: food chains and food webs",
+        "PYP": "Sharing the planet: living things depend on each other"
+      },
+      "guide_title": "Food chains and food webs: a quick guide",
+      "guide": [
+        {
+          "h": "Producers and consumers",
+          "p": "Every food chain starts with a producer: a green plant that makes its own food by photosynthesis, using energy from sunlight. Animals are consumers: they get their energy by eating plants or other animals."
+        },
+        {
+          "h": "Reading the arrows",
+          "p": "In a food chain or food web, each arrow points from the food to the animal that eats it. The arrow shows the direction the energy flows. Grass → rabbit → fox means the rabbit eats the grass and the fox eats the rabbit."
+        },
+        {
+          "h": "Predators and prey",
+          "p": "A predator hunts and eats other animals. The animals it eats are its prey. A fox is a predator, and rabbits and mice are its prey."
+        },
+        {
+          "h": "Interdependence",
+          "p": "A food web is many food chains joined together. Living things depend on each other, so if one population changes, the effects spread. If a predator disappears, its prey usually increases, and then the plants that the prey eats may decrease. This game uses a simple model: real food webs are bigger, and nature often finds a new balance."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which way do the arrows go in a food chain?",
+          "a": "From the food to the animal that eats it. They show the flow of energy, so they always point towards the eater."
+        },
+        {
+          "q": "What is the difference between a food chain and a food web?",
+          "a": "A food chain shows one path of energy, such as grass → rabbit → fox. A food web joins many food chains together to show all the feeding links in a habitat."
+        },
+        {
+          "q": "What happens if a predator is removed from a food web?",
+          "a": "Usually its prey increases, because fewer of them are eaten. Then the plants or animals that the prey eats may decrease. One change can spread through the whole web."
+        }
+      ]
+    },
+    {
+      "slug": "day-night-seasons",
+      "title": "Day, Night and Seasons",
+      "icon": "🌍",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Spin the Earth to make day and night, then send it round the Sun to find out what really causes the seasons.",
+      "live": true,
+      "learn": "Day and night from the spinning Earth, how long a day and a year are, and how the tilt of the Earth’s axis causes the seasons.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: space physics: day and night, seasons and the Earth’s tilt",
+        "PYP": "How the world works / Where we are in place and time: the Earth, Sun and seasons"
+      },
+      "guide_title": "Day, night and seasons: a quick guide",
+      "guide": [
+        {
+          "h": "Day and night",
+          "p": "The Earth spins on its axis once every 24 hours. The half facing the Sun has day, and the half facing away has night. The Sun does not move round the Earth: it only looks that way because we are spinning."
+        },
+        {
+          "h": "Sunrise and sunset",
+          "p": "The Earth spins towards the east. At sunrise, the spin is carrying you out of the dark side into the light. At sunset, it is carrying you from the light into the dark. Seen from above the North Pole, the Earth spins anticlockwise."
+        },
+        {
+          "h": "A year",
+          "p": "The Earth travels round the Sun once in about 365¼ days, which is one year. The extra quarter of a day is why we add a leap day (29 February) every four years."
+        },
+        {
+          "h": "Why we have seasons",
+          "p": "The Earth’s axis is tilted by about 23.5° and always points the same way in space. In June the northern half leans towards the Sun: the Sun is higher in the sky, days are longer and it is summer in the UK. In December the northern half leans away, so the UK has winter while Australia has summer."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Are the seasons caused by the Earth being closer to the Sun?",
+          "a": "No. The distance changes only a little, and the Earth is actually closest to the Sun in early January, during winter in the UK. The seasons are caused by the tilt of the Earth’s axis."
+        },
+        {
+          "q": "Why is it summer in Australia at Christmas?",
+          "a": "In December the southern half of the Earth leans towards the Sun, so it gets more direct sunlight and longer days. The northern half leans away and has winter."
+        },
+        {
+          "q": "How long is a day?",
+          "a": "One full spin of the Earth takes about 24 hours. That is one day and one night together."
+        }
+      ]
+    },
+    {
+      "slug": "magnet-sandbox",
+      "title": "Magnet Sandbox",
+      "icon": "🧲",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Push magnets together, test which materials are magnetic and see magnetic field lines with compasses.",
+      "live": true,
+      "learn": "Magnetic poles (like poles repel, unlike poles attract), magnetic and non-magnetic materials, magnetic field lines and how a compass works.",
+      "topic": "/science/forces-and-motion/",
+      "topic_title": "Practise more: Forces and motion",
+      "curriculum": {
+        "KS3": "Physics: magnetism, magnetic fields and magnetic materials",
+        "PYP": "How the world works: magnets and forces"
+      },
+      "guide_title": "Magnets: a quick guide",
+      "guide": [
+        {
+          "h": "Poles",
+          "p": "Every magnet has a north pole (N) and a south pole (S). Opposite poles attract: N pulls S. Like poles repel: N pushes N away, and S pushes S away."
+        },
+        {
+          "h": "Magnetic materials",
+          "p": "Only a few materials are magnetic: iron, steel (which is mostly iron), nickel and cobalt. Most metals, like aluminium, copper and gold, are not magnetic, and neither are plastic, wood or glass."
+        },
+        {
+          "h": "Magnetic fields",
+          "p": "A magnet has a magnetic field around it, where it can push or pull. We draw it with field lines that point from the north pole round to the south pole. The lines are closest together, and the field is strongest, at the poles."
+        },
+        {
+          "h": "Compasses",
+          "p": "A compass needle is a tiny magnet that lines up with a magnetic field. The Earth has its own magnetic field, so far from other magnets a compass needle points north."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Are all metals magnetic?",
+          "a": "No. Iron, steel, nickel and cobalt are magnetic, but aluminium, copper, brass and gold are not. That's why a magnet can sort steel cans from aluminium cans."
+        },
+        {
+          "q": "Why do two north poles push apart?",
+          "a": "Like poles repel. The field lines from two north poles push against each other, so the magnets are forced apart."
+        },
+        {
+          "q": "Which way do magnetic field lines go?",
+          "a": "Outside a magnet they go from the north pole to the south pole."
+        }
+      ]
+    },
+    {
+      "slug": "rounding-rollercoaster",
+      "title": "Rounding Rollercoaster",
+      "icon": "🎢",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Send the roller-coaster car to the nearest station: round to 10, 100, 1000 and 1 decimal place.",
+      "live": true,
+      "learn": "Rounding to the nearest 10, 100 and 1000, rounding to 1 decimal place, the halfway rule (5 rounds up), the value of a digit, and dividing by 10.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Number: place value, rounding and estimation",
+        "PYP": "Number: place value and rounding"
+      },
+      "guide_title": "Rounding: a quick guide",
+      "guide": [
+        {
+          "h": "What rounding means",
+          "p": "Rounding means swapping a number for a simpler one that is close to it. To round 47 to the nearest 10, think of the two tens it sits between: 40 and 50. 47 is nearer to 50, so 47 rounds to 50. In the game, the two tens are the stations, and the car rolls to the nearer one."
+        },
+        {
+          "h": "Which digit to look at",
+          "p": "Look at the digit just after the place you are rounding to. For the nearest 10, look at the ones digit. For the nearest 100, look at the tens digit. For the nearest 1000, look at the hundreds digit. If that digit is 0, 1, 2, 3 or 4, round down. If it is 5, 6, 7, 8 or 9, round up."
+        },
+        {
+          "h": "The halfway rule",
+          "p": "Sometimes a number is exactly halfway, like 650 between 600 and 700. It is not nearer to either one, so mathematicians agreed a rule: halfway rounds up. So 650 rounds to 700, and 45 rounds to 50. In the game, a car stopped on the very top of the hill always goes forward to the bigger station. That is the rounding rule, not real physics!"
+        },
+        {
+          "h": "Rounding decimals",
+          "p": "Rounding to 1 decimal place means rounding to the nearest tenth. 2.36 lies between 2.3 and 2.4. Look at the hundredths digit, 6. It is 5 or more, so round up: 2.36 rounds to 2.4. Place value helps too: dividing by 10 moves every digit one place to the right, so 58 ÷ 10 = 5.8."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is 3,962 rounded to the nearest 100?",
+          "a": "4,000. It lies between 3,900 and 4,000, and its tens digit is 6, so it rounds up to the next hundred, which is 4,000."
+        },
+        {
+          "q": "Does 5 round up or down?",
+          "a": "Up. When the digit after the rounding place is exactly 5, the number rounds up, so 35 rounds to 40 and 2.45 rounds to 2.5 (to 1 decimal place)."
+        },
+        {
+          "q": "Why do we round numbers?",
+          "a": "Rounded numbers are easier to say, remember and work with. They are great for quick estimates, like checking that an answer is about the right size."
+        }
+      ]
+    },
+    {
+      "slug": "factor-forest",
+      "title": "Factor Forest",
+      "icon": "🌳",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Plant trees in neat rectangular orchards to find factor pairs, prime numbers and square numbers.",
+      "live": true,
+      "learn": "Factors and factor pairs, multiples, prime numbers, square numbers, and powers such as 2³.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Number: factors, multiples, primes, squares and powers",
+        "PYP": "Number: multiples, factors and primes"
+      },
+      "guide_title": "Factors and primes: a quick guide",
+      "guide": [
+        {
+          "h": "Factors and factor pairs",
+          "p": "A factor of a number divides into it exactly, with nothing left over. If you can plant 12 trees in 3 equal rows of 4, then 3 × 4 = 12, so 3 and 4 are a factor pair of 12. Trying every number of rows finds all the pairs: 1 × 12, 2 × 6 and 3 × 4. So the factors of 12 are 1, 2, 3, 4, 6 and 12."
+        },
+        {
+          "h": "Multiples",
+          "p": "Multiples are the numbers in a times table. The multiples of 6 are 6, 12, 18, 24, 30 and so on, forever. If each row of an orchard holds 6 trees, the total number of trees must be a multiple of 6. Don't mix them up: 3 is a factor of 6, but 30 is a multiple of 6."
+        },
+        {
+          "h": "Prime numbers",
+          "p": "A prime number has exactly two factors: 1 and itself. With 7 trees, the only rectangle you can make is one long line, 1 × 7, so 7 is prime. 15 is not prime, because 15 trees make 3 rows of 5. The first primes are 2, 3, 5, 7, 11, 13, 17, 19 and 23. The number 1 is not prime, because it has only one factor."
+        },
+        {
+          "h": "Square numbers and powers",
+          "p": "When the rows and the trees in each row are equal, the orchard is a square. 16 trees make 4 rows of 4, so 16 is a square number: 4 × 4 = 16, written 4². The small raised number is a power, or index. It tells you how many of the number to multiply together, so 2³ = 2 × 2 × 2 = 8, not 2 × 3."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is 1 a prime number?",
+          "a": "No. A prime number has exactly two different factors, 1 and itself. The number 1 has only one factor, so it is not prime. The smallest prime is 2, which is also the only even prime."
+        },
+        {
+          "q": "What is the difference between a factor and a multiple?",
+          "a": "A factor goes into a number exactly, like 3 into 12. A multiple is in the number's times table, like 24 for 12. Factors are never bigger than the number; multiples are never smaller."
+        },
+        {
+          "q": "What does 2³ mean?",
+          "a": "It means three 2s multiplied together: 2 × 2 × 2 = 8. It is called 2 cubed, or 2 to the power of 3."
+        }
+      ]
+    },
+    {
+      "slug": "algebra-machine",
+      "title": "Algebra Machine",
+      "icon": "⚙️",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Feed numbers into a colourful function machine, substitute into expressions and tidy up algebra tiles.",
+      "live": true,
+      "learn": "Function machines, the order of operations, substituting numbers into expressions such as 3a + 2 and 2(x + 1), collecting like terms with algebra tiles, and writing an expression for a machine.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Algebra: expressions, substitution and simplifying",
+        "PYP": "Pattern and function: rules and function machines"
+      },
+      "guide_title": "Expressions and substitution: a quick guide",
+      "guide": [
+        {
+          "h": "Function machines",
+          "p": "A function machine takes a number in, does one or more operations to it, and gives a number out. The boxes always work in order, from left to right. If 4 goes into a machine that does × 3 and then + 2, you get 4 × 3 = 12, then 12 + 2 = 14. Swap the boxes round and the answer changes: 4 + 2 = 6, then 6 × 3 = 18."
+        },
+        {
+          "h": "Letters stand for numbers",
+          "p": "In algebra, a letter such as a or x stands for a number. We leave out the × sign, so 3a means 3 × a, and we write the number first. If a = 5, then 3a = 15, not 35. Substitution means swapping the letter for its number, then working out the answer in the usual order: multiply before you add."
+        },
+        {
+          "h": "Brackets come first",
+          "p": "Brackets tell you what to work out first. In 2(x + 1), add 1 to x, then multiply all of it by 2. If x = 6, that is 2 × 7 = 14. A machine that adds 3 and then multiplies by 5 can be written 5(x + 3). Without the bracket, 5x + 3 would mean multiply first, then add, which is a different machine."
+        },
+        {
+          "h": "Collecting like terms",
+          "p": "Like terms have exactly the same letter part. You can add x terms to x terms and numbers to numbers, but not x terms to numbers. So 2x + 3 + x + 4 = 3x + 7. A single x counts as 1x. With algebra tiles, a negative tile and a positive tile of the same kind cancel to make zero, so 5x − 2x = 3x and 6 − 1 = 5."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What does 3a mean?",
+          "a": "It means 3 × a, or three lots of a. If a = 6, then 3a = 18. It does not mean the digits 3 and 6 side by side."
+        },
+        {
+          "q": "Can I simplify 3x + 7 any further?",
+          "a": "No. 3x and 7 are not like terms, because one has an x and the other is just a number, so 3x + 7 is already as simple as it gets."
+        },
+        {
+          "q": "Why does the order of the boxes in a function machine matter?",
+          "a": "Because adding then multiplying usually gives a different answer from multiplying then adding. 5 → + 1 → × 2 gives 12, but 5 → × 2 → + 1 gives 11."
+        }
+      ]
+    },
+    {
+      "slug": "smoothie-mixer",
+      "title": "Smoothie Mixer",
+      "icon": "🥤",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Mix fruit smoothies in just the right ratio: scale recipes, simplify, share and work out prices.",
+      "live": true,
+      "learn": "Writing a ratio a : b, equivalent ratios, scaling a recipe up, simplifying a ratio, sharing an amount in a ratio, a ratio as a fraction of the total, and direct proportion with prices.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Ratio, proportion and rates of change",
+        "PYP": "Number: ratio and proportion in everyday contexts"
+      },
+      "guide_title": "Ratio and proportion: a quick guide",
+      "guide": [
+        {
+          "h": "What a ratio means",
+          "p": "A ratio compares amounts. Strawberry : banana = 2 : 3 means 2 scoops of strawberry for every 3 scoops of banana. The order matters: 3 : 2 would be a different smoothie. If you multiply both parts by the same number, the taste stays the same, so 2 : 3, 4 : 6 and 6 : 9 are equivalent ratios."
+        },
+        {
+          "h": "Scaling and simplifying",
+          "p": "To scale a recipe up, multiply every part by the same number. If 2 : 1 becomes 6 strawberries, that is × 3, so you need 3 bananas. Adding the same amount to each part does not work. To simplify, divide every part by the biggest number that goes into all of them: 8 : 4 divided by 4 is 2 : 1."
+        },
+        {
+          "h": "Sharing in a ratio",
+          "p": "To share an amount in a ratio, first add the parts to find how many parts there are. Then divide the amount by that number to find one part. To share 12 scoops in the ratio 1 : 3, there are 4 parts, so one part is 12 ÷ 4 = 3 scoops. The shares are 3 and 9, which add back up to 12."
+        },
+        {
+          "h": "Fractions and direct proportion",
+          "p": "A ratio also tells you fractions of the whole. In 2 : 3 there are 5 parts, so the first amount is 2/5 of the total and the second is 3/5. Two amounts are in direct proportion when doubling one doubles the other. If 3 smoothies cost £6, one costs £2, so 5 cost £10. In the game, each scoop is one equal part."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is 2 : 3 the same as 3 : 2?",
+          "a": "No. The order matches the order of the words. Strawberry : banana = 2 : 3 has more banana, but 3 : 2 would have more strawberry."
+        },
+        {
+          "q": "How do I know a ratio is fully simplified?",
+          "a": "When no whole number bigger than 1 divides into every part. 4 : 2 can still be divided by 2, but 2 : 1 cannot, so 2 : 1 is the simplest form."
+        },
+        {
+          "q": "What is the unitary method?",
+          "a": "It means finding the value of one item first, then multiplying. If 3 smoothies cost £6, one costs £6 ÷ 3 = £2, so 5 cost 5 × £2 = £10."
+        }
+      ]
+    },
+    {
+      "slug": "energy-coaster",
+      "title": "Energy Coaster",
+      "icon": "🎢",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Ride a roller coaster and watch energy move between the gravitational, kinetic and thermal stores. Then name stores, transfers and wasted energy.",
+      "live": true,
+      "learn": "Energy stores and the four ways energy is transferred, conservation of energy, how friction transfers energy to the thermal store, Sankey diagrams and efficiency.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: energy stores, transfers and conservation of energy",
+        "PYP": "How the world works: energy and its forms"
+      },
+      "guide_title": "Energy stores and transfers: a quick guide",
+      "guide": [
+        {
+          "h": "Energy stores",
+          "p": "Energy is kept in different stores. A moving object has a kinetic store. Anything lifted up has a gravitational store: the higher it is, the more energy. Food, fuels and batteries have chemical stores. Stretched or squashed things, like springs and bows, have elastic stores. Hot things have bigger thermal stores than cold ones."
+        },
+        {
+          "h": "Energy transfers",
+          "p": "Energy moves from one store to another in four ways. It can be transferred by forces (a push or a pull, like the chain lift pulling the car up), electrically (by an electric current), by heating (from a hotter thing to a cooler thing) or by radiation (by light and other waves, like sunshine warming the ground)."
+        },
+        {
+          "h": "Energy is never used up",
+          "p": "Energy cannot be made or destroyed. It only moves between stores, so the total always stays the same: this is called conservation of energy. On our coaster the total is always 100 kJ. As the car rolls down, its gravitational store empties and its kinetic store fills up. Going up a hill, the opposite happens."
+        },
+        {
+          "h": "Friction, wasted energy and efficiency",
+          "p": "Friction and air resistance transfer some energy to the thermal store of the wheels, track and air, so a real coaster can never climb back to its starting height. That energy is wasted: it spreads out and is hard to use. In the game we show all of it in the thermal store; in real life a little goes as sound, which also ends up warming the air. Efficiency = useful energy out ÷ total energy in. A Sankey diagram shows this with arrows as wide as the energy they carry."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why is a roller coaster fastest at the bottom of a dip?",
+          "a": "At the lowest point most of the energy in the gravitational store has been transferred to the kinetic store. A bigger kinetic store means the car is moving faster."
+        },
+        {
+          "q": "If energy is never used up, why do things stop?",
+          "a": "Friction and air resistance transfer the energy to thermal stores of the surroundings. It is still there, but it is spread out as a little warming of lots of things, so we can't easily use it again."
+        },
+        {
+          "q": "What does 20% efficient mean?",
+          "a": "Only 20% of the energy put in is transferred usefully. An old filament bulb takes in 100 J and gives out 20 J as light, so it is 20% efficient. The other 80 J heats the room and is wasted."
+        }
+      ]
+    },
+    {
+      "slug": "power-house",
+      "title": "Power House",
+      "icon": "🔌",
+      "subject": "science",
+      "kind": "game",
+      "blurb": "Switch appliances on and off, work out kilowatt-hours, read the meter and find out what electricity costs.",
+      "live": true,
+      "learn": "Power in watts and kilowatts, energy in kilowatt-hours (kWh = kW × hours), the cost of electricity, reading a meter and saving energy with LED bulbs.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: energy costs, power and paying for electricity",
+        "PYP": "Sharing the planet: using energy wisely"
+      },
+      "guide_title": "Power and energy bills: a quick guide",
+      "guide": [
+        {
+          "h": "Power: watts and kilowatts",
+          "p": "The power of an appliance tells you how fast it transfers energy. It is measured in watts (W): 1 watt means 1 joule every second. Big powers are given in kilowatts (kW), and 1 kW = 1000 W. So a 3 kW kettle is 3000 W, and a 100 W TV is 0.1 kW. Things that heat, like kettles and heaters, usually have the biggest powers."
+        },
+        {
+          "h": "Kilowatt-hours",
+          "p": "Electricity companies measure energy in kilowatt-hours (kWh). One kWh is the energy a 1 kW appliance uses in 1 hour. To work it out, multiply: energy in kWh = power in kW × time in hours. A 2 kW heater on for 3 hours uses 2 × 3 = 6 kWh. Always change watts into kilowatts first."
+        },
+        {
+          "h": "Working out the cost",
+          "p": "Each kWh has a price. In the game we imagine it costs 30p per kWh: this is a made-up round number to keep the sums easy, and real prices change. Cost = number of kWh × price per kWh. So 6 kWh costs 6 × 30p = 180p, which is £1.80. A meter at home counts the kWh used, so take the old reading from the new one to find how much was used."
+        },
+        {
+          "h": "Saving energy",
+          "p": "An old filament bulb gets hot and wastes most of its energy heating the room. An LED bulb gives about the same light for a much smaller power (in the game we use 10 W instead of 100 W), so it uses far less energy and costs less to run. Switching off big-power appliances, like heaters, when you don't need them saves the most energy of all."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is a kilowatt-hour?",
+          "a": "A kilowatt-hour (kWh) is an amount of energy: the energy a 1 kW appliance transfers in 1 hour. It is the unit on electricity bills. 1 kWh is 3.6 million joules."
+        },
+        {
+          "q": "Why does a kettle cost more per hour than a TV?",
+          "a": "A kettle's power is about 3 kW, while a TV's is about 0.1 kW. For the same time, energy = power × time, so the kettle uses about 30 times as much energy. Luckily a kettle is only on for a few minutes."
+        },
+        {
+          "q": "How do I read an electricity meter?",
+          "a": "The meter keeps counting up the kWh used. Write down the reading, then read it again later. Take the first reading away from the second to find how many kWh were used in between."
+        }
+      ]
+    },
+    {
+      "slug": "garden-designer",
+      "title": "Garden Designer",
+      "icon": "🌻",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Design garden plots on a grid: fence them, turf them, plant a triangle bed and fill a planter with cubes.",
+      "live": true,
+      "learn": "Perimeter and area of rectangles, the same area with a different perimeter, the area of a triangle as half a rectangle, compound L-shapes and the volume of a cuboid.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Geometry and measures: perimeter, area and volume",
+        "PYP": "Measurement: perimeter, area and volume"
+      },
+      "guide_title": "Perimeter, area and volume: a quick guide",
+      "guide": [
+        {
+          "h": "Perimeter: the distance round the edge",
+          "p": "The perimeter is the total distance all the way round a shape, like the fence round a garden. For a rectangle, add all four sides: length + width + length + width, which is the same as 2 × (length + width). A plot 5 m long and 4 m wide needs 18 m of fence. Perimeter is a length, so it is measured in cm or m."
+        },
+        {
+          "h": "Area: the space inside",
+          "p": "Area is how much surface a shape covers, like the turf on a lawn. On a grid, count the squares inside. For a rectangle, multiply: area = length × width, so 4 m × 3 m = 12 m². Area is measured in square units such as cm² or m². Two shapes can have the same area but different perimeters: a 6 m × 2 m plot and a 4 m × 3 m plot both cover 12 m², but need 16 m and 14 m of fence."
+        },
+        {
+          "h": "Triangles and L-shapes",
+          "p": "Cut a rectangle from one corner to the opposite corner and you get two matching triangles, so each triangle has half the area: length × width ÷ 2. For a compound shape like an L, split it into rectangles, find each area and add them. You can also find the area of the big rectangle and take away the missing corner. Both ways give the same answer."
+        },
+        {
+          "h": "Volume: the space in 3D",
+          "p": "Volume is the amount of space inside a 3D shape, like the soil in a planter or the water in a pond. For a cuboid, count the cubes in one layer (length × width), then multiply by the number of layers (the height): volume = length × width × height. A 4 m × 3 m × 2 m pond holds 24 m³. Volume uses cubic units such as cm³ or m³."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the difference between perimeter and area?",
+          "a": "Perimeter is the distance round the outside of a shape, measured in units like m. Area is the space inside, measured in square units like m². A fence is about perimeter; turf is about area."
+        },
+        {
+          "q": "How do you find the area of a triangle?",
+          "a": "Multiply the base by the perpendicular height and divide by 2. This works because a triangle is half of a rectangle (or parallelogram) with the same base and height."
+        },
+        {
+          "q": "How do you work out the volume of a cuboid?",
+          "a": "Multiply length × width × height. If a cuboid is 3 cm long, 3 cm wide and 2 cm high, it holds 3 × 3 × 2 = 18 one-centimetre cubes, so its volume is 18 cm³."
+        }
+      ]
+    },
+    {
+      "slug": "shape-shifter",
+      "title": "Shape Shifter",
+      "icon": "🔷",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Slide, flip and turn a ghost shape on a coordinate grid to land it exactly where the transformation sends it.",
+      "live": true,
+      "learn": "Translations, reflections in the x-axis, the y-axis and the line x = 1, rotations of 90° and 180° about the origin, line symmetry and naming a transformation.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Geometry: translations, reflections, rotations and symmetry",
+        "PYP": "Shape and space: symmetry and transformations"
+      },
+      "guide_title": "Transformations: a quick guide",
+      "guide": [
+        {
+          "h": "Translation: a slide",
+          "p": "A translation slides a shape without turning or flipping it. Every corner moves the same distance in the same direction, for example 3 squares right and 2 squares down. The shape stays the same size and the same way round. In maths, this translation can be written as the column vector (3, −2): the top number is right or left, the bottom number is up or down."
+        },
+        {
+          "h": "Reflection: a mirror image",
+          "p": "A reflection flips a shape over a mirror line. Each point of the image is the same distance from the mirror line as the original point, but on the other side. Reflecting in the y-axis sends (x, y) to (−x, y), and reflecting in the x-axis sends (x, y) to (x, −y). For a line like x = 1, measure each distance from that line, not from an axis."
+        },
+        {
+          "h": "Rotation: a turn",
+          "p": "A rotation turns a shape about a fixed point called the centre of rotation. You need the angle, the direction (clockwise or anticlockwise) and the centre. A 90° clockwise turn about the origin sends (x, y) to (y, −x), and a 180° turn sends (x, y) to (−x, −y). Tracing paper is a great way to check a rotation."
+        },
+        {
+          "h": "Line symmetry",
+          "p": "A shape has a line of symmetry if you can fold it along that line and the two halves match exactly. A rectangle that is not a square has 2 lines of symmetry: across the middle each way. Its diagonals are not lines of symmetry. A square has 4, and an equilateral triangle has 3."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What are the main types of transformation?",
+          "a": "At KS3 the main transformations are translation (slide), reflection (flip), rotation (turn) and enlargement (make bigger or smaller). The first three keep the shape exactly the same size."
+        },
+        {
+          "q": "How do you describe a rotation fully?",
+          "a": "Give three things: the angle (for example 90°), the direction (clockwise or anticlockwise) and the centre of rotation (for example the origin, (0, 0)). A 180° turn is the same either way."
+        },
+        {
+          "q": "How many lines of symmetry does a rectangle have?",
+          "a": "A rectangle that is not a square has 2 lines of symmetry, one across the middle each way. Many people think the diagonals work too, but folding along a diagonal does not make the halves match."
+        }
+      ]
+    },
+    {
+      "slug": "mirror-maze",
+      "title": "Mirror Maze",
+      "icon": "🔦",
+      "subject": "science",
+      "kind": "game",
+      "blurb": "Turn mirrors to steer a laser beam to the target, then make shadows, bend light in glass and split white light into a rainbow.",
+      "live": true,
+      "learn": "The law of reflection (measured from the normal), how shadows form because light travels in straight lines, refraction into glass, and splitting white light with a prism.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: light: reflection, refraction and colour",
+        "PYP": "How the world works: light and shadows"
+      },
+      "guide_title": "Reflection, shadows, refraction and colour: a quick guide",
+      "guide": [
+        {
+          "h": "Light travels in straight lines",
+          "p": "Light from a source, such as the Sun or a torch, travels in straight lines. It cannot bend round an opaque object like a box, so a dark area called a shadow forms behind it. Move the light closer to the object and the shadow gets bigger, because the straight rays spread out more behind it. In the game the torch is treated as a tiny point of light."
+        },
+        {
+          "h": "The law of reflection",
+          "p": "When light hits a mirror, it bounces off. The normal is an imaginary line at 90° to the mirror. The angle of incidence (between the incoming ray and the normal) always equals the angle of reflection (between the reflected ray and the normal). Remember to measure from the normal, not from the mirror. In the maze the beam always meets a mirror at 45°, so it turns through 90°."
+        },
+        {
+          "h": "Refraction: bending light",
+          "p": "Light travels more slowly in glass and water than in air. When a ray goes from air into glass at an angle, it changes speed and bends towards the normal. When it comes out into the air again, it bends away from the normal. A ray that hits the glass straight along the normal does not bend at all. This bending is called refraction."
+        },
+        {
+          "h": "White light and the spectrum",
+          "p": "White light is not one colour: it is a mixture of colours. A glass prism refracts each colour by a slightly different amount. Violet bends the most and red bends the least, so the colours spread out into a spectrum: red, orange, yellow, green, blue, indigo and violet. This is called dispersion, and it is how rainbows form in raindrops."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the normal in reflection?",
+          "a": "The normal is an imaginary line drawn at 90° to the surface of the mirror, where the ray hits it. We measure the angle of incidence and the angle of reflection from the normal, and the two angles are always equal."
+        },
+        {
+          "q": "Why does light bend when it goes into water or glass?",
+          "a": "Light slows down when it goes from air into water or glass. If it enters at an angle, the change of speed makes it bend towards the normal. This is called refraction. It is why a straw in a glass of water looks bent."
+        },
+        {
+          "q": "How does a prism make a rainbow?",
+          "a": "A prism does not add colours. White light is already a mixture of colours, and the prism bends each colour by a different amount, so they spread out. Violet bends the most and red the least."
+        }
+      ]
+    },
+    {
+      "slug": "sound-studio",
+      "title": "Sound Studio",
+      "icon": "🎧",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Shape sound waves on an oscilloscope: make them louder, higher and lower, work out an echo and find where sound can't go.",
+      "live": true,
+      "learn": "Sound comes from vibrations. Amplitude and loudness, frequency and pitch, why sound needs a medium, echoes with the speed of sound, and the human hearing range.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: sound: vibrations, amplitude, frequency and echoes",
+        "PYP": "How the world works: sound and hearing"
+      },
+      "guide_title": "Sound waves, loudness and pitch: a quick guide",
+      "guide": [
+        {
+          "h": "Sound is made by vibrations",
+          "p": "Every sound starts with something vibrating: a guitar string, a drum skin or your vocal cords. The vibrations push on the particles of the air next to them, and those particles pass the vibrations on to the next ones, all the way to your ear. That is why sound needs a medium (a solid, a liquid or a gas) to travel through. Space is a vacuum with no particles, so it is silent."
+        },
+        {
+          "h": "Amplitude and loudness",
+          "p": "An oscilloscope draws a sound as a wave. The amplitude is the height of the wave from the middle line. A bigger amplitude means bigger vibrations carrying more energy, so the sound is louder. A smaller amplitude means a quieter sound. Changing the loudness does not change the pitch. (The waves in the game are a picture of the sound, not the air itself.)"
+        },
+        {
+          "h": "Frequency and pitch",
+          "p": "The frequency is the number of vibrations (or waves) each second. It is measured in hertz (Hz): 1 Hz means one vibration each second. More waves squeezed onto the screen means a higher frequency and a higher pitch, like a whistle. Fewer, wider waves mean a lower pitch, like a drum. In the game the screen shows one hundredth of a second, so 4 waves on it is 400 Hz."
+        },
+        {
+          "h": "Echoes and hearing",
+          "p": "An echo is sound that reflects off a hard surface, such as a cliff, and comes back to you. In air, sound travels at about 340 metres per second. If an echo takes 2 seconds, the sound travelled about 680 m there and back, so the cliff is about 340 m away. Most humans hear from about 20 Hz to about 20 000 Hz. Higher sounds are called ultrasound."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the difference between amplitude and frequency?",
+          "a": "Amplitude is how big the vibrations are, shown by how tall the wave is: it sets the loudness. Frequency is how many vibrations there are each second, shown by how many waves fit on the screen: it sets the pitch."
+        },
+        {
+          "q": "Why is there no sound in space?",
+          "a": "Sound is passed on by particles bumping into each other. Space is almost a perfect vacuum, with hardly any particles, so the vibrations cannot be passed on and no sound travels. Astronauts use radios, because radio waves can cross empty space."
+        },
+        {
+          "q": "How do you work out the distance to a cliff from an echo?",
+          "a": "Multiply the speed of sound (about 340 m/s in air) by the time for the echo. That gives the distance there and back, so halve it. An echo after 2 seconds means the cliff is about 340 m away."
+        }
+      ]
+    },
+    {
+      "slug": "spinner-lab",
+      "title": "Spinner Lab",
+      "icon": "🎡",
+      "subject": "maths",
+      "kind": "sim",
+      "blurb": "Spin spinners, dip into bags of counters and design your own spinner to explore chance.",
+      "live": true,
+      "learn": "The probability scale from 0 to 1, probability words, probability as a fraction, designing a spinner, P(not A) = 1 − P(A), and how experiments compare with theory.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Probability: the probability scale, outcomes and experiments",
+        "PYP": "Data handling: probability and chance"
+      },
+      "guide_title": "Probability: a quick guide",
+      "guide": [
+        {
+          "h": "The probability scale",
+          "p": "Probability tells us how likely something is, using a number from 0 to 1. Impossible things have a probability of 0 and certain things have a probability of 1. An even chance, like a fair coin landing on heads, is 1/2. Unlikely events sit between 0 and 1/2, and likely events sit between 1/2 and 1. No probability can be below 0 or above 1."
+        },
+        {
+          "h": "Probability as a fraction",
+          "p": "When all the outcomes are equally likely, probability = number of ways the event can happen ÷ total number of outcomes. A fair spinner with 8 equal sections, 3 of them red, gives P(red) = 3/8. Count sections or counters, not colours: a bag of 6 blue and 6 other counters gives P(blue) = 6/12 = 1/2, whatever the other colours are."
+        },
+        {
+          "h": "Something either happens or it doesn't",
+          "p": "An event and its opposite always add up to 1, because one of them is certain to happen. So P(not A) = 1 − P(A). If the probability of rain tomorrow is 3/10, the probability of no rain is 1 − 3/10 = 7/10. This trick saves time when the opposite is easier to work out."
+        },
+        {
+          "h": "Experiments and relative frequency",
+          "p": "In an experiment, relative frequency = number of times something happened ÷ number of trials. With a few spins it can be far from the theoretical probability, just by chance. With many more trials it usually gets closer. A spinner has no memory: a long run of blues doesn't make red more likely next time. In Spinner Lab the spinners are fair and every section is the same size."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the probability of something impossible?",
+          "a": "0. Something certain has a probability of 1, and everything else is in between."
+        },
+        {
+          "q": "Why doesn't my experiment give exactly the right answer?",
+          "a": "Experiments involve chance, so results wobble. If you do lots more trials, the relative frequency usually gets closer to the theoretical probability, but it is rarely exactly the same."
+        },
+        {
+          "q": "How do I find the probability that something does not happen?",
+          "a": "Take the probability that it does happen away from 1. For example, if P(red) = 3/8, then P(not red) = 1 − 3/8 = 5/8."
+        }
+      ]
+    },
+    {
+      "slug": "data-detective",
+      "title": "Data Detective",
+      "icon": "🔍",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Stack, level and sort towers of cubes to crack the mean, median, mode and range.",
+      "live": true,
+      "learn": "The mean as levelling out, the median, the mode and the range, reading a bar chart, and choosing the best average when there is an outlier.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Statistics: averages, range and charts",
+        "PYP": "Data handling: collecting, displaying and interpreting data"
+      },
+      "guide_title": "Averages and range: a quick guide",
+      "guide": [
+        {
+          "h": "The mean: level it out",
+          "p": "To find the mean, add up all the values and divide by how many values there are. Towers of cubes show why this works: if you move cubes from tall towers to short ones until they are all level, each tower's height is the mean. For towers of 2, 6, 3, 5 and 4 cubes, the total is 20, and 20 ÷ 5 = 4."
+        },
+        {
+          "h": "The median and the mode",
+          "p": "The median is the middle value once the values are in order from smallest to largest. For 2, 3, 4, 6, 7, 8, 9 the median is 6. With an even number of values, it is halfway between the two middle ones. The mode is the value that appears most often. It isn't the biggest value, and a data set can have more than one mode, or none."
+        },
+        {
+          "h": "The range",
+          "p": "The range tells you how spread out the data is. Range = largest value − smallest value. For 4, 9, 2, 7 and 6 the range is 9 − 2 = 7. The range is not an average: a small range means the values are close together, and a big range means they are spread out."
+        },
+        {
+          "h": "Choosing the best average",
+          "p": "An outlier is a value much bigger or smaller than the rest. If five friends have 2, 4, 5, 6 and 33 stickers, the mean is 50 ÷ 5 = 10, which is more than four of them have. The median, 5, gives a better idea of a typical friend. When there are no outliers, the mean is useful because it uses every value."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the difference between the mean and the median?",
+          "a": "The mean shares the total out equally: add the values and divide by how many there are. The median is the middle value when the values are in order. An outlier changes the mean a lot but the median hardly at all."
+        },
+        {
+          "q": "Can there be more than one mode?",
+          "a": "Yes. If two values are equally common, both are modes. If every value appears only once, there is no mode."
+        },
+        {
+          "q": "How do I read a bar chart?",
+          "a": "Look at the top of each bar and read straight across to the scale on the side. To compare two bars, find each value and subtract to see how many more."
+        }
+      ]
+    },
+    {
+      "slug": "balloon-charge",
+      "title": "Balloon Charge",
+      "icon": "🎈",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Rub a balloon on a jumper, watch the electrons hop across, then make balloons push apart, stick to walls and pick up paper.",
+      "live": true,
+      "learn": "Charging by friction, which way electrons move, why only electrons move in solids, like charges repel and unlike charges attract, and sparks and lightning.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: static electricity and electric charge",
+        "PYP": "How the world works: electricity"
+      },
+      "guide_title": "Static electricity: a quick guide",
+      "guide": [
+        {
+          "h": "Positive and negative charge",
+          "p": "Everything is made of atoms. Each atom has positive charges (protons) in its centre and tiny negative charges (electrons) around the outside. Most objects have exactly the same number of each, so the charges cancel out and the object is neutral. An object with extra electrons is negatively charged. An object that has lost electrons is positively charged."
+        },
+        {
+          "h": "Charging by friction",
+          "p": "When you rub a balloon on a wool jumper, some electrons are rubbed off the jumper and onto the balloon. The balloon gains electrons, so it becomes negative. The jumper loses the same number, so it becomes positive. Rubbing never makes new charge: it only moves it. In the game, each rub moves one electron to keep counting easy. In real life, one rub moves millions of them!"
+        },
+        {
+          "h": "Only electrons move",
+          "p": "In solids, only electrons can move from one object to another. The positive charges are protons, held tightly in the centre of each atom, so they stay put. An object becomes positive because it has lost some electrons, not because it has gained positive charges. That is why the + charges in the game never move."
+        },
+        {
+          "h": "Attract and repel, sparks and lightning",
+          "p": "Like charges repel and unlike charges attract. Two rubbed balloons are both negative, so they push apart. A charged balloon also attracts neutral things, such as a wall or bits of paper: it pushes their electrons a little way back, so the near side becomes slightly positive and is pulled in. When lots of charge builds up, it can jump across the air as a spark. Lightning is a giant spark from a storm cloud."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why does a balloon stick to the wall after you rub it?",
+          "a": "Rubbing gives the balloon extra electrons, so it is negatively charged. Near the wall, it pushes the wall's electrons slightly away, which leaves the wall's surface a little positive. Unlike charges attract, so the balloon sticks."
+        },
+        {
+          "q": "Which way do electrons move when you rub a balloon on a jumper?",
+          "a": "From the jumper onto the balloon. The balloon ends up negative and the jumper ends up positive, by the same amount."
+        },
+        {
+          "q": "What is lightning?",
+          "a": "Lightning is a giant spark. Charge builds up in a storm cloud, and when there is enough, it jumps through the air between the cloud and the ground, or between clouds."
+        }
+      ]
+    },
+    {
+      "slug": "float-or-sink",
+      "title": "Float or Sink",
+      "icon": "🛟",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Work out the density of blocks, predict whether they float or sink, then drop them in the tank to find out.",
+      "live": true,
+      "learn": "Density = mass ÷ volume in g/cm³, why things float or sink in water, the volume of a cube, why the same material always has the same density, layers of oil and water, and density in the particle model.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: density and the particle model",
+        "PYP": "How the world works: materials and their properties"
+      },
+      "guide_title": "Density, floating and sinking: a quick guide",
+      "guide": [
+        {
+          "h": "What is density?",
+          "p": "Density tells you how much mass is packed into each bit of space. To work it out, divide the mass by the volume: density = mass ÷ volume. If the mass is in grams (g) and the volume is in cubic centimetres (cm³), the density is in g/cm³. A 50 g pebble with a volume of 20 cm³ has a density of 50 ÷ 20 = 2.5 g/cm³."
+        },
+        {
+          "h": "Float or sink?",
+          "p": "Water has a density of 1 g/cm³. An object floats in water if its density is less than 1 g/cm³, and sinks if it is more. It is density that matters, not how heavy something is: a big log floats, but a tiny steel nail sinks. A floating block sits partly under water. In the game, a block of 0.5 g/cm³ floats with half of it under the surface."
+        },
+        {
+          "h": "Same material, same density",
+          "p": "If you cut a block in half, each half has half the mass and half the volume, so mass ÷ volume stays the same. A whole plank and a small chip of the same wood have the same density, so both float. To find the volume of a cube, multiply side × side × side: a cube with 3 cm sides has a volume of 27 cm³."
+        },
+        {
+          "h": "Liquids, layers and particles",
+          "p": "Liquids have densities too. Cooking oil is about 0.9 g/cm³, so it floats on water in its own layer. In solids and liquids the particles are packed closely, but in a gas they are far apart, so gases are much less dense. Solids are usually a little denser than their liquids, but ice is a famous exception: it floats on water. The densities in the game are rounded, easy numbers."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do you work out density?",
+          "a": "Divide the mass by the volume: density = mass ÷ volume. For example, 30 g ÷ 60 cm³ = 0.5 g/cm³."
+        },
+        {
+          "q": "Why do some heavy things float?",
+          "a": "Floating depends on density, not on mass. A huge ship or log can float because its mass is spread out over a very large volume, so its overall density is less than water's 1 g/cm³."
+        },
+        {
+          "q": "Does a smaller piece of the same material have a smaller density?",
+          "a": "No. A smaller piece has less mass but also less volume, in the same proportion, so its density is the same. A tiny piece of wood floats just like a big one."
+        }
+      ]
+    },
+    {
+      "slug": "race-track",
+      "title": "Race Track",
+      "icon": "🏁",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Race animals and vehicles along a track and watch the distance–time graph draw itself as they go.",
+      "live": true,
+      "learn": "Speed = distance ÷ time, comparing speeds, reading distance–time graphs, average speed for a journey with a stop, and units such as m/s and km/h.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: motion, speed and distance–time graphs",
+        "PYP": "How the world works: forces and motion"
+      },
+      "guide_title": "Speed and distance–time graphs: a quick guide",
+      "guide": [
+        {
+          "h": "Speed = distance ÷ time",
+          "p": "Speed tells you how far something travels in each unit of time. To work it out, divide the distance by the time. A rabbit that runs 40 metres in 5 seconds has a speed of 40 ÷ 5 = 8 metres per second (8 m/s). You can turn the formula round too: distance = speed × time, and time = distance ÷ speed."
+        },
+        {
+          "h": "Units of speed",
+          "p": "The unit of speed comes from the units you divide. Metres ÷ seconds gives metres per second (m/s), and kilometres ÷ hours gives kilometres per hour (km/h). Always check the units before you divide: if a distance is in kilometres and you want m/s, change it to metres first. Remember that 1 km = 1000 m."
+        },
+        {
+          "h": "Reading a distance–time graph",
+          "p": "A distance–time graph shows how far something is from the start at each moment. The steeper the line, the faster it is moving. A straight sloping line means a steady speed. A flat (horizontal) line means the distance is not changing, so the object has stopped. A line sloping down means it is coming back towards the start."
+        },
+        {
+          "h": "Average speed",
+          "p": "Real journeys speed up, slow down and stop. Average speed = total distance ÷ total time, and the total time includes any stops. A cyclist who rides 120 m in 20 s of riding but also stops for 10 s has an average speed of 120 ÷ 30 = 4 m/s. In this game each racer moves at a steady speed on each part of the race, which keeps the graphs as straight lines."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do you work out speed?",
+          "a": "Divide the distance travelled by the time taken: speed = distance ÷ time. For example, 100 m in 20 s is 100 ÷ 20 = 5 m/s."
+        },
+        {
+          "q": "What does a flat line on a distance–time graph mean?",
+          "a": "It means the object is not moving. The time keeps going, but the distance from the start stays the same, so the object has stopped."
+        },
+        {
+          "q": "Does a stop count when you work out average speed?",
+          "a": "Yes. Average speed is the total distance divided by the total time for the whole journey, and that total time includes the time spent stopped. So stops make the average speed lower."
+        }
+      ]
+    },
+    {
+      "slug": "seesaw-balance",
+      "title": "Seesaw Balance",
+      "icon": "⚖️",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Hang weights on a giant seesaw until it balances, then find out why snowshoes stop you sinking.",
+      "live": true,
+      "learn": "Moment = force × distance, balancing clockwise and anticlockwise moments, and pressure = force ÷ area.",
+      "topic": "/games/",
+      "topic_title": "More games",
+      "curriculum": {
+        "KS3": "Physics: moments, levers and pressure",
+        "PYP": "How the world works: simple machines and forces"
+      },
+      "guide_title": "Moments and pressure: a quick guide",
+      "guide": [
+        {
+          "h": "What is a moment?",
+          "p": "A moment is the turning effect of a force. It depends on how big the force is and how far it acts from the pivot (the point something turns around). Moment = force × distance from the pivot. A 20 N weight hanging 3 m from the pivot has a moment of 20 × 3 = 60 newton metres (N m)."
+        },
+        {
+          "h": "Clockwise and anticlockwise",
+          "p": "On a seesaw, a weight on the left side turns it anticlockwise and a weight on the right side turns it clockwise. When there are several weights on one side, add their moments together. The seesaw balances when the total clockwise moment equals the total anticlockwise moment. This is called the principle of moments."
+        },
+        {
+          "h": "Small force, long distance",
+          "p": "Because moment = force × distance, a small force far from the pivot can balance a big force close to it. A 10 N weight 4 m out balances a 40 N weight 1 m out. That is how levers help us: a long spanner or a door handle far from the hinges lets a small push make a big turning effect. In this game, the seesaw's own weight is left out because it is balanced on its middle."
+        },
+        {
+          "h": "Pressure = force ÷ area",
+          "p": "Pressure tells you how concentrated a force is. Pressure = force ÷ area, measured in N/m² (also called pascals) or N/cm². The same force on a big area gives a small pressure, which is why snowshoes stop you sinking into snow. The same force on a tiny area gives a huge pressure, which is why a drawing pin's sharp point goes into a board."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do you calculate a moment?",
+          "a": "Multiply the force by its distance from the pivot: moment = force × distance. With the force in newtons and the distance in metres, the moment is in newton metres (N m)."
+        },
+        {
+          "q": "When does a seesaw balance?",
+          "a": "When the total clockwise moment equals the total anticlockwise moment. A lighter person can balance a heavier one by sitting further from the pivot."
+        },
+        {
+          "q": "Why do snowshoes stop you sinking?",
+          "a": "They spread your weight over a much bigger area. Your weight (the force) stays the same, so pressure = force ÷ area gets smaller, and the snow is not pushed in as much."
+        }
+      ]
+    }
+  ]
+}

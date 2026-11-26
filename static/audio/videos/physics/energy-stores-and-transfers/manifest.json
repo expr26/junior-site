@@ -1,0 +1,130 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "4b5e09c8d192",
+   "s": 8.41,
+   "text": "Part one. Energy stores. ... Energy makes things happen. We measure energy in joules. The short way to write joules is J."
+  },
+  "1-2": {
+   "h": "da1aabeafb7c",
+   "s": 6.08,
+   "text": "Energy is kept in stores. Food, fuels and batteries have energy in a chemical store."
+  },
+  "1-3": {
+   "h": "b8e420e6a44e",
+   "s": 6.72,
+   "text": "Anything that is moving has energy in its kinetic store. The faster it goes, the more energy."
+  },
+  "1-4": {
+   "h": "9c4bc3221dc7",
+   "s": 6.89,
+   "text": "Anything lifted up high has energy in its gravitational store. The higher it is, the more energy."
+  },
+  "1-5": {
+   "h": "1c94370b8e35",
+   "s": 6.08,
+   "text": "Stretched or squashed things, like a rubber band or a spring, have energy in an elastic store."
+  },
+  "1-6": {
+   "h": "71c0dcc55eee",
+   "s": 8.28,
+   "text": "Hot things have more energy in their thermal store than cold things. There are a few more stores too, like magnetic and nuclear."
+  },
+  "2-1": {
+   "h": "1989c4a9801c",
+   "s": 7.19,
+   "text": "Part two. Energy transfers. ... Energy can move from one store to another. This is called an energy transfer."
+  },
+  "2-2": {
+   "h": "0d8dfc9afa16",
+   "s": 8.9,
+   "text": "A ball falls off a shelf. It gets lower, so its gravitational store empties. It gets faster, so its kinetic store fills up."
+  },
+  "2-3": {
+   "h": "1617806beca3",
+   "s": 8.45,
+   "text": "Energy is transferred in four main ways: by a force (mechanically), electrically, by heating, and by light and sound."
+  },
+  "2-4": {
+   "h": "5381704c880c",
+   "s": 9.73,
+   "text": "A torch: the battery's chemical store is transferred electrically to the bulb. The bulb gives out light, and it also heats the surroundings a little."
+  },
+  "3-1": {
+   "h": "f165203dc7d3",
+   "s": 9.6,
+   "text": "Part three. Energy is never used up. ... Here is a very important rule: energy cannot be created or destroyed. It can only be transferred."
+  },
+  "3-2": {
+   "h": "ceb842d2df42",
+   "s": 9.62,
+   "text": "An old filament light bulb is given 100 joules of energy electrically. 20 joules comes out as light. 80 joules heats the room."
+  },
+  "3-3": {
+   "h": "9d090d3027b2",
+   "s": 8.09,
+   "text": "20 joules plus 80 joules equals 100 joules. All the energy is still there. None of it has vanished."
+  },
+  "3-4": {
+   "h": "4cebbd03ff16",
+   "s": 10.99,
+   "text": "The light is the useful energy. The heating is wasted energy. Wasted energy spreads out and warms the surroundings a tiny bit. We say it is dissipated."
+  },
+  "3-5": {
+   "h": "0e2a1f211a34",
+   "s": 7.34,
+   "text": "We can waste less energy. Oil on a bike chain cuts friction, so less energy is wasted heating the chain."
+  },
+  "4-1": {
+   "h": "61a71c2af269",
+   "s": 11.29,
+   "text": "Part four. Efficiency. ... Efficiency tells you how much of the energy put in is useful. Efficiency equals useful energy out, divided by total energy in."
+  },
+  "4-2": {
+   "h": "9e7320a2561c",
+   "s": 11.78,
+   "text": "For the filament bulb: 20 joules divided by 100 joules is 0.2. As a percentage that is 20 percent. Only 20 percent of the energy is useful."
+  },
+  "4-3": {
+   "h": "0337e3026d8c",
+   "s": 11.93,
+   "text": "An electric motor is given 100 joules and 80 joules goes into its kinetic store. Its efficiency is 80 divided by 100, which is 80 percent."
+  },
+  "4-4": {
+   "h": "e9e12008a94c",
+   "s": 6.91,
+   "text": "LED bulbs waste much less energy heating the room than filament bulbs, so they are much more efficient."
+  },
+  "4-5": {
+   "h": "331bc3f5b9e7",
+   "s": 7.27,
+   "text": "No device can be more than 100 percent efficient. You can never get out more energy than you put in."
+  },
+  "5-1": {
+   "h": "dc412b3adcb2",
+   "s": 9.19,
+   "text": "Part five. Energy resources. ... We need energy resources to make electricity, heat our homes and move cars, buses and planes."
+  },
+  "5-2": {
+   "h": "0f4f8ac1de55",
+   "s": 10.47,
+   "text": "Coal, oil and natural gas are fossil fuels. They formed from plants and animals over millions of years. They are non-renewable: one day they will run out."
+  },
+  "5-3": {
+   "h": "a065094e9332",
+   "s": 7.81,
+   "text": "Burning fossil fuels gives out carbon dioxide. This gas traps heat in the air, which adds to global warming."
+  },
+  "5-4": {
+   "h": "f2ac406f4194",
+   "s": 10.77,
+   "text": "Renewable resources will not run out: wind, solar (sunlight), hydroelectric (falling water), tides, waves and geothermal (heat from hot rocks underground)."
+  },
+  "5-5": {
+   "h": "0b59c9e75243",
+   "s": 8.13,
+   "text": "But wind and solar depend on the weather. No wind, no spin. At night, no sunlight. Geothermal works in any weather."
+  }
+ }
+}

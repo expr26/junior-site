@@ -1,0 +1,120 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "22e6fe5e4a0d",
+   "s": 10.65,
+   "text": "Part one. Making sounds. ... All sounds are made by vibrations. A vibration is something moving backwards and forwards very quickly, like a plucked guitar string."
+  },
+  "1-2": {
+   "h": "3123d67b0e00",
+   "s": 7.19,
+   "text": "Hum and touch your throat: you can feel your vocal cords vibrating. A drum skin vibrates when you hit it."
+  },
+  "1-3": {
+   "h": "dac6dc450e3c",
+   "s": 7.77,
+   "text": "The vibrating object pushes on the air particles next to it. They bump into their neighbours and pass the vibration on."
+  },
+  "1-4": {
+   "h": "ee0a09dea5c0",
+   "s": 9.49,
+   "text": "This travelling vibration is a sound wave. Each particle only jiggles backwards and forwards. It is the energy that travels, not the air."
+  },
+  "1-5": {
+   "h": "cc6ab3eec2ab",
+   "s": 8.0,
+   "text": "The particles vibrate along the same direction that the sound travels. This is called a longitudinal wave."
+  },
+  "2-1": {
+   "h": "dcbe580b36f7",
+   "s": 12.71,
+   "text": "Part two. What can sound travel through? ... Sound needs particles to pass the vibration along. It can travel through solids, liquids and gases. The material it travels through is called the medium."
+  },
+  "2-2": {
+   "h": "d98d585c3f1b",
+   "s": 11.82,
+   "text": "A vacuum is completely empty space: no particles at all. So sound cannot travel through it. Pump the air out of a jar with a ringing bell inside, and the sound fades away."
+  },
+  "2-3": {
+   "h": "02fe3db68670",
+   "s": 9.81,
+   "text": "Space is almost a vacuum, so it is silent. Astronauts talk to each other by radio, because radio waves can travel through empty space."
+  },
+  "2-4": {
+   "h": "3d20ef9764b9",
+   "s": 18.41,
+   "text": "Sound is usually fastest in solids, where the particles are close together and strongly joined. It travels at about 340 metres per second in air, about 1500 metres per second in water and about 5000 metres per second in steel."
+  },
+  "3-1": {
+   "h": "ce19311a766b",
+   "s": 9.05,
+   "text": "Part three. Loudness and pitch. ... A microphone and a screen can show a sound as a wavy line. This lets us see what the sound is like."
+  },
+  "3-2": {
+   "h": "d40ca3f991a5",
+   "s": 7.17,
+   "text": "The height of the wave is the amplitude. Bigger vibrations give a bigger amplitude and a louder sound."
+  },
+  "3-3": {
+   "h": "600fdd81f4dc",
+   "s": 9.98,
+   "text": "The number of vibrations each second is the frequency. It is measured in hertz. 100 hertz means 100 vibrations every second."
+  },
+  "3-4": {
+   "h": "4f0569c2a3ae",
+   "s": 10.67,
+   "text": "More waves squeezed onto the screen means a higher frequency, and that sounds like a higher pitch. A big drum has a low pitch. A whistle has a high pitch."
+  },
+  "4-1": {
+   "h": "61d5ca108f1b",
+   "s": 8.51,
+   "text": "Part four. How we hear. ... Your outer ear collects sound and funnels it down the ear canal. The sound makes your eardrum vibrate."
+  },
+  "4-2": {
+   "h": "8791d774a8be",
+   "s": 9.98,
+   "text": "Three tiny bones pass the vibrations on to the cochlea. The cochlea turns them into electrical signals, which travel along a nerve to your brain."
+  },
+  "4-3": {
+   "h": "d5890defad03",
+   "s": 10.94,
+   "text": "Young people can hear sounds from about 20 hertz to 20,000 hertz. This is the hearing range. The top of the range gets lower as people get older."
+  },
+  "4-4": {
+   "h": "3720f00e01ee",
+   "s": 13.23,
+   "text": "Sounds above 20,000 hertz are ultrasound: too high for us to hear, but dogs and bats can. Sounds below 20 hertz are infrasound. Elephants use infrasound to call to each other."
+  },
+  "4-5": {
+   "h": "05a94f17e25f",
+   "s": 8.98,
+   "text": "Very loud sounds can damage the cochlea for ever. People who work with loud machines wear ear defenders to protect their hearing."
+  },
+  "5-1": {
+   "h": "ce01b01dfb0b",
+   "s": 17.11,
+   "text": "Part five. Speed of sound and echoes. ... Sound travels at about 340 metres per second in air. Light is much, much faster: about 300 million metres per second. So in a storm you see the lightning first and hear the thunder later."
+  },
+  "5-2": {
+   "h": "f8c485b49640",
+   "s": 14.17,
+   "text": "Distance equals speed times time. You hear the thunder 3 seconds after the flash. The storm is about 340 times 3, which is 1020 metres away: about 1 kilometre."
+  },
+  "5-3": {
+   "h": "2697e933c0ee",
+   "s": 7.08,
+   "text": "Sound bounces off hard surfaces, like a cliff or a wall. A reflected sound is called an echo."
+  },
+  "5-4": {
+   "h": "9e90d3b61fac",
+   "s": 18.75,
+   "text": "You shout at a cliff and hear the echo 4 seconds later. The sound went there and back: 340 times 4 is 1360 metres. So the cliff is 1360 divided by 2, which is 680 metres away."
+  },
+  "5-5": {
+   "h": "6787b802f087",
+   "s": 10.54,
+   "text": "Soft things like curtains and carpets absorb sound, so they cut down echoes. Bats send out ultrasound and listen for the echoes to find their food."
+  }
+ }
+}

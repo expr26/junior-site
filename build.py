@@ -105,6 +105,7 @@ def render(meta, body, url):
         "year": str(date.today().year),
         "beacon": beacon(),
         "contact_email": html.escape(config.CONTACT_EMAIL),
+        "mascot": partial("mascot.svg"),
     }
     page = fill(partial("layout.html"), {
         "head": fill(partial("head.html"), values),
@@ -141,8 +142,14 @@ def main():
         meta, body = read_page(src)
         jobs.append((url_for(src), meta, body, src.relative_to(HERE)))
     import topics   # topic hubs and unit pages from topics/*.json
+    import games    # the /games/ page and one page per live game, from games/games.json
+    import qbank    # the KS3 question bank, from qbank/
+    import videos   # theory videos, from videos/
     try:
         jobs += topics.pages()
+        jobs += games.pages()
+        jobs += qbank.pages()
+        jobs += videos.pages()
         (DIST / "static" / "topics.json").write_text(json.dumps(topics.index()), encoding="utf-8")
     except topics.ContentError as e:
         fail(str(e))

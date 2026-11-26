@@ -1,0 +1,90 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "e9686a6b1377",
+   "s": 11.11,
+   "text": "Part one. Reading coordinates. ... A coordinate grid has two number lines. The x axis goes across. The y axis goes up. They meet at the origin, nought, nought."
+  },
+  "1-2": {
+   "h": "4d15f8f9736b",
+   "s": 8.11,
+   "text": "To find the point 2, 3, start at the origin. Go along 2 first, then up 3. Along the corridor, then up the stairs!"
+  },
+  "1-3": {
+   "h": "ac29c5095182",
+   "s": 5.35,
+   "text": "The order matters. 3, 2 means 3 along and 2 up. That is a different point!"
+  },
+  "2-1": {
+   "h": "04babc8d82e2",
+   "s": 10.05,
+   "text": "Part two. Four quadrants. ... The axes keep going past zero. To the left of the origin, x is negative. Below the origin, y is negative."
+  },
+  "2-2": {
+   "h": "494567ad5b43",
+   "s": 4.48,
+   "text": "P is 3 to the left and 2 up, so P is at negative 3, 2."
+  },
+  "2-3": {
+   "h": "c35813afbdae",
+   "s": 6.91,
+   "text": "Q is 2 to the right and 3 down, so Q is at 2, negative 3. Still x first, then y."
+  },
+  "3-1": {
+   "h": "d12979d68555",
+   "s": 9.22,
+   "text": "Part three. Midpoints and shapes. ... The midpoint is exactly halfway between two points. Here are A, at 2, 4, and B, at 8, 10."
+  },
+  "3-2": {
+   "h": "df0b6e5c22a0",
+   "s": 10.71,
+   "text": "Find halfway for x, then halfway for y. Halfway between 2 and 8 is 5. Halfway between 4 and 10 is 7. So the midpoint is 5, 7."
+  },
+  "3-3": {
+   "h": "ba51bfcae73f",
+   "s": 8.38,
+   "text": "A quick way: add and halve. 2 plus 8, divided by 2, is 5. And 4 plus 10, divided by 2, is 7."
+  },
+  "3-4": {
+   "h": "e6fb1b03842a",
+   "s": 8.53,
+   "text": "Grids help with shapes too. A square has corners at 1, 1, at 4, 1, and at 4, 4. The missing corner is 1, 4."
+  },
+  "4-1": {
+   "h": "f74b70299f9f",
+   "s": 11.46,
+   "text": "Part four. Straight-line graphs. ... A rule like y equals x plus 1 makes a straight line. Make a table: when x is 0, 1, 2, 3, y is 1, 2, 3, 4."
+  },
+  "4-2": {
+   "h": "8ed884e5d43d",
+   "s": 7.64,
+   "text": "Plot the points nought, 1. Then 1, 2. Then 2, 3. And 3, 4. They line up, so join them with a ruler."
+  },
+  "4-3": {
+   "h": "c236bde80913",
+   "s": 14.29,
+   "text": "y equals 2 x plus 1 is steeper: y goes up 2 for every 1 across. In y equals m x plus c, m is the gradient, which means how steep, and c is where the line crosses the y axis."
+  },
+  "4-4": {
+   "h": "01ef24f5a233",
+   "s": 10.88,
+   "text": "Some lines are special. y equals 4 is flat, or horizontal: every point on it has y equal to 4. x equals 2 goes straight up, or vertical."
+  },
+  "5-1": {
+   "h": "e0f47549bc87",
+   "s": 9.43,
+   "text": "Part five. Real-life graphs. ... Graphs show real life too. A tank holds 60 litres of water. It drains at 5 litres every minute."
+  },
+  "5-2": {
+   "h": "e59b1c3141a6",
+   "s": 11.24,
+   "text": "After 8 minutes, 5 times 8 is 40 litres drained, so 60 minus 40 is 20 litres left. You can read it from the graph: up from 8, then across."
+  },
+  "5-3": {
+   "h": "f81273279a2f",
+   "s": 7.85,
+   "text": "The tank is empty when the line reaches the time axis: after 60 divided by 5, which is 12 minutes."
+  }
+ }
+}

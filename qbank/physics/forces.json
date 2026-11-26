@@ -1,0 +1,267 @@
+{
+  "slug": "forces",
+  "title": "Forces",
+  "ks3": "Motion and forces: forces, balanced forces, weight and springs",
+  "art": "forces",
+  "intro": "Pushes, pulls, friction and gravity. Practise force arrows, balanced and unbalanced forces, mass and weight, and stretching springs.",
+  "description": "Free KS3 Physics forces questions with answers: contact and non-contact forces, resultant force, balanced forces, mass and weight, and springs, with instant marking and worked answers for Year 7, 8 and 9.",
+  "subtopics": [
+    {"slug": "types", "title": "Types of force"},
+    {"slug": "resultant", "title": "Force arrows and resultant force"},
+    {"slug": "balanced", "title": "Balanced and unbalanced forces"},
+    {"slug": "weight", "title": "Mass and weight"},
+    {"slug": "springs", "title": "Stretching springs"}
+  ],
+  "questions": [
+    {
+      "id": "frc-01", "sub": "types", "level": 1, "type": "mc",
+      "q": "Which of these is a **non-contact** force?",
+      "options": ["Gravity", "Friction", "Air resistance", "A push"],
+      "answer": 0,
+      "hint": "Which force can act on you even when nothing is touching you?",
+      "explain": "Gravity acts without touching: the Earth pulls on you even in the middle of a jump. Friction, air resistance and pushes only act when things touch."
+    },
+    {
+      "id": "frc-02", "sub": "types", "level": 1, "type": "mc",
+      "q": "When you squeeze a bike's brakes, the brake pads rub on the wheel and slow it down. Which force slows the wheel?",
+      "options": ["Friction", "Gravity", "Magnetism", "Upthrust"],
+      "answer": 0,
+      "hint": "Which force happens when two surfaces rub against each other?",
+      "explain": "Friction acts when surfaces rub against each other. It always acts against the movement, so it slows the wheel down."
+    },
+    {
+      "id": "frc-03", "sub": "types", "level": 2, "type": "mc",
+      "q": "A swimmer moves through a pool. Which force acts against their movement?",
+      "options": ["Water resistance (drag)", "Upthrust", "Gravity", "Magnetic force"],
+      "answer": 0,
+      "hint": "It is like air resistance, but in water.",
+      "explain": "Water resistance, also called drag, acts against anything moving through water. Upthrust is a different force: it pushes up and helps things float."
+    },
+    {
+      "id": "frc-04", "sub": "types", "level": 2, "type": "mc",
+      "q": "Which pair are **both** non-contact forces?",
+      "options": ["Magnetic force and gravity", "Friction and gravity", "Upthrust and magnetic force", "Air resistance and friction"],
+      "answer": 0,
+      "hint": "A non-contact force can act across a gap. Friction, air resistance and upthrust all need something touching the object.",
+      "explain": "A magnet can pull a paper clip across a gap, and gravity pulls across space, so both are non-contact forces. Friction, air resistance and upthrust are contact forces: the surface, air or water has to touch the object."
+    },
+    {
+      "id": "frc-21", "sub": "types", "level": 1, "type": "mc",
+      "q": "A rubber duck floats in the bath. Which force pushes it **up**?",
+      "options": ["Upthrust", "Friction", "Air resistance", "Magnetism"],
+      "answer": 0,
+      "hint": "Water pushes up on things that are in it.",
+      "explain": "Upthrust is the upward push of a liquid (or gas) on an object in it. It balances the duck's weight, so the duck floats."
+    },
+    {
+      "id": "frc-22", "sub": "types", "level": 2, "type": "mc",
+      "q": "You lean on a wall and push it with a force of 50 N. What force does the wall put on your hands?",
+      "options": ["50 N, pushing back on you", "0 N, because walls can't push", "More than 50 N, pushing back on you", "Less than 50 N, pushing back on you"],
+      "answer": 0,
+      "hint": "Forces come in pairs when two objects push on each other.",
+      "explain": "When two objects interact, they push on each other with forces of the same size in opposite directions. You push the wall with 50 N, so the wall pushes back on you with 50 N."
+    },
+    {
+      "id": "frc-05", "sub": "resultant", "level": 1, "type": "num",
+      "q": "Two forces act on the box. What is the resultant force (the overall force)?",
+      "fig": {"type": "forces", "obj": "box", "ground": true, "arrows": [{"dir": "right", "size": 6, "label": "6 N"}, {"dir": "left", "size": 2, "label": "2 N"}]},
+      "answer": "4", "unit": "N",
+      "hint": "The forces point in opposite directions, so take the smaller one away from the bigger one.",
+      "explain": "The forces are in opposite directions: 6 N − 2 N = 4 N. The resultant force is 4 N to the right, the direction of the bigger force."
+    },
+    {
+      "id": "frc-06", "sub": "resultant", "level": 1, "type": "num",
+      "q": "Two children push a heavy box to the right. One pushes with 30 N and the other with 25 N. What is the resultant force?",
+      "answer": "55", "unit": "N",
+      "hint": "Both forces point the same way, so they add up.",
+      "explain": "Forces in the same direction add: 30 N + 25 N = 55 N to the right."
+    },
+    {
+      "id": "frc-07", "sub": "resultant", "level": 2, "type": "mc",
+      "q": "The driving force on a car is 800 N. Air resistance and friction add up to 500 N. What is the resultant force?",
+      "fig": {"type": "forces", "obj": "car", "ground": true, "arrows": [{"dir": "right", "size": 8, "label": "800 N"}, {"dir": "left", "size": 5, "label": "500 N"}]},
+      "options": ["300 N forwards", "1300 N forwards", "300 N backwards", "0 N"],
+      "answer": 0,
+      "hint": "The forces act in opposite directions. Which one is bigger?",
+      "explain": "800 N − 500 N = 300 N. The driving force is bigger, so the resultant is 300 N forwards and the car speeds up."
+    },
+    {
+      "id": "frc-08", "sub": "resultant", "level": 3, "type": "num",
+      "q": "In a tug of war, team A pulls to the left with 450 N and team B pulls to the right with 520 N. What is the size of the resultant force on the rope?",
+      "answer": "70", "unit": "N",
+      "hint": "Opposite directions: find the difference.",
+      "explain": "520 N − 450 N = 70 N. The resultant force is 70 N to the right, so team B starts to win."
+    },
+    {
+      "id": "frc-23", "sub": "resultant", "level": 1, "type": "mc",
+      "q": "On a force diagram, each force is drawn as an arrow. What does the **length** of the arrow show?",
+      "options": ["The size of the force", "The mass of the object", "How fast the object is moving", "How long the force lasts"],
+      "answer": 0,
+      "hint": "An arrow shows two things: which way it points, and how long it is.",
+      "explain": "The way the arrow points shows the direction of the force. The longer the arrow, the bigger the force."
+    },
+    {
+      "id": "frc-24", "sub": "resultant", "level": 2, "type": "num",
+      "q": "A friend pushes you forwards on your skateboard with a force of 60 N. Friction is 15 N and air resistance is 5 N, both acting backwards. What is the resultant force?",
+      "answer": "40", "unit": "N",
+      "hint": "First add up the two forces that act backwards.",
+      "explain": "Backwards: 15 N + 5 N = 20 N. Resultant = 60 N − 20 N = 40 N forwards, so you speed up."
+    },
+    {
+      "id": "frc-25", "sub": "resultant", "level": 3, "type": "num",
+      "q": "A child pulls a sledge forwards with a force of 75 N. The resultant force on the sledge is 30 N forwards. How big is the friction acting backwards?",
+      "answer": "45", "unit": "N",
+      "hint": "Pull − friction = resultant. What must you take away from 75 to get 30?",
+      "explain": "75 N − friction = 30 N, so friction = 75 N − 30 N = 45 N."
+    },
+    {
+      "id": "frc-09", "sub": "balanced", "level": 1, "type": "mc",
+      "q": "A box sits still on the floor. Its weight pulls it down with 20 N and the floor pushes it up with 20 N. The forces on the box are…",
+      "fig": {"type": "forces", "obj": "box", "ground": true, "arrows": [{"dir": "up", "size": 5, "label": "20 N"}, {"dir": "down", "size": 5, "label": "20 N"}]},
+      "options": ["Balanced", "Unbalanced"],
+      "answer": 0,
+      "hint": "Are the two forces the same size?",
+      "explain": "The two forces are the same size and act in opposite directions, so they are balanced. The resultant force is 0 N, and the box stays still."
+    },
+    {
+      "id": "frc-10", "sub": "balanced", "level": 2, "type": "num",
+      "q": "A car drives along a straight road at a steady speed. The driving force is 2000 N. What is the total of the forces holding it back (friction and air resistance)?",
+      "answer": "2000", "unit": "N",
+      "hint": "Steady speed in a straight line means the forces are balanced.",
+      "explain": "If the speed and direction are not changing, the forces are balanced. So the forces holding the car back must also be 2000 N."
+    },
+    {
+      "id": "frc-11", "sub": "balanced", "level": 2, "type": "mc",
+      "q": "A skydiver opens their parachute. Air resistance becomes bigger than their weight. What happens next?",
+      "options": ["They slow down", "They speed up", "They stop in mid-air", "They start moving upwards"],
+      "answer": 0,
+      "hint": "The bigger force points up, but they are still falling. A force against the movement…",
+      "explain": "The resultant force now points up, against the way they are moving, so they slow down. They keep falling, just more slowly, until the forces are balanced again."
+    },
+    {
+      "id": "frc-12", "sub": "balanced", "level": 3, "type": "mc",
+      "q": "A ball rolls to the right across a carpet. The only sideways force on it is friction, pointing to the left. What happens to the ball?",
+      "fig": {"type": "forces", "obj": "ball", "ground": true, "arrows": [{"dir": "left", "size": 3, "label": "friction"}]},
+      "options": ["It slows down", "It speeds up", "It keeps a steady speed", "It turns round and rolls to the left"],
+      "answer": 0,
+      "hint": "The force acts against the way the ball is moving.",
+      "explain": "Friction acts against the movement, so the ball slows down and stops. Friction can't make it roll backwards: once it stops, the friction stops too."
+    },
+    {
+      "id": "frc-26", "sub": "balanced", "level": 1, "type": "mc",
+      "q": "In a tug of war the rope does not move at all. Team A pulls to the left with 300 N. How hard is team B pulling to the right?",
+      "options": ["300 N", "0 N", "150 N", "600 N"],
+      "answer": 0,
+      "hint": "The rope stays still, so the forces must be balanced.",
+      "explain": "The rope is not moving, so the forces are balanced: equal in size and opposite in direction. Team B pulls with 300 N to the right, and the resultant force is 0 N."
+    },
+    {
+      "id": "frc-27", "sub": "balanced", "level": 2, "type": "mc",
+      "q": "A football sits still on a table. Which two forces on it are balanced?",
+      "options": ["Its weight and the upward push of the table", "Its weight and friction", "Air resistance and upthrust", "Gravity and magnetism"],
+      "answer": 0,
+      "hint": "One force pulls the ball down. What stops it falling through the table?",
+      "explain": "Gravity pulls the ball down (its weight). The table pushes up on it with a force of the same size, called the normal contact force. The two are balanced, so the ball stays still."
+    },
+    {
+      "id": "frc-28", "sub": "balanced", "level": 3, "type": "mc",
+      "q": "A cyclist rides round a corner at a steady speed. Are the forces on the bike balanced?",
+      "options": ["No, because the direction is changing", "Yes, because the speed is not changing", "Yes, because the bike is still moving", "No, because the bike is slowing down"],
+      "answer": 0,
+      "hint": "Balanced forces keep the speed **and** the direction the same.",
+      "explain": "A resultant (unbalanced) force is needed to change speed **or** direction. Going round the corner, the direction changes, so the forces are not balanced. The extra force is friction from the road pushing the tyres sideways, towards the inside of the bend."
+    },
+    {
+      "id": "frc-13", "sub": "weight", "level": 1, "type": "mc",
+      "q": "Mass is measured in kilograms (kg). What is weight measured in?",
+      "options": ["Newtons (N)", "Kilograms (kg)", "Metres (m)", "Litres (l)"],
+      "answer": 0,
+      "hint": "Weight is a force.",
+      "explain": "Weight is the force of gravity on an object, and all forces are measured in newtons (N)."
+    },
+    {
+      "id": "frc-14", "sub": "weight", "level": 2, "type": "num",
+      "q": "On Earth, gravity pulls with 10 N on every kilogram (g = 10 N/kg). What is the weight of a 5 kg bag of potatoes?",
+      "answer": "50", "unit": "N",
+      "hint": "Weight = mass × g.",
+      "explain": "Weight = mass × g = 5 kg × 10 N/kg = 50 N."
+    },
+    {
+      "id": "frc-15", "sub": "weight", "level": 3, "type": "num",
+      "q": "On the Moon, g is about 1.6 N/kg. An astronaut has a mass of 80 kg. What is their weight on the Moon?",
+      "answer": "128", "unit": "N",
+      "hint": "Weight = mass × g. Use the Moon's g, not the Earth's.",
+      "explain": "Weight = 80 kg × 1.6 N/kg = 128 N. On Earth the same astronaut weighs 80 × 10 = 800 N, so on the Moon they weigh much less."
+    },
+    {
+      "id": "frc-16", "sub": "weight", "level": 3, "type": "mc",
+      "q": "An astronaut travels from the Earth to the Moon. What happens to their mass and their weight?",
+      "options": ["Mass stays the same, weight gets smaller", "Mass gets smaller, weight stays the same", "Both get smaller", "Both stay the same"],
+      "answer": 0,
+      "hint": "Mass is how much stuff you are made of. Weight is how hard gravity pulls on you.",
+      "explain": "Their mass (the amount of stuff in their body) does not change. The Moon's gravity is weaker than the Earth's, so their weight gets smaller."
+    },
+    {
+      "id": "frc-29", "sub": "weight", "level": 1, "type": "mc",
+      "q": "Which of these do you use to measure a weight in newtons?",
+      "options": ["A force meter (newtonmeter)", "A ruler", "A thermometer", "A measuring cylinder"],
+      "answer": 0,
+      "hint": "Weight is a force. Which tool has a spring inside and a scale in N?",
+      "explain": "A force meter (newtonmeter) has a spring inside. The bigger the force, the more the spring stretches, and the scale shows the force in newtons."
+    },
+    {
+      "id": "frc-30", "sub": "weight", "level": 2, "type": "num",
+      "q": "A bike weighs 120 N on Earth (g = 10 N/kg). What is its mass?",
+      "answer": "12", "unit": "kg",
+      "hint": "Weight = mass × g, so mass = weight ÷ g.",
+      "explain": "Mass = weight ÷ g = 120 N ÷ 10 N/kg = 12 kg."
+    },
+    {
+      "id": "frc-17", "sub": "springs", "level": 1, "type": "mc",
+      "q": "You hang a weight on a spring and it stretches. What happens if you hang a heavier weight on it instead?",
+      "fig": {"type": "spring", "load": "2 N", "stretch": 2},
+      "options": ["It stretches more", "It stretches less", "It stretches the same amount", "It gets shorter"],
+      "answer": 0,
+      "hint": "A bigger pull on the spring…",
+      "explain": "A heavier weight pulls harder on the spring, so the spring stretches more. A force meter works this way."
+    },
+    {
+      "id": "frc-18", "sub": "springs", "level": 2, "type": "mc",
+      "q": "What is the **extension** of a spring?",
+      "options": ["How much longer it gets when it is stretched", "Its total length when it is stretched", "The weight hanging on it", "How long it is before it is stretched"],
+      "answer": 0,
+      "hint": "Extension is the extra length.",
+      "explain": "Extension = stretched length − original length. It is only the extra length, not the whole length."
+    },
+    {
+      "id": "frc-19", "sub": "springs", "level": 2, "type": "num",
+      "q": "A spring stretches by 3 cm for every 1 N hanging on it. How far does it stretch with 4 N on it? (It has not been stretched too far.)",
+      "answer": "12", "unit": "cm",
+      "hint": "4 N is four times as much as 1 N.",
+      "explain": "The extension goes up in step with the force: 4 × 3 cm = 12 cm. This is Hooke's law."
+    },
+    {
+      "id": "frc-20", "sub": "springs", "level": 3, "type": "num",
+      "q": "A spring is 10 cm long. With a 2 N weight on it, it is 14 cm long. How long will it be with a 3 N weight on it? (It has not been stretched too far.)",
+      "answer": "16", "unit": "cm",
+      "hint": "First work out the extension for 2 N, then the extension for 1 N.",
+      "explain": "With 2 N the extension is 14 − 10 = 4 cm, so it stretches 2 cm for each newton. With 3 N the extension is 3 × 2 = 6 cm, so its length is 10 + 6 = 16 cm."
+    },
+    {
+      "id": "frc-31", "sub": "springs", "level": 2, "type": "num",
+      "q": "A spring is 8 cm long. With a 3 N weight hanging on it, it is 13 cm long. What is its extension?",
+      "fig": {"type": "spring", "load": "3 N", "stretch": 3},
+      "answer": "5", "unit": "cm",
+      "hint": "Extension is only the extra length.",
+      "explain": "Extension = stretched length − original length = 13 cm − 8 cm = 5 cm."
+    },
+    {
+      "id": "frc-32", "sub": "springs", "level": 3, "type": "mc",
+      "q": "A student hangs more and more weights on a spring until it goes past its **elastic limit**. What happens when the weights are taken off?",
+      "options": ["It does not go back to its original length", "It goes back to its original length", "It becomes shorter than it was at the start", "It keeps on stretching by itself"],
+      "answer": 0,
+      "hint": "Think about a spring from a toy that has been pulled too hard.",
+      "explain": "Up to the elastic limit, a spring goes back to its original length when the force is removed, and its extension goes up in step with the force (Hooke's law). Past the elastic limit it is permanently stretched, so it stays longer than before."
+    }
+  ]
+}

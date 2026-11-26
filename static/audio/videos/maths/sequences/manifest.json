@@ -1,0 +1,100 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "228f65c7d651",
+   "s": 7.87,
+   "text": "Part one. Spotting the rule. ... A sequence is a list of numbers that follows a rule. Each number in it is called a term."
+  },
+  "1-2": {
+   "h": "f15ef8be283c",
+   "s": 7.85,
+   "text": "Look at the jumps: 4, 9, 14, 19 goes up by 5 each time. The term-to-term rule is \"add 5\"."
+  },
+  "1-3": {
+   "h": "619e22d3b591",
+   "s": 4.03,
+   "text": "So the next term is 19 plus 5, which is 24."
+  },
+  "1-4": {
+   "h": "95dde410aa31",
+   "s": 11.37,
+   "text": "Sequences can go down too. 50, 44, 38, 32 goes down by 6 each time, so the next term is 32 minus 6, which is 26."
+  },
+  "2-1": {
+   "h": "c3f7200db8c8",
+   "s": 11.2,
+   "text": "Part two. Multiplying rules. ... Some rules multiply. In 3, 6, 12, 24 each term is double the one before. The rule is \"multiply by 2\"."
+  },
+  "2-2": {
+   "h": "ac197a9243bb",
+   "s": 5.95,
+   "text": "The gaps are 3, 6 and 12. They are not all the same, so the rule is not \"add a number\"."
+  },
+  "2-3": {
+   "h": "a1f0b6422f58",
+   "s": 15.04,
+   "text": "2, 6, 18, 54 has the rule multiply by 3. The next terms are 54 times 3, which is 162, then 162 times 3, which is 486."
+  },
+  "3-1": {
+   "h": "65e0165839ef",
+   "s": 12.18,
+   "text": "Part three. Special sequences. ... Square numbers: 1, 4, 9, 16, 25. They make squares of dots: 1 times 1, 2 times 2, 3 times 3, and so on."
+  },
+  "3-2": {
+   "h": "53a867a57b72",
+   "s": 8.75,
+   "text": "Triangle numbers: 1, 3, 6, 10, 15. Each new row has one more dot, so the gaps grow: 2, 3, 4, 5."
+  },
+  "3-3": {
+   "h": "c8956234c5f1",
+   "s": 10.67,
+   "text": "The Fibonacci sequence: 1, 1, 2, 3, 5, 8. Each term is the two before it added together, so the next one is 5 plus 8, which is 13."
+  },
+  "4-1": {
+   "h": "a6bc1a0c36d2",
+   "s": 9.19,
+   "text": "Part four. Growing patterns. ... Here is a growing pattern. Pattern 1 has 3 squares, Pattern 2 has 5 and Pattern 3 has 7."
+  },
+  "4-2": {
+   "h": "ee79acf58324",
+   "s": 3.63,
+   "text": "Each new pattern adds 2 squares: one on each arm."
+  },
+  "4-3": {
+   "h": "041737e13154",
+   "s": 9.28,
+   "text": "For Pattern 10, start with 3 and add 2 nine more times: 3 plus 9 times 2, which is 3 plus 18, which is 21."
+  },
+  "4-4": {
+   "h": "8fe89f281053",
+   "s": 10.43,
+   "text": "The rule for Pattern n is 2 n plus 1: n squares on each arm, plus the corner. Pattern 10: 2 times 10, plus 1, equals 21."
+  },
+  "5-1": {
+   "h": "3413c8045820",
+   "s": 14.49,
+   "text": "Part five. The nth term. ... The nth term is a rule that gives any term from its position, n. For 3 n plus 1, the 1st term is 3 times 1, plus 1, which is 4. Then come 7 and 10."
+  },
+  "5-2": {
+   "h": "558a49bfc971",
+   "s": 7.19,
+   "text": "The 10th term is 3 times 10, plus 1, which is 31. No need to write out all ten terms!"
+  },
+  "5-3": {
+   "h": "4a75010baf96",
+   "s": 12.97,
+   "text": "Finding the rule: 5, 8, 11, 14 goes up by 3, so compare it with 3 n: 3, 6, 9, 12. Every term is 2 more, so the nth term is 3 n plus 2."
+  },
+  "5-4": {
+   "h": "aac7c8d7d877",
+   "s": 14.74,
+   "text": "10, 8, 6, 4 goes down by 2, so compare it with negative 2 n: negative 2, negative 4, negative 6, negative 8. Every term is 12 more, so the nth term is 12 minus 2 n."
+  },
+  "5-5": {
+   "h": "5302a4d9a3ea",
+   "s": 14.44,
+   "text": "Is 50 a term of 4 n plus 1? Try 4 n plus 1 equals 50. Then 4 n equals 49, and n equals 12 point 2 5. That is not a whole number, so no, 50 is not a term."
+  }
+ }
+}

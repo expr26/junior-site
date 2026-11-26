@@ -1,0 +1,64 @@
+{
+  "title": "Expressions and substitution",
+  "description": "Animated KS3 Maths lesson on algebra for ages 9 to 14: letters for numbers, writing expressions, collecting like terms, substitution, expanding brackets, factorising and using formulae.",
+  "intro": "Letters that stand for numbers: writing and simplifying expressions, substitution, brackets and formulae, explained by the owl in five short parts.",
+  "chapters": [
+    {
+      "title": "Letters for numbers",
+      "steps": [
+        {"say": "In algebra, a **letter** stands for a number we don't know yet. This bag holds **n** sweets.", "do": "bag-n"},
+        {"say": "Sam is given 3 more sweets. Now Sam has **n + 3** sweets. That is an **expression**.", "speak": "Sam is given 3 more sweets. Now Sam has n plus 3 sweets. That is an expression.", "do": "n-plus-3"},
+        {"say": "We leave out the × sign and write the number first. So 5 × x is written **5x**.", "speak": "We leave out the times sign and write the number first. So 5 times x is written 5 x.", "do": "five-x"},
+        {"say": "**n − 2** means 2 less than n. **n ÷ 4** means n shared into 4 equal parts. And x × x is written **x²**, which we say as \"x squared\".", "speak": "n minus 2 means 2 less than n. n divided by 4 means n shared into 4 equal parts. And x times x is written x squared.", "do": "more-notation"}
+      ],
+      "check": {"q": "A pencil costs p pence. Which expression gives the cost of 6 pencils, in pence?", "options": ["6p", "p + 6", "p⁶", "6 − p"], "answer": 0,
+                "hint": "6 pencils cost 6 lots of p. How do we write \"6 × p\" in algebra?", "explain": "6 lots of p is 6 × p, which we write as **6p**. (p⁶ would mean p × p × p × p × p × p.)"}
+    },
+    {
+      "title": "Simplifying",
+      "steps": [
+        {"say": "a + a + a + a is four lots of a, so we write it as **4a**.", "speak": "a plus a plus a plus a is four lots of a, so we write it as 4 a.", "do": "four-a"},
+        {"say": "**Like terms** have exactly the same letters. 3x and 5x are like terms. 3x and 5y are not.", "speak": "Like terms have exactly the same letters. 3 x and 5 x are like terms. 3 x and 5 y are not.", "do": "like-terms"},
+        {"say": "To simplify 3x + 5y − x + 2y, collect each kind. x terms: 3x − x = 2x. y terms: 5y + 2y = 7y.", "speak": "To simplify 3 x plus 5 y minus x plus 2 y, collect each kind. x terms: 3 x minus x equals 2 x. y terms: 5 y plus 2 y equals 7 y.", "do": "collect"},
+        {"say": "So the answer is **2x + 7y**. We can't add 2x and 7y together, because they are not like terms.", "speak": "So the answer is 2 x plus 7 y. We can't add 2 x and 7 y together, because they are not like terms.", "do": "collect-answer"},
+        {"say": "Multiplying is different. For 3a × 4b, multiply the numbers, 3 × 4 = 12, then write the letters together: **12ab**.", "speak": "Multiplying is different. For 3 a times 4 b, multiply the numbers, 3 times 4 equals 12, then write the letters together: 12 a b.", "do": "multiply-terms"}
+      ],
+      "check": {"q": "Simplify 4a + 2b + a − b", "options": ["5a + b", "5a + 3b", "4a + b", "6ab"], "answer": 0,
+                "hint": "Collect the a terms together, then the b terms. Remember that a on its own means 1a.", "explain": "a terms: 4a + a = 5a. b terms: 2b − b = b. So the answer is **5a + b**."}
+    },
+    {
+      "title": "Substitution",
+      "steps": [
+        {"say": "**Substitution** means putting a number in place of a letter. If a = 6, then 3a = 3 × 6 = **18**.", "speak": "Substitution means putting a number in place of a letter. If a equals 6, then 3 a equals 3 times 6, which is 18.", "do": "sub-3a"},
+        {"say": "If p = 5 and q = 2, then 4p − 3q = 4 × 5 − 3 × 2 = 20 − 6 = **14**.", "speak": "If p equals 5 and q equals 2, then 4 p minus 3 q equals 4 times 5, minus 3 times 2. That is 20 minus 6, which is 14.", "do": "sub-pq"},
+        {"say": "Powers come before multiplying and adding. If y = 3, then y² = 3 × 3 = 9, so y² + 2y = 9 + 6 = **15**.", "speak": "Powers come before multiplying and adding. If y equals 3, then y squared equals 3 times 3, which is 9. So y squared plus 2 y equals 9 plus 6, which is 15.", "do": "sub-square"},
+        {"say": "Careful with 2x². Only the x is squared. If x = 4, then 2x² = 2 × 16 = **32**, not 8 × 8.", "speak": "Careful with 2 x squared. Only the x is squared. If x equals 4, then 2 x squared equals 2 times 16, which is 32, not 8 times 8.", "do": "sub-2x2"},
+        {"say": "Letters can be negative too. If a = −2, then 3a = −6, so 5 − 3a = 5 − (−6) = 5 + 6 = **11**.", "speak": "Letters can be negative too. If a equals negative 2, then 3 a equals negative 6. So 5 minus 3 a equals 5 minus negative 6, which is 5 plus 6, which is 11.", "do": "sub-negative"}
+      ],
+      "check": {"q": "If x = 5, what is 2x + 7?", "options": ["17", "32", "14", "10"], "answer": 0,
+                "hint": "2x means 2 × x, not the number 25.", "explain": "2x = 2 × 5 = 10, then 10 + 7 = **17**."}
+    },
+    {
+      "title": "Brackets",
+      "steps": [
+        {"say": "3(x + 4) means 3 lots of (x + 4).", "speak": "3 bracket x plus 4 means 3 lots of x plus 4.", "do": "bracket-lots"},
+        {"say": "To **expand** it, multiply everything inside by 3: 3 × x = 3x and 3 × 4 = 12. So 3(x + 4) = **3x + 12**.", "speak": "To expand it, multiply everything inside by 3: 3 times x is 3 x, and 3 times 4 is 12. So 3 bracket x plus 4 equals 3 x plus 12.", "do": "expand"},
+        {"say": "Here is a picture: a rectangle 3 tall and x + 4 wide. Its two parts have areas 3x and 12.", "speak": "Here is a picture: a rectangle 3 tall and x plus 4 wide. Its two parts have areas 3 x and 12.", "do": "expand-area"},
+        {"say": "Expand and simplify 2(a + 3) + 4(a − 1). That is 2a + 6 + 4a − 4 = **6a + 2**.", "speak": "Expand and simplify 2 bracket a plus 3, plus 4 bracket a minus 1. That is 2 a plus 6 plus 4 a minus 4, which equals 6 a plus 2.", "do": "expand-two"},
+        {"say": "**Factorising** is the reverse. 3 goes into both 6x and 9, so 6x + 9 = **3(2x + 3)**.", "speak": "Factorising is the reverse. 3 goes into both 6 x and 9, so 6 x plus 9 equals 3 bracket 2 x plus 3.", "do": "factorise"}
+      ],
+      "check": {"q": "Expand 5(y − 2)", "options": ["5y − 10", "5y − 2", "y − 10", "5y + 10"], "answer": 0,
+                "hint": "Multiply both the y and the 2 by 5. Keep the minus sign.", "explain": "5 × y = 5y and 5 × 2 = 10, so 5(y − 2) = **5y − 10**."}
+    },
+    {
+      "title": "Formulae",
+      "steps": [
+        {"say": "A **formula** is a rule that links things. A taxi costs £3, plus £2 for each mile. So the cost is C = 3 + 2m.", "speak": "A formula is a rule that links things. A taxi costs 3 pounds, plus 2 pounds for each mile. So the cost is C equals 3 plus 2 m.", "do": "taxi"},
+        {"say": "For a 7-mile journey, put m = 7: C = 3 + 2 × 7 = 3 + 14 = **17**. It costs £17.", "speak": "For a 7 mile journey, put m equals 7: C equals 3 plus 2 times 7, which is 3 plus 14, which is 17. It costs 17 pounds.", "do": "taxi-7"},
+        {"say": "The perimeter of a rectangle is P = 2(l + w). If l = 8 cm and w = 5 cm, work out the bracket first: P = 2 × 13 = **26 cm**.", "speak": "The perimeter of a rectangle is P equals 2 bracket l plus w. If l is 8 centimetres and w is 5 centimetres, work out the bracket first: P equals 2 times 13, which is 26 centimetres.", "do": "perimeter"}
+      ],
+      "check": {"q": "The taxi formula is C = 3 + 2m. How much is a 10-mile journey?", "options": ["£23", "£50", "£15", "£13"], "answer": 0,
+                "hint": "Multiply before you add: work out 2 × 10 first.", "explain": "C = 3 + 2 × 10 = 3 + 20 = 23, so it costs **£23**."}
+    }
+  ]
+}

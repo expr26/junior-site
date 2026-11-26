@@ -1,0 +1,112 @@
+/* Question bank pages (qbank.py, static/js/qbank.js). Uses the tokens and the question styles (.q-text, .opt, .q-feedback, ...) from site.css. Mobile first. */
+.qb-hero{background:radial-gradient(circle at 88% 12%,var(--fun-bg),transparent 55%)}
+.qb-hero.physics{background:radial-gradient(circle at 88% 12%,var(--sci-bg),transparent 55%)}
+.qb-hero-art{max-width:190px;width:100%;margin:0 auto}
+.qb-art{display:block;width:100%;height:auto}
+.qb-levels{list-style:none;padding:0;margin:1em 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.qb-levels li{background:var(--card);border:2px solid var(--line);border-radius:99px;padding:4px 14px;font-weight:700;font-family:var(--serif)}
+.qb-count{font-size:17px;color:var(--muted)}
+.qb-count b{color:var(--navy)}
+
+/* hub: two subject cards */
+.qb-subjects{display:grid;gap:20px}
+@media (min-width:760px){.qb-subjects{grid-template-columns:1fr 1fr}.hero-grid{grid-template-columns:1.4fr 1fr}}
+.qb-subject{display:flex;flex-direction:column;text-decoration:none;color:var(--ink);border-width:3px;border-radius:24px;transition:transform .15s,border-color .15s}
+.qb-subject:hover{transform:translateY(-4px);border-color:var(--fun);color:var(--ink)}
+.qb-subject.physics:hover{border-color:var(--sci)}
+.qb-subject.physics .go{color:var(--sci)}
+.qb-subject-art{display:block;max-width:220px;margin:0 auto 8px}
+.qb-subject .tag{align-self:flex-start}
+.qb-subject h2{margin:.3em 0 .2em}
+
+/* subject page: topic list */
+.qb-topics{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:14px}
+@media (min-width:640px){.qb-topics{grid-template-columns:1fr 1fr}}
+@media (min-width:980px){.qb-topics{grid-template-columns:1fr 1fr 1fr}}
+.qb-topic{display:flex;align-items:center;gap:14px;height:100%;padding:14px;border:2px solid var(--line);border-radius:20px;background:var(--card);
+  text-decoration:none;color:var(--ink);box-shadow:0 5px 0 var(--line);transition:transform .15s,border-color .15s}
+a.qb-topic:hover{transform:translateY(-3px);border-color:var(--fun);color:var(--ink)}
+.qb-topic.complete{border-color:var(--gold-lt);background:var(--gold-bg)}
+.qb-topic-art{flex:none;width:84px}
+.qb-topic-icon{flex:none;width:64px;height:64px;display:grid;place-items:center;font-size:34px;border-radius:50%;background:var(--bg-alt);filter:grayscale(.4)}
+.qb-topic-txt{flex:1;display:flex;flex-direction:column;gap:2px;min-width:0}
+.qb-topic-txt b{font-family:var(--serif);font-size:19px;line-height:1.2;color:var(--navy)}
+.qb-topic-txt>span{font-size:15px;color:var(--muted)}
+.qb-strand{font-size:12px!important;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.qb-topic.soon{border-style:dashed;box-shadow:none;color:var(--muted)}
+.qb-topic.soon b{color:var(--muted)}
+.qb-meter{display:block;height:10px;background:var(--line);border-radius:99px;overflow:hidden;margin:6px 0 2px}
+.qb-meter span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--sun),var(--gold));border-radius:99px;transition:width .6s}
+.qb-progress{max-width:360px}
+
+/* topic page: filters */
+.qb-filters{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0 4px;margin-bottom:12px;border-bottom:2px solid var(--line)}
+.qb-frow{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 6px;scrollbar-width:thin}
+.qb-f{flex:none;font:600 15px/1.2 var(--sans);min-height:44px;padding:8px 14px;border-radius:99px;border:2px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;white-space:nowrap}
+.qb-f:hover{border-color:var(--fun)}
+.qb-f[aria-pressed="true"]{background:var(--fun);border-color:var(--fun);color:#fff}
+.qb-c{display:inline-block;min-width:1.6em;margin-left:4px;padding:0 6px;border-radius:99px;background:var(--bg-alt);color:var(--muted);font-size:13px;text-align:center}
+.qb-f[aria-pressed="true"] .qb-c{background:rgba(255,255,255,.25);color:#fff}
+.qb-c:empty{display:none}
+.qb-shown{margin:2px 0 0}
+.qb-owl{margin-bottom:16px}
+.qb-owl .mascot{width:64px;height:64px}
+.qb-owl .bubble{font-size:17px}
+
+/* topic page: questions */
+.qb-list{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.qb-q{background:var(--card);border-radius:20px;padding:18px;border:2px solid var(--line);box-shadow:0 6px 0 var(--line);scroll-margin-top:150px}
+.qb-q.good{border-color:var(--ok)}.qb-q.fixed{border-color:#E8B10F}.qb-q.missed{border-color:var(--bad)}
+.qb-q.pop{animation:pop .35s ease}.qb-q.shake{animation:shake .4s ease}
+.qb-q-head{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px}
+.qb-n{display:inline-grid;place-items:center;min-width:36px;height:36px;padding:0 6px;border-radius:50%;background:var(--fun);color:#fff;font:700 17px var(--serif)}
+body.physics .qb-n{background:var(--sci)}
+body.physics .qb-f[aria-pressed="true"]{background:var(--sci);border-color:var(--sci)}
+.qb-chip{font-size:13px;font-weight:700;padding:3px 10px;border-radius:99px;background:var(--bg-alt);color:var(--muted)}
+.qb-chip.lv1{background:var(--ok-bg);color:var(--ok)}.qb-chip.lv2{background:var(--sci-bg);color:var(--sci)}.qb-chip.lv3{background:var(--gold-bg);color:var(--gold)}
+.qb-status{margin-left:auto;font-size:14px;font-weight:700}
+.qb-q.good .qb-status{color:var(--ok)}.qb-q.fixed .qb-status{color:var(--gold)}.qb-q.missed .qb-status{color:var(--bad)}
+.qb-q .q-text{font-size:19px}
+.qb-q .q-fig{margin:6px 0 10px}
+.qb-q .q-options .opt{font-size:17px;min-height:52px}
+.qb-static-opts{margin:0 0 8px;padding-left:1.6em}
+.qb-static-ans summary{cursor:pointer;font-weight:600;color:var(--fun)}
+.qb-live .qb-static-ans{display:none}
+.qb-again{margin-top:12px;min-height:44px;font-size:16px}
+.qb-nav{justify-content:space-between}
+@media print{.qb-filters,.qb-owl,.qb-nav{display:none}.qb-q{break-inside:avoid;box-shadow:none}}
+@media (min-width:760px){.qb-hero-art{max-width:260px}}
+
+/* quick quiz + worksheet link (topic page) */
+.qb-ws-link{margin:18px 0 0}
+
+/* printable worksheet (/question-bank/<subject>/<topic>/worksheet/) */
+.qb-ws h1{margin:.2em 0 .1em}
+.qb-ws h2{font-size:22px;margin:1.4em 0 .4em;padding-bottom:4px;border-bottom:2px solid var(--line)}
+.qb-ws-meta{color:var(--muted);margin:0 0 12px}
+.qb-ws-tools{display:flex;flex-wrap:wrap;gap:10px}
+.qb-ws-name{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:flex-end;font-weight:700;margin:18px 0 6px}
+.qb-ws-name span,.qb-ws-line span{display:inline-block;min-width:150px;flex:1;border-bottom:2px dotted var(--muted);height:1.2em}
+.qb-ws-list{padding-left:1.6em;margin:0;display:grid;gap:14px}
+.qb-ws-q{position:relative;padding:4px 30px 10px 4px;border-bottom:1px solid var(--line);break-inside:avoid}
+.qb-ws-q .q-text{font-size:18px}
+.qb-ws-lv{position:absolute;right:0;top:4px}
+.qb-ws-q .q-fig{max-width:340px;margin:6px 0}
+.qb-ws-opts{margin:6px 0 0;padding-left:1.8em;display:grid;gap:2px}
+@media (min-width:640px){.qb-ws-opts{grid-template-columns:1fr 1fr;column-gap:24px}}
+.qb-ws-line{display:flex;align-items:flex-end;gap:8px;max-width:360px;margin:12px 0 0}
+.qb-ws-answers{margin-top:40px;padding-top:8px;border-top:3px dashed var(--line);break-before:page}
+.qb-ws-answers ol{display:grid;gap:8px;padding-left:1.6em}
+@media print{
+  body.qb-ws-page header,body.qb-ws-page footer,.qb-ws .crumbs,.qb-ws-tools{display:none!important}
+  body.qb-ws-page{background:#fff}
+  .qb-ws{padding:0}
+  .qb-ws-q .q-text{font-size:14pt}
+}
+.qb-ws-head{font-size:22px;margin:1.6em 0 .5em}
+.qb-ws-all{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-wrap:wrap;gap:8px}
+.qb-ws-all a{display:inline-block;padding:8px 14px;border:2px solid var(--line);border-radius:99px;background:var(--card);font-weight:600;text-decoration:none;min-height:44px}
+.qb-ws-all a:hover{border-color:var(--fun)}
+/* × and x look alike: × in a plain font with a little space, a variable x in italic serif */
+.qbank .mt{font-family:Arial,"Helvetica Neue",sans-serif;font-weight:400;margin:0 .08em}
+.qbank .mv{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:1.08em}

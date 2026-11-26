@@ -1,0 +1,100 @@
+{
+ "voice": "bm_george",
+ "lines": {
+  "1-1": {
+   "h": "92a1663e9549",
+   "s": 8.13,
+   "text": "Part one. What is a ratio? ... A ratio compares two or more amounts. This bag has 4 red sweets and 3 green sweets."
+  },
+  "1-2": {
+   "h": "ede0a4a9a374",
+   "s": 7.87,
+   "text": "We write red to green as 4 to 3, and we say it as 4 to 3. The order matters: green to red is 3 to 4."
+  },
+  "1-3": {
+   "h": "efa1fdec9767",
+   "s": 8.3,
+   "text": "There are 4 plus 3, which is 7 sweets altogether. So four sevenths of the sweets are red and three sevenths are green."
+  },
+  "2-1": {
+   "h": "e4d69ee3a0f8",
+   "s": 12.69,
+   "text": "Part two. Equivalent ratios and simplest form. ... Multiply both parts by the same number and you get an equivalent ratio. 1 to 4 is the same as 2 to 8 and 3 to 12."
+  },
+  "2-2": {
+   "h": "2cc19d08c1c7",
+   "s": 9.09,
+   "text": "To simplify a ratio, divide both parts by a number that goes into both. 8 to 12, divided by 4, is 2 to 3."
+  },
+  "2-3": {
+   "h": "d37575d4df26",
+   "s": 13.16,
+   "text": "When no whole number except 1 goes into all the parts, the ratio is in its simplest form. It works for three parts too: 12 to 18 to 30, divided by 6, is 2 to 3 to 5."
+  },
+  "3-1": {
+   "h": "7c65bc73d862",
+   "s": 10.43,
+   "text": "Part three. Sharing in a ratio. ... Mia and Leo share 35 pounds in the ratio 2 to 5. First add the parts: 2 plus 5 is 7 parts."
+  },
+  "3-2": {
+   "h": "c396390fd154",
+   "s": 6.42,
+   "text": "Next find what one part is worth: 35 pounds divided by 7 is 5 pounds."
+  },
+  "3-3": {
+   "h": "86b78aeb7334",
+   "s": 14.17,
+   "text": "Mia gets 2 parts: 2 times 5 pounds is 10 pounds. Leo gets 5 parts: 5 times 5 pounds is 25 pounds. Check: 10 pounds plus 25 pounds is 35 pounds."
+  },
+  "3-4": {
+   "h": "3841912a0802",
+   "s": 16.36,
+   "text": "Sometimes you know one share. Squash and water are mixed 2 to 5, with 60 millilitres of squash. 2 parts are 60 millilitres, so 1 part is 30 millilitres, and the water is 5 times 30, which is 150 millilitres."
+  },
+  "4-1": {
+   "h": "b20a0bb767fc",
+   "s": 11.43,
+   "text": "Part four. Proportion and best buys. ... Two amounts are in direct proportion when they grow together: if one doubles, so does the other. 3 rubbers cost 45 pence."
+  },
+  "4-2": {
+   "h": "26106bf223b1",
+   "s": 12.12,
+   "text": "Find the cost of one first. 1 rubber costs 45 divided by 3, which is 15 pence. Then 5 rubbers cost 5 times 15, which is 75 pence."
+  },
+  "4-3": {
+   "h": "8bbd07e71ecf",
+   "s": 17.41,
+   "text": "Recipes work the same way. A recipe for 4 people uses 300 grams of flour. 1 person needs 300 divided by 4, which is 75 grams, so 6 people need 6 times 75, which is 450 grams."
+  },
+  "4-4": {
+   "h": "ba8db87ca9af",
+   "s": 17.02,
+   "text": "Best buys: compare the price of the same amount. 400 grams for 2 pounds is 50 pence per 100 grams. 300 grams for 1 pound 80 is 60 pence per 100 grams. So the 400 gram pack is better value."
+  },
+  "4-5": {
+   "h": "a6ba30a40f18",
+   "s": 15.53,
+   "text": "Inverse proportion: more workers means less time. 3 builders take 8 days to build a wall. 1 builder would take 3 times 8, which is 24 days, so 4 builders take 24 divided by 4, which is 6 days."
+  },
+  "5-1": {
+   "h": "117e4b6e6fe3",
+   "s": 13.55,
+   "text": "Part five. Maps and scales. ... A scale links a map to real life. A scale of 1 to 25 thousand means 1 centimetre on the map is 25 thousand centimetres in real life."
+  },
+  "5-2": {
+   "h": "fef196331c8b",
+   "s": 10.88,
+   "text": "The school and the park are 4 centimetres apart on the map. In real life that is 4 times 25 thousand, which is 100 thousand centimetres."
+  },
+  "5-3": {
+   "h": "fca893f80b6b",
+   "s": 14.55,
+   "text": "Now change the units. 100 centimetres make 1 metre, so 100 thousand centimetres is 1000 metres. And 1000 metres is 1 kilometre. The real distance is 1 kilometre."
+  },
+  "5-4": {
+   "h": "f055c2b17f6c",
+   "s": 15.83,
+   "text": "Models use scales too. A model boat is made to a scale of 1 to 30. The model is 15 centimetres long, so the real boat is 15 times 30, which is 450 centimetres long. That is 4.5 metres."
+  }
+ }
+}

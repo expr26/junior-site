@@ -12,7 +12,7 @@ def pages():
     e = html.escape
     topics = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((HERE / "topics").glob("*.json"))]
     topics = [t for t in topics if t.get("stage") == "ks2"]
-    order = ["times-tables", "place-value", "mental-maths", "telling-the-time", "money", "shapes"]
+    order = ["times-tables", "place-value", "mental-maths", "decimals-and-percentages", "measurement", "telling-the-time", "money", "shapes"]
     topics.sort(key=lambda t: order.index(t["slug"]) if t["slug"] in order else 99)
     games = {g["slug"]: g for g in json.loads((HERE / "games" / "games.json").read_text(encoding="utf-8"))["games"]}
     cards = "".join(
@@ -29,7 +29,7 @@ def pages():
     <p class="crumbs"><a href="/">Home</a> › Ages 9 to 11</p>
     <p class="eyebrow">KS2 · Years 4 to 6 · IB PYP</p>
     <h1>The 9 to 11 corner</h1>
-    <p class="lede">Times tables, place value, mental maths, time, money and shapes: the number skills that make secondary school Maths much easier. Short explanations with pictures, then practice with hints. No timer, ever.</p>
+    <p class="lede">Times tables, place value, mental maths, decimals and percentages, measuring, time, money and shapes: the number skills that make secondary school Maths much easier. Short explanations with pictures, then practice with hints. No timer, ever.</p>
   </div>
 </section>
 <section class="section tight">

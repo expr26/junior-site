@@ -156,3 +156,52 @@ def coins(items, **_):
 
 
 FIGS = {"clock": clock, "array": array, "pv": pv, "shape": shape, "coins": coins}
+
+
+def hundred(shade, **_):
+    """A 10 by 10 grid with the first `shade` squares shaded (row by row): hundredths, decimals and percentages."""
+    if not 0 <= shade <= 100:
+        raise TypeError("hundred needs shade 0 to 100")
+    s, p = 14, []
+    for i in range(100):
+        r, c = divmod(i, 10)
+        p.append(f'<rect x="{4 + c * s}" y="{4 + r * s}" width="{s}" height="{s}" fill="{GOLD_LT if i < shade else CARD}" stroke="{NAVY}" stroke-width="1"/>')
+    p.append(f'<rect x="4" y="4" width="{10 * s}" height="{10 * s}" fill="none" stroke="{NAVY}" stroke-width="2.5"/>')
+    return _svg(10 * s + 8, 10 * s + 8, "".join(p), f"A grid of 100 squares with {shade} shaded")
+
+
+def ruler(cm=10, mark=None, **_):
+    """A ruler from 0 to `cm` centimetres with millimetre marks; an arrow at `mark` (in cm, e.g. 6.4)."""
+    u, x0 = 46, 14
+    w = cm * u + 2 * x0
+    p = [f'<rect x="2" y="10" width="{w - 4}" height="58" rx="6" fill="var(--gold-bg)" stroke="{NAVY}" stroke-width="2"/>']
+    for i in range(cm * 10 + 1):
+        x = x0 + i * u / 10
+        ln = 22 if i % 10 == 0 else 15 if i % 5 == 0 else 9
+        p.append(f'<line x1="{x:.1f}" y1="10" x2="{x:.1f}" y2="{10 + ln}" stroke="{NAVY}" stroke-width="{2 if i % 10 == 0 else 1}"/>')
+        if i % 10 == 0:
+            p.append(f'<text x="{x:.1f}" y="52" text-anchor="middle" font-size="14" font-weight="700" fill="{NAVY}">{i // 10}</text>')
+    p.append(f'<text x="{w - 10}" y="62" text-anchor="end" font-size="11" fill="{NAVY}">cm</text>')
+    label = f"A ruler from 0 to {cm} centimetres with millimetre marks"
+    if mark is not None:
+        x = x0 + mark * u
+        p.append(f'<path d="M{x:.1f} 8 l-7 -8 h14 z" fill="{FUN}"/>')
+        label += ", with an arrow pointing at one of the marks"
+    return _svg(w, 72, "".join(p), label)
+
+
+def jug(level, top=1000, step=100, unit="ml", **_):
+    """A measuring jug marked every `step` up to `top`, filled to `level`."""
+    h0, h1, x0, wj = 20, 200, 40, 110
+    p = [f'<rect x="{x0}" y="{h0}" width="{wj}" height="{h1 - h0}" fill="{CARD}" stroke="{NAVY}" stroke-width="3" rx="8"/>']
+    y = h1 - (h1 - h0) * level / top
+    p.append(f'<rect x="{x0 + 2}" y="{y:.1f}" width="{wj - 4}" height="{h1 - y - 2:.1f}" fill="var(--sci-bg)" stroke="{SCI}" stroke-width="2"/>')
+    for v in range(0, top + 1, step):
+        yy = h1 - (h1 - h0) * v / top
+        p.append(f'<line x1="{x0}" y1="{yy:.1f}" x2="{x0 + 22}" y2="{yy:.1f}" stroke="{NAVY}" stroke-width="2"/>')
+        p.append(f'<text x="{x0 - 6}" y="{yy + 5:.1f}" text-anchor="end" font-size="13" font-weight="700" fill="{NAVY}">{v}</text>')
+    p.append(f'<text x="{x0 + wj + 8}" y="{h0 + 12}" font-size="13" fill="{NAVY}">{html.escape(unit)}</text>')
+    return _svg(x0 + wj + 40, h1 + 10, "".join(p), f"A measuring jug marked up to {top} {unit}, with water in it")
+
+
+FIGS.update({"hundred": hundred, "ruler": ruler, "jug": jug})

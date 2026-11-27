@@ -37,6 +37,8 @@
     { id: 'topic-mental-maths', icon: '🧠', name: 'Brain power', desc: 'Finish every Mental maths unit.' },
     { id: 'topic-telling-the-time', icon: '⏰', name: 'Time keeper', desc: 'Finish every Telling the time unit.' },
     { id: 'topic-money', icon: '💷', name: 'Money whizz', desc: 'Finish every Money unit.' },
+    { id: 'topic-decimals-and-percentages', icon: '💯', name: 'Percentage pro', desc: 'Finish every Decimals and percentages unit.' },
+    { id: 'topic-measurement', icon: '📏', name: 'Measuring master', desc: 'Finish every Measurement unit.' },
     { id: 'topic-shapes', icon: '🔷', name: 'Shape spotter', desc: 'Finish every Shapes unit.' },
     { id: 'topic-missions', icon: '🚀', name: 'Mission complete', desc: 'Finish every Real-life maths mission.' },
     { id: 'level-check', icon: '🧭', name: 'Know where I am', desc: 'Finish a level check, like Ready for Year 7?' },

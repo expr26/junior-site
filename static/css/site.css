@@ -1051,3 +1051,9 @@ html[data-proj="on"] .proj-btn{position:fixed;top:12px;right:12px;z-index:50;dis
 .pg-acts h3 small{font-size:14px;color:var(--muted);font-weight:400;margin-left:6px}
 .tp-grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));margin-bottom:24px}
 .tp-card{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;padding:14px 16px}.tp-card small{width:100%;color:var(--muted)}
+/* Experiments (/experiments/) */
+.ex-meta{display:flex;flex-wrap:wrap;gap:8px 16px;font-weight:700;color:var(--navy)}
+.ex-safe h2{margin-top:0}
+.ex-why summary{cursor:pointer;list-style:none}.ex-why summary::-webkit-details-marker{display:none}
+.ex-why[open] summary{margin-bottom:8px}
+.pg-acts li p{margin:0}

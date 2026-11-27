@@ -1033,3 +1033,21 @@ button.am-tile:hover:not(:disabled){transform:translateY(-3px)}button.am-tile:di
 .cm-cols{display:grid;gap:8px 24px}@media (min-width:800px){.cm-cols{grid-template-columns:1fr 1fr}}
 .cm-list{padding-left:20px}.cm-list li{margin:6px 0}
 .cm-go{white-space:nowrap;font-size:15px;font-weight:700}
+/* Big screen mode for classrooms (static/js/projector.js) */
+.proj-btn{min-height:40px;font-size:15px;margin:0 0 12px}
+@media (max-width:899px){.proj-btn{display:none}}
+html[data-proj="on"] body{font-size:26px}
+html[data-proj="on"] .site-header,html[data-proj="on"] .site-footer,html[data-proj="on"] footer,html[data-proj="on"] main>section:not(.proj-keep),
+html[data-proj="on"] .toasts,html[data-proj="on"] .rs-panel{display:none!important}
+html[data-proj="on"] .proj-keep{padding-top:16px}
+html[data-proj="on"] .proj-keep .wrap{max-width:min(1400px,96vw)}
+html[data-proj="on"] .proj-keep .q-text,html[data-proj="on"] .proj-keep .bubble,html[data-proj="on"] .proj-keep .opt,
+html[data-proj="on"] .proj-keep .fb-title,html[data-proj="on"] .proj-keep .qb-q{font-size:1.25em}
+html[data-proj="on"] .proj-keep .q-fig .fig{width:auto;height:38vh;max-width:100%}
+html[data-proj="on"] .proj-keep .a-stage svg{max-height:58vh}
+html[data-proj="on"] .proj-btn{position:fixed;top:12px;right:12px;z-index:50;display:inline-flex}
+/* For teachers (/teachers/) */
+.tp-res li{margin:10px 0}
+.pg-acts h3 small{font-size:14px;color:var(--muted);font-weight:400;margin-left:6px}
+.tp-grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));margin-bottom:24px}
+.tp-card{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;padding:14px 16px}.tp-card small{width:100%;color:var(--muted)}

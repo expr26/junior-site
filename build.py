@@ -164,6 +164,7 @@ def main():
     import ks2        # /ks2/, the corner for ages 9 to 11
     import diag       # level checks such as /ready-for-year-7/, from diag/
     import parents    # /parents/ guides and the curriculum map, from parents/
+    import teachers   # /teachers/ and a teaching pack per question-bank topic
     try:
         jobs += topics.pages()
         jobs += games.pages()
@@ -173,6 +174,7 @@ def main():
         jobs += ks2.pages()
         jobs += diag.pages()
         jobs += parents.pages()
+        jobs += teachers.pages()
         (DIST / "static" / "topics.json").write_text(json.dumps(topics.index()), encoding="utf-8")
         (DIST / "static" / "diag.json").write_text(json.dumps(diag.index()), encoding="utf-8")
     except topics.ContentError as e:

@@ -34,6 +34,8 @@ def pages():
 </section>
 <section class="section tight">
   <div class="wrap">
+    <a class="card ks2-banner" href="/ready-for-year-7/"><span class="ks2-ic" aria-hidden="true">🧭</span><span class="tag">Year 6 · 24 questions</span>
+      <h3>Ready for Year 7?</h3><p>A friendly check of the Maths you'll need at secondary school. No timer. See what you're ready for and where to practise.</p><span class="go">Start the check →</span></a>
     <h2>Topics</h2>
     <div class="cards three">{cards}</div>
   </div>

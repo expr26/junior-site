@@ -38,6 +38,7 @@
     { id: 'topic-telling-the-time', icon: '⏰', name: 'Time keeper', desc: 'Finish every Telling the time unit.' },
     { id: 'topic-money', icon: '💷', name: 'Money whizz', desc: 'Finish every Money unit.' },
     { id: 'topic-shapes', icon: '🔷', name: 'Shape spotter', desc: 'Finish every Shapes unit.' },
+    { id: 'level-check', icon: '🧭', name: 'Know where I am', desc: 'Finish a level check, like Ready for Year 7?' },
     { id: 'tt-map', icon: '🗺️', name: 'Times table map', desc: 'Colour in the whole times table map in the Times Table Trainer.' },
     { id: 'welcome-back', icon: '👋', name: 'Welcome back', desc: 'Come back after a few days away.' }
   ];

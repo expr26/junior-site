@@ -162,6 +162,7 @@ def main():
     import videos   # theory videos, from videos/
     import glossary   # /glossary/, from glossary/terms.json
     import ks2        # /ks2/, the corner for ages 9 to 11
+    import diag       # level checks such as /ready-for-year-7/, from diag/
     try:
         jobs += topics.pages()
         jobs += games.pages()
@@ -169,7 +170,9 @@ def main():
         jobs += videos.pages()
         jobs += glossary.pages()
         jobs += ks2.pages()
+        jobs += diag.pages()
         (DIST / "static" / "topics.json").write_text(json.dumps(topics.index()), encoding="utf-8")
+        (DIST / "static" / "diag.json").write_text(json.dumps(diag.index()), encoding="utf-8")
     except topics.ContentError as e:
         fail(str(e))
 

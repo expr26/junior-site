@@ -1012,3 +1012,15 @@ button.am-tile:hover:not(:disabled){transform:translateY(-3px)}button.am-tile:di
 .tt-panel[hidden]{display:none}
 .tt-x{font-family:Arial,"Helvetica Neue",sans-serif;font-weight:700}
 .topic-hero .figbox svg.ks2fig{width:auto;max-width:100%;height:auto}
+/* Level checks (/ready-for-year-7/) */
+.diag-skip{margin-top:12px;min-height:40px;font-size:15px}
+.diag-areas li{margin:4px 0}
+.diag-list{text-align:left;margin:16px 0;display:grid;gap:10px}
+.diag-row{display:grid;grid-template-columns:36px 1fr;gap:4px 10px;align-items:center;background:var(--card);border:2px solid var(--line);border-radius:16px;padding:10px 14px}
+.diag-row.practise{border-color:var(--pink)}.diag-row.nearly{border-color:var(--sun)}.diag-row.ready{border-color:var(--ok)}
+.diag-ic{font-size:26px;grid-row:span 2}
+.diag-name b{display:block}
+.diag-links{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:15px}
+.diag-lv{font-weight:700;font-size:15px;color:var(--navy)}
+@media (min-width:640px){.diag-row{grid-template-columns:36px 1fr auto}.diag-ic{grid-row:auto}}
+@media print{.diag-row{break-inside:avoid}}

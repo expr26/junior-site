@@ -1,0 +1,43 @@
+{
+  "slug": "ready-for-year-7",
+  "title": "Ready for Year 7? A friendly Maths check",
+  "seo_title": "Ready for Year 7? Free Maths check for Year 6 (ages 10 to 11)",
+  "description": "A free, friendly 24-question Maths check for Year 6 children starting secondary school. No timer and no sign-up. Shows which areas are ready and which to practise first, with links to free practice.",
+  "intro": "24 questions about the Maths you'll use on day one of secondary school. There's no timer and no pass or fail. At the end you'll see what you're ready for and where to practise next.",
+  "areas": {
+    "pv":    {"name": "Place value and negative numbers", "icon": "🔢", "links": [["Place value", "/maths/place-value/"], ["Negative numbers questions", "/question-bank/maths/negative-numbers/"]]},
+    "tt":    {"name": "Times tables", "icon": "✖️", "links": [["Times tables", "/maths/times-tables/"], ["Times Table Trainer", "/games/times-table-trainer/"]]},
+    "calc":  {"name": "Adding, subtracting and dividing", "icon": "🧠", "links": [["Mental maths", "/maths/mental-maths/"]]},
+    "frac":  {"name": "Fractions", "icon": "🍕", "links": [["Fractions", "/maths/fractions/"], ["Pizza Fractions game", "/games/pizza-fractions/"]]},
+    "dec":   {"name": "Decimals and percentages", "icon": "💯", "links": [["Fractions, decimals and percentages questions", "/question-bank/maths/fractions-decimals-percentages/"], ["Tenths and hundredths", "/maths/place-value/tenths-and-hundredths/"]]},
+    "meas":  {"name": "Measures, time and money", "icon": "⏰", "links": [["Telling the time", "/maths/telling-the-time/"], ["Money", "/maths/money/"]]},
+    "shape": {"name": "Shapes and angles", "icon": "🔷", "links": [["Shapes", "/maths/shapes/"], ["Angles and shapes questions", "/question-bank/maths/angles-and-shapes/"]]},
+    "alg":   {"name": "Patterns and early algebra", "icon": "🧩", "links": [["Sequences questions", "/question-bank/maths/sequences/"], ["Algebra Machine game", "/games/algebra-machine/"]]}
+  },
+  "questions": [
+    {"area": "pv", "type": "num", "q": "What is the 6 worth in 3,604,215?", "answer": "600000", "explain": "From the right: ones, tens, hundreds, thousands, ten thousands, hundred thousands. The 6 is in the hundred thousands column, so it is worth 600,000."},
+    {"area": "pv", "type": "mc", "q": "Round 74,562 to the nearest thousand.", "options": ["75,000", "74,000", "74,600", "70,000"], "answer": 0, "explain": "Look at the hundreds digit: 5. That means round up, so 74,562 rounds to 75,000."},
+    {"area": "pv", "type": "num", "q": "The temperature is −3 °C. It rises by 8 degrees. What is the new temperature, in °C?", "answer": "5", "unit": "°C", "explain": "From −3 it takes 3 degrees to reach 0, then 5 more: 5 °C."},
+    {"area": "tt", "type": "num", "q": "7 × 8 = ?", "answer": "56", "explain": "7 × 8 = 56."},
+    {"area": "tt", "type": "num", "q": "108 ÷ 9 = ?", "answer": "12", "explain": "12 × 9 = 108, so 108 ÷ 9 = 12."},
+    {"area": "tt", "type": "num", "q": "34 × 6 = ?", "answer": "204", "explain": "30 × 6 = 180 and 4 × 6 = 24. 180 + 24 = 204."},
+    {"area": "calc", "type": "num", "q": "4,508 + 2,797 = ?", "answer": "7305", "explain": "4,508 + 2,797 = 7,305. (Check: 4,500 + 2,800 = 7,300, so the answer should be close to that.)"},
+    {"area": "calc", "type": "num", "q": "6,000 − 2,345 = ?", "answer": "3655", "explain": "6,000 − 2,345 = 3,655. (Check: 3,655 + 2,345 = 6,000.)"},
+    {"area": "calc", "type": "num", "q": "432 ÷ 8 = ?", "answer": "54", "explain": "432 ÷ 8 = 54, because 50 × 8 = 400 and 4 × 8 = 32."},
+    {"area": "frac", "type": "mc", "q": "Which fraction is equal to {3/4}?", "options": ["{6/8}", "{3/8}", "{4/3}", "{6/4}"], "answer": 0, "explain": "Multiply the top and bottom by 2: {3/4} = {6/8}."},
+    {"area": "frac", "type": "num", "q": "{2/5} + {1/5} = ? (type it like 3/7)", "answer": "3/5", "explain": "The bottom numbers are the same, so add the tops: 2 + 1 = 3. The answer is {3/5}."},
+    {"area": "frac", "type": "num", "q": "What is {3/4} of 20?", "answer": "15", "explain": "{1/4} of 20 is 20 ÷ 4 = 5, so {3/4} is 3 × 5 = 15."},
+    {"area": "dec", "type": "mc", "q": "Which is equal to 0.3?", "options": ["{3/10}", "{3/100}", "{1/3}", "3%"], "answer": 0, "explain": "The 3 is in the tenths column, so 0.3 = {3/10}. (It's also 30%.)"},
+    {"area": "dec", "type": "num", "q": "What is 50% of 64?", "answer": "32", "explain": "50% means half. Half of 64 is 32."},
+    {"area": "dec", "type": "num", "q": "What is 10% of 250?", "answer": "25", "explain": "10% means {1/10}. 250 ÷ 10 = 25."},
+    {"area": "meas", "type": "num", "q": "How many grams are in 2.5 kg?", "answer": "2500", "unit": "g", "explain": "1 kg = 1,000 g, so 2.5 kg = 2.5 × 1,000 = 2,500 g."},
+    {"area": "meas", "type": "mc", "q": "A film starts at 18:40 and lasts 1 hour 35 minutes. When does it end?", "options": ["20:15", "19:75", "20:05", "19:15"], "answer": 0, "explain": "18:40 + 1 hour = 19:40. 20 more minutes takes you to 20:00, and 15 more to 20:15."},
+    {"area": "meas", "type": "num", "q": "You buy 3 notebooks at £1.45 each and pay with a £10 note. How much change do you get, in pounds?", "answer": "5.65", "unit": "pounds", "explain": "3 × £1.45 = £4.35. £10 − £4.35 = £5.65."},
+    {"area": "shape", "type": "num", "q": "Two angles in a triangle are 35° and 85°. What is the third angle?", "answer": "60", "unit": "°", "explain": "The angles in a triangle add up to 180°. 180 − 35 − 85 = 60°."},
+    {"area": "shape", "type": "num", "q": "What is the area of a rectangle 9 cm long and 7 cm wide?", "answer": "63", "unit": "cm²", "explain": "Area = length × width = 9 × 7 = 63 cm²."},
+    {"area": "shape", "type": "mc", "q": "Which shape has exactly 2 lines of symmetry?", "options": ["A rectangle that is not a square", "A square", "An equilateral triangle", "A kite"], "answer": 0, "explain": "A rectangle has 2 lines of symmetry. A square has 4, an equilateral triangle 3 and a kite 1."},
+    {"area": "alg", "type": "num", "q": "What is the next number? 3, 7, 11, 15, …", "answer": "19", "explain": "The numbers go up by 4 each time. 15 + 4 = 19."},
+    {"area": "alg", "type": "num", "q": "? × 4 + 3 = 23. What is the missing number?", "answer": "5", "explain": "Work backwards: 23 − 3 = 20, and 20 ÷ 4 = 5. Check: 5 × 4 + 3 = 23."},
+    {"area": "alg", "type": "num", "q": "Cost in pounds = 3 × number of rides. How many pounds do 7 rides cost?", "answer": "21", "unit": "pounds", "explain": "3 × 7 = 21, so 7 rides cost £21."}
+  ]
+}

@@ -112,7 +112,7 @@ def hub(xs):
   <div class="wrap">
     <div class="cards three">
       <div class="card"><h3>📽️ Big screen mode</h3><p>On any game, video or question page, press <b>Big screen</b> (on a laptop or desktop) to hide everything else and make it large for a projector or interactive whiteboard. Press Esc to go back.</p></div>
-      <div class="card"><h3>🖨️ Worksheets with answers</h3><p>Every KS3 topic has a printable worksheet, with the answers on a separate page you can keep back.</p></div>
+      <div class="card"><h3>🖨️ Worksheets with answers</h3><p>Every KS3 topic has a printable worksheet, with the answers on a separate page you can keep back. Or make your own mix with the <a href="/worksheets/">worksheet maker</a>.</p></div>
       <div class="card"><h3>🔒 No student data</h3><p>Students use everything without accounts. Nothing they do is sent to us, so there's nothing to sign off with your data protection lead.</p></div>
     </div>
     <h2>Teaching packs by topic</h2>

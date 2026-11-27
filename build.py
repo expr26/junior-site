@@ -166,6 +166,7 @@ def main():
     import parents    # /parents/ guides and the curriculum map, from parents/
     import teachers   # /teachers/ and a teaching pack per question-bank topic
     import experiments  # /experiments/, science to do at home
+    import worksheets   # /worksheets/, the worksheet maker
     try:
         jobs += topics.pages()
         jobs += games.pages()
@@ -177,6 +178,7 @@ def main():
         jobs += parents.pages()
         jobs += teachers.pages()
         jobs += experiments.pages()
+        jobs += worksheets.pages()
         (DIST / "static" / "topics.json").write_text(json.dumps(topics.index()), encoding="utf-8")
         (DIST / "static" / "diag.json").write_text(json.dumps(diag.index()), encoding="utf-8")
     except topics.ContentError as e:

@@ -409,7 +409,7 @@ def write_pool(data):
             for q in t["questions"]:
                 li = _question_html(0, q, names).replace(
                     f'data-id="{q["id"]}"', f'data-id="{q["id"]}" data-key="{key}" data-subject="{subj}"', 1)
-                pool[q["id"]] = {"k": key, "s": subj, "lv": q["level"], "h": li.strip(), "d": q["_data"],
+                pool[q["id"]] = {"k": key, "s": subj, "lv": q["level"], "sb": q["sub"], "h": li.strip(), "d": q["_data"],
                                  "u": f"{ROOT}{s['slug']}/{t['slug']}/#{q['id']}"}
     out = HERE / "dist" / POOL.lstrip("/")
     topics = {}

@@ -18,7 +18,7 @@
         ["Play, don't test", "Take turns asking each other, and let your child catch you out. Card games (turn over two cards, multiply) work well."]
       ],
       "mistakes": ["Mixing up neighbours such as 6 × 8 = 48 and 7 × 8 = 56. Practise them side by side.", "Counting up on fingers from zero every time. Show how to start from a known fact instead.", "Anxiety from being timed. Accuracy first; speed comes naturally with practice."],
-      "links": [["Times tables topic", "/maths/times-tables/"], ["Times Table Trainer (no timer)", "/games/times-table-trainer/"]]
+      "links": [["Times tables topic", "/maths/times-tables/"], ["Times Table Trainer (no timer)", "/games/times-table-trainer/"], ["Printable times tables chart", "/printables/times-tables-chart/"]]
     },
     {
       "slug": "help-with-place-value",

@@ -167,6 +167,7 @@ def main():
     import teachers   # /teachers/ and a teaching pack per question-bank topic
     import experiments  # /experiments/, science to do at home
     import worksheets   # /worksheets/, the worksheet maker
+    import printables   # /printables/, times tables sheets and KS2 worksheets
     try:
         jobs += topics.pages()
         jobs += games.pages()
@@ -179,6 +180,7 @@ def main():
         jobs += teachers.pages()
         jobs += experiments.pages()
         jobs += worksheets.pages()
+        jobs += printables.pages()
         (DIST / "static" / "topics.json").write_text(json.dumps(topics.index()), encoding="utf-8")
         (DIST / "static" / "diag.json").write_text(json.dumps(diag.index()), encoding="utf-8")
     except topics.ContentError as e:

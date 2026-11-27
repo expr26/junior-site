@@ -1,0 +1,125 @@
+{
+  "slug": "shapes",
+  "subject": "maths",
+  "stage": "ks2",
+  "icon": "🔷",
+  "card": "Names and properties of 2D and 3D shapes, angles, symmetry, perimeter and area.",
+  "title": "Shapes",
+  "seo_title": "2D and 3D shapes practice: angles, symmetry, perimeter and area (KS2)",
+  "level": "KS2 · Years 4 to 6",
+  "description": "Learn the names and properties of 2D and 3D shapes: polygons, types of angle, triangles and quadrilaterals, lines of symmetry, faces, edges and vertices, and perimeter and area of rectangles. Free practice with pictures for ages 9 to 11.",
+  "intro": "Shapes are everywhere: in buildings, bridges, footballs and honeycombs. Learn their names, what makes each one special, and how to measure around and inside them.",
+  "hero_fig": {"type": "shape", "name": "hexagon"},
+  "units": [
+    {
+      "slug": "2d-shapes",
+      "title": "Naming 2D shapes",
+      "blurb": "Polygons and how many sides they have.",
+      "learn": [
+        {"h": "Polygons", "p": "A **polygon** is a flat shape with straight sides. Its name tells you how many sides it has: triangle 3, quadrilateral 4, pentagon 5, hexagon 6, heptagon 7, octagon 8.", "fig": {"type": "shape", "name": "pentagon"}},
+        {"h": "Regular or not?", "p": "A **regular** polygon has all its sides the same length and all its angles the same size. A square is a regular quadrilateral. A rectangle that isn't a square is not regular: its sides are not all equal."},
+        {"h": "Not a polygon", "p": "A circle is a 2D shape, but it isn't a polygon, because it has a curved edge and no straight sides.", "fig": {"type": "shape", "name": "circle"}}
+      ],
+      "questions": [
+        {"type": "mc", "q": "What is this shape called?", "fig": {"type": "shape", "name": "hexagon"}, "options": ["Hexagon", "Pentagon", "Octagon", "Heptagon"], "answer": 0, "hint": "Count the sides.", "explain": "It has 6 sides, so it is a hexagon."},
+        {"type": "mc", "q": "What is this shape called?", "fig": {"type": "shape", "name": "octagon"}, "options": ["Octagon", "Hexagon", "Pentagon", "Decagon"], "answer": 0, "hint": "Count the sides. “Octo” means 8, like an octopus.", "explain": "It has 8 sides, so it is an octagon."},
+        {"type": "num", "q": "How many sides does a pentagon have?", "answer": "5", "unit": "sides", "hint": "“Penta” means 5.", "explain": "A pentagon has 5 sides."},
+        {"type": "mc", "q": "Which shape is a regular polygon?", "options": ["A square", "A rectangle 5 cm by 3 cm", "A circle", "A kite"], "answer": 0, "hint": "All sides equal and all angles equal.", "explain": "A square has 4 equal sides and 4 equal angles. A circle isn't a polygon at all."},
+        {"type": "mc", "q": "What do you call any shape with 4 straight sides?", "options": ["Quadrilateral", "Triangle", "Pentagon", "Polygon with no name"], "answer": 0, "hint": "“Quad” means 4.", "explain": "Any 4-sided polygon is a quadrilateral: squares, rectangles, kites and more."},
+        {"type": "num", "q": "How many sides do 3 triangles and 2 hexagons have altogether?", "answer": "21", "unit": "sides", "hint": "3 × 3 and 2 × 6.", "explain": "9 + 12 = 21 sides."}
+      ]
+    },
+    {
+      "slug": "angles",
+      "title": "Angles",
+      "blurb": "Right angles, acute, obtuse and degrees.",
+      "learn": [
+        {"h": "Turns and degrees", "p": "An angle measures a turn. A whole turn is **360°**. A half turn is 180° and a quarter turn is 90°, which we call a **right angle**. A small square in the corner shows a right angle.", "fig": {"type": "shape", "name": "right-triangle"}},
+        {"h": "Acute and obtuse", "p": "An **acute** angle is less than 90°. An **obtuse** angle is more than 90° but less than 180°. A **reflex** angle is more than 180°."},
+        {"h": "On a straight line", "p": "Angles on a straight line add up to 180°. Angles all the way round a point add up to 360°."}
+      ],
+      "questions": [
+        {"type": "mc", "q": "What type of angle is 45°?", "options": ["Acute", "Obtuse", "Right angle", "Reflex"], "answer": 0, "hint": "Is it less than 90°?", "explain": "45° is less than 90°, so it is acute."},
+        {"type": "mc", "q": "What type of angle is 120°?", "options": ["Obtuse", "Acute", "Right angle", "Reflex"], "answer": 0, "hint": "Is it between 90° and 180°?", "explain": "120° is more than 90° and less than 180°, so it is obtuse."},
+        {"type": "num", "q": "How many degrees are in a half turn?", "answer": "180", "unit": "°", "hint": "A whole turn is 360°.", "explain": "360 ÷ 2 = 180°."},
+        {"type": "num", "q": "Two angles sit on a straight line. One is 130°. What is the other?", "answer": "50", "unit": "°", "hint": "Angles on a straight line add up to 180°.", "explain": "180 − 130 = 50°."},
+        {"type": "num", "q": "How many right angles make a whole turn?", "answer": "4", "hint": "A right angle is 90°. A whole turn is 360°.", "explain": "360 ÷ 90 = 4 right angles."},
+        {"type": "mc", "q": "At 3 o'clock, what angle do the hands of a clock make?", "fig": {"type": "clock", "h": 3, "m": 0}, "options": ["A right angle", "An acute angle", "An obtuse angle", "A straight line"], "answer": 0, "hint": "From 12 to 3 is a quarter of the way round.", "explain": "A quarter turn is 90°: a right angle."},
+        {"type": "mc", "q": "What type of angle is 250°?", "options": ["Reflex", "Obtuse", "Acute", "Right angle"], "answer": 0, "hint": "It's more than 180°.", "explain": "Angles more than 180° (and less than 360°) are reflex."}
+      ]
+    },
+    {
+      "slug": "triangles-and-quadrilaterals",
+      "title": "Triangles and quadrilaterals",
+      "blurb": "What makes each one special.",
+      "learn": [
+        {"h": "Kinds of triangle", "p": "**Equilateral**: 3 equal sides and 3 equal angles (60° each). **Isosceles**: 2 equal sides and 2 equal angles. **Scalene**: no equal sides. **Right-angled**: one angle is 90°. The angles in any triangle add up to 180°."},
+        {"h": "Kinds of quadrilateral", "p": "**Square**: 4 equal sides, 4 right angles. **Rectangle**: 4 right angles, opposite sides equal. **Rhombus**: 4 equal sides, opposite angles equal. **Parallelogram**: opposite sides equal and parallel. **Trapezium**: at least one pair of parallel sides. **Kite**: two pairs of equal sides next to each other.", "fig": {"type": "shape", "name": "parallelogram"}},
+        {"h": "Parallel", "p": "Two lines are **parallel** if they stay the same distance apart and never meet, like railway tracks."}
+      ],
+      "questions": [
+        {"type": "mc", "q": "A triangle has 3 equal sides. What kind of triangle is it?", "options": ["Equilateral", "Isosceles", "Scalene", "Right-angled"], "answer": 0, "hint": "“Equi” means equal.", "explain": "A triangle with 3 equal sides is equilateral."},
+        {"type": "num", "q": "Two angles in a triangle are 50° and 60°. What is the third angle?", "answer": "70", "unit": "°", "hint": "The angles in a triangle add up to 180°.", "explain": "50 + 60 = 110, and 180 − 110 = 70°."},
+        {"type": "mc", "q": "What is this shape?", "fig": {"type": "shape", "name": "rhombus"}, "options": ["Rhombus", "Square", "Kite", "Trapezium"], "answer": 0, "hint": "All 4 sides are the same length, but the angles are not right angles.", "explain": "4 equal sides with no right angles: a rhombus."},
+        {"type": "mc", "q": "What is this shape?", "fig": {"type": "shape", "name": "trapezium"}, "options": ["Trapezium", "Parallelogram", "Rectangle", "Kite"], "answer": 0, "hint": "Only the top and bottom sides are parallel.", "explain": "One pair of parallel sides: a trapezium."},
+        {"type": "mc", "q": "Which shape always has 4 right angles but does not always have 4 equal sides?", "options": ["Rectangle", "Square", "Rhombus", "Kite"], "answer": 0, "hint": "Think of a door shape.", "explain": "A rectangle always has 4 right angles, but its sides don't all have to be equal."},
+        {"type": "num", "q": "An isosceles triangle has one angle of 40° and two equal angles. How big is each of the equal angles?", "answer": "70", "unit": "°", "hint": "180 − 40 is shared equally between the other two angles.", "explain": "180 − 40 = 140, and 140 ÷ 2 = 70°."}
+      ]
+    },
+    {
+      "slug": "symmetry",
+      "title": "Lines of symmetry",
+      "blurb": "Fold it so both halves match.",
+      "learn": [
+        {"h": "Mirror lines", "p": "A **line of symmetry** splits a shape into two halves that match exactly, like a mirror image. If you folded the shape along the line, the halves would fit perfectly on top of each other."},
+        {"h": "How many?", "p": "A rectangle has 2 lines of symmetry (across the middle both ways, but not the diagonals). A square has 4. An equilateral triangle has 3.", "fig": {"type": "shape", "name": "rectangle"}},
+        {"h": "Regular polygons", "p": "A regular polygon has as many lines of symmetry as it has sides. A regular hexagon has 6. A circle has an endless number!"}
+      ],
+      "questions": [
+        {"type": "num", "q": "How many lines of symmetry does a square have?", "answer": "4", "hint": "Across both ways, and both diagonals.", "explain": "2 lines through the middles of the sides and 2 diagonals: 4."},
+        {"type": "num", "q": "How many lines of symmetry does a rectangle (that isn't a square) have?", "answer": "2", "hint": "Try folding a piece of paper along a diagonal. Do the halves match?", "explain": "Only the two lines across the middle. The diagonals don't work: the halves don't fit on top of each other."},
+        {"type": "num", "q": "How many lines of symmetry does a regular pentagon have?", "fig": {"type": "shape", "name": "pentagon"}, "answer": "5", "hint": "A regular polygon has as many lines of symmetry as sides.", "explain": "5 sides, 5 lines of symmetry."},
+        {"type": "num", "q": "How many lines of symmetry does this kite have?", "fig": {"type": "shape", "name": "kite"}, "answer": "1", "hint": "Try a line from the top point to the bottom point.", "explain": "Only the line from top to bottom works: 1 line of symmetry."},
+        {"type": "num", "q": "How many lines of symmetry does an isosceles triangle (that isn't equilateral) have?", "answer": "1", "hint": "The line goes down the middle, between the two equal sides.", "explain": "1 line, from the top down through the middle of the base."},
+        {"type": "mc", "q": "Which capital letter has a line of symmetry?", "options": ["A", "F", "G", "J"], "answer": 0, "hint": "Imagine a mirror down the middle of each letter.", "explain": "A has a vertical line of symmetry. F, G and J have none."}
+      ]
+    },
+    {
+      "slug": "3d-shapes",
+      "title": "3D shapes",
+      "blurb": "Faces, edges and vertices.",
+      "learn": [
+        {"h": "Faces, edges, vertices", "p": "A **face** is a flat surface. An **edge** is where two faces meet. A **vertex** is a corner (more than one: **vertices**)."},
+        {"h": "Common 3D shapes", "p": "**Cube**: 6 square faces, 12 edges, 8 vertices. **Cuboid** (like a box): 6 rectangular faces, 12 edges, 8 vertices. **Square-based pyramid**: 5 faces, 8 edges, 5 vertices. **Triangular prism** (like a tent): 5 faces, 9 edges, 6 vertices."},
+        {"h": "Curved surfaces", "p": "A **sphere** (a ball) has one curved surface. A **cylinder** (a tin can) has 2 flat circular faces and one curved surface."}
+      ],
+      "questions": [
+        {"type": "num", "q": "How many faces does a cube have?", "answer": "6", "unit": "faces", "hint": "Think of a dice.", "explain": "A cube (like a dice) has 6 faces."},
+        {"type": "num", "q": "How many vertices does a cube have?", "answer": "8", "unit": "vertices", "hint": "Count the corners: 4 on top, 4 on the bottom.", "explain": "4 + 4 = 8 vertices."},
+        {"type": "num", "q": "How many edges does a cuboid have?", "answer": "12", "unit": "edges", "hint": "4 round the top, 4 round the bottom, 4 going up the sides.", "explain": "4 + 4 + 4 = 12 edges."},
+        {"type": "mc", "q": "Which 3D shape has 5 faces: a square base and 4 triangles?", "options": ["Square-based pyramid", "Cube", "Triangular prism", "Cylinder"], "answer": 0, "hint": "Like the pyramids in Egypt.", "explain": "A square-based pyramid has 1 square face and 4 triangular faces."},
+        {"type": "mc", "q": "A tin of beans is the shape of a…", "options": ["Cylinder", "Cone", "Sphere", "Cuboid"], "answer": 0, "hint": "Two circles joined by a curved surface.", "explain": "A tin is a cylinder: 2 flat circles and a curved surface."},
+        {"type": "num", "q": "How many faces does a triangular prism have?", "answer": "5", "unit": "faces", "hint": "2 triangles at the ends and rectangles round the sides.", "explain": "2 triangles + 3 rectangles = 5 faces."}
+      ]
+    },
+    {
+      "slug": "perimeter-and-area",
+      "title": "Perimeter and area",
+      "blurb": "The distance around, and the space inside.",
+      "learn": [
+        {"h": "Perimeter", "p": "The **perimeter** is the distance all the way around the outside. For a rectangle 5 cm by 3 cm: 5 + 3 + 5 + 3 = 16 cm."},
+        {"h": "Area", "p": "The **area** is how much space is inside, measured in squares. A rectangle 5 cm by 3 cm holds 3 rows of 5 squares: 5 × 3 = 15 square centimetres (15 cm²).", "fig": {"type": "array", "rows": 3, "cols": 5}},
+        {"h": "Don't mix them up", "p": "Perimeter is a length (cm, m). Area is squares (cm², m²). Two shapes can have the same area but different perimeters!"}
+      ],
+      "questions": [
+        {"type": "num", "q": "What is the perimeter of a rectangle 6 cm long and 4 cm wide?", "answer": "20", "unit": "cm", "hint": "Add all four sides: 6 + 4 + 6 + 4.", "explain": "6 + 4 + 6 + 4 = 20 cm."},
+        {"type": "num", "q": "What is the area of a rectangle 6 cm long and 4 cm wide?", "answer": "24", "unit": "cm²", "hint": "Length × width.", "explain": "6 × 4 = 24 cm²."},
+        {"type": "num", "q": "A square has sides of 7 m. What is its perimeter?", "answer": "28", "unit": "m", "hint": "4 equal sides.", "explain": "4 × 7 = 28 m."},
+        {"type": "num", "q": "A square has sides of 7 m. What is its area?", "answer": "49", "unit": "m²", "hint": "7 × 7.", "explain": "7 × 7 = 49 m²."},
+        {"type": "num", "q": "A rectangle has an area of 30 cm². It is 5 cm wide. How long is it?", "answer": "6", "unit": "cm", "hint": "5 × ? = 30.", "explain": "30 ÷ 5 = 6 cm."},
+        {"type": "num", "q": "A garden is 10 m long and 8 m wide. How many metres of fence go all the way round it?", "answer": "36", "unit": "m", "hint": "This is the perimeter.", "explain": "10 + 8 + 10 + 8 = 36 m."},
+        {"type": "mc", "q": "Shape A is 6 cm by 2 cm. Shape B is 4 cm by 3 cm. Which is true?", "options": ["Same area, different perimeters", "Same perimeter, different areas", "Same area and same perimeter", "Different area and different perimeter"], "answer": 0, "hint": "Work out both areas and both perimeters.", "explain": "Areas: 6 × 2 = 12 and 4 × 3 = 12, the same. Perimeters: 16 cm and 14 cm, different."}
+      ]
+    }
+  ]
+}

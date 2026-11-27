@@ -1011,3 +1011,4 @@ button.am-tile:hover:not(:disabled){transform:translateY(-3px)}button.am-tile:di
 .ks2-banner{display:block;position:relative;margin-bottom:16px;background:linear-gradient(135deg,var(--gold-bg),var(--fun-bg))}
 .tt-panel[hidden]{display:none}
 .tt-x{font-family:Arial,"Helvetica Neue",sans-serif;font-weight:700}
+.topic-hero .figbox svg.ks2fig{width:auto;max-width:100%;height:auto}

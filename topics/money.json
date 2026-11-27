@@ -1,0 +1,436 @@
+{
+  "slug": "money",
+  "subject": "maths",
+  "stage": "ks2",
+  "icon": "💷",
+  "card": "Pounds and pence, adding prices, giving change, best buys and planning a budget.",
+  "title": "Money",
+  "seo_title": "Money maths practice: pounds, pence, change and budgets (KS2)",
+  "level": "KS2 · Years 4 to 6",
+  "description": "Practise money maths with UK coins and notes: pounds and pence, adding prices, working out change, multiplying and sharing money, best buys and simple budgets. Free questions with hints for ages 9 to 11.",
+  "intro": "Shopping, pocket money and saving up: money maths is maths you use every day. Learn to add prices, work out change and find the best deal.",
+  "hero_fig": {
+    "type": "coins",
+    "items": [
+      "£2",
+      "£1",
+      "50p",
+      "20p"
+    ]
+  },
+  "units": [
+    {
+      "slug": "pounds-and-pence",
+      "title": "Pounds and pence",
+      "blurb": "Coins, notes, and writing amounts with a decimal point.",
+      "learn": [
+        {
+          "h": "UK coins and notes",
+          "p": "Coins: 1p, 2p, 5p, 10p, 20p, 50p, £1 and £2. Notes: £5, £10, £20 and £50.",
+          "fig": {
+            "type": "coins",
+            "items": [
+              "1p",
+              "2p",
+              "5p",
+              "10p",
+              "20p",
+              "50p"
+            ]
+          }
+        },
+        {
+          "h": "100 pence = 1 pound",
+          "p": "There are 100 pence in £1. So 350p is £3.50: 3 whole pounds and 50 pence. The decimal point separates the pounds from the pence."
+        },
+        {
+          "h": "Always two digits for pence",
+          "p": "We write pence with two digits after the point. 5 pounds and 7 pence is £5.07, not £5.7. (£5.7 would mean £5.70, which is 5 pounds 70 pence.)"
+        }
+      ],
+      "questions": [
+        {
+          "type": "num",
+          "q": "How much money is shown, in pence?",
+          "fig": {
+            "type": "coins",
+            "items": [
+              "50p",
+              "20p",
+              "10p",
+              "2p"
+            ]
+          },
+          "answer": "82",
+          "unit": "p",
+          "hint": "Add up from the biggest coin.",
+          "explain": "50 + 20 + 10 + 2 = 82p."
+        },
+        {
+          "type": "num",
+          "q": "How much money is shown, in pounds? Type it like 3.50",
+          "fig": {
+            "type": "coins",
+            "items": [
+              "£2",
+              "£1",
+              "50p",
+              "20p",
+              "5p"
+            ]
+          },
+          "answer": "3.75",
+          "unit": "pounds",
+          "hint": "Add the pounds, then the pence.",
+          "explain": "£2 + £1 = £3. 50p + 20p + 5p = 75p. So £3.75."
+        },
+        {
+          "type": "mc",
+          "q": "Write 245p in pounds.",
+          "options": [
+            "£2.45",
+            "£24.5",
+            "£245",
+            "£0.245"
+          ],
+          "answer": 0,
+          "hint": "100p = £1. How many whole hundreds are in 245?",
+          "explain": "245p = 200p + 45p = £2 and 45p = £2.45."
+        },
+        {
+          "type": "num",
+          "q": "How many pence is £4.08?",
+          "answer": "408",
+          "unit": "p",
+          "hint": "£4 is 400p.",
+          "explain": "400p + 8p = 408p."
+        },
+        {
+          "type": "mc",
+          "q": "How do you write 6 pounds and 5 pence?",
+          "options": [
+            "£6.05",
+            "£6.5",
+            "£6.50",
+            "£65"
+          ],
+          "answer": 0,
+          "hint": "Pence always use two digits after the point.",
+          "explain": "5 pence is written 05 after the point: £6.05."
+        },
+        {
+          "type": "num",
+          "q": "How many 20p coins make £1?",
+          "answer": "5",
+          "unit": "coins",
+          "hint": "£1 = 100p. How many 20s make 100?",
+          "explain": "100 ÷ 20 = 5 coins."
+        }
+      ]
+    },
+    {
+      "slug": "adding-money",
+      "title": "Adding prices",
+      "blurb": "Find the total cost.",
+      "learn": [
+        {
+          "h": "Pounds, then pence",
+          "p": "£3.40 + £2.35: pounds 3 + 2 = 5, pence 40 + 35 = 75. Total £5.75."
+        },
+        {
+          "h": "When pence go over 100",
+          "p": "£1.80 + £2.50: pounds 1 + 2 = 3, pence 80 + 50 = 130p = £1.30. Total £3 + £1.30 = £4.30."
+        },
+        {
+          "h": "Prices ending in 99",
+          "p": "£1.99 is just 1p less than £2. So £1.99 + £3.99 is £2 + £4 − 2p = £5.98."
+        }
+      ],
+      "questions": [
+        {
+          "type": "num",
+          "q": "A comic costs £2.30 and a drink costs £1.45. What is the total in pounds?",
+          "answer": "3.75",
+          "unit": "pounds",
+          "hint": "Pounds: 2 + 1. Pence: 30 + 45.",
+          "explain": "£3 + 75p = £3.75."
+        },
+        {
+          "type": "num",
+          "q": "£1.70 + £2.60 = ? (in pounds)",
+          "answer": "4.3",
+          "unit": "pounds",
+          "hint": "70p + 60p is more than £1.",
+          "explain": "£3 + 130p = £3 + £1.30 = £4.30."
+        },
+        {
+          "type": "num",
+          "q": "Three apples cost 35p each. How much is that in pence?",
+          "answer": "105",
+          "unit": "p",
+          "hint": "35 + 35 + 35.",
+          "explain": "35 × 3 = 105p, which is £1.05."
+        },
+        {
+          "type": "num",
+          "q": "A pen costs £0.99 and a notebook costs £2.99. What is the total in pounds?",
+          "answer": "3.98",
+          "unit": "pounds",
+          "hint": "Think £1 + £3, then take away 2p.",
+          "explain": "£1 + £3 = £4, minus 2p = £3.98."
+        },
+        {
+          "type": "num",
+          "q": "A sandwich costs £2.85, crisps 60p and a juice 95p. What is the total in pounds?",
+          "answer": "4.4",
+          "unit": "pounds",
+          "hint": "Change everything to pence first: 285 + 60 + 95.",
+          "explain": "285 + 60 + 95 = 440p = £4.40."
+        },
+        {
+          "type": "mc",
+          "q": "Which two items together cost exactly £5? Ball £3.75, kite £1.25, game £2.60, cap £1.45",
+          "options": [
+            "Ball and kite",
+            "Ball and cap",
+            "Kite and game",
+            "Game and cap"
+          ],
+          "answer": 0,
+          "hint": "Look for pence that add up to 100, like 75p and 25p.",
+          "explain": "£3.75 + £1.25: pounds 3 + 1 = 4, pence 75 + 25 = 100p = £1. Total £5.00."
+        }
+      ]
+    },
+    {
+      "slug": "change",
+      "title": "Giving change",
+      "blurb": "Count on from the price to the money you paid.",
+      "learn": [
+        {
+          "h": "Count on",
+          "p": "You buy a toy for £3.60 and pay with a £5 note. Count on from £3.60: 40p takes you to £4, then £1 takes you to £5. Change: £1.40."
+        },
+        {
+          "h": "Or take away",
+          "p": "You can also work out £5.00 − £3.60 = £1.40. Counting on is often easier in your head, and it's how shop assistants used to count change into your hand."
+        },
+        {
+          "h": "Check",
+          "p": "Price + change should equal the money you paid: £3.60 + £1.40 = £5.00. ✔"
+        }
+      ],
+      "questions": [
+        {
+          "type": "num",
+          "q": "You buy a drink for 65p and pay with £1. How much change do you get?",
+          "answer": "35",
+          "unit": "p",
+          "hint": "Count on from 65p to 100p.",
+          "explain": "65 + 5 = 70, then 30 more to 100. Change: 35p."
+        },
+        {
+          "type": "num",
+          "q": "A book costs £4.20. You pay with a £5 note. How much change in pence?",
+          "answer": "80",
+          "unit": "p",
+          "hint": "Count on from £4.20 to £5.",
+          "explain": "£4.20 + 80p = £5. Change: 80p."
+        },
+        {
+          "type": "num",
+          "q": "A T-shirt costs £7.35. You pay with £10. How much change in pounds?",
+          "answer": "2.65",
+          "unit": "pounds",
+          "hint": "£7.35 → £7.40 → £8 → £10.",
+          "explain": "5p + 60p + £2 = £2.65."
+        },
+        {
+          "type": "num",
+          "q": "You spend £13.50 and pay with a £20 note. How much change in pounds?",
+          "answer": "6.5",
+          "unit": "pounds",
+          "hint": "£13.50 → £14 → £20.",
+          "explain": "50p + £6 = £6.50."
+        },
+        {
+          "type": "num",
+          "q": "Two cinema snacks cost £2.45 each. You pay with £5. How much change in pence?",
+          "answer": "10",
+          "unit": "p",
+          "hint": "First find the total: £2.45 + £2.45.",
+          "explain": "£2.45 × 2 = £4.90. £5.00 − £4.90 = 10p."
+        },
+        {
+          "type": "mc",
+          "q": "Ben buys a game for £8.75 and pays with £10. He gets £2.25 change. Is that right?",
+          "options": [
+            "No, it should be £1.25",
+            "Yes, that's right",
+            "No, it should be £1.75",
+            "No, it should be £2.75"
+          ],
+          "answer": 0,
+          "hint": "Check: does £8.75 + £2.25 make £10?",
+          "explain": "£8.75 + £2.25 = £11, too much. Count on: 25p to £9, then £1 to £10. Change £1.25."
+        }
+      ]
+    },
+    {
+      "slug": "times-and-share-money",
+      "title": "Multiplying and sharing money",
+      "blurb": "Several of the same item, or splitting a bill.",
+      "learn": [
+        {
+          "h": "Lots of the same",
+          "p": "4 tickets at £2.50 each: 4 × £2 = £8 and 4 × 50p = £2. Total £10."
+        },
+        {
+          "h": "Use pence if it helps",
+          "p": "6 pencils at 45p: 6 × 45 = 270p = £2.70."
+        },
+        {
+          "h": "Sharing",
+          "p": "3 friends share a £12.60 pizza bill equally: £12 ÷ 3 = £4 and 60p ÷ 3 = 20p. Each pays £4.20."
+        }
+      ],
+      "questions": [
+        {
+          "type": "num",
+          "q": "5 stickers cost 30p each. How much is that in pence?",
+          "answer": "150",
+          "unit": "p",
+          "hint": "5 × 30.",
+          "explain": "5 × 30 = 150p = £1.50."
+        },
+        {
+          "type": "num",
+          "q": "3 bus tickets cost £1.75 each. What is the total in pounds?",
+          "answer": "5.25",
+          "unit": "pounds",
+          "hint": "3 × £1 = £3, and 3 × 75p.",
+          "explain": "3 × 75p = 225p = £2.25. £3 + £2.25 = £5.25."
+        },
+        {
+          "type": "num",
+          "q": "4 friends share £10 equally. How much does each get, in pounds?",
+          "answer": "2.5",
+          "unit": "pounds",
+          "hint": "£10 = 1,000p. Divide by 4.",
+          "explain": "1,000 ÷ 4 = 250p = £2.50 each."
+        },
+        {
+          "type": "num",
+          "q": "A box of 6 doughnuts costs £3.60. How much is one doughnut in pence?",
+          "answer": "60",
+          "unit": "p",
+          "hint": "£3.60 = 360p. Divide by 6.",
+          "explain": "360 ÷ 6 = 60p."
+        },
+        {
+          "type": "num",
+          "q": "You save £1.50 every week. How many pounds will you have after 8 weeks?",
+          "answer": "12",
+          "unit": "pounds",
+          "hint": "8 × £1 and 8 × 50p.",
+          "explain": "£8 + £4 = £12."
+        },
+        {
+          "type": "num",
+          "q": "10 packs of cards cost £24.90. How much is one pack in pounds?",
+          "answer": "2.49",
+          "unit": "pounds",
+          "hint": "Dividing by 10 moves each digit one place to the right.",
+          "explain": "£24.90 ÷ 10 = £2.49."
+        }
+      ]
+    },
+    {
+      "slug": "best-buys-and-budgets",
+      "title": "Best buys and budgets",
+      "blurb": "Which is the better deal? Can you afford it?",
+      "learn": [
+        {
+          "h": "Compare the price of one",
+          "p": "Pack A: 4 rolls for £2. Pack B: 6 rolls for £2.70. One roll in A costs 200p ÷ 4 = 50p. One roll in B costs 270p ÷ 6 = 45p. B is the better buy."
+        },
+        {
+          "h": "Make the amounts the same",
+          "p": "Or compare the same amount: 12 rolls would be 3 packs of A (£6) or 2 packs of B (£5.40). B is cheaper again."
+        },
+        {
+          "h": "Budgets",
+          "p": "A budget is the most you can spend. If you have £10, add up the prices as you go and stop before you go over."
+        }
+      ],
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Which is the better buy? 2 pens for £1.20 or 5 pens for £2.50?",
+          "options": [
+            "5 pens for £2.50",
+            "2 pens for £1.20",
+            "They cost the same per pen"
+          ],
+          "answer": 0,
+          "hint": "Find the price of one pen in each pack.",
+          "explain": "120p ÷ 2 = 60p per pen. 250p ÷ 5 = 50p per pen. So 5 for £2.50 is better."
+        },
+        {
+          "type": "mc",
+          "q": "Which is the better buy? 3 bananas for 90p or 4 bananas for £1.00?",
+          "options": [
+            "4 for £1.00",
+            "3 for 90p",
+            "They cost the same per banana"
+          ],
+          "answer": 0,
+          "hint": "Price of one banana: 90 ÷ 3 and 100 ÷ 4.",
+          "explain": "90 ÷ 3 = 30p, 100 ÷ 4 = 25p. 4 for £1 is the better buy."
+        },
+        {
+          "type": "mc",
+          "q": "You have £10. Which shopping can you afford? Paint £4.50, brushes £3.75, paper £2.40.",
+          "options": [
+            "Paint and brushes",
+            "All three",
+            "Paint, brushes and two packs of paper",
+            "None of them"
+          ],
+          "answer": 0,
+          "hint": "Add up each choice and compare with £10.",
+          "explain": "Paint + brushes = £8.25, under £10. All three = £10.65, which is over budget."
+        },
+        {
+          "type": "num",
+          "q": "A school trip costs £18. Amy has saved £11.50. How much more does she need, in pounds?",
+          "answer": "6.5",
+          "unit": "pounds",
+          "hint": "Count on from £11.50 to £18.",
+          "explain": "50p to £12, then £6 to £18. £6.50 more."
+        },
+        {
+          "type": "num",
+          "q": "A cafe offers 3 cookies for the price of 2. Cookies are 80p each. How much do you pay for 3, in pence?",
+          "answer": "160",
+          "unit": "p",
+          "hint": "You only pay for 2.",
+          "explain": "2 × 80p = 160p = £1.60."
+        },
+        {
+          "type": "mc",
+          "q": "A £20 jumper is in a sale with £5 off. What is the sale price?",
+          "options": [
+            "£15",
+            "£25",
+            "£4",
+            "£19.95"
+          ],
+          "answer": 0,
+          "hint": "Take £5 away.",
+          "explain": "£20 − £5 = £15."
+        }
+      ]
+    }
+  ]
+}

@@ -35,6 +35,9 @@
     { id: 'topic-times-tables', icon: '✖️', name: 'Times table hero', desc: 'Finish every Times tables unit.' },
     { id: 'topic-place-value', icon: '🔢', name: 'Place value pro', desc: 'Finish every Place value unit.' },
     { id: 'topic-mental-maths', icon: '🧠', name: 'Brain power', desc: 'Finish every Mental maths unit.' },
+    { id: 'topic-telling-the-time', icon: '⏰', name: 'Time keeper', desc: 'Finish every Telling the time unit.' },
+    { id: 'topic-money', icon: '💷', name: 'Money whizz', desc: 'Finish every Money unit.' },
+    { id: 'topic-shapes', icon: '🔷', name: 'Shape spotter', desc: 'Finish every Shapes unit.' },
     { id: 'tt-map', icon: '🗺️', name: 'Times table map', desc: 'Colour in the whole times table map in the Times Table Trainer.' },
     { id: 'welcome-back', icon: '👋', name: 'Welcome back', desc: 'Come back after a few days away.' }
   ];

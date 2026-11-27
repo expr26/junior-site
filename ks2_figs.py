@@ -15,7 +15,7 @@ NAVY, GOLD, GOLD_LT, FUN, SCI, CARD = "var(--navy)", "var(--gold)", "var(--gold-
 
 
 def _svg(w, h, inner, label):
-    return (f'<svg class="fig" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="{html.escape(label, quote=True)}">'
+    return (f'<svg class="fig ks2fig" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="{html.escape(label, quote=True)}">'
             f'{inner}</svg>')
 
 

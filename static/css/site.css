@@ -1024,3 +1024,12 @@ button.am-tile:hover:not(:disabled){transform:translateY(-3px)}button.am-tile:di
 .diag-lv{font-weight:700;font-size:15px;color:var(--navy)}
 @media (min-width:640px){.diag-row{grid-template-columns:36px 1fr auto}.diag-ic{grid-row:auto}}
 @media print{.diag-row{break-inside:avoid}}
+/* For parents (/parents/) */
+.pg-acts{list-style:none;padding:0;display:grid;gap:12px;counter-reset:pg}
+.pg-acts li{counter-increment:pg;position:relative;padding-left:64px}
+.pg-acts li::before{content:counter(pg);position:absolute;left:16px;top:18px;width:34px;height:34px;border-radius:50%;background:var(--fun);color:#fff;font:700 18px/34px var(--serif);text-align:center}
+.pg-acts h3{margin:0 0 4px}
+.cm-stage{margin-bottom:16px}.cm-stage h2 small{font-size:15px;color:var(--muted);font-weight:400}
+.cm-cols{display:grid;gap:8px 24px}@media (min-width:800px){.cm-cols{grid-template-columns:1fr 1fr}}
+.cm-list{padding-left:20px}.cm-list li{margin:6px 0}
+.cm-go{white-space:nowrap;font-size:15px;font-weight:700}

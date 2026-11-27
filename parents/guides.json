@@ -1,0 +1,157 @@
+{
+  "_about": "Help-at-home guides for parents: one page each at /parents/<slug>/. Facts must be accurate; written for parents in UK English.",
+  "guides": [
+    {
+      "slug": "help-with-times-tables",
+      "icon": "✖️",
+      "title": "How to help your child learn their times tables",
+      "short": "Times tables",
+      "description": "Practical, low-stress ways to help your child learn the times tables up to 12 × 12 at home: patterns, games in the car, what to do about the tricky facts, and free practice with no timer.",
+      "years": "Years 2 to 4, with practice continuing into Years 5 and 6",
+      "why": "Quick recall of multiplication facts frees up working memory for everything that comes next: long multiplication, division, fractions, area, ratio and algebra. In England children are expected to know all facts up to 12 × 12 by the end of Year 4, and there is a Multiplication Tables Check in Year 4. Many children are still building confidence in Years 5 and 6, and that is normal.",
+      "learn": ["The 2, 5 and 10 times tables first, then 3, 4 and 8, then 6, 7, 9, 11 and 12.", "That 3 × 4 and 4 × 3 are the same (so there are far fewer facts than it looks).", "Division facts as times tables “backwards”: if 6 × 7 = 42 then 42 ÷ 7 = 6."],
+      "activities": [
+        ["Learn one family at a time", "Pick one table a week. Say it, write it, then mix the order. Link families: the 4s are double the 2s and the 8s are double the 4s."],
+        ["Spot patterns together", "The 5s end in 5 or 0. In the 9s up to 9 × 10, the digits add to 9 (18, 27, 36…). The 11s up to 9 × 11 repeat the digit. Children remember what they discover."],
+        ["Little and often", "Five minutes a day beats an hour on Sunday. Car journeys, walking to school, or while dinner cooks are perfect."],
+        ["Use a fact you know", "Stuck on 7 × 8? 7 × 4 = 28, double it: 56. Stuck on 9 × 6? 10 × 6 = 60, take away 6: 54. These strategies matter more than chanting."],
+        ["Play, don't test", "Take turns asking each other, and let your child catch you out. Card games (turn over two cards, multiply) work well."]
+      ],
+      "mistakes": ["Mixing up neighbours such as 6 × 8 = 48 and 7 × 8 = 56. Practise them side by side.", "Counting up on fingers from zero every time. Show how to start from a known fact instead.", "Anxiety from being timed. Accuracy first; speed comes naturally with practice."],
+      "links": [["Times tables topic", "/maths/times-tables/"], ["Times Table Trainer (no timer)", "/games/times-table-trainer/"]]
+    },
+    {
+      "slug": "help-with-place-value",
+      "icon": "🔢",
+      "title": "How to help your child understand place value",
+      "short": "Place value",
+      "description": "What place value is, why it underpins all of primary Maths, and simple everyday ways to help your child read big numbers, round, and understand decimals.",
+      "years": "Every year from Year 1; numbers up to 1,000,000 in Year 5 and 10,000,000 in Year 6",
+      "why": "Place value is the idea that a digit's value depends on its position: the 5 in 503 is worth 500, but in 35 it is worth 5. Written methods, rounding, decimals, ×10 and ÷10, and later standard form all rely on it. Gaps here often show up later as “careless” mistakes.",
+      "learn": ["The value of each digit in numbers up to 10,000,000.", "Rounding to the nearest 10, 100, 1,000 and so on.", "Tenths, hundredths and thousandths, and multiplying and dividing by 10, 100 and 1,000."],
+      "activities": [
+        ["Read big numbers in the wild", "House prices, football crowds, distances on road signs, the number of views on a video. Ask “What is the 4 worth?”"],
+        ["Money makes it real", "£3.45 is 3 pounds, 4 ten-pences and 5 pennies. Counting coins shows hundredths in a natural way."],
+        ["Make the biggest number", "Roll a dice four times and arrange the digits to make the biggest and smallest number. Then say them out loud."],
+        ["Round when you estimate", "In the supermarket: “It's £2.89, about £3.” Rounding feels useful when it helps make a decision."],
+        ["Zero is a placeholder", "Ask what happens if you forget the 0 in 4,072. It becomes 472. That shows why zero matters."]
+      ],
+      "mistakes": ["Reading 4,072 as “four thousand seven hundred and two”.", "Thinking 0.45 is bigger than 0.5 because 45 is bigger than 5. Compare tenths first.", "“Adding a zero” to multiply by 10 with decimals (3.4 × 10 is not 3.40). Talk about digits moving instead."],
+      "links": [["Place value topic", "/maths/place-value/"], ["Rounding Rollercoaster game", "/games/rounding-rollercoaster/"]]
+    },
+    {
+      "slug": "help-with-mental-maths",
+      "icon": "🧠",
+      "title": "How to help your child with mental maths",
+      "short": "Mental maths",
+      "description": "Simple strategies and everyday games that build confident mental maths: number bonds, near tens, doubling and halving, and estimating to check answers.",
+      "years": "Years 3 to 6, and used every day at secondary school",
+      "why": "Mental maths is not about being fast. It is about knowing several ways to work something out and choosing a sensible one. Children who can estimate and calculate in their head spot their own mistakes in written work, and feel more confident.",
+      "learn": ["Number bonds to 10, 100 and 1,000.", "Adding and subtracting near multiples of 10 (+ 9 is + 10 − 1).", "Doubling, halving, × 5 as × 10 then halve, and estimating by rounding."],
+      "activities": [
+        ["Change in your head", "When paying with cash, ask how much change you should get before the shop assistant gives it."],
+        ["Number plate sums", "Make 10 or 100 from the digits on number plates, or find the biggest total."],
+        ["Double it, halve it", "Recipes for 2 people that need to feed 4, or half a pizza between 3 people: lots of real doubling and halving."],
+        ["Ask “How did you do it?”", "Ask how your child got their answer, and share your own method. There is usually more than one good way."],
+        ["Estimate first", "Before a calculation, ask “About how much will it be?” Then check the answer is close."]
+      ],
+      "mistakes": ["Always using the written method, even for 1,000 − 999.", "Forgetting to adjust: 47 + 29 = 47 + 30 − 1, not + 1.", "Not checking whether an answer is sensible."],
+      "links": [["Mental maths topic", "/maths/mental-maths/"], ["Daily challenge", "/daily/"]]
+    },
+    {
+      "slug": "help-with-fractions",
+      "icon": "🍕",
+      "title": "How to help your child with fractions",
+      "short": "Fractions",
+      "description": "Why fractions are tricky, what children learn about them in Years 4 to 7, and practical kitchen-table activities to help them understand equivalent fractions, comparing and adding.",
+      "years": "Year 1 onwards; most of the hard work happens in Years 4 to 7",
+      "why": "Fractions are often the first time numbers don't behave the way children expect: {1/8} is smaller than {1/4} even though 8 is bigger than 4. A strong picture of what a fraction means makes decimals, percentages, ratio and algebra much easier later.",
+      "learn": ["A fraction as equal parts of a whole, and as a point on a number line.", "Equivalent fractions and simplifying.", "Comparing, adding and subtracting fractions, and fractions of amounts. In Year 6, multiplying fractions and dividing a fraction by a whole number."],
+      "activities": [
+        ["Cook together", "Measuring cups, halving a recipe, cutting a cake into equal slices. Ask: if we cut it into 8 instead of 4, is each slice bigger or smaller?"],
+        ["Fold paper", "Fold a strip in half, then half again. Show that {2/4} covers the same as {1/2}."],
+        ["Share fairly", "Share 12 sweets between 3: each gets {1/3}, which is 4 sweets. That's a fraction of an amount."],
+        ["Fractions on a ruler or measuring jug", "Find {1/2}, {1/4} and {3/4} of a litre or of a metre."],
+        ["Talk about time", "Half an hour, a quarter of an hour: link fractions to the clock."]
+      ],
+      "mistakes": ["Adding tops and bottoms: {1/2} + {1/3} is not {2/5}.", "Thinking a bigger denominator means a bigger fraction.", "Forgetting that the parts must be equal."],
+      "links": [["Fractions topic", "/maths/fractions/"], ["Pizza Fractions game", "/games/pizza-fractions/"]]
+    },
+    {
+      "slug": "help-with-telling-the-time",
+      "icon": "⏰",
+      "title": "How to help your child tell the time",
+      "short": "Telling the time",
+      "description": "Step-by-step ways to help your child read an analogue clock, use the 24-hour clock and work out durations, with everyday activities and the common mistakes to watch for.",
+      "years": "Years 1 to 4 for reading clocks; durations and the 24-hour clock through Years 4 to 6",
+      "why": "Many children can read digital time but find analogue clocks hard, and the way time works (60 minutes, not 100) causes mistakes in duration problems right up to secondary school. Time questions appear in tests at the end of primary school.",
+      "learn": ["Reading analogue clocks to the nearest minute, using past and to.", "am and pm, and converting to and from the 24-hour clock.", "Working out how long something takes, and converting between units of time."],
+      "activities": [
+        ["Have an analogue clock at home", "A real clock on the wall gets read many times a day without any effort."],
+        ["Plan the day together", "“We leave at quarter to 9. What time is it now? How long have we got?”"],
+        ["Read timetables", "Bus, train and cinema times use the 24-hour clock. Work out when you'll arrive."],
+        ["Cooking timers", "“It needs 35 minutes and it's 5:40 now. When is it ready?”"],
+        ["Count on, not back", "For durations, show counting on to the next hour first: 2:40 to 3:00 is 20 minutes, then on to 4:15."]
+      ],
+      "mistakes": ["Reading the hour from the wrong hand, or reading “25 to 4” as 4:25.", "Treating time like decimals: 1:50 + 20 minutes is 2:10, not 1:70.", "Mixing up 12:00 (midday) and 00:00 (midnight)."],
+      "links": [["Telling the time topic", "/maths/telling-the-time/"]]
+    },
+    {
+      "slug": "help-with-money-maths",
+      "icon": "💷",
+      "title": "How to help your child with money maths",
+      "short": "Money",
+      "description": "Everyday ways to build your child's confidence with pounds and pence, adding prices, working out change, best buys and budgeting, plus the mistakes to look out for.",
+      "years": "Years 1 to 6, and useful for life",
+      "why": "Money is the most natural place for children to practise decimals, adding, subtracting and multiplying, and it builds good habits for life. With fewer people paying in cash, many children rarely see coins, so a little practice at home makes a real difference.",
+      "learn": ["Pounds and pence: 100p = £1, and writing amounts like £5.07.", "Adding prices and working out change.", "Comparing prices (best buys) and staying within a budget."],
+      "activities": [
+        ["Let them pay", "Give your child the money to pay for something small and check the change together."],
+        ["Pocket money planning", "If they save £2 a week, when can they buy the £15 game?"],
+        ["Shopping budget", "Give a budget for snacks for a trip. They add up as they go and must not go over."],
+        ["Best buy detective", "Compare a big pack and a small pack in the supermarket: which costs less per item?"],
+        ["Play shop", "With younger children, use real coins to make amounts in different ways."]
+      ],
+      "mistakes": ["Writing £5.7 for 5 pounds and 7 pence (it should be £5.07).", "Mixing pounds and pence in one sum (£2 + 50 = £52?).", "Forgetting to carry when pence add to more than 100."],
+      "links": [["Money topic", "/maths/money/"]]
+    },
+    {
+      "slug": "help-with-shapes-and-angles",
+      "icon": "🔷",
+      "title": "How to help your child with shapes and angles",
+      "short": "Shapes and angles",
+      "description": "Help your child learn the names and properties of 2D and 3D shapes, types of angle, symmetry, perimeter and area with hands-on activities you can do at home.",
+      "years": "Every year in primary; angles, perimeter and area mostly in Years 4 to 6",
+      "why": "Geometry builds spatial reasoning, which helps in Maths, Science, design and many jobs. The vocabulary (parallel, vertex, perpendicular, reflex) needs to be secure before secondary school, where it is used without explanation.",
+      "learn": ["Names and properties of 2D shapes, including different triangles and quadrilaterals.", "Acute, obtuse, right and reflex angles; angles on a line add to 180° and in a triangle add to 180°.", "Lines of symmetry, faces, edges and vertices of 3D shapes, and perimeter and area of rectangles."],
+      "activities": [
+        ["Shape hunt", "Find a cylinder, a cuboid, a hexagon and a right angle in the kitchen or on a walk."],
+        ["Build with boxes", "Unfold a cereal box to see its net; count faces, edges and vertices."],
+        ["Measure a room", "Measure a rug or table and work out its perimeter and area."],
+        ["Mirror and fold", "Fold paper cut-outs to find lines of symmetry, or check letters and logos with a small mirror."],
+        ["Turn and face", "Use quarter and half turns (90° and 180°) in games and directions."]
+      ],
+      "mistakes": ["Calling any four-sided shape a square.", "Mixing up perimeter (around) and area (inside).", "Thinking a rectangle has 4 lines of symmetry (it has 2, unless it's a square)."],
+      "links": [["Shapes topic", "/maths/shapes/"], ["Angle Cannon game", "/games/angle-cannon/"]]
+    },
+    {
+      "slug": "help-with-science-at-home",
+      "icon": "🔬",
+      "title": "How to help your child with Science at home",
+      "short": "Science",
+      "description": "Simple, safe ways to support your child's Science learning at home for ages 9 to 14: asking good questions, everyday investigations, and the key words they need for KS3 Physics.",
+      "years": "Years 5 to 9 (upper KS2 and KS3)",
+      "why": "Science at secondary school is about explaining why things happen and testing ideas fairly, not just remembering facts. Children who are used to asking “What would happen if…?” and talking about their predictions find KS3 much easier.",
+      "learn": ["Forces, energy, electricity, light, sound and space (Physics).", "Planning a fair test: change one thing, keep the rest the same.", "Using key words accurately, such as mass and weight, or energy store and transfer."],
+      "activities": [
+        ["Wonder out loud", "Why does the ice melt faster on the metal tray? Why does the bus jolt when it brakes? Guess first, then find out together."],
+        ["Kitchen investigations", "Which paper towel soaks up the most water? Keep everything the same except the towel. That's a fair test."],
+        ["Read the bills", "Look at an energy bill together: kilowatt-hours, cost per unit, and which appliances use most."],
+        ["Look up at night", "Spot the Moon's shape changing over a month and talk about why."],
+        ["Use the right words", "Weight is a force measured in newtons; mass is in kilograms. Small precise words make a big difference at KS3."]
+      ],
+      "mistakes": ["Saying “heavier things fall faster” (without air resistance, they fall at the same rate).", "Mixing up mass and weight.", "Changing more than one thing in an experiment."],
+      "links": [["Physics questions", "/question-bank/physics/"], ["Science videos", "/videos/"], ["Forces and motion topic", "/science/forces-and-motion/"]]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "slug": "missions",
+  "subject": "maths",
+  "title": "Real-life maths missions",
+  "seo_title": "Real-life maths problems for ages 9 to 14: missions with money, time and more",
+  "level": "Years 5 to 8",
+  "description": "Real-life maths word problems as story missions: plan a party on a budget, bake for the school fair, plan a train trip, design a garden, run sports day and save up for a bike. Multi-step problems with hints, for ages 9 to 14.",
+  "intro": "Maths isn't just for school. Each mission is a story where you use Maths to make real decisions: money, time, recipes, space and data. Read carefully, and use the hints if you get stuck.",
+  "hero_fig": {"type": "coins", "items": ["£5", "£2", "50p"]},
+  "units": [
+    {
+      "slug": "party-planner",
+      "title": "Mission 1: Party planner",
+      "blurb": "Plan a birthday party for 12 friends with a £60 budget.",
+      "learn": [
+        {"h": "Your mission", "p": "You are planning a party for **12 guests** (you included). You have a budget of **£60**. Pizzas cost £6.50 each and one pizza feeds 3 people. Party bags cost £1.75 each. Balloons come in packs of 10 for £2.40."},
+        {"h": "Mission tips", "p": "Read each question twice. Underline the numbers you need. Write down each step, and check your answer makes sense: you can't buy half a pizza!"}
+      ],
+      "questions": [
+        {"type": "num", "q": "One pizza feeds 3 people. How many pizzas do you need for 12 people?", "answer": "4", "unit": "pizzas", "hint": "How many groups of 3 are there in 12?", "explain": "12 ÷ 3 = 4 pizzas."},
+        {"type": "num", "q": "Pizzas cost £6.50 each. How many pounds do 4 pizzas cost?", "answer": "26", "unit": "pounds", "hint": "4 × £6 and 4 × 50p.", "explain": "4 × £6 = £24 and 4 × 50p = £2. Total £26."},
+        {"type": "num", "q": "Party bags cost £1.75 each. How many pounds do 12 party bags cost?", "answer": "21", "unit": "pounds", "hint": "12 × £1.75: try 12 × £1 and 12 × 75p.", "explain": "12 × £1 = £12. 12 × 75p = 900p = £9. Total £21."},
+        {"type": "num", "q": "You want 25 balloons. Balloons come in packs of 10. How many packs must you buy?", "answer": "3", "unit": "packs", "hint": "2 packs give 20 balloons. Is that enough?", "explain": "2 packs = 20 balloons, not enough. You need 3 packs (30 balloons)."},
+        {"type": "num", "q": "Pizzas £26, party bags £21 and 3 packs of balloons at £2.40 each. What is the total, in pounds?", "answer": "54.2", "unit": "pounds", "hint": "First 3 × £2.40. Then add everything.", "explain": "3 × £2.40 = £7.20. £26 + £21 + £7.20 = £54.20."},
+        {"type": "num", "q": "Your budget is £60. How much money is left, in pounds?", "answer": "5.8", "unit": "pounds", "hint": "£60 − £54.20. Count on from £54.20.", "explain": "£54.20 + 80p = £55, + £5 = £60. £5.80 is left."},
+        {"type": "mc", "q": "With the money left, can you buy a £4.99 cake?", "options": ["Yes, with 81p to spare", "No, you're 81p short", "Yes, with £1.81 to spare", "No, you're £1.81 short"], "answer": 0, "hint": "Compare £5.80 with £4.99.", "explain": "£5.80 − £4.99 = 81p. Yes, with 81p to spare."}
+      ]
+    },
+    {
+      "slug": "school-fair-baker",
+      "title": "Mission 2: Bake for the school fair",
+      "blurb": "Scale a recipe up and work out your profit.",
+      "learn": [
+        {"h": "Your mission", "p": "This recipe makes **12 cookies**: 200 g flour, 100 g butter, 80 g sugar, 1 egg. You need **36 cookies** for the school fair, and you'll sell them for 40p each."},
+        {"h": "Scaling a recipe", "p": "If you need 3 times as many cookies, you need 3 times as much of every ingredient. That's using a **ratio**: the amounts stay in proportion."}
+      ],
+      "questions": [
+        {"type": "num", "q": "How many times bigger is 36 cookies than 12 cookies?", "answer": "3", "unit": "times", "hint": "36 ÷ 12.", "explain": "36 ÷ 12 = 3. You need to make the recipe 3 times bigger."},
+        {"type": "num", "q": "How many grams of flour do you need for 36 cookies?", "answer": "600", "unit": "g", "hint": "3 × 200 g.", "explain": "3 × 200 = 600 g of flour."},
+        {"type": "num", "q": "How many grams of sugar do you need for 36 cookies?", "answer": "240", "unit": "g", "hint": "3 × 80 g.", "explain": "3 × 80 = 240 g of sugar."},
+        {"type": "num", "q": "Butter comes in 250 g blocks. How many blocks do you need for 300 g?", "answer": "2", "unit": "blocks", "hint": "One block isn't enough.", "explain": "1 block = 250 g, not enough. 2 blocks = 500 g. You need 2 blocks."},
+        {"type": "num", "q": "You sell all 36 cookies at 40p each. How many pounds do you take?", "answer": "14.4", "unit": "pounds", "hint": "36 × 40p, then change to pounds.", "explain": "36 × 40 = 1,440p = £14.40."},
+        {"type": "num", "q": "The ingredients cost £5.90. How much profit do you make, in pounds?", "answer": "8.5", "unit": "pounds", "hint": "Profit = money taken − cost.", "explain": "£14.40 − £5.90 = £8.50 profit for the school."},
+        {"type": "num", "q": "One batch of 12 takes 15 minutes in the oven, and only one batch fits at a time. How many minutes for all 36?", "answer": "45", "unit": "minutes", "hint": "How many batches?", "explain": "3 batches × 15 minutes = 45 minutes."}
+      ]
+    },
+    {
+      "slug": "train-trip",
+      "title": "Mission 3: The big train trip",
+      "blurb": "Read a timetable and plan a day out.",
+      "learn": [
+        {"h": "Your mission", "p": "Your family is going to the seaside by train. Trains leave town at **08:45, 09:20 and 10:15**. The journey takes **1 hour 35 minutes**. Adult tickets cost £18.50 and child tickets are half price."},
+        {"h": "Timetable tips", "p": "Timetables use the 24-hour clock. To add a time, add the hours first, then the minutes, and remember there are 60 minutes in an hour."}
+      ],
+      "questions": [
+        {"type": "mc", "q": "You take the 09:20 train. When do you arrive?", "options": ["10:55", "10:35", "11:55", "10:95"], "answer": 0, "hint": "09:20 + 1 hour = 10:20. Then add 35 minutes.", "explain": "10:20 + 35 minutes = 10:55."},
+        {"type": "mc", "q": "You must arrive by 11:00. Which is the latest train you can catch?", "options": ["09:20", "08:45", "10:15", "None of them"], "answer": 0, "hint": "Work out when the 10:15 arrives.", "explain": "The 10:15 arrives at 11:50, too late. The 09:20 arrives at 10:55, just in time."},
+        {"type": "num", "q": "A child ticket is half of £18.50. How much is it, in pounds?", "answer": "9.25", "unit": "pounds", "hint": "Half of £18 and half of 50p.", "explain": "£9 + 25p = £9.25."},
+        {"type": "num", "q": "Tickets for 2 adults and 2 children. What is the total, in pounds?", "answer": "55.5", "unit": "pounds", "hint": "2 × £18.50 + 2 × £9.25.", "explain": "£37 + £18.50 = £55.50."},
+        {"type": "num", "q": "You leave the beach at 16:10 and the train home arrives at 17:45. How many minutes is that?", "answer": "95", "unit": "minutes", "hint": "16:10 to 17:10 is 60 minutes. Then to 17:45.", "explain": "60 + 35 = 95 minutes (1 hour 35 minutes)."},
+        {"type": "num", "q": "The train travels 120 km in 1 hour 30 minutes. How many km is that per hour?", "answer": "80", "unit": "km per hour", "hint": "In 30 minutes it goes a third of the way. So in 1 hour…", "explain": "1 hour 30 minutes is 3 lots of 30 minutes. 120 ÷ 3 = 40 km every 30 minutes, so 80 km per hour."}
+      ]
+    },
+    {
+      "slug": "garden-designer",
+      "title": "Mission 4: Design a garden",
+      "blurb": "Fences, grass and flower beds: perimeter and area.",
+      "learn": [
+        {"h": "Your mission", "p": "Your school has a rectangle of land **12 m long and 8 m wide** for a new garden. You need a fence round the outside, grass seed for the lawn, and a square flower bed **3 m by 3 m**."},
+        {"h": "Remember", "p": "**Perimeter** is the distance round the edge (metres). **Area** is the space inside (square metres, m²). Area of a rectangle = length × width."}
+      ],
+      "questions": [
+        {"type": "num", "q": "How many metres of fence go all the way round the garden?", "answer": "40", "unit": "m", "hint": "12 + 8 + 12 + 8.", "explain": "12 + 8 + 12 + 8 = 40 m."},
+        {"type": "num", "q": "There is a 2 m wide gate in the fence. How many metres of fence do you buy?", "answer": "38", "unit": "m", "hint": "The gate doesn't need fence.", "explain": "40 − 2 = 38 m."},
+        {"type": "num", "q": "What is the area of the whole garden?", "answer": "96", "unit": "m²", "hint": "12 × 8.", "explain": "12 × 8 = 96 m²."},
+        {"type": "num", "q": "What is the area of the square flower bed?", "answer": "9", "unit": "m²", "hint": "3 × 3.", "explain": "3 × 3 = 9 m²."},
+        {"type": "num", "q": "The rest of the garden is grass. What is the area of the grass?", "answer": "87", "unit": "m²", "hint": "Whole garden minus the flower bed.", "explain": "96 − 9 = 87 m²."},
+        {"type": "num", "q": "One box of grass seed covers 30 m². How many boxes do you need for 87 m²?", "answer": "3", "unit": "boxes", "hint": "2 boxes cover 60 m². Is that enough?", "explain": "2 boxes cover 60 m², not enough. 3 boxes cover 90 m². You need 3 boxes."}
+      ]
+    },
+    {
+      "slug": "sports-day",
+      "title": "Mission 5: Sports day data",
+      "blurb": "Use averages to report on the long jump.",
+      "learn": [
+        {"h": "Your mission", "p": "You are the sports day reporter. Five jumps in the long jump were: **2.1 m, 2.5 m, 1.8 m, 2.5 m and 2.6 m**. You need to work out some numbers for the school newsletter."},
+        {"h": "Averages", "p": "The **mean** is the total divided by how many there are. The **median** is the middle value when they are in order. The **mode** is the most common value. The **range** is the biggest minus the smallest."}
+      ],
+      "questions": [
+        {"type": "num", "q": "What is the longest jump, in metres?", "answer": "2.6", "unit": "m", "hint": "Compare the tenths.", "explain": "2.6 m is the longest."},
+        {"type": "num", "q": "What is the range of the jumps, in metres?", "answer": "0.8", "unit": "m", "hint": "Longest minus shortest.", "explain": "2.6 − 1.8 = 0.8 m."},
+        {"type": "num", "q": "What is the mode?", "answer": "2.5", "unit": "m", "hint": "Which jump length appears more than once?", "explain": "2.5 m appears twice, so the mode is 2.5 m."},
+        {"type": "num", "q": "Put the jumps in order. What is the median?", "answer": "2.5", "unit": "m", "hint": "Order: 1.8, 2.1, …", "explain": "In order: 1.8, 2.1, 2.5, 2.5, 2.6. The middle one is 2.5 m."},
+        {"type": "num", "q": "What is the total of all five jumps, in metres?", "answer": "11.5", "unit": "m", "hint": "2.1 + 2.5 + 1.8 + 2.5 + 2.6.", "explain": "2.1 + 2.5 + 1.8 + 2.5 + 2.6 = 11.5 m."},
+        {"type": "num", "q": "What is the mean jump, in metres?", "answer": "2.3", "unit": "m", "hint": "Total ÷ 5.", "explain": "11.5 ÷ 5 = 2.3 m."}
+      ]
+    },
+    {
+      "slug": "saving-up",
+      "title": "Mission 6: Saving up for a bike",
+      "blurb": "Percentages, discounts and a savings plan.",
+      "learn": [
+        {"h": "Your mission", "p": "You want a bike that costs **£180**. You already have **£45**. You get **£7.50 pocket money a week**. The shop has a sale coming soon."},
+        {"h": "Percentages", "p": "Per cent means “out of 100”. 10% is {1/10}, so 10% of £180 is £18. 25% is {1/4} and 50% is {1/2}."}
+      ],
+      "questions": [
+        {"type": "num", "q": "How much more money do you need, in pounds?", "answer": "135", "unit": "pounds", "hint": "£180 − £45.", "explain": "£180 − £45 = £135."},
+        {"type": "num", "q": "You save all your £7.50 a week. How many pounds do you save in 4 weeks?", "answer": "30", "unit": "pounds", "hint": "4 × £7.50.", "explain": "4 × £7.50 = £30."},
+        {"type": "num", "q": "How many weeks does it take to save £135 at £7.50 a week?", "answer": "18", "unit": "weeks", "hint": "£30 every 4 weeks. How many lots of £30 make £135? You'll need a bit more than 4 lots.", "explain": "£135 ÷ £7.50 = 18 weeks. (Check: 18 × £7.50 = £135.)"},
+        {"type": "num", "q": "The sale takes 20% off the £180 price. How much is 20% of £180, in pounds?", "answer": "36", "unit": "pounds", "hint": "10% of £180 is £18. Double it.", "explain": "10% = £18, so 20% = £36."},
+        {"type": "num", "q": "What is the sale price of the bike, in pounds?", "answer": "144", "unit": "pounds", "hint": "£180 − £36.", "explain": "£180 − £36 = £144."},
+        {"type": "num", "q": "With the sale price, how much more do you need after your £45, in pounds?", "answer": "99", "unit": "pounds", "hint": "£144 − £45.", "explain": "£144 − £45 = £99."},
+        {"type": "num", "q": "How many weeks of saving £7.50 does that take? (Round up to whole weeks.)", "answer": "14", "unit": "weeks", "hint": "13 weeks gives 13 × £7.50 = £97.50. Is that enough?", "explain": "13 weeks = £97.50, just short. 14 weeks = £105, enough. So 14 weeks: 4 weeks sooner than without the sale."}
+      ]
+    }
+  ]
+}

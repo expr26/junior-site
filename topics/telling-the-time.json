@@ -1,0 +1,106 @@
+{
+  "slug": "telling-the-time",
+  "subject": "maths",
+  "stage": "ks2",
+  "icon": "⏰",
+  "card": "Read clocks to the minute, the 24-hour clock, how long things take, and units of time.",
+  "title": "Telling the time",
+  "seo_title": "Telling the time practice: clocks, 24-hour time and durations (KS2)",
+  "level": "KS2 · Years 4 to 6",
+  "description": "Learn to tell the time on an analogue clock, to the nearest minute, convert between 12-hour and 24-hour time, work out how long things take, and convert units of time. Free practice with clock pictures for ages 9 to 11.",
+  "intro": "When does the film start? How long until lunch? Learn to read any clock, use the 24-hour clock, and work out how long things take.",
+  "hero_fig": {"type": "clock", "h": 10, "m": 10},
+  "units": [
+    {
+      "slug": "oclock-half-quarter",
+      "title": "O'clock, half past and quarter past and to",
+      "blurb": "The two hands, and the four easiest times.",
+      "learn": [
+        {"h": "Two hands", "p": "The **short hand** shows the hour. The **long hand** shows the minutes. When the long hand points straight up at 12, it's something o'clock. This clock shows 3 o'clock.", "fig": {"type": "clock", "h": 3, "m": 0}},
+        {"h": "Half past", "p": "When the long hand points down at 6, it has gone half way round: **half past**. The short hand is half way between two numbers. This is half past 3.", "fig": {"type": "clock", "h": 3, "m": 30}},
+        {"h": "Quarter past and quarter to", "p": "Long hand at 3: **quarter past** (15 minutes past). Long hand at 9: **quarter to** (15 minutes to the next hour). This clock shows quarter to 4. The short hand is nearly at 4.", "fig": {"type": "clock", "h": 3, "m": 45}}
+      ],
+      "questions": [
+        {"type": "mc", "q": "What time does this clock show?", "fig": {"type": "clock", "h": 7, "m": 0}, "options": ["7 o'clock", "12 o'clock", "half past 7", "quarter past 7"], "answer": 0, "hint": "The long hand points at 12. Where is the short hand?", "explain": "Long hand at 12 means o'clock. The short hand points at 7, so it's 7 o'clock."},
+        {"type": "mc", "q": "What time does this clock show?", "fig": {"type": "clock", "h": 9, "m": 30}, "options": ["half past 9", "half past 10", "6 o'clock", "quarter to 9"], "answer": 0, "hint": "Long hand at 6 means half past. The short hand is between 9 and 10: which hour has just gone?", "explain": "The short hand has gone past 9, so it's half past 9."},
+        {"type": "mc", "q": "What time does this clock show?", "fig": {"type": "clock", "h": 2, "m": 15}, "options": ["quarter past 2", "quarter to 2", "quarter past 3", "half past 2"], "answer": 0, "hint": "Long hand at 3 means quarter past.", "explain": "Long hand at 3: quarter past. The short hand is just past 2: quarter past 2."},
+        {"type": "mc", "q": "What time does this clock show?", "fig": {"type": "clock", "h": 11, "m": 45}, "options": ["quarter to 12", "quarter to 11", "quarter past 11", "9 o'clock"], "answer": 0, "hint": "Long hand at 9 means quarter to. The short hand is nearly at which number?", "explain": "Long hand at 9: quarter to. The short hand is nearly at 12, so it's quarter to 12."},
+        {"type": "num", "q": "How many minutes are there in a quarter of an hour?", "answer": "15", "unit": "minutes", "hint": "An hour is 60 minutes. Find a quarter of 60.", "explain": "60 ÷ 4 = 15 minutes."},
+        {"type": "mc", "q": "At half past 4, where is the short hand?", "options": ["Half way between 4 and 5", "Exactly on 4", "Exactly on 5", "On 6"], "answer": 0, "hint": "The short hand moves slowly from one hour to the next.", "explain": "After half an hour, the short hand has moved half of the way from 4 to 5."}
+      ]
+    },
+    {
+      "slug": "minutes-past-and-to",
+      "title": "Minutes past and minutes to",
+      "blurb": "Read the clock to the nearest minute.",
+      "learn": [
+        {"h": "Count in fives", "p": "Each number on the clock is 5 more minutes. Long hand on 1 = 5 minutes past, on 2 = 10 past, on 4 = 20 past, on 5 = 25 past. This clock shows 20 past 8.", "fig": {"type": "clock", "h": 8, "m": 20}},
+        {"h": "Past and to", "p": "Up to the 6 we say **past** the hour. After the 6 we count the minutes left **to** the next hour. Long hand on 8: 20 minutes to. This clock shows 20 to 6.", "fig": {"type": "clock", "h": 5, "m": 40}},
+        {"h": "Single minutes", "p": "Between the numbers are small marks, one for each minute. Count on from the last number. Long hand 2 marks after the 4: 20 + 2 = 22 minutes past."}
+      ],
+      "questions": [
+        {"type": "mc", "q": "What time does this clock show?", "fig": {"type": "clock", "h": 6, "m": 10}, "options": ["10 past 6", "10 to 6", "2 past 6", "10 past 2"], "answer": 0, "hint": "The long hand is on 2. Count in fives: 5, 10.", "explain": "Long hand on 2 is 10 minutes past. Short hand just past 6: 10 past 6."},
+        {"type": "mc", "q": "What time does this clock show?", "fig": {"type": "clock", "h": 1, "m": 25}, "options": ["25 past 1", "25 to 1", "5 past 1", "25 past 5"], "answer": 0, "hint": "The long hand is on 5. Count in fives.", "explain": "Long hand on 5: 25 minutes past. Short hand just past 1: 25 past 1."},
+        {"type": "mc", "q": "What time does this clock show?", "fig": {"type": "clock", "h": 10, "m": 50}, "options": ["10 to 11", "10 to 10", "50 to 11", "10 past 10"], "answer": 0, "hint": "The long hand is on 10, after the 6. How many minutes are left until the next hour?", "explain": "Long hand on 10 is 50 minutes past, which leaves 10 minutes to the next hour. The short hand is nearly at 11: 10 to 11."},
+        {"type": "mc", "q": "What time does this clock show?", "fig": {"type": "clock", "h": 3, "m": 35}, "options": ["25 to 4", "25 to 3", "35 to 4", "7 past 3"], "answer": 0, "hint": "The long hand is on 7: 35 minutes past. How many are left to 60?", "explain": "60 − 35 = 25, so it's 25 to 4."},
+        {"type": "mc", "q": "What time does this clock show?", "fig": {"type": "clock", "h": 9, "m": 17}, "options": ["17 minutes past 9", "13 minutes past 9", "17 minutes to 9", "3 minutes past 9"], "answer": 0, "hint": "The long hand is 2 small marks past the 3. The 3 is 15 minutes.", "explain": "15 + 2 = 17, so it's 17 minutes past 9."},
+        {"type": "num", "q": "It is 20 to 8. How many minutes is it until 8 o'clock?", "answer": "20", "unit": "minutes", "hint": "“20 to” tells you!", "explain": "20 to 8 means 20 minutes until 8 o'clock."}
+      ]
+    },
+    {
+      "slug": "24-hour-clock",
+      "title": "am, pm and the 24-hour clock",
+      "blurb": "Bus times, TV guides and phone clocks.",
+      "learn": [
+        {"h": "am and pm", "p": "A day has 24 hours, but a clock face only shows 12. So we say **am** for times from midnight to midday (morning) and **pm** for times from midday to midnight (afternoon and evening)."},
+        {"h": "The 24-hour clock", "p": "Phones and timetables often count the hours from 0 to 23. Morning times look the same, with a 0 in front if needed: 7:30 am is 07:30. For pm times, add 12 to the hour: 3:15 pm is 15:15."},
+        {"h": "Back again", "p": "To go from the 24-hour clock to pm, take 12 away: 19:40 is 7:40 pm. Midday is 12:00 and midnight is 00:00."}
+      ],
+      "questions": [
+        {"type": "mc", "q": "Write 4:30 pm in 24-hour time.", "options": ["16:30", "04:30", "14:30", "4:30"], "answer": 0, "hint": "It's pm, so add 12 to the hour.", "explain": "4 + 12 = 16, so 4:30 pm is 16:30."},
+        {"type": "mc", "q": "Write 08:05 as a 12-hour time.", "options": ["8:05 am", "8:05 pm", "8:50 am", "5:08 am"], "answer": 0, "hint": "The hour is less than 12, so it's in the morning.", "explain": "08:05 is 8:05 am."},
+        {"type": "mc", "q": "Write 21:45 as a 12-hour time.", "options": ["9:45 pm", "9:45 am", "11:45 pm", "2:45 pm"], "answer": 0, "hint": "Take 12 away from the hour.", "explain": "21 − 12 = 9, so 21:45 is 9:45 pm."},
+        {"type": "mc", "q": "Which time is in the afternoon?", "options": ["14:20", "09:20", "00:20", "11:20"], "answer": 0, "hint": "Afternoon times are 12:00 or later on the 24-hour clock.", "explain": "14:20 is 2:20 pm. The others are all before midday."},
+        {"type": "mc", "q": "What is midnight on the 24-hour clock?", "options": ["00:00", "12:00", "24:24", "06:00"], "answer": 0, "hint": "The day starts again at midnight.", "explain": "Midnight is 00:00, the start of a new day. Midday is 12:00."},
+        {"type": "mc", "q": "A train leaves at quarter past 6 in the evening. How is that shown on the timetable?", "options": ["18:15", "06:15", "18:45", "16:15"], "answer": 0, "hint": "Quarter past 6 is 6:15. Evening means pm.", "explain": "6:15 pm: add 12 to the hour, 18:15."}
+      ]
+    },
+    {
+      "slug": "how-long",
+      "title": "How long does it take?",
+      "blurb": "Work out start times, end times and durations.",
+      "learn": [
+        {"h": "Count on in steps", "p": "A film starts at 2:40 pm and ends at 4:15 pm. Count on: 2:40 to 3:00 is 20 minutes, 3:00 to 4:00 is 1 hour, 4:00 to 4:15 is 15 minutes. Altogether 1 hour 35 minutes."},
+        {"h": "Watch out for 60", "p": "Time doesn't work in hundreds! There are 60 minutes in an hour, so 1:50 + 20 minutes is 2:10, not 1:70."},
+        {"h": "Use the 24-hour clock", "p": "With the 24-hour clock you can't mix up morning and afternoon. 09:30 to 13:00 is 3 hours 30 minutes."}
+      ],
+      "questions": [
+        {"type": "num", "q": "Swimming starts at 3:15 pm and ends at 4:00 pm. How many minutes is that?", "answer": "45", "unit": "minutes", "hint": "From 3:15 to 4:00, count on to the hour.", "explain": "3:15 to 4:00 is 45 minutes."},
+        {"type": "mc", "q": "A cake goes in the oven at 11:40 am and needs 35 minutes. When is it ready?", "options": ["12:15 pm", "11:75 am", "12:05 pm", "12:25 pm"], "answer": 0, "hint": "20 minutes takes you to 12:00. How many minutes are left?", "explain": "11:40 + 20 minutes = 12:00, then 15 more = 12:15 pm."},
+        {"type": "mc", "q": "A film starts at 6:50 pm and lasts 1 hour 25 minutes. When does it end?", "options": ["8:15 pm", "7:75 pm", "8:25 pm", "7:15 pm"], "answer": 0, "hint": "Add the hour first, then the minutes.", "explain": "6:50 + 1 hour = 7:50. Then 10 minutes to 8:00 and 15 more: 8:15 pm."},
+        {"type": "mc", "q": "A train leaves at 09:35 and arrives at 11:10. How long is the journey?", "options": ["1 hour 35 minutes", "1 hour 75 minutes", "2 hours 25 minutes", "1 hour 25 minutes"], "answer": 0, "hint": "09:35 to 10:00, then 10:00 to 11:10.", "explain": "25 minutes to 10:00, then 1 hour 10 minutes to 11:10. 25 + 10 = 35 minutes, plus 1 hour: 1 hour 35 minutes."},
+        {"type": "mc", "q": "School ends at 3:20 pm. Your walk home takes 25 minutes. When do you get home?", "options": ["3:45 pm", "3:35 pm", "4:45 pm", "3:55 pm"], "answer": 0, "hint": "Add 25 minutes to 20 minutes past 3.", "explain": "20 + 25 = 45, so 3:45 pm."},
+        {"type": "mc", "q": "A football match kicks off at 15:00 and lasts 1 hour 50 minutes with the break. When does it finish?", "options": ["16:50", "16:10", "17:50", "15:50"], "answer": 0, "hint": "Add 1 hour, then 50 minutes.", "explain": "15:00 + 1 hour = 16:00, + 50 minutes = 16:50."}
+      ]
+    },
+    {
+      "slug": "units-of-time",
+      "title": "Seconds, minutes, days and years",
+      "blurb": "Convert between units of time.",
+      "learn": [
+        {"h": "The units", "p": "60 seconds = 1 minute. 60 minutes = 1 hour. 24 hours = 1 day. 7 days = 1 week. 12 months = 1 year."},
+        {"h": "Days in a month", "p": "April, June, September and November have 30 days. February has 28 days, or 29 in a **leap year**. All the others have 31 days."},
+        {"h": "Years", "p": "A year has 365 days, or 366 in a leap year. A leap year usually comes every 4 years (2024 and 2028 are leap years)."}
+      ],
+      "questions": [
+        {"type": "num", "q": "How many minutes are in 3 hours?", "answer": "180", "unit": "minutes", "hint": "1 hour = 60 minutes.", "explain": "3 × 60 = 180 minutes."},
+        {"type": "num", "q": "How many seconds are in 2 minutes?", "answer": "120", "unit": "seconds", "hint": "1 minute = 60 seconds.", "explain": "2 × 60 = 120 seconds."},
+        {"type": "num", "q": "How many days are in 5 weeks?", "answer": "35", "unit": "days", "hint": "1 week = 7 days.", "explain": "5 × 7 = 35 days."},
+        {"type": "num", "q": "How many hours are in 2 days?", "answer": "48", "unit": "hours", "hint": "1 day = 24 hours.", "explain": "2 × 24 = 48 hours."},
+        {"type": "mc", "q": "Which month has 30 days?", "options": ["June", "July", "August", "December"], "answer": 0, "hint": "April, June, September and November.", "explain": "June has 30 days. July, August and December have 31."},
+        {"type": "mc", "q": "How long is 90 minutes?", "options": ["1 hour 30 minutes", "1 hour 90 minutes", "9 hours", "1 hour 9 minutes"], "answer": 0, "hint": "Take away 60 minutes to make 1 hour.", "explain": "90 − 60 = 30, so 90 minutes = 1 hour 30 minutes."},
+        {"type": "num", "q": "How many days are in a leap year?", "answer": "366", "unit": "days", "hint": "A normal year has 365 days. A leap year has one extra day, in February.", "explain": "365 + 1 = 366 days."}
+      ]
+    }
+  ]
+}

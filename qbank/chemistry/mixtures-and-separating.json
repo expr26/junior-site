@@ -1,0 +1,275 @@
+{
+  "slug": "mixtures-and-separating",
+  "title": "Mixtures and separating",
+  "ks3": "Pure and impure substances",
+  "art": "mixtures",
+  "intro": "Dissolving, filtering, evaporating, distilling and chromatography: learn how to get substances back out of a mixture.",
+  "description": "Free KS3 Chemistry questions with answers on mixtures and separating techniques: dissolving, solutions, filtration, evaporation, distillation and chromatography. Marked instantly, for Year 7, 8 and 9.",
+  "subtopics": [
+    {
+      "slug": "dissolving",
+      "title": "Dissolving and solutions"
+    },
+    {
+      "slug": "methods",
+      "title": "Separating methods"
+    },
+    {
+      "slug": "pure",
+      "title": "Pure substances"
+    }
+  ],
+  "questions": [
+    {
+      "id": "mix-01",
+      "sub": "dissolving",
+      "level": 1,
+      "type": "mc",
+      "q": "Salt is stirred into water and disappears. What has happened?",
+      "options": [
+        "The salt has dissolved",
+        "The salt has melted",
+        "The salt has evaporated",
+        "The salt has been destroyed"
+      ],
+      "answer": 0,
+      "hint": "Melting needs heat. Here the salt spreads out in the water.",
+      "explain": "The salt dissolved: its particles spread out between the water particles. It's still there, which is why the water tastes salty."
+    },
+    {
+      "id": "mix-02",
+      "sub": "dissolving",
+      "level": 1,
+      "type": "mc",
+      "q": "In salt water, what is the **solvent**?",
+      "options": [
+        "Water",
+        "Salt",
+        "Salt water",
+        "Air"
+      ],
+      "answer": 0,
+      "hint": "The solvent is the liquid that does the dissolving.",
+      "explain": "Water is the solvent, salt is the solute, and salt water is the solution."
+    },
+    {
+      "id": "mix-03",
+      "sub": "dissolving",
+      "level": 2,
+      "type": "mc",
+      "q": "Which word means “does not dissolve”?",
+      "options": [
+        "Insoluble",
+        "Soluble",
+        "Solution",
+        "Saturated"
+      ],
+      "answer": 0,
+      "hint": "In- means “not”.",
+      "explain": "Insoluble means it doesn't dissolve, like sand in water. Soluble means it does, like sugar."
+    },
+    {
+      "id": "mix-04",
+      "sub": "dissolving",
+      "level": 2,
+      "type": "num",
+      "q": "10 g of salt is dissolved in 100 g of water. What is the mass of the salt water?",
+      "answer": "110",
+      "hint": "The salt hasn't gone anywhere.",
+      "explain": "Mass is conserved when something dissolves: 100 + 10 = 110 g.",
+      "unit": "g"
+    },
+    {
+      "id": "mix-05",
+      "sub": "dissolving",
+      "level": 3,
+      "type": "mc",
+      "q": "A solution where no more solid will dissolve is called…",
+      "options": [
+        "Saturated",
+        "Diluted",
+        "Evaporated",
+        "Insoluble"
+      ],
+      "answer": 0,
+      "hint": "It is “full up”.",
+      "explain": "A saturated solution can't dissolve any more solute at that temperature. Warming it usually lets more dissolve."
+    },
+    {
+      "id": "mix-06",
+      "sub": "methods",
+      "level": 1,
+      "type": "mc",
+      "q": "How can you separate sand from water?",
+      "options": [
+        "Filtering",
+        "Evaporating",
+        "Using a magnet",
+        "Chromatography"
+      ],
+      "answer": 0,
+      "hint": "Sand doesn't dissolve. What can catch the grains?",
+      "explain": "Filter paper lets water through but traps the sand, which is insoluble."
+    },
+    {
+      "id": "mix-07",
+      "sub": "methods",
+      "level": 1,
+      "type": "mc",
+      "q": "How can you get salt back from salt water?",
+      "options": [
+        "Evaporate the water",
+        "Filter it",
+        "Use a magnet",
+        "Freeze it"
+      ],
+      "answer": 0,
+      "hint": "Salt is dissolved, so filtering won't catch it.",
+      "explain": "Heat the salt water so the water evaporates. The salt crystals are left behind."
+    },
+    {
+      "id": "mix-08",
+      "sub": "methods",
+      "level": 2,
+      "type": "mc",
+      "q": "Which method separates the different coloured inks in a felt-tip pen?",
+      "options": [
+        "Chromatography",
+        "Filtering",
+        "Distillation",
+        "Using a sieve"
+      ],
+      "answer": 0,
+      "hint": "You put a dot of ink on paper and let water soak up it.",
+      "explain": "In chromatography, the colours travel different distances up the paper, so they separate."
+    },
+    {
+      "id": "mix-09",
+      "sub": "methods",
+      "level": 2,
+      "type": "mc",
+      "q": "How can you separate iron filings from sand?",
+      "options": [
+        "Use a magnet",
+        "Filter them",
+        "Evaporate them",
+        "Dissolve them in water"
+      ],
+      "answer": 0,
+      "hint": "One of them is magnetic.",
+      "explain": "Iron is magnetic and sand isn't, so a magnet pulls out the iron."
+    },
+    {
+      "id": "mix-10",
+      "sub": "methods",
+      "level": 3,
+      "type": "mc",
+      "q": "How can you get pure drinking water from sea water?",
+      "options": [
+        "Distillation",
+        "Filtering",
+        "Chromatography",
+        "Using a magnet"
+      ],
+      "answer": 0,
+      "hint": "Boil it, then cool the steam back into a liquid.",
+      "explain": "In distillation the water boils, the steam is cooled in a condenser and turns back into pure liquid water. The salt stays behind."
+    },
+    {
+      "id": "mix-11",
+      "sub": "methods",
+      "level": 2,
+      "type": "mc",
+      "q": "A mixture contains sand, salt and water. What is the best order to separate all three?",
+      "options": [
+        "Filter to remove the sand, then evaporate the water to get the salt",
+        "Evaporate first, then filter",
+        "Use a magnet, then filter",
+        "Chromatography, then a magnet"
+      ],
+      "answer": 0,
+      "hint": "Which part can a filter catch?",
+      "explain": "Filtering removes the insoluble sand. The salty water goes through, and evaporating it leaves the salt."
+    },
+    {
+      "id": "mix-12",
+      "sub": "methods",
+      "level": 3,
+      "type": "mc",
+      "q": "In chromatography, why do two inks travel different distances?",
+      "options": [
+        "They dissolve in the solvent and stick to the paper by different amounts",
+        "One ink is heavier than the paper",
+        "One ink is invisible",
+        "The paper is wetter at the top"
+      ],
+      "answer": 0,
+      "hint": "Think about how much each ink “likes” the water compared with the paper.",
+      "explain": "Each substance dissolves in the solvent and sticks to the paper by a different amount, so they move up at different speeds."
+    },
+    {
+      "id": "mix-13",
+      "sub": "pure",
+      "level": 1,
+      "type": "mc",
+      "q": "In science, what does **pure** mean?",
+      "options": [
+        "Made of only one substance",
+        "Clean and safe to drink",
+        "Natural and healthy",
+        "Clear, with no colour"
+      ],
+      "answer": 0,
+      "hint": "A science word can mean something different from everyday life.",
+      "explain": "In science a pure substance contains only one substance. Bottled water labelled “pure” is actually a mixture with minerals dissolved in it."
+    },
+    {
+      "id": "mix-14",
+      "sub": "pure",
+      "level": 2,
+      "type": "mc",
+      "q": "How can you tell if a sample of water is pure?",
+      "options": [
+        "It boils at exactly 100 °C (at normal air pressure)",
+        "It looks clear",
+        "It has no smell",
+        "It tastes nice"
+      ],
+      "answer": 0,
+      "hint": "Pure substances melt and boil at one fixed temperature.",
+      "explain": "Pure water boils at 100 °C at normal air pressure. Dissolved substances change the boiling point and make water boil over a range of temperatures."
+    },
+    {
+      "id": "mix-15",
+      "sub": "pure",
+      "level": 3,
+      "type": "mc",
+      "q": "A solid melts slowly between 72 °C and 79 °C. What does this tell you?",
+      "options": [
+        "It is probably a mixture, not pure",
+        "It is pure",
+        "It is a gas",
+        "It is a metal"
+      ],
+      "answer": 0,
+      "hint": "Pure substances melt at one sharp temperature.",
+      "explain": "A pure substance has a sharp melting point. Melting over a range suggests a mixture."
+    },
+    {
+      "id": "mix-16",
+      "sub": "pure",
+      "level": 2,
+      "type": "mc",
+      "q": "Which of these is a mixture?",
+      "options": [
+        "Orange juice",
+        "Pure water",
+        "Oxygen",
+        "Gold"
+      ],
+      "answer": 0,
+      "hint": "Which one has lots of different substances in it?",
+      "explain": "Orange juice contains water, sugars, acids and much more, so it's a mixture."
+    }
+  ]
+}

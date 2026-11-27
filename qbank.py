@@ -185,8 +185,8 @@ def hub_page(data):
   </div>
 </section>"""
     total = sum(len(t["questions"]) for _, rows in data for _, t in rows if t)
-    meta = {"title": "Free KS3 Maths and Physics questions and answers (Year 7–9)", "body_class": "qbank",
-            "description": f"Free KS3 Maths and Physics question bank for Year 7, 8 and 9 (ages 9 to 14): {total} questions by topic, marked instantly, with hints and worked answers."}
+    meta = {"title": "Free KS3 Maths and Science questions and answers (Year 7–9)", "body_class": "qbank",
+            "description": f"Free KS3 Maths, Physics, Chemistry and Biology question bank for Year 7, 8 and 9 (ages 9 to 14): {total} questions by topic, marked instantly, with hints and worked answers."}
     return (ROOT, meta, body, "qbank/subjects.json")
 
 
@@ -207,7 +207,8 @@ def subject_page(s, rows):
             cards.append(f'<li><div class="qb-topic soon"><span class="qb-topic-icon" aria-hidden="true">{plan["icon"]}</span>'
                          f'<span class="qb-topic-txt"><span class="qb-strand">{html.escape(plan["ks3"])}</span><b>{title}</b>'
                          f'<span class="soon-tag">Coming soon</span></span></div></li>')
-    other = "physics" if s["slug"] == "maths" else "maths"
+    order = ["maths", "physics", "chemistry", "biology"]
+    other = order[(order.index(s["slug"]) + 1) % len(order)] if s["slug"] in order else "maths"
     body = CSS + f"""
 <section class="hero qb-hero {s['slug']}">
   <div class="wrap hero-grid">
@@ -409,7 +410,7 @@ def write_pool(data):
             for q in t["questions"]:
                 li = _question_html(0, q, names).replace(
                     f'data-id="{q["id"]}"', f'data-id="{q["id"]}" data-key="{key}" data-subject="{subj}"', 1)
-                pool[q["id"]] = {"k": key, "s": subj, "lv": q["level"], "h": li.strip(), "d": q["_data"],
+                pool[q["id"]] = {"k": key, "s": subj, "lv": q["level"], "sb": q["sub"], "h": li.strip(), "d": q["_data"],
                                  "u": f"{ROOT}{s['slug']}/{t['slug']}/#{q['id']}"}
     out = HERE / "dist" / POOL.lstrip("/")
     topics = {}
@@ -447,9 +448,9 @@ def _mixed_page(url, mode, title, h1, lede, bubble, meta_desc, noindex):
 
 def daily_page():
     return _mixed_page("/daily/", "daily", "Daily maths and science challenge for ages 9 to 14", "Daily challenge",
-                       "Five new questions every day: three Maths and two Physics. Finish them to earn bonus stars and keep your streak going.",
+                       "Five new questions every day: three Maths and two Science. Finish them to earn bonus stars and keep your streak going.",
                        "Today's five are waiting! No timer, and you get a hint if you need one.",
-                       "A free daily challenge of five KS3 Maths and Physics questions, with hints, stars and streaks. No timer, no sign-up.", False)
+                       "A free daily challenge of five KS3 Maths and Science questions, with hints, stars and streaks. No timer, no sign-up.", False)
 
 
 def mistakes_page():

@@ -1,0 +1,330 @@
+{
+  "slug": "atoms-elements-compounds",
+  "title": "Atoms, elements and compounds",
+  "ks3": "Atoms, elements and compounds",
+  "art": "atoms",
+  "intro": "Everything is made of tiny atoms. Learn the difference between elements, compounds and mixtures, chemical symbols and simple formulae.",
+  "description": "Free KS3 Chemistry questions with answers on atoms, elements, compounds and mixtures: chemical symbols, the periodic table and simple formulae like H₂O and CO₂. Marked instantly, for Year 7, 8 and 9.",
+  "subtopics": [
+    {
+      "slug": "atoms",
+      "title": "Atoms and elements"
+    },
+    {
+      "slug": "symbols",
+      "title": "Chemical symbols"
+    },
+    {
+      "slug": "compounds",
+      "title": "Compounds and formulae"
+    },
+    {
+      "slug": "sort",
+      "title": "Element, compound or mixture?"
+    }
+  ],
+  "questions": [
+    {
+      "id": "aec-01",
+      "sub": "atoms",
+      "level": 1,
+      "type": "mc",
+      "q": "What is an **atom**?",
+      "options": [
+        "The smallest part of an element that can exist",
+        "A mixture of two substances",
+        "A type of cell",
+        "A drop of liquid"
+      ],
+      "answer": 0,
+      "hint": "Think about the tiniest building block of every substance.",
+      "explain": "An atom is the smallest particle of an element. Everything around you is made of atoms."
+    },
+    {
+      "id": "aec-02",
+      "sub": "atoms",
+      "level": 1,
+      "type": "mc",
+      "q": "What is an **element**?",
+      "options": [
+        "A substance made of only one type of atom",
+        "A substance made of two types of atom joined together",
+        "Any liquid",
+        "A mixture of metals"
+      ],
+      "answer": 0,
+      "hint": "“Element” means the simplest kind of substance.",
+      "explain": "An element contains only one type of atom. Oxygen, iron and gold are elements."
+    },
+    {
+      "id": "aec-03",
+      "sub": "atoms",
+      "level": 1,
+      "type": "mc",
+      "q": "Which of these is an element?",
+      "options": [
+        "Iron",
+        "Water",
+        "Salt",
+        "Air"
+      ],
+      "answer": 0,
+      "hint": "Which one can't be split into simpler substances?",
+      "explain": "Iron is an element: it is made only of iron atoms. Water and salt are compounds, and air is a mixture."
+    },
+    {
+      "id": "aec-04",
+      "sub": "atoms",
+      "level": 2,
+      "type": "mc",
+      "q": "Where are all the elements listed?",
+      "options": [
+        "The periodic table",
+        "A food chain",
+        "A timeline",
+        "The pH scale"
+      ],
+      "answer": 0,
+      "hint": "It's a big chart on the wall of every science lab.",
+      "explain": "All the elements are arranged in the periodic table. Metals are on the left and in the middle; non-metals are on the right."
+    },
+    {
+      "id": "aec-05",
+      "sub": "atoms",
+      "level": 2,
+      "type": "mc",
+      "q": "About how many elements are known today?",
+      "options": [
+        "About 118",
+        "About 12",
+        "About 1,000",
+        "About 1 million"
+      ],
+      "answer": 0,
+      "hint": "It's more than 100, but not many more.",
+      "explain": "Scientists know about 118 elements. Fewer than 100 of them are found in nature; the rest have been made in laboratories."
+    },
+    {
+      "id": "aec-06",
+      "sub": "symbols",
+      "level": 1,
+      "type": "mc",
+      "q": "What is the chemical symbol for **oxygen**?",
+      "options": [
+        "O",
+        "Ox",
+        "Og",
+        "Y"
+      ],
+      "answer": 0,
+      "hint": "Most symbols use the first letter of the name.",
+      "explain": "Oxygen's symbol is O."
+    },
+    {
+      "id": "aec-07",
+      "sub": "symbols",
+      "level": 1,
+      "type": "mc",
+      "q": "Which element has the symbol **C**?",
+      "options": [
+        "Carbon",
+        "Calcium",
+        "Chlorine",
+        "Copper"
+      ],
+      "answer": 0,
+      "hint": "It's in diamonds, pencil lead and every living thing.",
+      "explain": "C is carbon. Calcium is Ca, chlorine is Cl and copper is Cu."
+    },
+    {
+      "id": "aec-08",
+      "sub": "symbols",
+      "level": 2,
+      "type": "mc",
+      "q": "Which symbol is written correctly?",
+      "options": [
+        "Na",
+        "NA",
+        "na",
+        "nA"
+      ],
+      "answer": 0,
+      "hint": "Symbols start with a capital letter. If there's a second letter, it's small.",
+      "explain": "Na (sodium) is correct: a capital first letter and a small second letter."
+    },
+    {
+      "id": "aec-09",
+      "sub": "symbols",
+      "level": 2,
+      "type": "mc",
+      "q": "The symbol **Fe** stands for which element?",
+      "options": [
+        "Iron",
+        "Fluorine",
+        "Fermium",
+        "Lead"
+      ],
+      "answer": 0,
+      "hint": "Some symbols come from Latin names. Iron in Latin is “ferrum”.",
+      "explain": "Fe is iron, from the Latin word ferrum. Lead is Pb, from the Latin plumbum."
+    },
+    {
+      "id": "aec-10",
+      "sub": "symbols",
+      "level": 3,
+      "type": "mc",
+      "q": "Which pair is correct?",
+      "options": [
+        "Au = gold, K = potassium",
+        "Au = silver, K = krypton",
+        "Ag = gold, P = potassium",
+        "Go = gold, Po = potassium"
+      ],
+      "answer": 0,
+      "hint": "Gold comes from Latin “aurum”. Potassium comes from “kalium”.",
+      "explain": "Au is gold and K is potassium. Silver is Ag, krypton is Kr and P is phosphorus."
+    },
+    {
+      "id": "aec-11",
+      "sub": "compounds",
+      "level": 1,
+      "type": "mc",
+      "q": "What is a **compound**?",
+      "options": [
+        "Two or more elements chemically joined together",
+        "One type of atom on its own",
+        "Elements mixed but not joined",
+        "A pure element that is a metal"
+      ],
+      "answer": 0,
+      "hint": "Com- means “together”.",
+      "explain": "A compound has two or more different elements chemically joined. Water is a compound of hydrogen and oxygen."
+    },
+    {
+      "id": "aec-12",
+      "sub": "compounds",
+      "level": 1,
+      "type": "num",
+      "q": "Water is H₂O. How many **hydrogen** atoms are in one molecule of water?",
+      "answer": "2",
+      "hint": "The small number after H tells you how many H atoms.",
+      "explain": "H₂ means 2 hydrogen atoms. There is 1 oxygen atom (no number means 1)."
+    },
+    {
+      "id": "aec-13",
+      "sub": "compounds",
+      "level": 2,
+      "type": "num",
+      "q": "How many atoms **altogether** are in one molecule of carbon dioxide, CO₂?",
+      "answer": "3",
+      "hint": "1 carbon atom + how many oxygen atoms?",
+      "explain": "CO₂ has 1 carbon atom and 2 oxygen atoms: 3 atoms altogether."
+    },
+    {
+      "id": "aec-14",
+      "sub": "compounds",
+      "level": 2,
+      "type": "mc",
+      "q": "Sodium chloride (table salt) is made from which elements?",
+      "options": [
+        "Sodium and chlorine",
+        "Sodium and oxygen",
+        "Salt and water",
+        "Chlorine and carbon"
+      ],
+      "answer": 0,
+      "hint": "The name of the compound tells you.",
+      "explain": "Sodium chloride is made of sodium and chlorine. A name ending in -ide usually means the compound has two elements."
+    },
+    {
+      "id": "aec-15",
+      "sub": "compounds",
+      "level": 3,
+      "type": "num",
+      "q": "Methane is CH₄. How many atoms are in one molecule?",
+      "answer": "5",
+      "hint": "Count the carbon atoms, then the hydrogen atoms.",
+      "explain": "1 carbon + 4 hydrogen = 5 atoms."
+    },
+    {
+      "id": "aec-16",
+      "sub": "compounds",
+      "level": 3,
+      "type": "mc",
+      "q": "Sodium is a soft metal that reacts with water. Chlorine is a poisonous gas. What is sodium chloride like?",
+      "options": [
+        "A safe white solid we put on food",
+        "A soft metal",
+        "A poisonous gas",
+        "A mixture of a metal and a gas"
+      ],
+      "answer": 0,
+      "hint": "A compound has new properties, different from its elements.",
+      "explain": "When elements join to make a compound, it has completely new properties. Sodium chloride is table salt."
+    },
+    {
+      "id": "aec-17",
+      "sub": "sort",
+      "level": 1,
+      "type": "mc",
+      "q": "Air is made of nitrogen, oxygen and other gases that are not joined together. What is air?",
+      "options": [
+        "A mixture",
+        "An element",
+        "A compound",
+        "An atom"
+      ],
+      "answer": 0,
+      "hint": "Are the gases chemically joined?",
+      "explain": "The gases in air are mixed, not joined, so air is a mixture."
+    },
+    {
+      "id": "aec-18",
+      "sub": "sort",
+      "level": 2,
+      "type": "mc",
+      "q": "Which of these is a compound?",
+      "options": [
+        "Carbon dioxide",
+        "Oxygen",
+        "Gold",
+        "Sea water"
+      ],
+      "answer": 0,
+      "hint": "Look for two different elements joined together.",
+      "explain": "Carbon dioxide is carbon and oxygen joined. Oxygen and gold are elements; sea water is a mixture."
+    },
+    {
+      "id": "aec-19",
+      "sub": "sort",
+      "level": 2,
+      "type": "mc",
+      "q": "Oxygen gas is O₂: two oxygen atoms joined. Is O₂ an element or a compound?",
+      "options": [
+        "An element",
+        "A compound",
+        "A mixture",
+        "Neither"
+      ],
+      "answer": 0,
+      "hint": "How many different types of atom are there?",
+      "explain": "O₂ is an element, because it only has one type of atom. It's a molecule, but not a compound."
+    },
+    {
+      "id": "aec-20",
+      "sub": "sort",
+      "level": 3,
+      "type": "mc",
+      "q": "Iron filings and sulfur powder are stirred together. Which is true?",
+      "options": [
+        "It's a mixture: a magnet can pull out the iron",
+        "It's a compound called iron sulfide",
+        "It's a new element",
+        "The iron and sulfur are chemically joined"
+      ],
+      "answer": 0,
+      "hint": "Has a chemical reaction happened just by stirring?",
+      "explain": "Stirring only mixes them, so you can still separate the iron with a magnet. Heating them makes them react to form the compound iron sulfide, which isn't magnetic like iron."
+    }
+  ]
+}

@@ -19,6 +19,7 @@
   function frac(n, d) { if (d < 0) { n = -n; d = -d; } var g = gcd(n, d); return { n: n / g, d: d / g }; }
   function parse(s) {
     s = String(s).trim().replace(/−/g, '-').replace(/\s+/g, ' ');
+    s = s.replace(/(\d),(?=\d{3}(\D|$))/g, '$1');   // 2,500 → 2500
     var m = s.match(/^(-?\d+) (\d+)\/(\d+)$/);
     if (m) { var w = +m[1], a = +m[2], b = +m[3]; if (!b) return null; var f = frac(Math.abs(w) * b + a, b); if (w < 0) f.n = -f.n; return Object.assign(f, { raw: 'mixed' }); }
     m = s.match(/^(-?\d+)\/(\d+)$/);

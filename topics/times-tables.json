@@ -1,0 +1,135 @@
+{
+  "slug": "times-tables",
+  "subject": "maths",
+  "stage": "ks2",
+  "icon": "✖️",
+  "card": "From 2 × 1 to 12 × 12, with tricks for the tricky ones and division facts.",
+  "title": "Times tables",
+  "seo_title": "Times tables practice up to 12 × 12 (KS2, ages 9 to 11)",
+  "level": "KS2 · Years 4 to 6",
+  "description": "Learn and practise the times tables up to 12 × 12 with pictures, tricks and instant feedback: groups, doubling, the 9 times table trick, division facts and word problems. Free, with no timer, for ages 9 to 11.",
+  "intro": "Times tables are a superpower: they make fractions, area, division and lots more much easier. Learn one family at a time, with tricks that help you remember. There's no timer, so go at your own speed.",
+  "hero_fig": {"type": "array", "rows": 3, "cols": 4},
+  "units": [
+    {
+      "slug": "groups-and-arrays",
+      "title": "Groups, arrays and the 2, 5 and 10 times tables",
+      "blurb": "What “times” really means, and the three easiest tables.",
+      "learn": [
+        {"h": "Times means “groups of”", "p": "3 × 4 means **3 groups of 4**. You can draw it as an array: 3 rows with 4 dots in each row. Count them all and you get 12, so 3 × 4 = 12.", "fig": {"type": "array", "rows": 3, "cols": 4}},
+        {"h": "Turn it round", "p": "Turn the array on its side and you get 4 rows of 3. It's still 12 dots! So 3 × 4 and 4 × 3 give the same answer. This means you only need to learn half of the facts.", "fig": {"type": "array", "rows": 4, "cols": 3}},
+        {"h": "2, 5 and 10", "p": "The **2 times table** is doubling: 2, 4, 6, 8, 10… The **10 times table** ends in 0: 10, 20, 30… The **5 times table** is half of the 10s, so it always ends in 5 or 0: 5, 10, 15, 20…"}
+      ],
+      "questions": [
+        {"type": "num", "q": "How many dots are there? Write it as a times fact in your head: 2 rows of 5.", "fig": {"type": "array", "rows": 2, "cols": 5}, "answer": "10", "hint": "2 groups of 5: count 5, then 5 more.", "explain": "2 × 5 = 10. Two rows with 5 dots in each make 10 dots."},
+        {"type": "mc", "q": "Which times fact matches this array?", "fig": {"type": "array", "rows": 4, "cols": 5}, "options": ["4 × 5", "4 + 5", "4 × 4", "5 × 5"], "answer": 0, "hint": "Count the rows, then count the dots in one row.", "explain": "There are 4 rows of 5 dots, so it's 4 × 5 = 20."},
+        {"type": "num", "q": "7 × 10 = ?", "answer": "70", "hint": "The 10 times table: count in tens 7 times.", "explain": "7 × 10 = 70. Multiplying a whole number by 10 puts a 0 on the end."},
+        {"type": "num", "q": "6 × 5 = ?", "answer": "30", "hint": "Count in fives: 5, 10, 15… Or work out 6 × 10 and halve it.", "explain": "6 × 10 = 60, and half of 60 is 30. So 6 × 5 = 30."},
+        {"type": "num", "q": "9 × 2 = ?", "answer": "18", "hint": "Times 2 is the same as doubling.", "explain": "Double 9 is 18, so 9 × 2 = 18."},
+        {"type": "mc", "q": "4 × 7 = 28. What is 7 × 4?", "options": ["28", "11", "47", "24"], "answer": 0, "hint": "Think of the array turned on its side.", "explain": "Swapping the numbers round gives the same answer, so 7 × 4 = 28 too."},
+        {"type": "mc", "q": "Which number is in the 5 times table?", "options": ["45", "52", "33", "18"], "answer": 0, "hint": "Numbers in the 5 times table end in 5 or 0.", "explain": "45 ends in 5, and 9 × 5 = 45. The others don't end in 5 or 0."},
+        {"type": "num", "q": "12 × 10 = ?", "answer": "120", "hint": "Count in tens 12 times, or put a 0 on the end of 12.", "explain": "12 × 10 = 120."}
+      ]
+    },
+    {
+      "slug": "three-four-eight",
+      "title": "The 3, 4 and 8 times tables",
+      "blurb": "Double, double again: how the 2, 4 and 8 tables are linked.",
+      "learn": [
+        {"h": "Doubling chain", "p": "The **4 times table** is double the 2 times table. The **8 times table** is double the 4 times table. So to work out 6 × 8: 6 × 2 = 12, double it is 24 (that's 6 × 4), double again is 48. So 6 × 8 = 48."},
+        {"h": "The 3 times table", "p": "Count in threes: 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36. Here's a neat check: add up the digits of a number in the 3 times table and you get 3, 6 or 9 (keep adding if you need to). For 27: 2 + 7 = 9.", "fig": {"type": "array", "rows": 3, "cols": 6}},
+        {"h": "Use a fact you know", "p": "If you forget 7 × 4, use 7 × 2 = 14 and double it: 28. If you forget 9 × 3, use 10 × 3 = 30 and take one 3 away: 27."}
+      ],
+      "questions": [
+        {"type": "num", "q": "4 × 3 = ?", "fig": {"type": "array", "rows": 4, "cols": 3}, "answer": "12", "hint": "4 rows of 3 dots. Count in threes: 3, 6, 9…", "explain": "3, 6, 9, 12: so 4 × 3 = 12."},
+        {"type": "num", "q": "7 × 3 = ?", "answer": "21", "hint": "Count in threes 7 times, or work out 7 × 2 and add one more 7.", "explain": "7 × 2 = 14, and 14 + 7 = 21. So 7 × 3 = 21."},
+        {"type": "num", "q": "6 × 4 = ?", "answer": "24", "hint": "Work out 6 × 2, then double it.", "explain": "6 × 2 = 12, and double 12 is 24. So 6 × 4 = 24."},
+        {"type": "num", "q": "9 × 4 = ?", "answer": "36", "hint": "Double 9, then double again.", "explain": "Double 9 is 18, double 18 is 36. So 9 × 4 = 36."},
+        {"type": "num", "q": "3 × 8 = ?", "answer": "24", "hint": "Double 3 three times: 3 → 6 → 12 → …", "explain": "3 → 6 → 12 → 24. So 3 × 8 = 24."},
+        {"type": "num", "q": "7 × 8 = ?", "answer": "56", "hint": "7 × 4 = 28. Now double it.", "explain": "7 × 4 = 28, and double 28 is 56. So 7 × 8 = 56. (A rhyme some people use: 5, 6, 7, 8, so 56 = 7 × 8.)"},
+        {"type": "mc", "q": "Which of these is in the 3 times table?", "options": ["27", "28", "29", "26"], "answer": 0, "hint": "Add up the digits. In the 3 times table you get 3, 6 or 9.", "explain": "2 + 7 = 9, so 27 is in the 3 times table: 9 × 3 = 27."},
+        {"type": "num", "q": "12 × 4 = ?", "answer": "48", "hint": "12 × 2 = 24. Double it.", "explain": "Double 24 is 48, so 12 × 4 = 48."}
+      ]
+    },
+    {
+      "slug": "six-seven-nine",
+      "title": "The 6, 7 and 9 times tables",
+      "blurb": "The trickier ones, with a finger trick for the 9s.",
+      "learn": [
+        {"h": "The 6 times table", "p": "6 is double 3. So 6 × 7 is double 3 × 7: 3 × 7 = 21, double 21 is 42. So 6 × 7 = 42. You can also use 5 × the number, then add one more: 5 × 7 = 35, 35 + 7 = 42."},
+        {"h": "The 9 times table trick", "p": "9 × a number is 10 × the number take away the number. 9 × 6: 10 × 6 = 60, 60 − 6 = 54. Look at the answers too: 18, 27, 36, 45, 54… The two digits always add up to 9 (up to 9 × 10 = 90)."},
+        {"h": "The 7 times table", "p": "You already know most of the 7s from other tables: 7 × 2, 7 × 3, 7 × 4, 7 × 5, 7 × 6, 7 × 8 and 7 × 9. The only new one is 7 × 7 = 49."}
+      ],
+      "questions": [
+        {"type": "num", "q": "6 × 3 = ?", "answer": "18", "hint": "3 × 3 = 9. Double it.", "explain": "6 × 3 = 18."},
+        {"type": "num", "q": "6 × 8 = ?", "answer": "48", "hint": "5 × 8 = 40. Add one more 8.", "explain": "5 × 8 = 40, and 40 + 8 = 48. So 6 × 8 = 48."},
+        {"type": "num", "q": "9 × 7 = ?", "answer": "63", "hint": "10 × 7 = 70. Now take away one 7.", "explain": "70 − 7 = 63. So 9 × 7 = 63. Check: 6 + 3 = 9."},
+        {"type": "num", "q": "7 × 7 = ?", "answer": "49", "hint": "7 × 5 = 35. Add two more sevens.", "explain": "35 + 7 + 7 = 49. So 7 × 7 = 49."},
+        {"type": "mc", "q": "Which one is NOT in the 9 times table?", "options": ["56", "45", "72", "81"], "answer": 0, "hint": "In the 9 times table (up to 90), the digits add up to 9.", "explain": "5 + 6 = 11, not 9, so 56 is not in the 9 times table. (56 = 7 × 8.) 45 = 5 × 9, 72 = 8 × 9 and 81 = 9 × 9."},
+        {"type": "num", "q": "6 × 6 = ?", "answer": "36", "hint": "5 × 6 = 30. Add one more 6.", "explain": "30 + 6 = 36. So 6 × 6 = 36."},
+        {"type": "num", "q": "9 × 9 = ?", "answer": "81", "hint": "10 × 9 = 90. Take away one 9.", "explain": "90 − 9 = 81. So 9 × 9 = 81."},
+        {"type": "num", "q": "7 × 6 = ?", "answer": "42", "hint": "7 × 3 = 21. Double it.", "explain": "Double 21 is 42. So 7 × 6 = 42."}
+      ]
+    },
+    {
+      "slug": "eleven-twelve",
+      "title": "The 11 and 12 times tables",
+      "blurb": "Patterns for the 11s, and splitting 12 into 10 and 2.",
+      "learn": [
+        {"h": "The 11 times table", "p": "Up to 9 × 11, just write the number twice: 3 × 11 = 33, 7 × 11 = 77. Then 10 × 11 = 110, 11 × 11 = 121 and 12 × 11 = 132."},
+        {"h": "Split the 12", "p": "12 = 10 + 2. So 7 × 12 = 7 × 10 + 7 × 2 = 70 + 14 = 84. Splitting a number like this works for any times table."},
+        {"h": "Square numbers", "p": "A number times itself makes a **square number**, because you can arrange the dots in a square. 4 × 4 = 16. The square numbers up to 12 × 12 are 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144.", "fig": {"type": "array", "rows": 4, "cols": 4}}
+      ],
+      "questions": [
+        {"type": "num", "q": "6 × 11 = ?", "answer": "66", "hint": "Up to 9 × 11, write the number twice.", "explain": "6 × 11 = 66."},
+        {"type": "num", "q": "11 × 11 = ?", "answer": "121", "hint": "10 × 11 = 110. Add one more 11.", "explain": "110 + 11 = 121. So 11 × 11 = 121."},
+        {"type": "num", "q": "3 × 12 = ?", "answer": "36", "hint": "3 × 10 = 30 and 3 × 2 = 6. Add them.", "explain": "30 + 6 = 36. So 3 × 12 = 36."},
+        {"type": "num", "q": "8 × 12 = ?", "answer": "96", "hint": "8 × 10 = 80 and 8 × 2 = 16. Add them.", "explain": "80 + 16 = 96. So 8 × 12 = 96."},
+        {"type": "num", "q": "12 × 12 = ?", "answer": "144", "hint": "12 × 10 = 120 and 12 × 2 = 24. Add them.", "explain": "120 + 24 = 144. So 12 × 12 = 144."},
+        {"type": "mc", "q": "Which of these is a square number?", "options": ["64", "24", "48", "18"], "answer": 0, "hint": "A square number is a number times itself, like 5 × 5.", "explain": "8 × 8 = 64, so 64 is a square number. The others can't be made by a number times itself."},
+        {"type": "num", "q": "12 × 7 = ?", "answer": "84", "hint": "10 × 7 = 70 and 2 × 7 = 14.", "explain": "70 + 14 = 84. So 12 × 7 = 84."},
+        {"type": "num", "q": "11 × 9 = ?", "answer": "99", "hint": "Write the number twice.", "explain": "9 × 11 = 99."}
+      ]
+    },
+    {
+      "slug": "division-facts",
+      "title": "Division facts",
+      "blurb": "Use your times tables backwards to divide.",
+      "learn": [
+        {"h": "Divide means share or group", "p": "12 ÷ 3 asks: how many groups of 3 make 12? Or: share 12 between 3, how many each? Both give 4, because 3 × 4 = 12.", "fig": {"type": "array", "rows": 3, "cols": 4}},
+        {"h": "Fact families", "p": "One array gives four facts. From 3 × 4 = 12 you also get 4 × 3 = 12, 12 ÷ 3 = 4 and 12 ÷ 4 = 3. If you know your times tables, you know your division facts!"},
+        {"h": "Missing numbers", "p": "For ? × 6 = 42, think: what times 6 makes 42? That's the same as 42 ÷ 6 = 7."}
+      ],
+      "questions": [
+        {"type": "num", "q": "20 ÷ 5 = ?", "answer": "4", "hint": "How many fives make 20?", "explain": "4 × 5 = 20, so 20 ÷ 5 = 4."},
+        {"type": "num", "q": "Share 18 sweets equally between 3 friends. How many sweets does each friend get?", "answer": "6", "hint": "What times 3 makes 18?", "explain": "3 × 6 = 18, so 18 ÷ 3 = 6. Each friend gets 6 sweets."},
+        {"type": "num", "q": "56 ÷ 8 = ?", "answer": "7", "hint": "What times 8 makes 56?", "explain": "7 × 8 = 56, so 56 ÷ 8 = 7."},
+        {"type": "num", "q": "? × 6 = 42. What is the missing number?", "answer": "7", "hint": "Work out 42 ÷ 6.", "explain": "7 × 6 = 42, so the missing number is 7."},
+        {"type": "mc", "q": "9 × 8 = 72. Which of these is also true?", "options": ["72 ÷ 9 = 8", "72 ÷ 8 = 72", "72 ÷ 72 = 9", "8 ÷ 72 = 9"], "answer": 0, "hint": "A times fact gives two division facts in the same family.", "explain": "From 9 × 8 = 72 you get 72 ÷ 9 = 8 and 72 ÷ 8 = 9."},
+        {"type": "num", "q": "144 ÷ 12 = ?", "answer": "12", "hint": "Which square number is 144?", "explain": "12 × 12 = 144, so 144 ÷ 12 = 12."},
+        {"type": "num", "q": "Eggs come in boxes of 6. How many boxes do you need for 36 eggs?", "answer": "6", "unit": "boxes", "hint": "How many sixes make 36?", "explain": "6 × 6 = 36, so 36 ÷ 6 = 6 boxes."},
+        {"type": "num", "q": "63 ÷ 7 = ?", "answer": "9", "hint": "What times 7 makes 63?", "explain": "9 × 7 = 63, so 63 ÷ 7 = 9."}
+      ]
+    },
+    {
+      "slug": "using-times-tables",
+      "title": "Using times tables",
+      "blurb": "Bigger numbers, ×10 and ×100, and problems from real life.",
+      "learn": [
+        {"h": "Times 10 and 100", "p": "Multiplying a whole number by 10 moves every digit one place to the left, so a 0 appears on the end: 23 × 10 = 230. Times 100 moves the digits two places: 23 × 100 = 2,300."},
+        {"h": "Use a fact you know", "p": "If you know 3 × 4 = 12, then 30 × 4 = 120 (ten times bigger) and 300 × 4 = 1,200 (a hundred times bigger)."},
+        {"h": "Spot the times fact in a story", "p": "“5 packs with 8 pencils in each” is 5 groups of 8, so 5 × 8 = 40 pencils. Look for words like **each**, **every** and **per**."}
+      ],
+      "questions": [
+        {"type": "num", "q": "Pencils come in packs of 8. How many pencils are in 5 packs?", "answer": "40", "unit": "pencils", "hint": "5 groups of 8.", "explain": "5 × 8 = 40 pencils."},
+        {"type": "num", "q": "40 × 3 = ?", "answer": "120", "hint": "Use 4 × 3 = 12, then make it ten times bigger.", "explain": "4 × 3 = 12, so 40 × 3 = 120."},
+        {"type": "num", "q": "25 × 100 = ?", "answer": "2500", "hint": "Times 100 moves each digit two places to the left.", "explain": "25 × 100 = 2,500. (You can type it as 2500.)"},
+        {"type": "num", "q": "A spider has 8 legs. How many legs do 9 spiders have?", "answer": "72", "unit": "legs", "hint": "9 groups of 8. Try 10 × 8, then take one 8 away.", "explain": "10 × 8 = 80, and 80 − 8 = 72. So 9 × 8 = 72 legs."},
+        {"type": "num", "q": "Tickets cost £6 each. How many pounds do 7 tickets cost?", "answer": "42", "unit": "pounds", "hint": "7 groups of £6.", "explain": "7 × 6 = 42, so 7 tickets cost £42."},
+        {"type": "num", "q": "A classroom has 6 rows of chairs with 12 chairs in each row. How many chairs are there?", "answer": "72", "unit": "chairs", "hint": "6 × 12: split 12 into 10 and 2.", "explain": "6 × 10 = 60 and 6 × 2 = 12, so 6 × 12 = 72 chairs."},
+        {"type": "num", "q": "70 × 8 = ?", "answer": "560", "hint": "Use 7 × 8 = 56.", "explain": "7 × 8 = 56, so 70 × 8 is ten times bigger: 560."},
+        {"type": "num", "q": "There are 7 days in a week. How many days are there in 12 weeks?", "answer": "84", "unit": "days", "hint": "12 × 7: try 10 × 7 + 2 × 7.", "explain": "70 + 14 = 84 days."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "slug": "cells",
+  "title": "Cells",
+  "ks3": "Cells and organisation",
+  "art": "cells",
+  "intro": "All living things are made of cells. Learn the parts of animal and plant cells, special cells, and how cells build tissues and organs.",
+  "description": "Free KS3 Biology questions with answers on cells: animal and plant cells, the nucleus, cell membrane, chloroplasts and mitochondria, specialised cells, microscopes and levels of organisation. Marked instantly, for Year 7, 8 and 9.",
+  "subtopics": [
+    {
+      "slug": "parts",
+      "title": "Parts of a cell"
+    },
+    {
+      "slug": "plant",
+      "title": "Plant and animal cells"
+    },
+    {
+      "slug": "special",
+      "title": "Specialised cells"
+    },
+    {
+      "slug": "organisation",
+      "title": "Microscopes and organisation"
+    }
+  ],
+  "questions": [
+    {
+      "id": "cel-01",
+      "sub": "parts",
+      "level": 1,
+      "type": "mc",
+      "q": "What is a **cell**?",
+      "options": [
+        "The smallest unit of a living thing",
+        "A kind of atom",
+        "A type of organ",
+        "A drop of blood"
+      ],
+      "answer": 0,
+      "hint": "Living things are built from them, like a house is built from bricks.",
+      "explain": "Cells are the building blocks of all living things. Some living things are just one cell; you are made of trillions."
+    },
+    {
+      "id": "cel-02",
+      "sub": "parts",
+      "level": 1,
+      "type": "mc",
+      "q": "Which part of a cell controls what the cell does?",
+      "options": [
+        "The nucleus",
+        "The cytoplasm",
+        "The cell membrane",
+        "The vacuole"
+      ],
+      "answer": 0,
+      "hint": "It's like the cell's control centre.",
+      "explain": "The nucleus controls the cell. It contains the genetic material (DNA)."
+    },
+    {
+      "id": "cel-03",
+      "sub": "parts",
+      "level": 1,
+      "type": "mc",
+      "q": "What does the **cell membrane** do?",
+      "options": [
+        "Controls what goes in and out of the cell",
+        "Makes food from sunlight",
+        "Stores the genetic material",
+        "Makes the cell green"
+      ],
+      "answer": 0,
+      "hint": "It's a thin layer around the outside of the cell.",
+      "explain": "The cell membrane controls which substances can move in and out."
+    },
+    {
+      "id": "cel-04",
+      "sub": "parts",
+      "level": 2,
+      "type": "mc",
+      "q": "Where do most chemical reactions in a cell happen?",
+      "options": [
+        "In the cytoplasm",
+        "In the cell wall",
+        "In the vacuole",
+        "Outside the cell"
+      ],
+      "answer": 0,
+      "hint": "It's the jelly-like part that fills the cell.",
+      "explain": "Most reactions happen in the cytoplasm, the jelly-like substance inside the membrane."
+    },
+    {
+      "id": "cel-05",
+      "sub": "parts",
+      "level": 2,
+      "type": "mc",
+      "q": "What happens in the **mitochondria**?",
+      "options": [
+        "Respiration, which releases energy",
+        "Photosynthesis",
+        "Digestion of food",
+        "Making the cell wall"
+      ],
+      "answer": 0,
+      "hint": "Cells need a steady supply of energy.",
+      "explain": "Mitochondria are where aerobic respiration happens, releasing energy from glucose for the cell to use."
+    },
+    {
+      "id": "cel-06",
+      "sub": "plant",
+      "level": 1,
+      "type": "mc",
+      "q": "Which of these is found in plant cells but **not** in animal cells?",
+      "options": [
+        "Chloroplasts",
+        "A nucleus",
+        "Cytoplasm",
+        "A cell membrane"
+      ],
+      "answer": 0,
+      "hint": "Which part is green and catches light?",
+      "explain": "Chloroplasts are only in plant cells (and some other living things). Both plant and animal cells have a nucleus, cytoplasm and a membrane."
+    },
+    {
+      "id": "cel-07",
+      "sub": "plant",
+      "level": 2,
+      "type": "mc",
+      "q": "What does the **cell wall** do in a plant cell?",
+      "options": [
+        "Supports the cell and keeps its shape",
+        "Controls the cell",
+        "Makes food",
+        "Releases energy"
+      ],
+      "answer": 0,
+      "hint": "It's tough and made of cellulose.",
+      "explain": "The cell wall is made of cellulose. It's strong and supports the cell. Animal cells don't have one."
+    },
+    {
+      "id": "cel-08",
+      "sub": "plant",
+      "level": 2,
+      "type": "mc",
+      "q": "What happens in **chloroplasts**?",
+      "options": [
+        "Photosynthesis",
+        "Respiration",
+        "Reproduction",
+        "Digestion"
+      ],
+      "answer": 0,
+      "hint": "They contain green chlorophyll that absorbs light.",
+      "explain": "Chloroplasts absorb light to make food (glucose) by photosynthesis."
+    },
+    {
+      "id": "cel-09",
+      "sub": "plant",
+      "level": 3,
+      "type": "mc",
+      "q": "Which three parts do plant cells have that animal cells don't?",
+      "options": [
+        "Cell wall, chloroplasts and a permanent vacuole",
+        "Nucleus, cytoplasm and membrane",
+        "Mitochondria, nucleus and vacuole",
+        "Chloroplasts, nucleus and membrane"
+      ],
+      "answer": 0,
+      "hint": "Animal cells have a nucleus, cytoplasm, membrane and mitochondria too.",
+      "explain": "Plant cells also have a cell wall, chloroplasts and a large permanent vacuole filled with cell sap."
+    },
+    {
+      "id": "cel-10",
+      "sub": "plant",
+      "level": 3,
+      "type": "mc",
+      "q": "A root cell from a carrot has no chloroplasts. Why?",
+      "options": [
+        "Roots are underground and get no light",
+        "Roots are dead",
+        "Carrots aren't plants",
+        "The chloroplasts fell out"
+      ],
+      "answer": 0,
+      "hint": "What do chloroplasts need to work?",
+      "explain": "Roots get no light, so chloroplasts would be no use there. Not every plant cell has them."
+    },
+    {
+      "id": "cel-11",
+      "sub": "special",
+      "level": 1,
+      "type": "mc",
+      "q": "What is the job of a **red blood cell**?",
+      "options": [
+        "To carry oxygen around the body",
+        "To fight germs",
+        "To carry messages",
+        "To make muscles move"
+      ],
+      "answer": 0,
+      "hint": "It's red because of a substance that grabs oxygen.",
+      "explain": "Red blood cells carry oxygen from the lungs to every part of the body."
+    },
+    {
+      "id": "cel-12",
+      "sub": "special",
+      "level": 2,
+      "type": "mc",
+      "q": "Red blood cells have **no nucleus**. How does this help?",
+      "options": [
+        "There's more room to carry oxygen",
+        "They can swim faster",
+        "They can make food",
+        "They live forever"
+      ],
+      "answer": 0,
+      "hint": "Think about space inside the cell.",
+      "explain": "Without a nucleus there's more space for haemoglobin, the substance that carries oxygen."
+    },
+    {
+      "id": "cel-13",
+      "sub": "special",
+      "level": 2,
+      "type": "mc",
+      "q": "Root hair cells have a long thin part sticking out into the soil. Why?",
+      "options": [
+        "It gives a large surface area to absorb water",
+        "It makes the root heavier",
+        "It catches sunlight",
+        "It holds the plant up on its own"
+      ],
+      "answer": 0,
+      "hint": "More surface touching the soil means…",
+      "explain": "The long thin hair gives a big surface area, so the cell can absorb lots of water and minerals."
+    },
+    {
+      "id": "cel-14",
+      "sub": "special",
+      "level": 3,
+      "type": "mc",
+      "q": "Which cell is matched with its special feature?",
+      "options": [
+        "Nerve cell: long, to carry messages a long way",
+        "Red blood cell: tail, to swim",
+        "Sperm cell: chloroplasts, to make food",
+        "Root hair cell: no nucleus, for more space"
+      ],
+      "answer": 0,
+      "hint": "Think about what each cell does.",
+      "explain": "Nerve cells are long so they can carry electrical messages around the body. Sperm cells have tails; red blood cells have no nucleus."
+    },
+    {
+      "id": "cel-15",
+      "sub": "organisation",
+      "level": 2,
+      "type": "num",
+      "q": "A microscope has an eyepiece lens that magnifies ×10 and an objective lens that magnifies ×40. What is the total magnification?",
+      "answer": "400",
+      "hint": "Multiply the two magnifications.",
+      "explain": "10 × 40 = 400, so things look 400 times bigger.",
+      "unit": "times"
+    },
+    {
+      "id": "cel-16",
+      "sub": "organisation",
+      "level": 1,
+      "type": "mc",
+      "q": "Which list goes from smallest to largest?",
+      "options": [
+        "Cell → tissue → organ → organ system",
+        "Organ → cell → tissue → organ system",
+        "Tissue → cell → organ system → organ",
+        "Organ system → organ → tissue → cell"
+      ],
+      "answer": 0,
+      "hint": "Cells group together to make tissues.",
+      "explain": "Cells make tissues, tissues make organs, organs work together in organ systems, and organ systems make an organism."
+    },
+    {
+      "id": "cel-17",
+      "sub": "organisation",
+      "level": 2,
+      "type": "mc",
+      "q": "The heart is made of muscle tissue, nerve tissue and other tissues. What is the heart?",
+      "options": [
+        "An organ",
+        "A cell",
+        "A tissue",
+        "An organism"
+      ],
+      "answer": 0,
+      "hint": "It's made of several tissues working together.",
+      "explain": "An organ is made of different tissues working together to do a job."
+    },
+    {
+      "id": "cel-18",
+      "sub": "organisation",
+      "level": 3,
+      "type": "mc",
+      "q": "Yeast is a living thing made of just one cell. What is it called?",
+      "options": [
+        "Unicellular",
+        "Multicellular",
+        "A tissue",
+        "An organ"
+      ],
+      "answer": 0,
+      "hint": "Uni- means one.",
+      "explain": "Unicellular living things are made of one cell. Yeast, many bacteria and amoebas are unicellular."
+    }
+  ]
+}

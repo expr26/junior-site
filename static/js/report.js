@@ -3,6 +3,7 @@
 (function () {
   document.addEventListener('click', function (e) { if (e.target.closest('[data-print]')) window.print(); });
   function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  var checks = {};
   function run(topics) {
     if (!window.JG) return;
     var S = JG.state(), t = JG.today(), qb = S.qb || {}, L = JG.level(S.xp);
@@ -45,6 +46,18 @@
             return '<tr><td>' + esc(name(k)) + (topics[k] ? ' <small>(' + esc(topics[k].subject) + ')</small>' : '') + '</td><td>' + p.tried + (n ? ' of ' + n : '') + '</td><td>' + p.good + '</td><td>' + p.fixed + '</td><td>' + p.missed + '</td></tr>'; }).join('') +
           '</tbody></table></div>';
       }
+      var dg = S.diag || {};
+      Object.keys(dg).forEach(function (slug) {
+        var info = checks[slug]; if (!info) return;
+        var r = dg[slug], ks = Object.keys(info.areas);
+        var lv = function (k) { var n = info.areas[k].n, x = r.areas[k] || 0; return x === n ? 'ready' : n > 1 && x >= n - 1 ? 'nearly' : 'practise'; };
+        var todo = ks.filter(function (k) { return lv(k) === 'practise'; }), near = ks.filter(function (k) { return lv(k) === 'nearly'; });
+        h += '<h2>' + esc(info.title.split('?')[0]) + '? check</h2><p>Done on ' + new Date(r.at + 'T12:00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'long' }) +
+          ': ready in <b>' + (ks.length - todo.length - near.length) + ' of ' + ks.length + '</b> areas.</p>' +
+          (todo.length ? '<p>🎯 Practise first: ' + todo.map(function (k) { var a = info.areas[k]; return '<a href="' + a.links[0][1] + '">' + esc(a.name) + '</a>'; }).join(', ') + '.</p>' : '') +
+          (near.length ? '<p>🌱 Nearly there: ' + near.map(function (k) { return esc(info.areas[k].name); }).join(', ') + '.</p>' : '') +
+          '<p class="small"><a href="' + info.href + '">Do the check again</a> in a few weeks to see the change.</p>';
+      });
       var week = [];
       for (var k = 6; k >= 0; k--) { var d = new Date(); d.setDate(d.getDate() - k); week.push({ day: d.toLocaleDateString('en-GB', { weekday: 'short' }), xp: S.days[JG.today(d)] || 0 }); }
       var max = Math.max.apply(null, week.map(function (w) { return w.xp; }).concat([JG.DAILY_GOAL]));
@@ -55,6 +68,6 @@
   }
   function plural(n, w) { return n + ' ' + w + (n === 1 ? '' : 's'); }
   function stat(k, v, sub) { return '<div class="card stat"><p class="stat-k">' + k + '</p><p class="stat-v">' + v + '</p><p class="small">' + sub + '</p></div>'; }
-  function go() { fetch('/static/qb-topics.json').then(function (r) { return r.json(); }).catch(function () { return {}; }).then(run); }
+  function go() { fetch('/static/diag.json').then(function (r) { return r.json(); }).then(function (d) { checks = d; }).catch(function () {}).then(function () { return fetch('/static/qb-topics.json'); }).then(function (r) { return r.json(); }).catch(function () { return {}; }).then(run); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', go); else go();
 })();

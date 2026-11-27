@@ -1,0 +1,248 @@
+{
+  "slug": "nutrition-and-digestion",
+  "title": "Nutrition and digestion",
+  "ks3": "Nutrition and digestion",
+  "art": "digestion",
+  "intro": "What's in your food and what happens to it after you swallow? Learn the nutrients in a balanced diet and the journey through the digestive system.",
+  "description": "Free KS3 Biology questions with answers on nutrition and digestion: carbohydrates, proteins, fats, vitamins, minerals, fibre and water, a balanced diet, the digestive system and enzymes. Marked instantly, for Year 7, 8 and 9.",
+  "subtopics": [
+    {
+      "slug": "nutrients",
+      "title": "Nutrients and a balanced diet"
+    },
+    {
+      "slug": "system",
+      "title": "The digestive system"
+    },
+    {
+      "slug": "enzymes",
+      "title": "Enzymes and food tests"
+    }
+  ],
+  "questions": [
+    {
+      "id": "nut-01",
+      "sub": "nutrients",
+      "level": 1,
+      "type": "mc",
+      "q": "Which nutrient is the body's main source of energy?",
+      "options": [
+        "Carbohydrates",
+        "Vitamins",
+        "Minerals",
+        "Water"
+      ],
+      "answer": 0,
+      "hint": "Bread, pasta and rice are full of it.",
+      "explain": "Carbohydrates, such as starch and sugars, are the main source of energy."
+    },
+    {
+      "id": "nut-02",
+      "sub": "nutrients",
+      "level": 1,
+      "type": "mc",
+      "q": "Which nutrient is needed for growth and repair?",
+      "options": [
+        "Protein",
+        "Fat",
+        "Fibre",
+        "Carbohydrate"
+      ],
+      "answer": 0,
+      "hint": "Meat, fish, eggs, beans and lentils are rich in it.",
+      "explain": "Protein is used to build and repair cells, for example muscle."
+    },
+    {
+      "id": "nut-03",
+      "sub": "nutrients",
+      "level": 2,
+      "type": "mc",
+      "q": "Why do we need **fibre**?",
+      "options": [
+        "It helps food move through the gut",
+        "It gives lots of energy",
+        "It builds strong bones",
+        "It carries oxygen"
+      ],
+      "answer": 0,
+      "hint": "It's in vegetables, fruit and wholegrain bread.",
+      "explain": "Fibre isn't digested, but it helps food move through the intestines and prevents constipation."
+    },
+    {
+      "id": "nut-04",
+      "sub": "nutrients",
+      "level": 2,
+      "type": "mc",
+      "q": "Which mineral do bones and teeth need?",
+      "options": [
+        "Calcium",
+        "Iron",
+        "Salt",
+        "Iodine"
+      ],
+      "answer": 0,
+      "hint": "Milk and cheese are good sources.",
+      "explain": "Calcium is needed for strong bones and teeth. Iron is needed for red blood cells."
+    },
+    {
+      "id": "nut-05",
+      "sub": "nutrients",
+      "level": 2,
+      "type": "mc",
+      "q": "Sailors long ago got a disease called scurvy because they ate no fresh fruit. Which vitamin were they missing?",
+      "options": [
+        "Vitamin C",
+        "Vitamin D",
+        "Vitamin A",
+        "Vitamin K"
+      ],
+      "answer": 0,
+      "hint": "Oranges and lemons are full of it.",
+      "explain": "Scurvy is caused by a lack of vitamin C. Sailors were given citrus fruit to prevent it."
+    },
+    {
+      "id": "nut-06",
+      "sub": "nutrients",
+      "level": 3,
+      "type": "mc",
+      "q": "What does a **balanced diet** mean?",
+      "options": [
+        "Eating the right amount of each nutrient",
+        "Eating the same amount of every food",
+        "Eating only fruit and vegetables",
+        "Never eating fat"
+      ],
+      "answer": 0,
+      "hint": "Too much or too little of anything can be a problem.",
+      "explain": "A balanced diet has the right amounts of each nutrient. Some fat is needed too: it stores energy and keeps you warm."
+    },
+    {
+      "id": "nut-07",
+      "sub": "system",
+      "level": 1,
+      "type": "mc",
+      "q": "Where does digestion start?",
+      "options": [
+        "In the mouth",
+        "In the stomach",
+        "In the large intestine",
+        "In the liver"
+      ],
+      "answer": 0,
+      "hint": "What happens when you chew?",
+      "explain": "Digestion starts in the mouth: teeth break food into smaller pieces and saliva starts to digest starch."
+    },
+    {
+      "id": "nut-08",
+      "sub": "system",
+      "level": 2,
+      "type": "mc",
+      "q": "Which is the right order for food to travel through the body?",
+      "options": [
+        "Mouth → oesophagus → stomach → small intestine → large intestine",
+        "Mouth → stomach → oesophagus → large intestine → small intestine",
+        "Mouth → small intestine → stomach → large intestine",
+        "Stomach → mouth → oesophagus → small intestine"
+      ],
+      "answer": 0,
+      "hint": "The oesophagus is the tube from your mouth to your stomach.",
+      "explain": "Mouth, oesophagus (food pipe), stomach, small intestine, large intestine, then out through the rectum and anus."
+    },
+    {
+      "id": "nut-09",
+      "sub": "system",
+      "level": 2,
+      "type": "mc",
+      "q": "Where are most digested nutrients absorbed into the blood?",
+      "options": [
+        "The small intestine",
+        "The stomach",
+        "The large intestine",
+        "The oesophagus"
+      ],
+      "answer": 0,
+      "hint": "It's long and folded, with a huge surface area.",
+      "explain": "Nutrients are absorbed in the small intestine. Its walls are covered in tiny finger-like villi that give it a big surface area."
+    },
+    {
+      "id": "nut-10",
+      "sub": "system",
+      "level": 3,
+      "type": "mc",
+      "q": "What is the main job of the large intestine?",
+      "options": [
+        "To absorb water from undigested food",
+        "To digest protein",
+        "To make saliva",
+        "To pump blood"
+      ],
+      "answer": 0,
+      "hint": "What's left after the small intestine has taken the nutrients?",
+      "explain": "The large intestine absorbs water. What's left is stored in the rectum and leaves through the anus as faeces."
+    },
+    {
+      "id": "nut-11",
+      "sub": "system",
+      "level": 3,
+      "type": "mc",
+      "q": "Why does the stomach contain acid?",
+      "options": [
+        "It kills bacteria and helps enzymes work",
+        "It makes food taste nicer",
+        "It absorbs nutrients",
+        "It makes us hungry"
+      ],
+      "answer": 0,
+      "hint": "Food isn't always free of germs.",
+      "explain": "Stomach acid kills most bacteria in food, and the stomach's enzymes work best in acid."
+    },
+    {
+      "id": "nut-12",
+      "sub": "enzymes",
+      "level": 2,
+      "type": "mc",
+      "q": "What do digestive **enzymes** do?",
+      "options": [
+        "Break large food molecules into small ones the body can absorb",
+        "Make food molecules bigger",
+        "Turn food into blood",
+        "Make the stomach move"
+      ],
+      "answer": 0,
+      "hint": "Small molecules can pass into the blood.",
+      "explain": "Enzymes are biological catalysts. Digestive enzymes break big molecules like starch and protein into small ones that can be absorbed."
+    },
+    {
+      "id": "nut-13",
+      "sub": "enzymes",
+      "level": 3,
+      "type": "mc",
+      "q": "Saliva contains an enzyme called amylase. What does it break down?",
+      "options": [
+        "Starch into sugars",
+        "Protein into fat",
+        "Fat into protein",
+        "Water into oxygen"
+      ],
+      "answer": 0,
+      "hint": "Chew bread for a long time and it starts to taste sweet.",
+      "explain": "Amylase breaks starch into sugars. That's why bread tastes sweeter if you chew it for a while."
+    },
+    {
+      "id": "nut-14",
+      "sub": "enzymes",
+      "level": 2,
+      "type": "mc",
+      "q": "Iodine solution is added to a food and turns blue-black. What does the food contain?",
+      "options": [
+        "Starch",
+        "Sugar",
+        "Protein",
+        "Fat"
+      ],
+      "answer": 0,
+      "hint": "The iodine test is for one nutrient.",
+      "explain": "Iodine turns from orange-brown to blue-black when starch is present."
+    }
+  ]
+}

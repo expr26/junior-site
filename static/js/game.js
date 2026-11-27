@@ -32,6 +32,15 @@
     { id: 'daily-1', icon: '☀️', name: 'Daily starter', desc: 'Finish your first daily challenge.' },
     { id: 'daily-7', icon: '📆', name: 'Challenge champ', desc: 'Finish 7 daily challenges.' },
     { id: 'mender-10', icon: '🩹', name: 'Mistake mender', desc: 'Get 10 old mistakes right in My mistakes.' },
+    { id: 'topic-times-tables', icon: '✖️', name: 'Times table hero', desc: 'Finish every Times tables unit.' },
+    { id: 'topic-place-value', icon: '🔢', name: 'Place value pro', desc: 'Finish every Place value unit.' },
+    { id: 'topic-mental-maths', icon: '🧠', name: 'Brain power', desc: 'Finish every Mental maths unit.' },
+    { id: 'topic-telling-the-time', icon: '⏰', name: 'Time keeper', desc: 'Finish every Telling the time unit.' },
+    { id: 'topic-money', icon: '💷', name: 'Money whizz', desc: 'Finish every Money unit.' },
+    { id: 'topic-shapes', icon: '🔷', name: 'Shape spotter', desc: 'Finish every Shapes unit.' },
+    { id: 'topic-missions', icon: '🚀', name: 'Mission complete', desc: 'Finish every Real-life maths mission.' },
+    { id: 'level-check', icon: '🧭', name: 'Know where I am', desc: 'Finish a level check, like Ready for Year 7?' },
+    { id: 'tt-map', icon: '🗺️', name: 'Times table map', desc: 'Colour in the whole times table map in the Times Table Trainer.' },
     { id: 'welcome-back', icon: '👋', name: 'Welcome back', desc: 'Come back after a few days away.' }
   ];
 
@@ -221,7 +230,7 @@
   }
 
   window.JG = { state: function () { return S; }, level: level, LEVELS: LEVELS, BADGES: BADGES, POINTS: POINTS, DAILY_GOAL: DAILY_GOAL,
-    answer: answer, finishUnit: finishUnit, finishGame: finishGame, finishVideo: finishVideo, finishDaily: finishDaily, mended: mended, stars: stars, drain: drain, toast: toast, confetti: confetti, today: today, dayDiff: dayDiff, chip: chip };
+    answer: answer, finishUnit: finishUnit, finishGame: finishGame, finishVideo: finishVideo, finishDaily: finishDaily, mended: mended, award: award, save: save, stars: stars, drain: drain, toast: toast, confetti: confetti, today: today, dayDiff: dayDiff, chip: chip };
 
   function ready() {
     chip();

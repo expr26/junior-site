@@ -1,0 +1,311 @@
+{
+  "slug": "chemical-reactions",
+  "title": "Chemical reactions",
+  "ks3": "Chemical reactions and energetics",
+  "art": "reactions",
+  "intro": "New substances from old ones: learn the signs of a chemical reaction, word equations, burning, rusting and why mass is never lost.",
+  "description": "Free KS3 Chemistry questions with answers on chemical reactions: physical and chemical changes, signs of a reaction, word equations, combustion, oxidation, conservation of mass and gas tests. Marked instantly, for Year 7, 8 and 9.",
+  "subtopics": [
+    {
+      "slug": "changes",
+      "title": "Physical or chemical change?"
+    },
+    {
+      "slug": "equations",
+      "title": "Word equations"
+    },
+    {
+      "slug": "burning",
+      "title": "Burning and rusting"
+    },
+    {
+      "slug": "mass",
+      "title": "Conservation of mass and gas tests"
+    }
+  ],
+  "questions": [
+    {
+      "id": "rxn-01",
+      "sub": "changes",
+      "level": 1,
+      "type": "mc",
+      "q": "Which of these is a **chemical** change?",
+      "options": [
+        "Toasting bread",
+        "Melting ice",
+        "Dissolving sugar",
+        "Breaking a glass"
+      ],
+      "answer": 0,
+      "hint": "In a chemical change, a new substance is made.",
+      "explain": "Toasting makes new substances (the brown, crispy part). Melting, dissolving and breaking don't make new substances."
+    },
+    {
+      "id": "rxn-02",
+      "sub": "changes",
+      "level": 1,
+      "type": "mc",
+      "q": "Which of these is a **physical** change?",
+      "options": [
+        "Water freezing",
+        "Wood burning",
+        "An egg cooking",
+        "Iron rusting"
+      ],
+      "answer": 0,
+      "hint": "Can you easily get back what you started with?",
+      "explain": "Freezing water makes ice, which is still water. You can melt it back. That's a physical change."
+    },
+    {
+      "id": "rxn-03",
+      "sub": "changes",
+      "level": 2,
+      "type": "mc",
+      "q": "Which is a sign that a chemical reaction has happened?",
+      "options": [
+        "Bubbles of a new gas are given off",
+        "The substance is cut into pieces",
+        "The substance is moved",
+        "The substance is poured into a jug"
+      ],
+      "answer": 0,
+      "hint": "Look for signs that something new has been made.",
+      "explain": "Signs of a chemical reaction include a gas being given off, a colour change, a temperature change and a new solid appearing."
+    },
+    {
+      "id": "rxn-04",
+      "sub": "changes",
+      "level": 2,
+      "type": "mc",
+      "q": "In a reaction, the starting substances are called…",
+      "options": [
+        "Reactants",
+        "Products",
+        "Solvents",
+        "Indicators"
+      ],
+      "answer": 0,
+      "hint": "They react.",
+      "explain": "The starting substances are reactants. The new substances made are products."
+    },
+    {
+      "id": "rxn-05",
+      "sub": "changes",
+      "level": 3,
+      "type": "mc",
+      "q": "A reaction makes the test tube feel hotter. What kind of reaction is it?",
+      "options": [
+        "Exothermic",
+        "Endothermic",
+        "Physical",
+        "Neutral"
+      ],
+      "answer": 0,
+      "hint": "Exo- means “out”: energy goes out to the surroundings.",
+      "explain": "An exothermic reaction transfers energy to the surroundings, so they get warmer. Burning is exothermic."
+    },
+    {
+      "id": "rxn-06",
+      "sub": "equations",
+      "level": 1,
+      "type": "mc",
+      "q": "Magnesium burns in oxygen to make magnesium oxide. Which is the word equation?",
+      "options": [
+        "magnesium + oxygen → magnesium oxide",
+        "magnesium oxide → magnesium + oxygen",
+        "magnesium + water → magnesium oxide",
+        "oxygen → magnesium"
+      ],
+      "answer": 0,
+      "hint": "Reactants go on the left of the arrow, products on the right.",
+      "explain": "magnesium + oxygen → magnesium oxide."
+    },
+    {
+      "id": "rxn-07",
+      "sub": "equations",
+      "level": 2,
+      "type": "mc",
+      "q": "In “zinc + hydrochloric acid → zinc chloride + hydrogen”, which are the products?",
+      "options": [
+        "Zinc chloride and hydrogen",
+        "Zinc and hydrochloric acid",
+        "Zinc and hydrogen",
+        "Only hydrogen"
+      ],
+      "answer": 0,
+      "hint": "Products are on the right of the arrow.",
+      "explain": "The products are zinc chloride and hydrogen."
+    },
+    {
+      "id": "rxn-08",
+      "sub": "equations",
+      "level": 3,
+      "type": "mc",
+      "q": "Copper carbonate is heated and breaks down into copper oxide and carbon dioxide. What type of reaction is this?",
+      "options": [
+        "Thermal decomposition",
+        "Neutralisation",
+        "Combustion",
+        "Dissolving"
+      ],
+      "answer": 0,
+      "hint": "Thermal means heat, decomposition means breaking down.",
+      "explain": "One substance is broken down by heating into simpler substances: thermal decomposition."
+    },
+    {
+      "id": "rxn-09",
+      "sub": "burning",
+      "level": 1,
+      "type": "mc",
+      "q": "Burning is also called…",
+      "options": [
+        "Combustion",
+        "Condensation",
+        "Corrosion",
+        "Conduction"
+      ],
+      "answer": 0,
+      "hint": "It's a reaction with oxygen that gives out heat and light.",
+      "explain": "Burning is combustion: a fuel reacts with oxygen and transfers energy as heat and light."
+    },
+    {
+      "id": "rxn-10",
+      "sub": "burning",
+      "level": 2,
+      "type": "mc",
+      "q": "The fire triangle shows the three things a fire needs. Which list is right?",
+      "options": [
+        "Fuel, heat and oxygen",
+        "Fuel, water and carbon dioxide",
+        "Heat, smoke and water",
+        "Oxygen, nitrogen and sand"
+      ],
+      "answer": 0,
+      "hint": "Take away any one and the fire goes out.",
+      "explain": "A fire needs fuel, heat and oxygen. A fire blanket works by cutting off the oxygen."
+    },
+    {
+      "id": "rxn-11",
+      "sub": "burning",
+      "level": 2,
+      "type": "mc",
+      "q": "When a fuel like natural gas (methane) burns completely, what two products are made?",
+      "options": [
+        "Carbon dioxide and water",
+        "Oxygen and hydrogen",
+        "Carbon and nitrogen",
+        "Smoke and sand"
+      ],
+      "answer": 0,
+      "hint": "The fuel contains carbon and hydrogen; each joins with oxygen.",
+      "explain": "methane + oxygen → carbon dioxide + water."
+    },
+    {
+      "id": "rxn-12",
+      "sub": "burning",
+      "level": 3,
+      "type": "mc",
+      "q": "Iron rusts when it reacts with…",
+      "options": [
+        "Oxygen and water",
+        "Only oxygen",
+        "Only water",
+        "Carbon dioxide"
+      ],
+      "answer": 0,
+      "hint": "Iron doesn't rust in dry air or in water with no air in it.",
+      "explain": "Rusting needs both oxygen (from air) and water. Rust is a form of iron oxide."
+    },
+    {
+      "id": "rxn-13",
+      "sub": "burning",
+      "level": 3,
+      "type": "mc",
+      "q": "Why does painting a bike frame stop it rusting?",
+      "options": [
+        "It keeps air and water away from the iron",
+        "It makes the iron stronger",
+        "It adds oxygen",
+        "It makes the bike lighter"
+      ],
+      "answer": 0,
+      "hint": "What does iron need to rust?",
+      "explain": "Paint is a barrier that stops oxygen and water reaching the iron."
+    },
+    {
+      "id": "rxn-14",
+      "sub": "mass",
+      "level": 2,
+      "type": "num",
+      "q": "24 g of magnesium reacts with exactly 16 g of oxygen. What mass of magnesium oxide is made?",
+      "answer": "40",
+      "hint": "Mass is never created or destroyed in a reaction.",
+      "explain": "24 + 16 = 40 g. The atoms are just rearranged.",
+      "unit": "g"
+    },
+    {
+      "id": "rxn-15",
+      "sub": "mass",
+      "level": 3,
+      "type": "mc",
+      "q": "Wood is burned and the ash weighs much less than the wood. Where did the mass go?",
+      "options": [
+        "Into gases like carbon dioxide and water vapour that escaped",
+        "It was destroyed",
+        "Into the heat",
+        "It turned into light"
+      ],
+      "answer": 0,
+      "hint": "Atoms can't vanish. What left the fire?",
+      "explain": "The mass went into gases that escaped into the air. If you caught all the products, the total mass would be the same as the wood plus the oxygen used."
+    },
+    {
+      "id": "rxn-16",
+      "sub": "mass",
+      "level": 2,
+      "type": "mc",
+      "q": "Which test shows a gas is **carbon dioxide**?",
+      "options": [
+        "It turns limewater milky (cloudy)",
+        "It relights a glowing splint",
+        "It burns with a squeaky pop",
+        "It turns blue litmus red and smells of eggs"
+      ],
+      "answer": 0,
+      "hint": "Limewater is the test.",
+      "explain": "Carbon dioxide turns limewater milky."
+    },
+    {
+      "id": "rxn-17",
+      "sub": "mass",
+      "level": 2,
+      "type": "mc",
+      "q": "A lit splint is held near a test tube and you hear a squeaky pop. Which gas is it?",
+      "options": [
+        "Hydrogen",
+        "Oxygen",
+        "Carbon dioxide",
+        "Nitrogen"
+      ],
+      "answer": 0,
+      "hint": "The pop is a tiny explosion.",
+      "explain": "Hydrogen burns with a squeaky pop."
+    },
+    {
+      "id": "rxn-18",
+      "sub": "mass",
+      "level": 3,
+      "type": "mc",
+      "q": "A glowing splint relights when put into a test tube of gas. Which gas is it?",
+      "options": [
+        "Oxygen",
+        "Hydrogen",
+        "Carbon dioxide",
+        "Nitrogen"
+      ],
+      "answer": 0,
+      "hint": "Which gas helps things burn?",
+      "explain": "Oxygen relights a glowing splint because it helps things burn."
+    }
+  ]
+}

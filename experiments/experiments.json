@@ -1,0 +1,93 @@
+{
+  "_about": "Science experiments to do at home with everyday things: one page each at /experiments/<slug>/. Keep them safe: no flames, no hot liquids, no sharp tools for children, no chemicals beyond kitchen ones. Every explanation must be scientifically accurate.",
+  "experiments": [
+    {
+      "slug": "paper-helicopter", "icon": "🚁", "title": "Paper helicopter", "topic": "Forces: air resistance", "time": "15 minutes", "mess": "None",
+      "intro": "Make a paper helicopter that spins as it falls, then change its wings to find out how air resistance slows it down.",
+      "need": ["A sheet of A4 paper", "Scissors (an adult may help)", "A paper clip", "A ruler"],
+      "safety": "Drop the helicopters from a safe height, like standing on the floor with your arm up. Don't climb on furniture.",
+      "steps": ["Cut a strip of paper about 20 cm long and 5 cm wide.", "Cut down the middle from the top to halfway, to make two wings.", "Fold one wing forwards and the other backwards.", "Fold up the bottom and add a paper clip to the bottom to add a little weight.", "Hold it up high, let go and watch it spin. Then make a second helicopter with shorter wings and drop both from the same height at the same time."],
+      "why": "As the helicopter falls, air pushes up on the wings. This force is called **air resistance** (or drag). The wings are angled, so the air also makes them turn. Bigger wings push against more air, so there is more air resistance and the helicopter falls more slowly. Gravity pulls both helicopters down the same way; it's the air resistance that makes the difference.",
+      "change": ["Make the wings longer or shorter. Keep everything else the same.", "Add a second paper clip.", "Use thicker card instead of paper."],
+      "think": ["Which helicopter landed first? Why?", "Why do you think it's important to drop them from the same height?", "How do parachutes use the same idea?"],
+      "links": [["Forces questions", "/question-bank/physics/forces/"], ["Forces video", "/videos/physics/forces/"]]
+    },
+    {
+      "slug": "balloon-rocket", "icon": "🎈", "title": "Balloon rocket", "topic": "Forces: pushes and pulls", "time": "20 minutes", "mess": "None",
+      "intro": "Send a balloon racing along a string and find out how rockets move.",
+      "need": ["A balloon", "A long piece of string (about 4 m)", "A drinking straw", "Sticky tape", "Two chairs"],
+      "safety": "Don't blow up balloons if anyone in the house has a latex allergy (use latex-free balloons). Never put a balloon or burst balloon pieces in your mouth unsupervised.",
+      "steps": ["Thread the string through the straw.", "Tie the string tightly between two chairs, far apart.", "Blow up the balloon but don't tie it. Hold the end shut.", "Tape the balloon to the straw, with its open end pointing towards one chair.", "Let go and watch it zoom along the string!"],
+      "why": "When you let go, the stretched balloon pushes air out of the opening backwards. The air pushes back on the balloon with an equal force in the opposite direction, so the balloon moves forwards. Real rockets work the same way: they push hot gas out of the back very fast, and the gas pushes the rocket forwards.",
+      "change": ["Blow the balloon up more or less. Measure how far it goes each time.", "Try a long thin balloon and a round one.", "Make the string slope upwards."],
+      "think": ["Does a bigger balloon go further? Why might that be?", "What slows the balloon down?", "Which way does the air go, and which way does the balloon go?"],
+      "links": [["Forces questions", "/question-bank/physics/forces/"], ["Ramp Lab simulation", "/games/ramp-lab/"]]
+    },
+    {
+      "slug": "bending-water", "icon": "⚡", "title": "Bend water with a balloon", "topic": "Static electricity", "time": "10 minutes", "mess": "A little water",
+      "intro": "Use static electricity from your hair to pull a stream of water sideways.",
+      "need": ["A balloon", "Dry hair or a wool jumper", "A tap with a thin, steady stream of water"],
+      "safety": "Keep the balloon away from plug sockets and electrical things. This works best on a dry day.",
+      "steps": ["Blow up the balloon and tie it.", "Turn on the tap so there's a thin, smooth stream of water.", "Rub the balloon on dry hair or a wool jumper about 10 times.", "Slowly bring the balloon close to the water, without touching it.", "Watch the stream bend towards the balloon!"],
+      "why": "Rubbing moves tiny charged particles called **electrons** from your hair onto the balloon, so the balloon becomes negatively charged. The charged balloon attracts the water and pulls the stream towards it. (Water molecules have a slightly positive end and a slightly negative end, which helps.) It's the same static electricity that makes your hair stand up.",
+      "change": ["Rub the balloon more times, or fewer.", "Try a plastic comb instead of a balloon.", "Try it on a damp day."],
+      "think": ["What happens if the balloon touches the water? (Try it again afterwards.)", "Why does it work better on a dry day?"],
+      "links": [["Static electricity questions", "/question-bank/physics/static-electricity/"], ["Balloon Charge game", "/games/balloon-charge/"]]
+    },
+    {
+      "slug": "orange-float-or-sink", "icon": "🍊", "title": "Does an orange float?", "topic": "Density and floating", "time": "10 minutes", "mess": "A little water",
+      "intro": "An orange floats, but peel it and something surprising happens. Find out why.",
+      "need": ["An orange", "A large bowl or jug of water"],
+      "safety": "An adult may need to help start peeling the orange.",
+      "steps": ["Fill the bowl with water.", "Predict: will the orange float or sink? Put it in and see.", "Take it out and peel it.", "Predict again, then put the peeled orange in the water."],
+      "why": "The orange peel is full of tiny pockets of air. Air is much less dense than water, so with its peel on, the whole orange is less dense than water and it floats, like it's wearing a life jacket. Without the peel, the orange is slightly denser than water, so it sinks. Whether something floats depends on its **density** (how much mass is packed into each bit of space), not just how heavy it is.",
+      "change": ["Try a lemon or a satsuma.", "Add lots of salt to the water and try the peeled orange again (salty water is denser)."],
+      "think": ["A big ship is very heavy. How can it float?", "Why might the peeled orange float in very salty water?"],
+      "links": [["Particles and density questions", "/question-bank/physics/particles-and-density/"], ["Float or Sink game", "/games/float-or-sink/"]]
+    },
+    {
+      "slug": "bending-pencil", "icon": "✏️", "title": "The broken pencil trick", "topic": "Light: refraction", "time": "10 minutes", "mess": "A little water",
+      "intro": "Make a pencil look broken and a hidden coin appear, using only water and light.",
+      "need": ["A clear glass or jar", "Water", "A pencil", "A mug (not see-through) and a coin"],
+      "safety": "Use a plastic cup if you're worried about glass.",
+      "steps": ["Half fill the glass with water and put the pencil in at an angle.", "Look at it from the side. Does the pencil look straight?", "Now put a coin in the bottom of the empty mug.", "Move your head back until the coin is just hidden by the edge of the mug. Keep your head still.", "Ask someone to slowly pour water into the mug. Watch the coin appear!"],
+      "why": "Light travels more slowly in water than in air. When light passes from water into air at an angle, it changes direction. This is called **refraction**. Your eyes assume light travels in straight lines, so the part of the pencil in the water looks like it's in a different place. In the mug, light from the coin bends where it leaves the water, so it can now reach your eye over the edge of the mug.",
+      "change": ["Look at the pencil from straight above. Does it still look broken?", "Try other clear liquids, like cooking oil (ask first)."],
+      "think": ["Why does a swimming pool look shallower than it really is?", "Where else have you seen things look bent in water?"],
+      "links": [["Light questions", "/question-bank/physics/light/"], ["Mirror Maze game", "/games/mirror-maze/"]]
+    },
+    {
+      "slug": "string-telephone", "icon": "📞", "title": "String telephone", "topic": "Sound: vibrations", "time": "20 minutes", "mess": "None",
+      "intro": "Talk to a friend through a piece of string and discover how sound travels.",
+      "need": ["Two paper or plastic cups", "A long piece of string (about 5 m)", "A sharp pencil (an adult should make the holes)", "Two paper clips"],
+      "safety": "An adult should make the holes in the cups.",
+      "steps": ["Ask an adult to make a small hole in the bottom of each cup.", "Push one end of the string through each hole and tie it to a paper clip inside the cup so it can't pull through.", "Each person takes a cup and walks apart until the string is tight.", "One person talks into their cup while the other holds theirs to their ear.", "Now let the string go loose and try again."],
+      "why": "Sound is made by **vibrations**. When you speak, your voice makes the bottom of the cup vibrate. The vibrations travel along the tight string to the other cup, which vibrates and passes the sound into the air near your friend's ear. Sound travels well through solids like string. When the string is loose, the vibrations can't pass along it well.",
+      "change": ["Use a longer or shorter string.", "Try different string: fishing line, wool or thread.", "Let someone pinch the string in the middle."],
+      "think": ["Why must the string be tight?", "What happens when someone pinches the string? Why?"],
+      "links": [["Sound questions", "/question-bank/physics/sound/"], ["Sound Studio game", "/games/sound-studio/"]]
+    },
+    {
+      "slug": "shadow-clock", "icon": "☀️", "title": "Shadow clock", "topic": "Space: the Earth spins", "time": "A sunny day (5 minutes every hour)", "mess": "Chalk on the ground",
+      "intro": "Track a shadow through a sunny day to see the Earth spinning.",
+      "need": ["A stick or pencil stuck in a pot of soil (or a bottle)", "Chalk or small stones to mark the ground", "A sunny day", "A watch or clock"],
+      "safety": "**Never look straight at the Sun**, not even for a second and not through glasses or binoculars. It can damage your eyes.",
+      "steps": ["In the morning, put your stick somewhere sunny where it can stay all day.", "Mark the end of its shadow with chalk and write the time next to it.", "Come back every hour and mark the shadow again.", "At the end of the day, look at the pattern your marks make."],
+      "why": "The Sun seems to move across the sky from east to west, but really it's the **Earth spinning** once every 24 hours. As the Earth turns, the Sun's light hits the stick from different directions, so the shadow moves. Around the middle of the day the Sun is highest in the sky, so the shadow is shortest.",
+      "change": ["Do it again on another sunny day a few weeks later. Are the shadows the same length?", "Use a taller stick."],
+      "think": ["When was the shadow shortest? Why?", "How could you use your marks to tell the time tomorrow?"],
+      "links": [["Space questions", "/question-bank/physics/space/"], ["Day, Night and Seasons simulation", "/games/day-night-seasons/"]]
+    },
+    {
+      "slug": "fizzy-volcano", "icon": "🌋", "title": "Fizzy volcano", "topic": "Chemistry: chemical reactions", "time": "15 minutes", "mess": "Lots! Do it outside or on a tray",
+      "intro": "Mix two kitchen ingredients and watch a chemical reaction make a fizzing foam.",
+      "need": ["A small plastic bottle or cup", "2 teaspoons of bicarbonate of soda (baking soda)", "About 100 ml of vinegar", "A squirt of washing-up liquid (optional, for more foam)", "Food colouring (optional)", "A tray or somewhere outside"],
+      "safety": "Do this with an adult. Wear glasses or goggles if you have them, and keep the mixture away from your eyes. If any gets in your eyes, rinse them with plenty of clean water. Don't drink the mixture.",
+      "steps": ["Stand the bottle on a tray or outside.", "Put the bicarbonate of soda in the bottle. Add a squirt of washing-up liquid and a drop of food colouring if you like.", "Pour in the vinegar and step back!", "When it stops, touch the outside of the bottle. Does it feel warmer or colder?"],
+      "why": "Vinegar is an acid. Bicarbonate of soda reacts with acids. When they mix, a **chemical reaction** happens and makes new substances, including **carbon dioxide** gas. The gas makes the bubbles, and the washing-up liquid traps them into foam. You can't get the vinegar and bicarbonate back afterwards, which is one sign that a chemical reaction has happened. The bottle often feels slightly colder, because this reaction takes in a little heat energy.",
+      "change": ["Use more or less bicarbonate of soda, with the same amount of vinegar.", "Try lemon juice instead of vinegar (it's an acid too)."],
+      "think": ["How do you know a new substance was made?", "What would happen if you added more vinegar after it stopped?"],
+      "links": [["Particle Party game", "/games/particle-party/"]]
+    }
+  ]
+}

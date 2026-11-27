@@ -1,0 +1,248 @@
+{
+  "slug": "ecosystems",
+  "title": "Food chains and ecosystems",
+  "ks3": "Interactions and interdependencies",
+  "art": "ecosystems",
+  "intro": "Who eats whom? Learn about producers and consumers, food chains and webs, photosynthesis and how living things depend on each other.",
+  "description": "Free KS3 Biology questions with answers on ecosystems: food chains and food webs, producers, consumers, predators and prey, photosynthesis, adaptation and decomposers. Marked instantly, for Year 7, 8 and 9.",
+  "subtopics": [
+    {
+      "slug": "chains",
+      "title": "Food chains and webs"
+    },
+    {
+      "slug": "photosynthesis",
+      "title": "Photosynthesis"
+    },
+    {
+      "slug": "depend",
+      "title": "Adaptation and interdependence"
+    }
+  ],
+  "questions": [
+    {
+      "id": "eco-01",
+      "sub": "chains",
+      "level": 1,
+      "type": "mc",
+      "q": "In the food chain grass → rabbit → fox, what is the grass?",
+      "options": [
+        "The producer",
+        "A predator",
+        "A herbivore",
+        "A decomposer"
+      ],
+      "answer": 0,
+      "hint": "It makes its own food.",
+      "explain": "Grass is a producer: it makes its own food by photosynthesis. Every food chain starts with a producer."
+    },
+    {
+      "id": "eco-02",
+      "sub": "chains",
+      "level": 1,
+      "type": "mc",
+      "q": "In a food chain, what do the arrows show?",
+      "options": [
+        "The direction energy moves, from the eaten to the eater",
+        "Which animal is bigger",
+        "Which way the animals run",
+        "Who eats first"
+      ],
+      "answer": 0,
+      "hint": "The arrow points to the animal doing the eating.",
+      "explain": "The arrows show energy passing from the food to the animal that eats it."
+    },
+    {
+      "id": "eco-03",
+      "sub": "chains",
+      "level": 2,
+      "type": "mc",
+      "q": "An animal that eats only plants is called…",
+      "options": [
+        "A herbivore",
+        "A carnivore",
+        "An omnivore",
+        "A producer"
+      ],
+      "answer": 0,
+      "hint": "Herb- is to do with plants.",
+      "explain": "Herbivores eat plants. Carnivores eat other animals. Omnivores eat both."
+    },
+    {
+      "id": "eco-04",
+      "sub": "chains",
+      "level": 2,
+      "type": "mc",
+      "q": "In grass → rabbit → fox, which animal is the **predator**?",
+      "options": [
+        "The fox",
+        "The rabbit",
+        "The grass",
+        "None of them"
+      ],
+      "answer": 0,
+      "hint": "A predator hunts and eats other animals.",
+      "explain": "The fox is the predator and the rabbit is its prey."
+    },
+    {
+      "id": "eco-05",
+      "sub": "chains",
+      "level": 3,
+      "type": "mc",
+      "q": "In a food web, foxes eat rabbits. A disease kills most of the foxes. What will probably happen to the rabbits at first?",
+      "options": [
+        "Their number will go up",
+        "Their number will go down",
+        "Nothing",
+        "They will become foxes"
+      ],
+      "answer": 0,
+      "hint": "Fewer predators means…",
+      "explain": "With fewer foxes eating them, more rabbits survive, so the rabbit population goes up (at least at first)."
+    },
+    {
+      "id": "eco-06",
+      "sub": "chains",
+      "level": 3,
+      "type": "mc",
+      "q": "What do **decomposers** such as fungi and bacteria do?",
+      "options": [
+        "Break down dead things and return nutrients to the soil",
+        "Make food from sunlight",
+        "Hunt other animals",
+        "Pollinate flowers"
+      ],
+      "answer": 0,
+      "hint": "What happens to fallen leaves?",
+      "explain": "Decomposers break down dead plants and animals, putting nutrients back into the soil for plants to use."
+    },
+    {
+      "id": "eco-07",
+      "sub": "photosynthesis",
+      "level": 1,
+      "type": "mc",
+      "q": "Plants make their own food by…",
+      "options": [
+        "Photosynthesis",
+        "Respiration",
+        "Digestion",
+        "Evaporation"
+      ],
+      "answer": 0,
+      "hint": "Photo- means light.",
+      "explain": "Plants use light energy to make glucose. This is photosynthesis."
+    },
+    {
+      "id": "eco-08",
+      "sub": "photosynthesis",
+      "level": 2,
+      "type": "mc",
+      "q": "Which word equation shows photosynthesis?",
+      "options": [
+        "carbon dioxide + water → glucose + oxygen",
+        "glucose + oxygen → carbon dioxide + water",
+        "oxygen + water → carbon dioxide",
+        "glucose → oxygen + light"
+      ],
+      "answer": 0,
+      "hint": "Plants take in carbon dioxide and water, and give out oxygen.",
+      "explain": "carbon dioxide + water → glucose + oxygen, using light energy absorbed by chlorophyll."
+    },
+    {
+      "id": "eco-09",
+      "sub": "photosynthesis",
+      "level": 2,
+      "type": "mc",
+      "q": "Which gas do plants give out during photosynthesis?",
+      "options": [
+        "Oxygen",
+        "Carbon dioxide",
+        "Nitrogen",
+        "Hydrogen"
+      ],
+      "answer": 0,
+      "hint": "It's the gas we breathe in.",
+      "explain": "Plants give out oxygen. Almost all the oxygen in the air was made by photosynthesis."
+    },
+    {
+      "id": "eco-10",
+      "sub": "photosynthesis",
+      "level": 3,
+      "type": "mc",
+      "q": "Where does a plant get the **water** for photosynthesis?",
+      "options": [
+        "From the soil, through its roots",
+        "From the air, through its leaves",
+        "From sunlight",
+        "It makes it"
+      ],
+      "answer": 0,
+      "hint": "Think about root hair cells.",
+      "explain": "Water is absorbed from the soil by the roots (especially root hair cells) and travels up to the leaves."
+    },
+    {
+      "id": "eco-11",
+      "sub": "depend",
+      "level": 1,
+      "type": "mc",
+      "q": "A polar bear has thick fur and a layer of fat. What are these?",
+      "options": [
+        "Adaptations to keep it warm in the cold",
+        "Signs that it is ill",
+        "Ways to swim faster",
+        "Ways to catch food in the desert"
+      ],
+      "answer": 0,
+      "hint": "Polar bears live in the Arctic.",
+      "explain": "Features that help a living thing survive where it lives are adaptations. Fur and fat insulate the bear."
+    },
+    {
+      "id": "eco-12",
+      "sub": "depend",
+      "level": 2,
+      "type": "mc",
+      "q": "A cactus has spines instead of leaves. How does this help it survive in a desert?",
+      "options": [
+        "It loses less water",
+        "It catches more sunlight",
+        "It grows faster",
+        "It attracts more animals"
+      ],
+      "answer": 0,
+      "hint": "Water is scarce in the desert.",
+      "explain": "Spines have a tiny surface area, so the cactus loses less water. They also stop animals eating it."
+    },
+    {
+      "id": "eco-13",
+      "sub": "depend",
+      "level": 2,
+      "type": "mc",
+      "q": "Bees carry pollen from flower to flower. How does this help plants?",
+      "options": [
+        "It pollinates them so they can make seeds",
+        "It feeds the plants",
+        "It makes the plants grow taller",
+        "It protects the plants from frost"
+      ],
+      "answer": 0,
+      "hint": "Pollen needs to reach another flower.",
+      "explain": "Bees pollinate flowers, so the plants can make seeds. That's why a fall in bee numbers worries farmers."
+    },
+    {
+      "id": "eco-14",
+      "sub": "depend",
+      "level": 3,
+      "type": "mc",
+      "q": "Living things in an area all depend on each other. This is called…",
+      "options": [
+        "Interdependence",
+        "Independence",
+        "Adaptation",
+        "Evolution"
+      ],
+      "answer": 0,
+      "hint": "Inter- means “between”.",
+      "explain": "Interdependence means living things rely on each other for food, shelter, pollination and more. A change to one can affect many others."
+    }
+  ]
+}

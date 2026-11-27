@@ -1,0 +1,127 @@
+{
+  "slug": "mental-maths",
+  "subject": "maths",
+  "stage": "ks2",
+  "icon": "🧠",
+  "card": "Number bonds, clever ways to add and subtract in your head, doubling, halving and estimating.",
+  "title": "Mental maths",
+  "seo_title": "Mental maths strategies and practice (KS2, ages 9 to 11)",
+  "level": "KS2 · Years 4 to 6",
+  "description": "Mental maths strategies explained simply: number bonds to 10, 100 and 1,000, adding and subtracting in your head, doubling and halving, multiplying by 5, 20 and 25, and estimating answers. Free practice with hints for ages 9 to 11.",
+  "intro": "You don't need a pencil for everything! Learn a few clever tricks and you can work out lots of sums in your head, and check your written answers too.",
+  "units": [
+    {
+      "slug": "number-bonds",
+      "title": "Number bonds to 10, 100 and 1,000",
+      "blurb": "Pairs that make a round number.",
+      "learn": [
+        {"h": "Bonds to 10", "p": "Pairs of whole numbers that add up to 10: 1 + 9, 2 + 8, 3 + 7, 4 + 6, 5 + 5. Knowing these by heart makes everything else quicker."},
+        {"h": "Bonds to 100", "p": "Use your bonds to 10 for the tens, then make the ones up to a full ten. 64 + ? = 100: 64 needs 6 to get to 70, and then 30 to get to 100. So 64 + 36 = 100. Check: the ones (4 + 6) make 10 and the tens (6 + 3) make 9."},
+        {"h": "Bonds to 1,000", "p": "For multiples of 10 it works the same way: 370 + 630 = 1,000, because 37 + 63 = 100."}
+      ],
+      "questions": [
+        {"type": "num", "q": "7 + ? = 10", "answer": "3", "hint": "Count on from 7 to 10.", "explain": "7 + 3 = 10."},
+        {"type": "num", "q": "45 + ? = 100", "answer": "55", "hint": "45 needs 5 to get to 50. Then how many to get to 100?", "explain": "45 + 5 = 50, then 50 more makes 100. 5 + 50 = 55, so 45 + 55 = 100."},
+        {"type": "num", "q": "100 − 28 = ?", "answer": "72", "hint": "What goes with 28 to make 100? 28 needs 2 to get to 30…", "explain": "28 + 2 = 30, then 70 more makes 100. So 100 − 28 = 72."},
+        {"type": "num", "q": "600 + ? = 1000", "answer": "400", "hint": "6 + 4 = 10, so 600 + 400 = …", "explain": "600 + 400 = 1,000."},
+        {"type": "num", "q": "250 + ? = 1000", "answer": "750", "hint": "25 + ? = 100. Then make it ten times bigger.", "explain": "25 + 75 = 100, so 250 + 750 = 1,000."},
+        {"type": "num", "q": "0.3 + ? = 1", "answer": "0.7", "hint": "3 tenths + how many tenths make 10 tenths?", "explain": "3 tenths + 7 tenths = 10 tenths = 1. So 0.3 + 0.7 = 1."},
+        {"type": "num", "q": "You have 100p. You spend 63p. How much change do you get?", "answer": "37", "unit": "p", "hint": "Count on from 63 to 100.", "explain": "63 + 7 = 70, then 30 more makes 100. 7 + 30 = 37p."}
+      ]
+    },
+    {
+      "slug": "adding-in-your-head",
+      "title": "Adding in your head",
+      "blurb": "Split numbers up, and use near tens.",
+      "learn": [
+        {"h": "Split into tens and ones", "p": "47 + 36: add the tens, 40 + 30 = 70. Add the ones, 7 + 6 = 13. Then 70 + 13 = 83."},
+        {"h": "Add a near ten", "p": "To add 9, add 10 then take 1 away. 56 + 9 = 66 − 1 = 65. To add 29, add 30 and take 1 away: 47 + 29 = 77 − 1 = 76."},
+        {"h": "Look for pairs", "p": "With lots of numbers, look for pairs that make a ten first. 6 + 7 + 4 + 3: (6 + 4) + (7 + 3) = 10 + 10 = 20."}
+      ],
+      "questions": [
+        {"type": "num", "q": "35 + 42 = ?", "answer": "77", "hint": "Tens: 30 + 40. Ones: 5 + 2.", "explain": "70 + 7 = 77."},
+        {"type": "num", "q": "58 + 9 = ?", "answer": "67", "hint": "Add 10, then take 1 away.", "explain": "58 + 10 = 68, and 68 − 1 = 67."},
+        {"type": "num", "q": "46 + 37 = ?", "answer": "83", "hint": "Tens: 40 + 30 = 70. Ones: 6 + 7 = 13.", "explain": "70 + 13 = 83."},
+        {"type": "num", "q": "124 + 39 = ?", "answer": "163", "hint": "Add 40, then take 1 away.", "explain": "124 + 40 = 164, and 164 − 1 = 163."},
+        {"type": "num", "q": "8 + 5 + 2 + 5 = ?", "answer": "20", "hint": "Find pairs that make 10.", "explain": "(8 + 2) + (5 + 5) = 10 + 10 = 20."},
+        {"type": "num", "q": "250 + 380 = ?", "answer": "630", "hint": "Think 25 + 38 tens.", "explain": "25 + 38 = 63, so 250 + 380 = 630."},
+        {"type": "num", "q": "2.5 + 1.8 = ?", "answer": "4.3", "hint": "Ones: 2 + 1 = 3. Tenths: 5 + 8 = 13 tenths = 1.3.", "explain": "3 + 1.3 = 4.3."}
+      ]
+    },
+    {
+      "slug": "subtracting-in-your-head",
+      "title": "Subtracting in your head",
+      "blurb": "Count on, or take away a near ten.",
+      "learn": [
+        {"h": "Take away a near ten", "p": "To take away 9, take away 10 and add 1 back. 73 − 9 = 63 + 1 = 64. To take away 19: 73 − 20 = 53, then add 1 back: 54."},
+        {"h": "Count on to find the difference", "p": "When the numbers are close, count on from the smaller one. 403 − 396: from 396 to 400 is 4, then to 403 is 3 more. The difference is 7."},
+        {"h": "Check with adding", "p": "Subtraction and addition undo each other. If 82 − 47 = 35, then 35 + 47 should be 82. It is, so the answer is right."}
+      ],
+      "questions": [
+        {"type": "num", "q": "65 − 9 = ?", "answer": "56", "hint": "Take away 10, then add 1 back.", "explain": "65 − 10 = 55, and 55 + 1 = 56."},
+        {"type": "num", "q": "84 − 29 = ?", "answer": "55", "hint": "Take away 30, then add 1 back.", "explain": "84 − 30 = 54, and 54 + 1 = 55."},
+        {"type": "num", "q": "502 − 497 = ?", "answer": "5", "hint": "The numbers are close. Count on from 497.", "explain": "497 to 500 is 3, and 500 to 502 is 2. 3 + 2 = 5."},
+        {"type": "num", "q": "91 − 45 = ?", "answer": "46", "hint": "91 − 40 = 51. Then take away 5 more.", "explain": "91 − 40 = 51, and 51 − 5 = 46."},
+        {"type": "num", "q": "1000 − 350 = ?", "answer": "650", "hint": "35 + ? = 100, so 350 + ? = 1,000.", "explain": "350 + 650 = 1,000, so 1,000 − 350 = 650."},
+        {"type": "mc", "q": "Mia says 73 − 38 = 45. How can she check?", "options": ["Work out 45 + 38 and see if it makes 73", "Work out 73 + 38", "Work out 45 − 38", "Work out 73 + 45"], "answer": 0, "hint": "Adding undoes taking away.", "explain": "If 73 − 38 = 45 then 45 + 38 should be 73. But 45 + 38 = 83, so Mia is wrong. The right answer is 35."},
+        {"type": "num", "q": "A book has 120 pages. Sam has read 85. How many pages are left?", "answer": "35", "unit": "pages", "hint": "Count on from 85 to 120.", "explain": "85 to 90 is 5, 90 to 120 is 30. 5 + 30 = 35 pages."}
+      ]
+    },
+    {
+      "slug": "doubling-and-halving",
+      "title": "Doubling and halving",
+      "blurb": "Two tricks that unlock lots of other sums.",
+      "learn": [
+        {"h": "Double by splitting", "p": "Double 37: double 30 is 60, double 7 is 14. 60 + 14 = 74."},
+        {"h": "Halve by splitting", "p": "Half of 58: half of 50 is 25, half of 8 is 4. 25 + 4 = 29. For an odd tens number like 70, think: half of 70 is 35, because 35 + 35 = 70."},
+        {"h": "Double and halve", "p": "In a times sum you can double one number and halve the other, and the answer stays the same. 16 × 5 = 8 × 10 = 80. 14 × 25 = 7 × 50 = 350."}
+      ],
+      "questions": [
+        {"type": "num", "q": "Double 46.", "answer": "92", "hint": "Double 40, double 6, then add.", "explain": "80 + 12 = 92."},
+        {"type": "num", "q": "Half of 84.", "answer": "42", "hint": "Half of 80, half of 4.", "explain": "40 + 2 = 42."},
+        {"type": "num", "q": "Half of 76.", "answer": "38", "hint": "Half of 70 is 35. Half of 6 is 3.", "explain": "35 + 3 = 38."},
+        {"type": "num", "q": "Double 3.5", "answer": "7", "hint": "Double 3 and double 0.5.", "explain": "6 + 1 = 7."},
+        {"type": "num", "q": "Double 250.", "answer": "500", "hint": "Double 25 is 50.", "explain": "Double 25 is 50, so double 250 is 500."},
+        {"type": "num", "q": "18 × 5 = ?", "answer": "90", "hint": "Halve 18 and double 5.", "explain": "18 × 5 = 9 × 10 = 90."},
+        {"type": "num", "q": "Half of 130.", "answer": "65", "hint": "Half of 100 is 50, half of 30 is 15.", "explain": "50 + 15 = 65."}
+      ]
+    },
+    {
+      "slug": "multiplying-in-your-head",
+      "title": "Multiplying and dividing in your head",
+      "blurb": "× 20, × 5, × 25 and splitting the number up.",
+      "learn": [
+        {"h": "Times 20", "p": "20 = 2 × 10. So multiply by 2, then by 10. 14 × 20: 14 × 2 = 28, then 28 × 10 = 280."},
+        {"h": "Times 5 and times 25", "p": "× 5 is the same as × 10 then halve: 46 × 5 = 460 ÷ 2 = 230. × 25 is the same as × 100 then divide by 4: 12 × 25 = 1,200 ÷ 4 = 300."},
+        {"h": "Split the bigger number", "p": "23 × 4: split 23 into 20 and 3. 20 × 4 = 80 and 3 × 4 = 12. 80 + 12 = 92. To divide, split into numbers that divide easily: 72 ÷ 3 = (60 ÷ 3) + (12 ÷ 3) = 20 + 4 = 24."}
+      ],
+      "questions": [
+        {"type": "num", "q": "13 × 20 = ?", "answer": "260", "hint": "Multiply by 2, then by 10.", "explain": "13 × 2 = 26, then 26 × 10 = 260."},
+        {"type": "num", "q": "24 × 5 = ?", "answer": "120", "hint": "Times 10, then halve.", "explain": "24 × 10 = 240, half of 240 is 120."},
+        {"type": "num", "q": "16 × 25 = ?", "answer": "400", "hint": "Times 100, then divide by 4.", "explain": "16 × 100 = 1,600, and 1,600 ÷ 4 = 400."},
+        {"type": "num", "q": "34 × 3 = ?", "answer": "102", "hint": "30 × 3 and 4 × 3. Then add.", "explain": "90 + 12 = 102."},
+        {"type": "num", "q": "84 ÷ 4 = ?", "answer": "21", "hint": "Halve, then halve again.", "explain": "Half of 84 is 42, half of 42 is 21."},
+        {"type": "num", "q": "96 ÷ 3 = ?", "answer": "32", "hint": "Split 96 into 90 and 6.", "explain": "90 ÷ 3 = 30 and 6 ÷ 3 = 2. 30 + 2 = 32."},
+        {"type": "num", "q": "Cinema tickets cost £5 each. How many pounds do 36 tickets cost?", "answer": "180", "unit": "pounds", "hint": "36 × 5: times 10, then halve.", "explain": "36 × 10 = 360, half is 180. So £180."}
+      ]
+    },
+    {
+      "slug": "estimating",
+      "title": "Estimating and checking",
+      "blurb": "Round first to see if an answer makes sense.",
+      "learn": [
+        {"h": "Round, then work it out", "p": "To estimate 398 + 214, round each number: 400 + 200 = 600. The real answer (612) should be close to 600."},
+        {"h": "Spot silly answers", "p": "If someone says 48 × 21 = 108, estimate: 50 × 20 = 1,000. 108 is much too small, so it must be wrong. (It's 1,008.)"},
+        {"h": "Estimate in real life", "p": "Shopping: £2.95 + £4.10 + £1.99 is about £3 + £4 + £2 = £9. Handy for checking you have enough money!"}
+      ],
+      "questions": [
+        {"type": "mc", "q": "Which is the best estimate for 504 + 297?", "options": ["800", "700", "900", "8,000"], "answer": 0, "hint": "Round each number to the nearest 100.", "explain": "500 + 300 = 800. (The exact answer is 801.)"},
+        {"type": "mc", "q": "Which is the best estimate for 31 × 19?", "options": ["600", "50", "300", "6,000"], "answer": 0, "hint": "Round to 30 × 20.", "explain": "30 × 20 = 600. (The exact answer is 589.)"},
+        {"type": "mc", "q": "Josh says 612 − 389 = 323. Is he right?", "options": ["No: the answer should be about 200", "Yes: it's about 300", "No: the answer should be about 1,000", "Yes: it's exactly right"], "answer": 0, "hint": "Estimate: 600 − 400.", "explain": "600 − 400 = 200, so 323 is too big. The exact answer is 223."},
+        {"type": "mc", "q": "Which is the best estimate for 4.9 × 6.1?", "options": ["30", "3", "300", "11"], "answer": 0, "hint": "Round each to the nearest whole number.", "explain": "5 × 6 = 30. (The exact answer is 29.89.)"},
+        {"type": "mc", "q": "You buy three things that cost £1.95, £3.05 and £0.99. About how much is that altogether?", "options": ["£6", "£5", "£8", "£60"], "answer": 0, "hint": "Round each price to the nearest pound.", "explain": "£2 + £3 + £1 = £6. (The exact total is £5.99.)"},
+        {"type": "mc", "q": "Which is the best estimate for 798 ÷ 4?", "options": ["200", "20", "400", "2,000"], "answer": 0, "hint": "Round 798 to 800.", "explain": "800 ÷ 4 = 200. (The exact answer is 199.5.)"}
+      ]
+    }
+  ]
+}

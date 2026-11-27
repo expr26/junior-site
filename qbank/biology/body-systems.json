@@ -1,0 +1,259 @@
+{
+  "slug": "body-systems",
+  "title": "Body systems",
+  "ks3": "Structure and function of living organisms",
+  "art": "body",
+  "intro": "Your heart, lungs, bones and muscles all work together. Learn how you breathe, how blood moves and how your skeleton and muscles let you move.",
+  "description": "Free KS3 Biology questions with answers on body systems: the heart and blood, the lungs and breathing, the skeleton, joints and muscles. Marked instantly, for Year 7, 8 and 9.",
+  "subtopics": [
+    {
+      "slug": "heart",
+      "title": "Heart and blood"
+    },
+    {
+      "slug": "lungs",
+      "title": "Lungs and breathing"
+    },
+    {
+      "slug": "skeleton",
+      "title": "Skeleton, joints and muscles"
+    }
+  ],
+  "questions": [
+    {
+      "id": "bod-01",
+      "sub": "heart",
+      "level": 1,
+      "type": "mc",
+      "q": "What does the heart do?",
+      "options": [
+        "Pumps blood around the body",
+        "Takes in oxygen from the air",
+        "Digests food",
+        "Controls your thoughts"
+      ],
+      "answer": 0,
+      "hint": "It's a muscle that never stops.",
+      "explain": "The heart is a muscle that pumps blood around the body through blood vessels."
+    },
+    {
+      "id": "bod-02",
+      "sub": "heart",
+      "level": 2,
+      "type": "mc",
+      "q": "Which blood vessels carry blood **away** from the heart?",
+      "options": [
+        "Arteries",
+        "Veins",
+        "Capillaries",
+        "Nerves"
+      ],
+      "answer": 0,
+      "hint": "A for away.",
+      "explain": "Arteries carry blood away from the heart. Veins carry it back. Capillaries are tiny vessels in between."
+    },
+    {
+      "id": "bod-03",
+      "sub": "heart",
+      "level": 2,
+      "type": "mc",
+      "q": "Blood carries oxygen and glucose to the cells. What does it carry away from them?",
+      "options": [
+        "Carbon dioxide",
+        "Oxygen",
+        "Glucose",
+        "Air"
+      ],
+      "answer": 0,
+      "hint": "It's a waste gas from respiration.",
+      "explain": "Cells make carbon dioxide in respiration. Blood carries it to the lungs, where we breathe it out."
+    },
+    {
+      "id": "bod-04",
+      "sub": "heart",
+      "level": 3,
+      "type": "mc",
+      "q": "Why does your heart beat faster when you run?",
+      "options": [
+        "Your muscles need more oxygen and glucose for respiration",
+        "Your blood gets thicker",
+        "Your lungs stop working",
+        "To cool you down"
+      ],
+      "answer": 0,
+      "hint": "Working muscles need more energy.",
+      "explain": "Working muscles respire faster, so they need more oxygen and glucose. The heart pumps faster to deliver them."
+    },
+    {
+      "id": "bod-05",
+      "sub": "lungs",
+      "level": 1,
+      "type": "mc",
+      "q": "Which organs take oxygen into the body from the air?",
+      "options": [
+        "The lungs",
+        "The kidneys",
+        "The stomach",
+        "The heart"
+      ],
+      "answer": 0,
+      "hint": "You breathe in with them.",
+      "explain": "In the lungs, oxygen passes from the air into the blood."
+    },
+    {
+      "id": "bod-06",
+      "sub": "lungs",
+      "level": 2,
+      "type": "mc",
+      "q": "In the lungs, what are the **alveoli**?",
+      "options": [
+        "Tiny air sacs where gases move in and out of the blood",
+        "Muscles that move the ribs",
+        "Tubes that carry food",
+        "Bones that protect the heart"
+      ],
+      "answer": 0,
+      "hint": "They look like tiny bunches of grapes.",
+      "explain": "Alveoli are tiny air sacs with thin walls and lots of blood vessels, so oxygen and carbon dioxide can move between the air and the blood."
+    },
+    {
+      "id": "bod-07",
+      "sub": "lungs",
+      "level": 2,
+      "type": "mc",
+      "q": "Which gas is there **more** of in the air you breathe out than in the air you breathe in?",
+      "options": [
+        "Carbon dioxide",
+        "Oxygen",
+        "Nitrogen",
+        "Hydrogen"
+      ],
+      "answer": 0,
+      "hint": "Your cells make it.",
+      "explain": "Breathed-out air has more carbon dioxide (and less oxygen), because your body has used oxygen and made carbon dioxide."
+    },
+    {
+      "id": "bod-08",
+      "sub": "lungs",
+      "level": 3,
+      "type": "mc",
+      "q": "When you breathe in, what does the diaphragm do?",
+      "options": [
+        "Contracts and moves down, so the chest gets bigger",
+        "Relaxes and moves up",
+        "Pushes air out",
+        "Stays still"
+      ],
+      "answer": 0,
+      "hint": "A bigger space inside the chest means lower pressure, so air rushes in.",
+      "explain": "The diaphragm contracts and flattens (moves down) and the ribs move up and out. The chest gets bigger, so air flows in."
+    },
+    {
+      "id": "bod-09",
+      "sub": "lungs",
+      "level": 3,
+      "type": "mc",
+      "q": "Why is smoking harmful to the lungs?",
+      "options": [
+        "Tar and chemicals damage the alveoli and airways",
+        "It adds extra oxygen",
+        "It cleans the lungs",
+        "It makes the lungs bigger"
+      ],
+      "answer": 0,
+      "hint": "Smoke contains harmful substances.",
+      "explain": "Cigarette smoke contains tar and harmful chemicals that damage the airways and alveoli and can cause diseases such as lung cancer."
+    },
+    {
+      "id": "bod-10",
+      "sub": "skeleton",
+      "level": 1,
+      "type": "mc",
+      "q": "Which of these is **not** a job of the skeleton?",
+      "options": [
+        "Digesting food",
+        "Supporting the body",
+        "Protecting organs",
+        "Helping you move"
+      ],
+      "answer": 0,
+      "hint": "Bones hold you up and keep you safe.",
+      "explain": "The skeleton supports, protects and helps movement. It also makes blood cells in the bone marrow. It doesn't digest food."
+    },
+    {
+      "id": "bod-11",
+      "sub": "skeleton",
+      "level": 1,
+      "type": "mc",
+      "q": "Which bones protect the brain?",
+      "options": [
+        "The skull",
+        "The ribs",
+        "The pelvis",
+        "The spine"
+      ],
+      "answer": 0,
+      "hint": "It's the bony case of your head.",
+      "explain": "The skull protects the brain. The ribs protect the heart and lungs."
+    },
+    {
+      "id": "bod-12",
+      "sub": "skeleton",
+      "level": 2,
+      "type": "num",
+      "q": "About how many bones are in an adult human skeleton?",
+      "answer": "206",
+      "hint": "It's a bit more than 200.",
+      "explain": "An adult has about 206 bones. Babies have more, because some bones join together as you grow.",
+      "unit": "bones"
+    },
+    {
+      "id": "bod-13",
+      "sub": "skeleton",
+      "level": 2,
+      "type": "mc",
+      "q": "What kind of joint is your knee?",
+      "options": [
+        "A hinge joint",
+        "A ball and socket joint",
+        "A fixed joint",
+        "Not a joint"
+      ],
+      "answer": 0,
+      "hint": "It bends one way, like a door.",
+      "explain": "The knee is a hinge joint: it moves back and forth in one direction. The hip and shoulder are ball and socket joints."
+    },
+    {
+      "id": "bod-14",
+      "sub": "skeleton",
+      "level": 3,
+      "type": "mc",
+      "q": "To bend your arm, which muscle contracts?",
+      "options": [
+        "The biceps",
+        "The triceps",
+        "Both at the same time",
+        "Neither: bones move on their own"
+      ],
+      "answer": 0,
+      "hint": "The biceps is on the front of your upper arm.",
+      "explain": "The biceps contracts to bend the arm while the triceps relaxes. To straighten it, the triceps contracts. Muscles that work like this are called antagonistic pairs."
+    },
+    {
+      "id": "bod-15",
+      "sub": "skeleton",
+      "level": 3,
+      "type": "mc",
+      "q": "Why do muscles have to work in pairs?",
+      "options": [
+        "Muscles can only pull, not push",
+        "Muscles are too weak alone",
+        "One muscle is always asleep",
+        "Bones need two muscles to stay warm"
+      ],
+      "answer": 0,
+      "hint": "A muscle can get shorter, but can it push?",
+      "explain": "Muscles can only pull by contracting. So one muscle pulls a bone one way, and another muscle pulls it back."
+    }
+  ]
+}

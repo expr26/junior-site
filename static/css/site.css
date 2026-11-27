@@ -984,3 +984,91 @@ button.am-tile:hover:not(:disabled){transform:translateY(-3px)}button.am-tile:di
 .pr-table th,.pr-table td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left}
 .pr-table th{font-family:var(--serif)}
 @media print{.site-header,.site-footer,.no-print,.skip{display:none!important}body{background:#fff!important}.pr-stats{grid-template-columns:1fr 1fr 1fr}.card{break-inside:avoid}}
+
+/* KS2 corner (/ks2/) and the Times Table Trainer */
+.ks2-card{position:relative}
+.ks2-ic{position:absolute;top:14px;right:16px;font-size:34px;line-height:1}
+.tt-panel{display:grid;gap:16px;margin-top:20px}
+.tt-panel h2{font-size:22px;margin:0 0 4px}
+.tt-chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.tt-chip{font:700 18px var(--serif);min-width:56px;min-height:48px;border-radius:14px;border:2px solid var(--fun);background:var(--card);color:var(--fun);cursor:pointer}
+.tt-chip.on{background:var(--fun);color:#fff;box-shadow:0 3px 0 var(--btn-edge)}
+.tt-quick{display:flex;flex-wrap:wrap;gap:8px;margin:0}.tt-quick .btn{min-height:40px;padding:0 14px;font-size:15px}
+.tt-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tt-grid{border-collapse:collapse;font-size:13px;margin-top:8px;min-width:100%}
+.tt-grid th,.tt-grid td{width:7.6%;height:30px;text-align:center;border:1px solid var(--line);padding:0}
+.tt-grid th{color:var(--navy);font-family:var(--serif);background:var(--bg-alt)}
+.tt-grid td{background:var(--card);color:var(--navy);font-weight:700}
+.tt-grid td.half,.tt-key.half{background:var(--fun-bg)}
+.tt-grid td.got,.tt-key.got{background:var(--sun);color:#1E1B3A}
+.tt-key{display:inline-block;width:14px;height:14px;border-radius:4px;border:1px solid var(--line);vertical-align:-2px}
+.tt-big{text-align:center;margin:8px 0 14px}
+.tt-q{font:700 44px/1.2 var(--serif);color:var(--navy)}
+.tt-gap{display:inline-block;min-width:1.6em;border-bottom:4px dashed var(--fun);color:var(--fun)}
+.tt-gap.shown{border-bottom-style:solid;color:var(--ok)}
+.tt-form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.tt-form input{font:700 28px var(--serif);width:7ch;min-height:52px;text-align:center;border:3px solid var(--fun);border-radius:14px;background:var(--card);color:var(--ink)}
+.ks2-banner{display:block;position:relative;margin-bottom:16px;background:linear-gradient(135deg,var(--gold-bg),var(--fun-bg))}
+.tt-panel[hidden]{display:none}
+.tt-x{font-family:Arial,"Helvetica Neue",sans-serif;font-weight:700}
+.topic-hero .figbox svg.ks2fig{width:auto;max-width:100%;height:auto}
+/* Level checks (/ready-for-year-7/) */
+.diag-skip{margin-top:12px;min-height:40px;font-size:15px}
+.diag-areas li{margin:4px 0}
+.diag-list{text-align:left;margin:16px 0;display:grid;gap:10px}
+.diag-row{display:grid;grid-template-columns:36px 1fr;gap:4px 10px;align-items:center;background:var(--card);border:2px solid var(--line);border-radius:16px;padding:10px 14px}
+.diag-row.practise{border-color:var(--pink)}.diag-row.nearly{border-color:var(--sun)}.diag-row.ready{border-color:var(--ok)}
+.diag-ic{font-size:26px;grid-row:span 2}
+.diag-name b{display:block}
+.diag-links{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:15px}
+.diag-lv{font-weight:700;font-size:15px;color:var(--navy)}
+@media (min-width:640px){.diag-row{grid-template-columns:36px 1fr auto}.diag-ic{grid-row:auto}}
+@media print{.diag-row{break-inside:avoid}}
+/* For parents (/parents/) */
+.pg-acts{list-style:none;padding:0;display:grid;gap:12px;counter-reset:pg}
+.pg-acts li{counter-increment:pg;position:relative;padding-left:64px}
+.pg-acts li::before{content:counter(pg);position:absolute;left:16px;top:18px;width:34px;height:34px;border-radius:50%;background:var(--fun);color:#fff;font:700 18px/34px var(--serif);text-align:center}
+.pg-acts h3{margin:0 0 4px}
+.cm-stage{margin-bottom:16px}.cm-stage h2 small{font-size:15px;color:var(--muted);font-weight:400}
+.cm-cols{display:grid;gap:8px 24px}@media (min-width:800px){.cm-cols{grid-template-columns:1fr 1fr}}
+.cm-list{padding-left:20px}.cm-list li{margin:6px 0}
+.cm-go{white-space:nowrap;font-size:15px;font-weight:700}
+/* Big screen mode for classrooms (static/js/projector.js) */
+.proj-btn{min-height:40px;font-size:15px;margin:0 0 12px}
+@media (max-width:899px){.proj-btn{display:none}}
+html[data-proj="on"] body{font-size:26px}
+html[data-proj="on"] .site-header,html[data-proj="on"] .site-footer,html[data-proj="on"] footer,html[data-proj="on"] main>section:not(.proj-keep),
+html[data-proj="on"] .toasts,html[data-proj="on"] .rs-panel{display:none!important}
+html[data-proj="on"] .proj-keep{padding-top:16px}
+html[data-proj="on"] .proj-keep .wrap{max-width:min(1400px,96vw)}
+html[data-proj="on"] .proj-keep .q-text,html[data-proj="on"] .proj-keep .bubble,html[data-proj="on"] .proj-keep .opt,
+html[data-proj="on"] .proj-keep .fb-title,html[data-proj="on"] .proj-keep .qb-q{font-size:1.25em}
+html[data-proj="on"] .proj-keep .q-fig .fig{width:auto;height:38vh;max-width:100%}
+html[data-proj="on"] .proj-keep .a-stage svg{max-height:58vh}
+html[data-proj="on"] .proj-btn{position:fixed;top:12px;right:12px;z-index:50;display:inline-flex}
+/* For teachers (/teachers/) */
+.tp-res li{margin:10px 0}
+.pg-acts h3 small{font-size:14px;color:var(--muted);font-weight:400;margin-left:6px}
+.tp-grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));margin-bottom:24px}
+.tp-card{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;padding:14px 16px}.tp-card small{width:100%;color:var(--muted)}
+/* Experiments (/experiments/) */
+.ex-meta{display:flex;flex-wrap:wrap;gap:8px 16px;font-weight:700;color:var(--navy)}
+.ex-safe h2{margin-top:0}
+.ex-why summary{cursor:pointer;list-style:none}.ex-why summary::-webkit-details-marker{display:none}
+.ex-why[open] summary{margin-bottom:8px}
+.pg-acts li p{margin:0}
+/* Worksheet maker (/worksheets/) */
+.ws-form fieldset{border:0;padding:0;margin:0 0 16px}
+.ws-form legend{font:700 18px var(--serif);color:var(--navy);margin-bottom:6px}
+.ws-row{display:flex;flex-wrap:wrap;gap:8px}
+.ws-chip{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;border:2px solid var(--line);border-radius:99px;background:var(--card);cursor:pointer;font-weight:600}
+.ws-chip:has(input:checked){border-color:var(--fun);background:var(--fun-bg)}
+.ws-topics{display:grid;gap:6px}
+.ws-topic{border:2px solid var(--line);border-radius:14px;padding:6px 12px;background:var(--card)}
+.ws-topic summary{cursor:pointer;min-height:36px;display:flex;align-items:center;gap:6px}
+.ws-parts{padding:4px 0 6px 26px}
+.ws-line{display:flex;align-items:center;gap:8px;margin:6px 0}
+.ws-line input[type=text]{flex:1;min-height:44px;border:2px solid var(--line);border-radius:12px;padding:0 12px;font:inherit;background:var(--bg);color:var(--ink)}
+.ws-all{font:inherit;font-size:14px;border:0;background:none;color:var(--fun);text-decoration:underline;cursor:pointer}
+.ws-msg{min-height:1.4em;color:var(--bad)}
+#ws-out{margin-top:24px}

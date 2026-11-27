@@ -44,6 +44,7 @@ def pages():
   <div class="wrap">
     <h2>Play and practise</h2>
     <div class="game-grid">{play}</div>
+    <p class="small">Prefer paper? Print a <a href="/printables/times-tables-chart/">times tables chart</a>, a sheet for <a href="/printables/7-times-table/">each times table</a> or a <a href="/printables/">topic worksheet with answers</a>.</p>
     <p class="small">Ready for more? Try the <a href="/maths/fractions/">Fractions</a> path or the <a href="/question-bank/maths/">KS3 Maths questions</a>.</p>
   </div>
 </section>

@@ -1,0 +1,132 @@
+{
+  "slug": "place-value",
+  "subject": "maths",
+  "stage": "ks2",
+  "icon": "🔢",
+  "card": "What each digit is worth, big numbers up to a million, rounding and decimals.",
+  "title": "Place value",
+  "seo_title": "Place value practice: digits, rounding and decimals (KS2, ages 9 to 11)",
+  "level": "KS2 · Years 4 to 6",
+  "description": "Learn place value step by step with place value charts: the value of each digit, numbers up to 1,000,000, comparing and ordering, rounding, tenths and hundredths, and multiplying and dividing by 10, 100 and 1,000. Free practice for ages 9 to 11.",
+  "intro": "The same digit can be worth 5 or 5,000, depending on where it sits. Learn how place value works and big numbers, rounding and decimals all start to make sense.",
+  "hero_fig": {"type": "pv", "n": "4,072", "cols": ["Th", "H", "T", "O"]},
+  "units": [
+    {
+      "slug": "value-of-a-digit",
+      "title": "What is each digit worth?",
+      "blurb": "Ones, tens, hundreds and thousands in a place value chart.",
+      "learn": [
+        {"h": "Columns", "p": "Each place in a number has a value. From the right: **ones (O)**, **tens (T)**, **hundreds (H)**, **thousands (Th)**. Each column is worth 10 times the column on its right.", "fig": {"type": "pv", "n": "3,528", "cols": ["Th", "H", "T", "O"]}},
+        {"h": "The value of a digit", "p": "In 3,528 the 5 is in the hundreds column, so it is worth **500**. The 3 is worth 3,000, the 2 is worth 20 and the 8 is worth 8. Together: 3,000 + 500 + 20 + 8 = 3,528."},
+        {"h": "Zero holds the place", "p": "In 4,072 there are no hundreds, so we write a 0 to hold the place. Without it, 4,072 would turn into 472, a very different number!", "fig": {"type": "pv", "n": "4,072", "cols": ["Th", "H", "T", "O"]}}
+      ],
+      "questions": [
+        {"type": "num", "q": "What is the 7 worth in 2,746?", "answer": "700", "hint": "Which column is the 7 in? Count from the right: ones, tens, hundreds…", "explain": "The 7 is in the hundreds column, so it is worth 700."},
+        {"type": "mc", "q": "Which number is shown in the chart?", "fig": {"type": "pv", "n": "6,035", "cols": ["Th", "H", "T", "O"]}, "options": ["6,035", "635", "6,305", "60,35"], "answer": 0, "hint": "Read the digits from left to right, and don't skip the 0.", "explain": "6 thousands, 0 hundreds, 3 tens and 5 ones make 6,035."},
+        {"type": "num", "q": "What is the value of the 4 in 4,019?", "answer": "4000", "hint": "The 4 is in the thousands column.", "explain": "The 4 is worth 4,000 (four thousand)."},
+        {"type": "num", "q": "5,000 + 300 + 60 + 2 = ?", "answer": "5362", "hint": "Put each part in its own column: thousands, hundreds, tens, ones.", "explain": "5 thousands, 3 hundreds, 6 tens and 2 ones make 5,362."},
+        {"type": "num", "q": "8,000 + 40 + 1 = ?", "answer": "8041", "hint": "There are no hundreds. What goes in the hundreds column?", "explain": "8 thousands, 0 hundreds, 4 tens and 1 one: 8,041."},
+        {"type": "mc", "q": "In which number is the 3 worth 30?", "options": ["1,234", "3,412", "4,321", "2,103"], "answer": 0, "hint": "Worth 30 means 3 tens. Find the number with a 3 in the tens column.", "explain": "In 1,234 the 3 is in the tens column, so it is worth 30."},
+        {"type": "num", "q": "What number is 100 more than 2,950?", "answer": "3050", "hint": "Add 1 to the hundreds digit. 9 hundreds + 1 hundred = 10 hundreds = 1 thousand.", "explain": "2,950 + 100 = 3,050. The hundreds go from 9 to 10, so we carry 1 into the thousands."},
+        {"type": "num", "q": "What number is 1,000 less than 7,480?", "answer": "6480", "hint": "Take 1 away from the thousands digit.", "explain": "7,480 − 1,000 = 6,480."}
+      ]
+    },
+    {
+      "slug": "big-numbers",
+      "title": "Big numbers up to a million",
+      "blurb": "Ten thousands, hundred thousands and one million.",
+      "learn": [
+        {"h": "More columns", "p": "After thousands come **ten thousands (TTh)** and **hundred thousands (HTh)**. Then one million: 1,000,000.", "fig": {"type": "pv", "n": "472,105", "cols": ["HTh", "TTh", "Th", "H", "T", "O"]}},
+        {"h": "Commas help you read", "p": "We put a comma every three digits from the right. 472,105 is read “four hundred and seventy-two **thousand**, one hundred and five”. The part before the comma tells you how many thousands."},
+        {"h": "A million", "p": "One million is a thousand thousands: 1,000,000. It has six zeros."}
+      ],
+      "questions": [
+        {"type": "num", "q": "What is the 6 worth in 362,014?", "answer": "60000", "hint": "Count the columns from the right: O, T, H, Th, TTh…", "explain": "The 6 is in the ten thousands column, so it is worth 60,000."},
+        {"type": "mc", "q": "How do you write “forty-five thousand, two hundred and eight” in digits?", "options": ["45,208", "45,280", "4,528", "450,208"], "answer": 0, "hint": "Forty-five thousand is 45,___. Then two hundred and eight goes after the comma, using 3 digits.", "explain": "45 thousand, then 208: 45,208."},
+        {"type": "mc", "q": "How do you say 703,050?", "options": ["Seven hundred and three thousand and fifty", "Seventy thousand, three hundred and fifty", "Seven hundred and thirty thousand and five", "Seven thousand and thirty-five"], "answer": 0, "hint": "The part before the comma is how many thousands: 703.", "explain": "703 thousand, then 050 = fifty. So 703,050 is seven hundred and three thousand and fifty."},
+        {"type": "num", "q": "How many thousands make one million?", "answer": "1000", "hint": "1,000,000 = ? × 1,000", "explain": "1,000 × 1,000 = 1,000,000. A million is a thousand thousands."},
+        {"type": "num", "q": "What number is 10,000 more than 285,600?", "answer": "295600", "hint": "Add 1 to the ten thousands digit.", "explain": "285,600 + 10,000 = 295,600. The ten thousands digit goes from 8 to 9."},
+        {"type": "num", "q": "300,000 + 20,000 + 5,000 + 40 = ?", "answer": "325040", "hint": "Put each part in its column. Which columns are empty?", "explain": "3 HTh, 2 TTh, 5 Th, 0 H, 4 T, 0 O: 325,040."},
+        {"type": "mc", "q": "Which is the biggest number?", "options": ["1,000,000", "999,999", "100,000", "990,000"], "answer": 0, "hint": "Count the digits first.", "explain": "1,000,000 has 7 digits; the others have 6. It's one more than 999,999."}
+      ]
+    },
+    {
+      "slug": "compare-and-order",
+      "title": "Comparing and ordering",
+      "blurb": "Which is bigger? Use the < and > signs.",
+      "learn": [
+        {"h": "Count the digits", "p": "If two whole numbers have a different number of digits, the one with more digits is bigger. 10,000 is bigger than 9,999."},
+        {"h": "Same number of digits", "p": "Compare the digits from the **left**. 4,385 and 4,358: thousands are the same (4), hundreds are the same (3), tens: 8 is more than 5. So 4,385 is bigger."},
+        {"h": "The signs", "p": "**>** means “is greater than” and **<** means “is less than”. The open mouth faces the bigger number: 4,385 > 4,358."}
+      ],
+      "questions": [
+        {"type": "mc", "q": "Which sign goes in the gap? 6,214 ___ 6,241", "options": ["<", ">", "="], "answer": 0, "hint": "Compare from the left. The thousands and hundreds are the same. Look at the tens.", "explain": "1 ten is less than 4 tens, so 6,214 < 6,241."},
+        {"type": "mc", "q": "Which sign goes in the gap? 30,500 ___ 9,950", "options": [">", "<", "="], "answer": 0, "hint": "How many digits does each number have?", "explain": "30,500 has 5 digits and 9,950 has 4, so 30,500 > 9,950."},
+        {"type": "mc", "q": "Which list is in order from smallest to biggest?", "options": ["2,089; 2,809; 2,890; 2,908", "2,809; 2,089; 2,908; 2,890", "2,908; 2,890; 2,809; 2,089", "2,089; 2,890; 2,809; 2,908"], "answer": 0, "hint": "All the numbers start with 2 thousand. Compare the hundreds next.", "explain": "Hundreds: 0, 8, 8, 9. The two with 8 hundreds: 2,809 has 0 tens and 2,890 has 9 tens. So the order is 2,089; 2,809; 2,890; 2,908."},
+        {"type": "mc", "q": "Which number is between 45,000 and 46,000?", "options": ["45,600", "46,500", "44,900", "4,560"], "answer": 0, "hint": "It must have 45 thousand and something more.", "explain": "45,600 is more than 45,000 and less than 46,000."},
+        {"type": "num", "q": "What is the biggest number you can make with the digits 3, 8, 1 and 6? Use each digit once.", "answer": "8631", "hint": "Put the biggest digit in the column worth the most.", "explain": "Biggest digit in the thousands, then the next: 8,631."},
+        {"type": "num", "q": "What is the smallest 4-digit number you can make with 5, 0, 2 and 7? Use each digit once.", "answer": "2057", "hint": "A 4-digit number can't start with 0. Start with the smallest digit that isn't 0.", "explain": "2 in the thousands, then 0, 5, 7: 2,057."},
+        {"type": "mc", "q": "Which is true?", "options": ["70,001 > 69,999", "70,001 < 69,999", "70,001 = 69,999", "69,999 > 70,001"], "answer": 0, "hint": "Compare the ten thousands digits: 7 and 6.", "explain": "7 ten thousands is more than 6 ten thousands, so 70,001 > 69,999."}
+      ]
+    },
+    {
+      "slug": "rounding",
+      "title": "Rounding",
+      "blurb": "Round to the nearest 10, 100 and 1,000.",
+      "learn": [
+        {"h": "Which is nearer?", "p": "To round 63 to the nearest 10, find the two tens it sits between: 60 and 70. 63 is nearer to 60, so 63 rounds to **60**."},
+        {"h": "Look at the next digit", "p": "Rounding to the nearest 100? Look at the **tens** digit. To the nearest 1,000? Look at the **hundreds** digit. If it is 0 to 4, round down. If it is 5 to 9, round up."},
+        {"h": "Halfway rounds up", "p": "85 is exactly halfway between 80 and 90. The rule is: halfway rounds **up**, so 85 rounds to 90. And 2,500 rounds to 3,000 to the nearest 1,000."}
+      ],
+      "questions": [
+        {"type": "num", "q": "Round 47 to the nearest 10.", "answer": "50", "hint": "47 is between 40 and 50. Which is nearer?", "explain": "47 is 3 away from 50 and 7 away from 40, so it rounds to 50."},
+        {"type": "num", "q": "Round 432 to the nearest 100.", "answer": "400", "hint": "Look at the tens digit: 3.", "explain": "The tens digit is 3 (0 to 4), so round down: 400."},
+        {"type": "num", "q": "Round 1,650 to the nearest 100.", "answer": "1700", "hint": "Look at the tens digit. Is it 5 or more?", "explain": "The tens digit is 5, so round up: 1,700."},
+        {"type": "num", "q": "Round 6,489 to the nearest 1,000.", "answer": "6000", "hint": "Look at the hundreds digit: 4.", "explain": "The hundreds digit is 4, so round down: 6,000."},
+        {"type": "num", "q": "Round 35 to the nearest 10.", "answer": "40", "hint": "35 is exactly halfway between 30 and 40. Remember the rule for halfway.", "explain": "Halfway rounds up, so 35 rounds to 40."},
+        {"type": "num", "q": "Round 297 to the nearest 10.", "answer": "300", "hint": "297 is between 290 and 300.", "explain": "297 is 3 away from 300 and 7 away from 290, so it rounds to 300."},
+        {"type": "mc", "q": "A number rounded to the nearest 10 is 80. Which could it be?", "options": ["76", "74", "86", "85"], "answer": 0, "hint": "Numbers from 75 up to 84 round to 80.", "explain": "76 rounds to 80. 74 rounds to 70, 85 and 86 round to 90."},
+        {"type": "num", "q": "A football ground holds 24,763 people. Round this to the nearest 1,000.", "answer": "25000", "hint": "Look at the hundreds digit: 7.", "explain": "The hundreds digit is 7 (5 or more), so round up: 25,000."}
+      ]
+    },
+    {
+      "slug": "tenths-and-hundredths",
+      "title": "Tenths and hundredths",
+      "blurb": "Decimals in the place value chart.",
+      "learn": [
+        {"h": "After the point", "p": "Columns keep going to the right of the decimal point. The first is **tenths (t)**, then **hundredths (h)**. 3.25 means 3 ones, 2 tenths and 5 hundredths.", "fig": {"type": "pv", "n": "3.25", "cols": ["T", "O", "t", "h"]}},
+        {"h": "Tenths", "p": "One tenth is 1 whole cut into 10 equal parts: 0.1 = {1/10}. So 0.7 = {7/10}.", "fig": {"type": "bar", "n": 7, "d": 10}},
+        {"h": "Hundredths", "p": "One hundredth is 1 whole cut into 100 equal parts: 0.01 = {1/100}. 0.25 means 25 hundredths, the same as {25/100}. Money uses hundredths: £1.25 is 1 pound and 25 pence."}
+      ],
+      "questions": [
+        {"type": "mc", "q": "What is the 4 worth in 2.47?", "options": ["4 tenths", "4 hundredths", "4 ones", "4 tens"], "answer": 0, "hint": "The first digit after the point is tenths.", "explain": "The 4 is just after the decimal point, so it is worth 4 tenths (0.4)."},
+        {"type": "num", "q": "Write {3/10} as a decimal.", "answer": "0.3", "hint": "3 tenths goes in the first column after the point.", "explain": "{3/10} = 0.3."},
+        {"type": "num", "q": "Write {9/100} as a decimal.", "answer": "0.09", "hint": "9 hundredths goes in the second column after the point. What goes in the tenths?", "explain": "No tenths and 9 hundredths: 0.09."},
+        {"type": "mc", "q": "Which is the biggest?", "options": ["0.5", "0.45", "0.09", "0.405"], "answer": 0, "hint": "Compare the tenths digits first.", "explain": "0.5 has 5 tenths; 0.45 and 0.405 have 4 tenths; 0.09 has none. So 0.5 is biggest, even though it has fewer digits."},
+        {"type": "num", "q": "What number is shown?", "fig": {"type": "pv", "n": "4.06", "cols": ["O", "t", "h"]}, "answer": "4.06", "hint": "4 ones, 0 tenths, 6 hundredths.", "explain": "4 ones, 0 tenths and 6 hundredths: 4.06."},
+        {"type": "num", "q": "How many hundredths are in 0.3?", "answer": "30", "unit": "hundredths", "hint": "1 tenth = 10 hundredths.", "explain": "3 tenths = 30 hundredths, because each tenth is 10 hundredths."},
+        {"type": "num", "q": "Round 6.8 to the nearest whole number.", "answer": "7", "hint": "6.8 is between 6 and 7. Look at the tenths digit.", "explain": "The tenths digit is 8 (5 or more), so round up: 7."}
+      ]
+    },
+    {
+      "slug": "times-and-divide-by-10-100-1000",
+      "title": "× and ÷ by 10, 100 and 1,000",
+      "blurb": "Slide the digits along the columns.",
+      "learn": [
+        {"h": "Times 10", "p": "Multiplying by 10 moves every digit **one place to the left**, so each digit is worth 10 times more. 34 × 10 = 340. 3.4 × 10 = 34."},
+        {"h": "Divide by 10", "p": "Dividing by 10 moves every digit **one place to the right**. 340 ÷ 10 = 34. 34 ÷ 10 = 3.4. 7 ÷ 10 = 0.7."},
+        {"h": "100 and 1,000", "p": "× 100 moves the digits 2 places, × 1,000 moves them 3 places. ÷ 100 and ÷ 1,000 move them 2 and 3 places to the right. 4.5 × 100 = 450 and 2,600 ÷ 1,000 = 2.6."}
+      ],
+      "questions": [
+        {"type": "num", "q": "56 × 10 = ?", "answer": "560", "hint": "Move each digit one place to the left.", "explain": "56 × 10 = 560."},
+        {"type": "num", "q": "730 ÷ 10 = ?", "answer": "73", "hint": "Move each digit one place to the right.", "explain": "730 ÷ 10 = 73."},
+        {"type": "num", "q": "8 × 1,000 = ?", "answer": "8000", "hint": "× 1,000 moves the digits 3 places to the left.", "explain": "8 × 1,000 = 8,000."},
+        {"type": "num", "q": "4,200 ÷ 100 = ?", "answer": "42", "hint": "÷ 100 moves the digits 2 places to the right.", "explain": "4,200 ÷ 100 = 42."},
+        {"type": "num", "q": "2.5 × 10 = ?", "answer": "25", "hint": "The 2 ones become 2 tens, and the 5 tenths become 5 ones.", "explain": "2.5 × 10 = 25."},
+        {"type": "num", "q": "9 ÷ 10 = ?", "answer": "0.9", "hint": "9 ones become 9 tenths.", "explain": "9 ÷ 10 = 0.9."},
+        {"type": "num", "q": "1.35 × 100 = ?", "answer": "135", "hint": "Move each digit two places to the left.", "explain": "1.35 × 100 = 135."},
+        {"type": "num", "q": "A pack of 1,000 sheets of paper costs £6. How many pence is that for each sheet? (£6 = 600p)", "answer": "0.6", "unit": "p", "hint": "Work out 600 ÷ 1,000.", "explain": "600 ÷ 1,000 = 0.6, so each sheet costs 0.6p (less than one penny!)."}
+      ]
+    }
+  ]
+}

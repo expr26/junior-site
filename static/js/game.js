@@ -33,6 +33,8 @@
     { id: 'daily-7', icon: '📆', name: 'Challenge champ', desc: 'Finish 7 daily challenges.' },
     { id: 'mender-10', icon: '🩹', name: 'Mistake mender', desc: 'Get 10 old mistakes right in My mistakes.' },
     { id: 'topic-times-tables', icon: '✖️', name: 'Times table hero', desc: 'Finish every Times tables unit.' },
+    { id: 'topic-place-value', icon: '🔢', name: 'Place value pro', desc: 'Finish every Place value unit.' },
+    { id: 'topic-mental-maths', icon: '🧠', name: 'Brain power', desc: 'Finish every Mental maths unit.' },
     { id: 'tt-map', icon: '🗺️', name: 'Times table map', desc: 'Colour in the whole times table map in the Times Table Trainer.' },
     { id: 'welcome-back', icon: '👋', name: 'Welcome back', desc: 'Come back after a few days away.' }
   ];

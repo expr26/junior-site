@@ -5,6 +5,9 @@ Each topic file makes:
   /<subject>/<topic>/           the topic map (units with stars, a picture, where to start)
   /<subject>/<topic>/<unit>/    one unit: short "Learn" cards with pictures, then a practice set (static/js/practice.js)
 
+Optional topic fields:
+  "stage": "ks2"   the topic belongs to the 9 to 11 corner (/ks2/, see ks2.py); "icon" and "card" are used for its card there
+  "seo_title"      the <title> of the topic map, if the default "<title>: practice for ages 9 to 14" is not good enough
 Text fields may use:
   {3/4}       a stacked fraction (read out as "3 over 4")
   **bold**    bold
@@ -137,6 +140,8 @@ EXTRA_FIGS = {}   # other modules (e.g. science pictures) register here
 
 import science_figs  # noqa: E402
 EXTRA_FIGS.update(science_figs.FIGS)
+import ks2_figs  # noqa: E402
+EXTRA_FIGS.update(ks2_figs.FIGS)
 
 
 def figure(spec, where):
@@ -219,6 +224,8 @@ def topic_pages(path):
     base = f"/{t['subject']}/{t['slug']}/"
     subject = SUBJECTS[t["subject"]]
     tag = "tag" if t["subject"] == "maths" else "tag sci"
+    ks2 = t.get("stage") == "ks2"
+    crumb = '<a href="/ks2/">Ages 9 to 11</a>' if ks2 else subject
     pages = []
 
     # topic map
@@ -233,7 +240,7 @@ def topic_pages(path):
 <section class="hero topic-hero">
   <div class="wrap hero-grid">
     <div>
-      <p class="crumbs"><a href="/">Home</a> › {subject}</p>
+      <p class="crumbs"><a href="/">Home</a> › {crumb}</p>
       <span class="{tag}">{subject} · {html.escape(t.get("level", ""))}</span>
       <h1>{html.escape(t["title"])}</h1>
       <p class="lede">{rich(t["intro"])}</p>
@@ -249,7 +256,7 @@ def topic_pages(path):
     <p class="small">Earn up to 3 stars in each unit. You can go back and try again as often as you like.</p>
   </div>
 </section>"""
-    pages.append((base, {"title": f"{t['title']}: practice for ages 9 to 14", "description": t["description"],
+    pages.append((base, {"title": t.get("seo_title") or f"{t['title']}: practice for ages 9 to 14", "description": t["description"],
                          "body_class": "topic", "noindex": t.get("noindex", False)}, hub, where))
 
     # units
@@ -269,7 +276,7 @@ def topic_pages(path):
         body = f"""
 <section class="hero unit-hero">
   <div class="wrap narrow">
-    <p class="crumbs"><a href="/">Home</a> › <a href="{base}">{html.escape(t["title"])}</a> › Unit {i + 1}</p>
+    <p class="crumbs"><a href="/">Home</a> › {crumb + " › " if ks2 else ""}<a href="{base}">{html.escape(t["title"])}</a> › Unit {i + 1}</p>
     <h1>{html.escape(u["title"])}</h1>
     <p class="lede">{rich(u["blurb"])}</p>
     <p><a class="btn ghost" href="#practise">Skip to practice ↓</a></p>
@@ -312,6 +319,6 @@ def index():
     out = []
     for path in sorted(TOPICS.glob("*.json")):
         t = json.loads(path.read_text(encoding="utf-8"))
-        out.append({"slug": t["slug"], "subject": t["subject"], "title": t["title"], "href": f"/{t['subject']}/{t['slug']}/",
+        out.append({"slug": t["slug"], "subject": t["subject"], "title": t["title"], "stage": t.get("stage", ""), "href": f"/{t['subject']}/{t['slug']}/",
                     "units": [{"slug": u["slug"], "title": u["title"], "href": f"/{t['subject']}/{t['slug']}/{u['slug']}/"} for u in t["units"]]})
     return out

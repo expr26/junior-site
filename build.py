@@ -161,12 +161,14 @@ def main():
     import qbank    # the KS3 question bank, from qbank/
     import videos   # theory videos, from videos/
     import glossary   # /glossary/, from glossary/terms.json
+    import ks2        # /ks2/, the corner for ages 9 to 11
     try:
         jobs += topics.pages()
         jobs += games.pages()
         jobs += qbank.pages()
         jobs += videos.pages()
         jobs += glossary.pages()
+        jobs += ks2.pages()
         (DIST / "static" / "topics.json").write_text(json.dumps(topics.index()), encoding="utf-8")
     except topics.ContentError as e:
         fail(str(e))

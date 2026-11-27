@@ -2,6 +2,55 @@
   "_about": "The Games page. Each game has a page at /games/<slug>/ when live is true; planned games show as 'Coming soon'. The game itself is static/js/games/<slug>.js and uses static/js/arcade.js. curriculum: where it fits in UK KS3 and IB PYP (upper years).",
   "games": [
     {
+      "slug": "times-table-trainer",
+      "title": "Times Table Trainer",
+      "icon": "✖️",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Pick your tables, answer 10 facts with no timer, and colour in your times table map.",
+      "live": true,
+      "learn": "The times tables from 2 × 1 to 12 × 12, division facts, and quick mental strategies such as doubling, ten lots take away one lot, and splitting 12 into 10 and 2.",
+      "topic": "/maths/times-tables/",
+      "topic_title": "Learn the times tables step by step",
+      "curriculum": {
+        "KS2": "Number: multiplication and division (recall facts up to 12 × 12 by the end of Year 4)",
+        "PYP": "Number: multiplication and division facts"
+      },
+      "guide_title": "Times tables: a quick guide",
+      "guide": [
+        {
+          "h": "Why there's no timer",
+          "p": "Lots of times table apps make you race the clock. Here you can take as long as you need. Knowing a fact well comes from practising it often and fixing mistakes, so the trainer gives stars for getting it right first time and for fixing it on your second try."
+        },
+        {
+          "h": "How the map works",
+          "p": "Each square on the map is one fact, like 7 × 8. It turns light when you get it right first time once, and bright when you get it right first time twice. Facts you haven't got yet come up more often, so your map fills in where you need it most."
+        },
+        {
+          "h": "Tricks that help",
+          "p": "Times 4 is double, double. Times 8 is double three times. Times 9 is ten lots take away one lot: 9 × 7 = 70 − 7 = 63. Times 12 is ten lots plus two lots: 12 × 6 = 60 + 12 = 72. If you get stuck, the hint shows you the trick for that table."
+        },
+        {
+          "h": "Turn it round",
+          "p": "7 × 8 and 8 × 7 give the same answer, so they share one square on the map. That means there are fewer facts to learn than it looks!"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which times tables should my child know by the end of primary school?",
+          "a": "In England, children are expected to recall all multiplication facts up to 12 × 12 by the end of Year 4 (age 8 to 9), and there is a Multiplication Tables Check in Year 4. Many children are still building speed and confidence in Years 5 and 6, which is completely normal."
+        },
+        {
+          "q": "Is there a timer?",
+          "a": "No. The trainer never times your child. It rewards getting facts right and fixing mistakes, so children can build confidence without pressure."
+        },
+        {
+          "q": "Where is the progress saved?",
+          "a": "Only in this browser on this device. Nothing is sent to us and there is no account to make."
+        }
+      ]
+    },
+    {
       "slug": "pizza-fractions",
       "live": true,
       "title": "Pizza Fractions",

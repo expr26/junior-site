@@ -1,0 +1,169 @@
+{
+  "slug": "decimals-and-percentages",
+  "subject": "maths",
+  "stage": "ks2",
+  "icon": "💯",
+  "card": "Tenths and hundredths as decimals, comparing and rounding, adding decimals, percentages and how they link to fractions.",
+  "title": "Decimals and percentages",
+  "seo_title": "Decimals and percentages practice for KS2 (Years 4 to 6)",
+  "level": "KS2 · Years 4 to 6",
+  "description": "Free KS2 practice on decimals and percentages: tenths and hundredths, comparing and rounding decimals, adding and subtracting decimals, percentages of amounts and fraction, decimal and percentage equivalents. Pictures and hints for ages 9 to 11.",
+  "intro": "Decimals and percentages are other ways of writing parts of a whole. You see them on price tags, in sports results and on sale signs. Learn what they mean with a 100 square, then use them.",
+  "hero_fig": {"type": "hundred", "shade": 37},
+  "units": [
+    {
+      "slug": "tenths-and-hundredths",
+      "title": "Tenths and hundredths",
+      "blurb": "What the digits after the decimal point mean.",
+      "learn": [
+        {"h": "After the point", "p": "The first digit after the decimal point is **tenths**. The second is **hundredths**. In 0.37 there are 3 tenths and 7 hundredths."},
+        {"h": "The 100 square", "p": "This square is split into 100 equal parts. 37 parts are shaded: that is {37/100}, or 0.37.", "fig": {"type": "hundred", "shade": 37}},
+        {"h": "Tenths", "p": "One whole row of the 100 square is 10 hundredths, which is the same as 1 tenth. So 0.4 means 4 tenths, which is {4/10}, and it is the same amount as 0.40."}
+      ],
+      "questions": [
+        {"type": "num", "q": "What decimal is shaded? Write it like 0.25", "fig": {"type": "hundred", "shade": 23}, "answer": "0.23", "show": "0.23",
+         "hint": "Count the shaded squares. Each square is one hundredth.", "explain": "23 of the 100 squares are shaded. That is {23/100}, which is written 0.23."},
+        {"type": "num", "q": "Write {7/10} as a decimal.", "answer": "0.7", "show": "0.7",
+         "hint": "Tenths go in the first place after the point.", "explain": "{7/10} is 7 tenths, so it is 0.7."},
+        {"type": "num", "q": "Write {9/100} as a decimal.", "answer": "0.09", "show": "0.09",
+         "hint": "Hundredths go in the second place after the point. What goes in the tenths place?", "explain": "{9/100} has no tenths and 9 hundredths, so it is 0.09. The 0 keeps the 9 in the hundredths place."},
+        {"type": "mc", "q": "In the number 4.68, what is the value of the 6?", "options": ["6 tenths", "6 hundredths", "6 ones", "6 tens"], "answer": 0,
+         "hint": "Which place is the 6 in: first or second after the point?", "explain": "The 6 is the first digit after the point, so it is 6 tenths. The 8 is 8 hundredths."},
+        {"type": "num", "q": "How many hundredths are the same as 3 tenths?", "answer": "30",
+         "hint": "1 tenth is the same as 10 hundredths.", "explain": "1 tenth = 10 hundredths, so 3 tenths = 30 hundredths. That's why 0.3 = 0.30."},
+        {"type": "mc", "q": "Which decimal is the same as {45/100}?", "options": ["0.45", "4.5", "0.045", "45.0"], "answer": 0,
+         "hint": "45 hundredths: the last digit sits in the hundredths place.", "explain": "{45/100} is 4 tenths and 5 hundredths, which is 0.45."},
+        {"type": "num", "q": "What decimal is shaded? Write it like 0.5", "fig": {"type": "hundred", "shade": 60}, "answer": "0.6", "show": "0.6 (or 0.60)",
+         "hint": "Count whole rows: each row is one tenth.", "explain": "6 whole rows are shaded. That is 60 hundredths, or 6 tenths: 0.6 (which is the same as 0.60)."}
+      ]
+    },
+    {
+      "slug": "compare-and-round-decimals",
+      "title": "Compare and round decimals",
+      "blurb": "Which decimal is bigger, and rounding to the nearest whole number.",
+      "learn": [
+        {"h": "Line up the points", "p": "To compare decimals, write them with the points in a line and compare from the left. 0.5 and 0.45: the tenths digits are 5 and 4, so 0.5 is bigger."},
+        {"h": "Longer is not bigger", "p": "0.45 has more digits than 0.5, but it is smaller. It can help to fill the gap with a 0: 0.50 and 0.45. Now it's easy to see 50 hundredths is more than 45 hundredths."},
+        {"h": "Rounding to a whole number", "p": "Look at the tenths digit. If it is 5 or more, round up. If it is 4 or less, round down. 6.7 rounds to 7, and 6.3 rounds to 6. Halfway (6.5) rounds up to 7."}
+      ],
+      "questions": [
+        {"type": "mc", "q": "Which is bigger?", "options": ["0.6", "0.48"], "answer": 0,
+         "hint": "Write 0.6 as 0.60 and compare.", "explain": "0.6 = 0.60, and 60 hundredths is more than 48 hundredths. So 0.6 is bigger."},
+        {"type": "mc", "q": "Which is the smallest?", "options": ["0.09", "0.1", "0.19", "0.9"], "answer": 0,
+         "hint": "Compare the tenths digits first.", "explain": "0.09 has 0 tenths. All the others have at least 1 tenth. So 0.09 is the smallest."},
+        {"type": "num", "q": "Round 7.8 to the nearest whole number.", "answer": "8",
+         "hint": "Is the tenths digit 5 or more?", "explain": "The tenths digit is 8, which is 5 or more, so round up: 7.8 rounds to 8."},
+        {"type": "num", "q": "Round 12.3 to the nearest whole number.", "answer": "12",
+         "hint": "Is the tenths digit 5 or more?", "explain": "The tenths digit is 3, which is less than 5, so round down: 12.3 rounds to 12."},
+        {"type": "num", "q": "Round 3.5 to the nearest whole number.", "answer": "4",
+         "hint": "Halfway numbers round up.", "explain": "3.5 is exactly halfway between 3 and 4. We round halfway up, so it's 4."},
+        {"type": "mc", "q": "Put these in order from smallest to largest: 2.3, 2.03, 2.33", "options": ["2.03, 2.3, 2.33", "2.3, 2.03, 2.33", "2.33, 2.3, 2.03", "2.03, 2.33, 2.3"], "answer": 0,
+         "hint": "Write them all with two decimal places: 2.30, 2.03, 2.33.", "explain": "As hundredths: 2.03 < 2.30 < 2.33. So the order is 2.03, 2.3, 2.33."},
+        {"type": "num", "q": "A plank is 1.46 m long. What is that to the nearest whole metre?", "answer": "1", "unit": "m",
+         "hint": "Look at the tenths digit.", "explain": "The tenths digit is 4, so round down. 1.46 m is about 1 m."}
+      ]
+    },
+    {
+      "slug": "add-and-subtract-decimals",
+      "title": "Add and subtract decimals",
+      "blurb": "Line up the points, then add or take away as usual.",
+      "learn": [
+        {"h": "Points in a line", "p": "Write the numbers with the decimal points under each other. Fill gaps with 0. 3.5 + 1.25 becomes 3.50 + 1.25 = 4.75."},
+        {"h": "Making 1", "p": "Decimal number bonds help: 0.3 + 0.7 = 1, and 0.25 + 0.75 = 1. To find 1 − 0.4, ask what adds to 0.4 to make 1: it's 0.6."},
+        {"h": "Check it's sensible", "p": "Round first: 4.9 + 3.2 is about 5 + 3 = 8. The exact answer, 8.1, is close, so it's probably right."}
+      ],
+      "questions": [
+        {"type": "num", "q": "0.4 + 0.5 = ?", "answer": "0.9", "show": "0.9",
+         "hint": "4 tenths + 5 tenths.", "explain": "4 tenths + 5 tenths = 9 tenths = 0.9."},
+        {"type": "num", "q": "1 − 0.3 = ?", "answer": "0.7", "show": "0.7",
+         "hint": "What adds to 0.3 to make 1?", "explain": "0.3 + 0.7 = 1, so 1 − 0.3 = 0.7."},
+        {"type": "num", "q": "2.5 + 1.25 = ?", "answer": "3.75", "show": "3.75",
+         "hint": "Write 2.5 as 2.50, then add.", "explain": "2.50 + 1.25 = 3.75."},
+        {"type": "num", "q": "6.8 − 2.5 = ?", "answer": "4.3", "show": "4.3",
+         "hint": "Take away the ones, then the tenths.", "explain": "6 − 2 = 4 and 0.8 − 0.5 = 0.3, so the answer is 4.3."},
+        {"type": "num", "q": "4.7 + 2.6 = ?", "answer": "7.3", "show": "7.3",
+         "hint": "7 tenths + 6 tenths is more than one whole.", "explain": "4 + 2 = 6, and 0.7 + 0.6 = 1.3. So 6 + 1.3 = 7.3."},
+        {"type": "num", "q": "Sam jumps 1.35 m. Ana jumps 1.6 m. How much further does Ana jump?", "answer": "0.25", "show": "0.25", "unit": "m",
+         "hint": "Work out 1.60 − 1.35.", "explain": "1.60 − 1.35 = 0.25. Ana jumps 0.25 m (25 cm) further."},
+        {"type": "num", "q": "A bottle holds 1.5 litres. You pour out 0.75 litres. How much is left?", "answer": "0.75", "show": "0.75", "unit": "litres",
+         "hint": "1.50 − 0.75. Think of it as 150 − 75 hundredths.", "explain": "1.50 − 0.75 = 0.75. Three quarters of a litre is left."}
+      ]
+    },
+    {
+      "slug": "what-is-a-percentage",
+      "title": "What is a percentage?",
+      "blurb": "Per cent means out of 100.",
+      "learn": [
+        {"h": "Out of 100", "p": "Per cent means **out of 100**. 37% means 37 out of 100. On the 100 square, 37% is 37 shaded squares.", "fig": {"type": "hundred", "shade": 37}},
+        {"h": "The whole is 100%", "p": "All of something is 100%. If 30% of a class walk to school, then 100% − 30% = 70% do not walk."},
+        {"h": "Percentages you'll see a lot", "p": "50% is a half. 25% is a quarter. 75% is three quarters. 10% is one tenth."}
+      ],
+      "questions": [
+        {"type": "num", "q": "What percentage of the grid is shaded?", "fig": {"type": "hundred", "shade": 42}, "answer": "42", "unit": "%",
+         "hint": "Count the shaded squares out of 100.", "explain": "42 of the 100 squares are shaded, so it's 42%."},
+        {"type": "num", "q": "What percentage of the grid is NOT shaded?", "fig": {"type": "hundred", "shade": 65}, "answer": "35", "unit": "%",
+         "hint": "The whole grid is 100%.", "explain": "65% is shaded, so 100% − 65% = 35% is not shaded."},
+        {"type": "mc", "q": "What does 50% mean?", "options": ["A half", "A quarter", "50 whole ones", "A fifth"], "answer": 0,
+         "hint": "50 out of 100.", "explain": "50% is 50 out of 100, which is a half."},
+        {"type": "num", "q": "In a survey, 28% of children said football is their favourite sport. What percentage chose something else?", "answer": "72", "unit": "%",
+         "hint": "Everyone together is 100%.", "explain": "100% − 28% = 72%."},
+        {"type": "mc", "q": "Which is the same as 25%?", "options": ["A quarter", "A half", "A third", "A tenth"], "answer": 0,
+         "hint": "How many 25s make 100?", "explain": "4 lots of 25 make 100, so 25% is one quarter."},
+        {"type": "num", "q": "A test has 100 marks. Leo gets 81 marks. What percentage is that?", "answer": "81", "unit": "%",
+         "hint": "Out of 100 is already a percentage.", "explain": "81 out of 100 is 81%."}
+      ]
+    },
+    {
+      "slug": "percentages-of-amounts",
+      "title": "Percentages of amounts",
+      "blurb": "Find 50%, 25%, 10% and more of a number.",
+      "learn": [
+        {"h": "50% and 25%", "p": "50% is a half, so divide by 2. 25% is a quarter, so divide by 4. 50% of 60 is 30, and 25% of 60 is 15."},
+        {"h": "10% is the key", "p": "10% is one tenth, so divide by 10. 10% of 80 is 8. Then build other percentages: 20% is double 10%, 5% is half of 10%."},
+        {"h": "Build it up", "p": "30% of 50: 10% is 5, so 30% is 3 × 5 = 15. 15% of 40: 10% is 4 and 5% is 2, so 15% is 6."}
+      ],
+      "questions": [
+        {"type": "num", "q": "What is 50% of 36?", "answer": "18",
+         "hint": "50% is a half.", "explain": "Half of 36 is 18."},
+        {"type": "num", "q": "What is 10% of 90?", "answer": "9",
+         "hint": "Divide by 10.", "explain": "90 ÷ 10 = 9, so 10% of 90 is 9."},
+        {"type": "num", "q": "What is 25% of 48?", "answer": "12",
+         "hint": "25% is a quarter: halve, then halve again.", "explain": "Half of 48 is 24, and half of 24 is 12."},
+        {"type": "num", "q": "What is 20% of 70?", "answer": "14",
+         "hint": "Find 10% first, then double it.", "explain": "10% of 70 is 7, so 20% is 2 × 7 = 14."},
+        {"type": "num", "q": "What is 5% of 60?", "answer": "3",
+         "hint": "5% is half of 10%.", "explain": "10% of 60 is 6, and half of 6 is 3."},
+        {"type": "num", "q": "A £40 jumper has 25% off in a sale. How many pounds do you save?", "answer": "10", "unit": "pounds",
+         "hint": "Find a quarter of £40.", "explain": "25% of £40 is £40 ÷ 4 = £10. You save £10, so the jumper costs £30."},
+        {"type": "num", "q": "What is 30% of 200?", "answer": "60",
+         "hint": "10% of 200 is 20.", "explain": "10% of 200 is 20, so 30% is 3 × 20 = 60."}
+      ]
+    },
+    {
+      "slug": "fractions-decimals-percentages",
+      "title": "Fractions, decimals and percentages",
+      "blurb": "Three ways to write the same amount.",
+      "learn": [
+        {"h": "Same amount, three names", "p": "{1/2} = 0.5 = 50%. {1/4} = 0.25 = 25%. {3/4} = 0.75 = 75%. {1/10} = 0.1 = 10%."},
+        {"h": "Decimal to percentage", "p": "Multiply by 100: the digits move two places to the left. 0.35 becomes 35%, and 0.6 becomes 60%."},
+        {"h": "Fraction to percentage", "p": "Make the bottom number 100. {3/5} = {60/100} = 60%. {7/20} = {35/100} = 35%."}
+      ],
+      "questions": [
+        {"type": "num", "q": "Write 0.75 as a percentage.", "answer": "75", "unit": "%",
+         "hint": "Multiply by 100.", "explain": "0.75 × 100 = 75, so 0.75 = 75%."},
+        {"type": "num", "q": "Write 40% as a decimal.", "answer": "0.4", "show": "0.4",
+         "hint": "40% is 40 out of 100.", "explain": "40% = {40/100} = 0.40 = 0.4."},
+        {"type": "num", "q": "Write {1/4} as a percentage.", "answer": "25", "unit": "%",
+         "hint": "What do you multiply 4 by to get 100?", "explain": "{1/4} = {25/100} = 25%."},
+        {"type": "num", "q": "Write {3/5} as a percentage.", "answer": "60", "unit": "%",
+         "hint": "Make the bottom number 100: 5 × 20 = 100.", "explain": "{3/5} = {60/100} = 60%."},
+        {"type": "mc", "q": "Which one is NOT the same as a half?", "options": ["0.05", "0.5", "50%", "{5/10}"], "answer": 0,
+         "hint": "0.05 is 5 hundredths.", "explain": "0.5, 50% and {5/10} are all a half. 0.05 is only 5 hundredths, which is 5%."},
+        {"type": "mc", "q": "Which is the biggest?", "options": ["0.7", "{3/5}", "65%", "0.07"], "answer": 0,
+         "hint": "Change them all to percentages.", "explain": "0.7 = 70%, {3/5} = 60%, 65% = 65%, 0.07 = 7%. So 0.7 is the biggest."},
+        {"type": "num", "q": "Write {9/20} as a decimal.", "answer": "0.45", "show": "0.45",
+         "hint": "Make the bottom number 100 first: 20 × 5 = 100.", "explain": "{9/20} = {45/100} = 0.45."}
+      ]
+    }
+  ]
+}

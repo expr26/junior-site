@@ -1,0 +1,113 @@
+{
+  "slug": "measurement",
+  "subject": "maths",
+  "stage": "ks2",
+  "icon": "📏",
+  "card": "Length, mass and capacity: reading rulers and scales, and converting mm, cm, m, km, g, kg, ml and litres.",
+  "title": "Measurement",
+  "seo_title": "Measurement practice for KS2: length, mass, capacity and converting units",
+  "level": "KS2 · Years 4 to 6",
+  "description": "Free KS2 measurement practice: read rulers and measuring jugs, and convert between mm, cm, m and km, grams and kilograms, millilitres and litres. Word problems with pictures and hints for ages 9 to 11.",
+  "intro": "How long, how heavy, how much does it hold? Learn the metric units, read rulers and scales, and change from one unit to another.",
+  "hero_fig": {"type": "ruler", "cm": 6, "mark": 4.5},
+  "units": [
+    {
+      "slug": "length",
+      "title": "Length: mm, cm, m and km",
+      "blurb": "Measure lengths and change between units.",
+      "learn": [
+        {"h": "The units", "p": "10 millimetres (mm) = 1 centimetre (cm). 100 cm = 1 metre (m). 1000 m = 1 kilometre (km)."},
+        {"h": "Reading a ruler", "p": "Start at 0, not at the end of the ruler. The small marks are millimetres. This arrow is at 4 cm and 5 mm, which is 4.5 cm or 45 mm.", "fig": {"type": "ruler", "cm": 6, "mark": 4.5}},
+        {"h": "Changing units", "p": "To a smaller unit, multiply: 3 m = 300 cm. To a bigger unit, divide: 2500 m = 2.5 km."}
+      ],
+      "questions": [
+        {"type": "num", "q": "Where is the arrow? Give your answer in cm.", "fig": {"type": "ruler", "cm": 8, "mark": 6}, "answer": "6", "unit": "cm",
+         "hint": "Read the number under the arrow.", "explain": "The arrow is at the big mark labelled 6, so it's 6 cm."},
+        {"type": "num", "q": "Where is the arrow? Give your answer in mm.", "fig": {"type": "ruler", "cm": 6, "mark": 3.7}, "answer": "37", "unit": "mm",
+         "hint": "Each cm is 10 mm. Count the small marks after 3.", "explain": "The arrow is 7 small marks after 3 cm: 3 cm 7 mm = 30 mm + 7 mm = 37 mm."},
+        {"type": "num", "q": "4 m = ? cm", "answer": "400", "unit": "cm",
+         "hint": "1 m = 100 cm.", "explain": "4 × 100 = 400, so 4 m = 400 cm."},
+        {"type": "num", "q": "5 cm = ? mm", "answer": "50", "unit": "mm",
+         "hint": "1 cm = 10 mm.", "explain": "5 × 10 = 50, so 5 cm = 50 mm."},
+        {"type": "num", "q": "3000 m = ? km", "answer": "3", "unit": "km",
+         "hint": "1000 m = 1 km.", "explain": "3000 ÷ 1000 = 3, so 3000 m = 3 km."},
+        {"type": "num", "q": "1.5 km = ? m", "answer": "1500", "unit": "m",
+         "hint": "Multiply by 1000.", "explain": "1.5 × 1000 = 1500, so 1.5 km = 1500 m."},
+        {"type": "mc", "q": "Which is the best estimate for the length of a pencil?", "options": ["15 cm", "15 mm", "15 m", "15 km"], "answer": 0,
+         "hint": "A ruler is usually 30 cm long.", "explain": "A pencil is about half a ruler long: about 15 cm. 15 mm is shorter than your thumbnail is wide."}
+      ]
+    },
+    {
+      "slug": "mass",
+      "title": "Mass: grams and kilograms",
+      "blurb": "How heavy things are, and changing g to kg.",
+      "learn": [
+        {"h": "The units", "p": "1000 grams (g) = 1 kilogram (kg). A paper clip is about 1 g. A bag of sugar is often 1 kg."},
+        {"h": "Changing units", "p": "kg to g: multiply by 1000. 2 kg = 2000 g. g to kg: divide by 1000. 500 g = 0.5 kg, which is half a kilogram."},
+        {"h": "Mixed units", "p": "3 kg 250 g is 3000 g + 250 g = 3250 g. As kilograms, that's 3.25 kg."}
+      ],
+      "questions": [
+        {"type": "num", "q": "3 kg = ? g", "answer": "3000", "unit": "g",
+         "hint": "1 kg = 1000 g.", "explain": "3 × 1000 = 3000, so 3 kg = 3000 g."},
+        {"type": "num", "q": "2500 g = ? kg", "answer": "2.5", "show": "2.5", "unit": "kg",
+         "hint": "Divide by 1000.", "explain": "2500 ÷ 1000 = 2.5, so 2500 g = 2.5 kg."},
+        {"type": "num", "q": "1 kg 400 g = ? g", "answer": "1400", "unit": "g",
+         "hint": "Change the kg to g, then add.", "explain": "1 kg = 1000 g, and 1000 + 400 = 1400 g."},
+        {"type": "num", "q": "How many grams are in half a kilogram?", "answer": "500", "unit": "g",
+         "hint": "Half of 1000.", "explain": "1 kg = 1000 g, and half of 1000 is 500 g."},
+        {"type": "mc", "q": "Which is the best estimate for the mass of an apple?", "options": ["150 g", "150 kg", "15 kg", "1 g"], "answer": 0,
+         "hint": "A bag of sugar is 1 kg. Is an apple lighter or heavier?", "explain": "An apple is much lighter than a bag of sugar: about 150 g."},
+        {"type": "num", "q": "A cake needs 250 g of flour. How many grams do you need for 4 cakes?", "answer": "1000", "unit": "g",
+         "hint": "4 lots of 250.", "explain": "4 × 250 = 1000 g, which is exactly 1 kg."}
+      ]
+    },
+    {
+      "slug": "capacity",
+      "title": "Capacity: ml and litres",
+      "blurb": "How much a container holds, and reading a jug.",
+      "learn": [
+        {"h": "The units", "p": "1000 millilitres (ml) = 1 litre (l). A teaspoon holds about 5 ml. A big bottle of water often holds 2 litres."},
+        {"h": "Reading a jug", "p": "Look at the marks and work out what each step is worth. Here the marks go up in 100s, and the water is at 600 ml.", "fig": {"type": "jug", "level": 600}},
+        {"h": "Changing units", "p": "Litres to ml: multiply by 1000. 1.5 l = 1500 ml. ml to litres: divide by 1000. 250 ml = 0.25 l."}
+      ],
+      "questions": [
+        {"type": "num", "q": "How much water is in the jug?", "fig": {"type": "jug", "level": 300}, "answer": "300", "unit": "ml",
+         "hint": "The marks go up in 100s.", "explain": "The water is level with the 300 mark, so there is 300 ml."},
+        {"type": "num", "q": "How much water is in the jug?", "fig": {"type": "jug", "level": 750}, "answer": "750", "unit": "ml",
+         "hint": "It's halfway between two marks. What is halfway between 700 and 800?", "explain": "The water is halfway between 700 and 800, so there is 750 ml."},
+        {"type": "num", "q": "2 litres = ? ml", "answer": "2000", "unit": "ml",
+         "hint": "1 litre = 1000 ml.", "explain": "2 × 1000 = 2000, so 2 litres = 2000 ml."},
+        {"type": "num", "q": "3500 ml = ? litres", "answer": "3.5", "show": "3.5", "unit": "litres",
+         "hint": "Divide by 1000.", "explain": "3500 ÷ 1000 = 3.5, so 3500 ml = 3.5 litres."},
+        {"type": "num", "q": "A jug has 1 litre of juice. You fill 4 cups with 200 ml each. How much juice is left?", "answer": "200", "unit": "ml",
+         "hint": "Change 1 litre to ml first.", "explain": "1 litre = 1000 ml. 4 × 200 = 800 ml is poured, so 1000 − 800 = 200 ml is left."},
+        {"type": "mc", "q": "Which is the best estimate for how much a mug holds?", "options": ["300 ml", "3 ml", "30 litres", "3000 litres"], "answer": 0,
+         "hint": "A teaspoon is about 5 ml. A big water bottle is about 2 litres.", "explain": "A mug holds about 300 ml: much more than a teaspoon, much less than a big bottle."}
+      ]
+    },
+    {
+      "slug": "measure-problems",
+      "title": "Measurement problems",
+      "blurb": "Use the same units, then work it out.",
+      "learn": [
+        {"h": "Same units first", "p": "You can't add 2 m and 30 cm as 2 + 30. Change one first: 2 m = 200 cm, so 200 cm + 30 cm = 230 cm, or 2.3 m."},
+        {"h": "Read carefully", "p": "Find what the question wants, and in which unit. Then underline the numbers you need."},
+        {"h": "Check it makes sense", "p": "If a door comes out at 20 m tall, something went wrong! Doors are about 2 m tall."}
+      ],
+      "questions": [
+        {"type": "num", "q": "A ribbon is 2 m long. You cut off 35 cm. How many cm are left?", "answer": "165", "unit": "cm",
+         "hint": "2 m = 200 cm.", "explain": "200 cm − 35 cm = 165 cm."},
+        {"type": "num", "q": "A bag has 1.2 kg of rice. Another has 800 g. How many grams altogether?", "answer": "2000", "unit": "g",
+         "hint": "1.2 kg = 1200 g.", "explain": "1200 g + 800 g = 2000 g, which is 2 kg."},
+        {"type": "num", "q": "Mia walks 750 m to school and 750 m home, every day for 5 days. How many km is that?", "answer": "7.5", "show": "7.5", "unit": "km",
+         "hint": "One day is 1500 m. Then times by 5, and change to km.", "explain": "750 + 750 = 1500 m a day. 5 × 1500 = 7500 m = 7.5 km."},
+        {"type": "num", "q": "A 2 litre bottle of squash is shared equally between 8 glasses. How many ml go in each glass?", "answer": "250", "unit": "ml",
+         "hint": "2 litres = 2000 ml. Then divide by 8.", "explain": "2000 ÷ 8 = 250, so each glass gets 250 ml."},
+        {"type": "mc", "q": "Which is longest?", "options": ["1.2 m", "115 cm", "1050 mm", "0.9 m"], "answer": 0,
+         "hint": "Change them all to cm.", "explain": "1.2 m = 120 cm, 115 cm, 1050 mm = 105 cm, 0.9 m = 90 cm. So 1.2 m is the longest."},
+        {"type": "num", "q": "A parcel weighs 3 kg. Each book inside weighs 500 g, and the box weighs nothing. How many books are in it?", "answer": "6",
+         "hint": "3 kg = 3000 g. How many 500s make 3000?", "explain": "3000 ÷ 500 = 6 books."}
+      ]
+    }
+  ]
+}

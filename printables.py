@@ -192,7 +192,7 @@ def table_page(n):
 
 
 # ---------- topic worksheets ----------
-WS_TOPICS = ["times-tables", "place-value", "mental-maths", "telling-the-time", "money", "shapes", "fractions", "missions"]
+WS_TOPICS = ["times-tables", "place-value", "mental-maths", "decimals-and-percentages", "measurement", "telling-the-time", "money", "shapes", "fractions", "missions"]
 
 
 def _write(q):
@@ -275,5 +275,5 @@ def pages():
   <p>For KS3 Maths, Physics, Chemistry and Biology, choose the topics and levels in the <a href="/worksheets/">worksheet maker</a>. Teachers will also find a teaching pack for every topic on the <a href="/teachers/">For teachers</a> page.</p>
 </div></section>"""
     meta = {"title": "Free printable Maths worksheets with answers for KS2",
-            "description": "Free printable times tables charts, times tables worksheets from 2 to 12 and KS2 Maths worksheets with answers: place value, mental maths, time, money, shapes and fractions."}
+            "description": "Free printable times tables charts, times tables worksheets from 2 to 12 and KS2 Maths worksheets with answers: place value, mental maths, decimals, percentages, measurement, time, money, shapes and fractions."}
     return [("/printables/", meta, body, "printables.py")] + out

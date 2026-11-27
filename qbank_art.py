@@ -957,3 +957,6 @@ def fig_seesaw(left, right, **_):
 
 
 topics.EXTRA_FIGS.update({"spinner": fig_spinner, "barchart": fig_barchart, "seesaw": fig_seesaw})
+
+
+import qbank_art_sci  # noqa: E402,F401  (Chemistry and Biology pictures)

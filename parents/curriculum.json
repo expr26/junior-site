@@ -55,8 +55,8 @@
       ],
       "science": [
         ["Physics: forces, motion and pressure; energy and energy bills; waves (sound and light); electricity and magnetism; particles and density; space", "/question-bank/physics/"],
-        ["Chemistry: particles, atoms, elements and compounds, mixtures, chemical reactions, acids and alkalis, the periodic table, the Earth and atmosphere", ""],
-        ["Biology: cells, body systems, nutrition and digestion, respiration and photosynthesis, ecosystems, genetics and evolution", ""]
+        ["Chemistry: particles, atoms, elements and compounds, mixtures, chemical reactions, acids and alkalis, the periodic table, the Earth and atmosphere", "/question-bank/chemistry/"],
+        ["Biology: cells, body systems, nutrition and digestion, respiration and photosynthesis, ecosystems, genetics and evolution", "/question-bank/biology/"]
       ]
     }
   ],

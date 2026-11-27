@@ -53,7 +53,7 @@
     while (pick.length < n && keys.some(function (k) { return by[k].length; })) keys.forEach(function (k) { if (pick.length < n && by[k].length) pick.push(by[k].shift()); });
     if (form.querySelector('#ws-mix').checked) shuffle(pick); else pick.sort(function (a, b) { return p[a].lv - p[b].lv; });
     msg.textContent = pick.length < n ? 'Only ' + pick.length + ' questions match, so the worksheet has ' + pick.length + '.' : '';
-    var title = form.querySelector('#ws-title').value.trim() || (topics.length === 1 ? D.subjects.reduce(function (a, s) { return a.concat(s.topics); }, []).filter(function (t) { return t.k === topics[0]; })[0].title + ' worksheet' : 'KS3 ' + (subj === 'maths' ? 'Maths' : 'Physics') + ' worksheet');
+    var title = form.querySelector('#ws-title').value.trim() || (topics.length === 1 ? D.subjects.reduce(function (a, s) { return a.concat(s.topics); }, []).filter(function (t) { return t.k === topics[0]; })[0].title + ' worksheet' : 'KS3 ' + D.subjects.filter(function (x) { return x.slug === subj; })[0].title + ' worksheet');
     var qs = [], ans = [];
     pick.forEach(function (id) {
       var d = p[id].d, body, a;

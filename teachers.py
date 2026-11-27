@@ -20,7 +20,7 @@ GAME = {  # question-bank topic -> the game or simulation for it (games/games.js
     "physics/forces": "ramp-lab", "physics/speed-and-motion": "race-track", "physics/pressure-and-moments": "seesaw-balance",
     "physics/energy-stores-and-transfers": "energy-coaster", "physics/energy-bills-and-power": "power-house", "physics/sound": "sound-studio",
     "physics/light": "mirror-maze", "physics/circuits": "circuit-builder", "physics/static-electricity": "balloon-charge",
-    "physics/magnets-and-electromagnets": "magnet-sandbox", "physics/particles-and-density": "float-or-sink", "physics/space": "day-night-seasons",
+    "physics/magnets-and-electromagnets": "magnet-sandbox", "physics/particles-and-density": "float-or-sink", "physics/space": "day-night-seasons", "biology/ecosystems": "food-web-island",
 }
 
 
@@ -92,7 +92,7 @@ def pack(x):
 
 def hub(xs):
     groups = []
-    for subj in ("maths", "physics"):
+    for subj in ("maths", "physics", "chemistry", "biology"):
         mine = [x for x in xs if x["s"]["slug"] == subj]
         if not mine:
             continue
@@ -122,8 +122,8 @@ def hub(xs):
     <p>The <a href="/ks2/">9 to 11 corner</a> has six KS2 topics with explanations and practice, the <a href="/games/times-table-trainer/">Times Table Trainer</a> (no timer), and the <a href="/ready-for-year-7/">Ready for Year 7?</a> check, useful for transition.</p>
   </div>
 </section>"""
-    meta = {"title": "Free KS2 and KS3 Maths and Physics teaching resources", "body_class": "teachers",
-            "description": "Free teaching packs for KS3 Maths and Physics: animated videos for the board, games, printable worksheets with answers and marked questions. No logins, no ads, no student data."}
+    meta = {"title": "Free KS2 and KS3 Maths and Science teaching resources", "body_class": "teachers",
+            "description": "Free teaching packs for KS3 Maths, Physics, Chemistry and Biology: animated videos for the board, games, printable worksheets with answers and marked questions. No logins, no ads, no student data."}
     return ("/teachers/", meta, body, "teachers.py")
 
 

@@ -44,6 +44,32 @@
         {"slug": "particles-and-density", "title": "Particles and density", "icon": "🧊", "ks3": "Matter"},
         {"slug": "space", "title": "Space", "icon": "🪐", "ks3": "Space physics"}
       ]
+    },
+    {
+      "slug": "chemistry",
+      "title": "Chemistry",
+      "art": "chemistry",
+      "blurb": "Atoms and elements, mixtures, acids and alkalis, and chemical reactions.",
+      "description": "Free KS3 Chemistry question bank for ages 9 to 14: practice questions by topic with instant marking, hints and worked answers.",
+      "topics": [
+        {"slug": "atoms-elements-compounds", "title": "Atoms, elements and compounds", "icon": "⚛️", "ks3": "Atoms, elements and compounds"},
+        {"slug": "mixtures-and-separating", "title": "Mixtures and separating", "icon": "🧪", "ks3": "Pure and impure substances"},
+        {"slug": "acids-and-alkalis", "title": "Acids and alkalis", "icon": "🍋", "ks3": "Chemical reactions"},
+        {"slug": "chemical-reactions", "title": "Chemical reactions", "icon": "🔥", "ks3": "Chemical reactions and energetics"}
+      ]
+    },
+    {
+      "slug": "biology",
+      "title": "Biology",
+      "art": "biology",
+      "blurb": "Cells, the human body, food and digestion, and ecosystems.",
+      "description": "Free KS3 Biology question bank for ages 9 to 14: practice questions by topic with instant marking, hints and worked answers.",
+      "topics": [
+        {"slug": "cells", "title": "Cells", "icon": "🦠", "ks3": "Cells and organisation"},
+        {"slug": "body-systems", "title": "Body systems", "icon": "❤️", "ks3": "Structure and function of living organisms"},
+        {"slug": "nutrition-and-digestion", "title": "Nutrition and digestion", "icon": "🍎", "ks3": "Nutrition and digestion"},
+        {"slug": "ecosystems", "title": "Food chains and ecosystems", "icon": "🌿", "ks3": "Interactions and interdependencies"}
+      ]
     }
   ]
 }

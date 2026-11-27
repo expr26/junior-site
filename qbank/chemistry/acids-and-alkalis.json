@@ -1,0 +1,280 @@
+{
+  "slug": "acids-and-alkalis",
+  "title": "Acids and alkalis",
+  "ks3": "Chemical reactions: acids, alkalis and neutralisation",
+  "art": "acids",
+  "intro": "From lemon juice to soap: learn the pH scale, indicators and how acids and alkalis cancel each other out.",
+  "description": "Free KS3 Chemistry questions with answers on acids and alkalis: the pH scale, universal indicator and litmus, everyday acids and alkalis, and neutralisation. Marked instantly, for Year 7, 8 and 9.",
+  "subtopics": [
+    {
+      "slug": "ph",
+      "title": "The pH scale"
+    },
+    {
+      "slug": "indicators",
+      "title": "Indicators"
+    },
+    {
+      "slug": "neutral",
+      "title": "Neutralisation"
+    }
+  ],
+  "questions": [
+    {
+      "id": "aci-01",
+      "sub": "ph",
+      "level": 1,
+      "type": "mc",
+      "q": "On the pH scale, what does pH 7 mean?",
+      "options": [
+        "Neutral",
+        "Strongly acidic",
+        "Strongly alkaline",
+        "Very hot"
+      ],
+      "answer": 0,
+      "hint": "7 is right in the middle of the scale from 0 to 14.",
+      "explain": "pH 7 is neutral: neither acid nor alkali. Pure water is pH 7."
+    },
+    {
+      "id": "aci-02",
+      "sub": "ph",
+      "level": 1,
+      "type": "mc",
+      "q": "A substance has a pH of 2. What is it?",
+      "options": [
+        "An acid",
+        "An alkali",
+        "Neutral",
+        "A metal"
+      ],
+      "answer": 0,
+      "hint": "Acids are below 7.",
+      "explain": "Below 7 is acidic, and the lower the number the stronger the acid. pH 2 is a strong acid."
+    },
+    {
+      "id": "aci-03",
+      "sub": "ph",
+      "level": 1,
+      "type": "mc",
+      "q": "Which of these is acidic?",
+      "options": [
+        "Lemon juice",
+        "Soap",
+        "Pure water",
+        "Toothpaste"
+      ],
+      "answer": 0,
+      "hint": "Which one tastes sour?",
+      "explain": "Lemon juice contains citric acid. Sour taste is a sign of an acid (but never taste chemicals in the lab!)."
+    },
+    {
+      "id": "aci-04",
+      "sub": "ph",
+      "level": 2,
+      "type": "mc",
+      "q": "Which pH is the strongest alkali?",
+      "options": [
+        "pH 13",
+        "pH 9",
+        "pH 7",
+        "pH 1"
+      ],
+      "answer": 0,
+      "hint": "Alkalis are above 7.",
+      "explain": "Above 7 is alkaline, and the higher the number the stronger the alkali. pH 13 is the strongest here."
+    },
+    {
+      "id": "aci-05",
+      "sub": "ph",
+      "level": 2,
+      "type": "mc",
+      "q": "Which of these is an alkali?",
+      "options": [
+        "Oven cleaner",
+        "Vinegar",
+        "Lemon juice",
+        "Fizzy cola"
+      ],
+      "answer": 0,
+      "hint": "Many cleaning products are alkalis.",
+      "explain": "Oven cleaner is a strong alkali. Vinegar, lemon juice and cola are all acids."
+    },
+    {
+      "id": "aci-06",
+      "sub": "ph",
+      "level": 3,
+      "type": "mc",
+      "q": "Why do strong acids and alkalis carry a hazard warning sign?",
+      "options": [
+        "They are corrosive and can damage skin and eyes",
+        "They are always hot",
+        "They glow in the dark",
+        "They are always poisonous gases"
+      ],
+      "answer": 0,
+      "hint": "What would a strong acid do to your skin?",
+      "explain": "Strong acids and alkalis are corrosive: they can burn skin and damage eyes. That's why we wear goggles."
+    },
+    {
+      "id": "aci-07",
+      "sub": "indicators",
+      "level": 1,
+      "type": "mc",
+      "q": "What is an **indicator**?",
+      "options": [
+        "A substance that changes colour in acids and alkalis",
+        "A type of acid",
+        "A tool for measuring temperature",
+        "A kind of salt"
+      ],
+      "answer": 0,
+      "hint": "It “indicates” something by its colour.",
+      "explain": "An indicator changes colour to show whether something is acidic, neutral or alkaline."
+    },
+    {
+      "id": "aci-08",
+      "sub": "indicators",
+      "level": 2,
+      "type": "mc",
+      "q": "Universal indicator turns red in a solution. What does that tell you?",
+      "options": [
+        "It is a strong acid",
+        "It is neutral",
+        "It is a strong alkali",
+        "It is pure water"
+      ],
+      "answer": 0,
+      "hint": "Red is at the low end of the pH colour chart.",
+      "explain": "Red means a strong acid (about pH 1 to 3). Green is neutral and purple is a strong alkali."
+    },
+    {
+      "id": "aci-09",
+      "sub": "indicators",
+      "level": 2,
+      "type": "mc",
+      "q": "What colour is universal indicator in a neutral solution?",
+      "options": [
+        "Green",
+        "Red",
+        "Purple",
+        "Orange"
+      ],
+      "answer": 0,
+      "hint": "It's in the middle of the rainbow of colours.",
+      "explain": "Neutral (pH 7) gives green."
+    },
+    {
+      "id": "aci-10",
+      "sub": "indicators",
+      "level": 3,
+      "type": "mc",
+      "q": "Blue litmus paper is dipped into a liquid and turns red. What is the liquid?",
+      "options": [
+        "An acid",
+        "An alkali",
+        "Neutral",
+        "You can't tell anything"
+      ],
+      "answer": 0,
+      "hint": "Litmus: acids turn blue litmus red.",
+      "explain": "Acids turn blue litmus red. Alkalis turn red litmus blue. Litmus only tells you acid or alkali, not the exact pH."
+    },
+    {
+      "id": "aci-11",
+      "sub": "indicators",
+      "level": 3,
+      "type": "mc",
+      "q": "Red cabbage juice can be used as an indicator. Why?",
+      "options": [
+        "It changes colour depending on pH",
+        "It is always acidic",
+        "It is neutral",
+        "It smells strongly"
+      ],
+      "answer": 0,
+      "hint": "What makes something an indicator?",
+      "explain": "Red cabbage contains a dye that changes colour as the pH changes, so it works as a natural indicator."
+    },
+    {
+      "id": "aci-12",
+      "sub": "neutral",
+      "level": 1,
+      "type": "mc",
+      "q": "What happens when an acid and an alkali are mixed in the right amounts?",
+      "options": [
+        "They neutralise each other",
+        "They both get stronger",
+        "They turn into metal",
+        "Nothing happens"
+      ],
+      "answer": 0,
+      "hint": "The pH moves towards 7.",
+      "explain": "They react and cancel each other out: this is neutralisation. The pH moves towards 7."
+    },
+    {
+      "id": "aci-13",
+      "sub": "neutral",
+      "level": 2,
+      "type": "mc",
+      "q": "Finish the word equation: acid + alkali → salt + …",
+      "options": [
+        "water",
+        "oxygen",
+        "hydrogen",
+        "carbon dioxide"
+      ],
+      "answer": 0,
+      "hint": "Neutralisation makes a salt and a very common liquid.",
+      "explain": "acid + alkali → salt + water."
+    },
+    {
+      "id": "aci-14",
+      "sub": "neutral",
+      "level": 2,
+      "type": "mc",
+      "q": "Indigestion is caused by too much stomach acid. How do antacid tablets help?",
+      "options": [
+        "They are bases that neutralise some of the acid",
+        "They add more acid",
+        "They make the stomach colder",
+        "They dissolve food faster"
+      ],
+      "answer": 0,
+      "hint": "What cancels out an acid?",
+      "explain": "Antacids contain bases that neutralise some of the extra stomach acid, which eases the pain."
+    },
+    {
+      "id": "aci-15",
+      "sub": "neutral",
+      "level": 3,
+      "type": "mc",
+      "q": "Alkali is slowly added to an acid with universal indicator in it. Which colour change do you see?",
+      "options": [
+        "Red, then orange, yellow and green",
+        "Purple, then blue and green",
+        "Green, then red",
+        "It stays red"
+      ],
+      "answer": 0,
+      "hint": "The pH rises from low towards 7.",
+      "explain": "The pH rises from acidic towards neutral, so the colour goes red → orange → yellow → green. Add too much alkali and it goes blue, then purple."
+    },
+    {
+      "id": "aci-16",
+      "sub": "neutral",
+      "level": 3,
+      "type": "mc",
+      "q": "Farmers sometimes spread lime (an alkaline substance) on fields. Why?",
+      "options": [
+        "To neutralise soil that is too acidic",
+        "To make the soil more acidic",
+        "To kill all the plants",
+        "To melt the frost"
+      ],
+      "answer": 0,
+      "hint": "Most crops grow best at a pH near 7.",
+      "explain": "Lime neutralises acidic soil so crops grow better."
+    }
+  ]
+}

@@ -12,7 +12,7 @@ def pages():
     e = html.escape
     topics = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((HERE / "topics").glob("*.json"))]
     topics = [t for t in topics if t.get("stage") == "ks2"]
-    order = ["times-tables", "place-value", "mental-maths", "written-methods", "decimals-and-percentages", "measurement", "telling-the-time", "money", "shapes"]
+    order = ["times-tables", "place-value", "mental-maths", "written-methods", "decimals-and-percentages", "measurement", "telling-the-time", "money", "shapes", "graphs-and-data"]
     topics.sort(key=lambda t: order.index(t["slug"]) if t["slug"] in order else 99)
     games = {g["slug"]: g for g in json.loads((HERE / "games" / "games.json").read_text(encoding="utf-8"))["games"]}
     cards = "".join(

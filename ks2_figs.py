@@ -205,3 +205,86 @@ def jug(level, top=1000, step=100, unit="ml", **_):
 
 
 FIGS.update({"hundred": hundred, "ruler": ruler, "jug": jug})
+
+
+# ---------- statistics (KS2 "Graphs and data") ----------
+def _axis(p, x0, y0, w, h, top, step, unit):
+    for v in range(0, top + 1, step):
+        y = y0 - h * v / top
+        p.append(f'<line x1="{x0}" y1="{y:.1f}" x2="{x0 + w}" y2="{y:.1f}" stroke="var(--line, #ccc)" stroke-width="1"/>')
+        p.append(f'<text x="{x0 - 6}" y="{y + 4:.1f}" text-anchor="end" font-size="12" fill="{NAVY}">{v}</text>')
+    p.append(f'<line x1="{x0}" y1="{y0 - h}" x2="{x0}" y2="{y0}" stroke="{NAVY}" stroke-width="2"/>')
+    p.append(f'<line x1="{x0}" y1="{y0}" x2="{x0 + w}" y2="{y0}" stroke="{NAVY}" stroke-width="2"/>')
+    if unit:
+        p.append(f'<text x="4" y="{y0 - h - 8}" font-size="11" fill="{NAVY}">{html.escape(unit)}</text>')
+
+
+def barchart(bars, top, step, unit="", **_):
+    """A bar chart: bars [["Cats", 6], ...], y axis 0..top marked every step, unit shown above the axis."""
+    x0, y0, h = 34, 190, 160
+    bw = min(46, int(250 / len(bars)))
+    w = bw * len(bars) + 10
+    p = []
+    _axis(p, x0, y0, w, h, top, step, unit)
+    for i, (lab, v) in enumerate(bars):
+        x = x0 + 8 + i * bw
+        y = y0 - h * v / top
+        p.append(f'<rect x="{x}" y="{y:.1f}" width="{bw - 10}" height="{y0 - y:.1f}" fill="{GOLD_LT}" stroke="{GOLD}" stroke-width="2"/>')
+        p.append(f'<text x="{x + (bw - 10) / 2:.1f}" y="{y0 + 16}" text-anchor="middle" font-size="12" font-weight="700" fill="{NAVY}">{html.escape(lab)}</text>')
+    return _svg(x0 + w + 6, y0 + 24, "".join(p), "A bar chart: " + ", ".join(f"{l}" for l, _ in bars) + ". Read each bar against the scale.")
+
+
+def linegraph(points, top, step, unit="", **_):
+    """A line graph: points [["9am", 12], ...], y axis 0..top marked every step."""
+    x0, y0, h = 34, 190, 160
+    gap = min(52, int(260 / max(1, len(points) - 1)))
+    w = gap * (len(points) - 1) + 20
+    p = []
+    _axis(p, x0, y0, w, h, top, step, unit)
+    pts = [(x0 + 10 + i * gap, y0 - h * v / top) for i, (_, v) in enumerate(points)]
+    p.append('<polyline points="' + " ".join(f"{x:.1f},{y:.1f}" for x, y in pts) + f'" fill="none" stroke="{FUN}" stroke-width="3"/>')
+    for (x, y), (lab, _) in zip(pts, points):
+        p.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4.5" fill="{FUN}"/>')
+        p.append(f'<text x="{x:.1f}" y="{y0 + 16}" text-anchor="middle" font-size="11" font-weight="700" fill="{NAVY}">{html.escape(lab)}</text>')
+    return _svg(x0 + w + 8, y0 + 24, "".join(p), "A line graph across " + ", ".join(l for l, _ in points) + ". Read each point against the scale.")
+
+
+def picto(rows, key, item, **_):
+    """A pictogram: rows [["Mon", 3], ["Tue", 2.5]] counted in symbols (halves allowed); one symbol = `key` items."""
+    s, lw = 24, 50
+    most = max(math.ceil(n) for _, n in rows)
+    w = lw + most * (s + 4) + 8
+    p = []
+    for r, (lab, n) in enumerate(rows):
+        y = 8 + r * (s + 8)
+        p.append(f'<text x="4" y="{y + s * 0.7:.1f}" font-size="13" font-weight="700" fill="{NAVY}">{html.escape(lab)}</text>')
+        full, half = int(n), n - int(n) >= 0.5
+        for k in range(full + (1 if half else 0)):
+            cx, cy = lw + k * (s + 4) + s / 2, y + s / 2
+            if k < full:
+                p.append(f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{s / 2 - 1}" fill="{GOLD_LT}" stroke="{GOLD}" stroke-width="2"/>')
+            else:
+                r0 = s / 2 - 1
+                p.append(f'<path d="M{cx:.1f} {cy - r0:.1f} A{r0} {r0} 0 0 0 {cx:.1f} {cy + r0:.1f} Z" fill="{GOLD_LT}" stroke="{GOLD}" stroke-width="2"/>')
+    yk = 8 + len(rows) * (s + 8) + 6
+    p.append(f'<circle cx="{lw - 30 + s / 2}" cy="{yk + s / 2}" r="{s / 2 - 1}" fill="{GOLD_LT}" stroke="{GOLD}" stroke-width="2"/>')
+    p.append(f'<text x="{lw - 30 + s + 8}" y="{yk + s * 0.7:.1f}" font-size="13" fill="{NAVY}">= {key} {html.escape(item)}</text>')
+    return _svg(max(w, 200), yk + s + 8, "".join(p), f"A pictogram. Each circle stands for {key} {item}; a half circle stands for half that many.")
+
+
+def table(head, rows, **_):
+    """A simple data table: head ["Pet", "Children"], rows [["Dog", "8"], ...]."""
+    cw = [max(len(str(r[c])) for r in [head] + rows) * 9 + 24 for c in range(len(head))]
+    rh, p, y = 28, [], 2
+    for i, r in enumerate([head] + rows):
+        x = 2
+        for c, cell in enumerate(r):
+            fill = "var(--gold-bg)" if i == 0 else CARD
+            p.append(f'<rect x="{x}" y="{y}" width="{cw[c]}" height="{rh}" fill="{fill}" stroke="{NAVY}" stroke-width="1.5"/>')
+            p.append(f'<text x="{x + cw[c] / 2}" y="{y + 19}" text-anchor="middle" font-size="13" font-weight="{700 if i == 0 else 400}" fill="{NAVY}">{html.escape(str(cell))}</text>')
+            x += cw[c]
+        y += rh
+    return _svg(sum(cw) + 4, y + 2, "".join(p), "A table: " + "; ".join(", ".join(map(str, r)) for r in [head] + rows))
+
+
+FIGS.update({"colchart": barchart, "linegraph": linegraph, "picto": picto, "table": table})

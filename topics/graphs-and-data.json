@@ -1,0 +1,130 @@
+{
+  "slug": "graphs-and-data",
+  "subject": "maths",
+  "stage": "ks2",
+  "icon": "📊",
+  "card": "Tables, timetables, pictograms, bar charts, line graphs and the mean: read the data and answer questions.",
+  "title": "Graphs and data",
+  "seo_title": "Bar charts, pictograms, tables and line graphs practice for KS2 (statistics)",
+  "level": "KS2 · Years 3 to 6",
+  "description": "Free KS2 statistics practice: read tables and timetables, pictograms with half symbols, bar charts, line graphs, and find the mean. Pictures, hints and worked answers for ages 9 to 11.",
+  "intro": "Data is information, like how many children chose each pet. Tables, pictograms, bar charts and line graphs show it so you can compare and answer questions.",
+  "hero_fig": {"type": "colchart", "bars": [["A", 3], ["B", 5], ["C", 2], ["D", 4]], "top": 5, "step": 1},
+  "units": [
+    {
+      "slug": "tables",
+      "title": "Tables and timetables",
+      "blurb": "Find the right row and column.",
+      "learn": [
+        {"h": "Reading a table", "p": "Find the row and the column you need, and read the number where they meet. This table shows the pets chosen by a class.", "fig": {"type": "table", "head": ["Pet", "Children"], "rows": [["Dog", "8"], ["Cat", "6"], ["Fish", "3"], ["Rabbit", "4"]]}},
+        {"h": "Tally marks", "p": "A tally counts in groups of five: four lines with a fifth line across them. So 3 groups of five and 2 more lines is 15 + 2 = 17."},
+        {"h": "Timetables", "p": "Each column is one bus or train, and each row is a stop. To find how long a journey takes, subtract the start time from the end time."}
+      ],
+      "questions": [
+        {"type": "num", "q": "How many children chose a cat?", "fig": {"type": "table", "head": ["Pet", "Children"], "rows": [["Dog", "8"], ["Cat", "6"], ["Fish", "3"], ["Rabbit", "4"]]}, "answer": "6", "unit": "children",
+         "hint": "Find the Cat row.", "explain": "The Cat row says 6, so 6 children chose a cat."},
+        {"type": "num", "q": "How many children are in the class altogether?", "fig": {"type": "table", "head": ["Pet", "Children"], "rows": [["Dog", "8"], ["Cat", "6"], ["Fish", "3"], ["Rabbit", "4"]]}, "answer": "21", "unit": "children",
+         "hint": "Add up all the numbers.", "explain": "8 + 6 + 3 + 4 = 21 children."},
+        {"type": "num", "q": "How many more children chose a dog than a fish?", "fig": {"type": "table", "head": ["Pet", "Children"], "rows": [["Dog", "8"], ["Cat", "6"], ["Fish", "3"], ["Rabbit", "4"]]}, "answer": "5", "unit": "children",
+         "hint": "Find the difference: dog minus fish.", "explain": "8 − 3 = 5 more children chose a dog."},
+        {"type": "num", "q": "A tally has 4 groups of five and 2 more lines. What number does it show?", "answer": "22",
+         "hint": "Each group is 5. Count in fives, then add the extra lines.", "explain": "4 groups of five = 20, and 2 more makes 22."},
+        {"type": "num", "q": "How many minutes does Bus A take to get from School to Station?", "fig": {"type": "table", "head": ["Stop", "Bus A", "Bus B"], "rows": [["School", "8:10", "8:40"], ["Park", "8:25", "8:55"], ["Station", "8:45", "9:15"]]}, "answer": "35", "unit": "minutes",
+         "hint": "Bus A leaves School at 8:10 and reaches Station at 8:45.", "explain": "From 8:10 to 8:45 is 35 minutes."},
+        {"type": "mc", "q": "You need to be at the Station by 9:00. Which bus should you catch?", "fig": {"type": "table", "head": ["Stop", "Bus A", "Bus B"], "rows": [["School", "8:10", "8:40"], ["Park", "8:25", "8:55"], ["Station", "8:45", "9:15"]]}, "options": ["Bus A", "Bus B", "Either bus", "Neither bus"], "answer": 0,
+         "hint": "Look at the Station row. Which bus arrives before 9:00?", "explain": "Bus A reaches the Station at 8:45, before 9:00. Bus B arrives at 9:15, which is too late."}
+      ]
+    },
+    {
+      "slug": "pictograms",
+      "title": "Pictograms",
+      "blurb": "Check the key, then count symbols.",
+      "learn": [
+        {"h": "Always read the key", "p": "In a pictogram, one symbol can stand for more than one thing. Here each circle stands for 2 books, so 3 circles mean 6 books.", "fig": {"type": "picto", "rows": [["Mon", 3], ["Tue", 4.5], ["Wed", 2], ["Thu", 5]], "key": 2, "item": "books"}},
+        {"h": "Half symbols", "p": "Half a circle stands for half of the key. If a circle is 2 books, half a circle is 1 book. So 4 and a half circles mean 8 + 1 = 9 books."},
+        {"h": "Comparing", "p": "To find how many more, work out both numbers first, then subtract."}
+      ],
+      "questions": [
+        {"type": "num", "q": "How many books were read on Monday?", "fig": {"type": "picto", "rows": [["Mon", 3], ["Tue", 4.5], ["Wed", 2], ["Thu", 5]], "key": 2, "item": "books"}, "answer": "6", "unit": "books",
+         "hint": "Each circle is 2 books.", "explain": "3 circles × 2 = 6 books."},
+        {"type": "num", "q": "How many books were read on Tuesday?", "fig": {"type": "picto", "rows": [["Mon", 3], ["Tue", 4.5], ["Wed", 2], ["Thu", 5]], "key": 2, "item": "books"}, "answer": "9", "unit": "books",
+         "hint": "4 whole circles and a half. Half a circle is 1 book.", "explain": "4 circles = 8 books, and the half circle = 1 book. 8 + 1 = 9 books."},
+        {"type": "num", "q": "How many more books were read on Thursday than on Wednesday?", "fig": {"type": "picto", "rows": [["Mon", 3], ["Tue", 4.5], ["Wed", 2], ["Thu", 5]], "key": 2, "item": "books"}, "answer": "6", "unit": "books",
+         "hint": "Thursday is 5 circles, Wednesday is 2 circles.", "explain": "Thursday: 5 × 2 = 10 books. Wednesday: 2 × 2 = 4 books. 10 − 4 = 6 more."},
+        {"type": "num", "q": "How many children chose blue?", "fig": {"type": "picto", "rows": [["Red", 2.5], ["Blue", 4], ["Green", 1.5]], "key": 4, "item": "children"}, "answer": "16", "unit": "children",
+         "hint": "Look at the key: each circle is 4 children.", "explain": "4 circles × 4 = 16 children."},
+        {"type": "num", "q": "How many children chose green?", "fig": {"type": "picto", "rows": [["Red", 2.5], ["Blue", 4], ["Green", 1.5]], "key": 4, "item": "children"}, "answer": "6", "unit": "children",
+         "hint": "1 whole circle and a half. What is half of 4?", "explain": "1 circle = 4 children, half a circle = 2 children. 4 + 2 = 6."},
+        {"type": "mc", "q": "In this pictogram, what does half a circle stand for?", "fig": {"type": "picto", "rows": [["Red", 2.5], ["Blue", 4], ["Green", 1.5]], "key": 4, "item": "children"}, "options": ["2 children", "4 children", "1 child", "Half a child"], "answer": 0,
+         "hint": "A whole circle is 4 children.", "explain": "Half of 4 is 2, so half a circle stands for 2 children."}
+      ]
+    },
+    {
+      "slug": "bar-charts",
+      "title": "Bar charts",
+      "blurb": "Read the top of each bar on the scale.",
+      "learn": [
+        {"h": "Reading a bar", "p": "Look across from the top of the bar to the scale on the side. Here the Grape bar reaches 9.", "fig": {"type": "colchart", "bars": [["Apple", 7], ["Plum", 4], ["Grape", 9], ["Pear", 3]], "top": 10, "step": 1, "unit": "children"}},
+        {"h": "Check the scale", "p": "The scale doesn't always go up in 1s. It might go up in 2s, 5s or 10s. Work out what each line is worth before you read the bars."},
+        {"h": "Compare and total", "p": "The tallest bar is the most popular. To find how many more, subtract. To find the total, add all the bars."}
+      ],
+      "questions": [
+        {"type": "num", "q": "How many children chose grapes?", "fig": {"type": "colchart", "bars": [["Apple", 7], ["Plum", 4], ["Grape", 9], ["Pear", 3]], "top": 10, "step": 1, "unit": "children"}, "answer": "9", "unit": "children",
+         "hint": "Look across from the top of the Grape bar.", "explain": "The Grape bar reaches 9."},
+        {"type": "num", "q": "How many more children chose apples than pears?", "fig": {"type": "colchart", "bars": [["Apple", 7], ["Plum", 4], ["Grape", 9], ["Pear", 3]], "top": 10, "step": 1, "unit": "children"}, "answer": "4", "unit": "children",
+         "hint": "Read both bars, then subtract.", "explain": "Apple is 7 and Pear is 3. 7 − 3 = 4 more."},
+        {"type": "num", "q": "How many children were asked altogether?", "fig": {"type": "colchart", "bars": [["Apple", 7], ["Plum", 4], ["Grape", 9], ["Pear", 3]], "top": 10, "step": 1, "unit": "children"}, "answer": "23", "unit": "children",
+         "hint": "Add all four bars.", "explain": "7 + 4 + 9 + 3 = 23 children."},
+        {"type": "num", "q": "How many cars went past the school on Wednesday?", "fig": {"type": "colchart", "bars": [["Mon", 25], ["Tue", 15], ["Wed", 35], ["Thu", 20]], "top": 40, "step": 5, "unit": "cars"}, "answer": "35", "unit": "cars",
+         "hint": "The scale goes up in 5s.", "explain": "The Wednesday bar reaches the line for 35."},
+        {"type": "num", "q": "How many cars went past on Tuesday and Thursday together?", "fig": {"type": "colchart", "bars": [["Mon", 25], ["Tue", 15], ["Wed", 35], ["Thu", 20]], "top": 40, "step": 5, "unit": "cars"}, "answer": "35", "unit": "cars",
+         "hint": "Read the two bars and add them.", "explain": "Tuesday 15 + Thursday 20 = 35 cars, the same as Wednesday on its own."},
+        {"type": "mc", "q": "Which day had the fewest cars?", "fig": {"type": "colchart", "bars": [["Mon", 25], ["Tue", 15], ["Wed", 35], ["Thu", 20]], "top": 40, "step": 5, "unit": "cars"}, "options": ["Tuesday", "Monday", "Wednesday", "Thursday"], "answer": 0,
+         "hint": "Find the shortest bar.", "explain": "Tuesday's bar is the shortest, at 15 cars."}
+      ]
+    },
+    {
+      "slug": "line-graphs",
+      "title": "Line graphs",
+      "blurb": "See how something changes over time.",
+      "learn": [
+        {"h": "Change over time", "p": "A line graph shows how something changes, like the temperature during a day. Time goes along the bottom, and the amount goes up the side.", "fig": {"type": "linegraph", "points": [["9am", 8], ["10am", 10], ["11am", 12], ["12pm", 16], ["1pm", 18], ["2pm", 14]], "top": 20, "step": 2, "unit": "°C"}},
+        {"h": "Up and down", "p": "When the line goes up, the amount is increasing. When it goes down, it is decreasing. A steeper line means a faster change."},
+        {"h": "Reading a point", "p": "Find the time along the bottom, go up to the line, then look across to the scale. Check what each line on the scale is worth: here it goes up in 2s."}
+      ],
+      "questions": [
+        {"type": "num", "q": "What was the temperature at 11am?", "fig": {"type": "linegraph", "points": [["9am", 8], ["10am", 10], ["11am", 12], ["12pm", 16], ["1pm", 18], ["2pm", 14]], "top": 20, "step": 2, "unit": "°C"}, "answer": "12", "unit": "°C",
+         "hint": "Go up from 11am to the dot, then across to the scale.", "explain": "The dot above 11am is level with 12, so it was 12 °C."},
+        {"type": "num", "q": "How much did the temperature rise from 9am to 1pm?", "fig": {"type": "linegraph", "points": [["9am", 8], ["10am", 10], ["11am", 12], ["12pm", 16], ["1pm", 18], ["2pm", 14]], "top": 20, "step": 2, "unit": "°C"}, "answer": "10", "unit": "°C",
+         "hint": "Read both temperatures and find the difference.", "explain": "At 9am it was 8 °C and at 1pm it was 18 °C. 18 − 8 = 10 degrees."},
+        {"type": "mc", "q": "When was it warmest?", "fig": {"type": "linegraph", "points": [["9am", 8], ["10am", 10], ["11am", 12], ["12pm", 16], ["1pm", 18], ["2pm", 14]], "top": 20, "step": 2, "unit": "°C"}, "options": ["1pm", "2pm", "12pm", "9am"], "answer": 0,
+         "hint": "Find the highest point on the line.", "explain": "The highest point is at 1pm, at 18 °C. After that the line goes down."},
+        {"type": "num", "q": "How tall was the plant in week 3?", "fig": {"type": "linegraph", "points": [["W1", 2], ["W2", 3], ["W3", 5], ["W4", 8], ["W5", 10]], "top": 12, "step": 1, "unit": "cm"}, "answer": "5", "unit": "cm",
+         "hint": "W3 means week 3.", "explain": "The dot above W3 is level with 5, so the plant was 5 cm tall."},
+        {"type": "num", "q": "How much did the plant grow between week 3 and week 4?", "fig": {"type": "linegraph", "points": [["W1", 2], ["W2", 3], ["W3", 5], ["W4", 8], ["W5", 10]], "top": 12, "step": 1, "unit": "cm"}, "answer": "3", "unit": "cm",
+         "hint": "Read week 3 and week 4, then subtract.", "explain": "Week 3: 5 cm. Week 4: 8 cm. 8 − 5 = 3 cm."},
+        {"type": "mc", "q": "Between which two weeks did the plant grow the most?", "fig": {"type": "linegraph", "points": [["W1", 2], ["W2", 3], ["W3", 5], ["W4", 8], ["W5", 10]], "top": 12, "step": 1, "unit": "cm"}, "options": ["Week 3 to week 4", "Week 1 to week 2", "Week 2 to week 3", "Week 4 to week 5"], "answer": 0,
+         "hint": "Look for the steepest part of the line.", "explain": "It grew 1 cm, then 2 cm, then 3 cm, then 2 cm. The biggest jump, 3 cm, was from week 3 to week 4."}
+      ]
+    },
+    {
+      "slug": "the-mean",
+      "title": "The mean (average)",
+      "blurb": "Add them up, then share equally.",
+      "learn": [
+        {"h": "What the mean is", "p": "The **mean** is a kind of average. It's what each one would get if everything were shared out equally."},
+        {"h": "How to find it", "p": "Add up all the numbers, then divide by how many numbers there are. The mean of 4, 6 and 8 is (4 + 6 + 8) ÷ 3 = 18 ÷ 3 = 6."},
+        {"h": "Check it makes sense", "p": "The mean is always between the smallest and the biggest number. If you get a mean bigger than all the numbers, something went wrong."}
+      ],
+      "questions": [
+        {"type": "num", "q": "What is the mean of 4, 6 and 8?", "answer": "6", "hint": "Add them, then divide by 3.", "explain": "4 + 6 + 8 = 18, and 18 ÷ 3 = 6."},
+        {"type": "num", "q": "What is the mean of 3, 5, 7 and 9?", "answer": "6", "hint": "Add the four numbers, then divide by 4.", "explain": "3 + 5 + 7 + 9 = 24, and 24 ÷ 4 = 6."},
+        {"type": "num", "q": "Ben scored 10, 12 and 8 points in three games. What was his mean score?", "answer": "10", "unit": "points", "hint": "Add the scores, then divide by 3.", "explain": "10 + 12 + 8 = 30, and 30 ÷ 3 = 10 points."},
+        {"type": "num", "q": "Four children have 3, 5, 6 and 10 sweets. They share them out equally. How many does each child get?", "answer": "6", "unit": "sweets", "hint": "Sharing equally is the same as finding the mean.", "explain": "3 + 5 + 6 + 10 = 24 sweets. 24 ÷ 4 = 6 each."},
+        {"type": "num", "q": "The mean of three numbers is 5. What do the three numbers add up to?", "answer": "15", "hint": "Mean = total ÷ 3, so total = mean × 3.", "explain": "If the mean is 5, the total is 5 × 3 = 15."},
+        {"type": "mc", "q": "The mean of 2, 4 and 9 is worked out as 12. How can you tell this is wrong?", "options": ["The mean can't be bigger than the biggest number", "12 is an even number", "The mean must be odd", "You can't find a mean of three numbers"], "answer": 0,
+         "hint": "Where should the mean be, compared with the numbers?", "explain": "The mean must be between the smallest and biggest numbers. The right answer is (2 + 4 + 9) ÷ 3 = 15 ÷ 3 = 5."}
+      ]
+    }
+  ]
+}

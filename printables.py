@@ -192,7 +192,7 @@ def table_page(n):
 
 
 # ---------- topic worksheets ----------
-WS_TOPICS = ["times-tables", "place-value", "mental-maths", "decimals-and-percentages", "measurement", "telling-the-time", "money", "shapes", "fractions", "missions"]
+WS_TOPICS = ["times-tables", "place-value", "mental-maths", "written-methods", "decimals-and-percentages", "measurement", "telling-the-time", "money", "shapes", "fractions", "missions"]
 
 
 def _write(q):

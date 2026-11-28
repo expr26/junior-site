@@ -7,7 +7,7 @@
         ["Numbers up to 1,000,000; negative numbers in context; rounding; Roman numerals to 1,000", "/maths/place-value/"],
         ["Adding and subtracting numbers with more than 4 digits, and in your head", "/maths/mental-maths/"],
         ["Multiples, factors, prime numbers, square and cube numbers", "/question-bank/maths/factors-primes-and-powers/"],
-        ["Multiplying up to 4 digits by 1 or 2 digits; short division; × and ÷ by 10, 100 and 1,000", "/maths/times-tables/"],
+        ["Multiplying up to 4 digits by 1 or 2 digits; short division; × and ÷ by 10, 100 and 1,000", "/maths/written-methods/"],
         ["Fractions: equivalent fractions, mixed numbers, adding and subtracting, multiplying by whole numbers", "/maths/fractions/"],
         ["Decimals up to 3 decimal places; percentages", "/maths/decimals-and-percentages/"],
         ["Converting metric units; perimeter and area of rectangles; money and time problems", "/maths/measurement/"],
@@ -15,7 +15,7 @@
         ["Line graphs and timetables", "/question-bank/maths/statistics/"]
       ],
       "science": [
-        ["Properties and changes of materials (dissolving, separating, reversible changes)", ""],
+        ["Properties and changes of materials (dissolving, separating, reversible changes)", "/what-is/dissolving/"],
         ["Earth and space: the Sun, Earth and Moon, day and night", "/games/day-night-seasons/"],
         ["Forces: gravity, air resistance, water resistance, friction, levers, pulleys and gears", "/science/forces-and-motion/"],
         ["Living things and their habitats: life cycles and reproduction", ""],
@@ -26,7 +26,7 @@
       "id": "y6", "name": "Year 6", "age": "ages 10 to 11", "stage": "KS2 · IB PYP",
       "maths": [
         ["Numbers up to 10,000,000; negative numbers; rounding", "/maths/place-value/"],
-        ["Long multiplication and long division; order of operations", "/maths/mental-maths/"],
+        ["Long multiplication and long division; order of operations", "/maths/written-methods/"],
         ["Fractions: simplifying, adding and subtracting with different denominators, multiplying, dividing by a whole number", "/maths/fractions/"],
         ["Fractions, decimals and percentages, and how they are linked", "/question-bank/maths/fractions-decimals-percentages/"],
         ["Ratio and proportion; scale factors", "/question-bank/maths/ratio-and-proportion/"],
@@ -37,8 +37,8 @@
       ],
       "science": [
         ["Living things: classifying plants and animals", ""],
-        ["Animals including humans: the heart, blood and circulation; healthy living", ""],
-        ["Evolution and inheritance; fossils", ""],
+        ["Animals including humans: the heart, blood and circulation; healthy living", "/what-is/circulatory-system/"],
+        ["Evolution and inheritance; fossils", "/what-is/adaptation/"],
         ["Light: how we see, shadows, reflection", "/videos/physics/light/"],
         ["Electricity: circuits, symbols, brighter bulbs and louder buzzers", "/games/circuit-builder/"]
       ]

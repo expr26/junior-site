@@ -1,0 +1,123 @@
+{
+  "slug": "written-methods",
+  "subject": "maths",
+  "stage": "ks2",
+  "icon": "✏️",
+  "card": "Column addition and subtraction, short and long multiplication, short and long division, step by step.",
+  "title": "Written methods",
+  "seo_title": "Column addition, long multiplication and long division practice for KS2",
+  "level": "KS2 · Years 4 to 6",
+  "description": "Free KS2 practice of the written methods: column addition and subtraction, short multiplication, long multiplication, short division and long division, with hints and worked answers for ages 9 to 11.",
+  "intro": "When numbers are too big to work out in your head, write them in columns. Line up the digits, start with the ones, and carry or exchange when you need to.",
+  "hero_fig": {"type": "pv", "n": "467", "cols": ["H", "T", "O"]},
+  "units": [
+    {
+      "slug": "column-addition",
+      "title": "Column addition",
+      "blurb": "Line up the digits and carry.",
+      "learn": [
+        {"h": "Line up the digits", "p": "Write the numbers one under the other with ones under ones, tens under tens and hundreds under hundreds. Always start adding from the **ones** column on the right."},
+        {"h": "Carrying", "p": "If a column adds up to 10 or more, write the ones digit and carry the ten into the next column. In 467 + 285: 7 + 5 = 12, so write 2 and carry 1. Then 6 + 8 + 1 = 15, write 5 and carry 1. Then 4 + 2 + 1 = 7. The answer is 752."},
+        {"h": "Check it", "p": "Estimate first: 467 + 285 is about 500 + 300 = 800. 752 is close, so it makes sense."}
+      ],
+      "questions": [
+        {"type": "num", "q": "345 + 232 = ?", "answer": "577", "hint": "No carrying needed: add the ones, then the tens, then the hundreds.", "explain": "5 + 2 = 7, 4 + 3 = 7, 3 + 2 = 5. So 345 + 232 = 577."},
+        {"type": "num", "q": "467 + 285 = ?", "answer": "752", "hint": "7 + 5 = 12. Write 2 and carry 1 ten.", "explain": "7 + 5 = 12 (write 2, carry 1). 6 + 8 + 1 = 15 (write 5, carry 1). 4 + 2 + 1 = 7. So 752."},
+        {"type": "num", "q": "3456 + 2789 = ?", "answer": "6245", "hint": "You need to carry in three columns.", "explain": "6 + 9 = 15 (write 5, carry 1). 5 + 8 + 1 = 14 (write 4, carry 1). 4 + 7 + 1 = 12 (write 2, carry 1). 3 + 2 + 1 = 6. So 6245."},
+        {"type": "num", "q": "1250 + 3875 = ?", "answer": "5125", "hint": "Start with the ones: 0 + 5.", "explain": "0 + 5 = 5. 5 + 7 = 12 (write 2, carry 1). 2 + 8 + 1 = 11 (write 1, carry 1). 1 + 3 + 1 = 5. So 5125."},
+        {"type": "num", "q": "A school has 487 boys and 516 girls. How many pupils is that altogether?", "answer": "1003", "unit": "pupils", "hint": "Add 487 + 516 in columns.", "explain": "7 + 6 = 13 (write 3, carry 1). 8 + 1 + 1 = 10 (write 0, carry 1). 4 + 5 + 1 = 10. So 1003 pupils."},
+        {"type": "mc", "q": "In 268 + 157, what do you carry from the ones column?", "options": ["1 ten", "5 ones", "1 hundred", "Nothing"], "answer": 0, "hint": "What is 8 + 7?", "explain": "8 + 7 = 15. Write the 5 in the ones column and carry 1 ten into the tens column."}
+      ]
+    },
+    {
+      "slug": "column-subtraction",
+      "title": "Column subtraction",
+      "blurb": "Exchange when the top digit is too small.",
+      "learn": [
+        {"h": "Bigger number on top", "p": "Write the bigger number on top and line up the digits. Start from the **ones** and take the bottom digit away from the top digit."},
+        {"h": "Exchanging", "p": "If the top digit is smaller, exchange 1 from the next column. In 652 − 278: you can't do 2 − 8, so change 1 ten into 10 ones: 12 − 8 = 4. Now the tens are 4 − 7, so exchange a hundred: 14 − 7 = 7. Then 5 − 2 = 3. The answer is 374."},
+        {"h": "Check with adding", "p": "Add your answer to the number you took away. You should get the top number: 374 + 278 = 652."}
+      ],
+      "questions": [
+        {"type": "num", "q": "785 − 342 = ?", "answer": "443", "hint": "No exchanging needed: 5 − 2, then 8 − 4, then 7 − 3.", "explain": "5 − 2 = 3, 8 − 4 = 4, 7 − 3 = 4. So 443."},
+        {"type": "num", "q": "652 − 278 = ?", "answer": "374", "hint": "2 − 8 doesn't work, so exchange a ten for 10 ones.", "explain": "12 − 8 = 4. Exchange a hundred: 14 − 7 = 7. 5 − 2 = 3. So 374."},
+        {"type": "num", "q": "1000 − 456 = ?", "answer": "544", "hint": "Think of 1000 as 9 hundreds, 9 tens and 10 ones.", "explain": "1000 is 9 hundreds, 9 tens and 10 ones. 10 − 6 = 4, 9 − 5 = 4, 9 − 4 = 5. So 544."},
+        {"type": "num", "q": "5302 − 1847 = ?", "answer": "3455", "hint": "You will need to exchange in the ones, tens and hundreds.", "explain": "2 − 7 doesn't work and the tens digit is 0, so exchange a hundred: the hundreds become 2, the tens 10, then exchange a ten so the tens are 9 and the ones 12. 12 − 7 = 5. 9 − 4 = 5. 2 − 8 doesn't work, so exchange a thousand: 12 − 8 = 4. 4 − 1 = 3. So 3455. Check: 3455 + 1847 = 5302."},
+        {"type": "num", "q": "A book has 312 pages. Sam has read 128 pages. How many pages are left?", "answer": "184", "unit": "pages", "hint": "Work out 312 − 128.", "explain": "12 − 8 = 4. Exchange a hundred: 10 − 2 = 8. 2 − 1 = 1. So 184 pages. Check: 184 + 128 = 312."},
+        {"type": "mc", "q": "Which calculation checks that 652 − 278 = 374?", "options": ["374 + 278", "652 + 278", "374 − 278", "652 + 374"], "answer": 0, "hint": "Adding is the inverse of subtracting.", "explain": "If 652 − 278 = 374, then 374 + 278 should give 652. It does."}
+      ]
+    },
+    {
+      "slug": "short-multiplication",
+      "title": "Short multiplication",
+      "blurb": "Multiply by a 1-digit number.",
+      "learn": [
+        {"h": "One digit at a time", "p": "Write the big number, with the single digit underneath on the right. Multiply each digit by it, starting with the **ones**."},
+        {"h": "Carrying", "p": "In 237 × 5: 7 × 5 = 35, write 5 and carry 3. 3 × 5 = 15, add the 3 to get 18: write 8, carry 1. 2 × 5 = 10, add the 1 to get 11. The answer is 1185."},
+        {"h": "Estimate", "p": "237 × 5 is about 200 × 5 = 1000, or 250 × 5 = 1250. 1185 is between them, so it makes sense."}
+      ],
+      "questions": [
+        {"type": "num", "q": "34 × 6 = ?", "answer": "204", "hint": "4 × 6 = 24: write 4, carry 2.", "explain": "4 × 6 = 24 (write 4, carry 2). 3 × 6 = 18, + 2 = 20. So 204."},
+        {"type": "num", "q": "125 × 4 = ?", "answer": "500", "hint": "5 × 4 = 20: write 0, carry 2.", "explain": "5 × 4 = 20 (write 0, carry 2). 2 × 4 = 8, + 2 = 10 (write 0, carry 1). 1 × 4 = 4, + 1 = 5. So 500."},
+        {"type": "num", "q": "237 × 5 = ?", "answer": "1185", "hint": "7 × 5 = 35: write 5, carry 3.", "explain": "7 × 5 = 35 (write 5, carry 3). 3 × 5 = 15, + 3 = 18 (write 8, carry 1). 2 × 5 = 10, + 1 = 11. So 1185."},
+        {"type": "num", "q": "1342 × 3 = ?", "answer": "4026", "hint": "2 × 3 = 6, then 4 × 3 = 12.", "explain": "2 × 3 = 6. 4 × 3 = 12 (write 2, carry 1). 3 × 3 = 9, + 1 = 10 (write 0, carry 1). 1 × 3 = 3, + 1 = 4. So 4026."},
+        {"type": "num", "q": "Pencils come in packs of 24. How many pencils are in 7 packs?", "answer": "168", "unit": "pencils", "hint": "Work out 24 × 7.", "explain": "4 × 7 = 28 (write 8, carry 2). 2 × 7 = 14, + 2 = 16. So 168 pencils."},
+        {"type": "num", "q": "409 × 8 = ?", "answer": "3272", "hint": "Careful with the 0 in the tens: 0 × 8 = 0, but add what you carried.", "explain": "9 × 8 = 72 (write 2, carry 7). 0 × 8 = 0, + 7 = 7. 4 × 8 = 32. So 3272."}
+      ]
+    },
+    {
+      "slug": "long-multiplication",
+      "title": "Long multiplication",
+      "blurb": "Multiply by a 2-digit number.",
+      "learn": [
+        {"h": "Split the 2-digit number", "p": "For 45 × 32, split 32 into 30 and 2. Work out 45 × 2 and 45 × 30, then add them."},
+        {"h": "Two rows, then add", "p": "First row: 45 × 2 = 90. Second row: 45 × 30. Put a 0 in the ones place first (because you are multiplying by tens), then do 45 × 3 = 135, so the row is 1350. Add the rows: 90 + 1350 = 1440."},
+        {"h": "Don't forget the 0", "p": "The 0 on the second row is the most common thing to forget. It's there because the 3 in 32 really means 30."}
+      ],
+      "questions": [
+        {"type": "num", "q": "23 × 14 = ?", "answer": "322", "hint": "23 × 4, then 23 × 10, then add.", "explain": "23 × 4 = 92. 23 × 10 = 230. 92 + 230 = 322."},
+        {"type": "num", "q": "45 × 32 = ?", "answer": "1440", "hint": "45 × 2, then 45 × 30, then add.", "explain": "45 × 2 = 90. 45 × 30 = 1350. 90 + 1350 = 1440."},
+        {"type": "num", "q": "126 × 21 = ?", "answer": "2646", "hint": "126 × 1, then 126 × 20, then add.", "explain": "126 × 1 = 126. 126 × 20 = 2520. 126 + 2520 = 2646."},
+        {"type": "num", "q": "37 × 25 = ?", "answer": "925", "hint": "37 × 5, then 37 × 20, then add.", "explain": "37 × 5 = 185. 37 × 20 = 740. 185 + 740 = 925."},
+        {"type": "num", "q": "A coach has 52 seats. How many seats are there on 18 coaches?", "answer": "936", "unit": "seats", "hint": "Work out 52 × 18: 52 × 8, then 52 × 10.", "explain": "52 × 8 = 416. 52 × 10 = 520. 416 + 520 = 936 seats."},
+        {"type": "mc", "q": "In the long multiplication 34 × 26, what is the second row?", "options": ["680", "68", "204", "884"], "answer": 0, "hint": "The second row is 34 × 20.", "explain": "The first row is 34 × 6 = 204. The second row is 34 × 20 = 680. Then 204 + 680 = 884 is the answer."}
+      ]
+    },
+    {
+      "slug": "short-division",
+      "title": "Short division",
+      "blurb": "Divide by a 1-digit number, and remainders.",
+      "learn": [
+        {"h": "The bus stop", "p": "Write the number inside the 'bus stop' and the divisor outside. Unlike the other methods, you start on the **left**, with the biggest place value."},
+        {"h": "Carrying the remainder", "p": "In 735 ÷ 5: 7 ÷ 5 = 1 remainder 2. Write 1 on top and carry the 2 to make 23. 23 ÷ 5 = 4 remainder 3. Write 4 and carry the 3 to make 35. 35 ÷ 5 = 7. The answer is 147."},
+        {"h": "Remainders in real life", "p": "47 ÷ 5 = 9 remainder 2. In a story, think about what it means. If 47 children go in cars that take 5 each, you need 10 cars, so nobody is left behind."}
+      ],
+      "questions": [
+        {"type": "num", "q": "84 ÷ 4 = ?", "answer": "21", "hint": "8 ÷ 4, then 4 ÷ 4.", "explain": "8 ÷ 4 = 2 and 4 ÷ 4 = 1. So 21."},
+        {"type": "num", "q": "156 ÷ 3 = ?", "answer": "52", "hint": "1 ÷ 3 doesn't go, so start with 15 ÷ 3.", "explain": "15 ÷ 3 = 5. 6 ÷ 3 = 2. So 52. Check: 52 × 3 = 156."},
+        {"type": "num", "q": "735 ÷ 5 = ?", "answer": "147", "hint": "7 ÷ 5 = 1 remainder 2. Carry the 2.", "explain": "7 ÷ 5 = 1 r 2. 23 ÷ 5 = 4 r 3. 35 ÷ 5 = 7. So 147."},
+        {"type": "num", "q": "1256 ÷ 8 = ?", "answer": "157", "hint": "1 ÷ 8 doesn't go, so start with 12 ÷ 8.", "explain": "12 ÷ 8 = 1 r 4. 45 ÷ 8 = 5 r 5. 56 ÷ 8 = 7. So 157. Check: 157 × 8 = 1256."},
+        {"type": "mc", "q": "47 ÷ 5 = ?", "options": ["9 remainder 2", "9 remainder 3", "8 remainder 7", "9"], "answer": 0, "hint": "How many 5s fit into 47? What is left over?", "explain": "9 × 5 = 45, and 47 − 45 = 2. So 47 ÷ 5 = 9 remainder 2. (8 remainder 7 is wrong because the remainder must be less than 5.)"},
+        {"type": "num", "q": "30 children go on a trip. Each minibus takes 8 children. How many minibuses are needed?", "answer": "4", "unit": "minibuses", "hint": "30 ÷ 8 has a remainder. What happens to the children who are left?", "explain": "30 ÷ 8 = 3 remainder 6. Three minibuses take 24 children, but 6 are left, so you need a 4th minibus."}
+      ]
+    },
+    {
+      "slug": "long-division",
+      "title": "Long division",
+      "blurb": "Divide by a 2-digit number.",
+      "learn": [
+        {"h": "Write a times table list", "p": "For 728 ÷ 14, it helps to write some multiples of 14 first: 14, 28, 42, 56, 70, 84, 98, 112, 126, 140."},
+        {"h": "Divide, multiply, subtract, bring down", "p": "72 ÷ 14 = 5 (because 5 × 14 = 70). Write 5 on top. Subtract: 72 − 70 = 2. Bring down the 8 to make 28. 28 ÷ 14 = 2. Write 2 on top. The answer is 52."},
+        {"h": "Check with multiplying", "p": "52 × 14 = 728, so the answer is right. Multiplying is the inverse of dividing."}
+      ],
+      "questions": [
+        {"type": "num", "q": "432 ÷ 12 = ?", "answer": "36", "hint": "43 ÷ 12 = 3 (3 × 12 = 36). Subtract, then bring down the 2.", "explain": "43 ÷ 12 = 3, and 43 − 36 = 7. Bring down 2 to make 72. 72 ÷ 12 = 6. So 36."},
+        {"type": "num", "q": "728 ÷ 14 = ?", "answer": "52", "hint": "72 ÷ 14 = 5 (5 × 14 = 70).", "explain": "72 ÷ 14 = 5, and 72 − 70 = 2. Bring down 8 to make 28. 28 ÷ 14 = 2. So 52."},
+        {"type": "num", "q": "975 ÷ 25 = ?", "answer": "39", "hint": "97 ÷ 25 = 3 (3 × 25 = 75).", "explain": "97 ÷ 25 = 3, and 97 − 75 = 22. Bring down 5 to make 225. 225 ÷ 25 = 9. So 39."},
+        {"type": "num", "q": "2016 ÷ 16 = ?", "answer": "126", "hint": "20 ÷ 16 = 1, remainder 4. Bring down the 1.", "explain": "20 ÷ 16 = 1 r 4. Bring down 1: 41 ÷ 16 = 2 r 9. Bring down 6: 96 ÷ 16 = 6. So 126."},
+        {"type": "num", "q": "672 stickers are shared equally between 21 children. How many does each child get?", "answer": "32", "unit": "stickers", "hint": "Work out 672 ÷ 21. Start with 67 ÷ 21.", "explain": "67 ÷ 21 = 3, and 67 − 63 = 4. Bring down 2 to make 42. 42 ÷ 21 = 2. So 32 stickers each."},
+        {"type": "mc", "q": "500 ÷ 15 = ?", "options": ["33 remainder 5", "33 remainder 15", "34", "33 remainder 1"], "answer": 0, "hint": "What is 33 × 15?", "explain": "33 × 15 = 495, and 500 − 495 = 5. So 500 ÷ 15 = 33 remainder 5."}
+      ]
+    }
+  ]
+}

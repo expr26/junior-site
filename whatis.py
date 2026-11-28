@@ -134,7 +134,7 @@ def pages():
   <p class="small">Looking for a word that isn't here? Try the <a href="{glossary.URL}">glossary</a> of {len(gl)} words.</p>
 </div></section>"""
     meta = {"title": "What is...? Maths and Science explained simply for ages 9 to 14",
-            "description": "Simple explanations of key Maths and Science ideas with examples and a quick check: prime numbers, fractions, percentages, forces, density, atoms, chemical reactions, photosynthesis, digestion and more."}
+            "description": "Simple explanations of key Maths and Science ideas with examples and a quick check: prime numbers, fractions, percentages, forces, density, sound, magnets, atoms, chemical reactions, photosynthesis, digestion and more."}
     return [(ROOT, meta, body, "whatis.py")] + out
 
 
@@ -145,7 +145,8 @@ def slugs():
 
 # glossary words that a page explains, besides its own slug (so the glossary card can link to it)
 COVERS = {"mean-median-mode-range": ["mean", "median", "mode", "range"], "angle-types": ["acute-angle", "obtuse-angle", "right-angle"],
-          "mass-and-weight": ["mass", "weight"], "series-and-parallel-circuits": ["series-circuit", "parallel-circuit"]}
+          "mass-and-weight": ["mass", "weight"], "series-and-parallel-circuits": ["series-circuit", "parallel-circuit"],
+          "electric-current": ["current"], "renewable-energy": ["renewable"], "seasons": ["season"]}
 
 
 def glossary_links():

@@ -604,5 +604,156 @@
     ],
     "practise": ["Food chains and ecosystems questions", "/question-bank/biology/ecosystems/"],
     "related": ["ecosystem", "food-chain"]
+  },
+  {
+    "slug": "sound", "icon": "🔊", "name": "sound",
+    "short": "Sound is a vibration that travels through a solid, a liquid or a gas, like air, until it reaches your ear. Sound can't travel through empty space.",
+    "sections": [
+      {"h": "Vibrations", "p": "Every sound starts with something vibrating: a guitar string, a drum skin or your vocal cords. The vibration makes the particles next to it vibrate, and they pass it on, all the way to your ear."},
+      {"h": "Pitch and loudness", "p": "**Pitch** is how high or low a sound is. Faster vibrations (a higher **frequency**) make a higher pitch. Frequency is measured in hertz (Hz). **Loudness** depends on how big the vibrations are (the **amplitude**). Loudness is measured in decibels (dB)."},
+      {"h": "How fast sound travels", "p": "Sound travels at about 340 metres per second in air. It goes faster in water (about 1500 m/s) and faster still in solids like steel. Light is much, much faster, which is why you see lightning before you hear the thunder."}
+    ],
+    "examples": ["A ruler twanging on a desk.", "Hearing an echo when sound reflects off a cliff or a big wall.", "Putting your ear to a table and hearing a tap clearly through the wood."],
+    "mistake": "Thinking sound travels fastest through air. Sound needs particles to pass the vibration on, and in liquids and solids the particles are closer together, so sound travels faster in water than in air, and faster still in most solids.",
+    "quiz": [
+      {"q": "Why can't sound travel through space?", "options": ["There are no particles to vibrate", "It is too cold", "It is too dark", "Space is too big"], "answer": 0, "explain": "Space is almost a vacuum, so there are no particles to pass the vibration on."},
+      {"q": "What makes a sound higher in pitch?", "options": ["Faster vibrations", "Bigger vibrations", "Slower vibrations", "A bigger drum"], "answer": 0, "explain": "A higher frequency (more vibrations each second) gives a higher pitch. Bigger vibrations make it louder, not higher."},
+      {"q": "In which does sound travel fastest?", "options": ["Steel", "Water", "Air", "Space"], "answer": 0, "explain": "Sound travels fastest in solids like steel, then liquids, then gases. It can't travel through space at all."}
+    ],
+    "faq": [
+      ["How can I tell how far away a storm is?", "Count the seconds between the lightning and the thunder. Sound travels about 1 km in 3 seconds, so divide by 3 to get roughly how many kilometres away the storm is."],
+      ["What can humans hear?", "Young people can usually hear sounds from about 20 Hz to 20,000 Hz. As people get older, they often can't hear the highest sounds any more. Dogs and bats can hear much higher sounds than we can."]
+    ],
+    "practise": ["Play Sound Studio", "/games/sound-studio/"],
+    "related": ["vibration", "frequency", "amplitude", "echo"]
+  },
+  {
+    "slug": "magnetism", "icon": "🧲", "name": "magnetism",
+    "short": "Magnetism is a non-contact force. Magnets attract things made of iron, nickel and cobalt, and two magnets can attract or repel each other without touching.",
+    "sections": [
+      {"h": "Poles", "p": "Every magnet has a **north pole** and a **south pole**. Like poles repel (north pushes north away). Unlike poles attract (north pulls south). The force is strongest at the poles."},
+      {"h": "Magnetic materials", "p": "Only a few metals are magnetic: **iron**, **nickel** and **cobalt**, and steel, which is mostly iron. Most metals, like copper, aluminium, gold and silver, are not magnetic."},
+      {"h": "Magnetic fields", "p": "The space around a magnet where it pushes or pulls is its **magnetic field**. You can show it with iron filings or a small compass. The field lines go from the north pole to the south pole."}
+    ],
+    "examples": ["A fridge magnet sticking to a steel door.", "A compass needle pointing north.", "Scrapyard cranes using electromagnets to lift cars."],
+    "mistake": "Thinking all metals are magnetic. A magnet won't pick up a copper coin, an aluminium can or a gold ring. Only iron, nickel, cobalt and things made with them, like steel, are attracted.",
+    "quiz": [
+      {"q": "What happens when you hold two north poles together?", "options": ["They repel", "They attract", "Nothing happens", "They turn into south poles"], "answer": 0, "explain": "Like poles repel, so two north poles push each other away."},
+      {"q": "Which of these is attracted to a magnet?", "options": ["A steel paper clip", "An aluminium can", "A copper coin", "A plastic spoon"], "answer": 0, "explain": "Steel is mostly iron, which is magnetic. Aluminium, copper and plastic are not."}
+    ],
+    "faq": [
+      ["What is an electromagnet?", "A coil of wire that becomes a magnet when electricity flows through it. It gets stronger with more turns of wire, more current, or an iron core inside, and you can switch it off."],
+      ["Why does a compass point north?", "The Earth acts like a giant magnet. The north pole of a compass needle is pulled towards the Arctic, so the needle lines up north to south."]
+    ],
+    "practise": ["Play Magnet Sandbox", "/games/magnet-sandbox/"],
+    "related": ["attract-and-repel", "magnetic-field", "magnetic-material", "electromagnet", "force"]
+  },
+  {
+    "slug": "electric-current", "icon": "⚡", "name": "electric current", "title": "What is electric current?",
+    "short": "Electric current is a flow of electric charge around a circuit. In metal wires, the charge is carried by tiny particles called electrons. Current is measured in amps (A).",
+    "sections": [
+      {"h": "A complete circuit", "p": "Current can only flow if there is a complete loop with no gaps, from one end of the cell or battery, through the wires and components, and back to the other end. A switch works by making or breaking the gap."},
+      {"h": "What pushes the current", "p": "A cell or battery gives the push, called the **voltage** (measured in volts, V). Components like bulbs and long thin wires make it harder for current to flow: they have **resistance**."},
+      {"h": "Measuring current", "p": "An **ammeter** measures current. It goes in the circuit in series, in the loop itself. In a simple series circuit the current is the same at every point."}
+    ],
+    "examples": ["A torch: battery, switch and bulb in one loop.", "A doorbell that only rings when the button completes the circuit.", "A phone charger pushing current into a battery."],
+    "mistake": "Thinking a bulb uses up the current, so less comes out than goes in. The current is the same all the way round a series circuit. What the bulb uses is energy: the current carries energy from the battery to the bulb.",
+    "quiz": [
+      {"q": "What unit is current measured in?", "options": ["Amps (A)", "Volts (V)", "Watts (W)", "Newtons (N)"], "answer": 0, "explain": "Current is measured in amps with an ammeter. Volts measure voltage."},
+      {"q": "Why does a bulb go out when you open a switch?", "options": ["The circuit is no longer complete", "The battery runs out", "The bulb breaks", "The wires get cold"], "answer": 0, "explain": "Opening the switch makes a gap, so current can't flow round the loop."},
+      {"q": "In a series circuit, how does the current after a bulb compare with the current before it?", "options": ["It is the same", "It is smaller", "It is bigger", "It is zero"], "answer": 0, "explain": "Current isn't used up. It is the same everywhere in a series circuit."}
+    ],
+    "faq": [
+      ["Is it safe to experiment with electricity at home?", "Only with small batteries, like AA cells, and with an adult. Never play with mains electricity from wall sockets: it can kill."],
+      ["What is the difference between a cell and a battery?", "A cell is one unit, like an AA. Strictly, a battery is two or more cells joined together, though people often call a single cell a battery."]
+    ],
+    "practise": ["Play Circuit Builder", "/games/circuit-builder/"],
+    "related": ["current", "voltage", "resistance", "conductor", "series-and-parallel-circuits"]
+  },
+  {
+    "slug": "speed", "icon": "🏎️", "name": "speed",
+    "short": "Speed is how far something travels in a certain time. You work it out with speed = distance ÷ time, and measure it in units like metres per second (m/s) or kilometres per hour (km/h).",
+    "sections": [
+      {"h": "The formula", "p": "**speed = distance ÷ time**. If you run 100 m in 20 seconds, your speed is 100 ÷ 20 = 5 m/s. You can rearrange it: distance = speed × time, and time = distance ÷ speed."},
+      {"h": "Average speed", "p": "Speed usually changes during a journey: a car speeds up, slows down and stops at lights. Distance ÷ time gives the **average speed** for the whole trip."},
+      {"h": "Distance-time graphs", "p": "On a distance-time graph, a straight sloping line means a steady speed. The steeper the line, the faster the speed. A flat line means the object has stopped."}
+    ],
+    "examples": ["A car travels 120 km in 2 hours: 120 ÷ 2 = 60 km/h.", "A snail moves about 1 mm each second, which is 0.001 m/s.", "Light travels about 300,000 km every second."],
+    "mistake": "Mixing up units. If a distance is in metres and the time is in minutes, the answer is in metres per minute, not metres per second. Change the time to seconds first if you want m/s.",
+    "quiz": [
+      {"q": "A cyclist rides 30 km in 2 hours. What is the average speed?", "options": ["15 km/h", "60 km/h", "32 km/h", "28 km/h"], "answer": 0, "explain": "speed = distance ÷ time = 30 ÷ 2 = 15 km/h."},
+      {"q": "On a distance-time graph, what does a flat line mean?", "options": ["The object is not moving", "It is moving very fast", "It is speeding up", "It is moving backwards"], "answer": 0, "explain": "A flat line means the distance isn't changing, so the object has stopped."},
+      {"q": "A runner keeps going at 4 m/s for 50 seconds. How far does she go?", "options": ["200 m", "54 m", "12.5 m", "46 m"], "answer": 0, "explain": "distance = speed × time = 4 × 50 = 200 m."}
+    ],
+    "faq": [
+      ["What is the difference between speed and velocity?", "Speed is just how fast. Velocity is speed in a certain direction. Two cars going at 50 km/h in opposite directions have the same speed but different velocities."],
+      ["What is the fastest speed possible?", "Nothing can travel faster than light in a vacuum, which is about 300,000 kilometres per second."]
+    ],
+    "practise": ["Play Race Track", "/games/race-track/"],
+    "related": ["distance-time-graph", "acceleration", "light-year"]
+  },
+  {
+    "slug": "pressure", "icon": "🎈", "name": "pressure",
+    "short": "Pressure is how much a force is spread out over an area. The same force pressing on a small area makes a big pressure, and on a big area it makes a small pressure.",
+    "sections": [
+      {"h": "The formula", "p": "**pressure = force ÷ area**. With the force in newtons (N) and the area in square metres (m²), the pressure is in newtons per square metre (N/m²), also called pascals (Pa)."},
+      {"h": "Big and small areas", "p": "A drawing pin has a tiny point, so a small push makes a huge pressure and it goes into a board easily. Snowshoes and wide tractor tyres spread the weight over a large area, so the pressure is low and they don't sink."},
+      {"h": "Pressure in liquids and gases", "p": "Water pressure gets bigger the deeper you go, which is why dams are thicker at the bottom. Air pressure comes from air particles hitting surfaces. The air around us presses on everything, but we don't notice because the pressure inside our bodies pushes back."}
+    ],
+    "examples": ["A sharp knife cuts better than a blunt one because its edge has a smaller area.", "A camel's wide feet stop it sinking into sand.", "Your ears 'pop' on a plane as the air pressure changes."],
+    "mistake": "Mixing up pressure and force. A person standing on one foot pushes down with the same force (their weight) as on two feet, but the pressure on the floor doubles because the area is halved.",
+    "quiz": [
+      {"q": "A force of 100 N acts on an area of 2 m². What is the pressure?", "options": ["50 Pa", "200 Pa", "102 Pa", "98 Pa"], "answer": 0, "explain": "pressure = force ÷ area = 100 ÷ 2 = 50 N/m², which is 50 Pa."},
+      {"q": "Why are snowshoes wide?", "options": ["To spread the weight and lower the pressure", "To make the person heavier", "To grip the snow with more force", "To keep feet warm"], "answer": 0, "explain": "A bigger area means less pressure for the same weight, so you don't sink."}
+    ],
+    "faq": [
+      ["Why is a dam thicker at the bottom?", "Water pressure increases with depth, so the water pushes hardest on the bottom of the dam. The wall needs to be strongest there."],
+      ["What is atmospheric pressure?", "The pressure of the air around us. At sea level it is about 100,000 Pa. It gets lower as you go higher, which is why air is thinner on top of mountains."]
+    ],
+    "practise": ["Pressure and moments questions", "/question-bank/physics/pressure-and-moments/"],
+    "related": ["pressure", "force", "particle"]
+  },
+  {
+    "slug": "renewable-energy", "icon": "🌬️", "name": "renewable energy",
+    "short": "Renewable energy comes from resources that won't run out, because nature keeps replacing them, like sunlight, wind and moving water. Fossil fuels such as coal, oil and gas are non-renewable: once we use them up, they are gone.",
+    "sections": [
+      {"h": "Renewable resources", "p": "**Solar** (sunlight), **wind**, **hydroelectric** (water flowing from a dam), **tidal** and **wave** power, **geothermal** (heat from under the ground) and **biomass** (wood or crops, if new plants are grown to replace them)."},
+      {"h": "Non-renewable resources", "p": "**Coal**, **oil** and **natural gas** are fossil fuels: they formed from plants and animals over millions of years. **Nuclear** fuel (uranium) is also non-renewable. Burning fossil fuels releases carbon dioxide, which adds to climate change."},
+      {"h": "Good points and problems", "p": "Renewables don't run out, and most don't release carbon dioxide while making electricity. But some depend on the weather: solar panels make less on cloudy days and wind turbines stop when there's no wind. So we also need ways to store energy."}
+    ],
+    "examples": ["Wind turbines turning in the sea or on hills.", "Solar panels on house roofs.", "A hydroelectric dam in the mountains."],
+    "mistake": "Thinking renewable means it has no effect on nature at all. Renewables are much cleaner to run, but building them has effects too: a hydroelectric dam floods a valley, and making solar panels and turbines uses materials and energy.",
+    "quiz": [
+      {"q": "Which of these is a renewable energy resource?", "options": ["Wind", "Coal", "Oil", "Natural gas"], "answer": 0, "explain": "Wind keeps blowing, so it won't run out. Coal, oil and gas are fossil fuels and are non-renewable."},
+      {"q": "Why is solar power not always available?", "options": ["It needs sunlight, so it makes little at night", "The Sun will run out next year", "It only works in winter", "It needs coal to start"], "answer": 0, "explain": "Solar panels need light, so they make no electricity at night and less on cloudy days."}
+    ],
+    "faq": [
+      ["Why are fossil fuels called fossil fuels?", "They formed from the remains of plants and tiny sea creatures that lived millions of years ago, buried and squeezed underground, a bit like fossils."],
+      ["Is nuclear power renewable?", "No. Nuclear power stations use uranium, which is mined and will eventually run out. But they release very little carbon dioxide while running."]
+    ],
+    "practise": ["Energy stores and transfers questions", "/question-bank/physics/energy-stores-and-transfers/"],
+    "related": ["renewable", "energy", "combustion", "conservation-of-energy"]
+  },
+  {
+    "slug": "seasons", "icon": "🌍", "name": "the seasons", "title": "What causes the seasons?",
+    "short": "We have seasons because the Earth's axis is tilted. As the Earth travels round the Sun each year, first one half and then the other is tilted towards the Sun, and that half has summer.",
+    "sections": [
+      {"h": "The tilt", "p": "The Earth spins on an axis that is tilted by about 23.5 degrees. The tilt always points the same way in space as the Earth orbits the Sun, which takes one year."},
+      {"h": "Summer", "p": "When your half of the Earth is tilted towards the Sun, the Sun climbs higher in the sky, days are longer and sunlight hits the ground more directly, so it heats it more. That's summer."},
+      {"h": "Winter", "p": "When your half is tilted away, the Sun stays low, days are short and the sunlight is spread over a bigger area, so it heats less. That's winter. The other half of the Earth has the opposite season."}
+    ],
+    "examples": ["In the UK it's summer in June, July and August, while in Australia it's winter.", "Christmas comes in summer in New Zealand.", "Near the equator there's little difference between summer and winter."],
+    "mistake": "Thinking it's summer because the Earth is closer to the Sun. The Earth's distance from the Sun changes only a little, and the Earth is actually closest to the Sun in early January, which is winter in the UK.",
+    "quiz": [
+      {"q": "What causes the seasons?", "options": ["The tilt of the Earth's axis", "The Earth getting closer to the Sun", "The Moon", "Clouds"], "answer": 0, "explain": "The tilt means each half of the Earth leans towards the Sun for part of the year."},
+      {"q": "When it is summer in the UK, what season is it in Australia?", "options": ["Winter", "Summer", "Spring", "Autumn"], "answer": 0, "explain": "The UK is in the northern half of the Earth and Australia is in the southern half, so their seasons are opposite."},
+      {"q": "How long does the Earth take to orbit the Sun?", "options": ["About a year", "A day", "A month", "A week"], "answer": 0, "explain": "One orbit takes about 365¼ days, which is one year."}
+    ],
+    "faq": [
+      ["Why are days longer in summer?", "When your half of the Earth is tilted towards the Sun, it spends more of each spin of the Earth in sunlight, so days are longer and nights are shorter."],
+      ["What causes day and night?", "The Earth spinning on its axis once every 24 hours. The side facing the Sun has day, and the side facing away has night."]
+    ],
+    "practise": ["Play Day, Night and Seasons", "/games/day-night-seasons/"],
+    "related": ["season", "orbit", "gravity"]
   }
 ]

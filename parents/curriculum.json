@@ -12,7 +12,7 @@
         ["Decimals up to 3 decimal places; percentages", "/maths/decimals-and-percentages/"],
         ["Converting metric units; perimeter and area of rectangles; money and time problems", "/maths/measurement/"],
         ["Angles in degrees (acute, obtuse, reflex); angles on a line and round a point; reflection and translation", "/maths/shapes/"],
-        ["Line graphs and timetables", "/question-bank/maths/statistics/"]
+        ["Line graphs and timetables", "/maths/graphs-and-data/"]
       ],
       "science": [
         ["Properties and changes of materials (dissolving, separating, reversible changes)", "/what-is/dissolving/"],

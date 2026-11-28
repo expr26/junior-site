@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-GAMES = ["times-table-trainer", "clock-fixer"]   # games from games/games.json shown in the corner
+GAMES = ["times-table-trainer", "clock-fixer", "bar-builder"]   # games from games/games.json shown in the corner
 
 
 def pages():

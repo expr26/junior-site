@@ -1125,3 +1125,14 @@ html[data-proj="on"] .proj-btn{position:fixed;top:12px;right:12px;z-index:50;dis
 @media (min-width:560px){.ck-ctrl span{min-width:110px;text-align:right}}
 .ss-mix{font-size:24px;font-weight:700;text-align:center;margin:10px 0}
 .ss-order{min-height:2em;padding-left:1.6em;font-weight:700}
+/* Bar Chart Builder, Food Detective, Digestion Express */
+.bb-svg{width:100%;max-width:320px;display:block;margin:8px auto}
+.bb-grid{stroke:var(--line,#ddd);stroke-width:1}.bb-axis{stroke:var(--navy);stroke-width:2}
+.bb-num,.bb-unit{font:600 12px var(--sans);fill:var(--navy)}.bb-lab{font:700 13px var(--sans);fill:var(--navy)}
+.bb-bar{fill:var(--gold-lt);stroke:var(--gold);stroke-width:2}.bb-bar.done{fill:var(--sci-bg);stroke:var(--sci)}
+.bb-table{margin:8px auto;border-collapse:collapse;font-size:15px}.bb-table th,.bb-table td{border:1.5px solid var(--navy);padding:4px 14px;text-align:center}
+.bb-table th{background:var(--gold-bg)}
+.bb-ctrl{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}.bb-c{display:flex;align-items:center;gap:6px}
+.bb-c span{font-weight:700;min-width:3em;text-align:right}.bb-c .btn{min-width:44px;padding:6px 0}
+.fd-food{font-size:28px;font-weight:700;text-align:center;margin:8px 0}
+.dx-route{min-height:2em;font-weight:700}

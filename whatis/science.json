@@ -345,5 +345,264 @@
     ],
     "practise": ["Cells questions", "/question-bank/biology/cells/"],
     "related": []
+  },
+  {
+    "slug": "atom", "icon": "⚛️", "name": "an atom",
+    "short": "An atom is the smallest part of an element that can exist. Everything around you is made of atoms, and they are so small that about ten million of them in a line would only be 1 millimetre long.",
+    "sections": [
+      {"h": "What is inside an atom", "p": "In the middle is a tiny **nucleus** made of **protons** and **neutrons**. Even tinier **electrons** move around the nucleus. Most of an atom is empty space."},
+      {"h": "Charges", "p": "Protons have a positive charge, electrons have a negative charge and neutrons have no charge. An atom has the same number of protons and electrons, so overall it has no charge."},
+      {"h": "Atoms and elements", "p": "An element is made of only one type of atom. What makes each element different is the number of protons: every hydrogen atom has 1 proton, every carbon atom has 6 and every oxygen atom has 8."}
+    ],
+    "examples": ["A gold ring is made of gold atoms only.", "Oxygen in the air is made of oxygen atoms joined in pairs.", "Water is made of hydrogen and oxygen atoms joined together."],
+    "mistake": "Mixing up atoms and cells. Cells are the building blocks of living things and you can see them with a microscope. Atoms are far, far smaller, and cells are made of billions of atoms.",
+    "quiz": [
+      {"q": "Which part of an atom has a negative charge?", "options": ["The electron", "The proton", "The neutron", "The nucleus"], "answer": 0, "explain": "Electrons are negative, protons are positive and neutrons have no charge."},
+      {"q": "Where are the protons and neutrons?", "options": ["In the nucleus", "Moving around the outside", "Spread evenly through the atom", "Outside the atom"], "answer": 0, "explain": "Protons and neutrons are packed together in the nucleus, in the middle of the atom."},
+      {"q": "What makes a carbon atom different from an oxygen atom?", "options": ["The number of protons", "Its colour", "Its temperature", "Nothing, they are the same"], "answer": 0, "explain": "Each element has its own number of protons: carbon has 6 and oxygen has 8."}
+    ],
+    "faq": [
+      ["Can you see an atom?", "Not with your eyes or a school microscope. Scientists can make pictures of atoms with special microscopes that use electrons instead of light."],
+      ["Are atoms alive?", "No. Atoms are not alive, but living things are made of atoms, just like everything else."]
+    ],
+    "practise": ["Atoms, elements and compounds questions", "/question-bank/chemistry/atoms-elements-compounds/"],
+    "related": ["electron", "particle", "element-compound-mixture", "periodic-table"]
+  },
+  {
+    "slug": "periodic-table", "icon": "🧮", "name": "the periodic table", "title": "What is the periodic table?",
+    "short": "The periodic table is a chart of all the known elements, 118 of them, in order of how many protons their atoms have. Elements with similar properties sit in the same column.",
+    "sections": [
+      {"h": "Rows and columns", "p": "The rows are called **periods** and the columns are called **groups**. Elements in the same group behave in similar ways. For example, the elements in Group 1, like sodium and potassium, are soft metals that react with water."},
+      {"h": "Metals and non-metals", "p": "Most elements are metals, and they are on the left and in the middle. The non-metals, like oxygen, nitrogen and chlorine, are on the right. The last column holds the noble gases, like helium and neon, which hardly react at all."},
+      {"h": "Symbols", "p": "Each element has a symbol of one or two letters. The first letter is always a capital: O is oxygen, C is carbon and Ca is calcium. Some come from old Latin names: Na is sodium (natrium) and Fe is iron (ferrum)."}
+    ],
+    "examples": ["H is hydrogen, the first element, with 1 proton.", "Au is gold, from the Latin word aurum.", "Helium (He) is a noble gas, used in party balloons."],
+    "mistake": "Thinking every symbol is the first letter or two of the English name. Many are, but some come from Latin: K is potassium, Pb is lead and Ag is silver.",
+    "quiz": [
+      {"q": "What is the symbol for sodium?", "options": ["Na", "So", "S", "Sd"], "answer": 0, "explain": "Sodium is Na, from its Latin name natrium. S is sulfur."},
+      {"q": "What are the columns of the periodic table called?", "options": ["Groups", "Periods", "Rows", "Sets"], "answer": 0, "explain": "Columns are groups and rows are periods. Elements in a group have similar properties."},
+      {"q": "Where are most of the metals?", "options": ["On the left and in the middle", "Only in the last column", "On the right", "Only in the top row"], "answer": 0, "explain": "Metals are on the left and in the middle; non-metals are on the right."}
+    ],
+    "faq": [
+      ["Who made the periodic table?", "The Russian chemist Dmitri Mendeleev published a famous version in 1869. He left gaps for elements nobody had found yet, and he predicted what they would be like."],
+      ["How many elements are there?", "118 elements are known so far. About 90 are found in nature; the rest have been made by scientists."]
+    ],
+    "practise": ["Atoms, elements and compounds questions", "/question-bank/chemistry/atoms-elements-compounds/"],
+    "related": ["atom", "element-compound-mixture"]
+  },
+  {
+    "slug": "chemical-reaction", "icon": "💥", "name": "a chemical reaction",
+    "short": "A chemical reaction is a change that makes new substances. The atoms of the starting substances join up in new ways, and no atoms are made or destroyed.",
+    "sections": [
+      {"h": "Signs of a reaction", "p": "Look for a colour change, bubbles of gas, the mixture getting hot or cold, light or a flame, or a solid appearing in a liquid. These clues tell you a new substance may have formed."},
+      {"h": "Word equations", "p": "We write reactions as word equations. The starting substances (**reactants**) go on the left and the new substances (**products**) on the right: magnesium + oxygen → magnesium oxide."},
+      {"h": "Chemical or physical change", "p": "In a **physical change**, like melting ice or dissolving sugar, no new substance is made and it is usually easy to undo. A **chemical change** makes something new and is usually hard to undo: you can't un-bake a cake."}
+    ],
+    "examples": ["Burning wood makes ash, carbon dioxide and water vapour.", "Iron rusting: iron + oxygen + water → rust.", "Baking powder in a cake mix gives off carbon dioxide bubbles that make the cake rise."],
+    "mistake": "Thinking mass is lost in a reaction. If a gas escapes into the air the mixture looks lighter, but if you catch everything in a closed container the total mass stays the same.",
+    "quiz": [
+      {"q": "Which of these is a chemical change?", "options": ["Burning paper", "Melting ice", "Dissolving sugar", "Cutting paper"], "answer": 0, "explain": "Burning makes new substances (ash, gases). The others make nothing new."},
+      {"q": "In 'magnesium + oxygen → magnesium oxide', what is magnesium oxide?", "options": ["The product", "A reactant", "A catalyst", "A mixture"], "answer": 0, "explain": "Products are the new substances on the right of the arrow."}
+    ],
+    "faq": [
+      ["Is cooking a chemical reaction?", "Often, yes. Frying an egg, toasting bread and baking a cake all make new substances that you can't turn back into the raw ingredients."],
+      ["Is dissolving a chemical reaction?", "No. Dissolving is a physical change: the salt or sugar is still there in the water, and you can get it back by evaporating the water."]
+    ],
+    "practise": ["Chemical reactions questions", "/question-bank/chemistry/chemical-reactions/"],
+    "related": ["combustion", "element-compound-mixture", "acids-and-alkalis"]
+  },
+  {
+    "slug": "combustion", "icon": "🔥", "name": "combustion",
+    "short": "Combustion is the scientific word for burning. A fuel reacts with oxygen and gives out energy as heat and light.",
+    "sections": [
+      {"h": "The fire triangle", "p": "A fire needs three things: **fuel**, **heat** and **oxygen**. Take away any one of them and the fire goes out. A fire blanket works by cutting off the oxygen."},
+      {"h": "What burning makes", "p": "Many fuels, like natural gas, petrol and candle wax, contain carbon and hydrogen. When they burn with plenty of oxygen they make carbon dioxide and water: methane + oxygen → carbon dioxide + water."},
+      {"h": "Not enough oxygen", "p": "With too little oxygen, burning can make soot and **carbon monoxide**. Carbon monoxide is a poisonous gas with no colour and no smell, which is why homes with gas boilers should have a carbon monoxide alarm."}
+    ],
+    "examples": ["A candle burning wax.", "A gas cooker burning natural gas (methane).", "A campfire burning wood."],
+    "mistake": "Thinking things always get lighter when they burn. Wood seems to lose mass because its products are gases that escape. When iron wool burns it gets heavier, because it joins with oxygen from the air to make iron oxide.",
+    "quiz": [
+      {"q": "Which gas from the air is needed for burning?", "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Helium"], "answer": 0, "explain": "Combustion is a reaction with oxygen."},
+      {"q": "How does a fire blanket put out a small fire?", "options": ["It cuts off the oxygen", "It removes the fuel", "It adds water", "It makes the fire hotter"], "answer": 0, "explain": "Covering the fire stops oxygen reaching it, so one side of the fire triangle is gone."}
+    ],
+    "faq": [
+      ["Is combustion a chemical reaction?", "Yes. New substances are made, such as carbon dioxide and water, and energy is given out."],
+      ["Why does blowing on a fire sometimes make it bigger?", "Blowing gently brings more oxygen to the fuel, so it burns faster. Blowing hard on a small flame, like a candle, cools it and pushes the hot gases away, so it goes out."]
+    ],
+    "practise": ["Chemical reactions questions", "/question-bank/chemistry/chemical-reactions/"],
+    "related": ["chemical-reaction", "energy"]
+  },
+  {
+    "slug": "dissolving", "icon": "🧂", "name": "dissolving",
+    "short": "Dissolving is when a substance, like sugar, mixes completely into a liquid, like water, so you can't see it any more. The result is called a solution.",
+    "sections": [
+      {"h": "Solute, solvent, solution", "p": "The substance that dissolves is the **solute** (sugar). The liquid it dissolves in is the **solvent** (water). Together they make a **solution** (sugar water)."},
+      {"h": "Soluble or insoluble", "p": "Something that dissolves is **soluble**, like salt and sugar. Something that doesn't is **insoluble**, like sand. When no more solute can dissolve, the solution is **saturated**."},
+      {"h": "Faster dissolving", "p": "Stirring, using warmer water and using smaller pieces (like caster sugar instead of sugar cubes) all make a solid dissolve faster. For most solids, warmer water can also dissolve more."}
+    ],
+    "examples": ["Salt dissolving in sea water.", "Instant coffee dissolving in hot water.", "Squash mixing into water."],
+    "mistake": "Saying sugar 'melts' in tea. Melting needs heat and only one substance, like ice turning to water. In tea the sugar dissolves: it is still there, spread out between the water particles, which is why the tea tastes sweet.",
+    "quiz": [
+      {"q": "In salty water, which is the solvent?", "options": ["Water", "Salt", "Salty water", "Air"], "answer": 0, "explain": "The solvent is the liquid that does the dissolving: water."},
+      {"q": "You dissolve 10 g of salt in 100 g of water. What is the mass of the solution?", "options": ["110 g", "100 g", "90 g", "10 g"], "answer": 0, "explain": "Nothing is lost when something dissolves: 100 g + 10 g = 110 g."},
+      {"q": "Which of these is insoluble in water?", "options": ["Sand", "Sugar", "Salt", "Instant coffee"], "answer": 0, "explain": "Sand doesn't dissolve, so you can separate it from water by filtering."}
+    ],
+    "faq": [
+      ["How do you get salt back from salty water?", "Evaporate the water by leaving it in a warm place or heating it gently. The water turns to vapour and the salt crystals are left behind."],
+      ["Is dissolving reversible?", "Yes. Dissolving is a physical change, so you can get the solute back, for example by evaporation."]
+    ],
+    "practise": ["Mixtures and separating questions", "/question-bank/chemistry/mixtures-and-separating/"],
+    "related": ["chromatography", "element-compound-mixture", "states-of-matter", "particle"]
+  },
+  {
+    "slug": "chromatography", "icon": "🎨", "name": "chromatography",
+    "short": "Chromatography is a way to separate the different dyes in a mixture, like ink. The dyes travel up a strip of paper with a solvent such as water, and they spread out because each one travels a different distance.",
+    "sections": [
+      {"h": "How to do it", "p": "Draw a line in **pencil** near the bottom of a strip of filter paper and put a dot of ink on it. Stand the paper in a little water, with the water level **below** the line. Watch the water soak up the paper and carry the ink with it."},
+      {"h": "Why the dyes separate", "p": "Each dye dissolves in the solvent a different amount and sticks to the paper a different amount. Dyes that dissolve well and don't stick much travel further up the paper."},
+      {"h": "Reading the result", "p": "The finished paper is called a **chromatogram**. A pure substance makes one spot. A mixture makes several spots. If two spots are at the same height, they could be the same dye."}
+    ],
+    "examples": ["Finding out which colours are mixed in a black felt-tip pen.", "Checking which food colourings are in a sweet.", "Matching ink from a note to the pen that wrote it."],
+    "mistake": "Putting the ink dot below the water level, or drawing the line in pen. The ink then dissolves straight into the water in the beaker, and the pen line runs too. Use pencil, which doesn't dissolve, and keep the line above the water.",
+    "quiz": [
+      {"q": "Why is the start line drawn in pencil?", "options": ["Pencil doesn't dissolve in the solvent", "Pencil is easier to see", "Pencil makes the dyes move faster", "Pens are not allowed in labs"], "answer": 0, "explain": "Pencil is made of graphite, which doesn't dissolve, so it won't run up the paper and confuse the result."},
+      {"q": "A sample makes three spots. What does that tell you?", "options": ["It is a mixture of at least three dyes", "It is a pure substance", "It is water", "The test went wrong"], "answer": 0, "explain": "Each spot is a different substance, so a sample with three spots contains at least three dyes."}
+    ],
+    "faq": [
+      ["Can I do chromatography at home?", "Yes, with an adult's OK. Use a strip of kitchen roll or a coffee filter, a felt-tip pen dot and a glass with a little water. Black and brown felt-tips often give the most surprising colours."],
+      ["What does chromatography mean?", "It comes from Greek words meaning 'colour writing', because the first experiments separated coloured substances from plants."]
+    ],
+    "practise": ["Mixtures and separating questions", "/question-bank/chemistry/mixtures-and-separating/"],
+    "related": ["dissolving", "element-compound-mixture"]
+  },
+  {
+    "slug": "respiration", "icon": "🫁", "name": "respiration",
+    "short": "Respiration is a chemical reaction that happens in every living cell. It releases energy from glucose (a sugar from food) so the cell can move, grow and stay alive.",
+    "sections": [
+      {"h": "Aerobic respiration", "p": "With oxygen, cells release energy from glucose: glucose + oxygen → carbon dioxide + water. This mostly happens in tiny parts of the cell called **mitochondria**."},
+      {"h": "Anaerobic respiration", "p": "Without enough oxygen, for example when you sprint hard, muscle cells can release a little energy without oxygen: glucose → lactic acid. Yeast does it differently: glucose → ethanol + carbon dioxide, and the carbon dioxide bubbles make bread rise."},
+      {"h": "Breathing helps respiration", "p": "Breathing brings oxygen into your lungs and takes carbon dioxide out. The blood carries the oxygen to every cell and brings the carbon dioxide back. So breathing and respiration are linked, but they are not the same thing."}
+    ],
+    "examples": ["Your muscle cells respiring when you run.", "Plants respiring all the time, day and night.", "Yeast respiring in bread dough."],
+    "mistake": "Thinking respiration means breathing. Breathing is moving air in and out of the lungs. Respiration is the reaction inside cells that releases energy, and plants and bacteria do it too, even though they don't have lungs.",
+    "quiz": [
+      {"q": "Which are the products of aerobic respiration?", "options": ["Carbon dioxide and water", "Glucose and oxygen", "Oxygen and water", "Lactic acid only"], "answer": 0, "explain": "glucose + oxygen → carbon dioxide + water. Glucose and oxygen are the reactants."},
+      {"q": "Where in a cell does most aerobic respiration happen?", "options": ["Mitochondria", "Nucleus", "Cell wall", "Vacuole"], "answer": 0, "explain": "Mitochondria are where most aerobic respiration takes place."},
+      {"q": "Do plants respire?", "options": ["Yes, all the time", "No, plants only photosynthesise", "Only at night", "Only in summer"], "answer": 0, "explain": "All living cells respire, day and night. In daylight, plants photosynthesise as well."}
+    ],
+    "faq": [
+      ["What is the difference between respiration and photosynthesis?", "Photosynthesis uses carbon dioxide, water and light to make glucose and oxygen. Respiration uses glucose and oxygen to release energy, making carbon dioxide and water. In a way, one is the reverse of the other."],
+      ["Why do my muscles ache after hard exercise?", "Part of the reason is that during very hard exercise, your muscles respire without enough oxygen and make lactic acid. Scientists think other things, like tiny strains in the muscle, cause the ache a day or two later."]
+    ],
+    "practise": ["Body systems questions", "/question-bank/biology/body-systems/"],
+    "related": ["cell", "photosynthesis", "energy"]
+  },
+  {
+    "slug": "digestion", "icon": "🍎", "name": "digestion",
+    "short": "Digestion is how your body breaks down food into small, soluble molecules that can pass into your blood. Your teeth and stomach break food up, and enzymes break the big molecules into small ones.",
+    "sections": [
+      {"h": "The journey of food", "p": "**Mouth**: teeth chew and saliva starts to digest starch. **Oesophagus**: a tube to the stomach. **Stomach**: churns food with acid, which kills most bacteria. **Small intestine**: digestion finishes and the small molecules pass into the blood. **Large intestine**: water is absorbed. What's left leaves through the anus."},
+      {"h": "Enzymes", "p": "Enzymes are proteins that speed up digestion. **Amylase** breaks starch into sugars. **Protease** breaks proteins into amino acids. **Lipase** breaks fats into fatty acids and glycerol. Bile, made by the liver, breaks fat into tiny droplets so lipase can work faster."},
+      {"h": "Absorption", "p": "The small intestine is about 6 metres long in an adult and its inside is covered in tiny finger-like **villi**. They give it a huge surface area, so digested food passes into the blood quickly."}
+    ],
+    "examples": ["Bread tasting slightly sweet if you chew it for a long time, as amylase turns starch into sugar.", "The stomach's acid killing bacteria in food.", "Water being absorbed in the large intestine."],
+    "mistake": "Thinking most digestion happens in the stomach. The stomach starts digesting protein, but most digestion and nearly all absorption of food happen in the small intestine.",
+    "quiz": [
+      {"q": "Where are most digested food molecules absorbed into the blood?", "options": ["Small intestine", "Stomach", "Mouth", "Large intestine"], "answer": 0, "explain": "The villi in the small intestine give a huge surface area for absorption."},
+      {"q": "Which enzyme breaks down starch?", "options": ["Amylase", "Protease", "Lipase", "Bile"], "answer": 0, "explain": "Amylase breaks starch into sugars. It's in saliva and in the small intestine."},
+      {"q": "What is absorbed in the large intestine?", "options": ["Water", "Protein", "Starch", "Fat"], "answer": 0, "explain": "The large intestine absorbs water from what's left of the food."}
+    ],
+    "faq": [
+      ["How long does digestion take?", "It varies a lot from person to person and meal to meal. Food usually spends a few hours in the stomach and small intestine, and the whole journey often takes one to three days."],
+      ["Why do we need fibre if we can't digest it?", "Fibre gives the muscles of the intestines something to push against, so food keeps moving through and you don't get constipated."]
+    ],
+    "practise": ["Nutrition and digestion questions", "/question-bank/biology/nutrition-and-digestion/"],
+    "related": ["balanced-diet", "circulatory-system"]
+  },
+  {
+    "slug": "balanced-diet", "icon": "🥗", "name": "a balanced diet",
+    "short": "A balanced diet means eating a variety of foods that give your body all the nutrients it needs, in the right amounts. No single food has everything.",
+    "sections": [
+      {"h": "The seven food groups", "p": "**Carbohydrates** (bread, rice, pasta) give energy. **Proteins** (meat, fish, beans, eggs) help you grow and repair. **Fats** (butter, oil, nuts) store energy and keep you warm. **Vitamins** and **minerals** (fruit, vegetables, milk) keep you healthy. **Fibre** (wholegrains, vegetables) keeps food moving through your gut. **Water** is needed by every cell."},
+      {"h": "Vitamins and minerals", "p": "You need only small amounts, but they matter. Calcium (in milk and cheese) helps build strong bones and teeth. Iron (in red meat, beans and leafy greens) helps your blood carry oxygen. Vitamin C (in oranges and peppers) keeps your skin and gums healthy."},
+      {"h": "Missing nutrients", "p": "If a diet is missing a nutrient for a long time, people can become ill. Long ago, sailors who ate no fruit or vegetables on long voyages got **scurvy** from a lack of vitamin C."}
+    ],
+    "examples": ["A sandwich with wholemeal bread, cheese and salad covers several groups at once.", "Beans are a good source of protein and fibre.", "A glass of milk gives calcium and protein."],
+    "mistake": "Thinking all fat is bad for you. Your body needs some fat: it stores energy, keeps you warm and helps you take in some vitamins. Balance means the right amount of each nutrient, not none of one.",
+    "quiz": [
+      {"q": "Which nutrient is mainly for growth and repair?", "options": ["Protein", "Carbohydrate", "Fibre", "Water"], "answer": 0, "explain": "Proteins are used to build and repair cells, for example muscle."},
+      {"q": "Which mineral helps build strong bones and teeth?", "options": ["Calcium", "Iron", "Sodium", "Vitamin C"], "answer": 0, "explain": "Calcium, found in milk, cheese and some green vegetables, builds bones and teeth."}
+    ],
+    "faq": [
+      ["What is the Eatwell Guide?", "It is the UK government's picture of a balanced diet. It shows roughly how much of what you eat should come from each food group, with fruit and vegetables and starchy foods making up the biggest parts."],
+      ["How is the energy in food measured?", "In kilojoules (kJ) or kilocalories (kcal). You can find both on food labels."]
+    ],
+    "practise": ["Nutrition and digestion questions", "/question-bank/biology/nutrition-and-digestion/"],
+    "related": ["digestion", "energy"]
+  },
+  {
+    "slug": "circulatory-system", "icon": "❤️", "name": "the circulatory system", "title": "What is the circulatory system?",
+    "short": "The circulatory system is your heart, your blood and your blood vessels. The heart pumps blood all round the body, carrying oxygen and food to every cell and taking waste away.",
+    "sections": [
+      {"h": "The heart", "p": "Your heart is a muscle about the size of your fist. It has four chambers and valves that stop blood flowing backwards. It beats all the time, even when you are asleep."},
+      {"h": "Blood vessels", "p": "**Arteries** carry blood away from the heart and have thick, stretchy walls. **Veins** carry blood back to the heart and have valves. **Capillaries** are tiny vessels with very thin walls, where oxygen and food pass into the cells and carbon dioxide passes out."},
+      {"h": "A double loop", "p": "Blood goes from the heart to the lungs to pick up oxygen, back to the heart, then out to the rest of the body, and back again. So blood passes through the heart twice on each trip round the body."}
+    ],
+    "examples": ["Feeling your pulse in your wrist: that's an artery stretching each time your heart beats.", "Red blood cells carrying oxygen from the lungs to your muscles.", "Your heart beating faster when you run, to bring more oxygen to your muscles."],
+    "mistake": "Thinking the blood in veins is blue. Blood is always red: it is bright red when it has lots of oxygen and darker red when it has less. Veins only look blue because of the way light passes through your skin.",
+    "quiz": [
+      {"q": "Which blood vessels carry blood away from the heart?", "options": ["Arteries", "Veins", "Capillaries", "Valves"], "answer": 0, "explain": "Arteries carry blood away from the heart. Veins carry it back."},
+      {"q": "Where does blood pick up oxygen?", "options": ["In the lungs", "In the stomach", "In the heart", "In the brain"], "answer": 0, "explain": "Blood picks up oxygen in the lungs, then the heart pumps it to the rest of the body."},
+      {"q": "What carries oxygen in the blood?", "options": ["Red blood cells", "White blood cells", "Platelets", "Plasma only"], "answer": 0, "explain": "Red blood cells contain haemoglobin, which carries oxygen."}
+    ],
+    "faq": [
+      ["Why does my heart beat faster when I exercise?", "Your muscles are respiring faster and need more oxygen and glucose. Your heart beats faster to carry more blood to them, and you breathe faster to take in more oxygen."],
+      ["What are white blood cells for?", "White blood cells help fight germs that get into your body. Platelets help your blood clot when you cut yourself."]
+    ],
+    "practise": ["Body systems questions", "/question-bank/biology/body-systems/"],
+    "related": ["respiration", "cell", "digestion"]
+  },
+  {
+    "slug": "ecosystem", "icon": "🌳", "name": "an ecosystem",
+    "short": "An ecosystem is all the living things in an area together with their non-living surroundings, like soil, water, light and temperature, and how they all affect each other.",
+    "sections": [
+      {"h": "Words to know", "p": "A **habitat** is the place where an organism lives. A **population** is all the organisms of one kind in an area, like all the rabbits in a field. A **community** is all the populations living together. The community plus the non-living things make the ecosystem."},
+      {"h": "Living and non-living", "p": "Plants need light, water and minerals from the soil. Animals need food, water and shelter. If the non-living parts change, for example in a drought, the living things are affected too."},
+      {"h": "Depending on each other", "p": "Living things in an ecosystem depend on each other. Bees need flowers for food, and many flowers need bees to carry their pollen. If one population changes, others in the food web change too."}
+    ],
+    "examples": ["A pond, with its water, plants, insects, frogs and fish.", "A woodland, with trees, fungi, birds, deer and soil.", "A rock pool on the beach."],
+    "mistake": "Thinking an ecosystem is only the living things. The non-living parts, like water, light, soil and temperature, are part of the ecosystem too.",
+    "quiz": [
+      {"q": "What is a population?", "options": ["All the organisms of one kind in an area", "All the living things in an area", "The place where an animal lives", "The weather in an area"], "answer": 0, "explain": "A population is one kind of organism: for example, all the frogs in a pond."},
+      {"q": "Which of these is a non-living part of an ecosystem?", "options": ["Sunlight", "Grass", "Fungi", "Bacteria"], "answer": 0, "explain": "Sunlight isn't alive, but it is part of the ecosystem: plants need it to make food."}
+    ],
+    "faq": [
+      ["Is a garden an ecosystem?", "Yes. A garden has plants, insects, birds, worms and microorganisms living together with soil, water and light. Even a small pond or a log can be studied as an ecosystem."],
+      ["What happens if one animal disappears from an ecosystem?", "Its predators may have less food and its prey may increase. Because everything is linked in the food web, one change can spread through the whole ecosystem."]
+    ],
+    "practise": ["Food chains and ecosystems questions", "/question-bank/biology/ecosystems/"],
+    "related": ["food-chain", "photosynthesis", "adaptation"]
+  },
+  {
+    "slug": "adaptation", "icon": "🐪", "name": "an adaptation",
+    "short": "An adaptation is a feature that helps a living thing survive in its habitat. Adaptations develop over many generations, not during one animal's life.",
+    "sections": [
+      {"h": "Animals in the desert", "p": "Camels have wide feet that don't sink into sand, long eyelashes that keep sand out, and humps that store fat, which they can use for energy when food is scarce."},
+      {"h": "Animals in the cold", "p": "Polar bears have thick fur and a thick layer of fat under the skin to keep warm. Their pale fur helps them blend in with the snow and ice when they hunt."},
+      {"h": "Plants", "p": "Cacti have spines instead of wide leaves, so they lose less water. They store water in a thick stem and have wide roots to soak up rain quickly. Plants on a dark forest floor often have big leaves to catch more light."}
+    ],
+    "examples": ["A cheetah's long legs and flexible spine for fast running.", "A duck's webbed feet for swimming.", "An owl's large eyes for seeing at night."],
+    "mistake": "Thinking a camel's hump stores water. It stores fat. Camels survive without drinking for a long time because their bodies are very good at saving water.",
+    "quiz": [
+      {"q": "Why do cacti have spines instead of wide leaves?", "options": ["To lose less water", "To catch more light", "To grow faster", "To make more seeds"], "answer": 0, "explain": "Spines have a tiny surface, so very little water evaporates from them. They also protect the cactus from being eaten."},
+      {"q": "What does a camel's hump store?", "options": ["Fat", "Water", "Air", "Milk"], "answer": 0, "explain": "The hump is mostly fat, which can be used for energy."},
+      {"q": "How do adaptations come about?", "options": ["Over many generations", "When an animal decides to change", "In a single day", "Only in zoos"], "answer": 0, "explain": "Living things with useful features survive and have more young, so the features become more common over many generations. This is called natural selection."}
+    ],
+    "faq": [
+      ["Can an animal adapt during its life?", "An animal can change a little during its life, like a dog growing a thicker coat in winter, but the inherited features we call adaptations change slowly over many generations through natural selection."],
+      ["Who explained how adaptations happen?", "Charles Darwin and Alfred Russel Wallace both explained natural selection in the 1850s. Darwin's famous book about it, On the Origin of Species, was published in 1859."]
+    ],
+    "practise": ["Food chains and ecosystems questions", "/question-bank/biology/ecosystems/"],
+    "related": ["ecosystem", "food-chain"]
   }
 ]

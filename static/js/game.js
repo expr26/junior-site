@@ -40,6 +40,7 @@
     { id: 'topic-decimals-and-percentages', icon: '💯', name: 'Percentage pro', desc: 'Finish every Decimals and percentages unit.' },
     { id: 'topic-written-methods', icon: '✏️', name: 'Column champion', desc: 'Finish every Written methods unit.' },
     { id: 'topic-graphs-and-data', icon: '📊', name: 'Chart champion', desc: 'Finish every Graphs and data unit.' },
+    { id: 'topic-roman-numerals', icon: '🏛️', name: 'Roman ruler', desc: 'Finish every Roman numerals unit.' },
     { id: 'topic-measurement', icon: '📏', name: 'Measuring master', desc: 'Finish every Measurement unit.' },
     { id: 'topic-shapes', icon: '🔷', name: 'Shape spotter', desc: 'Finish every Shapes unit.' },
     { id: 'topic-missions', icon: '🚀', name: 'Mission complete', desc: 'Finish every Real-life maths mission.' },

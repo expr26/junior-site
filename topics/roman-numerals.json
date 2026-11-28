@@ -1,0 +1,86 @@
+{
+  "slug": "roman-numerals",
+  "subject": "maths",
+  "stage": "ks2",
+  "icon": "🏛️",
+  "card": "I, V, X, L, C, D and M: read and write Roman numerals, including IV, IX, XL and years like MMXXVI.",
+  "title": "Roman numerals",
+  "seo_title": "Roman numerals practice for KS2: read and write I to M, IV, IX, XL and years",
+  "level": "KS2 · Years 4 and 5",
+  "description": "Free KS2 Roman numerals practice: the seven symbols, the rules for IV, IX, XL and XC, reading numbers to 1000 and writing years. Hints and worked answers for ages 8 to 11, plus a printable 1 to 100 chart.",
+  "intro": "The Romans wrote numbers with letters. Learn the seven symbols and two simple rules, and you can read any Roman numeral, from clock faces to the year a film was made.",
+  "units": [
+    {
+      "slug": "the-symbols",
+      "title": "The seven symbols",
+      "blurb": "I, V, X, L, C, D and M.",
+      "learn": [
+        {"h": "The symbols", "p": "**I** = 1, **V** = 5, **X** = 10, **L** = 50, **C** = 100, **D** = 500, **M** = 1000. A rhyme can help: I Value Xylophones Like Cows Do Milk."},
+        {"h": "Adding up", "p": "When the symbols go from biggest to smallest, add them: VI = 5 + 1 = 6, XXII = 10 + 10 + 1 + 1 = 22, CL = 100 + 50 = 150."},
+        {"h": "No more than three", "p": "You can repeat I, X, C and M up to three times in a row: III = 3, XXX = 30, CCC = 300. V, L and D are never repeated. There is no symbol for zero."}
+      ],
+      "questions": [
+        {"type": "num", "q": "What number is X?", "answer": "10", "hint": "X is the symbol after V.", "explain": "X = 10."},
+        {"type": "num", "q": "What number is L?", "answer": "50", "hint": "It is half of C, which is 100.", "explain": "L = 50."},
+        {"type": "mc", "q": "Which symbol stands for 500?", "options": ["D", "C", "M", "L"], "answer": 0, "hint": "It comes between C (100) and M (1000).", "explain": "D = 500. C is 100, M is 1000 and L is 50."},
+        {"type": "num", "q": "What number is VII?", "answer": "7", "hint": "Biggest to smallest, so add: V + I + I.", "explain": "VII = 5 + 1 + 1 = 7."},
+        {"type": "num", "q": "What number is XXXIII?", "answer": "33", "hint": "Three Xs and three Is.", "explain": "XXX = 30 and III = 3, so XXXIII = 33."},
+        {"type": "num", "q": "What number is CLX?", "answer": "160", "hint": "C + L + X.", "explain": "CLX = 100 + 50 + 10 = 160."}
+      ]
+    },
+    {
+      "slug": "four-and-nine",
+      "title": "IV, IX and taking away",
+      "blurb": "A small symbol before a big one is taken away.",
+      "learn": [
+        {"h": "Taking away", "p": "If a smaller symbol comes **before** a bigger one, take it away. IV = 5 − 1 = 4. IX = 10 − 1 = 9."},
+        {"h": "The six pairs", "p": "There are only six: **IV** = 4, **IX** = 9, **XL** = 40, **XC** = 90, **CD** = 400, **CM** = 900. You only ever put I, X or C in front, and only before the next two symbols up."},
+        {"h": "Putting it together", "p": "XIV = X + IV = 10 + 4 = 14. XLIX = XL + IX = 40 + 9 = 49. Split the numeral into its parts, then add the parts."}
+      ],
+      "questions": [
+        {"type": "num", "q": "What number is IV?", "answer": "4", "hint": "I is before V, so take it away.", "explain": "IV = 5 − 1 = 4."},
+        {"type": "num", "q": "What number is IX?", "answer": "9", "hint": "I is before X, so take it away.", "explain": "IX = 10 − 1 = 9."},
+        {"type": "num", "q": "What number is XIV?", "answer": "14", "hint": "Split it: X and IV.", "explain": "X = 10 and IV = 4, so XIV = 14."},
+        {"type": "num", "q": "What number is XL?", "answer": "40", "hint": "X is before L, so take 10 away from 50.", "explain": "XL = 50 − 10 = 40."},
+        {"type": "num", "q": "What number is XC?", "answer": "90", "hint": "X is before C, so take 10 away from 100.", "explain": "XC = 100 − 10 = 90."},
+        {"type": "mc", "q": "How do you write 19 in Roman numerals?", "options": ["XIX", "IXX", "XVIIII", "XXI"], "answer": 0, "hint": "19 is 10 + 9. How do you write 9?", "explain": "19 = 10 + 9 = X + IX = XIX. XXI is 21, and XVIIII repeats I too many times."}
+      ]
+    },
+    {
+      "slug": "reading-numerals",
+      "title": "Reading Roman numerals",
+      "blurb": "Split it into parts, then add.",
+      "learn": [
+        {"h": "Split into parts", "p": "Work from left to right. Look for the taking-away pairs (IV, IX, XL, XC, CD, CM) and treat each pair as one part. Then add all the parts."},
+        {"h": "An example", "p": "LXXXIV: L = 50, XXX = 30, IV = 4. 50 + 30 + 4 = 84."},
+        {"h": "Years", "p": "Films and buildings often show the year in Roman numerals. MMXXVI = 1000 + 1000 + 10 + 10 + 5 + 1 = 2026."}
+      ],
+      "questions": [
+        {"type": "num", "q": "What number is XXVII?", "answer": "27", "hint": "XX, then V, then II.", "explain": "XX = 20, V = 5, II = 2. 20 + 5 + 2 = 27."},
+        {"type": "num", "q": "What number is XLVI?", "answer": "46", "hint": "Split it: XL and VI.", "explain": "XL = 40 and VI = 6, so XLVI = 46."},
+        {"type": "num", "q": "What number is LXXXIV?", "answer": "84", "hint": "L, then XXX, then IV.", "explain": "L = 50, XXX = 30, IV = 4. 50 + 30 + 4 = 84."},
+        {"type": "num", "q": "What number is XCIX?", "answer": "99", "hint": "Split it: XC and IX.", "explain": "XC = 90 and IX = 9, so XCIX = 99."},
+        {"type": "num", "q": "What number is CXLV?", "answer": "145", "hint": "C, then XL, then V.", "explain": "C = 100, XL = 40, V = 5. 100 + 40 + 5 = 145."},
+        {"type": "num", "q": "A building has MDCCC carved over the door. What year is that?", "answer": "1800", "hint": "M, then D, then CCC.", "explain": "M = 1000, D = 500, CCC = 300. 1000 + 500 + 300 = 1800."}
+      ]
+    },
+    {
+      "slug": "writing-numerals",
+      "title": "Writing Roman numerals",
+      "blurb": "Thousands, hundreds, tens, then ones.",
+      "learn": [
+        {"h": "One place at a time", "p": "Split the number into thousands, hundreds, tens and ones, write each part, then join them. 38 = 30 + 8 = XXX + VIII = XXXVIII."},
+        {"h": "Watch the 4s and 9s", "p": "49 is 40 + 9 = XL + IX = XLIX. It is **not** IL: you can only take I away from V or X."},
+        {"h": "Check it", "p": "Read your answer back and add it up. If you get the number you started with, it's right."}
+      ],
+      "questions": [
+        {"type": "mc", "q": "How do you write 38 in Roman numerals?", "options": ["XXXVIII", "XXXIIX", "XLII", "XXXVII"], "answer": 0, "hint": "38 = 30 + 8.", "explain": "30 = XXX and 8 = VIII, so 38 = XXXVIII."},
+        {"type": "mc", "q": "How do you write 49 in Roman numerals?", "options": ["XLIX", "IL", "XXXXIX", "LIX"], "answer": 0, "hint": "49 = 40 + 9.", "explain": "40 = XL and 9 = IX, so 49 = XLIX. IL isn't allowed, because I can only be taken away from V or X."},
+        {"type": "mc", "q": "How do you write 75 in Roman numerals?", "options": ["LXXV", "LXXIV", "XXCV", "LLXV"], "answer": 0, "hint": "75 = 50 + 20 + 5.", "explain": "50 = L, 20 = XX, 5 = V, so 75 = LXXV."},
+        {"type": "mc", "q": "How do you write 444 in Roman numerals?", "options": ["CDXLIV", "CCCCXLIV", "CDXXXXIIII", "DXLIV"], "answer": 0, "hint": "444 = 400 + 40 + 4.", "explain": "400 = CD, 40 = XL, 4 = IV, so 444 = CDXLIV."},
+        {"type": "mc", "q": "How do you write the year 1990?", "options": ["MCMXC", "MDCCCCXC", "MCMLXL", "MXM"], "answer": 0, "hint": "1990 = 1000 + 900 + 90.", "explain": "1000 = M, 900 = CM, 90 = XC, so 1990 = MCMXC."},
+        {"type": "mc", "q": "How do you write the year 2024?", "options": ["MMXXIV", "MMXXIIII", "MMXIV", "MMXVIV"], "answer": 0, "hint": "2024 = 2000 + 20 + 4.", "explain": "2000 = MM, 20 = XX, 4 = IV, so 2024 = MMXXIV."}
+      ]
+    }
+  ]
+}

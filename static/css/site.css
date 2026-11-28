@@ -1143,3 +1143,7 @@ html[data-proj="on"] .proj-btn{position:fixed;top:12px;right:12px;z-index:50;dis
 .pt-roman-key td b{display:block;font-size:20px}
 .pt-roman-big{border-collapse:collapse;margin:8px 0}.pt-roman-big td,.pt-roman-big th{border:1px solid var(--line,#ccc);padding:4px 16px}
 @media print{.pt-roman{font-size:11px}}
+/* Roman Code Breaker */
+.rc-code{font:700 34px var(--serif);letter-spacing:.12em;text-align:center;margin:8px 0;color:var(--navy)}
+.rc-built{min-height:1.4em;border-bottom:3px dashed var(--gold);max-width:280px;margin:8px auto}
+.rc-tiles{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.rc-tile{font:700 24px var(--serif);min-width:56px}

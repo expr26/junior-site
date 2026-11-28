@@ -1136,3 +1136,10 @@ html[data-proj="on"] .proj-btn{position:fixed;top:12px;right:12px;z-index:50;dis
 .bb-c span{font-weight:700;min-width:3em;text-align:right}.bb-c .btn{min-width:44px;padding:6px 0}
 .fd-food{font-size:28px;font-weight:700;text-align:center;margin:8px 0}
 .dx-route{min-height:2em;font-weight:700}
+/* Roman numerals chart */
+.pt-roman{border-collapse:collapse;width:100%;font-size:13px}.pt-roman td{border:1px solid var(--line,#ccc);padding:4px 2px;text-align:center}
+.pt-roman td b{display:block;font-size:11px;color:var(--muted,#666)}.pt-roman td span{font-weight:700}
+.pt-roman-key{border-collapse:collapse;margin:8px 0;font-size:15px}.pt-roman-key td{border:1.5px solid var(--navy);padding:6px 10px;text-align:center}
+.pt-roman-key td b{display:block;font-size:20px}
+.pt-roman-big{border-collapse:collapse;margin:8px 0}.pt-roman-big td,.pt-roman-big th{border:1px solid var(--line,#ccc);padding:4px 16px}
+@media print{.pt-roman{font-size:11px}}

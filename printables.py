@@ -2,6 +2,7 @@
 
   /printables/                        the list
   /printables/times-tables-chart/     a 12 x 12 multiplication chart and a blank one to fill in
+  /printables/roman-numerals-chart/   1 to 100 in Roman numerals, the symbols and the hundreds
   /printables/<n>-times-table/        one page per table (2 to 12): the facts, a way to remember them, patterns,
                                       a practice sheet (in order, mixed, missing numbers, division) and an answer page
   /printables/<topic>-worksheet/      a ready-made worksheet with answers for each KS2 topic (and Fractions and Missions),
@@ -192,7 +193,7 @@ def table_page(n):
 
 
 # ---------- topic worksheets ----------
-WS_TOPICS = ["times-tables", "place-value", "mental-maths", "written-methods", "decimals-and-percentages", "measurement", "telling-the-time", "money", "shapes", "graphs-and-data", "fractions", "missions"]
+WS_TOPICS = ["times-tables", "place-value", "mental-maths", "written-methods", "decimals-and-percentages", "measurement", "telling-the-time", "roman-numerals", "money", "shapes", "graphs-and-data", "fractions", "missions"]
 
 
 def _write(q):
@@ -245,8 +246,57 @@ def worksheet_page(t):
     return (f"/printables/{t['slug']}-worksheet/", meta, body, "printables.py"), (t, title, len(items))
 
 
+# ---------- Roman numerals chart ----------
+def roman(n):
+    out = ""
+    for v, r in [(1000, "M"), (900, "CM"), (500, "D"), (400, "CD"), (100, "C"), (90, "XC"), (50, "L"), (40, "XL"), (10, "X"), (9, "IX"), (5, "V"), (4, "IV"), (1, "I")]:
+        while n >= v:
+            out += r; n -= v
+    return out
+
+
+def roman_page():
+    rows = ""
+    for r in range(20):
+        rows += "<tr>" + "".join(f'<td><b>{n}</b><span>{roman(n)}</span></td>' for n in range(r * 5 + 1, r * 5 + 6)) + "</tr>"
+    big = "".join(f"<tr><td>{n}</td><td>{roman(n)}</td></tr>" for n in [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 2000, 2026])
+    body = CSS + f"""
+<section class="hero no-print"><div class="wrap narrow">
+  {_crumbs("Roman numerals chart")}
+  <p class="eyebrow">Free printable · KS2 · ages 8 to 11</p>
+  <h1>Roman numerals chart 1 to 100</h1>
+  <p class="lede">Every number from 1 to 100 in Roman numerals, the seven symbols, and the hundreds up to 1000. Print it or save it as a PDF.</p>
+</div></section>
+<section class="section tight"><div class="wrap narrow qb-ws pt-sheet">
+  {_tools()}
+  <h2 class="pt-h">The seven symbols</h2>
+  <table class="pt-roman-key"><tr><td><b>I</b> 1</td><td><b>V</b> 5</td><td><b>X</b> 10</td><td><b>L</b> 50</td><td><b>C</b> 100</td><td><b>D</b> 500</td><td><b>M</b> 1000</td></tr></table>
+  <p class="small">Add symbols that go from big to small: XV = 10 + 5 = 15. A smaller symbol <b>before</b> a bigger one is taken away: IV = 5 − 1 = 4, XC = 100 − 10 = 90. Only I, X and C are put in front like this, and only before the next two symbols up (IV, IX, XL, XC, CD, CM).</p>
+  <h2 class="pt-h">1 to 100</h2>
+  <div class="tt-scroll"><table class="pt-roman"><caption class="sr">Numbers 1 to 100 in Roman numerals</caption>{rows}</table></div>
+  <h2 class="pt-h">Hundreds and thousands</h2>
+  <table class="pt-roman-big"><tr><th>Number</th><th>Roman</th></tr>{big}</table>
+</div></section>
+<section class="section tight no-print"><div class="wrap narrow">
+  <h2>Practise</h2>
+  <p>Read and write Roman numerals with pictures and hints in the <a href="/maths/roman-numerals/">Roman numerals topic</a> (no timer), or print the <a href="/printables/roman-numerals-worksheet/">Roman numerals worksheet with answers</a>.</p>
+</div></section>""" + _faq([
+        ("How do you write 4 and 9 in Roman numerals?",
+         "4 is IV (one before five, so 5 − 1) and 9 is IX (one before ten, so 10 − 1). In the same way 40 is XL, 90 is XC, 400 is CD and 900 is CM."),
+        ("Why do some clocks show IIII instead of IV?",
+         "Many clock and watch makers use IIII for 4 as a tradition. In school, 4 is written IV."),
+        ("When do children learn Roman numerals?",
+         "In England, children learn to read Roman numerals to 100 in Year 4, and to 1000 in Year 5, including reading years written in Roman numerals."),
+        ("Is there a zero in Roman numerals?",
+         "No. The Romans had no symbol for zero, which is one reason our place value system, with 0, is much easier for calculating."),
+    ]) + '<script src="/static/js/printables.js" defer></script>'
+    meta = {"title": "Roman numerals chart 1 to 100: free printable for KS2", "body_class": "qbank qb-ws-page printables",
+            "description": "Free printable Roman numerals chart from 1 to 100, with the seven symbols, the rules for IV and IX, and the hundreds up to 1000. For KS2, ages 8 to 11."}
+    return ("/printables/roman-numerals-chart/", meta, body, "printables.py")
+
+
 def pages():
-    out = [chart_page()] + [table_page(n) for n in TABLES]
+    out = [chart_page(), roman_page()] + [table_page(n) for n in TABLES]
     sheets = []
     for slug in WS_TOPICS:
         t = json.loads((topics.TOPICS / f"{slug}.json").read_text(encoding="utf-8"))
@@ -266,6 +316,8 @@ def pages():
 <section class="section tight"><div class="wrap">
   <a class="card ks2-banner" href="/printables/times-tables-chart/"><span class="ks2-ic" aria-hidden="true">🔢</span><span class="tag">1 × 1 to 12 × 12</span>
     <h3>Times tables chart</h3><p>A colourful multiplication chart and a blank grid to fill in.</p><span class="go">Open and print →</span></a>
+  <a class="card ks2-banner" href="/printables/roman-numerals-chart/"><span class="ks2-ic" aria-hidden="true">🏛️</span><span class="tag">I to C</span>
+    <h3>Roman numerals chart 1 to 100</h3><p>Every number from 1 to 100, the seven symbols and the hundreds up to M.</p><span class="go">Open and print →</span></a>
   <h2>Times tables practice sheets</h2>
   <p>Each sheet has the facts, an easy way to work them out, patterns to spot, four kinds of practice and an answer page.</p>
   <ul class="qb-ws-all">{tt}</ul>

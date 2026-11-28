@@ -1,0 +1,349 @@
+[
+  {
+    "slug": "force", "icon": "💪", "name": "a force",
+    "short": "A force is a push or a pull. Forces can make things start moving, stop, speed up, slow down, change direction or change shape. Forces are measured in newtons (N).",
+    "sections": [
+      {"h": "Pushes and pulls", "p": "Kicking a ball is a push. Opening a drawer is a pull. Gravity pulls you down towards the Earth. Every force acts in a direction, so we draw forces as arrows: the longer the arrow, the bigger the force."},
+      {"h": "Contact and non-contact", "p": "**Contact forces** need things to touch: friction, air resistance, and the push of your hand. **Non-contact forces** act across a gap: gravity, magnetic force and static electric force."},
+      {"h": "Balanced or unbalanced", "p": "If the forces on an object are balanced (equal and opposite), its motion does not change: it stays still or keeps moving at the same speed. If they are unbalanced, it speeds up, slows down or changes direction."}
+    ],
+    "examples": ["Gravity pulls a dropped apple down.", "Friction slows a sliding book.", "A magnet pulls a paper clip without touching it."],
+    "mistake": "Thinking a moving object always needs a force to keep it moving. If the forces are balanced, a moving object keeps moving at a steady speed.",
+    "quiz": [
+      {"q": "Which is a non-contact force?", "options": ["Gravity", "Friction", "Air resistance", "A push from your hand"], "answer": 0, "explain": "Gravity acts across a gap: the Earth pulls you even when you jump in the air."},
+      {"q": "What unit are forces measured in?", "options": ["Newtons (N)", "Kilograms (kg)", "Metres (m)", "Joules (J)"], "answer": 0, "explain": "Forces are measured in newtons, named after Isaac Newton."}
+    ],
+    "faq": [
+      ["What are the main types of forces?", "Gravity (weight), friction, air resistance, water resistance, upthrust, magnetic force, tension and the push or pull of an object."]
+    ],
+    "practise": ["Forces and motion practice", "/science/forces-and-motion/"],
+    "related": ["newton-n", "balanced-forces", "friction", "gravity"]
+  },
+  {
+    "slug": "gravity", "icon": "🌍", "name": "gravity",
+    "short": "Gravity is a force that pulls objects with mass towards each other. The Earth's gravity pulls everything towards the centre of the Earth, which is why things fall down.",
+    "sections": [
+      {"h": "Every mass pulls", "p": "Everything that has mass pulls on everything else, but the pull is only big when the mass is huge, like a planet or a star. That's why you notice the Earth pulling you, but not your pencil."},
+      {"h": "Weight", "p": "Your weight is the force of gravity on you, measured in newtons. On Earth, each kilogram of mass weighs about 10 N. So a 30 kg child weighs about 300 N."},
+      {"h": "Gravity in space", "p": "Gravity keeps the Moon in orbit around the Earth and the Earth in orbit around the Sun. The Moon's gravity is weaker than Earth's (about one sixth), so you would weigh less there, but your mass would be the same."}
+    ],
+    "examples": ["A ball thrown up comes back down.", "The Moon orbits the Earth.", "An astronaut weighs less on the Moon than on Earth."],
+    "mistake": "Thinking there is no gravity in space. Astronauts in orbit float because they are falling around the Earth all the time, not because gravity has gone.",
+    "quiz": [
+      {"q": "Which direction does Earth's gravity pull you?", "options": ["Towards the centre of the Earth", "Upwards", "Towards the Sun", "Sideways"], "answer": 0, "explain": "Gravity pulls towards the centre of the Earth, which we call “down”."},
+      {"q": "On the Moon, what stays the same as on Earth?", "options": ["Your mass", "Your weight", "How high you can jump", "How fast you fall"], "answer": 0, "explain": "Mass is the amount of stuff in you and doesn't change. Your weight is smaller because the Moon's gravity is weaker."}
+    ],
+    "faq": [
+      ["Who discovered gravity?", "People always knew things fall, but Isaac Newton explained in the 1680s that the same force makes apples fall and keeps the Moon in orbit."]
+    ],
+    "practise": ["Gravity and weight unit", "/science/forces-and-motion/gravity-and-weight/"],
+    "related": ["weight", "mass", "orbit", "force"]
+  },
+  {
+    "slug": "mass-and-weight", "icon": "⚖️", "name": "the difference between mass and weight",
+    "title": "What is the difference between mass and weight?",
+    "short": "Mass is how much matter (stuff) is in an object, measured in kilograms. Weight is the force of gravity pulling on that mass, measured in newtons. Your mass is the same everywhere; your weight changes with gravity.",
+    "sections": [
+      {"h": "Mass", "p": "Mass is measured in grams (g) or kilograms (kg). A 2 kg bag of flour has a mass of 2 kg on Earth, on the Moon and in space."},
+      {"h": "Weight", "p": "Weight is a force, so it is measured in newtons (N). On Earth, gravity pulls about 10 N on each kilogram. So the 2 kg bag weighs about 20 N here."},
+      {"h": "Everyday words", "p": "In everyday talk people say “I weigh 35 kg”, but scientists would say “my mass is 35 kg” and “my weight is about 350 N”."}
+    ],
+    "examples": ["An astronaut with a mass of 70 kg weighs about 700 N on Earth.", "On the Moon the same astronaut still has a mass of 70 kg, but weighs only about 115 N."],
+    "mistake": "Writing weight in kilograms. In science, weight is a force, so it is measured in newtons.",
+    "quiz": [
+      {"q": "What is weight measured in?", "options": ["Newtons (N)", "Kilograms (kg)", "Litres (l)", "Grams (g)"], "answer": 0, "explain": "Weight is a force, and forces are measured in newtons."},
+      {"q": "About how much does a 5 kg bag weigh on Earth?", "options": ["About 50 N", "About 5 N", "About 500 N", "About 0.5 N"], "answer": 0, "explain": "Each kilogram weighs about 10 N on Earth: 5 × 10 = 50 N."}
+    ],
+    "faq": [
+      ["Would I weigh less on the Moon?", "Yes. The Moon's gravity is about one sixth of Earth's, so your weight would be about one sixth. Your mass would not change."]
+    ],
+    "practise": ["Gravity and weight unit", "/science/forces-and-motion/gravity-and-weight/"],
+    "related": ["mass", "weight", "gravity", "newton-n"]
+  },
+  {
+    "slug": "friction", "icon": "🛷", "name": "friction",
+    "short": "Friction is a force that acts when two surfaces rub or slide against each other. It always works against the movement, so it slows things down. It also heats the surfaces up.",
+    "sections": [
+      {"h": "Rough and smooth", "p": "Rough surfaces like carpet or sandpaper make more friction. Smooth surfaces like ice make very little. Even surfaces that look smooth have tiny bumps that catch on each other."},
+      {"h": "Useful friction", "p": "Without friction we could not walk (our shoes would slip), cars could not brake, and pencils could not write. Tyres and shoe soles have patterns to grip better."},
+      {"h": "Unhelpful friction", "p": "Friction wastes energy as heat and wears things out. Oil in a bike chain reduces friction, so the parts move more easily."}
+    ],
+    "examples": ["Rubbing your hands together makes them warm.", "A sledge slides further on ice than on grass.", "Brakes use friction to stop a bike."],
+    "mistake": "Thinking friction only slows things down. Friction is also what lets your feet push you forward when you walk.",
+    "quiz": [
+      {"q": "On which surface would a toy car roll furthest?", "options": ["Smooth floor tiles", "Carpet", "Grass", "Sand"], "answer": 0, "explain": "Smooth tiles make the least friction, so the car slows down the least."},
+      {"q": "Why do we put oil on a bike chain?", "options": ["To reduce friction", "To increase friction", "To make it heavier", "To make it magnetic"], "answer": 0, "explain": "Oil lets the parts slide past each other easily, so less energy is wasted."}
+    ],
+    "faq": [
+      ["Is air resistance a type of friction?", "Yes. Air resistance (drag) is friction between a moving object and the air. Water resistance is the same idea in water."]
+    ],
+    "practise": ["Friction unit", "/science/forces-and-motion/friction/"],
+    "related": ["force", "balanced-forces"]
+  },
+  {
+    "slug": "energy", "icon": "⚡", "name": "energy",
+    "short": "Energy is what is needed to make things happen. It is stored in different ways (energy stores) and moved from one store to another when something happens. Energy is measured in joules (J).",
+    "sections": [
+      {"h": "Energy stores", "p": "Some stores: **kinetic** (moving things), **chemical** (food, fuel, batteries), **thermal** (hot things), **gravitational** (things lifted up high), **elastic** (stretched or squashed springs) and **nuclear**."},
+      {"h": "Transfers", "p": "When you eat breakfast and then run, energy moves from the chemical store in the food to your muscles, and then to the kinetic store as you move. Some always ends up heating the surroundings."},
+      {"h": "Never made or destroyed", "p": "Energy cannot be created or destroyed, only moved between stores. This is called the **conservation of energy**. Energy that spreads out as heat is still there, just not useful any more."}
+    ],
+    "examples": ["A battery's chemical store is transferred to light in a torch.", "A ball held high has a gravitational store; dropped, it gains kinetic energy.", "A kettle transfers energy electrically to the thermal store of the water."],
+    "mistake": "Saying energy gets “used up”. It is never used up; it is transferred, and often ends up spread out as heat.",
+    "quiz": [
+      {"q": "Which store does a moving car have lots of?", "options": ["Kinetic", "Elastic", "Nuclear", "Gravitational"], "answer": 0, "explain": "Kinetic is the energy store of moving things."},
+      {"q": "What unit is energy measured in?", "options": ["Joules (J)", "Newtons (N)", "Watts (W)", "Volts (V)"], "answer": 0, "explain": "Energy is measured in joules. Watts measure power: how fast energy is transferred."}
+    ],
+    "faq": [
+      ["What is the difference between energy and power?", "Energy is how much is transferred (joules). Power is how fast it is transferred (watts). A 100 W bulb transfers 100 J every second."]
+    ],
+    "practise": ["Energy stores and transfers questions", "/question-bank/physics/energy-stores-and-transfers/"],
+    "related": ["energy-store", "kinetic-energy", "conservation-of-energy", "power-energy"]
+  },
+  {
+    "slug": "density", "icon": "🪨", "name": "density",
+    "short": "Density is how much mass is packed into a certain volume. A brick is denser than a sponge of the same size. Density = mass ÷ volume, often in g/cm³.",
+    "sections": [
+      {"h": "Packed tightly", "p": "Dense materials have their particles packed closely together, or have heavy particles. Lead is very dense; polystyrene is not."},
+      {"h": "Working it out", "p": "Density = mass ÷ volume. A block with a mass of 40 g and a volume of 20 cm³ has a density of 40 ÷ 20 = 2 g/cm³."},
+      {"h": "Floating and sinking", "p": "Water has a density of 1 g/cm³. Objects less dense than water float; objects denser than water sink. Wood floats, a steel bolt sinks."}
+    ],
+    "examples": ["Ice (about 0.92 g/cm³) floats on water.", "Gold is about 19 times as dense as water.", "Oil floats on water because it is less dense."],
+    "mistake": "Thinking heavy things always sink. A huge ship is heavy, but it floats because its overall density (steel plus all the air inside) is less than water's.",
+    "quiz": [
+      {"q": "A block has a mass of 30 g and a volume of 10 cm³. What is its density?", "options": ["3 g/cm³", "300 g/cm³", "0.3 g/cm³", "40 g/cm³"], "answer": 0, "explain": "Density = mass ÷ volume = 30 ÷ 10 = 3 g/cm³."},
+      {"q": "Which will float in water?", "options": ["Something with density 0.5 g/cm³", "Something with density 2 g/cm³", "Something with density 8 g/cm³", "Something with density 11 g/cm³"], "answer": 0, "explain": "Anything less dense than water (1 g/cm³) floats."}
+    ],
+    "faq": [
+      ["Why does ice float?", "Water expands when it freezes, so ice is less dense than liquid water. That's why ice cubes float and ponds freeze from the top down."]
+    ],
+    "practise": ["Particles and density questions", "/question-bank/physics/particles-and-density/"],
+    "related": ["mass", "volume", "particle"]
+  },
+  {
+    "slug": "states-of-matter", "icon": "🧊", "name": "the states of matter",
+    "title": "What are the states of matter: solids, liquids and gases?",
+    "short": "Matter can be a solid, a liquid or a gas. In a solid the particles are packed tightly in fixed places, in a liquid they are close but can slide past each other, and in a gas they are far apart and move quickly in all directions.",
+    "sections": [
+      {"h": "Solids", "p": "Solids keep their shape and can't be squashed. Their particles are close together in a regular pattern and only vibrate on the spot."},
+      {"h": "Liquids", "p": "Liquids flow and take the shape of their container, but keep the same volume. Their particles are close together but can move past each other."},
+      {"h": "Gases", "p": "Gases spread out to fill any container and can be squashed. Their particles are far apart and move fast in random directions."},
+      {"h": "Changing state", "p": "Heating: solid → liquid is **melting**, liquid → gas is **evaporating** (or boiling). Cooling: gas → liquid is **condensing**, liquid → solid is **freezing**. Water melts at 0 °C and boils at 100 °C."}
+    ],
+    "examples": ["Ice (solid), water (liquid) and steam (gas) are all water.", "Chocolate melts in your hand.", "Water droplets form on a cold window: condensation."],
+    "mistake": "Thinking particles get bigger when something melts or boils. The particles stay the same size; they move faster and further apart.",
+    "quiz": [
+      {"q": "Which state of matter can be squashed easily?", "options": ["Gas", "Solid", "Liquid", "None of them"], "answer": 0, "explain": "Gas particles are far apart, so there is lots of space to push them into."},
+      {"q": "What is it called when a gas turns into a liquid?", "options": ["Condensing", "Evaporating", "Melting", "Freezing"], "answer": 0, "explain": "Condensing, like steam turning into drops of water on a cold mirror."}
+    ],
+    "faq": [
+      ["Are there more than three states of matter?", "At school we study three: solid, liquid and gas. Scientists also describe plasma (found in stars and lightning), but you don't need it at KS3."]
+    ],
+    "practise": ["Particles and density questions", "/question-bank/physics/particles-and-density/"],
+    "related": ["particle", "diffusion", "density"]
+  },
+  {
+    "slug": "diffusion", "icon": "🌸", "name": "diffusion",
+    "short": "Diffusion is the spreading out of particles from where there are lots of them to where there are fewer, because the particles move about randomly. It happens in liquids and gases.",
+    "sections": [
+      {"h": "Smells spread", "p": "When someone opens a bottle of perfume, you smell it across the room a little later. The perfume particles mix with the air particles and spread out by themselves."},
+      {"h": "High to low", "p": "Particles move randomly in all directions. Overall, more of them move from where they are crowded to where they are spread out, until they are evenly mixed."},
+      {"h": "Faster when warmer", "p": "Heat makes particles move faster, so diffusion is quicker in hot water than in cold. It is fastest in gases and very slow in solids."}
+    ],
+    "examples": ["A drop of food colouring slowly spreads through a glass of water.", "The smell of toast spreads through a house.", "Oxygen diffuses from your lungs into your blood."],
+    "mistake": "Thinking you need to stir for diffusion to happen. Stirring speeds up mixing, but diffusion happens on its own.",
+    "quiz": [
+      {"q": "In which will food colouring spread fastest?", "options": ["Hot water", "Cold water", "Ice", "Jelly"], "answer": 0, "explain": "Particles move fastest in hot water, so diffusion is quickest."},
+      {"q": "Diffusion is particles moving from...", "options": ["where there are many to where there are few", "where there are few to where there are many", "cold places only", "solids to gases only"], "answer": 0, "explain": "Overall, particles spread from high concentration to low concentration."}
+    ],
+    "faq": [
+      ["Does diffusion happen in solids?", "Hardly at all at room temperature, because the particles in a solid can only vibrate in place."]
+    ],
+    "practise": ["Particles and density questions", "/question-bank/physics/particles-and-density/"],
+    "related": ["particle", "states-of-matter"]
+  },
+  {
+    "slug": "static-electricity", "icon": "🎈", "name": "static electricity",
+    "short": "Static electricity is a build-up of electric charge on the surface of an object. It happens when two materials rub together and tiny particles called electrons move from one to the other.",
+    "sections": [
+      {"h": "Rubbing moves electrons", "p": "Rub a balloon on your hair and electrons move from your hair to the balloon. The balloon gets a **negative** charge, and your hair is left with a **positive** charge."},
+      {"h": "Attract and repel", "p": "Opposite charges attract (pull together), like charges repel (push apart). That's why your hair stands up towards the balloon, and why two charged balloons push each other away."},
+      {"h": "Sparks", "p": "If enough charge builds up, it can jump across a gap as a spark. Lightning is a giant spark from charged clouds."}
+    ],
+    "examples": ["A rubbed balloon sticks to a wall.", "You get a small shock touching a door handle after walking on carpet.", "Lightning in a storm."],
+    "mistake": "Thinking positive charges move when things are rubbed. In solids it is the negative electrons that move.",
+    "quiz": [
+      {"q": "Two balloons both have a negative charge. What happens when they are brought close?", "options": ["They repel", "They attract", "Nothing", "They spark and pop"], "answer": 0, "explain": "Like charges repel, so they push apart."},
+      {"q": "What moves when a balloon is rubbed on hair?", "options": ["Electrons", "Protons", "Atoms of rubber", "Air"], "answer": 0, "explain": "Electrons move from the hair to the balloon."}
+    ],
+    "faq": [
+      ["Why is it called static?", "Static means not moving. The charge stays put on the surface instead of flowing as a current."]
+    ],
+    "practise": ["Static electricity questions", "/question-bank/physics/static-electricity/"],
+    "related": ["electron", "attract-and-repel", "current"]
+  },
+  {
+    "slug": "series-and-parallel-circuits", "icon": "💡", "name": "a series and a parallel circuit",
+    "title": "What is the difference between series and parallel circuits?",
+    "short": "In a series circuit all the parts are joined in one single loop. In a parallel circuit there is more than one loop (branch), so the current splits and each branch works on its own.",
+    "sections": [
+      {"h": "Series", "p": "There is only one path. If one bulb breaks, the loop is broken and everything goes off. Adding more bulbs in series makes each one dimmer."},
+      {"h": "Parallel", "p": "Each bulb has its own branch to the cell. If one bulb breaks, the others stay on. Bulbs in parallel stay bright when you add more (but the cell runs down faster)."},
+      {"h": "In your home", "p": "The lights and sockets in a house are wired in parallel, so you can switch one off without the others going off too."}
+    ],
+    "examples": ["Old Christmas lights were often in series: one broken bulb made the whole string go out.", "Car headlights are in parallel: if one fails, the other still works."],
+    "mistake": "Thinking the current gets “used up” by the first bulb in a series circuit. The current is the same all the way round a series loop.",
+    "quiz": [
+      {"q": "In which circuit does one broken bulb make all the others go off?", "options": ["Series", "Parallel", "Both", "Neither"], "answer": 0, "explain": "A series circuit has one loop, so a break stops the current everywhere."},
+      {"q": "Why are homes wired in parallel?", "options": ["So each light can be switched on and off on its own", "To save wire", "To make bulbs dimmer", "So the fuse never blows"], "answer": 0, "explain": "Each branch works independently."}
+    ],
+    "faq": [
+      ["Where does the current split?", "In a parallel circuit, the current splits where the wire branches and joins up again afterwards. The currents in the branches add up to the total."]
+    ],
+    "practise": ["Circuits questions", "/question-bank/physics/circuits/"],
+    "related": ["series-circuit", "parallel-circuit", "current", "voltage"]
+  },
+  {
+    "slug": "refraction", "icon": "🔍", "name": "refraction",
+    "short": "Refraction is the bending of light when it passes from one material into another, such as from air into water or glass. It happens because light changes speed.",
+    "sections": [
+      {"h": "Changing speed", "p": "Light travels more slowly in water and glass than in air. When it hits the surface at an angle, the change in speed makes it change direction."},
+      {"h": "Bent straws", "p": "A straw in a glass of water looks bent at the surface. The straw is straight; the light coming from the part under water bends as it leaves the water."},
+      {"h": "Lenses", "p": "Lenses use refraction to bend light on purpose. Glasses, magnifying glasses, cameras and your own eyes all have lenses."}
+    ],
+    "examples": ["A swimming pool looks shallower than it really is.", "A magnifying glass makes small things look bigger.", "A prism splits white light into a rainbow spectrum."],
+    "mistake": "Mixing up refraction and reflection. Reflection is light bouncing off a surface; refraction is light bending as it goes through into a new material.",
+    "quiz": [
+      {"q": "Why does a straw look bent in water?", "options": ["Light bends as it leaves the water", "The water bends the straw", "Light bounces off the straw", "The glass is curved"], "answer": 0, "explain": "That bending of light is refraction."},
+      {"q": "What causes refraction?", "options": ["Light changing speed", "Light changing colour", "Light getting brighter", "Light reflecting"], "answer": 0, "explain": "Light slows down or speeds up as it enters a new material, which bends it."}
+    ],
+    "faq": [
+      ["How does refraction make a rainbow?", "Each colour in white light bends by a slightly different amount, so a prism or raindrops spread the colours out into a spectrum."]
+    ],
+    "practise": ["Light questions", "/question-bank/physics/light/"],
+    "related": ["reflection-light", "spectrum"]
+  },
+  {
+    "slug": "light-year", "icon": "🌌", "name": "a light year",
+    "short": "A light year is a distance, not a time. It is how far light travels in one year: about 9.5 million million kilometres (9.5 trillion km).",
+    "sections": [
+      {"h": "Light is fast", "p": "Light travels about 300,000 km every second. It reaches us from the Sun in about 8 minutes, and could go round the Earth more than 7 times in one second."},
+      {"h": "Why use light years?", "p": "Space is so huge that kilometres give enormous numbers. The nearest star after the Sun, Proxima Centauri, is about 4.2 light years away. That's about 40 trillion km."},
+      {"h": "Looking back in time", "p": "When you see a star 100 light years away, the light left it 100 years ago. You are seeing the star as it was then."}
+    ],
+    "examples": ["Light from the Moon takes just over 1 second to reach us.", "The Milky Way galaxy is about 100,000 light years across."],
+    "mistake": "Thinking a light year is a length of time because it has “year” in it. It measures distance.",
+    "quiz": [
+      {"q": "What does a light year measure?", "options": ["Distance", "Time", "Brightness", "Speed"], "answer": 0, "explain": "It is the distance light travels in one year."},
+      {"q": "About how long does sunlight take to reach Earth?", "options": ["About 8 minutes", "About 1 second", "About 1 year", "About 8 days"], "answer": 0, "explain": "The Sun is about 150 million km away; light takes about 8 minutes."}
+    ],
+    "faq": [
+      ["How far is a light year in km?", "About 9.46 million million km, often rounded to about 9.5 trillion km."]
+    ],
+    "practise": ["Space questions", "/question-bank/physics/space/"],
+    "related": ["orbit", "gravity"]
+  },
+  {
+    "slug": "element-compound-mixture", "icon": "⚗️", "name": "an element, a compound and a mixture",
+    "title": "What is an element, a compound and a mixture?",
+    "short": "An element is made of only one type of atom. A compound is two or more elements chemically joined together. A mixture is different substances mixed but not joined, so they can be separated again.",
+    "sections": [
+      {"h": "Elements", "p": "There are about 118 elements, listed in the periodic table. Each has a symbol: O for oxygen, Fe for iron, Au for gold. An element can't be split into anything simpler by chemical reactions."},
+      {"h": "Compounds", "p": "In a compound, atoms of different elements are bonded together in a fixed ratio. Water (H₂O) has 2 hydrogen atoms joined to 1 oxygen atom. A compound can be very different from its elements: sodium (a reactive metal) and chlorine (a poisonous gas) make sodium chloride, table salt."},
+      {"h": "Mixtures", "p": "In a mixture the substances are just mixed, not bonded. Salty water, air and sand with iron filings are mixtures. They can be separated by filtering, evaporating, using a magnet and so on."}
+    ],
+    "examples": ["Element: oxygen, gold, carbon.", "Compound: water, carbon dioxide, table salt.", "Mixture: air, sea water, a salad."],
+    "mistake": "Thinking air is a compound. Air is a mixture of gases (mostly nitrogen and oxygen) that are not bonded to each other.",
+    "quiz": [
+      {"q": "Which of these is an element?", "options": ["Iron", "Water", "Air", "Salt"], "answer": 0, "explain": "Iron is made of only one type of atom. Water and salt are compounds; air is a mixture."},
+      {"q": "Which can be separated by filtering?", "options": ["Sand and water", "Water (H₂O)", "Salt (sodium chloride)", "Carbon dioxide"], "answer": 0, "explain": "Sand and water is a mixture; the sand stays in the filter paper. Compounds can't be separated by filtering."}
+    ],
+    "faq": [
+      ["What is the smallest part of an element?", "An atom. Every atom of the same element has the same number of protons."]
+    ],
+    "practise": ["Atoms, elements and compounds questions", "/question-bank/chemistry/atoms-elements-compounds/"],
+    "related": ["particle"]
+  },
+  {
+    "slug": "acids-and-alkalis", "icon": "🍋", "name": "an acid and an alkali",
+    "title": "What are acids and alkalis? The pH scale explained",
+    "short": "Acids and alkalis are chemical opposites. The pH scale from 0 to 14 shows how acidic or alkaline something is: below 7 is acidic, 7 is neutral, and above 7 is alkaline.",
+    "sections": [
+      {"h": "Acids", "p": "Acids have a pH below 7. Weak acids such as lemon juice and vinegar taste sour. Strong acids such as hydrochloric acid are corrosive and dangerous."},
+      {"h": "Alkalis", "p": "Alkalis have a pH above 7. Soap, toothpaste and baking soda solution are weak alkalis. Oven cleaner is a strong alkali, and is also corrosive."},
+      {"h": "Indicators", "p": "Universal indicator changes colour with pH: red or orange for acids, green for neutral, blue or purple for alkalis. Red cabbage juice works as a home-made indicator."},
+      {"h": "Neutralisation", "p": "When an acid and an alkali react, they cancel each other out, making a salt and water. Indigestion tablets neutralise extra stomach acid."}
+    ],
+    "examples": ["Lemon juice: about pH 2 (acid).", "Pure water: pH 7 (neutral).", "Soap: about pH 9 to 10 (alkali)."],
+    "mistake": "Thinking all acids are dangerous. Many are weak and safe to eat, like the citric acid in oranges. Strong acids and alkalis are the dangerous ones.",
+    "quiz": [
+      {"q": "A liquid has a pH of 3. What is it?", "options": ["An acid", "An alkali", "Neutral", "Can't tell"], "answer": 0, "explain": "Anything below pH 7 is acidic."},
+      {"q": "What colour does universal indicator go in a neutral solution?", "options": ["Green", "Red", "Purple", "Yellow"], "answer": 0, "explain": "Neutral (pH 7) is green."}
+    ],
+    "faq": [
+      ["What does neutral mean?", "Neither acidic nor alkaline: pH 7, like pure water."]
+    ],
+    "practise": ["Acids and alkalis questions", "/question-bank/chemistry/acids-and-alkalis/"],
+    "related": []
+  },
+  {
+    "slug": "photosynthesis", "icon": "🌱", "name": "photosynthesis",
+    "short": "Photosynthesis is how plants make their own food. They use energy from light to turn carbon dioxide and water into glucose (a sugar), and give out oxygen.",
+    "sections": [
+      {"h": "The word equation", "p": "carbon dioxide + water → glucose + oxygen. The energy comes from light, which is captured by a green substance called **chlorophyll**."},
+      {"h": "Where it happens", "p": "Mostly in the leaves, inside tiny parts of the cells called **chloroplasts**. Carbon dioxide enters through small holes in the leaf, and water comes up from the roots."},
+      {"h": "Why it matters", "p": "Photosynthesis makes the food at the start of almost every food chain, and it puts oxygen into the air for animals (and plants) to breathe."}
+    ],
+    "examples": ["A plant left in the dark for days stops growing well.", "Pondweed in light gives off bubbles of oxygen."],
+    "mistake": "Thinking plants get their food from the soil. They take water and some minerals from the soil, but they make their food (glucose) themselves by photosynthesis.",
+    "quiz": [
+      {"q": "Which gas do plants take in for photosynthesis?", "options": ["Carbon dioxide", "Oxygen", "Nitrogen", "Hydrogen"], "answer": 0, "explain": "Carbon dioxide + water → glucose + oxygen."},
+      {"q": "What does chlorophyll do?", "options": ["Captures light energy", "Takes in water", "Makes the roots grow", "Stores oxygen"], "answer": 0, "explain": "Chlorophyll is the green substance that absorbs light."}
+    ],
+    "faq": [
+      ["Do plants breathe?", "Plants respire all the time, day and night, like animals: they use oxygen and give out carbon dioxide. In daylight, photosynthesis is usually faster, so overall they give out oxygen."]
+    ],
+    "practise": ["Food chains and ecosystems questions", "/question-bank/biology/ecosystems/"],
+    "related": []
+  },
+  {
+    "slug": "food-chain", "icon": "🦊", "name": "a food chain",
+    "short": "A food chain shows what eats what, and how energy passes from one living thing to the next. It always starts with a plant (a producer), and the arrows point from the food to the animal that eats it.",
+    "sections": [
+      {"h": "Reading the arrows", "p": "grass → rabbit → fox. The arrow means “is eaten by”, and it shows the direction the energy goes."},
+      {"h": "The words", "p": "**Producer**: a plant that makes its own food (grass). **Primary consumer**: eats the producer (rabbit); it is a herbivore. **Secondary consumer**: eats the primary consumer (fox). **Predator** and **prey**: the fox is the predator, the rabbit is its prey."},
+      {"h": "Food webs", "p": "Most animals eat more than one thing, so food chains join up into a food web. If one animal disappears, it can affect many others in the web."}
+    ],
+    "examples": ["seaweed → winkle → crab → seagull", "leaf → caterpillar → blue tit → sparrowhawk"],
+    "mistake": "Drawing the arrows the wrong way. The arrow points to the eater: grass → rabbit, not rabbit → grass.",
+    "quiz": [
+      {"q": "In grass → rabbit → fox, which is the producer?", "options": ["Grass", "Rabbit", "Fox", "The Sun"], "answer": 0, "explain": "The producer is the plant that makes its own food by photosynthesis."},
+      {"q": "In grass → rabbit → fox, what would probably happen if the foxes disappeared?", "options": ["The number of rabbits would go up", "The grass would grow more", "The rabbits would die out", "Nothing"], "answer": 0, "explain": "Fewer predators means more rabbits survive (and then they eat more grass)."}
+    ],
+    "faq": [
+      ["Why does a food chain start with a plant?", "Plants make food using light energy from the Sun. Animals can't make their own food, so every chain starts with a producer."]
+    ],
+    "practise": ["Food chains and ecosystems questions", "/question-bank/biology/ecosystems/"],
+    "related": []
+  },
+  {
+    "slug": "cell", "icon": "🔬", "name": "a cell",
+    "short": "A cell is the smallest living unit. All living things are made of cells. Most are too small to see without a microscope.",
+    "sections": [
+      {"h": "Animal cells", "p": "An animal cell has a **nucleus** (controls the cell and holds the genetic material), **cytoplasm** (a jelly where reactions happen), a **cell membrane** (controls what goes in and out) and **mitochondria** (where respiration releases energy)."},
+      {"h": "Plant cells", "p": "Plant cells have all of those, plus a **cell wall** (made of cellulose, for support), **chloroplasts** (for photosynthesis) and a large **vacuole** filled with cell sap."},
+      {"h": "Specialised cells", "p": "Many cells have special shapes for their jobs. Red blood cells carry oxygen, nerve cells carry messages, and root hair cells take in water."}
+    ],
+    "examples": ["Your body has tens of trillions of cells.", "Bacteria are living things made of just one cell.", "Onion skin cells are easy to see under a school microscope."],
+    "mistake": "Thinking all cells have a cell wall. Plant cells (and bacteria and fungi) do, but animal cells don't.",
+    "quiz": [
+      {"q": "Which part do plant cells have but animal cells don't?", "options": ["Chloroplasts", "Nucleus", "Cell membrane", "Cytoplasm"], "answer": 0, "explain": "Chloroplasts (for photosynthesis) are only in plant cells. Plant cells also have a cell wall."},
+      {"q": "What does the nucleus do?", "options": ["Controls the cell", "Makes food from light", "Gives the cell a stiff shape", "Lets water out"], "answer": 0, "explain": "The nucleus contains the genetic material and controls what the cell does."}
+    ],
+    "faq": [
+      ["Who discovered cells?", "Robert Hooke named cells in 1665, after looking at thin slices of cork through an early microscope."]
+    ],
+    "practise": ["Cells questions", "/question-bank/biology/cells/"],
+    "related": []
+  }
+]

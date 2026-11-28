@@ -1,0 +1,373 @@
+[
+  {
+    "slug": "prime-number", "icon": "🔐", "name": "a prime number",
+    "short": "A prime number is a whole number bigger than 1 that has exactly two factors: 1 and itself. 2, 3, 5, 7, 11 and 13 are prime numbers.",
+    "fig": {"type": "array", "rows": 1, "cols": 7},
+    "fig_note": "7 dots can only make one rectangle: 1 row of 7. That is why 7 is prime.",
+    "sections": [
+      {"h": "Only two factors", "p": "A factor is a number that divides into another number exactly. 7 can only be divided exactly by 1 and 7, so it is prime. 8 can be divided by 1, 2, 4 and 8, so it is not prime: it is a **composite** number."},
+      {"h": "The rectangle test", "p": "Try to arrange the number as dots in a rectangle with more than one row. 12 dots make 3 rows of 4, so 12 is not prime. 7 dots only fit in one row, so 7 is prime."},
+      {"h": "1 and 2 are special", "p": "1 is **not** a prime number, because it has only one factor (itself). 2 **is** prime, and it is the only even prime number. Every other even number can be divided by 2."}
+    ],
+    "examples": ["The prime numbers up to 30 are 2, 3, 5, 7, 11, 13, 17, 19, 23 and 29.", "9 is not prime: 9 = 3 × 3.", "31 is prime: no whole number from 2 to 5 divides into it exactly."],
+    "mistake": "Thinking every odd number is prime. 9, 15, 21 and 25 are odd, but they are not prime: 15 = 3 × 5.",
+    "quiz": [
+      {"q": "Which of these is a prime number?", "options": ["17", "21", "27", "1"], "answer": 0, "explain": "17 can only be divided exactly by 1 and 17. 21 = 3 × 7, 27 = 3 × 9, and 1 is not prime."},
+      {"q": "How many even prime numbers are there?", "options": ["Just one: 2", "None", "Lots", "Two: 2 and 4"], "answer": 0, "explain": "2 is the only even prime. Every other even number has 2 as a factor, so it has more than two factors."}
+    ],
+    "faq": [
+      ["Is 1 a prime number?", "No. A prime number has exactly two factors, 1 and itself. The number 1 has only one factor, so it is not prime (and it is not composite either)."],
+      ["Is 2 a prime number?", "Yes. 2 has exactly two factors, 1 and 2. It is the smallest prime number and the only even one."],
+      ["How do I check if a number is prime?", "Try dividing it by 2, 3, 5, 7 and the other primes up to its square root. If none of them divide exactly, it is prime. For 37, try 2, 3 and 5 (because 7 × 7 = 49 is too big): none work, so 37 is prime."]
+    ],
+    "practise": ["Factors, primes and powers questions", "/question-bank/maths/factors-primes-and-powers/"],
+    "related": ["factor", "square-number", "multiple"]
+  },
+  {
+    "slug": "factor", "icon": "🧩", "name": "a factor",
+    "short": "A factor is a whole number that divides into another number exactly, with nothing left over. The factors of 12 are 1, 2, 3, 4, 6 and 12.",
+    "fig": {"type": "array", "rows": 3, "cols": 4},
+    "fig_note": "12 dots in 3 rows of 4: so 3 and 4 are factors of 12.",
+    "sections": [
+      {"h": "Factors come in pairs", "p": "Factors of a number multiply together in pairs to make it. For 12: 1 × 12, 2 × 6 and 3 × 4. So the factors of 12 are 1, 2, 3, 4, 6 and 12."},
+      {"h": "How to find them all", "p": "Start at 1 and work upwards, writing each pair. Stop when the pairs meet in the middle. For 18: 1 × 18, 2 × 9, 3 × 6. 4 and 5 don't work, and the next is 6, which we already have. So the factors are 1, 2, 3, 6, 9, 18."},
+      {"h": "Factors and multiples", "p": "Factors go **into** a number. Multiples come **out of** the times table. 4 is a factor of 12, and 12 is a multiple of 4."}
+    ],
+    "examples": ["Factors of 20: 1, 2, 4, 5, 10, 20.", "Factors of 7: 1 and 7 (so 7 is prime).", "Common factors of 12 and 18: 1, 2, 3 and 6. The highest common factor is 6."],
+    "mistake": "Forgetting 1 and the number itself. Every whole number bigger than 1 has at least two factors: 1 and itself.",
+    "quiz": [
+      {"q": "Which number is NOT a factor of 24?", "options": ["5", "3", "8", "12"], "answer": 0, "explain": "24 ÷ 5 = 4 remainder 4, so 5 is not a factor. 3 × 8 = 24 and 2 × 12 = 24."},
+      {"q": "How many factors does 16 have?", "options": ["5", "4", "6", "8"], "answer": 0, "explain": "1 × 16, 2 × 8, 4 × 4. The factors are 1, 2, 4, 8, 16: five factors (4 is only counted once)."}
+    ],
+    "faq": [
+      ["What is the difference between a factor and a multiple?", "A factor divides into a number exactly; a multiple is in the number's times table. 3 is a factor of 15, and 15 is a multiple of 3."],
+      ["What is a common factor?", "A number that is a factor of two or more numbers. 4 is a common factor of 8 and 12."]
+    ],
+    "practise": ["Factors, primes and powers questions", "/question-bank/maths/factors-primes-and-powers/"],
+    "related": ["multiple", "prime-number", "square-number"]
+  },
+  {
+    "slug": "multiple", "icon": "✖️", "name": "a multiple",
+    "short": "A multiple of a number is what you get when you multiply it by a whole number. The multiples of 4 are 4, 8, 12, 16, 20 and so on: the 4 times table.",
+    "sections": [
+      {"h": "The times table, forever", "p": "Multiples of 6 are 6, 12, 18, 24, 30... They carry on for ever, so a number has infinitely many multiples."},
+      {"h": "Common multiples", "p": "A common multiple is in both times tables. Multiples of 4: 4, 8, **12**, 16, 20, **24**. Multiples of 6: 6, **12**, 18, **24**. So 12 and 24 are common multiples, and 12 is the lowest common multiple (LCM)."},
+      {"h": "Quick checks", "p": "A multiple of 2 ends in 0, 2, 4, 6 or 8. A multiple of 5 ends in 0 or 5. A multiple of 10 ends in 0. A multiple of 3 has digits that add up to a multiple of 3: for 51, 5 + 1 = 6, so 51 is a multiple of 3."}
+    ],
+    "examples": ["The first five multiples of 7: 7, 14, 21, 28, 35.", "60 is a multiple of 2, 3, 4, 5, 6, 10, 12, 15, 20, 30 and 60.", "The lowest common multiple of 3 and 5 is 15."],
+    "mistake": "Mixing up factors and multiples. Multiples of a number are usually bigger than it (or equal); factors are smaller (or equal).",
+    "quiz": [
+      {"q": "Which is a multiple of 8?", "options": ["56", "36", "44", "4"], "answer": 0, "explain": "8 × 7 = 56. 36 and 44 are not in the 8 times table, and 4 is a factor of 8, not a multiple."},
+      {"q": "What is the lowest common multiple of 4 and 6?", "options": ["12", "24", "2", "10"], "answer": 0, "explain": "Multiples of 4: 4, 8, 12... Multiples of 6: 6, 12... The first one in both lists is 12."}
+    ],
+    "faq": [
+      ["Is a number a multiple of itself?", "Yes. 5 × 1 = 5, so 5 is a multiple of 5 (the first one)."],
+      ["What is the LCM?", "The lowest common multiple: the smallest number that is a multiple of two or more numbers. The LCM of 6 and 8 is 24."]
+    ],
+    "practise": ["Factors, primes and powers questions", "/question-bank/maths/factors-primes-and-powers/"],
+    "related": ["factor", "prime-number"]
+  },
+  {
+    "slug": "square-number", "icon": "⬛", "name": "a square number",
+    "short": "A square number is what you get when you multiply a whole number by itself. 1, 4, 9, 16 and 25 are square numbers, because 1 × 1 = 1, 2 × 2 = 4, 3 × 3 = 9 and so on.",
+    "fig": {"type": "array", "rows": 4, "cols": 4},
+    "fig_note": "16 dots make a perfect square: 4 rows of 4. So 16 is a square number.",
+    "sections": [
+      {"h": "Why “square”?", "p": "A square number of dots can be arranged in a square, with the same number of rows and columns. 9 dots make 3 rows of 3."},
+      {"h": "How we write it", "p": "4 × 4 can be written 4² and read “4 squared”. The small 2 means “times by itself”. 4² = 16."},
+      {"h": "Square roots", "p": "Going backwards is the **square root**. The square root of 16 is 4, because 4 × 4 = 16. We write √16 = 4."}
+    ],
+    "examples": ["The square numbers up to 144: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144.", "7² = 49.", "√81 = 9."],
+    "mistake": "Thinking 4² means 4 × 2. It means 4 × 4 = 16, not 8.",
+    "quiz": [
+      {"q": "What is 6²?", "options": ["36", "12", "8", "66"], "answer": 0, "explain": "6² = 6 × 6 = 36."},
+      {"q": "Which of these is a square number?", "options": ["64", "50", "20", "32"], "answer": 0, "explain": "64 = 8 × 8. None of the others is a whole number times itself."}
+    ],
+    "faq": [
+      ["Is 1 a square number?", "Yes: 1 × 1 = 1. It is the first square number."],
+      ["What is the difference between squared and square root?", "Squaring multiplies a number by itself (5² = 25). The square root goes back the other way (√25 = 5)."]
+    ],
+    "practise": ["Factors, primes and powers questions", "/question-bank/maths/factors-primes-and-powers/"],
+    "related": ["power-index", "prime-number", "factor"]
+  },
+  {
+    "slug": "fraction", "icon": "🍕", "name": "a fraction",
+    "short": "A fraction is a part of a whole. The bottom number (denominator) says how many equal parts the whole is split into, and the top number (numerator) says how many of those parts you have.",
+    "fig": {"type": "pie", "n": 3, "d": 4},
+    "fig_note": "3 of the 4 equal parts are shaded: that is {3/4}, three quarters.",
+    "sections": [
+      {"h": "Top and bottom", "p": "In {3/4}, the denominator 4 means the whole is cut into 4 **equal** parts. The numerator 3 means we have 3 of them."},
+      {"h": "Equal parts matter", "p": "A pizza cut into 4 parts of different sizes is not split into quarters. Fractions only work when the parts are the same size."},
+      {"h": "Fractions of amounts", "p": "To find {1/4} of 20, divide by the bottom: 20 ÷ 4 = 5. To find {3/4} of 20, then multiply by the top: 5 × 3 = 15."}
+    ],
+    "examples": ["{1/2} is one half: 1 of 2 equal parts.", "{5/8} of a cake is 5 slices of a cake cut into 8 equal slices.", "{2/3} of 12 = 12 ÷ 3 × 2 = 8."],
+    "mistake": "Thinking a bigger denominator means a bigger fraction. {1/8} is smaller than {1/4}: the more parts you cut a whole into, the smaller each part is.",
+    "quiz": [
+      {"q": "Which fraction is bigger?", "options": ["{1/3}", "{1/5}"], "answer": 0, "explain": "Thirds are bigger pieces than fifths, because the whole is shared between fewer parts."},
+      {"q": "What is {3/5} of 20?", "options": ["12", "4", "15", "60"], "answer": 0, "explain": "20 ÷ 5 = 4, and 4 × 3 = 12."}
+    ],
+    "faq": [
+      ["What are the numerator and denominator?", "The numerator is the top number (how many parts you have). The denominator is the bottom number (how many equal parts make the whole)."],
+      ["What is an improper fraction?", "A fraction where the top is bigger than the bottom, like {7/4}. It is more than one whole: {7/4} is the same as 1 and {3/4}."]
+    ],
+    "practise": ["Fractions practice with pictures", "/maths/fractions/"],
+    "related": ["equivalent-fractions", "numerator", "denominator", "percentage"]
+  },
+  {
+    "slug": "equivalent-fractions", "icon": "⚖️", "name": "an equivalent fraction",
+    "short": "Equivalent fractions are different fractions that show the same amount. {1/2}, {2/4} and {4/8} are equivalent: they are all one half.",
+    "fig": {"type": "bars", "rows": [{"n": 1, "d": 2}, {"n": 2, "d": 4}, {"n": 4, "d": 8}]},
+    "fig_note": "The same amount is shaded in every bar: {1/2} = {2/4} = {4/8}.",
+    "sections": [
+      {"h": "Multiply top and bottom", "p": "Multiply the top and the bottom by the **same** number and you get an equivalent fraction. {2/3} × 2 on top and bottom gives {4/6}."},
+      {"h": "Divide to simplify", "p": "Dividing the top and bottom by the same number also gives an equivalent fraction. {6/9}: divide both by 3 to get {2/3}. This is called simplifying."},
+      {"h": "Why it's useful", "p": "To add or compare fractions, it helps to give them the same denominator. {1/2} and {1/3} become {3/6} and {2/6}."}
+    ],
+    "examples": ["{1/3} = {2/6} = {3/9} = {4/12}.", "{3/4} = {75/100}, which is 75%.", "{10/15} simplifies to {2/3}."],
+    "mistake": "Adding the same number to the top and bottom. {1/2} → {2/3} is NOT equivalent. You must multiply or divide.",
+    "quiz": [
+      {"q": "Which fraction is equivalent to {2/5}?", "options": ["{4/10}", "{3/6}", "{2/10}", "{4/5}"], "answer": 0, "explain": "Multiply top and bottom by 2: {2/5} = {4/10}."},
+      {"q": "Simplify {8/12}.", "options": ["{2/3}", "{4/6} is already simplest", "{1/4}", "{3/4}"], "answer": 0, "explain": "Divide top and bottom by 4: {8/12} = {2/3}. ({4/6} is equivalent but can still be simplified.)"}
+    ],
+    "faq": [
+      ["How do I know if two fractions are equivalent?", "Simplify both. If they end up as the same fraction, they are equivalent. Or cross-multiply: for {2/3} and {6/9}, 2 × 9 = 18 and 3 × 6 = 18, so they are equal."]
+    ],
+    "practise": ["Equivalent fractions unit", "/maths/fractions/equivalent-fractions/"],
+    "related": ["fraction", "simplify", "percentage"]
+  },
+  {
+    "slug": "percentage", "icon": "💯", "name": "a percentage",
+    "short": "A percentage is a number out of 100. Per cent means “out of 100”, so 45% means 45 out of every 100.",
+    "fig": {"type": "hundred", "shade": 45},
+    "fig_note": "45 of the 100 squares are shaded: 45%.",
+    "sections": [
+      {"h": "The whole is 100%", "p": "All of something is 100%. Half is 50%, a quarter is 25%, and a tenth is 10%."},
+      {"h": "Finding a percentage of an amount", "p": "Find 10% by dividing by 10, then build up. 30% of 80: 10% is 8, so 30% is 3 × 8 = 24."},
+      {"h": "Fractions, decimals, percentages", "p": "They are three ways to write the same amount. {1/4} = 0.25 = 25%. To change a decimal to a percentage, multiply by 100."}
+    ],
+    "examples": ["50% of 40 is 20.", "A test score of 18 out of 20 is 90%, because {18/20} = {90/100}.", "25% off a £60 coat saves £15."],
+    "mistake": "Thinking 5% of a number is “divide by 5”. 5% is half of 10%: 5% of 60 is 3, not 12.",
+    "quiz": [
+      {"q": "What is 10% of 250?", "options": ["25", "2.5", "10", "240"], "answer": 0, "explain": "10% means divide by 10: 250 ÷ 10 = 25."},
+      {"q": "Which is the same as 0.6?", "options": ["60%", "6%", "0.6%", "600%"], "answer": 0, "explain": "Multiply by 100: 0.6 × 100 = 60, so 0.6 = 60%."}
+    ],
+    "faq": [
+      ["How do I work out a percentage of a number?", "Find 10% (divide by 10) or 1% (divide by 100), then multiply up. 35% of 200: 10% is 20, 5% is 10, so 35% is 3 × 20 + 10 = 70."],
+      ["Can a percentage be more than 100%?", "Yes. 150% of 40 is 60: the whole (40) plus half of it again (20)."]
+    ],
+    "practise": ["Decimals and percentages practice (ages 9 to 11)", "/maths/decimals-and-percentages/"],
+    "related": ["fraction", "equivalent-fractions", "ratio"]
+  },
+  {
+    "slug": "ratio", "icon": "🍹", "name": "a ratio",
+    "short": "A ratio compares two or more amounts. A ratio of 1 : 3 for squash to water means 1 part squash for every 3 parts water.",
+    "sections": [
+      {"h": "Parts, not totals", "p": "In squash and water 1 : 3, there are 1 + 3 = 4 parts altogether. So squash is {1/4} of the drink and water is {3/4}."},
+      {"h": "Simplifying ratios", "p": "Divide every part by the same number. 10 : 15 divided by 5 is 2 : 3. It is the same mix, written more simply."},
+      {"h": "Sharing in a ratio", "p": "Share £20 in the ratio 3 : 2. Total parts: 3 + 2 = 5. One part: £20 ÷ 5 = £4. So the shares are 3 × £4 = £12 and 2 × £4 = £8."}
+    ],
+    "examples": ["A class has 12 boys and 15 girls. Boys : girls = 12 : 15 = 4 : 5.", "A recipe uses 2 cups of flour for every 1 cup of sugar: 2 : 1.", "Share 30 sweets in the ratio 1 : 2: 10 and 20."],
+    "mistake": "Dividing by the wrong number when sharing. For 3 : 2, divide by the total number of parts (5), not by 3 or 2.",
+    "quiz": [
+      {"q": "Simplify 6 : 9.", "options": ["2 : 3", "3 : 6", "1 : 3", "6 : 3"], "answer": 0, "explain": "Divide both by 3: 6 : 9 = 2 : 3."},
+      {"q": "Share 24 in the ratio 1 : 3. What is the bigger share?", "options": ["18", "6", "8", "21"], "answer": 0, "explain": "4 parts: 24 ÷ 4 = 6 per part. The bigger share is 3 × 6 = 18."}
+    ],
+    "faq": [
+      ["Does the order of a ratio matter?", "Yes. Squash : water 1 : 3 is a different drink from 3 : 1. Always keep the order the question gives."],
+      ["How is a ratio different from a fraction?", "A ratio compares part to part (1 : 3). A fraction compares a part to the whole ({1/4} of the drink is squash)."]
+    ],
+    "practise": ["Ratio and proportion questions", "/question-bank/maths/ratio-and-proportion/"],
+    "related": ["proportion", "fraction", "simplify"]
+  },
+  {
+    "slug": "mean-median-mode-range", "icon": "📊", "name": "the mean, median, mode and range",
+    "title": "What are the mean, median, mode and range?",
+    "short": "They describe a set of numbers. The mean is the total shared equally, the median is the middle value, the mode is the most common value, and the range is the biggest minus the smallest.",
+    "sections": [
+      {"h": "Mean", "p": "Add up all the values, then divide by how many there are. For 3, 5, 7, 9: total 24, four values, so the mean is 24 ÷ 4 = 6."},
+      {"h": "Median", "p": "Put the values **in order** and find the middle one. For 2, 4, 9, 10, 15 the median is 9. If there are two middle values, the median is halfway between them: for 2, 4, 8, 10 it is 6."},
+      {"h": "Mode and range", "p": "The mode is the value that appears most often: in 1, 3, 3, 5 it is 3. The range is the biggest value minus the smallest: in 1, 3, 3, 5 it is 5 − 1 = 4. The range shows how spread out the numbers are."}
+    ],
+    "examples": ["Scores 4, 6, 6, 8, 11: mean = 35 ÷ 5 = 7, median = 6, mode = 6, range = 11 − 4 = 7.", "Shoe sizes 3, 4, 4, 4, 5, 6: the mode is 4."],
+    "mistake": "Finding the median without putting the numbers in order first. For 9, 2, 5 the median is 5, not 2.",
+    "quiz": [
+      {"q": "What is the mean of 2, 4, 6, 8?", "options": ["5", "4", "6", "20"], "answer": 0, "explain": "Total 20, four numbers: 20 ÷ 4 = 5."},
+      {"q": "What is the range of 12, 3, 9, 7?", "options": ["9", "7", "12", "3"], "answer": 0, "explain": "Biggest 12, smallest 3: 12 − 3 = 9."}
+    ],
+    "faq": [
+      ["How can I remember which is which?", "Mode = Most (most common). Median = Middle (like the median strip in the middle of a road). Mean = the one where you share out evenly. Range = from smallest to biggest."],
+      ["Can there be more than one mode?", "Yes. In 2, 2, 5, 7, 7 both 2 and 7 are modes. If every value appears once, there is no mode."]
+    ],
+    "practise": ["Statistics questions", "/question-bank/maths/statistics/"],
+    "related": ["mean", "median", "mode", "range"]
+  },
+  {
+    "slug": "perimeter", "icon": "🧱", "name": "perimeter",
+    "short": "The perimeter is the total distance all the way around the outside of a shape. Add up the lengths of all the sides.",
+    "fig": {"type": "shape", "name": "rectangle"},
+    "fig_note": "For a rectangle 7 cm by 3 cm, the perimeter is 7 + 3 + 7 + 3 = 20 cm.",
+    "sections": [
+      {"h": "Walk around the edge", "p": "Imagine an ant walking all the way round the edge of a shape. The distance it walks is the perimeter. It is a length, so it is measured in mm, cm, m or km."},
+      {"h": "Rectangles", "p": "A rectangle has two pairs of equal sides. Perimeter = 2 × length + 2 × width. For 8 m by 5 m: 16 + 10 = 26 m."},
+      {"h": "Missing sides", "p": "For an L-shape, work out any missing lengths first, using the sides you know. Then add every side once."}
+    ],
+    "examples": ["A square with sides of 6 cm has a perimeter of 4 × 6 = 24 cm.", "A triangle with sides 5 cm, 5 cm and 4 cm has a perimeter of 14 cm."],
+    "mistake": "Mixing up perimeter and area. Perimeter is round the edge (cm); area is the space inside (cm²).",
+    "quiz": [
+      {"q": "A rectangle is 10 cm long and 4 cm wide. What is its perimeter?", "options": ["28 cm", "40 cm", "14 cm", "24 cm"], "answer": 0, "explain": "10 + 4 + 10 + 4 = 28 cm."},
+      {"q": "A square has a perimeter of 36 m. How long is each side?", "options": ["9 m", "6 m", "18 m", "12 m"], "answer": 0, "explain": "A square has 4 equal sides: 36 ÷ 4 = 9 m."}
+    ],
+    "faq": [
+      ["What units is perimeter measured in?", "Units of length, such as cm or m. Not cm², which is for area."]
+    ],
+    "practise": ["Perimeter, area and volume questions", "/question-bank/maths/perimeter-area-and-volume/"],
+    "related": ["area", "volume", "polygon"]
+  },
+  {
+    "slug": "area", "icon": "🟩", "name": "area",
+    "short": "Area is the amount of flat space inside a shape. It is measured in square units, like cm² or m². For a rectangle, area = length × width.",
+    "fig": {"type": "array", "rows": 3, "cols": 5},
+    "fig_note": "Count the squares: 3 rows of 5 = 15 squares. If each is 1 cm², the area is 15 cm².",
+    "sections": [
+      {"h": "Counting squares", "p": "Area tells you how many unit squares fit inside a shape. A shape covering 12 squares, each 1 cm by 1 cm, has an area of 12 cm²."},
+      {"h": "Rectangles", "p": "Instead of counting, multiply: area = length × width. A rectangle 6 m by 4 m has area 24 m²."},
+      {"h": "Triangles", "p": "A triangle is half of a rectangle: area = base × height ÷ 2. A triangle with base 10 cm and height 6 cm has area 30 cm²."}
+    ],
+    "examples": ["A square with sides of 5 cm: 5 × 5 = 25 cm².", "A room 4 m by 3 m: 12 m² of carpet.", "A triangle with base 8 cm and height 5 cm: 8 × 5 ÷ 2 = 20 cm²."],
+    "mistake": "Writing area in cm instead of cm². The little 2 shows you are counting squares.",
+    "quiz": [
+      {"q": "What is the area of a rectangle 9 cm long and 3 cm wide?", "options": ["27 cm²", "24 cm²", "12 cm²", "27 cm"], "answer": 0, "explain": "9 × 3 = 27, and area is in square units: 27 cm²."},
+      {"q": "A triangle has base 6 m and height 4 m. What is its area?", "options": ["12 m²", "24 m²", "10 m²", "20 m²"], "answer": 0, "explain": "6 × 4 ÷ 2 = 12 m²."}
+    ],
+    "faq": [
+      ["What is the difference between area and perimeter?", "Area is the space inside a shape (cm²). Perimeter is the distance around the edge (cm)."],
+      ["Why is area in square units?", "Because area counts how many squares (such as 1 cm by 1 cm squares) cover the shape."]
+    ],
+    "practise": ["Perimeter, area and volume questions", "/question-bank/maths/perimeter-area-and-volume/"],
+    "related": ["perimeter", "volume"]
+  },
+  {
+    "slug": "volume", "icon": "🧊", "name": "volume",
+    "short": "Volume is the amount of space a 3D object takes up. It is measured in cube units, like cm³ or m³. For a cuboid, volume = length × width × height.",
+    "sections": [
+      {"h": "Counting cubes", "p": "Volume tells you how many unit cubes fit inside a shape. A box that holds 24 cubes, each 1 cm on every side, has a volume of 24 cm³."},
+      {"h": "Cuboids", "p": "Multiply the three lengths: volume = length × width × height. A box 5 cm by 3 cm by 2 cm has volume 30 cm³."},
+      {"h": "Volume and capacity", "p": "Capacity is how much a container holds, often in millilitres or litres. 1 cm³ holds exactly 1 ml, so a 1000 cm³ box holds 1 litre."}
+    ],
+    "examples": ["A cube with 3 cm sides: 3 × 3 × 3 = 27 cm³.", "A fish tank 50 cm × 30 cm × 20 cm = 30,000 cm³, which holds 30 litres."],
+    "mistake": "Adding the lengths instead of multiplying them, or writing cm² for volume. Volume needs cm³.",
+    "quiz": [
+      {"q": "What is the volume of a cuboid 4 cm by 3 cm by 2 cm?", "options": ["24 cm³", "9 cm³", "24 cm²", "14 cm³"], "answer": 0, "explain": "4 × 3 × 2 = 24 cm³."},
+      {"q": "How many ml does 1 cm³ hold?", "options": ["1 ml", "10 ml", "100 ml", "1000 ml"], "answer": 0, "explain": "1 cm³ = 1 ml, so 1000 cm³ = 1 litre."}
+    ],
+    "faq": [
+      ["What is the difference between area and volume?", "Area is flat space (cm²), for 2D shapes. Volume is the space inside a 3D object (cm³)."]
+    ],
+    "practise": ["Perimeter, area and volume questions", "/question-bank/maths/perimeter-area-and-volume/"],
+    "related": ["area", "perimeter", "density"]
+  },
+  {
+    "slug": "negative-number", "icon": "🌡️", "name": "a negative number",
+    "short": "A negative number is a number less than zero. It is written with a minus sign, like −3. You see negative numbers on thermometers when it is below freezing.",
+    "sections": [
+      {"h": "Below zero", "p": "If it is 2 °C and the temperature drops 5 degrees, it becomes −3 °C. Counting down past 0: 2, 1, 0, −1, −2, −3."},
+      {"h": "Which is bigger?", "p": "On a number line, the number further right is bigger. So −2 is bigger than −7, even though 7 is bigger than 2. Think of temperature: −2 °C is warmer than −7 °C."},
+      {"h": "Adding and subtracting", "p": "Use a number line. −4 + 6: start at −4 and move 6 right to reach 2. 3 − 8: start at 3 and move 8 left to reach −5."}
+    ],
+    "examples": ["−5 °C is colder than −1 °C.", "A bank balance of −£20 means you owe £20.", "−3 + 10 = 7."],
+    "mistake": "Thinking −8 is bigger than −3 because 8 is bigger than 3. With negatives, it is the other way round.",
+    "quiz": [
+      {"q": "Which is the biggest?", "options": ["−1", "−4", "−10", "−6"], "answer": 0, "explain": "−1 is closest to 0, so it is furthest right on the number line: the biggest."},
+      {"q": "The temperature is 3 °C and drops 7 degrees. What is it now?", "options": ["−4 °C", "4 °C", "−10 °C", "10 °C"], "answer": 0, "explain": "From 3, count down 7: 2, 1, 0, −1, −2, −3, −4."}
+    ],
+    "faq": [
+      ["Is zero a negative number?", "No. Zero is neither negative nor positive."],
+      ["What is the difference between −3 and 3?", "They are the same distance from 0 but on opposite sides. 3 − (−3) = 6, so they are 6 apart."]
+    ],
+    "practise": ["Negative numbers questions", "/question-bank/maths/negative-numbers/"],
+    "related": ["number-line", "integer"]
+  },
+  {
+    "slug": "place-value", "icon": "🔢", "name": "place value",
+    "short": "Place value is the value a digit has because of where it is in a number. In 352, the 3 is worth 300, the 5 is worth 50 and the 2 is worth 2.",
+    "fig": {"type": "pv", "n": "352", "cols": ["H", "T", "O"]},
+    "fig_note": "3 hundreds, 5 tens and 2 ones make 352.",
+    "sections": [
+      {"h": "Columns", "p": "From the right, the columns are ones, tens, hundreds, thousands, ten thousands, and so on. Each column is worth 10 times the one to its right."},
+      {"h": "Zero holds a place", "p": "In 405, the 0 shows there are no tens. Without it, 405 would become 45, a very different number."},
+      {"h": "Decimals too", "p": "After the decimal point come tenths, then hundredths. In 2.75, the 7 is worth 7 tenths (0.7) and the 5 is worth 5 hundredths (0.05)."}
+    ],
+    "examples": ["In 6,481 the 6 is worth 6,000.", "In 90,213 the 9 is worth 90,000.", "In 0.38 the 8 is worth 8 hundredths."],
+    "mistake": "Saying the value of the 5 in 352 is 5. Its digit is 5, but its value is 50.",
+    "quiz": [
+      {"q": "What is the value of the 7 in 47,215?", "options": ["7,000", "700", "70,000", "7"], "answer": 0, "explain": "The 7 is in the thousands column, so it is worth 7,000."},
+      {"q": "What number is 4 thousands, 0 hundreds, 6 tens and 2 ones?", "options": ["4,062", "4,620", "462", "40,062"], "answer": 0, "explain": "4,000 + 0 + 60 + 2 = 4,062. The 0 holds the hundreds place."}
+    ],
+    "faq": [
+      ["Why does place value matter?", "It is how our number system works. It lets us write any number with just ten digits, and it is the key to adding, subtracting and multiplying by 10, 100 and 1000."]
+    ],
+    "practise": ["Place value practice (ages 9 to 11)", "/maths/place-value/"],
+    "related": ["rounding", "decimal-place"]
+  },
+  {
+    "slug": "angle-types", "icon": "📐", "name": "acute, obtuse and reflex angles",
+    "title": "What are acute, obtuse, right and reflex angles?",
+    "short": "Angles are named by their size. An acute angle is less than 90°, a right angle is exactly 90°, an obtuse angle is between 90° and 180°, and a reflex angle is between 180° and 360°.",
+    "sections": [
+      {"h": "Measuring turn", "p": "An angle measures how much something turns, in degrees (°). A full turn is 360°. A half turn (a straight line) is 180°, and a quarter turn is 90°."},
+      {"h": "The four types", "p": "**Acute**: less than 90° (sharp, like a pizza slice). **Right**: exactly 90° (a square corner). **Obtuse**: more than 90° but less than 180° (wide open). **Reflex**: more than 180° but less than 360° (more than a straight line)."},
+      {"h": "Angle facts", "p": "Angles on a straight line add up to 180°. Angles round a point add up to 360°. The angles in a triangle add up to 180°."}
+    ],
+    "examples": ["45° is acute.", "The corner of a book is a right angle.", "135° is obtuse.", "270° is reflex."],
+    "mistake": "Calling 180° obtuse. An angle of exactly 180° is a straight line; obtuse angles are less than 180°.",
+    "quiz": [
+      {"q": "What type of angle is 100°?", "options": ["Obtuse", "Acute", "Reflex", "Right"], "answer": 0, "explain": "100° is more than 90° and less than 180°, so it is obtuse."},
+      {"q": "Two angles sit on a straight line. One is 70°. What is the other?", "options": ["110°", "290°", "20°", "70°"], "answer": 0, "explain": "Angles on a straight line add up to 180°: 180 − 70 = 110°."}
+    ],
+    "faq": [
+      ["How can I remember acute and obtuse?", "Acute sounds like “a cute little angle”: small. Obtuse angles are big and wide."]
+    ],
+    "practise": ["Angles practice (ages 9 to 11)", "/maths/shapes/angles/"],
+    "related": ["angle", "right-angle", "acute-angle", "obtuse-angle", "polygon"]
+  },
+  {
+    "slug": "probability", "icon": "🎲", "name": "probability",
+    "short": "Probability is how likely something is to happen. It goes from 0 (impossible) to 1 (certain), and can be written as a fraction, a decimal or a percentage.",
+    "sections": [
+      {"h": "The probability scale", "p": "Impossible = 0. Unlikely is closer to 0. An even chance = {1/2}. Likely is closer to 1. Certain = 1."},
+      {"h": "Working it out", "p": "If all outcomes are equally likely: probability = number of ways it can happen ÷ total number of outcomes. A fair dice has 6 sides, so the probability of rolling a 4 is {1/6}."},
+      {"h": "It not happening", "p": "The probability of something not happening is 1 minus the probability that it does. P(not a 4) = 1 − {1/6} = {5/6}."}
+    ],
+    "examples": ["Flipping a fair coin: P(heads) = {1/2}.", "A bag has 3 red and 7 blue counters. P(red) = {3/10}.", "Rolling a 7 on a normal dice: probability 0, impossible."],
+    "mistake": "Thinking that after 5 heads in a row, tails is “due”. A fair coin has no memory: the probability is still {1/2}.",
+    "quiz": [
+      {"q": "A fair dice is rolled. What is the probability of an even number?", "options": ["{1/2}", "{1/6}", "{1/3}", "{2/3}"], "answer": 0, "explain": "Even numbers: 2, 4, 6. That is 3 out of 6 outcomes: {3/6} = {1/2}."},
+      {"q": "Which word fits a probability of 0?", "options": ["Impossible", "Unlikely", "Even chance", "Certain"], "answer": 0, "explain": "0 means it cannot happen."}
+    ],
+    "faq": [
+      ["Can a probability be bigger than 1?", "No. 1 means certain, and nothing can be more likely than certain. Probabilities are always from 0 to 1."]
+    ],
+    "practise": ["Probability questions", "/question-bank/maths/probability/"],
+    "related": ["outcome", "fair"]
+  },
+  {
+    "slug": "equation", "icon": "🟰", "name": "an equation",
+    "short": "An equation says that two things are equal, using an = sign. It often has an unknown number, written as a letter, like x + 5 = 12. Solving it means finding the number: here x = 7.",
+    "sections": [
+      {"h": "A balance", "p": "Think of an equation as a balanced scale. Both sides weigh the same. Whatever you do to one side, you must do to the other to keep it balanced."},
+      {"h": "Solving with inverse operations", "p": "Undo what has been done to the letter. In 3x = 21, x has been multiplied by 3, so divide both sides by 3: x = 7. In x − 4 = 10, add 4 to both sides: x = 14."},
+      {"h": "Two steps", "p": "2x + 3 = 13. First take 3 from both sides: 2x = 10. Then divide both sides by 2: x = 5. Check: 2 × 5 + 3 = 13 ✓."}
+    ],
+    "examples": ["x + 8 = 15, so x = 7.", "5y = 40, so y = 8.", "{n/2} = 9, so n = 18."],
+    "mistake": "Doing something to only one side. If you subtract 3 on the left, you must subtract 3 on the right too.",
+    "quiz": [
+      {"q": "Solve x + 9 = 20.", "options": ["x = 11", "x = 29", "x = 9", "x = 20"], "answer": 0, "explain": "Take 9 from both sides: x = 20 − 9 = 11."},
+      {"q": "Solve 4x − 2 = 18.", "options": ["x = 5", "x = 4", "x = 20", "x = 4.5"], "answer": 0, "explain": "Add 2: 4x = 20. Divide by 4: x = 5. Check: 4 × 5 − 2 = 18 ✓."}
+    ],
+    "faq": [
+      ["What is the difference between an equation and an expression?", "An equation has an = sign and can be solved (x + 2 = 5). An expression has no = sign (x + 2); you can simplify it but not solve it."]
+    ],
+    "practise": ["Equations questions", "/question-bank/maths/equations/"],
+    "related": ["expression", "variable", "inverse-operation", "solve"]
+  }
+]

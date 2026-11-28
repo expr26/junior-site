@@ -1594,6 +1594,131 @@
           "a": "Both heat a solution. Evaporation just lets the water escape, so you keep the solid. Distillation catches the steam and cools it, so you also collect pure water."
         }
       ]
+    },
+    {
+      "slug": "bar-builder",
+      "title": "Bar Chart Builder",
+      "icon": "📊",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Read a table, then build the bar chart: scales that go up in 1s, 2s, 5s and 10s, and bars that stop halfway.",
+      "live": true,
+      "learn": "Reading tables, drawing bar charts on different scales, reading values between lines, and comparing and totalling bars.",
+      "topic": "/maths/graphs-and-data/",
+      "topic_title": "Graphs and data practice",
+      "curriculum": {
+        "KS2": "Statistics: interpret and present data in bar charts, pictograms and tables; solve comparison, sum and difference problems",
+        "PYP": "Data handling: collecting, displaying and interpreting data"
+      },
+      "guide_title": "Bar charts: a quick guide",
+      "guide": [
+        {
+          "h": "Parts of a bar chart",
+          "p": "A bar chart has a title, labels along the bottom for each group, and a scale up the side. The height of each bar shows how many."
+        },
+        {
+          "h": "Check the scale first",
+          "p": "The scale might go up in 1s, 2s, 5s or 10s. Work out what each line is worth before you draw or read a bar. If the lines go up in 2s, the number 5 is halfway between 4 and 6."
+        },
+        {
+          "h": "Answering questions",
+          "p": "The tallest bar is the biggest group. To compare two bars, subtract. To find the total, add every bar."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do you draw a bar chart?",
+          "a": "Draw the two axes, choose a scale that fits your biggest number, label each bar along the bottom, then draw each bar up to its value. Give the chart a title and label the scale."
+        },
+        {
+          "q": "What is the difference between a bar chart and a pictogram?",
+          "a": "Both compare groups. A pictogram uses symbols, and each symbol can stand for several things. A bar chart uses bars measured against a scale."
+        }
+      ]
+    },
+    {
+      "slug": "food-detective",
+      "title": "Food Detective",
+      "icon": "🥦",
+      "subject": "science",
+      "kind": "game",
+      "blurb": "Bread, eggs, butter, oranges and milk: work out which nutrient each food gives you, then pick a balanced lunch.",
+      "live": true,
+      "learn": "The nutrient groups (carbohydrate, protein, fat, vitamins, minerals, fibre and water), what each does, and what a balanced meal looks like.",
+      "topic": "/question-bank/biology/nutrition-and-digestion/",
+      "topic_title": "Nutrition and digestion questions",
+      "curriculum": {
+        "KS3": "Biology: content of a healthy human diet; the consequences of imbalances in the diet",
+        "KS2": "Year 3 and Year 6 science: animals, including humans (nutrition and a healthy diet)",
+        "PYP": "Who we are: health and well-being"
+      },
+      "guide_title": "Nutrients: a quick guide",
+      "guide": [
+        {
+          "h": "Energy foods",
+          "p": "Carbohydrates, like bread, rice and pasta, are your main source of energy. Fats, like butter and oil, store energy and help keep you warm."
+        },
+        {
+          "h": "Growing foods",
+          "p": "Protein, from meat, fish, eggs, beans and lentils, is used to grow and repair your body."
+        },
+        {
+          "h": "Keeping healthy",
+          "p": "You only need small amounts of vitamins and minerals, but they matter: vitamin C for skin and gums, calcium for bones and teeth, iron for your blood. Fibre keeps food moving through your gut, and every cell needs water."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is a balanced diet?",
+          "a": "Eating a variety of foods, so you get every nutrient in the right amounts. No single food has everything you need."
+        },
+        {
+          "q": "Is fat bad for you?",
+          "a": "Not all fat. Your body needs some fat for energy and warmth and to take in some vitamins. Eating a lot of it, especially in fried and sugary snacks, isn't healthy."
+        }
+      ]
+    },
+    {
+      "slug": "digestion-express",
+      "title": "Digestion Express",
+      "icon": "🚂",
+      "subject": "science",
+      "kind": "game",
+      "blurb": "Follow a bite of sandwich from mouth to large intestine, then find out what happens at each stop.",
+      "live": true,
+      "learn": "The order of the digestive system, what each organ does, enzymes (amylase, protease, lipase), bile, and absorption in the small intestine.",
+      "topic": "/question-bank/biology/nutrition-and-digestion/",
+      "topic_title": "Nutrition and digestion questions",
+      "curriculum": {
+        "KS3": "Biology: the tissues and organs of the human digestive system, including the importance of bacteria and the role of enzymes",
+        "KS2": "Year 4 science: the simple functions of the basic parts of the digestive system",
+        "PYP": "Who we are: the human body"
+      },
+      "guide_title": "Digestion: a quick guide",
+      "guide": [
+        {
+          "h": "The route",
+          "p": "Mouth, oesophagus, stomach, small intestine, large intestine. What is left leaves the body through the anus."
+        },
+        {
+          "h": "Breaking food down",
+          "p": "Teeth break food into pieces. Enzymes break big molecules into small ones: amylase turns starch into sugars, protease turns proteins into amino acids, and lipase turns fats into fatty acids and glycerol. Bile from the liver breaks fat into tiny droplets."
+        },
+        {
+          "h": "Absorbing it",
+          "p": "Small food molecules pass into the blood through the villi in the small intestine. The large intestine absorbs water."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How long is the small intestine?",
+          "a": "About 6 metres in an adult. It is folded up to fit inside your abdomen."
+        },
+        {
+          "q": "Where does most digestion happen?",
+          "a": "In the small intestine. The stomach starts digesting protein, but most digestion and nearly all absorption of food happen in the small intestine."
+        }
+      ]
     }
   ]
 }

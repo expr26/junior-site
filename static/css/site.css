@@ -1099,3 +1099,13 @@ html[data-proj="on"] .proj-btn{position:fixed;top:12px;right:12px;z-index:50;dis
   .pt-chart.blank td{height:40px}
   .pt-facts li{background:none;border:1px solid #ccc}
 }
+
+/* ---------- What is...? (/what-is/) ---------- */
+.wi-short{font-size:20px}
+.wi-note{text-align:center;margin-top:-4px}
+.wi-ex{display:grid;gap:6px;padding-left:1.2em}
+.wi-mistake{border-left:6px solid var(--gold);margin:18px 0}
+.wi-quiz{display:grid;gap:14px;padding:0;list-style:none}
+.wi-q .q-text{font-weight:700;margin:0 0 8px}
+.wi-why{margin:10px 0 0}
+.wi-card h3{margin:.3em 0}

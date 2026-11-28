@@ -47,22 +47,24 @@ def for_topic(subject, topic):
         f'<a class="gl-key" href="{URL}#{r["slug"]}"><span aria-hidden="true">{r["icon"]}</span> {html.escape(r["term"])}</a>' for r in ws) + "</p>")
 
 
-def _card(r):
+def _card(r, more=None):
     e = html.escape
     return f"""<article class="gl-card {r['subject']}" id="{r['slug']}" data-q="{e((r['term'] + ' ' + r['meaning'] + ' ' + r['topic_title']).lower())}">
   <span class="gl-pic" aria-hidden="true">{r['icon']}</span>
   <div><h3>{e(r['term'])}</h3><p>{e(r['meaning'])}</p><p class="gl-ex"><b>Example:</b> {e(r['example'])}</p>
-  <a class="gl-link" href="{r['href']}">Practise {e(r['topic_title'])} →</a></div>
+  {f'<a class="gl-link" href="{more}">Read more: what is it? →</a> ' if more else ""}<a class="gl-link" href="{r['href']}">Practise {e(r['topic_title'])} →</a></div>
 </article>"""
 
 
 def page():
+    import whatis
+    more = whatis.glossary_links()
     rows = load()
     groups = []
     for subj, name in (("maths", "Maths"), ("physics", "Physics")):
         rs = sorted((r for r in rows if r["subject"] == subj), key=lambda r: r["term"].lower())
         groups.append(f'<section class="gl-group" aria-labelledby="gl-{subj}"><h2 id="gl-{subj}">{name} words <span class="small">({len(rs)})</span></h2>'
-                      f'<div class="gl-grid">{"".join(_card(r) for r in rs)}</div></section>')
+                      f'<div class="gl-grid">{"".join(_card(r, more.get(r["slug"])) for r in rs)}</div></section>')
     ld = {"@context": "https://schema.org", "@type": "DefinedTermSet", "name": "KS3 Maths and Physics glossary for ages 9 to 14",
           "hasDefinedTerm": [{"@type": "DefinedTerm", "name": r["term"], "description": r["meaning"], "url": f"{URL}#{r['slug']}"} for r in rows]}
     body = f"""
@@ -70,7 +72,7 @@ def page():
   <div class="wrap narrow">
     <p class="crumbs"><a href="/">Home</a> › Glossary</p>
     <h1>Maths and Science words</h1>
-    <p class="lede">{len(rows)} key words from KS3 Maths and Physics, each with a picture, a short meaning and an example. Tap “Practise” to try questions on it.</p>
+    <p class="lede">{len(rows)} key words from KS3 Maths and Physics, each with a picture, a short meaning and an example. Tap “Practise” to try questions on it. For the big ideas, see <a href="/what-is/">What is...?</a></p>
     <label class="gl-search"><span aria-hidden="true">🔎</span><span class="sr">Find a word</span>
       <input type="search" id="gl-q" placeholder="Find a word, like fraction or force" autocomplete="off"></label>
     <p class="gl-none note" hidden>No words match. Try a shorter word.</p>

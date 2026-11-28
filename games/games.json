@@ -1719,6 +1719,47 @@
           "a": "In the small intestine. The stomach starts digesting protein, but most digestion and nearly all absorption of food happen in the small intestine."
         }
       ]
+    },
+    {
+      "slug": "roman-code-breaker",
+      "title": "Roman Code Breaker",
+      "icon": "🏛️",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "Crack a Roman vault: read numerals like XIV and XCIX, and build numbers like 19 and 46 from I, V, X and L tiles.",
+      "live": true,
+      "learn": "The Roman numeral symbols, adding (VIII) and taking away (IV, IX, XL, XC), reading numerals and years, and writing numbers in Roman numerals.",
+      "topic": "/maths/roman-numerals/",
+      "topic_title": "Roman numerals practice",
+      "curriculum": {
+        "KS2": "Number and place value: read Roman numerals to 100 (Year 4) and to 1000, including years (Year 5)",
+        "PYP": "Number: the base 10 system and other ways of writing numbers"
+      },
+      "guide_title": "Roman numerals: a quick guide",
+      "guide": [
+        {
+          "h": "The symbols",
+          "p": "I = 1, V = 5, X = 10, L = 50, C = 100, D = 500 and M = 1000. There is no symbol for zero."
+        },
+        {
+          "h": "Adding",
+          "p": "When the symbols go from biggest to smallest, add them: XVI = 10 + 5 + 1 = 16. You can repeat I, X, C and M up to three times."
+        },
+        {
+          "h": "Taking away",
+          "p": "A smaller symbol before a bigger one is taken away: IV = 4, IX = 9, XL = 40, XC = 90, CD = 400 and CM = 900."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do you write 49 in Roman numerals?",
+          "a": "XLIX: XL is 40 and IX is 9. It is not IL, because I can only be taken away from V or X."
+        },
+        {
+          "q": "Where can I print a Roman numerals chart?",
+          "a": "There is a free Roman numerals chart from 1 to 100 on our printables page, with the symbols and the hundreds up to 1000."
+        }
+      ]
     }
   ]
 }

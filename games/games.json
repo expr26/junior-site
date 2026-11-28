@@ -1413,6 +1413,187 @@
           "a": "They spread your weight over a much bigger area. Your weight (the force) stays the same, so pressure = force ÷ area gets smaller, and the snow is not pushed in as much."
         }
       ]
+    },
+    {
+      "slug": "ph-lab",
+      "title": "pH Lab",
+      "icon": "🧪",
+      "subject": "science",
+      "kind": "sim",
+      "blurb": "Add universal indicator to lemon juice, soap and more, read the colour on the pH scale, then neutralise an acid.",
+      "live": true,
+      "learn": "Acids, alkalis and neutral substances, the pH scale from 0 to 14, universal indicator colours, and neutralisation (acid + alkali → salt + water).",
+      "topic": "/question-bank/chemistry/acids-and-alkalis/",
+      "topic_title": "Acids and alkalis questions",
+      "curriculum": {
+        "KS3": "Chemistry: acids and alkalis, the pH scale, indicators and neutralisation",
+        "PYP": "How the world works: materials and how they change"
+      },
+      "guide_title": "Acids and alkalis: a quick guide",
+      "guide": [
+        {
+          "h": "The pH scale",
+          "p": "The pH scale runs from 0 to 14. Below 7 is acidic, 7 is neutral and above 7 is alkaline. The further from 7, the stronger the acid or alkali."
+        },
+        {
+          "h": "Universal indicator",
+          "p": "Universal indicator changes colour with pH: red or orange for acids, yellow for weak acids, green for neutral, blue for alkalis and purple for strong alkalis. Colours vary a little between brands, so use the chart that comes with it."
+        },
+        {
+          "h": "Everyday examples",
+          "p": "Lemon juice (about pH 2) and vinegar (about pH 3) are weak acids. Pure water is neutral (pH 7). Soap (about pH 10) is a weak alkali. Oven cleaner (about pH 13) is a strong alkali and is corrosive."
+        },
+        {
+          "h": "Neutralisation",
+          "p": "When an acid reacts with an alkali, they cancel each other out and make a salt and water. Indigestion tablets are bases that neutralise extra stomach acid. In the game, each drop moves the pH by 1 to keep it simple; in real life the change depends on how strong and how much each liquid is."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What colour is universal indicator in an acid?",
+          "a": "Red or orange in a strong or medium acid, and yellow in a weak acid. It turns green in a neutral solution, and blue or purple in an alkali."
+        },
+        {
+          "q": "What is neutralisation?",
+          "a": "The reaction between an acid and an alkali (or another base). It makes a salt and water, and moves the pH towards 7."
+        },
+        {
+          "q": "Is it safe to test things at home?",
+          "a": "Use only kitchen liquids such as lemon juice, vinegar, water and diluted washing-up liquid, with an adult. Never test bleach, oven cleaner or drain cleaner: they are corrosive."
+        }
+      ]
+    },
+    {
+      "slug": "cell-builder",
+      "title": "Cell Builder",
+      "icon": "🔬",
+      "subject": "science",
+      "kind": "game",
+      "blurb": "Look at an animal cell and a plant cell under the microscope and tap the nucleus, chloroplasts, cell wall and more.",
+      "live": true,
+      "learn": "The parts of animal and plant cells and what each one does: nucleus, cell membrane, cytoplasm, mitochondria, cell wall, chloroplasts and vacuole.",
+      "topic": "/question-bank/biology/cells/",
+      "topic_title": "Cells questions",
+      "curriculum": {
+        "KS3": "Biology: cells and organisation (plant and animal cell structure)",
+        "PYP": "Who we are: living things and the human body"
+      },
+      "guide_title": "Cells: a quick guide",
+      "guide": [
+        {
+          "h": "Parts of every animal cell",
+          "p": "The nucleus controls the cell and holds the genetic material. The cell membrane controls what goes in and out. The cytoplasm is a jelly where most chemical reactions happen. Mitochondria are where respiration releases energy from glucose."
+        },
+        {
+          "h": "Three extra parts in plant cells",
+          "p": "Plant cells also have a cell wall made of cellulose, which makes the cell strong; chloroplasts, where photosynthesis happens; and a large permanent vacuole full of cell sap, which keeps the cell firm."
+        },
+        {
+          "h": "Specialised cells",
+          "p": "Many cells have special features for their jobs. Red blood cells have no nucleus, leaving more room to carry oxygen. Root hair cells have a long thin part to take in water. Nerve cells are long to carry messages."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the difference between a plant cell and an animal cell?",
+          "a": "Plant cells have a cell wall, chloroplasts and a large permanent vacuole. Animal cells don't. Both have a nucleus, cell membrane, cytoplasm and mitochondria."
+        },
+        {
+          "q": "What does the nucleus do?",
+          "a": "It contains the genetic material (DNA) and controls what the cell does."
+        }
+      ]
+    },
+    {
+      "slug": "clock-fixer",
+      "title": "Clock Fixer",
+      "icon": "🕰️",
+      "subject": "maths",
+      "kind": "game",
+      "blurb": "All the clocks in the shop are wrong! Move the hands to the right time, then solve how-long puzzles.",
+      "live": true,
+      "learn": "Telling the time on an analogue clock: o'clock, half past, quarter past and to, minutes past and to, the 24-hour clock, and working out how long something takes.",
+      "topic": "/maths/telling-the-time/",
+      "topic_title": "Telling the time step by step",
+      "curriculum": {
+        "KS2": "Measurement: tell and write the time from an analogue clock, 12- and 24-hour clocks, and solve problems with time",
+        "PYP": "Measurement: time"
+      },
+      "guide_title": "Telling the time: a quick guide",
+      "guide": [
+        {
+          "h": "Two hands",
+          "p": "The short hand shows the hour. The long hand shows the minutes. Each number on the clock is 5 minutes for the long hand: the 3 means 15 minutes, the 6 means 30 minutes."
+        },
+        {
+          "h": "The hour hand moves too",
+          "p": "As the minutes go by, the hour hand slowly moves towards the next number. At half past 7 it is halfway between 7 and 8. That's why the hour hand in the game moves a little when you change the minutes."
+        },
+        {
+          "h": "Past and to",
+          "p": "In the first half of the hour we say minutes past (20 past 11). In the second half we say minutes to the next hour (10 to 6 means 5:50)."
+        },
+        {
+          "h": "24-hour clock",
+          "p": "After midday, add 12 to the hour: 2:30 in the afternoon is 14:30. To go back, take 12 away: 19:00 is 7 o'clock in the evening."
+        }
+      ],
+      "faq": [
+        {
+          "q": "When should children be able to tell the time?",
+          "a": "In England, children learn o'clock and half past in Year 1, quarter past and to in Year 2, and to the nearest minute, including the 24-hour clock, in Years 3 and 4."
+        },
+        {
+          "q": "Is there a timer?",
+          "a": "No. There is never a timer on this site, so children can take as long as they need."
+        }
+      ]
+    },
+    {
+      "slug": "separation-station",
+      "title": "Separation Station",
+      "icon": "🧲",
+      "subject": "science",
+      "kind": "game",
+      "blurb": "Sand in water, salt in water, iron in sand: pick filtering, evaporation, a magnet, a sieve, chromatography or distillation.",
+      "live": true,
+      "learn": "Mixtures and how to separate them: filtering, evaporation, using a magnet, sieving, chromatography and distillation, and getting pure salt from rock salt.",
+      "topic": "/question-bank/chemistry/mixtures-and-separating/",
+      "topic_title": "Mixtures and separating questions",
+      "curriculum": {
+        "KS3": "Chemistry: pure and impure substances, mixtures, filtration, evaporation, distillation and chromatography",
+        "KS2": "Year 5 science: properties and changes of materials (separating mixtures)",
+        "PYP": "How the world works: materials and how they change"
+      },
+      "guide_title": "Separating mixtures: a quick guide",
+      "guide": [
+        {
+          "h": "Mixtures",
+          "p": "A mixture is two or more substances mixed together but not chemically joined. That means they can be separated again by physical methods."
+        },
+        {
+          "h": "Filtering and sieving",
+          "p": "A sieve separates solids with bits of different sizes, like pebbles from sand. Filter paper has much smaller holes, so it separates an insoluble solid (like sand) from a liquid."
+        },
+        {
+          "h": "Evaporation and distillation",
+          "p": "Evaporation heats a solution until the water goes, leaving the dissolved solid (like salt crystals). Distillation also boils the solution, but it cools the steam so it condenses, so you collect the pure water too."
+        },
+        {
+          "h": "Magnets and chromatography",
+          "p": "A magnet pulls out magnetic metals such as iron. Chromatography separates the different dyes in an ink: water moves up the paper and carries each dye a different distance."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do you separate salt and sand?",
+          "a": "Add water and stir so the salt dissolves. Filter: the sand stays in the filter paper. Then evaporate the water from the salty liquid to get the salt back."
+        },
+        {
+          "q": "What is the difference between evaporation and distillation?",
+          "a": "Both heat a solution. Evaporation just lets the water escape, so you keep the solid. Distillation catches the steam and cools it, so you also collect pure water."
+        }
+      ]
     }
   ]
 }
